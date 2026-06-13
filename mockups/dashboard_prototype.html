@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>산업 모니터 — UI 프로토타입</title>
+<style>
+  :root{
+    --accent:#0b3d66; --accent2:#14507f;
+    --up:#16a34a; --down:#dc2626; --mute:#6b7280;
+    --bg:#eef1f4; --card:#ffffff; --line:#e1e7ee; --ink:#1f2328; --sub:#5b6675;
+    --chip:#f1f5fa;
+  }
+  *{box-sizing:border-box; margin:0; padding:0}
+  body{background:#cfd6de; font-family:'Malgun Gothic','맑은 고딕',sans-serif; color:var(--ink)}
+  .phone{max-width:412px; margin:0 auto; background:var(--bg); min-height:100vh; position:relative; padding-bottom:64px}
+  /* 상단 바 */
+  .topbar{background:var(--accent); color:#fff; padding:10px 16px; position:sticky; top:0; z-index:20}
+  .topbar h1{font-size:15px; font-weight:700; letter-spacing:-.3px}
+  .topbar .ts{font-size:11px; opacity:.85; margin-top:1px}
+  /* 화면 공통 */
+  .screen{display:none; padding:12px 14px 20px}
+  .screen.active{display:block}
+  .sec-title{font-size:13px; font-weight:700; color:var(--accent); margin:16px 2px 8px; display:flex; align-items:center; gap:6px}
+  .sec-title:first-child{margin-top:4px}
+  .card{background:var(--card); border:1px solid var(--line); border-radius:12px; padding:12px 13px; margin-bottom:10px}
+  .row{display:flex; align-items:center; gap:8px}
+  .between{justify-content:space-between}
+  .up{color:var(--up)} .down{color:var(--down)} .mute{color:var(--mute)}
+  .small{font-size:11px} .sub{color:var(--sub)}
+  .badge{font-size:10px; font-weight:700; padding:2px 7px; border-radius:20px; display:inline-block}
+  .b-new{background:#e6f4ea; color:#137a3a}
+  .b-lead{background:#e7eefb; color:#1c4fae}
+  .b-warn{background:#fdeee7; color:#b1481b}
+  .b-grey{background:#eef1f4; color:#6b7280}
+  /* 거시 신호등 */
+  .traffic{display:flex; gap:10px; font-size:12px; font-weight:600}
+  .traffic span{display:flex; gap:3px; align-items:center}
+  /* 게이지 3종 */
+  .gauges{display:flex; gap:7px; margin:9px 0}
+  .gauge{flex:1; background:var(--chip); border-radius:8px; padding:6px 4px; text-align:center}
+  .gauge .lab{font-size:10px; color:var(--sub)}
+  .gauge .val{font-size:14px; font-weight:700; margin-top:1px}
+  /* Top3 1위 확장 카드 */
+  .hero{border:2px solid #cde0d3; background:#f7fcf8}
+  .hero .rank{font-size:16px; font-weight:800}
+  .hero .score{font-size:26px; font-weight:800; color:var(--accent); line-height:1}
+  .reason{font-size:12px; color:#33433b; background:#eef7f0; border-radius:8px; padding:8px 9px; margin-top:8px; line-height:1.45}
+  /* 칩 */
+  .chips{display:flex; gap:8px; flex-wrap:wrap}
+  .chip{background:var(--card); border:1px solid var(--line); border-radius:10px; padding:8px 11px; font-size:13px; font-weight:600; cursor:pointer; display:flex; gap:7px; align-items:center}
+  .chip .sc{color:var(--accent); font-weight:800}
+  /* C1 리포트 카드 */
+  .rc-head{font-size:12px; color:var(--sub)}
+  .rc-name{font-size:14px; font-weight:700; margin:1px 0}
+  .rc-tp{font-size:13px; font-weight:600; margin:7px 0}
+  .rc-tp .arrow{color:var(--up)}
+  .yama{font-size:12.5px; font-weight:600; margin:6px 0 4px}
+  .grounds{font-size:11.5px; color:var(--sub); line-height:1.55; padding-left:2px}
+  .links{display:flex; gap:7px; margin-top:9px; flex-wrap:wrap}
+  .lnk{font-size:11px; font-weight:600; border:1px solid var(--line); border-radius:8px; padding:5px 9px; color:var(--accent2); background:#f7f9fc; cursor:pointer; display:flex; gap:4px; align-items:center}
+  .lnk.primary{background:#eef3fb; border-color:#cfe0f5}
+  .divider{height:1px; background:var(--line); margin:9px -13px}
+  .strong-border{border:1.5px solid #f0b9ab}
+  /* 필터 */
+  .filters{display:flex; gap:7px; flex-wrap:wrap; margin-bottom:10px}
+  .filt{font-size:11.5px; font-weight:600; background:var(--card); border:1px solid var(--line); border-radius:20px; padding:5px 11px; color:var(--sub)}
+  .filt.on{background:var(--accent); color:#fff; border-color:var(--accent)}
+  /* 타임라인 */
+  .tl{font-size:12px; padding:7px 0; border-bottom:1px dashed var(--line); display:flex; justify-content:space-between; gap:8px}
+  .tl:last-child{border-bottom:none}
+  /* 체크리스트 */
+  .check{font-size:12px; padding:5px 0; display:flex; gap:7px; align-items:flex-start}
+  .check .ok{color:var(--up)} .check .no{color:var(--mute)}
+  /* 표 */
+  table.mini{width:100%; border-collapse:collapse; font-size:11.5px; margin-top:6px}
+  table.mini th{background:var(--chip); color:var(--sub); font-weight:600; padding:5px 6px; text-align:right; font-size:10.5px}
+  table.mini th:first-child{text-align:left}
+  table.mini td{padding:6px; border-bottom:1px solid var(--line); text-align:right}
+  table.mini td:first-child{text-align:left; font-weight:600}
+  .pos{color:var(--up)} .neg{color:var(--down)}
+  .scorecell{font-weight:800; color:var(--accent)}
+  /* 지표 카드 (거시) */
+  .mgrid{display:grid; grid-template-columns:1fr 1fr; gap:9px}
+  .mcard{background:var(--card); border:1px solid var(--line); border-radius:12px; padding:10px 11px}
+  .mcard .ml{font-size:11px; color:var(--sub)}
+  .mcard .mv{font-size:18px; font-weight:800; margin:2px 0}
+  .memo{background:#fff8ee; border:1px solid #f3e2c4; border-radius:10px; padding:10px 11px; font-size:12px; line-height:1.5; color:#6b4f1d}
+  .memo .tag{font-size:9.5px; font-weight:700; color:#9a7b32; background:#f6e9cf; padding:2px 6px; border-radius:6px; margin-left:5px}
+  /* 하단 탭바 */
+  .tabbar{position:fixed; bottom:0; left:50%; transform:translateX(-50%); width:100%; max-width:412px; background:#fff; border-top:1px solid var(--line); display:flex; z-index:30}
+  .tab{flex:1; text-align:center; padding:8px 0 9px; font-size:10.5px; color:var(--mute); cursor:pointer; border:none; background:none}
+  .tab.on{color:var(--accent); font-weight:700}
+  .tab .ic{font-size:18px; display:block; line-height:1.1}
+  .hint{font-size:10.5px; color:var(--mute); text-align:center; margin-top:6px}
+  .sr-only{position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0,0,0,0)}
+</style>
+</head>
+<body>
+<div class="phone">
+  <h2 class="sr-only">국내 주식 산업 모니터링 서비스 모바일 대시보드 프로토타입 — 오늘의 브리핑, 워치 피드, 산업/종목 상세, 거시 현황 5개 화면</h2>
+  <div class="topbar">
+    <h1>산업 모니터</h1>
+    <div class="ts" id="tstamp">데이터 기준: 06-12 (금) 18:00</div>
+  </div>
+
+  <!-- ============ S1 오늘의 브리핑 ============ -->
+  <section class="screen active" id="s1">
+    <div class="card" style="padding:10px 13px">
+      <div class="row between">
+        <div class="traffic">
+          <span>금리 <b class="mute">─</b></span>
+          <span>환율 <b class="up">▲</b></span>
+          <span>수출 <b class="up">▲</b></span>
+          <span>CPI <b class="mute">─</b></span>
+        </div>
+        <span class="lnk" onclick="go('s5')">거시 ›</span>
+      </div>
+    </div>
+
+    <div class="sec-title">◆ 오늘의 주목 산업</div>
+    <div class="card hero">
+      <div class="row between">
+        <div class="row" style="gap:9px">
+          <span class="rank">1위 조선</span>
+          <span class="badge b-new">신규진입</span>
+          <span class="badge b-lead">최초전환</span>
+        </div>
+        <span class="score">87</span>
+      </div>
+      <div class="gauges">
+        <div class="gauge"><div class="lab">Breadth</div><div class="val up">+0.78</div></div>
+        <div class="gauge"><div class="lab">Magnitude</div><div class="val up">+9.4%</div></div>
+        <div class="gauge"><div class="lab">Upside Gap</div><div class="val">18%</div></div>
+      </div>
+      <div class="row" style="gap:6px; margin-bottom:2px">
+        <span class="badge b-lead">선행 · EPS 가속 +</span>
+        <span class="badge b-grey">확인 · Breadth↑</span>
+      </div>
+      <div class="reason">"4주간 12건 중 11건 목표가 상향. 신조선가 상승이 컨센서스에 반영되기 시작 — EPS 추정치 리비전이 먼저 돌며 발굴 신호."</div>
+      <div class="row between" style="margin-top:9px">
+        <span class="small sub">신규 리포트 3 · 워치 1</span>
+        <span class="lnk primary" onclick="go('s3')">산업 상세 ›</span>
+      </div>
+    </div>
+    <div class="chips">
+      <div class="chip" onclick="go('s3')">2위 전력기기 <span class="sc">81</span> <span class="up small">▲</span></div>
+      <div class="chip" onclick="go('s3')">3위 방산 <span class="sc">76</span> <span class="up small">▲</span></div>
+    </div>
+
+    <div class="sec-title">◆ 섹터 맵 (x=Breadth · y=Magnitude · 버블=Gap)</div>
+    <div class="card" style="padding:8px">
+      <svg viewBox="0 0 360 200" width="100%" role="img" aria-label="섹터 산점도: 조선이 우상단에 큰 녹색 버블, 화장품은 좌하단 적색, 회색 버블은 데이터 부족 산업">
+        <line x1="40" y1="170" x2="350" y2="170" stroke="#cdd5de"/>
+        <line x1="40" y1="20" x2="40" y2="170" stroke="#cdd5de"/>
+        <text x="195" y="192" font-size="9" fill="#8a93a0" text-anchor="middle">Breadth →</text>
+        <text x="14" y="95" font-size="9" fill="#8a93a0" transform="rotate(-90 14 95)" text-anchor="middle">Magnitude →</text>
+        <line x1="195" y1="20" x2="195" y2="170" stroke="#eef1f4"/>
+        <circle cx="300" cy="55" r="22" fill="#16a34a" fill-opacity="0.22" stroke="#16a34a"/>
+        <text x="300" y="58" font-size="9" fill="#137a3a" text-anchor="middle" font-weight="700">조선</text>
+        <circle cx="265" cy="80" r="16" fill="#16a34a" fill-opacity="0.18" stroke="#3a9b63"/>
+        <text x="265" y="83" font-size="8" fill="#2f7a4e" text-anchor="middle">전력기기</text>
+        <circle cx="240" cy="100" r="13" fill="#3a9b63" fill-opacity="0.16" stroke="#3a9b63"/>
+        <text x="240" y="103" font-size="7.5" fill="#2f7a4e" text-anchor="middle">방산</text>
+        <circle cx="120" cy="140" r="14" fill="#dc2626" fill-opacity="0.16" stroke="#dc2626"/>
+        <text x="120" y="143" font-size="8" fill="#b02020" text-anchor="middle">화장품</text>
+        <circle cx="90" cy="120" r="9" fill="#9ca3af" fill-opacity="0.25" stroke="#9ca3af"/>
+        <circle cx="150" cy="105" r="8" fill="#9ca3af" fill-opacity="0.25" stroke="#9ca3af"/>
+        <text x="150" y="63" font-size="8" fill="#9ca3af" text-anchor="middle">● 회색 = 데이터 부족</text>
+      </svg>
+    </div>
+
+    <div class="sec-title">◆ 시그널 변화 (전일 대비)</div>
+    <div class="card">
+      <div class="tl"><span><b class="up">▲ 진입</b> 조선</span><span class="sub">64 → 87</span></div>
+      <div class="tl"><span><b class="down">▼ 이탈</b> 화장품 <span class="badge b-warn">후행성 감점</span></span><span class="sub">72 → 55</span></div>
+    </div>
+
+    <div class="sec-title">◆ 워치 애널리스트 최신</div>
+    <div class="card" style="padding:10px 13px; cursor:pointer" onclick="go('s2')">
+      <div class="rc-head">06-12 18:02 · 조선 · 한화오션</div>
+      <div class="rc-name">장문수 · 현대차증권 <span class="badge b-lead">★워치</span></div>
+      <div class="rc-tp">목표가 38,000 <span class="arrow">→</span> 45,000 <b class="up">(+18%)</b> · 매수</div>
+      <div class="hint" style="text-align:right; margin:0">더보기 ›</div>
+    </div>
+  </section>
+
+  <!-- ============ S2 워치 피드 ============ -->
+  <section class="screen" id="s2">
+    <div class="filters">
+      <span class="filt">전체 산업 ▾</span>
+      <span class="filt">요약 있음 ▾</span>
+      <span class="filt">7일 ▾</span>
+      <span class="filt on">☑ 워치만</span>
+    </div>
+
+    <div class="card strong-border">
+      <div class="rc-head">06-12 18:02 · 조선 · 한화오션</div>
+      <div class="rc-name">장문수 · 현대차증권 <span class="badge b-lead">★워치</span></div>
+      <div class="rc-tp">목표가 38,000 <span class="arrow">→</span> 45,000 <b class="up">(+18%)</b> · 매수</div>
+      <div class="divider"></div>
+      <div class="yama">야마: "신조선가 사이클 진입, 2027년까지 수주 가시성 확보"</div>
+      <div class="grounds">· LNG선 발주 재개로 슬롯 조기 매진<br>· 후판가 안정으로 마진 스프레드 개선<br>· 고부가 비중 상승 → 평균 선가 +12% YoY</div>
+      <div class="links">
+        <span class="lnk primary">한경/네이버 ↗</span>
+        <span class="lnk">현대차증권 리서치 ↗</span>
+        <span class="lnk" onclick="go('s3')">산업 보기</span>
+        <span class="lnk" onclick="go('s4')">종목 보기</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="rc-head">06-12 16:40 · 화장품 · 아모레퍼시픽</div>
+      <div class="rc-name">○○○ · △△증권</div>
+      <div class="rc-tp">목표가 150,000 <span class="mute">→</span> 150,000 <b class="mute">(유지)</b> · 중립</div>
+      <div class="small sub" style="margin:6px 0">제목: "중국 회복 지연, 면세 채널 부진 지속"</div>
+      <span class="badge b-grey">원문 미공개 — 출시 알림</span>
+      <div class="links">
+        <span class="lnk primary">한경/네이버 ↗</span>
+        <span class="lnk">요약 요청</span>
+      </div>
+    </div>
+
+    <div class="card" style="opacity:.85">
+      <div class="rc-head">06-12 15:10 · 반도체 · SK하이닉스</div>
+      <div class="rc-name">□□□ · ◇◇증권</div>
+      <div class="rc-tp">목표가 240,000 <span class="arrow">→</span> 270,000 <b class="up">(+12.5%)</b> · 매수</div>
+      <div class="links"><span class="lnk primary">한경/네이버 ↗</span></div>
+    </div>
+  </section>
+
+  <!-- ============ S3 산업 상세 ============ -->
+  <section class="screen" id="s3">
+    <div class="card">
+      <div class="row between">
+        <div><b style="font-size:17px">조선</b> <span class="badge b-new">신규진입</span></div>
+        <div><span class="score" style="font-size:24px">87</span> <span class="up small">▲23</span></div>
+      </div>
+      <div class="gauges">
+        <div class="gauge"><div class="lab">Breadth</div><div class="val up">+0.78</div></div>
+        <div class="gauge"><div class="lab">Magnitude</div><div class="val up">+9.4%</div></div>
+        <div class="gauge"><div class="lab">Upside Gap</div><div class="val">18%</div></div>
+      </div>
+      <div class="small sub">커버리지 ★★★ · 윈도우 4주 · 리포트 12건 · 감점 없음</div>
+    </div>
+
+    <div class="sec-title">◆ 스코어 추이 90일 + 업종지수</div>
+    <div class="card" style="padding:8px">
+      <svg viewBox="0 0 360 120" width="100%" role="img" aria-label="조선 스코어가 90일간 우상향, 업종지수가 뒤따름 — 시그널 선행 확인">
+        <polyline points="10,95 60,90 110,80 160,72 210,55 260,40 310,25 350,18" fill="none" stroke="#0b3d66" stroke-width="2.5"/>
+        <polyline points="10,100 60,98 110,94 160,90 210,82 260,70 310,60 350,52" fill="none" stroke="#9bbcd8" stroke-width="2" stroke-dasharray="4 3"/>
+        <text x="350" y="13" font-size="9" fill="#0b3d66" text-anchor="end">스코어</text>
+        <text x="350" y="48" font-size="9" fill="#7ba0c0" text-anchor="end">업종지수</text>
+      </svg>
+    </div>
+
+    <div class="sec-title">◆ 목표가 이벤트 타임라인</div>
+    <div class="card">
+      <div class="tl"><span>6/12 한화오션 <b class="up">38,000→45,000 ▲</b></span><span class="sub">현대차증권</span></div>
+      <div class="tl"><span>6/11 HD현대중 <b class="up">190,000→210,000 ▲</b></span><span class="sub">○○증권</span></div>
+      <div class="tl"><span>6/10 삼성중공업 <b class="up">12,000→14,500 ▲</b></span><span class="sub">△△증권</span></div>
+    </div>
+
+    <div class="sec-title">◆ 워치 애널리스트 Top 3</div>
+    <div class="card">
+      <div class="row between">
+        <div><b>1. 장문수</b> · 현대차증권 <span class="badge b-grey">시드:어워드</span></div>
+      </div>
+      <div class="small sub" style="margin-top:3px">최근 리포트 2건 · 적중률 — (집계 중)</div>
+    </div>
+
+    <div class="sec-title">◆ 보조 시그널 체크</div>
+    <div class="card">
+      <div class="check"><span class="ok">☑</span> 업종지수 20/60 골든크로스 <span class="sub">(6/3)</span></div>
+      <div class="check"><span class="ok">☑</span> 외국인 순매수 전환 <span class="sub">(4주)</span></div>
+      <div class="check"><span class="no">☐</span> 수출 YoY 플러스 <span class="sub">(5월 −2.1%)</span></div>
+    </div>
+
+    <div class="sec-title">◆ 대표 종목 · 펀더멘털 모멘텀 랭킹</div>
+    <div class="card" style="padding:10px 11px">
+      <table class="mini">
+        <tr><th>종목</th><th>현재가</th><th>1M</th><th>Gap</th><th>종목점수</th></tr>
+        <tr onclick="go('s4')" style="cursor:pointer"><td>한화오션</td><td>41,200</td><td class="pos">+9%</td><td>+14%</td><td class="scorecell">92</td></tr>
+        <tr><td>HD현대중</td><td>198,000</td><td class="pos">+6%</td><td>+11%</td><td class="scorecell">85</td></tr>
+        <tr><td>삼성중공업</td><td>13,100</td><td class="pos">+4%</td><td>+19%</td><td class="scorecell">79</td></tr>
+      </table>
+      <div class="hint" style="text-align:left; margin-top:7px">점수 = EPS 리비전 + 영업이익률 추세 (docs/04 관절③)</div>
+    </div>
+  </section>
+
+  <!-- ============ S4 종목 상세 ============ -->
+  <section class="screen" id="s4">
+    <div class="card">
+      <div class="row between">
+        <div><b style="font-size:16px">한화오션</b> <span class="sub small">042660 · 조선</span></div>
+        <span class="lnk" onclick="go('s3')">산업 ›</span>
+      </div>
+      <div class="rc-tp" style="margin-top:6px">현재가 41,200 <b class="up">▲2.1%</b> · 컨센서스 Gap <b class="up">+14%</b></div>
+    </div>
+
+    <div class="sec-title">◆ 주가 + 목표가 밴드 (1년)</div>
+    <div class="card" style="padding:8px">
+      <svg viewBox="0 0 360 130" width="100%" role="img" aria-label="주가가 목표가 밴드 하단에서 상승, 컨센서스 평균선이 주가를 선행">
+        <polygon points="10,70 350,30 350,60 10,95" fill="#9bbcd8" fill-opacity="0.25"/>
+        <polyline points="10,82 70,80 130,76 190,66 250,54 310,42 350,40" fill="none" stroke="#9bbcd8" stroke-width="1.5" stroke-dasharray="3 3"/>
+        <polyline points="10,105 70,100 130,98 190,88 250,78 310,68 350,62" fill="none" stroke="#0b3d66" stroke-width="2.5"/>
+        <text x="350" y="26" font-size="9" fill="#7ba0c0" text-anchor="end">목표가 high</text>
+        <text x="350" y="74" font-size="9" fill="#0b3d66" text-anchor="end">주가</text>
+      </svg>
+    </div>
+
+    <div class="sec-title">◆ 수급 — 외국인·기관 누적 순매수 (60일)</div>
+    <div class="card" style="padding:8px">
+      <svg viewBox="0 0 360 90" width="100%" role="img" aria-label="외국인 기관 누적 순매수가 우상향">
+        <line x1="10" y1="75" x2="350" y2="75" stroke="#cdd5de"/>
+        <rect x="30" y="60" width="14" height="15" fill="#16a34a" fill-opacity=".6"/>
+        <rect x="70" y="52" width="14" height="23" fill="#16a34a" fill-opacity=".6"/>
+        <rect x="110" y="55" width="14" height="20" fill="#16a34a" fill-opacity=".6"/>
+        <rect x="150" y="42" width="14" height="33" fill="#16a34a" fill-opacity=".7"/>
+        <rect x="190" y="38" width="14" height="37" fill="#16a34a" fill-opacity=".7"/>
+        <rect x="230" y="30" width="14" height="45" fill="#16a34a" fill-opacity=".8"/>
+        <rect x="270" y="24" width="14" height="51" fill="#16a34a" fill-opacity=".8"/>
+        <rect x="310" y="18" width="14" height="57" fill="#16a34a" fill-opacity=".9"/>
+        <text x="14" y="14" font-size="9" fill="#8a93a0">외국인 지분율 28.4% ▲</text>
+      </svg>
+    </div>
+
+    <div class="sec-title">◆ 펀더멘털 (분기)</div>
+    <div class="card">
+      <div class="rc-tp" style="margin:0">영업이익률 4.2 → 5.1 → 6.8 <span class="badge b-new">2분기 연속 ▲</span></div>
+      <div class="small sub" style="margin-top:5px">매출 YoY +18% · 영업이익 컨센서스 상향</div>
+    </div>
+
+    <div class="sec-title">◆ 정성 요소 (출처 필수)</div>
+    <div class="card">
+      <div class="check"><span class="ok">·</span> "LNG선 글로벌 점유율 36%" <span class="sub">— 6/12 현대차증권</span></div>
+      <div class="check"><span class="ok">·</span> "수주잔고 3.2년치" <span class="sub">— 6/10 △△증권</span></div>
+    </div>
+
+    <div class="sec-title">◆ 이 종목 리포트</div>
+    <div class="card">
+      <div class="rc-head">06-12 · 현대차증권 · 장문수</div>
+      <div class="rc-tp" style="margin:4px 0 0">45,000 <b class="up">(+18%)</b> 매수</div>
+      <div class="links"><span class="lnk primary">한경/네이버 ↗</span><span class="lnk">현대차증권 ↗</span></div>
+    </div>
+  </section>
+
+  <!-- ============ S5 거시 현황 ============ -->
+  <section class="screen" id="s5">
+    <div class="sec-title">◆ 핵심 지표</div>
+    <div class="mgrid">
+      <div class="mcard"><div class="ml">기준금리</div><div class="mv">2.75% <span class="mute small">─</span></div><div class="small sub">6/12 금통위 동결</div></div>
+      <div class="mcard"><div class="ml">원/달러</div><div class="mv">1,372 <span class="up small">▲</span></div><div class="small sub">1개월 +1.8%</div></div>
+      <div class="mcard"><div class="ml">수출 YoY</div><div class="mv up">+3.4% ▲</div><div class="small sub">반도체 +28%</div></div>
+      <div class="mcard"><div class="ml">CPI YoY</div><div class="mv">2.1% <span class="mute small">─</span></div><div class="small sub">근원 2.0%</div></div>
+    </div>
+
+    <div class="sec-title">◆ 산업 연결 메모 <span class="badge b-grey">룰 기반</span></div>
+    <div class="memo">
+      "수출 개선이 조선·반도체 Breadth 상승과 동행 — 시그널 신뢰도 보강."
+      <span class="tag">서술만 · 스코어 미반영</span>
+    </div>
+    <div class="hint">거시는 신호 엔진에 연결하지 않음 (docs/04 관절①). 국면 판단은 사용자 몫.</div>
+  </section>
+
+  <!-- 하단 탭바 -->
+  <nav class="tabbar" role="tablist">
+    <button class="tab on" data-t="s1" onclick="go('s1')"><span class="ic">◉</span>오늘</button>
+    <button class="tab" data-t="s2" onclick="go('s2')"><span class="ic">≣</span>워치</button>
+    <button class="tab" data-t="s3" onclick="go('s3')"><span class="ic">▤</span>산업</button>
+    <button class="tab" data-t="s4" onclick="go('s4')"><span class="ic">◢</span>종목</button>
+    <button class="tab" data-t="s5" onclick="go('s5')"><span class="ic">⊞</span>거시</button>
+  </nav>
+</div>
+
+<script>
+  function go(id){
+    document.querySelectorAll('.screen').forEach(function(s){s.classList.toggle('active', s.id===id)});
+    document.querySelectorAll('.tab').forEach(function(t){t.classList.toggle('on', t.dataset.t===id)});
+    window.scrollTo(0,0);
+    if(history.replaceState) history.replaceState(null,'','#'+id);
+  }
+  var h=(location.hash||'').replace('#','');
+  if(['s1','s2','s3','s4','s5'].indexOf(h)>=0) go(h);
+</script>
+</body>
+</html>
