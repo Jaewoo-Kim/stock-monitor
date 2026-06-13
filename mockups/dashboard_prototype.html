@@ -28,7 +28,7 @@
   .between{justify-content:space-between}
   .up{color:var(--up)} .down{color:var(--down)} .mute{color:var(--mute)}
   .small{font-size:11px} .sub{color:var(--sub)}
-  .badge{font-size:10px; font-weight:700; padding:2px 7px; border-radius:20px; display:inline-block}
+  .badge{font-size:10px; font-weight:700; padding:2px 7px; border-radius:20px; display:inline-block; white-space:nowrap}
   .b-new{background:#e6f4ea; color:#137a3a}
   .b-lead{background:#e7eefb; color:#1c4fae}
   .b-warn{background:#fdeee7; color:#b1481b}
@@ -93,6 +93,24 @@
   .tab.on{color:var(--accent); font-weight:700}
   .tab .ic{font-size:18px; display:block; line-height:1.1}
   .hint{font-size:10.5px; color:var(--mute); text-align:center; margin-top:6px}
+  /* 산업 랭킹 행 */
+  .irows{padding:2px 8px}
+  .irow{display:flex; align-items:center; gap:8px; padding:8px 4px; border-bottom:1px solid var(--line); cursor:pointer; font-size:13px}
+  .irow:last-child{border-bottom:none}
+  .irow .rk{width:16px; font-weight:800; color:var(--accent); text-align:center; font-size:12px}
+  .irow .nm{flex:1; font-weight:600}
+  .irow .op{width:74px; text-align:center}
+  .irow .sc2{width:28px; text-align:right; font-weight:800; color:var(--accent)}
+  .irow .dl{width:46px; text-align:right; font-size:11px}
+  .ihead{display:flex; gap:8px; padding:6px 4px; font-size:10px; color:var(--sub); font-weight:600; border-bottom:1px solid var(--line)}
+  .ihead .rk{width:16px} .ihead .nm{flex:1} .ihead .op{width:74px; text-align:center}
+  .ihead .sc2{width:28px; text-align:right} .ihead .dl{width:46px; text-align:right}
+  .b-down{background:#fdecec; color:#b02020}
+  .moreBtn{width:100%; background:var(--card); border:1px solid var(--line); border-radius:10px; padding:11px; font-size:12.5px; font-weight:700; color:var(--accent2); cursor:pointer; margin-bottom:10px}
+  /* 의견 분포 막대 */
+  .opbar{display:flex; gap:3px; height:26px; font-size:11px; font-weight:700}
+  .opbar .seg{display:flex; align-items:center; justify-content:center; border-radius:5px; color:#fff; min-width:30px}
+  .seg.buy{background:#16a34a} .seg.hold{background:#8a93a0} .seg.sell{background:#dc2626}
   .sr-only{position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0,0,0,0)}
 </style>
 </head>
@@ -106,19 +124,15 @@
 
   <!-- ============ S1 오늘의 브리핑 ============ -->
   <section class="screen active" id="s1">
-    <div class="card" style="padding:10px 13px">
-      <div class="row between">
-        <div class="traffic">
-          <span>금리 <b class="mute">─</b></span>
-          <span>환율 <b class="up">▲</b></span>
-          <span>수출 <b class="up">▲</b></span>
-          <span>CPI <b class="mute">─</b></span>
-        </div>
-        <span class="lnk" onclick="go('s5')">거시 ›</span>
-      </div>
+    <div class="sec-title">◆ 거시 현황 <span class="lnk" style="margin-left:auto" onclick="go('s5')">전체 ›</span></div>
+    <div class="mgrid">
+      <div class="mcard"><div class="ml">기준금리</div><div class="mv">2.75% <span class="mute small">─</span></div><div class="small sub">금통위 동결</div></div>
+      <div class="mcard"><div class="ml">원/달러</div><div class="mv">1,372 <span class="up small">▲</span></div><div class="small sub">1M +1.8%</div></div>
+      <div class="mcard"><div class="ml">수출 YoY</div><div class="mv up">+3.4% ▲</div><div class="small sub">반도체 +28%</div></div>
+      <div class="mcard"><div class="ml">CPI YoY</div><div class="mv">2.1% <span class="mute small">─</span></div><div class="small sub">근원 2.0%</div></div>
     </div>
 
-    <div class="sec-title">◆ 오늘의 주목 산업</div>
+    <div class="sec-title">◆ 오늘의 주목 산업 <span class="sub small" style="font-weight:400; margin-left:auto">상위 5 / 31</span></div>
     <div class="card hero">
       <div class="row between">
         <div class="row" style="gap:9px">
@@ -143,9 +157,47 @@
         <span class="lnk primary" onclick="go('s3')">산업 상세 ›</span>
       </div>
     </div>
-    <div class="chips">
-      <div class="chip" onclick="go('s3')">2위 전력기기 <span class="sc">81</span> <span class="up small">▲</span></div>
-      <div class="chip" onclick="go('s3')">3위 방산 <span class="sc">76</span> <span class="up small">▲</span></div>
+    <div class="card irows">
+      <div class="irow" onclick="go('s3')"><span class="rk">2</span><span class="nm">전력기기·전선</span><span class="op"><span class="badge b-new">매수우위</span></span><span class="sc2">81</span><span class="dl up">+7.1%</span></div>
+      <div class="irow" onclick="go('s3')"><span class="rk">3</span><span class="nm">방산·우주항공</span><span class="op"><span class="badge b-new">매수우위</span></span><span class="sc2">76</span><span class="dl up">+6.3%</span></div>
+      <div class="irow" onclick="go('s3')"><span class="rk">4</span><span class="nm">반도체 (대형)</span><span class="op"><span class="badge b-new">매수우위</span></span><span class="sc2">73</span><span class="dl up">+5.0%</span></div>
+      <div class="irow" onclick="go('s3')"><span class="rk">5</span><span class="nm">제약·바이오</span><span class="op"><span class="badge b-warn">혼조</span></span><span class="sc2">68</span><span class="dl up">+3.2%</span></div>
+    </div>
+
+    <button class="moreBtn" onclick="toggleAll()"><span id="moreCaret">▾</span> 전체 산업 · 애널리스트 종합 의견</button>
+    <div id="allInd" style="display:none">
+      <div class="card irows">
+        <div class="ihead"><span class="rk"></span><span class="nm">산업</span><span class="op">종합 의견</span><span class="sc2">점수</span><span class="dl">목표가</span></div>
+        <div class="irow" onclick="go('s3')"><span class="rk">6</span><span class="nm">2차전지</span><span class="op"><span class="badge b-warn">혼조</span></span><span class="sc2">64</span><span class="dl up">+2.1%</span></div>
+        <div class="irow" onclick="go('s3')"><span class="rk">7</span><span class="nm">자동차·부품</span><span class="op"><span class="badge b-new">매수우위</span></span><span class="sc2">61</span><span class="dl up">+2.8%</span></div>
+        <div class="irow" onclick="go('s3')"><span class="rk">8</span><span class="nm">기계·로봇</span><span class="op"><span class="badge b-grey">중립</span></span><span class="sc2">58</span><span class="dl up">+1.4%</span></div>
+        <div class="irow" onclick="go('s3')"><span class="rk">9</span><span class="nm">인터넷·플랫폼</span><span class="op"><span class="badge b-new">매수우위</span></span><span class="sc2">55</span><span class="dl up">+2.0%</span></div>
+        <div class="irow" onclick="go('s3')"><span class="rk">10</span><span class="nm">반도체 소부장</span><span class="op"><span class="badge b-new">매수우위</span></span><span class="sc2">53</span><span class="dl up">+3.1%</span></div>
+        <div class="irow" onclick="go('s3')"><span class="rk">11</span><span class="nm">화학·석유화학</span><span class="op"><span class="badge b-grey">중립</span></span><span class="sc2">49</span><span class="dl up">+0.6%</span></div>
+        <div class="irow" onclick="go('s3')"><span class="rk">12</span><span class="nm">철강·비철금속</span><span class="op"><span class="badge b-grey">중립</span></span><span class="sc2">47</span><span class="dl up">+0.4%</span></div>
+        <div class="irow" onclick="go('s3')"><span class="rk">13</span><span class="nm">음식료·담배</span><span class="op"><span class="badge b-grey">중립</span></span><span class="sc2">45</span><span class="dl up">+0.9%</span></div>
+        <div class="irow" onclick="go('s3')"><span class="rk">14</span><span class="nm">증권</span><span class="op"><span class="badge b-grey">중립</span></span><span class="sc2">43</span><span class="dl up">+0.7%</span></div>
+        <div class="irow" onclick="go('s3')"><span class="rk">15</span><span class="nm">은행·금융지주</span><span class="op"><span class="badge b-grey">중립</span></span><span class="sc2">42</span><span class="dl up">+0.3%</span></div>
+        <div class="irow" onclick="go('s3')"><span class="rk">16</span><span class="nm">건설·건자재</span><span class="op"><span class="badge b-warn">혼조</span></span><span class="sc2">40</span><span class="dl down">−0.5%</span></div>
+        <div class="irow" onclick="go('s3')"><span class="rk">17</span><span class="nm">게임</span><span class="op"><span class="badge b-warn">혼조</span></span><span class="sc2">38</span><span class="dl up">+1.1%</span></div>
+        <div class="irow" onclick="go('s3')"><span class="rk">18</span><span class="nm">엔터·미디어</span><span class="op"><span class="badge b-new">매수우위</span></span><span class="sc2">37</span><span class="dl up">+2.2%</span></div>
+        <div class="irow" onclick="go('s3')"><span class="rk">19</span><span class="nm">유통·이커머스</span><span class="op"><span class="badge b-grey">중립</span></span><span class="sc2">35</span><span class="dl down">−0.2%</span></div>
+        <div class="irow" onclick="go('s3')"><span class="rk">20</span><span class="nm">보험</span><span class="op"><span class="badge b-grey">중립</span></span><span class="sc2">34</span><span class="dl up">+0.1%</span></div>
+        <div class="irow" onclick="go('s3')"><span class="rk">21</span><span class="nm">IT하드웨어·전자부품</span><span class="op"><span class="badge b-grey">중립</span></span><span class="sc2">33</span><span class="dl up">+0.5%</span></div>
+        <div class="irow" onclick="go('s3')"><span class="rk">22</span><span class="nm">정유·에너지</span><span class="op"><span class="badge b-grey">중립</span></span><span class="sc2">31</span><span class="dl down">−0.8%</span></div>
+        <div class="irow" onclick="go('s3')"><span class="rk">23</span><span class="nm">의료기기·미용의료</span><span class="op"><span class="badge b-new">매수우위</span></span><span class="sc2">30</span><span class="dl up">+1.6%</span></div>
+        <div class="irow" onclick="go('s3')"><span class="rk">24</span><span class="nm">운송</span><span class="op"><span class="badge b-grey">중립</span></span><span class="sc2">28</span><span class="dl down">−0.3%</span></div>
+        <div class="irow" onclick="go('s3')"><span class="rk">25</span><span class="nm">통신</span><span class="op"><span class="badge b-grey">중립</span></span><span class="sc2">26</span><span class="dl mute">0.0%</span></div>
+        <div class="irow" onclick="go('s3')"><span class="rk">26</span><span class="nm">화장품</span><span class="op"><span class="badge b-down">하향우위</span></span><span class="sc2">24</span><span class="dl down">−3.1%</span></div>
+        <div class="irow" onclick="go('s3')"><span class="rk">27</span><span class="nm">디스플레이</span><span class="op"><span class="badge b-grey">데이터 부족</span></span><span class="sc2 mute">—</span><span class="dl mute">—</span></div>
+        <div class="irow" onclick="go('s3')"><span class="rk">28</span><span class="nm">소프트웨어·IT서비스</span><span class="op"><span class="badge b-grey">데이터 부족</span></span><span class="sc2 mute">—</span><span class="dl mute">—</span></div>
+        <div class="irow" onclick="go('s3')"><span class="rk">29</span><span class="nm">의류·섬유</span><span class="op"><span class="badge b-grey">데이터 부족</span></span><span class="sc2 mute">—</span><span class="dl mute">—</span></div>
+        <div class="irow" onclick="go('s3')"><span class="rk">30</span><span class="nm">호텔·레저·여행</span><span class="op"><span class="badge b-grey">데이터 부족</span></span><span class="sc2 mute">—</span><span class="dl mute">—</span></div>
+        <div class="irow" onclick="go('s3')"><span class="rk">31</span><span class="nm">부동산·리츠</span><span class="op"><span class="badge b-grey">데이터 부족</span></span><span class="sc2 mute">—</span><span class="dl mute">—</span></div>
+        <div class="irow" onclick="go('s3')"><span class="rk">32</span><span class="nm">전력·가스 유틸리티</span><span class="op"><span class="badge b-grey">데이터 부족</span></span><span class="sc2 mute">—</span><span class="dl mute">—</span></div>
+        <div class="irow" onclick="go('s3')"><span class="rk">33</span><span class="nm">지주·복합</span><span class="op"><span class="badge b-grey">데이터 부족</span></span><span class="sc2 mute">—</span><span class="dl mute">—</span></div>
+      </div>
+      <div class="hint" style="text-align:left">종합 의견 = 윈도우 내 리포트 투자의견 분포 (매수/중립/매도) 기준. 산업 클릭 시 상세 분포 확인.</div>
     </div>
 
     <div class="sec-title">◆ 섹터 맵 (x=Breadth · y=Magnitude · 버블=Gap)</div>
@@ -269,6 +321,20 @@
       <div class="small sub" style="margin-top:3px">최근 리포트 2건 · 적중률 — (집계 중)</div>
     </div>
 
+    <div class="sec-title">◆ 애널리스트 종합 의견 <span class="sub small" style="font-weight:400; margin-left:auto">최근 4주 · 12건</span></div>
+    <div class="card">
+      <div class="opbar">
+        <span class="seg buy" style="flex:8">매수 8</span>
+        <span class="seg hold" style="flex:3">중립 3</span>
+        <span class="seg sell" style="flex:1">매도 1</span>
+      </div>
+      <div class="row between small" style="margin-top:9px">
+        <span class="sub">목표가 상향 11 · 하향 1</span>
+        <span>평균 목표가 <b class="up">+9.4%</b></span>
+      </div>
+      <div class="reason" style="background:#eef3fb; color:#33414f; margin-top:9px">"애널리스트 12명 중 8명 매수 의견 — 신조선가 사이클·수주 가시성에 컨센서스 형성. 최근 4주 목표가 상향 일색으로 종합 의견 매수우위."</div>
+    </div>
+
     <div class="sec-title">◆ 보조 시그널 체크</div>
     <div class="card">
       <div class="check"><span class="ok">☑</span> 업종지수 20/60 골든크로스 <span class="sub">(6/3)</span></div>
@@ -379,6 +445,12 @@
     document.querySelectorAll('.tab').forEach(function(t){t.classList.toggle('on', t.dataset.t===id)});
     window.scrollTo(0,0);
     if(history.replaceState) history.replaceState(null,'','#'+id);
+  }
+  function toggleAll(){
+    var b=document.getElementById('allInd'), c=document.getElementById('moreCaret');
+    var show=b.style.display==='none';
+    b.style.display=show?'block':'none';
+    c.textContent=show?'▴':'▾';
   }
   var h=(location.hash||'').replace('#','');
   if(['s1','s2','s3','s4','s5'].indexOf(h)>=0) go(h);
