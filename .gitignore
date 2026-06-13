@@ -12,6 +12,10 @@ secrets.json
 # 리포트 원문 PDF — 저작권상 별도 보관 (repo에는 메타데이터/요약만)
 data/reports/*.pdf
 
+# SQLite WAL 임시 파일 (monitor.db 본체는 커밋 — 기획서 5.1 git 이력=백업)
+*.db-wal
+*.db-shm
+
 # OS
 .DS_Store
 

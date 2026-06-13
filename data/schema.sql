@@ -136,6 +136,10 @@ CREATE TABLE IF NOT EXISTS report_events (
     opinion         TEXT,            -- 매수/중립/매도 등
     target_price    REAL,            -- 목표주가
     prev_target     REAL,            -- 직전 목표주가 (변경 산출용)
+    -- 선행 보강 신호용 (docs/04 관절②): EPS 추정치 리비전은 목표가 리비전을 선행
+    eps_estimate    REAL,            -- 애널리스트 EPS 추정치 (당해/차년)
+    prev_eps_est    REAL,            -- 직전 EPS 추정치 (리비전 산출용)
+    eps_fwd_year    INTEGER,         -- 추정 대상 회계연도 (예: 2026)
     close_on_date   REAL,            -- 발행일 종가 (적중률 계산용)
     -- 링크 (CLAUDE.md 원칙 7: 2종 필수)
     source_url      TEXT NOT NULL,   -- 한경/네이버 상세 링크 (항상 존재)
@@ -152,6 +156,27 @@ CREATE INDEX IF NOT EXISTS idx_report_date       ON report_events(published_date
 CREATE INDEX IF NOT EXISTS idx_report_level2     ON report_events(level2_id);
 CREATE INDEX IF NOT EXISTS idx_report_ticker     ON report_events(ticker);
 CREATE INDEX IF NOT EXISTS idx_report_analyst    ON report_events(analyst_id);
+
+-- ─────────────────────────────────────────
+-- 3.5 기업 재무 (docs/04 관절③: 섹터 내 펀더멘털 모멘텀 종목 선별)
+--     실적(actual)은 DART에서, 컨센서스(consensus)는 추정치 집계에서 적재.
+--     Phase 1은 스키마만 확보, 본격 적재는 Phase 2~3.
+-- ─────────────────────────────────────────
+
+CREATE TABLE IF NOT EXISTS company_fundamentals (
+    ticker        TEXT NOT NULL REFERENCES companies(ticker),
+    period_end    TEXT NOT NULL,   -- 분기말 YYYY-MM-DD (예: 2025-09-30)
+    revenue       REAL,
+    op_income     REAL,
+    op_margin     REAL,            -- op_income / revenue (영업이익률 추세용)
+    net_income    REAL,
+    eps_actual    REAL,            -- 실적 EPS (DART)
+    eps_consensus REAL,            -- 컨센서스 EPS (리비전 추적용)
+    source        TEXT NOT NULL CHECK(source IN ('DART','consensus')),
+    PRIMARY KEY(ticker, period_end, source)
+);
+
+CREATE INDEX IF NOT EXISTS idx_fund_ticker ON company_fundamentals(ticker);
 
 -- ─────────────────────────────────────────
 -- 4. 시세 (docs/00 5.1)
