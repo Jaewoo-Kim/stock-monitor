@@ -16,6 +16,9 @@ data/reports/*.pdf
 *.db-wal
 *.db-shm
 
+# PDF/HTML 산출물 (정본은 docs/*.md, exports는 scripts/md_to_pdf.py로 재생성)
+exports/
+
 # OS
 .DS_Store
 
