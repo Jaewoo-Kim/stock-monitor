@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# 시크릿 (절대 커밋 금지)
+.env
+*.env
+secrets.json
+
+# 리포트 원문 PDF — 저작권상 별도 보관 (repo에는 메타데이터/요약만)
+data/reports/*.pdf
+
+# OS
+.DS_Store
+
+# 로그
+*.log
+
+# DearName 등 외부 프로젝트 파일이 실수로 섞이는 것 방지용 가드
+dearname/
+DearName/
