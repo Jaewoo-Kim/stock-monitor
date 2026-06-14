@@ -3,278 +3,324 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>산업 모니터 — UI 프로토타입 (v2.3 IA)</title>
+<title>산업 모니터 — UI 프로토타입 (클린 라이트)</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
 <style>
   :root{
-    --accent:#0b3d66; --accent2:#14507f;
-    --up:#16a34a; --down:#dc2626; --mute:#6b7280;
-    --bg:#eef1f4; --card:#ffffff; --line:#e1e7ee; --ink:#1f2328; --sub:#5b6675; --chip:#f1f5fa;
+    --bg:#f6f7f9; --card:#fff; --line:#e9ecf1; --line2:#dfe3ea;
+    --ink:#161b22; --sub:#5b6573; --hint:#8a93a1;
+    --navy:#16325c; --accent:#2f6fed; --accent-soft:#eef3fe;
+    --up:#1a875a; --up-soft:#e7f4ed; --down:#d23f3f; --down-soft:#fbeaea;
+    --amber:#b5790d; --amber-soft:#fbf1dd; --chip:#f2f4f7;
+    --shadow:0 1px 2px rgba(16,24,40,.04),0 1px 3px rgba(16,24,40,.03);
   }
-  *{box-sizing:border-box; margin:0; padding:0}
-  body{background:#cfd6de; font-family:'Malgun Gothic','맑은 고딕',sans-serif; color:var(--ink)}
-  .phone{max-width:412px; margin:0 auto; background:var(--bg); min-height:100vh; position:relative; padding-bottom:64px}
-  .topbar{background:var(--accent); color:#fff; padding:10px 16px; position:sticky; top:0; z-index:20}
-  .topbar h1{font-size:15px; font-weight:700; letter-spacing:-.3px}
-  .topbar .ts{font-size:11px; opacity:.85; margin-top:1px}
-  .screen{display:none; padding:12px 14px 20px}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:#e6e9ee;font-family:'Pretendard','Malgun Gothic',sans-serif;color:var(--ink);-webkit-font-smoothing:antialiased}
+  .num{font-variant-numeric:tabular-nums;font-feature-settings:'tnum' 1}
+  .phone{max-width:412px;margin:0 auto;background:var(--bg);min-height:100vh;position:relative;padding-bottom:66px}
+  .topbar{background:var(--card);border-bottom:1px solid var(--line);padding:12px 16px 11px;position:sticky;top:0;z-index:20}
+  .topbar h1{font-size:16px;font-weight:800;color:var(--navy);letter-spacing:-.4px}
+  .topbar .ts{font-size:11px;color:var(--hint);margin-top:2px;font-weight:500}
+  .screen{display:none;padding:14px 14px 22px}
   .screen.active{display:block}
-  .sec-title{font-size:13px; font-weight:700; color:var(--accent); margin:16px 2px 8px; display:flex; align-items:center; gap:6px}
-  .sec-title:first-child{margin-top:4px}
-  .card{background:var(--card); border:1px solid var(--line); border-radius:12px; padding:12px 13px; margin-bottom:10px}
-  .row{display:flex; align-items:center; gap:8px}
-  .between{justify-content:space-between}
-  .up{color:var(--up)} .down{color:var(--down)} .mute{color:var(--mute)}
-  .small{font-size:11px} .sub{color:var(--sub)}
-  .backlnk{font-size:12px; color:var(--accent2); cursor:pointer; margin-bottom:8px; display:inline-block; font-weight:600}
-  .badge{font-size:10px; font-weight:700; padding:2px 7px; border-radius:20px; display:inline-block; white-space:nowrap}
-  .b-new{background:#e6f4ea; color:#137a3a}
-  .b-lead{background:#e7eefb; color:#1c4fae}
-  .b-warn{background:#fdeee7; color:#b1481b}
-  .b-grey{background:#eef1f4; color:#6b7280}
-  .b-down{background:#fdecec; color:#b02020}
-  .traffic{display:flex; gap:10px; font-size:12px; font-weight:600}
-  .traffic span{display:flex; gap:3px; align-items:center}
-  .gauges{display:flex; gap:7px; margin:9px 0}
-  .gauge{flex:1; background:var(--chip); border-radius:8px; padding:6px 4px; text-align:center}
-  .gauge .lab{font-size:10px; color:var(--sub)}
-  .gauge .val{font-size:14px; font-weight:700; margin-top:1px}
-  .hero{border:2px solid #cde0d3; background:#f7fcf8}
-  .hero .rank{font-size:16px; font-weight:800}
-  .hero .score{font-size:26px; font-weight:800; color:var(--accent); line-height:1}
-  .reason{font-size:12px; color:#33433b; background:#eef7f0; border-radius:8px; padding:8px 9px; margin-top:8px; line-height:1.45}
-  .score{font-size:26px; font-weight:800; color:var(--accent); line-height:1}
-  /* 산업 랭킹 */
-  .irows{padding:2px 8px}
-  .irow{display:flex; align-items:center; gap:8px; padding:8px 4px; border-bottom:1px solid var(--line); cursor:pointer; font-size:13px}
-  .irow:last-child{border-bottom:none}
-  .irow .rk{width:16px; font-weight:800; color:var(--accent); text-align:center; font-size:12px}
-  .irow .nm{flex:1; font-weight:600}
-  .irow .op{width:74px; text-align:center}
-  .irow .sc2{width:28px; text-align:right; font-weight:800; color:var(--accent)}
-  .irow .dl{width:46px; text-align:right; font-size:11px}
-  .ihead{display:flex; gap:8px; padding:6px 4px; font-size:10px; color:var(--sub); font-weight:600; border-bottom:1px solid var(--line)}
-  .ihead .rk{width:16px} .ihead .nm{flex:1} .ihead .op{width:74px; text-align:center}
-  .ihead .sc2{width:28px; text-align:right} .ihead .dl{width:46px; text-align:right}
-  .moreBtn{width:100%; background:var(--card); border:1px solid var(--line); border-radius:10px; padding:11px; font-size:12.5px; font-weight:700; color:var(--accent2); cursor:pointer; margin-bottom:10px}
-  /* 의견 분포 */
-  .opbar{display:flex; gap:3px; height:26px; font-size:11px; font-weight:700}
-  .opbar .seg{display:flex; align-items:center; justify-content:center; border-radius:5px; color:#fff; min-width:30px}
-  .seg.buy{background:#16a34a} .seg.hold{background:#8a93a0} .seg.sell{background:#dc2626}
-  /* 툴팁 */
-  .tip{position:relative; cursor:help; text-decoration:underline dotted; text-underline-offset:2px; outline:none}
-  .tip.nobar{text-decoration:none}
-  .tbox{display:none; position:absolute; left:50%; transform:translateX(-50%); top:155%; width:168px; background:#1f2937; color:#fff; font-size:10.5px; font-weight:400; line-height:1.45; padding:7px 9px; border-radius:7px; z-index:60; text-align:left}
-  .tip:hover .tbox, .tip:focus .tbox{display:block}
+  .sect{display:flex;align-items:center;justify-content:space-between;margin:18px 2px 9px}
+  .sect.first{margin-top:6px}
+  .sect h2{font-size:13.5px;font-weight:800;color:var(--ink);letter-spacing:-.3px}
+  .sect .more{font-size:11.5px;font-weight:600;color:var(--accent);cursor:pointer;display:inline-flex;align-items:center;gap:2px}
+  .sect .tagm{font-size:11px;color:var(--hint);font-weight:600}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 15px;margin-bottom:11px;box-shadow:var(--shadow)}
+  .row{display:flex;align-items:center;gap:8px}.between{justify-content:space-between}
+  .up{color:var(--up)}.down{color:var(--down)}.mute{color:var(--hint)}
+  .small{font-size:11.5px}.sub{color:var(--sub)}
+  .backlnk{display:inline-flex;align-items:center;gap:3px;font-size:12.5px;color:var(--sub);font-weight:600;cursor:pointer;margin-bottom:11px}
+  .ic{width:22px;height:22px;display:block}.ic14{width:14px;height:14px;vertical-align:-2px}
+  .badge{font-size:10.5px;font-weight:700;padding:2.5px 8px;border-radius:7px;display:inline-block;white-space:nowrap;letter-spacing:-.2px}
+  .b-up{background:var(--up-soft);color:#0f6e43}
+  .b-info{background:var(--accent-soft);color:#1c4fae}
+  .b-amber{background:var(--amber-soft);color:#8a5a06}
+  .b-grey{background:var(--chip);color:#5b6573}
+  .b-down{background:var(--down-soft);color:#a52a2a}
+  .score{font-size:26px;font-weight:800;color:var(--navy);line-height:1;letter-spacing:-.5px}
+  /* 거시 카드 */
+  .mgrid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  .mcard{background:var(--card);border:1px solid var(--line);border-radius:13px;padding:11px 12px;box-shadow:var(--shadow)}
+  .mcard .ml{font-size:11px;color:var(--sub);font-weight:600}
+  .mcard .mv{font-size:18px;font-weight:800;margin:3px 0;letter-spacing:-.4px}
+  /* 뉴스 */
+  .news{display:flex;gap:10px;padding:11px 1px;border-bottom:1px solid var(--line);cursor:pointer;text-decoration:none;color:inherit}
+  .news:last-child{border-bottom:none}
+  .rg{flex-shrink:0;font-size:9.5px;font-weight:800;padding:2px 7px;border-radius:6px;height:fit-content;margin-top:1px;letter-spacing:.2px}
+  .rg.g{background:var(--accent-soft);color:#1c4fae}.rg.k{background:var(--up-soft);color:#0f6e43}
+  .news .nt{flex:1;min-width:0}
+  .news .nh{font-size:13px;font-weight:600;line-height:1.42;color:var(--ink)}
+  .news .nm{font-size:11px;color:var(--hint);margin-top:3px;font-weight:500}
+  .news .nx{color:#c2c9d2;align-self:center;flex-shrink:0}
+  /* 게이지 */
+  .gauges{display:flex;gap:8px;margin:11px 0}
+  .gauge{flex:1;background:var(--chip);border-radius:10px;padding:8px 5px;text-align:center}
+  .gauge .lab{font-size:10px;color:var(--sub);font-weight:600}
+  .gauge .val{font-size:15px;font-weight:800;margin-top:2px}
+  /* hero */
+  .hero{border:1px solid #cfe6d8;background:#f4fbf6}
+  .hero .rank{font-size:16px;font-weight:800;letter-spacing:-.3px}
+  .reason{font-size:12px;color:#33433b;background:#ebf6ef;border-radius:9px;padding:9px 10px;margin-top:9px;line-height:1.5}
   /* 사이클 국면 */
-  .phasetrack{display:flex; gap:3px; margin:9px 0 3px}
-  .pd{flex:1; text-align:center; font-size:9.5px; padding:5px 2px; border-radius:5px; background:#eef1f4; color:#8a93a0; font-weight:700}
-  .pd.cur{background:#16a34a; color:#fff}
-  .pd.cur.amber{background:#e0922b} .pd.cur.blue{background:#2f6fd0}
-  .phaselbl{font-size:11px; color:var(--sub)}
+  .phasetrack{display:flex;gap:4px;margin:11px 0 4px}
+  .pd{flex:1;text-align:center;font-size:10px;padding:6px 2px;border-radius:7px;background:var(--chip);color:var(--hint);font-weight:700}
+  .pd.cur{background:var(--up);color:#fff;box-shadow:0 1px 4px rgba(26,135,90,.28)}
+  .phaselbl{font-size:11.5px;color:var(--sub);font-weight:500}
+  /* 산업 랭킹 */
+  .irows{padding:3px 9px}
+  .irow{display:flex;align-items:center;gap:9px;padding:9px 3px;border-bottom:1px solid var(--line);cursor:pointer;font-size:13px}
+  .irow:last-child{border-bottom:none}
+  .irow .rk{width:17px;font-weight:800;color:var(--navy);text-align:center;font-size:12px}
+  .irow .nm{flex:1;font-weight:600}
+  .irow .op{width:74px;text-align:center}
+  .irow .sc2{width:30px;text-align:right;font-weight:800;color:var(--navy)}
+  .irow .dl{width:48px;text-align:right;font-size:11.5px;font-weight:600}
+  .ihead{display:flex;gap:9px;padding:7px 3px;font-size:10px;color:var(--hint);font-weight:700;border-bottom:1px solid var(--line2)}
+  .ihead .rk{width:17px}.ihead .nm{flex:1}.ihead .op{width:74px;text-align:center}
+  .ihead .sc2{width:30px;text-align:right}.ihead .dl{width:48px;text-align:right}
+  .moreBtn{width:100%;background:var(--card);border:1px solid var(--line);border-radius:11px;padding:12px;font-size:12.5px;font-weight:700;color:var(--accent);cursor:pointer;margin-bottom:11px;box-shadow:var(--shadow)}
+  /* 의견 분포 */
+  .opbar{display:flex;gap:4px;height:28px;font-size:11px;font-weight:700}
+  .opbar .seg{display:flex;align-items:center;justify-content:center;border-radius:7px;color:#fff;min-width:32px}
+  .seg.buy{background:var(--up)}.seg.hold{background:#94a0ad}.seg.sell{background:var(--down)}
+  /* 툴팁 */
+  .tip{position:relative;cursor:help;text-decoration:underline dotted;text-underline-offset:2px;outline:none}
+  .tip.nobar{text-decoration:none}
+  .tbox{display:none;position:absolute;left:50%;transform:translateX(-50%);top:160%;width:172px;background:var(--ink);color:#fff;font-size:10.5px;font-weight:400;line-height:1.45;padding:8px 10px;border-radius:8px;z-index:60;text-align:left;box-shadow:0 4px 14px rgba(0,0,0,.18)}
+  .tip:hover .tbox,.tip:focus .tbox{display:block}
   /* 분석 패키지 */
-  .pkg{background:#f3f8ff; border:1px solid #cfe0f5}
-  .pkg .pln{font-size:12px; padding:4px 0; line-height:1.45}
-  .pkg .pln b{color:var(--accent); margin-right:5px}
+  .pkg{background:#f4f8ff;border:1px solid #d8e4fb}
+  .pkg .pln{font-size:12px;padding:4px 0;line-height:1.5}
+  .pkg .pln b{color:var(--navy);margin-right:5px}
   /* 필터/타임라인/체크 */
-  .filters{display:flex; gap:7px; flex-wrap:wrap; margin-bottom:10px}
-  .filt{font-size:11.5px; font-weight:600; background:var(--card); border:1px solid var(--line); border-radius:20px; padding:5px 11px; color:var(--sub)}
-  .filt.on{background:var(--accent); color:#fff; border-color:var(--accent)}
-  .tl{font-size:12px; padding:7px 0; border-bottom:1px dashed var(--line); display:flex; justify-content:space-between; gap:8px}
+  .filters{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:11px}
+  .filt{font-size:11.5px;font-weight:600;background:var(--card);border:1px solid var(--line);border-radius:9px;padding:6px 11px;color:var(--sub);box-shadow:var(--shadow)}
+  .filt.on{background:var(--navy);color:#fff;border-color:var(--navy)}
+  .tl{font-size:12px;padding:8px 0;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:8px;align-items:center;cursor:pointer}
   .tl:last-child{border-bottom:none}
-  .check{font-size:12px; padding:5px 0; display:flex; gap:7px; align-items:flex-start}
-  .check .ok{color:var(--up)} .check .no{color:var(--mute)}
-  table.mini{width:100%; border-collapse:collapse; font-size:11.5px; margin-top:6px}
-  table.mini th{background:var(--chip); color:var(--sub); font-weight:600; padding:5px 6px; text-align:right; font-size:10.5px}
+  .check{font-size:12px;padding:5px 0;display:flex;gap:7px;align-items:flex-start}
+  .check .ok{color:var(--up)}.check .no{color:var(--hint)}
+  table.mini{width:100%;border-collapse:collapse;font-size:11.5px;margin-top:4px}
+  table.mini th{color:var(--hint);font-weight:700;padding:7px 6px;text-align:right;font-size:10px;border-bottom:1px solid var(--line2)}
   table.mini th:first-child{text-align:left}
-  table.mini td{padding:6px; border-bottom:1px solid var(--line); text-align:right}
-  table.mini td:first-child{text-align:left; font-weight:600}
-  .pos{color:var(--up)} .neg{color:var(--down)}
-  .scorecell{font-weight:800; color:var(--accent)}
+  table.mini td{padding:8px 6px;border-bottom:1px solid var(--line);text-align:right}
+  table.mini tr:last-child td{border-bottom:none}
+  table.mini td:first-child{text-align:left;font-weight:600}
+  .pos{color:var(--up)}.neg{color:var(--down)}
+  .scorecell{font-weight:800;color:var(--navy)}
   /* C1 카드 */
-  .rc-head{font-size:12px; color:var(--sub)}
-  .rc-name{font-size:14px; font-weight:700; margin:1px 0}
-  .rc-tp{font-size:13px; font-weight:600; margin:7px 0}
-  .rc-tp .arrow{color:var(--up)}
-  .yama{font-size:12.5px; font-weight:600; margin:6px 0 4px}
-  .grounds{font-size:11.5px; color:var(--sub); line-height:1.55; padding-left:2px}
-  .links{display:flex; gap:7px; margin-top:9px; flex-wrap:wrap}
-  .lnk{font-size:11px; font-weight:600; border:1px solid var(--line); border-radius:8px; padding:5px 9px; color:var(--accent2); background:#f7f9fc; cursor:pointer; display:flex; gap:4px; align-items:center}
-  .lnk.primary{background:#eef3fb; border-color:#cfe0f5}
-  .divider{height:1px; background:var(--line); margin:9px -13px}
-  .strong-border{border:1.5px solid #f0b9ab}
-  /* 거시 지표 카드 / 차트 */
-  .mgrid{display:grid; grid-template-columns:1fr 1fr; gap:9px}
-  .mcard{background:var(--card); border:1px solid var(--line); border-radius:12px; padding:10px 11px}
-  .mcard .ml{font-size:11px; color:var(--sub)}
-  .mcard .mv{font-size:18px; font-weight:800; margin:2px 0}
-  .mchart{background:var(--card); border:1px solid var(--line); border-radius:10px; padding:9px 10px; margin-bottom:9px}
-  .mchart .mh{font-size:12px; font-weight:700; display:flex; justify-content:space-between; align-items:baseline}
-  .mchart .mhv{font-weight:800; font-size:14px}
-  .cal{font-size:12px; padding:7px 0; border-bottom:1px dashed var(--line); display:flex; justify-content:space-between}
+  .rc-head{font-size:11.5px;color:var(--hint);font-weight:500}
+  .rc-name{font-size:14px;font-weight:700;margin:3px 0}
+  .rc-tp{font-size:13px;font-weight:600;margin:8px 0}
+  .yama{font-size:12.5px;font-weight:700;margin:7px 0 5px}
+  .grounds{font-size:11.5px;color:var(--sub);line-height:1.6;padding-left:2px}
+  .links{display:flex;gap:7px;margin-top:10px;flex-wrap:wrap}
+  .lnk{font-size:11px;font-weight:600;border:1px solid var(--line2);border-radius:9px;padding:6px 10px;color:var(--accent);background:#fff;cursor:pointer;display:inline-flex;gap:4px;align-items:center}
+  .lnk.primary{background:var(--accent-soft);border-color:#d6e3fb}
+  .divider{height:1px;background:var(--line);margin:10px -15px}
+  .strong-border{border:1px solid var(--up);box-shadow:0 0 0 3px var(--up-soft)}
+  /* 거시 차트 */
+  .mchart{background:var(--card);border:1px solid var(--line);border-radius:13px;padding:11px 12px;margin-bottom:10px;box-shadow:var(--shadow)}
+  .mchart .mh{font-size:12px;font-weight:700;display:flex;justify-content:space-between;align-items:baseline}
+  .mchart .mhv{font-weight:800;font-size:15px;letter-spacing:-.3px}
+  .cal{font-size:12px;padding:8px 0;border-bottom:1px solid var(--line);display:flex;justify-content:space-between}
   .cal:last-child{border-bottom:none}
-  .memo{background:#fff8ee; border:1px solid #f3e2c4; border-radius:10px; padding:10px 11px; font-size:12px; line-height:1.5; color:#6b4f1d}
-  .memo .tag{font-size:9.5px; font-weight:700; color:#9a7b32; background:#f6e9cf; padding:2px 6px; border-radius:6px; margin-left:5px}
+  .memo{background:var(--amber-soft);border:1px solid #f0deb6;border-radius:11px;padding:11px 12px;font-size:12px;line-height:1.55;color:#6b4f1d}
+  .memo .tag{font-size:9.5px;font-weight:800;color:#8a6516;background:#f3e3c2;padding:2px 7px;border-radius:6px;margin-left:5px}
   /* 종목 picker */
-  .indchips{display:flex; gap:6px; flex-wrap:wrap; margin-bottom:11px}
-  .indchip{font-size:11.5px; font-weight:600; padding:6px 11px; border-radius:20px; border:1px solid var(--line); background:var(--card); color:var(--sub); cursor:pointer}
-  .indchip.on{background:var(--accent); color:#fff; border-color:var(--accent)}
-  .srow{display:flex; align-items:center; justify-content:space-between; padding:11px 4px; border-bottom:1px solid var(--line); cursor:pointer}
+  .indchips{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:12px}
+  .indchip{font-size:11.5px;font-weight:600;padding:7px 12px;border-radius:9px;border:1px solid var(--line);background:var(--card);color:var(--sub);cursor:pointer;box-shadow:var(--shadow)}
+  .indchip.on{background:var(--navy);color:#fff;border-color:var(--navy)}
+  .srow{display:flex;align-items:center;justify-content:space-between;padding:12px 3px;border-bottom:1px solid var(--line);cursor:pointer}
   .srow:last-child{border-bottom:none}
-  .srow .snm{font-size:13.5px; font-weight:700}
-  .srow .scode{font-size:11px; color:var(--sub); margin-left:6px; font-weight:400}
-  .srow .sp{font-size:13px; font-weight:700; text-align:right}
-  /* 종목 기간 토글 */
-  .periods{display:flex; gap:5px; margin-bottom:9px}
-  .pbtn{flex:1; text-align:center; font-size:11px; font-weight:700; padding:7px 0; border:1px solid var(--line); border-radius:7px; background:var(--card); color:var(--sub); cursor:pointer}
-  .pbtn.on{background:var(--accent); color:#fff; border-color:var(--accent)}
-  .amtrow{display:flex; justify-content:space-between; font-size:11.5px; margin-top:8px}
-  .amtrow b{color:var(--accent)}
+  .srow .snm{font-size:13.5px;font-weight:700}
+  .srow .scode{font-size:11px;color:var(--hint);margin-left:6px;font-weight:500}
+  .srow .sp{font-size:13.5px;font-weight:800;text-align:right;letter-spacing:-.3px}
+  /* 기간 토글 */
+  .periods{display:flex;gap:5px;margin-bottom:11px;background:var(--chip);padding:4px;border-radius:11px}
+  .pbtn{flex:1;text-align:center;font-size:11px;font-weight:700;padding:7px 0;border:none;border-radius:8px;background:transparent;color:var(--sub);cursor:pointer}
+  .pbtn.on{background:var(--card);color:var(--navy);box-shadow:var(--shadow)}
+  .amtrow{display:flex;justify-content:space-between;font-size:11.5px;margin-top:9px}
+  .amtrow b{color:var(--navy)}
   /* 탭바 */
-  .tabbar{position:fixed; bottom:0; left:50%; transform:translateX(-50%); width:100%; max-width:412px; background:#fff; border-top:1px solid var(--line); display:flex; z-index:30}
-  .tab{flex:1; text-align:center; padding:8px 0 9px; font-size:10.5px; color:var(--mute); cursor:pointer; border:none; background:none}
-  .tab.on{color:var(--accent); font-weight:700}
-  .tab .ic{font-size:18px; display:block; line-height:1.1}
-  .hint{font-size:10.5px; color:var(--mute); text-align:center; margin-top:6px}
-  .sr-only{position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0,0,0,0)}
+  .tabbar{position:fixed;bottom:0;left:50%;transform:translateX(-50%);width:100%;max-width:412px;background:var(--card);border-top:1px solid var(--line);display:flex;z-index:30}
+  .tab{flex:1;display:flex;flex-direction:column;align-items:center;gap:3px;padding:9px 0 10px;font-size:10.5px;color:var(--hint);cursor:pointer;border:none;background:none;font-weight:600}
+  .tab.on{color:var(--accent)}
+  .hint{font-size:10.5px;color:var(--hint);text-align:center;margin-top:7px;line-height:1.5}
+  .sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}
 </style>
 </head>
 <body>
+<svg style="position:absolute;width:0;height:0" aria-hidden="true"><defs>
+  <symbol id="ic-home" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V20h14V9.5"/></symbol>
+  <symbol id="ic-macro" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h3l3-7 4 14 3-7h5"/></symbol>
+  <symbol id="ic-ind" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 20V11M12 20V5M19 20v-6"/><path d="M3 20.5h18"/></symbol>
+  <symbol id="ic-stock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 16l5-5 4 4 8-8"/><path d="M16 7h5v5"/></symbol>
+  <symbol id="ic-report" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h8l5 5v13H6z"/><path d="M14 3v5h5"/><path d="M9 13h6M9 17h4"/></symbol>
+  <symbol id="ic-ext" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 5h5v5M19 5l-8 8M18 14v5H5V6h5"/></symbol>
+  <symbol id="ic-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></symbol>
+</defs></svg>
+
 <div class="phone">
-  <h2 class="sr-only">국내 주식 산업 모니터링 모바일 대시보드 프로토타입 — 요약·거시·산업·종목·리포트 5탭, 거시→산업→종목 깔때기 구조</h2>
+  <h2 class="sr-only">국내 주식 산업 모니터링 모바일 대시보드 프로토타입 — 클린 라이트 디자인. 요약·거시·산업·종목·리포트 5탭, 거시→산업→종목 깔때기 구조</h2>
   <div class="topbar">
     <h1>산업 모니터</h1>
-    <div class="ts">주간 트렌드 · 데이터 기준 06-12 (금) 18:00</div>
+    <div class="ts num">주간 트렌드 · 데이터 기준 06-12 (금) 18:00</div>
   </div>
 
-  <!-- ===================== 요약 (홈) ===================== -->
+  <!-- ===================== 요약 ===================== -->
   <section class="screen active" id="home" data-tab="요약">
-    <div class="sec-title">◆ 거시 현황 <span class="lnk" style="margin-left:auto" onclick="go('macro')">전체 ›</span></div>
+    <div class="sect first"><h2>거시 현황</h2><span class="more" onclick="go('macro')">전체 <svg class="ic14"><use href="#ic-chev"/></svg></span></div>
     <div class="mgrid">
-      <div class="mcard"><div class="ml">기준금리</div><div class="mv">2.75% <span class="mute small">─</span></div><div class="small sub">금통위 동결</div></div>
-      <div class="mcard"><div class="ml">원/달러</div><div class="mv">1,372 <span class="up small">▲</span></div><div class="small sub">1M +1.8%</div></div>
-      <div class="mcard"><div class="ml">수출 YoY</div><div class="mv up">+3.4% ▲</div><div class="small sub">반도체 +28%</div></div>
-      <div class="mcard"><div class="ml">CPI YoY</div><div class="mv">2.1% <span class="mute small">─</span></div><div class="small sub">근원 2.0%</div></div>
+      <div class="mcard"><div class="ml">기준금리</div><div class="mv num">2.75% <span class="mute small">─</span></div><div class="small sub">금통위 동결</div></div>
+      <div class="mcard"><div class="ml">원/달러</div><div class="mv num">1,372 <span class="up small">▲</span></div><div class="small sub num">1M +1.8%</div></div>
+      <div class="mcard"><div class="ml">수출 YoY</div><div class="mv num up">+3.4% ▲</div><div class="small sub">반도체 +28%</div></div>
+      <div class="mcard"><div class="ml">CPI YoY</div><div class="mv num">2.1% <span class="mute small">─</span></div><div class="small sub">근원 2.0%</div></div>
     </div>
 
-    <div class="sec-title">◆ 이번 주 국면 전환</div>
+    <div class="sect"><h2>오늘의 경제 헤드라인</h2><span class="tagm">5선 · 글로벌+국내</span></div>
+    <div class="card" style="padding:3px 15px">
+      <a class="news" href="https://www.reuters.com" target="_blank" rel="noopener">
+        <span class="rg g">글로벌</span>
+        <span class="nt"><div class="nh">美 연준 9월 FOMC 금리 동결…파월 "데이터 의존"</div><div class="nm num">Reuters · 2시간 전</div></span>
+        <svg class="ic14 nx"><use href="#ic-ext"/></svg>
+      </a>
+      <a class="news" href="https://www.yna.co.kr" target="_blank" rel="noopener">
+        <span class="rg k">국내</span>
+        <span class="nt"><div class="nh">8월 수출 +3.4%…반도체·조선이 견인</div><div class="nm num">연합뉴스 · 5시간 전</div></span>
+        <svg class="ic14 nx"><use href="#ic-ext"/></svg>
+      </a>
+      <a class="news" href="https://www.bloomberg.com" target="_blank" rel="noopener">
+        <span class="rg g">글로벌</span>
+        <span class="nt"><div class="nh">엔비디아, AI 데이터센터 수요에 시총 4조달러 회복</div><div class="nm num">Bloomberg · 6시간 전</div></span>
+        <svg class="ic14 nx"><use href="#ic-ext"/></svg>
+      </a>
+      <a class="news" href="https://www.hankyung.com" target="_blank" rel="noopener">
+        <span class="rg k">국내</span>
+        <span class="nt"><div class="nh">한은 기준금리 2.75% 동결…"성장 하방 점검"</div><div class="nm num">한국경제 · 8시간 전</div></span>
+        <svg class="ic14 nx"><use href="#ic-ext"/></svg>
+      </a>
+      <a class="news" href="https://www.reuters.com" target="_blank" rel="noopener">
+        <span class="rg g">글로벌</span>
+        <span class="nt"><div class="nh">국제유가 WTI 78달러…중동 공급 차질 우려</div><div class="nm num">Reuters · 9시간 전</div></span>
+        <svg class="ic14 nx"><use href="#ic-ext"/></svg>
+      </a>
+    </div>
+
+    <div class="sect"><h2>이번 주 국면 전환</h2></div>
     <div class="card">
-      <div class="tl" onclick="go('ind-detail')" style="cursor:pointer"><span><b class="up">▲ 전환 진입</b> 조선 <span class="badge b-new">바닥→전환</span></span><span class="sub">4주 추세</span></div>
-      <div class="tl" onclick="go('ind-detail')" style="cursor:pointer"><span><b class="up">▲ 확장 가속</b> 전력기기 <span class="badge b-new">전환→확장</span></span><span class="sub">3주 추세</span></div>
-      <div class="tl" onclick="go('ind-detail')" style="cursor:pointer"><span><b class="down">▼ 둔화</b> 화장품 <span class="badge b-warn">확장→둔화</span></span><span class="sub">후행성</span></div>
+      <div class="tl" onclick="go('ind-detail')"><span><b class="up">▲ 전환 진입</b> 조선 <span class="badge b-up">바닥→전환</span></span><span class="sub small">4주 추세</span></div>
+      <div class="tl" onclick="go('ind-detail')"><span><b class="up">▲ 확장 가속</b> 전력기기 <span class="badge b-up">전환→확장</span></span><span class="sub small">3주 추세</span></div>
+      <div class="tl" onclick="go('ind-detail')"><span><b class="down">▼ 둔화</b> 화장품 <span class="badge b-amber">확장→둔화</span></span><span class="sub small">후행성</span></div>
     </div>
 
-    <div class="sec-title">◆ 지금 전환 중인 산업</div>
+    <div class="sect"><h2>지금 전환 중인 산업</h2></div>
     <div class="card hero">
       <div class="row between">
         <div class="row" style="gap:9px">
           <span class="rank">조선</span>
-          <span class="tip nobar" tabindex="0"><span class="badge b-lead">최초전환</span><span class="tbox">섹터 Breadth가 마이너스→플러스로 막 전환. 다운턴→업턴 초입 신호.</span></span>
+          <span class="tip nobar" tabindex="0"><span class="badge b-info">최초전환</span><span class="tbox">섹터 Breadth가 마이너스→플러스로 막 전환. 다운턴→업턴 초입 신호.</span></span>
         </div>
-        <span class="score">87</span>
+        <span class="score num">87</span>
       </div>
       <div class="phasetrack">
         <span class="pd">침체</span><span class="pd">바닥</span><span class="pd cur">전환</span><span class="pd">확장</span><span class="pd">둔화</span>
       </div>
-      <div class="phaselbl" style="margin-bottom:4px">사이클 국면 <b class="up">업턴 전환</b> — 다운턴에서 막 돌아섬</div>
+      <div class="phaselbl" style="margin-bottom:5px">사이클 국면 <b class="up">업턴 전환</b> — 다운턴에서 막 돌아섬</div>
       <div class="gauges">
-        <div class="gauge"><div class="lab"><span class="tip" tabindex="0">Breadth<span class="tbox">상향 확산도 — 섹터 리포트 중 (목표가 상향−하향)÷전체. +1에 가까울수록 '다같이 오른다'는 뜻.</span></span></div><div class="val up">+0.78</div></div>
-        <div class="gauge"><div class="lab"><span class="tip" tabindex="0">Magnitude<span class="tbox">상향 폭 — 목표가를 평균 몇 % 올렸는지. 상향의 세기.</span></span></div><div class="val up">+9.4%</div></div>
-        <div class="gauge"><div class="lab"><span class="tip" tabindex="0">Upside Gap<span class="tbox">상승 여력 — 목표가가 현재가보다 평균 몇 % 높은지. 남은 진입 여력.</span></span></div><div class="val">18%</div></div>
+        <div class="gauge"><div class="lab"><span class="tip" tabindex="0">Breadth<span class="tbox">상향 확산도 — 섹터 리포트 중 (목표가 상향−하향)÷전체. +1에 가까울수록 '다같이 오른다'는 뜻.</span></span></div><div class="val num up">+0.78</div></div>
+        <div class="gauge"><div class="lab"><span class="tip" tabindex="0">Magnitude<span class="tbox">상향 폭 — 목표가를 평균 몇 % 올렸는지. 상향의 세기.</span></span></div><div class="val num up">+9.4%</div></div>
+        <div class="gauge"><div class="lab"><span class="tip" tabindex="0">Upside Gap<span class="tbox">상승 여력 — 목표가가 현재가보다 평균 몇 % 높은지. 남은 진입 여력.</span></span></div><div class="val num">18%</div></div>
       </div>
       <div class="reason">"4주간 12건 중 11건 목표가 상향. 신조선가 상승이 컨센서스에 반영되기 시작 — EPS 추정치 리비전이 먼저 돌며 발굴 신호."</div>
-      <div class="row between" style="margin-top:9px">
-        <span class="small sub">대표기업·ETF·리포트 패키지 →</span>
-        <span class="lnk primary" onclick="go('ind-detail')">산업 상세 ›</span>
+      <div class="row between" style="margin-top:10px">
+        <span class="small sub">대표기업·ETF·리포트 패키지</span>
+        <span class="lnk primary" onclick="go('ind-detail')">산업 상세 <svg class="ic14"><use href="#ic-chev"/></svg></span>
       </div>
     </div>
 
-    <div class="sec-title">◆ 산업 트렌드 순위 <span class="lnk" style="margin-left:auto" onclick="go('ind-list')">전체 ›</span></div>
+    <div class="sect"><h2>산업 트렌드 순위</h2><span class="more" onclick="go('ind-list')">전체 <svg class="ic14"><use href="#ic-chev"/></svg></span></div>
     <div class="card irows">
-      <div class="irow" onclick="go('ind-detail')"><span class="rk">1</span><span class="nm">조선</span><span class="op"><span class="badge b-new">매수우위</span></span><span class="sc2">87</span><span class="dl up">+9.4%</span></div>
-      <div class="irow" onclick="go('ind-detail')"><span class="rk">2</span><span class="nm">전력기기·전선</span><span class="op"><span class="badge b-new">매수우위</span></span><span class="sc2">81</span><span class="dl up">+7.1%</span></div>
-      <div class="irow" onclick="go('ind-detail')"><span class="rk">3</span><span class="nm">방산·우주항공</span><span class="op"><span class="badge b-new">매수우위</span></span><span class="sc2">76</span><span class="dl up">+6.3%</span></div>
+      <div class="irow" onclick="go('ind-detail')"><span class="rk num">1</span><span class="nm">조선</span><span class="op"><span class="badge b-up">매수우위</span></span><span class="sc2 num">87</span><span class="dl num up">+9.4%</span></div>
+      <div class="irow" onclick="go('ind-detail')"><span class="rk num">2</span><span class="nm">전력기기·전선</span><span class="op"><span class="badge b-up">매수우위</span></span><span class="sc2 num">81</span><span class="dl num up">+7.1%</span></div>
+      <div class="irow" onclick="go('ind-detail')"><span class="rk num">3</span><span class="nm">방산·우주항공</span><span class="op"><span class="badge b-up">매수우위</span></span><span class="sc2 num">76</span><span class="dl num up">+6.3%</span></div>
     </div>
 
-    <div class="sec-title">◆ 최신 애널리스트 리포트 <span class="lnk" style="margin-left:auto" onclick="go('reports')">전체 ›</span></div>
+    <div class="sect"><h2>최신 애널리스트 리포트</h2><span class="more" onclick="go('reports')">전체 <svg class="ic14"><use href="#ic-chev"/></svg></span></div>
     <div class="card" style="cursor:pointer" onclick="go('reports')">
-      <div class="rc-head">06-12 18:02 · 조선 · 한화오션</div>
-      <div class="rc-name">장문수 · 현대차증권 <span class="badge b-lead">★워치</span></div>
-      <div class="rc-tp">목표가 38,000 <span class="arrow">→</span> 45,000 <b class="up">(+18%)</b> · 매수</div>
+      <div class="rc-head num">06-12 18:02 · 조선 · 한화오션</div>
+      <div class="rc-name">장문수 · 현대차증권 <span class="badge b-info">★ 워치</span></div>
+      <div class="rc-tp num">목표가 38,000 → 45,000 <b class="up">(+18%)</b> · 매수</div>
     </div>
   </section>
 
   <!-- ===================== 거시 ===================== -->
   <section class="screen" id="macro" data-tab="거시">
-    <div class="sec-title">◆ 핵심 지표</div>
+    <div class="sect first"><h2>핵심 지표</h2></div>
     <div class="mgrid">
-      <div class="mcard"><div class="ml">기준금리</div><div class="mv">2.75% <span class="mute small">─</span></div><div class="small sub">6/12 금통위 동결</div></div>
-      <div class="mcard"><div class="ml">원/달러</div><div class="mv">1,372 <span class="up small">▲</span></div><div class="small sub">1개월 +1.8%</div></div>
-      <div class="mcard"><div class="ml">수출 YoY</div><div class="mv up">+3.4% ▲</div><div class="small sub">반도체 +28%</div></div>
-      <div class="mcard"><div class="ml">CPI YoY</div><div class="mv">2.1% <span class="mute small">─</span></div><div class="small sub">근원 2.0%</div></div>
+      <div class="mcard"><div class="ml">기준금리</div><div class="mv num">2.75% <span class="mute small">─</span></div><div class="small sub">6/12 금통위 동결</div></div>
+      <div class="mcard"><div class="ml">원/달러</div><div class="mv num">1,372 <span class="up small">▲</span></div><div class="small sub num">1개월 +1.8%</div></div>
+      <div class="mcard"><div class="ml">수출 YoY</div><div class="mv num up">+3.4% ▲</div><div class="small sub">반도체 +28%</div></div>
+      <div class="mcard"><div class="ml">CPI YoY</div><div class="mv num">2.1% <span class="mute small">─</span></div><div class="small sub">근원 2.0%</div></div>
     </div>
 
-    <div class="sec-title">◆ 지표별 추이 (최근 12개월)</div>
+    <div class="sect"><h2>지표별 추이</h2><span class="tagm">최근 12개월</span></div>
 
     <div class="mchart">
-      <div class="mh"><span>기준금리 (%)</span><span class="mhv">2.75</span></div>
-      <svg viewBox="0 0 340 78" width="100%" role="img" aria-label="기준금리 12개월 추이: 3.50에서 2.75로 인하">
-        <text x="2" y="16" font-size="9" fill="#9aa3ad">3.50</text>
-        <text x="2" y="44" font-size="9" fill="#9aa3ad">3.13</text>
-        <text x="2" y="72" font-size="9" fill="#9aa3ad">2.75</text>
-        <line x1="34" y1="12" x2="338" y2="12" stroke="#f0f2f5"/><line x1="34" y1="40" x2="338" y2="40" stroke="#f0f2f5"/><line x1="34" y1="68" x2="338" y2="68" stroke="#eef0f3"/>
-        <polyline points="34,14 90,14 140,30 190,30 240,52 290,52 338,68" fill="none" stroke="#0b3d66" stroke-width="2.2"/>
-        <circle cx="338" cy="68" r="3" fill="#0b3d66"/>
+      <div class="mh"><span>기준금리 (%)</span><span class="mhv num">2.75</span></div>
+      <svg viewBox="0 0 340 78" width="100%" role="img" aria-label="기준금리 12개월 추이 3.50에서 2.75로 인하">
+        <text x="2" y="16" font-size="9" fill="#a3acb8">3.50</text><text x="2" y="44" font-size="9" fill="#a3acb8">3.13</text><text x="2" y="72" font-size="9" fill="#a3acb8">2.75</text>
+        <line x1="34" y1="12" x2="338" y2="12" stroke="#f1f3f6"/><line x1="34" y1="40" x2="338" y2="40" stroke="#f1f3f6"/><line x1="34" y1="68" x2="338" y2="68" stroke="#eef0f3"/>
+        <polyline points="34,14 90,14 140,30 190,30 240,52 290,52 338,68" fill="none" stroke="#16325c" stroke-width="2.2" stroke-linejoin="round"/>
+        <circle cx="338" cy="68" r="3" fill="#16325c"/>
       </svg>
-      <div class="small sub">3.50 → 2.75, 3회 인하 · 다음 금통위 7/11</div>
+      <div class="small sub num">3.50 → 2.75, 3회 인하 · 다음 금통위 7/11</div>
     </div>
 
     <div class="mchart">
-      <div class="mh"><span>원/달러 (₩)</span><span class="mhv up">1,372 ▲</span></div>
-      <svg viewBox="0 0 340 78" width="100%" role="img" aria-label="원달러 환율 12개월 우상향, 1,372">
-        <text x="2" y="16" font-size="9" fill="#9aa3ad">1,390</text>
-        <text x="2" y="44" font-size="9" fill="#9aa3ad">1,320</text>
-        <text x="2" y="72" font-size="9" fill="#9aa3ad">1,250</text>
-        <line x1="40" y1="12" x2="338" y2="12" stroke="#f0f2f5"/><line x1="40" y1="40" x2="338" y2="40" stroke="#f0f2f5"/><line x1="40" y1="68" x2="338" y2="68" stroke="#eef0f3"/>
-        <polyline points="40,60 90,55 140,58 190,44 240,40 290,28 338,22" fill="none" stroke="#b1481b" stroke-width="2.2"/>
-        <circle cx="338" cy="22" r="3" fill="#b1481b"/>
+      <div class="mh"><span>원/달러 (₩)</span><span class="mhv num up">1,372 ▲</span></div>
+      <svg viewBox="0 0 340 78" width="100%" role="img" aria-label="원달러 환율 우상향 1372">
+        <text x="2" y="16" font-size="9" fill="#a3acb8">1,390</text><text x="2" y="44" font-size="9" fill="#a3acb8">1,320</text><text x="2" y="72" font-size="9" fill="#a3acb8">1,250</text>
+        <line x1="40" y1="12" x2="338" y2="12" stroke="#f1f3f6"/><line x1="40" y1="40" x2="338" y2="40" stroke="#f1f3f6"/><line x1="40" y1="68" x2="338" y2="68" stroke="#eef0f3"/>
+        <polyline points="40,60 90,55 140,58 190,44 240,40 290,28 338,22" fill="none" stroke="#b5790d" stroke-width="2.2" stroke-linejoin="round"/>
+        <circle cx="338" cy="22" r="3" fill="#b5790d"/>
       </svg>
-      <div class="small sub">연저점 1,288 → 1,372 · 수출주 우호</div>
+      <div class="small sub num">연저점 1,288 → 1,372 · 수출주 우호</div>
     </div>
 
     <div class="mchart">
-      <div class="mh"><span>수출 YoY (%)</span><span class="mhv up">+3.4 ▲</span></div>
+      <div class="mh"><span>수출 YoY (%)</span><span class="mhv num up">+3.4 ▲</span></div>
       <svg viewBox="0 0 340 78" width="100%" role="img" aria-label="수출 증감률 마이너스에서 플러스 전환">
-        <text x="2" y="16" font-size="9" fill="#9aa3ad">+8</text>
-        <text x="2" y="44" font-size="9" fill="#9aa3ad">0</text>
-        <text x="2" y="72" font-size="9" fill="#9aa3ad">−8</text>
-        <line x1="28" y1="40" x2="338" y2="40" stroke="#cdd5de"/>
-        <polyline points="28,62 78,66 128,54 178,46 228,44 288,34 338,28" fill="none" stroke="#16a34a" stroke-width="2.2"/>
-        <circle cx="338" cy="28" r="3" fill="#16a34a"/>
+        <text x="2" y="16" font-size="9" fill="#a3acb8">+8</text><text x="6" y="44" font-size="9" fill="#a3acb8">0</text><text x="2" y="72" font-size="9" fill="#a3acb8">−8</text>
+        <line x1="28" y1="40" x2="338" y2="40" stroke="#d7dde4"/>
+        <polyline points="28,62 78,66 128,54 178,46 228,44 288,34 338,28" fill="none" stroke="#1a875a" stroke-width="2.2" stroke-linejoin="round"/>
+        <circle cx="338" cy="28" r="3" fill="#1a875a"/>
       </svg>
-      <div class="small sub">−5.1% → +3.4%, 3월 플러스 전환 · 반도체 견인</div>
+      <div class="small sub num">−5.1% → +3.4%, 3월 플러스 전환 · 반도체 견인</div>
     </div>
 
     <div class="mchart">
-      <div class="mh"><span>CPI YoY (%)</span><span class="mhv">2.1 <span class="mute small">─</span></span></div>
+      <div class="mh"><span>CPI YoY (%)</span><span class="mhv num">2.1 <span class="mute small">─</span></span></div>
       <svg viewBox="0 0 340 78" width="100%" role="img" aria-label="소비자물가 3.1에서 2.1로 둔화">
-        <text x="2" y="16" font-size="9" fill="#9aa3ad">3.2</text>
-        <text x="2" y="44" font-size="9" fill="#9aa3ad">2.6</text>
-        <text x="2" y="72" font-size="9" fill="#9aa3ad">2.0</text>
-        <line x1="28" y1="12" x2="338" y2="12" stroke="#f0f2f5"/><line x1="28" y1="40" x2="338" y2="40" stroke="#f0f2f5"/><line x1="28" y1="68" x2="338" y2="68" stroke="#eef0f3"/>
-        <polyline points="28,18 78,24 128,30 178,38 228,46 288,58 338,62" fill="none" stroke="#0b3d66" stroke-width="2.2"/>
-        <circle cx="338" cy="62" r="3" fill="#0b3d66"/>
+        <text x="2" y="16" font-size="9" fill="#a3acb8">3.2</text><text x="2" y="44" font-size="9" fill="#a3acb8">2.6</text><text x="2" y="72" font-size="9" fill="#a3acb8">2.0</text>
+        <line x1="28" y1="12" x2="338" y2="12" stroke="#f1f3f6"/><line x1="28" y1="40" x2="338" y2="40" stroke="#f1f3f6"/><line x1="28" y1="68" x2="338" y2="68" stroke="#eef0f3"/>
+        <polyline points="28,18 78,24 128,30 178,38 228,46 288,58 338,62" fill="none" stroke="#16325c" stroke-width="2.2" stroke-linejoin="round"/>
+        <circle cx="338" cy="62" r="3" fill="#16325c"/>
       </svg>
-      <div class="small sub">3.1% → 2.1% 둔화 · 금리 인하 여력</div>
+      <div class="small sub num">3.1% → 2.1% 둔화 · 금리 인하 여력</div>
     </div>
 
-    <div class="sec-title">◆ 경제 캘린더 (예정)</div>
+    <div class="sect"><h2>경제 캘린더</h2><span class="tagm">예정</span></div>
     <div class="card">
-      <div class="cal"><span>6/14 (월) 수출입 동향 (관세청)</span><span class="sub">관심</span></div>
-      <div class="cal"><span>7/02 (수) 6월 CPI (통계청)</span><span class="sub">★</span></div>
-      <div class="cal"><span>7/11 (금) 금통위 금리 결정</span><span class="sub">★★</span></div>
+      <div class="cal"><span class="num">6/14 (월) 수출입 동향 (관세청)</span><span class="sub small">관심</span></div>
+      <div class="cal"><span class="num">7/02 (수) 6월 CPI (통계청)</span><span class="sub small">★</span></div>
+      <div class="cal"><span class="num">7/11 (금) 금통위 금리 결정</span><span class="sub small">★★</span></div>
     </div>
 
-    <div class="sec-title">◆ 산업 연결 메모 <span class="badge b-grey">룰 기반</span></div>
+    <div class="sect"><h2>산업 연결 메모</h2><span class="badge b-grey">룰 기반</span></div>
     <div class="memo">
       "수출 개선이 조선·반도체 Breadth 상승과 동행 — 시그널 신뢰도 보강."
       <span class="tag">서술만 · 스코어 미반영</span>
@@ -282,96 +328,94 @@
     <div class="hint">거시는 신호 엔진에 연결하지 않음 (docs/04 관절①). 국면 판단은 사용자 몫.</div>
   </section>
 
-  <!-- ===================== 산업 (랜딩 = 트렌드 순위) ===================== -->
+  <!-- ===================== 산업 (랜딩) ===================== -->
   <section class="screen" id="ind-list" data-tab="산업">
-    <div class="sec-title">◆ 산업 트렌드 순위 <span class="sub small" style="font-weight:400; margin-left:auto">주간 · 전체 31</span></div>
+    <div class="sect first"><h2>산업 트렌드 순위</h2><span class="tagm">주간 · 전체 31</span></div>
     <div class="card irows">
       <div class="ihead"><span class="rk"></span><span class="nm">산업</span><span class="op">종합 의견</span><span class="sc2">점수</span><span class="dl">목표가</span></div>
-      <div class="irow" onclick="go('ind-detail')"><span class="rk">1</span><span class="nm">조선</span><span class="op"><span class="badge b-new">매수우위</span></span><span class="sc2">87</span><span class="dl up">+9.4%</span></div>
-      <div class="irow" onclick="go('ind-detail')"><span class="rk">2</span><span class="nm">전력기기·전선</span><span class="op"><span class="badge b-new">매수우위</span></span><span class="sc2">81</span><span class="dl up">+7.1%</span></div>
-      <div class="irow" onclick="go('ind-detail')"><span class="rk">3</span><span class="nm">방산·우주항공</span><span class="op"><span class="badge b-new">매수우위</span></span><span class="sc2">76</span><span class="dl up">+6.3%</span></div>
-      <div class="irow" onclick="go('ind-detail')"><span class="rk">4</span><span class="nm">반도체 (대형)</span><span class="op"><span class="badge b-new">매수우위</span></span><span class="sc2">73</span><span class="dl up">+5.0%</span></div>
-      <div class="irow" onclick="go('ind-detail')"><span class="rk">5</span><span class="nm">제약·바이오</span><span class="op"><span class="badge b-warn">혼조</span></span><span class="sc2">68</span><span class="dl up">+3.2%</span></div>
+      <div class="irow" onclick="go('ind-detail')"><span class="rk num">1</span><span class="nm">조선</span><span class="op"><span class="badge b-up">매수우위</span></span><span class="sc2 num">87</span><span class="dl num up">+9.4%</span></div>
+      <div class="irow" onclick="go('ind-detail')"><span class="rk num">2</span><span class="nm">전력기기·전선</span><span class="op"><span class="badge b-up">매수우위</span></span><span class="sc2 num">81</span><span class="dl num up">+7.1%</span></div>
+      <div class="irow" onclick="go('ind-detail')"><span class="rk num">3</span><span class="nm">방산·우주항공</span><span class="op"><span class="badge b-up">매수우위</span></span><span class="sc2 num">76</span><span class="dl num up">+6.3%</span></div>
+      <div class="irow" onclick="go('ind-detail')"><span class="rk num">4</span><span class="nm">반도체 (대형)</span><span class="op"><span class="badge b-up">매수우위</span></span><span class="sc2 num">73</span><span class="dl num up">+5.0%</span></div>
+      <div class="irow" onclick="go('ind-detail')"><span class="rk num">5</span><span class="nm">제약·바이오</span><span class="op"><span class="badge b-amber">혼조</span></span><span class="sc2 num">68</span><span class="dl num up">+3.2%</span></div>
     </div>
     <button class="moreBtn" onclick="toggleAll()"><span id="moreCaret">▾</span> 6~31위 전체 펼치기</button>
     <div id="allInd" style="display:none">
       <div class="card irows">
-        <div class="irow" onclick="go('ind-detail')"><span class="rk">6</span><span class="nm">2차전지</span><span class="op"><span class="badge b-warn">혼조</span></span><span class="sc2">64</span><span class="dl up">+2.1%</span></div>
-        <div class="irow" onclick="go('ind-detail')"><span class="rk">7</span><span class="nm">자동차·부품</span><span class="op"><span class="badge b-new">매수우위</span></span><span class="sc2">61</span><span class="dl up">+2.8%</span></div>
-        <div class="irow" onclick="go('ind-detail')"><span class="rk">8</span><span class="nm">기계·로봇</span><span class="op"><span class="badge b-grey">중립</span></span><span class="sc2">58</span><span class="dl up">+1.4%</span></div>
-        <div class="irow" onclick="go('ind-detail')"><span class="rk">9</span><span class="nm">인터넷·플랫폼</span><span class="op"><span class="badge b-new">매수우위</span></span><span class="sc2">55</span><span class="dl up">+2.0%</span></div>
-        <div class="irow" onclick="go('ind-detail')"><span class="rk">10</span><span class="nm">반도체 소부장</span><span class="op"><span class="badge b-new">매수우위</span></span><span class="sc2">53</span><span class="dl up">+3.1%</span></div>
-        <div class="irow" onclick="go('ind-detail')"><span class="rk">11</span><span class="nm">화학·석유화학</span><span class="op"><span class="badge b-grey">중립</span></span><span class="sc2">49</span><span class="dl up">+0.6%</span></div>
-        <div class="irow" onclick="go('ind-detail')"><span class="rk">12</span><span class="nm">철강·비철금속</span><span class="op"><span class="badge b-grey">중립</span></span><span class="sc2">47</span><span class="dl up">+0.4%</span></div>
-        <div class="irow" onclick="go('ind-detail')"><span class="rk">13</span><span class="nm">음식료·담배</span><span class="op"><span class="badge b-grey">중립</span></span><span class="sc2">45</span><span class="dl up">+0.9%</span></div>
-        <div class="irow" onclick="go('ind-detail')"><span class="rk">…</span><span class="nm">증권·은행·보험·건설·게임·엔터 …</span><span class="op"><span class="badge b-grey">중립</span></span><span class="sc2 mute">43~26</span><span class="dl mute"> </span></div>
-        <div class="irow" onclick="go('ind-detail')"><span class="rk">26</span><span class="nm">화장품</span><span class="op"><span class="badge b-down">하향우위</span></span><span class="sc2">24</span><span class="dl down">−3.1%</span></div>
-        <div class="irow" onclick="go('ind-detail')"><span class="rk">27+</span><span class="nm">디스플레이·의류·리츠 등</span><span class="op"><span class="badge b-grey">데이터 부족</span></span><span class="sc2 mute">—</span><span class="dl mute">—</span></div>
+        <div class="irow" onclick="go('ind-detail')"><span class="rk num">6</span><span class="nm">2차전지</span><span class="op"><span class="badge b-amber">혼조</span></span><span class="sc2 num">64</span><span class="dl num up">+2.1%</span></div>
+        <div class="irow" onclick="go('ind-detail')"><span class="rk num">7</span><span class="nm">자동차·부품</span><span class="op"><span class="badge b-up">매수우위</span></span><span class="sc2 num">61</span><span class="dl num up">+2.8%</span></div>
+        <div class="irow" onclick="go('ind-detail')"><span class="rk num">8</span><span class="nm">기계·로봇</span><span class="op"><span class="badge b-grey">중립</span></span><span class="sc2 num">58</span><span class="dl num up">+1.4%</span></div>
+        <div class="irow" onclick="go('ind-detail')"><span class="rk num">9</span><span class="nm">인터넷·플랫폼</span><span class="op"><span class="badge b-up">매수우위</span></span><span class="sc2 num">55</span><span class="dl num up">+2.0%</span></div>
+        <div class="irow" onclick="go('ind-detail')"><span class="rk num">10</span><span class="nm">반도체 소부장</span><span class="op"><span class="badge b-up">매수우위</span></span><span class="sc2 num">53</span><span class="dl num up">+3.1%</span></div>
+        <div class="irow" onclick="go('ind-detail')"><span class="rk num">11</span><span class="nm">화학·석유화학</span><span class="op"><span class="badge b-grey">중립</span></span><span class="sc2 num">49</span><span class="dl num up">+0.6%</span></div>
+        <div class="irow" onclick="go('ind-detail')"><span class="rk num">…</span><span class="nm">철강·증권·은행·건설·게임 …</span><span class="op"><span class="badge b-grey">중립</span></span><span class="sc2 num mute">47~26</span><span class="dl"> </span></div>
+        <div class="irow" onclick="go('ind-detail')"><span class="rk num">26</span><span class="nm">화장품</span><span class="op"><span class="badge b-down">하향우위</span></span><span class="sc2 num">24</span><span class="dl num down">−3.1%</span></div>
+        <div class="irow" onclick="go('ind-detail')"><span class="rk num">27+</span><span class="nm">디스플레이·의류·리츠 등</span><span class="op"><span class="badge b-grey">데이터 부족</span></span><span class="sc2 mute">—</span><span class="dl mute">—</span></div>
       </div>
     </div>
   </section>
 
   <!-- ===================== 산업 상세 ===================== -->
   <section class="screen" id="ind-detail" data-tab="산업">
-    <span class="backlnk" onclick="go('ind-list')">‹ 산업 목록</span>
+    <span class="backlnk" onclick="go('ind-list')"><svg class="ic14" style="transform:rotate(180deg)"><use href="#ic-chev"/></svg> 산업 목록</span>
     <div class="card">
       <div class="row between">
-        <div><b style="font-size:17px">조선</b> <span class="badge b-new">신규진입</span></div>
-        <div><span class="score" style="font-size:24px">87</span> <span class="up small">▲23</span></div>
+        <div><b style="font-size:17px">조선</b> <span class="badge b-up">신규진입</span></div>
+        <div><span class="score num" style="font-size:24px">87</span> <span class="up small num">▲23</span></div>
       </div>
       <div class="phasetrack">
         <span class="pd">침체</span><span class="pd">바닥</span><span class="pd cur">전환</span><span class="pd">확장</span><span class="pd">둔화</span>
       </div>
-      <div class="phaselbl" style="margin-bottom:6px">사이클 국면 <b class="up">업턴 전환</b></div>
+      <div class="phaselbl" style="margin-bottom:7px">사이클 국면 <b class="up">업턴 전환</b></div>
       <div class="gauges">
-        <div class="gauge"><div class="lab"><span class="tip" tabindex="0">Breadth<span class="tbox">상향 확산도 — 섹터 리포트 중 (목표가 상향−하향)÷전체. +1에 가까울수록 '다같이 오른다'는 뜻.</span></span></div><div class="val up">+0.78</div></div>
-        <div class="gauge"><div class="lab"><span class="tip" tabindex="0">Magnitude<span class="tbox">상향 폭 — 목표가를 평균 몇 % 올렸는지. 상향의 세기.</span></span></div><div class="val up">+9.4%</div></div>
-        <div class="gauge"><div class="lab"><span class="tip" tabindex="0">Upside Gap<span class="tbox">상승 여력 — 목표가가 현재가보다 평균 몇 % 높은지. 남은 진입 여력.</span></span></div><div class="val">18%</div></div>
+        <div class="gauge"><div class="lab"><span class="tip" tabindex="0">Breadth<span class="tbox">상향 확산도 — 섹터 리포트 중 (목표가 상향−하향)÷전체. +1에 가까울수록 '다같이 오른다'는 뜻.</span></span></div><div class="val num up">+0.78</div></div>
+        <div class="gauge"><div class="lab"><span class="tip" tabindex="0">Magnitude<span class="tbox">상향 폭 — 목표가를 평균 몇 % 올렸는지. 상향의 세기.</span></span></div><div class="val num up">+9.4%</div></div>
+        <div class="gauge"><div class="lab"><span class="tip" tabindex="0">Upside Gap<span class="tbox">상승 여력 — 목표가가 현재가보다 평균 몇 % 높은지. 남은 진입 여력.</span></span></div><div class="val num">18%</div></div>
       </div>
-      <div class="small sub">커버리지 ★★★ · 윈도우 4주 · 리포트 12건 · 감점 없음</div>
+      <div class="small sub num">커버리지 ★★★ · 윈도우 4주 · 리포트 12건 · 감점 없음</div>
     </div>
 
-    <div class="sec-title">◆ 분석 시작 패키지 <span class="sub small" style="font-weight:400; margin-left:auto">트렌드 포착 → 분석 착수</span></div>
+    <div class="sect"><h2>분석 시작 패키지</h2><span class="tagm">트렌드 포착 → 착수</span></div>
     <div class="card pkg">
       <div class="pln"><b>대표기업</b>한화오션 · HD현대중 · 삼성중공업 <span class="sub">(펀더멘털 모멘텀順)</span></div>
       <div class="pln"><b>대표 ETF</b>SOL 조선TOP3플러스</div>
       <div class="pln"><b>애널리스트</b>Top3 최근 리포트 4건 <span class="sub">↓ 아래 타임라인</span></div>
-      <div class="pln"><b>분석 전 체크</b>골든크로스 <span class="up">☑</span> · 외국인 순매수 <span class="up">☑</span> · 수출 YoY <span class="mute">☐</span></div>
+      <div class="pln"><b>분석 전 체크</b>골든크로스 <span class="up">✓</span> · 외국인 순매수 <span class="up">✓</span> · 수출 YoY <span class="mute">미충족</span></div>
     </div>
 
-    <div class="sec-title">◆ 스코어 추이 90일 + 업종지수</div>
-    <div class="card" style="padding:8px">
-      <svg viewBox="0 0 360 120" width="100%" role="img" aria-label="조선 스코어 90일 우상향, 업종지수가 뒤따름">
-        <polyline points="10,95 60,90 110,80 160,72 210,55 260,40 310,25 350,18" fill="none" stroke="#0b3d66" stroke-width="2.5"/>
-        <polyline points="10,100 60,98 110,94 160,90 210,82 260,70 310,60 350,52" fill="none" stroke="#9bbcd8" stroke-width="2" stroke-dasharray="4 3"/>
-        <text x="350" y="13" font-size="9" fill="#0b3d66" text-anchor="end">스코어</text>
-        <text x="350" y="48" font-size="9" fill="#7ba0c0" text-anchor="end">업종지수</text>
+    <div class="sect"><h2>스코어 추이 · 업종지수</h2><span class="tagm">90일</span></div>
+    <div class="card" style="padding:9px">
+      <svg viewBox="0 0 360 120" width="100%" role="img" aria-label="조선 스코어 90일 우상향, 업종지수 추종">
+        <polyline points="10,95 60,90 110,80 160,72 210,55 260,40 310,25 350,18" fill="none" stroke="#16325c" stroke-width="2.5" stroke-linejoin="round"/>
+        <polyline points="10,100 60,98 110,94 160,90 210,82 260,70 310,60 350,52" fill="none" stroke="#a9c2dd" stroke-width="2" stroke-dasharray="4 3"/>
+        <text x="350" y="13" font-size="9" fill="#16325c" text-anchor="end">스코어</text>
+        <text x="350" y="48" font-size="9" fill="#8fa9c4" text-anchor="end">업종지수</text>
       </svg>
     </div>
 
-    <div class="sec-title">◆ 목표가 이벤트 타임라인</div>
+    <div class="sect"><h2>목표가 이벤트 타임라인</h2></div>
     <div class="card">
-      <div class="tl"><span>6/12 한화오션 <b class="up">38,000→45,000 ▲</b></span><span class="sub">현대차증권</span></div>
-      <div class="tl"><span>6/11 HD현대중 <b class="up">190,000→210,000 ▲</b></span><span class="sub">○○증권</span></div>
-      <div class="tl"><span>6/10 삼성중공업 <b class="up">12,000→14,500 ▲</b></span><span class="sub">△△증권</span></div>
+      <div class="tl" style="cursor:default"><span class="num">6/12 한화오션 <b class="up">38,000→45,000 ▲</b></span><span class="sub small">현대차증권</span></div>
+      <div class="tl" style="cursor:default"><span class="num">6/11 HD현대중 <b class="up">190,000→210,000 ▲</b></span><span class="sub small">○○증권</span></div>
+      <div class="tl" style="cursor:default"><span class="num">6/10 삼성중공업 <b class="up">12,000→14,500 ▲</b></span><span class="sub small">△△증권</span></div>
     </div>
 
-    <div class="sec-title">◆ 애널리스트 종합 의견 <span class="sub small" style="font-weight:400; margin-left:auto">최근 4주 · 12건</span></div>
+    <div class="sect"><h2>애널리스트 종합 의견</h2><span class="tagm">최근 4주 · 12건</span></div>
     <div class="card">
       <div class="opbar">
         <span class="seg buy" style="flex:8">매수 8</span>
         <span class="seg hold" style="flex:3">중립 3</span>
-        <span class="seg sell" style="flex:1">매도 1</span>
+        <span class="seg sell" style="flex:1">1</span>
       </div>
-      <div class="row between small" style="margin-top:9px">
-        <span class="sub">목표가 상향 11 · 하향 1</span>
-        <span>평균 목표가 <b class="up">+9.4%</b></span>
+      <div class="row between small" style="margin-top:10px">
+        <span class="sub num">목표가 상향 11 · 하향 1</span>
+        <span class="num">평균 목표가 <b class="up">+9.4%</b></span>
       </div>
     </div>
 
-    <div class="sec-title">◆ 대표 종목 · 펀더멘털 모멘텀 랭킹</div>
-    <div class="card" style="padding:10px 11px">
-      <table class="mini">
+    <div class="sect"><h2>대표 종목 · 펀더멘털 모멘텀</h2></div>
+    <div class="card" style="padding:8px 13px">
+      <table class="mini num">
         <tr><th>종목</th><th>현재가</th><th>1M</th><th>Gap</th><th>점수</th></tr>
         <tr onclick="go('stk-detail')" style="cursor:pointer"><td>한화오션</td><td>41,200</td><td class="pos">+9%</td><td>+14%</td><td class="scorecell">92</td></tr>
         <tr onclick="go('stk-detail')" style="cursor:pointer"><td>HD현대중</td><td>198,000</td><td class="pos">+6%</td><td>+11%</td><td class="scorecell">85</td></tr>
@@ -380,27 +424,27 @@
     </div>
   </section>
 
-  <!-- ===================== 종목 (랜딩 = 산업별 picker) ===================== -->
+  <!-- ===================== 종목 (랜딩 picker) ===================== -->
   <section class="screen" id="stk-list" data-tab="종목">
-    <div class="sec-title">◆ 종목 — 산업별 대표 종목</div>
+    <div class="sect first"><h2>종목 — 산업별 대표 종목</h2></div>
     <div class="indchips" id="indChips"></div>
-    <div class="card" id="stkList" style="padding:4px 12px"></div>
-    <div class="hint" style="text-align:left">산업을 골라 대표 종목을 확인하세요. 종목 클릭 → 상세(주가·목표가 밴드·수급·펀더멘털)</div>
+    <div class="card" id="stkList" style="padding:5px 14px"></div>
+    <div class="hint">산업을 골라 대표 종목을 확인하세요 · 종목 클릭 → 상세(주가·목표가 밴드·수급·펀더멘털)</div>
   </section>
 
   <!-- ===================== 종목 상세 ===================== -->
   <section class="screen" id="stk-detail" data-tab="종목">
-    <span class="backlnk" onclick="go('stk-list')">‹ 종목 목록</span>
+    <span class="backlnk" onclick="go('stk-list')"><svg class="ic14" style="transform:rotate(180deg)"><use href="#ic-chev"/></svg> 종목 목록</span>
     <div class="card">
       <div class="row between">
-        <div><b style="font-size:16px">한화오션</b> <span class="sub small">042660 · 조선</span></div>
-        <span class="lnk" onclick="go('ind-detail')">산업 ›</span>
+        <div><b style="font-size:16px">한화오션</b> <span class="sub small num">042660 · 조선</span></div>
+        <span class="lnk" onclick="go('ind-detail')">산업 <svg class="ic14"><use href="#ic-chev"/></svg></span>
       </div>
-      <div class="rc-tp" style="margin-top:6px">현재가 <b>41,200</b> <b class="up">▲2.1%</b> · 컨센서스 Gap <b class="up">+14%</b></div>
+      <div class="rc-tp num" style="margin-top:7px">현재가 <b>41,200</b> <b class="up">▲2.1%</b> · 컨센서스 Gap <b class="up">+14%</b></div>
     </div>
 
-    <div class="sec-title">◆ 주가 + 목표가 밴드</div>
-    <div class="card" style="padding:10px">
+    <div class="sect"><h2>주가 + 목표가 밴드</h2></div>
+    <div class="card" style="padding:11px">
       <div class="periods">
         <button class="pbtn" data-p="10Y" onclick="setPeriod('10Y')">10년</button>
         <button class="pbtn" data-p="5Y" onclick="setPeriod('5Y')">5년</button>
@@ -408,110 +452,108 @@
         <button class="pbtn on" data-p="1Y" onclick="setPeriod('1Y')">1년</button>
         <button class="pbtn" data-p="3M" onclick="setPeriod('3M')">3개월</button>
       </div>
-      <svg viewBox="0 0 360 150" width="100%" role="img" aria-label="주가와 목표가 밴드 차트, Y축 금액 표기, 기간 선택 가능">
-        <text x="2" y="24" font-size="9" fill="#9aa3ad" id="yTop">43,000</text>
-        <text x="2" y="75" font-size="9" fill="#9aa3ad" id="yMid">35,500</text>
-        <text x="2" y="122" font-size="9" fill="#9aa3ad" id="yBot">28,000</text>
-        <line x1="44" y1="20" x2="352" y2="20" stroke="#f0f2f5"/>
-        <line x1="44" y1="71" x2="352" y2="71" stroke="#f0f2f5"/>
-        <line x1="44" y1="119" x2="352" y2="119" stroke="#eef0f3"/>
-        <polygon id="bandPoly" points="300,40 352,28 352,52 300,58" fill="#9bbcd8" fill-opacity="0.28"/>
-        <polyline id="priceLine" points="46,115 95,108 140,100 185,92 230,80 275,62 320,45 352,38" fill="none" stroke="#0b3d66" stroke-width="2.5"/>
-        <circle id="priceDot" cx="352" cy="38" r="3.5" fill="#0b3d66"/>
-        <text x="352" y="14" font-size="9" fill="#7ba0c0" text-anchor="end">목표가 밴드</text>
+      <svg viewBox="0 0 360 150" width="100%" role="img" aria-label="주가와 목표가 밴드, Y축 금액, 기간 선택">
+        <text x="2" y="24" font-size="9" fill="#a3acb8" class="num" id="yTop">43,000</text>
+        <text x="2" y="75" font-size="9" fill="#a3acb8" class="num" id="yMid">35,500</text>
+        <text x="2" y="122" font-size="9" fill="#a3acb8" class="num" id="yBot">28,000</text>
+        <line x1="44" y1="20" x2="352" y2="20" stroke="#f1f3f6"/><line x1="44" y1="71" x2="352" y2="71" stroke="#f1f3f6"/><line x1="44" y1="119" x2="352" y2="119" stroke="#eef0f3"/>
+        <polygon id="bandPoly" points="300,40 352,28 352,52 300,58" fill="#a9c2dd" fill-opacity="0.32"/>
+        <polyline id="priceLine" points="46,115 95,108 140,100 185,92 230,80 275,62 320,45 352,38" fill="none" stroke="#16325c" stroke-width="2.5" stroke-linejoin="round"/>
+        <circle id="priceDot" cx="352" cy="38" r="3.5" fill="#16325c"/>
+        <text x="352" y="14" font-size="9" fill="#8fa9c4" text-anchor="end">목표가 밴드</text>
       </svg>
       <div class="amtrow">
-        <span>현재가 <b>41,200원</b></span>
-        <span class="sub">기간 수익률 <b class="up" id="periodRet">+38%</b></span>
+        <span class="num">현재가 <b>41,200원</b></span>
+        <span class="sub num">기간 수익률 <b class="up" id="periodRet">+38%</b></span>
       </div>
-      <div class="amtrow" style="margin-top:4px">
-        <span class="sub">목표가 최고 <b>48,000</b> · 평균 <b>45,000</b> · 최저 <b>42,000</b></span>
+      <div class="amtrow" style="margin-top:5px">
+        <span class="sub num">목표가 최고 <b>48,000</b> · 평균 <b>45,000</b> · 최저 <b>42,000</b></span>
       </div>
     </div>
 
-    <div class="sec-title">◆ 수급 — 외국인·기관 누적 순매수 (60일)</div>
-    <div class="card" style="padding:8px">
+    <div class="sect"><h2>수급 · 외국인·기관 누적 순매수</h2><span class="tagm">60일</span></div>
+    <div class="card" style="padding:9px">
       <svg viewBox="0 0 360 90" width="100%" role="img" aria-label="외국인 기관 누적 순매수 우상향">
-        <line x1="10" y1="75" x2="350" y2="75" stroke="#cdd5de"/>
-        <rect x="30" y="60" width="14" height="15" fill="#16a34a" fill-opacity=".6"/>
-        <rect x="70" y="52" width="14" height="23" fill="#16a34a" fill-opacity=".6"/>
-        <rect x="110" y="55" width="14" height="20" fill="#16a34a" fill-opacity=".6"/>
-        <rect x="150" y="42" width="14" height="33" fill="#16a34a" fill-opacity=".7"/>
-        <rect x="190" y="38" width="14" height="37" fill="#16a34a" fill-opacity=".7"/>
-        <rect x="230" y="30" width="14" height="45" fill="#16a34a" fill-opacity=".8"/>
-        <rect x="270" y="24" width="14" height="51" fill="#16a34a" fill-opacity=".8"/>
-        <rect x="310" y="18" width="14" height="57" fill="#16a34a" fill-opacity=".9"/>
-        <text x="14" y="14" font-size="9" fill="#8a93a0">외국인 +1,240억 · 지분율 28.4% ▲</text>
+        <line x1="10" y1="75" x2="350" y2="75" stroke="#d7dde4"/>
+        <rect x="30" y="60" width="14" height="15" rx="2" fill="#1a875a" fill-opacity=".55"/>
+        <rect x="70" y="52" width="14" height="23" rx="2" fill="#1a875a" fill-opacity=".55"/>
+        <rect x="110" y="55" width="14" height="20" rx="2" fill="#1a875a" fill-opacity=".55"/>
+        <rect x="150" y="42" width="14" height="33" rx="2" fill="#1a875a" fill-opacity=".7"/>
+        <rect x="190" y="38" width="14" height="37" rx="2" fill="#1a875a" fill-opacity=".7"/>
+        <rect x="230" y="30" width="14" height="45" rx="2" fill="#1a875a" fill-opacity=".82"/>
+        <rect x="270" y="24" width="14" height="51" rx="2" fill="#1a875a" fill-opacity=".82"/>
+        <rect x="310" y="18" width="14" height="57" rx="2" fill="#1a875a"/>
+        <text x="14" y="14" font-size="9" fill="#8a93a1" class="num">외국인 +1,240억 · 지분율 28.4% ▲</text>
       </svg>
     </div>
 
-    <div class="sec-title">◆ 펀더멘털 (분기)</div>
+    <div class="sect"><h2>펀더멘털</h2><span class="tagm">분기</span></div>
     <div class="card">
-      <div class="rc-tp" style="margin:0">영업이익률 4.2 → 5.1 → 6.8 <span class="badge b-new">2분기 연속 ▲</span></div>
-      <div class="small sub" style="margin-top:5px">매출 YoY +18% · 영업이익 컨센서스 상향</div>
+      <div class="rc-tp num" style="margin:0">영업이익률 4.2 → 5.1 → 6.8 <span class="badge b-up">2분기 연속 ▲</span></div>
+      <div class="small sub num" style="margin-top:6px">매출 YoY +18% · 영업이익 컨센서스 상향</div>
     </div>
 
-    <div class="sec-title">◆ 정성 요소 (출처 필수)</div>
+    <div class="sect"><h2>정성 요소</h2><span class="tagm">출처 필수</span></div>
     <div class="card">
-      <div class="check"><span class="ok">·</span> "LNG선 글로벌 점유율 36%" <span class="sub">— 6/12 현대차증권</span></div>
-      <div class="check"><span class="ok">·</span> "수주잔고 3.2년치" <span class="sub">— 6/10 △△증권</span></div>
+      <div class="check"><span class="ok">·</span> "LNG선 글로벌 점유율 36%" <span class="sub small num">— 6/12 현대차증권</span></div>
+      <div class="check"><span class="ok">·</span> "수주잔고 3.2년치" <span class="sub small num">— 6/10 △△증권</span></div>
     </div>
 
-    <div class="sec-title">◆ 이 종목 리포트</div>
+    <div class="sect"><h2>이 종목 리포트</h2></div>
     <div class="card">
-      <div class="rc-head">06-12 · 현대차증권 · 장문수</div>
-      <div class="rc-tp" style="margin:4px 0 0">45,000 <b class="up">(+18%)</b> 매수</div>
-      <div class="links"><span class="lnk primary">한경/네이버 ↗</span><span class="lnk">현대차증권 ↗</span></div>
+      <div class="rc-head num">06-12 · 현대차증권 · 장문수</div>
+      <div class="rc-tp num" style="margin:5px 0 0">45,000 <b class="up">(+18%)</b> 매수</div>
+      <div class="links"><span class="lnk primary">한경/네이버 <svg class="ic14"><use href="#ic-ext"/></svg></span><span class="lnk">현대차증권 <svg class="ic14"><use href="#ic-ext"/></svg></span></div>
     </div>
   </section>
 
-  <!-- ===================== 리포트 (워치=필터) ===================== -->
+  <!-- ===================== 리포트 ===================== -->
   <section class="screen" id="reports" data-tab="리포트">
     <div class="filters">
       <span class="filt">전체 산업 ▾</span>
       <span class="filt">요약 있음 ▾</span>
       <span class="filt">7일 ▾</span>
-      <span class="filt on">☑ 워치만</span>
+      <span class="filt on">✓ 워치만</span>
     </div>
 
     <div class="card strong-border">
-      <div class="rc-head">06-12 18:02 · 조선 · 한화오션</div>
-      <div class="rc-name">장문수 · 현대차증권 <span class="badge b-lead">★워치</span></div>
-      <div class="rc-tp">목표가 38,000 <span class="arrow">→</span> 45,000 <b class="up">(+18%)</b> · 매수</div>
+      <div class="rc-head num">06-12 18:02 · 조선 · 한화오션</div>
+      <div class="rc-name">장문수 · 현대차증권 <span class="badge b-info">★ 워치</span></div>
+      <div class="rc-tp num">목표가 38,000 → 45,000 <b class="up">(+18%)</b> · 매수</div>
       <div class="divider"></div>
-      <div class="yama">야마: "신조선가 사이클 진입, 2027년까지 수주 가시성 확보"</div>
+      <div class="yama">야마 · "신조선가 사이클 진입, 2027년까지 수주 가시성 확보"</div>
       <div class="grounds">· LNG선 발주 재개로 슬롯 조기 매진<br>· 후판가 안정으로 마진 스프레드 개선<br>· 고부가 비중 상승 → 평균 선가 +12% YoY</div>
       <div class="links">
-        <span class="lnk primary">한경/네이버 ↗</span>
-        <span class="lnk">현대차증권 리서치 ↗</span>
+        <span class="lnk primary">한경/네이버 <svg class="ic14"><use href="#ic-ext"/></svg></span>
+        <span class="lnk">현대차증권 리서치 <svg class="ic14"><use href="#ic-ext"/></svg></span>
         <span class="lnk" onclick="go('ind-detail')">산업 보기</span>
         <span class="lnk" onclick="go('stk-detail')">종목 보기</span>
       </div>
     </div>
 
     <div class="card">
-      <div class="rc-head">06-12 16:40 · 화장품 · 아모레퍼시픽</div>
+      <div class="rc-head num">06-12 16:40 · 화장품 · 아모레퍼시픽</div>
       <div class="rc-name">○○○ · △△증권</div>
-      <div class="rc-tp">목표가 150,000 <span class="mute">→</span> 150,000 <b class="mute">(유지)</b> · 중립</div>
-      <div class="small sub" style="margin:6px 0">제목: "중국 회복 지연, 면세 채널 부진 지속"</div>
+      <div class="rc-tp num">목표가 150,000 → 150,000 <b class="mute">(유지)</b> · 중립</div>
+      <div class="small sub" style="margin:7px 0">제목 · "중국 회복 지연, 면세 채널 부진 지속"</div>
       <span class="badge b-grey">원문 미공개 — 출시 알림</span>
-      <div class="links"><span class="lnk primary">한경/네이버 ↗</span><span class="lnk">요약 요청</span></div>
+      <div class="links"><span class="lnk primary">한경/네이버 <svg class="ic14"><use href="#ic-ext"/></svg></span><span class="lnk">요약 요청</span></div>
     </div>
 
-    <div class="card" style="opacity:.85">
-      <div class="rc-head">06-12 15:10 · 반도체 · SK하이닉스</div>
+    <div class="card">
+      <div class="rc-head num">06-12 15:10 · 반도체 · SK하이닉스</div>
       <div class="rc-name">□□□ · ◇◇증권</div>
-      <div class="rc-tp">목표가 240,000 <span class="arrow">→</span> 270,000 <b class="up">(+12.5%)</b> · 매수</div>
-      <div class="links"><span class="lnk primary">한경/네이버 ↗</span></div>
+      <div class="rc-tp num">목표가 240,000 → 270,000 <b class="up">(+12.5%)</b> · 매수</div>
+      <div class="links"><span class="lnk primary">한경/네이버 <svg class="ic14"><use href="#ic-ext"/></svg></span></div>
     </div>
   </section>
 
   <nav class="tabbar" role="tablist">
-    <button class="tab on" data-tabname="요약" onclick="go('home')"><span class="ic">▦</span>요약</button>
-    <button class="tab" data-tabname="거시" onclick="go('macro')"><span class="ic">⊞</span>거시</button>
-    <button class="tab" data-tabname="산업" onclick="go('ind-list')"><span class="ic">▤</span>산업</button>
-    <button class="tab" data-tabname="종목" onclick="go('stk-list')"><span class="ic">◢</span>종목</button>
-    <button class="tab" data-tabname="리포트" onclick="go('reports')"><span class="ic">≣</span>리포트</button>
+    <button class="tab on" data-tabname="요약" onclick="go('home')"><svg class="ic"><use href="#ic-home"/></svg>요약</button>
+    <button class="tab" data-tabname="거시" onclick="go('macro')"><svg class="ic"><use href="#ic-macro"/></svg>거시</button>
+    <button class="tab" data-tabname="산업" onclick="go('ind-list')"><svg class="ic"><use href="#ic-ind"/></svg>산업</button>
+    <button class="tab" data-tabname="종목" onclick="go('stk-list')"><svg class="ic"><use href="#ic-stock"/></svg>종목</button>
+    <button class="tab" data-tabname="리포트" onclick="go('reports')"><svg class="ic"><use href="#ic-report"/></svg>리포트</button>
   </nav>
 </div>
 
@@ -529,8 +571,6 @@
     var show=b.style.display==='none';
     b.style.display=show?'block':'none'; c.textContent=show?'▴':'▾';
   }
-
-  /* 종목 picker */
   var stockData={
     '조선':[['한화오션','042660','41,200','+2.1%','up'],['HD현대중공업','329180','198,000','+1.2%','up'],['삼성중공업','010140','13,100','+0.8%','up'],['HD한국조선해양','009540','215,000','+1.5%','up']],
     '반도체(대형)':[['삼성전자','005930','78,400','+0.6%','up'],['SK하이닉스','000660','201,500','+2.4%','up']],
@@ -551,13 +591,11 @@
     var L=document.getElementById('stkList'); L.innerHTML='';
     stockData[name].forEach(function(s){
       var d=document.createElement('div'); d.className='srow'; d.onclick=function(){go('stk-detail')};
-      d.innerHTML='<div><span class="snm">'+s[0]+'</span><span class="scode">'+s[1]+'</span></div>'+
-        '<div class="sp">'+s[2]+' <span class="'+s[4]+'" style="font-size:11px">'+s[3]+'</span></div>';
+      d.innerHTML='<div><span class="snm">'+s[0]+'</span><span class="scode num">'+s[1]+'</span></div>'+
+        '<div class="sp num">'+s[2]+' <span class="'+s[4]+'" style="font-size:11px">'+s[3]+'</span></div>';
       L.appendChild(d);
     });
   }
-
-  /* 종목 기간 토글 */
   var priceSeries={
     '3M':{pts:'46,95 95,88 140,92 185,75 230,70 275,55 320,42 352,38', yt:'43,000', ym:'39,500', yb:'36,000', ret:'+9%'},
     '1Y':{pts:'46,115 95,108 140,100 185,92 230,80 275,62 320,45 352,38', yt:'43,000', ym:'35,500', yb:'28,000', ret:'+38%'},
@@ -574,7 +612,6 @@
     document.getElementById('periodRet').textContent=d.ret;
     document.querySelectorAll('.pbtn').forEach(function(b){b.classList.toggle('on', b.dataset.p===p)});
   }
-
   buildChips(); selectInd('조선'); setPeriod('1Y');
   var h=(location.hash||'').replace('#','');
   if(document.getElementById(h)) go(h);
