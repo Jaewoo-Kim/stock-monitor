@@ -116,6 +116,16 @@
   .tip.nobar{text-decoration:none}
   .tbox{display:none; position:absolute; left:50%; transform:translateX(-50%); top:155%; width:168px; background:#1f2937; color:#fff; font-size:10.5px; font-weight:400; line-height:1.45; padding:7px 9px; border-radius:7px; z-index:60; text-align:left}
   .tip:hover .tbox, .tip:focus .tbox{display:block}
+  /* 사이클 국면 트랙 */
+  .phasetrack{display:flex; gap:3px; margin:9px 0 3px}
+  .pd{flex:1; text-align:center; font-size:9.5px; padding:5px 2px; border-radius:5px; background:#eef1f4; color:#8a93a0; font-weight:700}
+  .pd.cur{background:#16a34a; color:#fff}
+  .pd.cur.amber{background:#e0922b} .pd.cur.blue{background:#2f6fd0}
+  .phaselbl{font-size:11px; color:var(--sub)}
+  /* 분석 시작 패키지 */
+  .pkg{background:#f3f8ff; border:1px solid #cfe0f5}
+  .pkg .pln{font-size:12px; padding:4px 0; line-height:1.45}
+  .pkg .pln b{color:var(--accent); margin-right:5px}
   .sr-only{position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0,0,0,0)}
 </style>
 </head>
@@ -124,7 +134,7 @@
   <h2 class="sr-only">국내 주식 산업 모니터링 서비스 모바일 대시보드 프로토타입 — 오늘의 브리핑, 워치 피드, 산업/종목 상세, 거시 현황 5개 화면</h2>
   <div class="topbar">
     <h1>산업 모니터</h1>
-    <div class="ts" id="tstamp">데이터 기준: 06-12 (금) 18:00</div>
+    <div class="ts" id="tstamp">주간 트렌드 · 데이터 기준 06-12 (금) 18:00</div>
   </div>
 
   <!-- ============ S1 오늘의 브리핑 ============ -->
@@ -137,7 +147,7 @@
       <div class="mcard"><div class="ml">CPI YoY</div><div class="mv">2.1% <span class="mute small">─</span></div><div class="small sub">근원 2.0%</div></div>
     </div>
 
-    <div class="sec-title">◆ 오늘의 주목 산업 <span class="sub small" style="font-weight:400; margin-left:auto">상위 5 / 31</span></div>
+    <div class="sec-title">◆ 산업 트렌드 순위 <span class="sub small" style="font-weight:400; margin-left:auto">주간 · 상위 5 / 31</span></div>
     <div class="card hero">
       <div class="row between">
         <div class="row" style="gap:9px">
@@ -147,6 +157,10 @@
         </div>
         <span class="score">87</span>
       </div>
+      <div class="phasetrack">
+        <span class="pd">침체</span><span class="pd">바닥</span><span class="pd cur">전환</span><span class="pd">확장</span><span class="pd">둔화</span>
+      </div>
+      <div class="phaselbl" style="margin-bottom:4px">사이클 국면 <b class="up">업턴 전환</b> — 다운턴에서 막 돌아섬</div>
       <div class="gauges">
         <div class="gauge"><div class="lab"><span class="tip" tabindex="0">Breadth<span class="tbox">상향 확산도 — 섹터 리포트 중 (목표가 상향−하향)÷전체. +1에 가까울수록 '다같이 오른다'는 뜻.</span></span></div><div class="val up">+0.78</div></div>
         <div class="gauge"><div class="lab"><span class="tip" tabindex="0">Magnitude<span class="tbox">상향 폭 — 목표가를 평균 몇 % 올렸는지. 상향의 세기.</span></span></div><div class="val up">+9.4%</div></div>
@@ -227,13 +241,14 @@
       </svg>
     </div>
 
-    <div class="sec-title">◆ 시그널 변화 (전일 대비)</div>
+    <div class="sec-title">◆ 이번 주 국면 전환</div>
     <div class="card">
-      <div class="tl"><span><b class="up">▲ 진입</b> 조선</span><span class="sub">64 → 87</span></div>
-      <div class="tl"><span><b class="down">▼ 이탈</b> 화장품 <span class="badge b-warn">후행성 감점</span></span><span class="sub">72 → 55</span></div>
+      <div class="tl"><span><b class="up">▲ 전환 진입</b> 조선 <span class="badge b-new">바닥→전환</span></span><span class="sub">4주 추세</span></div>
+      <div class="tl"><span><b class="up">▲ 확장 가속</b> 전력기기 <span class="badge b-new">전환→확장</span></span><span class="sub">3주 추세</span></div>
+      <div class="tl"><span><b class="down">▼ 둔화</b> 화장품 <span class="badge b-warn">확장→둔화</span></span><span class="sub">후행성</span></div>
     </div>
 
-    <div class="sec-title">◆ 워치 애널리스트 최신</div>
+    <div class="sec-title">◆ 관련 애널리스트 리포트</div>
     <div class="card" style="padding:10px 13px; cursor:pointer" onclick="go('s2')">
       <div class="rc-head">06-12 18:02 · 조선 · 한화오션</div>
       <div class="rc-name">장문수 · 현대차증권 <span class="badge b-lead">★워치</span></div>
@@ -293,12 +308,24 @@
         <div><b style="font-size:17px">조선</b> <span class="badge b-new">신규진입</span></div>
         <div><span class="score" style="font-size:24px">87</span> <span class="up small">▲23</span></div>
       </div>
+      <div class="phasetrack">
+        <span class="pd">침체</span><span class="pd">바닥</span><span class="pd cur">전환</span><span class="pd">확장</span><span class="pd">둔화</span>
+      </div>
+      <div class="phaselbl" style="margin-bottom:6px">사이클 국면 <b class="up">업턴 전환</b></div>
       <div class="gauges">
         <div class="gauge"><div class="lab"><span class="tip" tabindex="0">Breadth<span class="tbox">상향 확산도 — 섹터 리포트 중 (목표가 상향−하향)÷전체. +1에 가까울수록 '다같이 오른다'는 뜻.</span></span></div><div class="val up">+0.78</div></div>
         <div class="gauge"><div class="lab"><span class="tip" tabindex="0">Magnitude<span class="tbox">상향 폭 — 목표가를 평균 몇 % 올렸는지. 상향의 세기.</span></span></div><div class="val up">+9.4%</div></div>
         <div class="gauge"><div class="lab"><span class="tip" tabindex="0">Upside Gap<span class="tbox">상승 여력 — 목표가가 현재가보다 평균 몇 % 높은지. 남은 진입 여력.</span></span></div><div class="val">18%</div></div>
       </div>
       <div class="small sub">커버리지 ★★★ · 윈도우 4주 · 리포트 12건 · 감점 없음</div>
+    </div>
+
+    <div class="sec-title">◆ 분석 시작 패키지 <span class="sub small" style="font-weight:400; margin-left:auto">트렌드 포착 → 분석 착수</span></div>
+    <div class="card pkg">
+      <div class="pln"><b>대표기업</b>한화오션 · HD현대중 · 삼성중공업 <span class="sub">(펀더멘털 모멘텀順)</span></div>
+      <div class="pln"><b>대표 ETF</b>SOL 조선TOP3플러스</div>
+      <div class="pln"><b>애널리스트</b>Top3 최근 리포트 4건 <span class="sub">↓ 아래 타임라인</span></div>
+      <div class="pln"><b>분석 전 체크</b>골든크로스 <span class="up">☑</span> · 외국인 순매수 <span class="up">☑</span> · 수출 YoY <span class="mute">☐</span></div>
     </div>
 
     <div class="sec-title">◆ 스코어 추이 90일 + 업종지수</div>
@@ -436,7 +463,7 @@
 
   <!-- 하단 탭바 -->
   <nav class="tabbar" role="tablist">
-    <button class="tab on" data-t="s1" onclick="go('s1')"><span class="ic">◉</span>오늘</button>
+    <button class="tab on" data-t="s1" onclick="go('s1')"><span class="ic">◉</span>트렌드</button>
     <button class="tab" data-t="s2" onclick="go('s2')"><span class="ic">≣</span>워치</button>
     <button class="tab" data-t="s3" onclick="go('s3')"><span class="ic">▤</span>산업</button>
     <button class="tab" data-t="s4" onclick="go('s4')"><span class="ic">◢</span>종목</button>
