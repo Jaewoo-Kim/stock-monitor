@@ -1,0 +1,26 @@
+level2_id,etf_ticker,etf_name
+S1_semilarge,091160,KODEX 반도체
+S1_semilarge,455280,TIGER Fn반도체TOP10
+S1_semiparts,466920,SOL 반도체소부장Fn
+S1_battery,305720,KODEX 2차전지산업
+S1_battery,305540,TIGER 2차전지테마
+S1_hardware,139260,TIGER 200 IT
+S2_internet,157490,TIGER 소프트웨어
+S2_game,214980,KODEX 게임산업
+S2_entertainment,228810,TIGER 미디어컨텐츠
+S3_auto,091180,KODEX 자동차
+S3_cosmetics,228800,TIGER 화장품
+S4_food,228790,TIGER 음식료
+S5_pharma,244580,KODEX 바이오
+S5_pharma,228820,TIGER 헬스케어
+S6_bank,091170,KODEX 은행
+S6_securities,140570,KODEX 증권
+S6_insurance,140560,KODEX 보험
+S6_reits,329200,TIGER 리츠부동산인프라
+S7_ship,472070,SOL 조선TOP3플러스
+S7_defense,476040,PLUS K방산
+S7_power,455850,KODEX AI전력핵심설비
+S7_machinery,408180,KODEX K-로봇액티브
+S7_construction,091220,KODEX 건설
+S8_chemicals,117460,KODEX 에너지화학
+S8_steel,117700,KODEX 철강
