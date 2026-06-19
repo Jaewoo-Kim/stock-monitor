@@ -110,22 +110,61 @@ def load_award_seeds(cur) -> int:
     return inserted
 
 
+def load_mapping_overrides(cur) -> int:
+    import sqlite3 as _sqlite3
+
+    path = SEED / "mapping_overrides.csv"
+    rows = list(csv.DictReader(path.read_text(encoding="utf-8").splitlines()))
+    inserted = skipped = 0
+    for r in rows:
+        try:
+            cur.execute(
+                """INSERT OR REPLACE INTO mapping_overrides(ticker, level2_id, reason)
+                   VALUES(:ticker, :level2_id, :reason)""",
+                r,
+            )
+            inserted += 1
+        except _sqlite3.IntegrityError:
+            # ticker가 companies에 아직 없음 (company_mapper 실행 후 자동 반영)
+            skipped += 1
+    if skipped:
+        print(f"  [INFO] mapping_overrides: {skipped}건 FK 미충족 스킵 (company_mapper 후 반영)")
+    return inserted
+
+
+_SEED_TABLES = [
+    "award_seeds", "analyst_industry_rank", "analyst_scores",
+    "mapping_overrides", "company_themes", "report_events",
+    "industry_etfs", "company_fundamentals", "price_history",
+    "industry_index_history", "companies",
+    "analysts", "industries", "sectors", "theme_tags",
+]
+
+
 def main() -> None:
     reset = "--reset" in sys.argv
     if reset:
         init_db()
+        con_r = connect()
+        try:
+            for tbl in _SEED_TABLES:
+                con_r.execute(f"DELETE FROM {tbl}")
+            con_r.commit()
+        finally:
+            con_r.close()
         print("DB 재초기화 완료")
 
     con = connect()
     try:
         cur = con.cursor()
         steps = [
-            ("sectors",             load_sectors),
-            ("industries",          load_industries),
-            ("industry_etfs",       load_industry_etfs),
+            ("sectors",              load_sectors),
+            ("industries",           load_industries),
+            ("industry_etfs",        load_industry_etfs),
             ("representative_companies", load_companies),
-            ("analysts",            load_analysts),
-            ("award_seeds",         load_award_seeds),
+            ("analysts",             load_analysts),
+            ("award_seeds",          load_award_seeds),
+            ("mapping_overrides",    load_mapping_overrides),
         ]
         for name, fn in steps:
             n = fn(cur)
