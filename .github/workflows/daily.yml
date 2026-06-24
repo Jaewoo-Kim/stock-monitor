@@ -1,0 +1,54 @@
+name: daily-update
+
+on:
+  schedule:
+    # KST 07:00 평일 (UTC 22:00 전날)
+    - cron: '0 22 * * 0-4'
+  workflow_dispatch:
+    inputs:
+      all_steps:
+        description: 'company_mapper 포함 (요일 무관)'
+        type: boolean
+        default: false
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install pykrx requests beautifulsoup4
+
+      - name: Init DB (schema only — idempotent)
+        run: python -c "import sys; sys.path.insert(0,'src'); from db import init_db; init_db()"
+
+      - name: Load seeds (INSERT OR IGNORE — safe to re-run)
+        run: python scripts/load_seeds.py
+
+      - name: Run daily collection
+        run: |
+          FLAG=""
+          if [ "${{ github.event.inputs.all_steps }}" = "true" ]; then
+            FLAG="--all-steps"
+          fi
+          python src/run_daily.py $FLAG
+
+      - name: Commit updated DB
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/monitor.db
+          git diff --staged --quiet \
+            || git commit -m "data: daily update $(date -u +%Y-%m-%d)"
+          git push
