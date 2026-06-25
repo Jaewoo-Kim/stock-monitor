@@ -37,6 +37,8 @@ jobs:
         run: python scripts/load_seeds.py
 
       - name: Run daily collection
+        env:
+          DART_API_KEY: ${{ secrets.DART_API_KEY }}
         run: |
           FLAG=""
           if [ "${{ github.event.inputs.all_steps }}" = "true" ]; then

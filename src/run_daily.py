@@ -74,24 +74,48 @@ def step_price_collector() -> bool:
         return False
 
 
+def step_dart() -> bool:
+    log.info("=== [4/6] dart_collector 시작 ===")
+    try:
+        from collectors.dart_collector import run
+        run()
+        log.info("=== [4/6] dart_collector 완료 ===")
+        return True
+    except Exception as exc:
+        log.error("dart_collector 실패: %s", exc, exc_info=True)
+        return False
+
+
 def step_signals() -> bool:
-    log.info("=== [4/5] signal_engine 시작 ===")
+    log.info("=== [5/6] signal_engine 시작 ===")
     try:
         from signals.run_signals import run
         run()
-        log.info("=== [4/5] signal_engine 완료 ===")
+        log.info("=== [5/6] signal_engine 완료 ===")
         return True
     except Exception as exc:
         log.error("signal_engine 실패: %s", exc, exc_info=True)
         return False
 
 
+def step_stock_scorer() -> bool:
+    log.info("=== [5.5/6] stock_scorer 시작 ===")
+    try:
+        from signals.stock_scorer import run
+        run()
+        log.info("=== [5.5/6] stock_scorer 완료 ===")
+        return True
+    except Exception as exc:
+        log.error("stock_scorer 실패: %s", exc, exc_info=True)
+        return False
+
+
 def step_build_static() -> bool:
-    log.info("=== [5/5] build_static 시작 ===")
+    log.info("=== [6/6] build_static 시작 ===")
     try:
         from build_static import run
         run()
-        log.info("=== [5/5] build_static 완료 ===")
+        log.info("=== [6/6] build_static 완료 ===")
         return True
     except Exception as exc:
         log.error("build_static 실패: %s", exc, exc_info=True)
@@ -108,12 +132,14 @@ def main(run_mapper: bool = False) -> int:
     if run_mapper or today.weekday() == 0:
         results["company_mapper"] = step_company_mapper()
     else:
-        log.info("=== [1/5] company_mapper 스킵 (월요일 전용) ===")
+        log.info("=== [1/6] company_mapper 스킵 (월요일 전용) ===")
         results["company_mapper"] = True
 
     results["naver_research"]  = step_naver_research()
     results["price_collector"] = step_price_collector()
+    results["dart"]            = step_dart()         # DART_API_KEY 없으면 내부 skip
     results["signals"]         = step_signals()
+    results["stock_scorer"]    = step_stock_scorer()
     results["build_static"]    = step_build_static()
 
     # 결과 요약
