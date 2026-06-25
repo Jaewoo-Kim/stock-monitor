@@ -1,0 +1,980 @@
+{
+  "S10_utility": [
+    {
+      "ticker": "036460",
+      "name": "한국가스공사",
+      "eps_rev_z": null,
+      "margin_trend": 1.0,
+      "composite": 1.0,
+      "rank": 1,
+      "calc_date": "2026-06-25"
+    },
+    {
+      "ticker": "015760",
+      "name": "한국전력",
+      "eps_rev_z": null,
+      "margin_trend": 0.0,
+      "composite": 0.0,
+      "rank": 2,
+      "calc_date": "2026-06-25"
+    }
+  ],
+  "S1_battery": [
+    {
+      "ticker": "006400",
+      "name": "삼성SDI",
+      "eps_rev_z": null,
+      "margin_trend": 1.0,
+      "composite": 1.0,
+      "rank": 1,
+      "calc_date": "2026-06-25"
+    },
+    {
+      "ticker": "003670",
+      "name": "포스코퓨처엠",
+      "eps_rev_z": null,
+      "margin_trend": 1.0,
+      "composite": 1.0,
+      "rank": 2,
+      "calc_date": "2026-06-25"
+    },
+    {
+      "ticker": "066970",
+      "name": "엘앤에프",
+      "eps_rev_z": null,
+      "margin_trend": 1.0,
+      "composite": 1.0,
+      "rank": 3,
+      "calc_date": "2026-06-25"
+    },
+    {
+      "ticker": "373220",
+      "name": "LG에너지솔루션",
+      "eps_rev_z": null,
+      "margin_trend": -1.0,
+      "composite": -1.0,
+      "rank": 4,
+      "calc_date": "2026-06-25"
+    },
+    {
+      "ticker": "247540",
+      "name": "에코프로비엠",
+      "eps_rev_z": null,
+      "margin_trend": -1.0,
+      "composite": -1.0,
+      "rank": 5,
+      "calc_date": "2026-06-25"
+    }
+  ],
+  "S1_display": [
+    {
+      "ticker": "034220",
+      "name": "LG디스플레이",
+      "eps_rev_z": null,
+      "margin_trend": 1.0,
+      "composite": 1.0,
+      "rank": 1,
+      "calc_date": "2026-06-25"
+    },
+    {
+      "ticker": "213420",
+      "name": "덕산네오룩스",
+      "eps_rev_z": null,
+      "margin_trend": 0.0,
+      "composite": 0.0,
+      "rank": 2,
+      "calc_date": "2026-06-25"
+    }
+  ],
+  "S1_hardware": [
+    {
+      "ticker": "011070",
+      "name": "LG이노텍",
+      "eps_rev_z": null,
+      "margin_trend": 1.0,
+      "composite": 1.0,
+      "rank": 1,
+      "calc_date": "2026-06-25"
+    },
+    {
+      "ticker": "009150",
+      "name": "삼성전기",
+      "eps_rev_z": null,
+      "margin_trend": 1.0,
+      "composite": 1.0,
+      "rank": 2,
+      "calc_date": "2026-06-25"
+    },
+    {
+      "ticker": "066570",
+      "name": "LG전자",
+      "eps_rev_z": null,
+      "margin_trend": 1.0,
+      "composite": 1.0,
+      "rank": 3,
+      "calc_date": "2026-06-25"
+    }
+  ],
+  "S1_semilarge": [
+    {
+      "ticker": "005930",
+      "name": "삼성전자",
+      "eps_rev_z": null,
+      "margin_trend": 1.0,
+      "composite": 1.0,
+      "rank": 1,
+      "calc_date": "2026-06-25"
+    },
+    {
+      "ticker": "000660",
+      "name": "SK하이닉스",
+      "eps_rev_z": null,
+      "margin_trend": 1.0,
+      "composite": 1.0,
+      "rank": 2,
+      "calc_date": "2026-06-25"
+    }
+  ],
+  "S1_semiparts": [
+    {
+      "ticker": "357780",
+      "name": "솔브레인",
+      "eps_rev_z": null,
+      "margin_trend": 1.0,
+      "composite": 1.0,
+      "rank": 1,
+      "calc_date": "2026-06-25"
+    },
+    {
+      "ticker": "058470",
+      "name": "리노공업",
+      "eps_rev_z": null,
+      "margin_trend": 0.0,
+      "composite": 0.0,
+      "rank": 2,
+      "calc_date": "2026-06-25"
+    },
+    {
+      "ticker": "042700",
+      "name": "한미반도체",
+      "eps_rev_z": null,
+      "margin_trend": -1.0,
+      "composite": -1.0,
+      "rank": 3,
+      "calc_date": "2026-06-25"
+    },
+    {
+      "ticker": "403870",
+      "name": "HPSP",
+      "eps_rev_z": null,
+      "margin_trend": -1.0,
+      "composite": -1.0,
+      "rank": 4,
+      "calc_date": "2026-06-25"
+    },
+    {
+      "ticker": "036930",
+      "name": "주성엔지니어링",
+      "eps_rev_z": null,
+      "margin_trend": -1.0,
+      "composite": -1.0,
+      "rank": 5,
+      "calc_date": "2026-06-25"
+    }
+  ],
+  "S1_software": [
+    {
+      "ticker": "012510",
+      "name": "더존비즈온",
+      "eps_rev_z": null,
+      "margin_trend": 1.0,
+      "composite": 1.0,
+      "rank": 1,
+      "calc_date": "2026-06-25"
+    },
+    {
+      "ticker": "018260",
+      "name": "삼성에스디에스",
+      "eps_rev_z": null,
+      "margin_trend": -1.0,
+      "composite": -1.0,
+      "rank": 2,
+      "calc_date": "2026-06-25"
+    }
+  ],
+  "S2_entertainment": [
+    {
+      "ticker": "035900",
+      "name": "JYP Ent.",
+      "eps_rev_z": null,
+      "margin_trend": 1.0,
+      "composite": 1.0,
+      "rank": 1,
+      "calc_date": "2026-06-25"
+    },
+    {
+      "ticker": "041510",
+      "name": "에스엠",
+      "eps_rev_z": null,
+      "margin_trend": 0.0,
+      "composite": 0.0,
+      "rank": 2,
+      "calc_date": "2026-06-25"
+    },
+    {
+      "ticker": "352820",
+      "name": "하이브",
+      "eps_rev_z": null,
+      "margin_trend": -1.0,
+      "composite": -1.0,
+      "rank": 3,
+      "calc_date": "2026-06-25"
+    }
+  ],
+  "S2_game": [
+    {
+      "ticker": "259960",
+      "name": "크래프톤",
+      "eps_rev_z": null,
+      "margin_trend": 1.0,
+      "composite": 1.0,
+      "rank": 1,
+      "calc_date": "2026-06-25"
+    },
+    {
+      "ticker": "036570",
+      "name": "엔씨소프트",
+      "eps_rev_z": null,
+      "margin_trend": 1.0,
+      "composite": 1.0,
+      "rank": 2,
+      "calc_date": "2026-06-25"
+    }
+  ],
+  "S2_internet": [
+    {
+      "ticker": "035720",
+      "name": "카카오",
+      "eps_rev_z": null,
+      "margin_trend": 1.0,
+      "composite": 1.0,
+      "rank": 1,
+      "calc_date": "2026-06-25"
+    },
+    {
+      "ticker": "035420",
+      "name": "NAVER",
+      "eps_rev_z": null,
+      "margin_trend": -1.0,
+      "composite": -1.0,
+      "rank": 2,
+      "calc_date": "2026-06-25"
+    }
+  ],
+  "S2_telecom": [
+    {
+      "ticker": "017670",
+      "name": "SK텔레콤",
+      "eps_rev_z": null,
+      "margin_trend": 1.0,
+      "composite": 1.0,
+      "rank": 1,
+      "calc_date": "2026-06-25"
+    },
+    {
+      "ticker": "032640",
+      "name": "LG유플러스",
+      "eps_rev_z": null,
+      "margin_trend": 1.0,
+      "composite": 1.0,
+      "rank": 2,
+      "calc_date": "2026-06-25"
+    },
+    {
+      "ticker": "030200",
+      "name": "KT",
+      "eps_rev_z": null,
+      "margin_trend": 0.0,
+      "composite": 0.0,
+      "rank": 3,
+      "calc_date": "2026-06-25"
+    }
+  ],
+  "S3_auto": [
+    {
+      "ticker": "204320",
+      "name": "HL만도",
+      "eps_rev_z": null,
+      "margin_trend": 1.0,
+      "composite": 1.0,
+      "rank": 1,
+      "calc_date": "2026-06-25"
+    },
+    {
+      "ticker": "005380",
+      "name": "현대차",
+      "eps_rev_z": null,
+      "margin_trend": -1.0,
+      "composite": -1.0,
+      "rank": 2,
+      "calc_date": "2026-06-25"
+    },
+    {
+      "ticker": "000270",
+      "name": "기아",
+      "eps_rev_z": null,
+      "margin_trend": -1.0,
+      "composite": -1.0,
+      "rank": 3,
+      "calc_date": "2026-06-25"
+    },
+    {
+      "ticker": "012330",
+      "name": "현대모비스",
+      "eps_rev_z": null,
+      "margin_trend": -1.0,
+      "composite": -1.0,
+      "rank": 4,
+      "calc_date": "2026-06-25"
+    }
+  ],
+  "S3_cosmetics": [
+    {
+      "ticker": "090430",
+      "name": "아모레퍼시픽",
+      "eps_rev_z": null,
+      "margin_trend": 1.0,
+      "composite": 1.0,
+      "rank": 1,
+      "calc_date": "2026-06-25"
+    },
+    {
+      "ticker": "051900",
+      "name": "LG생활건강",
+      "eps_rev_z": null,
+      "margin_trend": 1.0,
+      "composite": 1.0,
+      "rank": 2,
+      "calc_date": "2026-06-25"
+    },
+    {
+      "ticker": "044820",
+      "name": "코스맥스",
+      "eps_rev_z": null,
+      "margin_trend": 1.0,
+      "composite": 1.0,
+      "rank": 3,
+      "calc_date": "2026-06-25"
+    },
+    {
+      "ticker": "257390",
+      "name": "실리콘투",
+      "eps_rev_z": null,
+      "margin_trend": null,
+      "composite": null,
+      "rank": null,
+      "calc_date": "2026-06-25"
+    }
+  ],
+  "S3_retail": [
+    {
+      "ticker": "139480",
+      "name": "이마트",
+      "eps_rev_z": null,
+      "margin_trend": 1.0,
+      "composite": 1.0,
+      "rank": 1,
+      "calc_date": "2026-06-25"
+    },
+    {
+      "ticker": "004170",
+      "name": "신세계",
+      "eps_rev_z": null,
+      "margin_trend": 1.0,
+      "composite": 1.0,
+      "rank": 2,
+      "calc_date": "2026-06-25"
+    },
+    {
+      "ticker": "023530",
+      "name": "롯데쇼핑",
+      "eps_rev_z": null,
+      "margin_trend": 1.0,
+      "composite": 1.0,
+      "rank": 3,
+      "calc_date": "2026-06-25"
+    }
+  ],
+  "S4_food": [
+    {
+      "ticker": "271560",
+      "name": "오리온",
+      "eps_rev_z": null,
+      "margin_trend": 1.0,
+      "composite": 1.0,
+      "rank": 1,
+      "calc_date": "2026-06-25"
+    },
+    {
+      "ticker": "003230",
+      "name": "삼양식품",
+      "eps_rev_z": null,
+      "margin_trend": 1.0,
+      "composite": 1.0,
+      "rank": 2,
+      "calc_date": "2026-06-25"
+    },
+    {
+      "ticker": "004370",
+      "name": "농심",
+      "eps_rev_z": null,
+      "margin_trend": 1.0,
+      "composite": 1.0,
+      "rank": 3,
+      "calc_date": "2026-06-25"
+    },
+    {
+      "ticker": "033780",
+      "name": "KT&G",
+      "eps_rev_z": null,
+      "margin_trend": 1.0,
+      "composite": 1.0,
+      "rank": 4,
+      "calc_date": "2026-06-25"
+    },
+    {
+      "ticker": "097950",
+      "name": "CJ제일제당",
+      "eps_rev_z": null,
+      "margin_trend": -1.0,
+      "composite": -1.0,
+      "rank": 5,
+      "calc_date": "2026-06-25"
+    }
+  ],
+  "S5_medtech": [
+    {
+      "ticker": "214450",
+      "name": "파마리서치",
+      "eps_rev_z": null,
+      "margin_trend": 1.0,
+      "composite": 1.0,
+      "rank": 1,
+      "calc_date": "2026-06-25"
+    },
+    {
+      "ticker": "328130",
+      "name": "루닛",
+      "eps_rev_z": null,
+      "margin_trend": 1.0,
+      "composite": 1.0,
+      "rank": 2,
+      "calc_date": "2026-06-25"
+    },
+    {
+      "ticker": "214150",
+      "name": "클래시스",
+      "eps_rev_z": null,
+      "margin_trend": -1.0,
+      "composite": -1.0,
+      "rank": 3,
+      "calc_date": "2026-06-25"
+    },
+    {
+      "ticker": "145720",
+      "name": "덴티움",
+      "eps_rev_z": null,
+      "margin_trend": -1.0,
+      "composite": -1.0,
+      "rank": 4,
+      "calc_date": "2026-06-25"
+    }
+  ],
+  "S5_pharma": [
+    {
+      "ticker": "207940",
+      "name": "삼성바이오로직스",
+      "eps_rev_z": null,
+      "margin_trend": 1.0,
+      "composite": 1.0,
+      "rank": 1,
+      "calc_date": "2026-06-25"
+    },
+    {
+      "ticker": "068270",
+      "name": "셀트리온",
+      "eps_rev_z": null,
+      "margin_trend": 1.0,
+      "composite": 1.0,
+      "rank": 2,
+      "calc_date": "2026-06-25"
+    },
+    {
+      "ticker": "196170",
+      "name": "알테오젠",
+      "eps_rev_z": null,
+      "margin_trend": 1.0,
+      "composite": 1.0,
+      "rank": 3,
+      "calc_date": "2026-06-25"
+    },
+    {
+      "ticker": "000100",
+      "name": "유한양행",
+      "eps_rev_z": null,
+      "margin_trend": -1.0,
+      "composite": -1.0,
+      "rank": 4,
+      "calc_date": "2026-06-25"
+    },
+    {
+      "ticker": "128940",
+      "name": "한미약품",
+      "eps_rev_z": null,
+      "margin_trend": -1.0,
+      "composite": -1.0,
+      "rank": 5,
+      "calc_date": "2026-06-25"
+    }
+  ],
+  "S6_bank": [
+    {
+      "ticker": "055550",
+      "name": "신한지주",
+      "eps_rev_z": null,
+      "margin_trend": null,
+      "composite": null,
+      "rank": null,
+      "calc_date": "2026-06-25"
+    },
+    {
+      "ticker": "086790",
+      "name": "하나금융지주",
+      "eps_rev_z": null,
+      "margin_trend": null,
+      "composite": null,
+      "rank": null,
+      "calc_date": "2026-06-25"
+    },
+    {
+      "ticker": "105560",
+      "name": "KB금융",
+      "eps_rev_z": null,
+      "margin_trend": null,
+      "composite": null,
+      "rank": null,
+      "calc_date": "2026-06-25"
+    },
+    {
+      "ticker": "316140",
+      "name": "우리금융지주",
+      "eps_rev_z": null,
+      "margin_trend": null,
+      "composite": null,
+      "rank": null,
+      "calc_date": "2026-06-25"
+    }
+  ],
+  "S6_insurance": [
+    {
+      "ticker": "000810",
+      "name": "삼성화재",
+      "eps_rev_z": null,
+      "margin_trend": null,
+      "composite": null,
+      "rank": null,
+      "calc_date": "2026-06-25"
+    },
+    {
+      "ticker": "001450",
+      "name": "현대해상",
+      "eps_rev_z": null,
+      "margin_trend": null,
+      "composite": null,
+      "rank": null,
+      "calc_date": "2026-06-25"
+    },
+    {
+      "ticker": "005830",
+      "name": "DB손해보험",
+      "eps_rev_z": null,
+      "margin_trend": null,
+      "composite": null,
+      "rank": null,
+      "calc_date": "2026-06-25"
+    },
+    {
+      "ticker": "032830",
+      "name": "삼성생명",
+      "eps_rev_z": null,
+      "margin_trend": null,
+      "composite": null,
+      "rank": null,
+      "calc_date": "2026-06-25"
+    }
+  ],
+  "S6_securities": [
+    {
+      "ticker": "071050",
+      "name": "한국금융지주",
+      "eps_rev_z": null,
+      "margin_trend": 1.0,
+      "composite": 1.0,
+      "rank": 1,
+      "calc_date": "2026-06-25"
+    },
+    {
+      "ticker": "006800",
+      "name": "미래에셋증권",
+      "eps_rev_z": null,
+      "margin_trend": -1.0,
+      "composite": -1.0,
+      "rank": 2,
+      "calc_date": "2026-06-25"
+    },
+    {
+      "ticker": "039490",
+      "name": "키움증권",
+      "eps_rev_z": null,
+      "margin_trend": -1.0,
+      "composite": -1.0,
+      "rank": 3,
+      "calc_date": "2026-06-25"
+    },
+    {
+      "ticker": "016360",
+      "name": "삼성증권",
+      "eps_rev_z": null,
+      "margin_trend": null,
+      "composite": null,
+      "rank": null,
+      "calc_date": "2026-06-25"
+    }
+  ],
+  "S7_construction": [
+    {
+      "ticker": "000720",
+      "name": "현대건설",
+      "eps_rev_z": null,
+      "margin_trend": 1.0,
+      "composite": 1.0,
+      "rank": 1,
+      "calc_date": "2026-06-25"
+    },
+    {
+      "ticker": "375500",
+      "name": "DL이앤씨",
+      "eps_rev_z": null,
+      "margin_trend": 1.0,
+      "composite": 1.0,
+      "rank": 2,
+      "calc_date": "2026-06-25"
+    },
+    {
+      "ticker": "028050",
+      "name": "삼성E&A",
+      "eps_rev_z": null,
+      "margin_trend": -1.0,
+      "composite": -1.0,
+      "rank": 3,
+      "calc_date": "2026-06-25"
+    }
+  ],
+  "S7_defense": [
+    {
+      "ticker": "079550",
+      "name": "LIG넥스원",
+      "eps_rev_z": null,
+      "margin_trend": 1.0,
+      "composite": 1.0,
+      "rank": 1,
+      "calc_date": "2026-06-25"
+    },
+    {
+      "ticker": "012450",
+      "name": "한화에어로스페이스",
+      "eps_rev_z": null,
+      "margin_trend": -1.0,
+      "composite": -1.0,
+      "rank": 2,
+      "calc_date": "2026-06-25"
+    },
+    {
+      "ticker": "064350",
+      "name": "현대로템",
+      "eps_rev_z": null,
+      "margin_trend": -1.0,
+      "composite": -1.0,
+      "rank": 3,
+      "calc_date": "2026-06-25"
+    },
+    {
+      "ticker": "047810",
+      "name": "한국항공우주",
+      "eps_rev_z": null,
+      "margin_trend": -1.0,
+      "composite": -1.0,
+      "rank": 4,
+      "calc_date": "2026-06-25"
+    }
+  ],
+  "S7_holding": [
+    {
+      "ticker": "003550",
+      "name": "LG",
+      "eps_rev_z": null,
+      "margin_trend": 1.0,
+      "composite": 1.0,
+      "rank": 1,
+      "calc_date": "2026-06-25"
+    },
+    {
+      "ticker": "034730",
+      "name": "SK",
+      "eps_rev_z": null,
+      "margin_trend": -1.0,
+      "composite": -1.0,
+      "rank": 2,
+      "calc_date": "2026-06-25"
+    },
+    {
+      "ticker": "028260",
+      "name": "삼성물산",
+      "eps_rev_z": null,
+      "margin_trend": -1.0,
+      "composite": -1.0,
+      "rank": 3,
+      "calc_date": "2026-06-25"
+    }
+  ],
+  "S7_machinery": [
+    {
+      "ticker": "241560",
+      "name": "두산밥캣",
+      "eps_rev_z": null,
+      "margin_trend": 1.0,
+      "composite": 1.0,
+      "rank": 1,
+      "calc_date": "2026-06-25"
+    },
+    {
+      "ticker": "454910",
+      "name": "두산로보틱스",
+      "eps_rev_z": null,
+      "margin_trend": 1.0,
+      "composite": 1.0,
+      "rank": 2,
+      "calc_date": "2026-06-25"
+    },
+    {
+      "ticker": "277810",
+      "name": "레인보우로보틱스",
+      "eps_rev_z": null,
+      "margin_trend": -1.0,
+      "composite": -1.0,
+      "rank": 3,
+      "calc_date": "2026-06-25"
+    }
+  ],
+  "S7_power": [
+    {
+      "ticker": "267260",
+      "name": "HD현대일렉트릭",
+      "eps_rev_z": null,
+      "margin_trend": 1.0,
+      "composite": 1.0,
+      "rank": 1,
+      "calc_date": "2026-06-25"
+    },
+    {
+      "ticker": "298040",
+      "name": "효성중공업",
+      "eps_rev_z": null,
+      "margin_trend": 1.0,
+      "composite": 1.0,
+      "rank": 2,
+      "calc_date": "2026-06-25"
+    },
+    {
+      "ticker": "001440",
+      "name": "대한전선",
+      "eps_rev_z": null,
+      "margin_trend": 1.0,
+      "composite": 1.0,
+      "rank": 3,
+      "calc_date": "2026-06-25"
+    },
+    {
+      "ticker": "010120",
+      "name": "LS ELECTRIC",
+      "eps_rev_z": null,
+      "margin_trend": 0.0,
+      "composite": 0.0,
+      "rank": 4,
+      "calc_date": "2026-06-25"
+    }
+  ],
+  "S7_ship": [
+    {
+      "ticker": "009540",
+      "name": "HD한국조선해양",
+      "eps_rev_z": null,
+      "margin_trend": 1.0,
+      "composite": 1.0,
+      "rank": 1,
+      "calc_date": "2026-06-25"
+    },
+    {
+      "ticker": "329180",
+      "name": "HD현대중공업",
+      "eps_rev_z": null,
+      "margin_trend": 1.0,
+      "composite": 1.0,
+      "rank": 2,
+      "calc_date": "2026-06-25"
+    },
+    {
+      "ticker": "010140",
+      "name": "삼성중공업",
+      "eps_rev_z": null,
+      "margin_trend": 1.0,
+      "composite": 1.0,
+      "rank": 3,
+      "calc_date": "2026-06-25"
+    },
+    {
+      "ticker": "042660",
+      "name": "한화오션",
+      "eps_rev_z": null,
+      "margin_trend": 1.0,
+      "composite": 1.0,
+      "rank": 4,
+      "calc_date": "2026-06-25"
+    }
+  ],
+  "S7_transport": [
+    {
+      "ticker": "003490",
+      "name": "대한항공",
+      "eps_rev_z": null,
+      "margin_trend": 1.0,
+      "composite": 1.0,
+      "rank": 1,
+      "calc_date": "2026-06-25"
+    },
+    {
+      "ticker": "011200",
+      "name": "HMM",
+      "eps_rev_z": null,
+      "margin_trend": -1.0,
+      "composite": -1.0,
+      "rank": 2,
+      "calc_date": "2026-06-25"
+    },
+    {
+      "ticker": "000120",
+      "name": "CJ대한통운",
+      "eps_rev_z": null,
+      "margin_trend": -1.0,
+      "composite": -1.0,
+      "rank": 3,
+      "calc_date": "2026-06-25"
+    }
+  ],
+  "S8_chemicals": [
+    {
+      "ticker": "051910",
+      "name": "LG화학",
+      "eps_rev_z": null,
+      "margin_trend": 1.0,
+      "composite": 1.0,
+      "rank": 1,
+      "calc_date": "2026-06-25"
+    },
+    {
+      "ticker": "011170",
+      "name": "롯데케미칼",
+      "eps_rev_z": null,
+      "margin_trend": 1.0,
+      "composite": 1.0,
+      "rank": 2,
+      "calc_date": "2026-06-25"
+    },
+    {
+      "ticker": "011780",
+      "name": "금호석유",
+      "eps_rev_z": null,
+      "margin_trend": -1.0,
+      "composite": -1.0,
+      "rank": 3,
+      "calc_date": "2026-06-25"
+    }
+  ],
+  "S8_steel": [
+    {
+      "ticker": "005490",
+      "name": "POSCO홀딩스",
+      "eps_rev_z": null,
+      "margin_trend": 1.0,
+      "composite": 1.0,
+      "rank": 1,
+      "calc_date": "2026-06-25"
+    },
+    {
+      "ticker": "010130",
+      "name": "고려아연",
+      "eps_rev_z": null,
+      "margin_trend": 1.0,
+      "composite": 1.0,
+      "rank": 2,
+      "calc_date": "2026-06-25"
+    },
+    {
+      "ticker": "103140",
+      "name": "풍산",
+      "eps_rev_z": null,
+      "margin_trend": 1.0,
+      "composite": 1.0,
+      "rank": 3,
+      "calc_date": "2026-06-25"
+    },
+    {
+      "ticker": "004020",
+      "name": "현대제철",
+      "eps_rev_z": null,
+      "margin_trend": -1.0,
+      "composite": -1.0,
+      "rank": 4,
+      "calc_date": "2026-06-25"
+    }
+  ],
+  "S9_energy": [
+    {
+      "ticker": "010950",
+      "name": "S-Oil",
+      "eps_rev_z": null,
+      "margin_trend": 1.0,
+      "composite": 1.0,
+      "rank": 1,
+      "calc_date": "2026-06-25"
+    },
+    {
+      "ticker": "078930",
+      "name": "GS",
+      "eps_rev_z": null,
+      "margin_trend": 1.0,
+      "composite": 1.0,
+      "rank": 2,
+      "calc_date": "2026-06-25"
+    },
+    {
+      "ticker": "096770",
+      "name": "SK이노베이션",
+      "eps_rev_z": null,
+      "margin_trend": -1.0,
+      "composite": -1.0,
+      "rank": 3,
+      "calc_date": "2026-06-25"
+    }
+  ]
+}
