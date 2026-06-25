@@ -192,6 +192,89 @@ def build_reports(con, limit: int = 100) -> list[dict]:
 # 메타 JSON
 # ─────────────────────────────────────
 
+def build_industry_detail(con) -> dict[str, dict]:
+    """level2_id → 상세 데이터 (리포트 타임라인 + 종목 테이블).
+
+    Returns:
+        {level2_id: {recent_reports:[...], companies_detail:[...]}}
+    """
+    # 최근 4주 리포트 (level2_id 별, 최대 20건)
+    rows = con.execute(
+        """
+        SELECT c.level2_id,
+               re.published_date, re.broker, re.ticker,
+               comp.name AS company_name,
+               re.title, re.opinion,
+               re.target_price, re.prev_target,
+               re.source_url, re.broker_url,
+               a.name AS analyst_name
+        FROM report_events re
+        JOIN companies comp ON re.ticker = comp.ticker
+        JOIN (SELECT level2_id FROM industries) i ON comp.level2_id = i.level2_id
+        JOIN companies c ON re.ticker = c.ticker
+        LEFT JOIN analysts a ON re.analyst_id = a.analyst_id
+        WHERE re.published_date >= date('now', '-28 days')
+          AND c.level2_id IS NOT NULL
+        ORDER BY c.level2_id, re.published_date DESC
+        """
+    ).fetchall()
+
+    detail: dict[str, dict] = {}
+    seen: dict[str, int] = {}
+    for row in rows:
+        (level2_id, pub_date, broker, ticker, cname,
+         title, opinion, tp, prev_tp, src_url, brk_url, analyst) = row
+        d = detail.setdefault(level2_id, {"recent_reports": [], "companies_detail": []})
+        if seen.get(level2_id, 0) < 20:
+            tp_pct = None
+            if tp and prev_tp and prev_tp > 0:
+                tp_pct = round((tp - prev_tp) / prev_tp * 100, 1)
+            d["recent_reports"].append({
+                "date": pub_date, "broker": broker,
+                "ticker": ticker, "company_name": cname,
+                "title": title, "opinion": opinion,
+                "target_price": tp, "prev_target": prev_tp, "tp_pct": tp_pct,
+                "source_url": src_url, "broker_url": brk_url,
+                "analyst_name": analyst,
+            })
+            seen[level2_id] = seen.get(level2_id, 0) + 1
+
+    # 대표종목 최근 종가 + 1개월 수익률
+    price_rows = con.execute(
+        """
+        SELECT c.level2_id, c.ticker, c.name,
+               ph_now.close AS close_now,
+               ph_1m.close  AS close_1m
+        FROM companies c
+        LEFT JOIN (
+            SELECT ticker, close FROM price_history
+            WHERE date = (SELECT MAX(date) FROM price_history)
+        ) ph_now ON c.ticker = ph_now.ticker
+        LEFT JOIN (
+            SELECT ticker, close FROM price_history
+            WHERE date = (
+                SELECT MAX(date) FROM price_history
+                WHERE date <= date((SELECT MAX(date) FROM price_history), '-30 days')
+            )
+        ) ph_1m ON c.ticker = ph_1m.ticker
+        WHERE c.is_representative = 1 AND c.level2_id IS NOT NULL
+        ORDER BY c.level2_id, c.ticker
+        """
+    ).fetchall()
+
+    for level2_id, ticker, name, close_now, close_1m in price_rows:
+        d = detail.setdefault(level2_id, {"recent_reports": [], "companies_detail": []})
+        ret_1m = None
+        if close_now and close_1m and close_1m > 0:
+            ret_1m = round((close_now - close_1m) / close_1m * 100, 1)
+        d["companies_detail"].append({
+            "ticker": ticker, "name": name,
+            "close": close_now, "ret_1m": ret_1m,
+        })
+
+    return detail
+
+
 def build_meta(con) -> dict:
     n_reports = con.execute("SELECT COUNT(*) FROM report_events").fetchone()[0]
     n_companies = con.execute(
@@ -222,9 +305,10 @@ def run() -> None:
 
     con = connect()
     try:
-        industries = build_industries(con)
-        reports    = build_reports(con)
-        meta       = build_meta(con)
+        industries     = build_industries(con)
+        reports        = build_reports(con)
+        industry_detail = build_industry_detail(con)
+        meta           = build_meta(con)
     finally:
         con.close()
 
@@ -233,9 +317,10 @@ def run() -> None:
         path.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
         log.info("wrote %s (%d items)", path.name, len(data) if isinstance(data, list) else 1)
 
-    _write("industries.json", industries)
-    _write("reports.json",    reports)
-    _write("meta.json",       meta)
+    _write("industries.json",      industries)
+    _write("reports.json",         reports)
+    _write("industry_detail.json", industry_detail)
+    _write("meta.json",            meta)
 
     log.info("빌드 완료 → %s", OUTPUT)
 
