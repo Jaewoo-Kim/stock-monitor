@@ -15,7 +15,7 @@ from __future__ import annotations
 import json
 import logging
 import sys
-from datetime import date, datetime
+from datetime import date, datetime, timedelta
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -374,6 +374,183 @@ def build_market_share(con) -> dict[str, list]:
     return result
 
 
+def _opinion_bucket(op: str | None) -> str | None:
+    if not op:
+        return None
+    s = op.strip().upper()
+    if "매도" in op or "SELL" in s:
+        return "sell"
+    if "중립" in op or "보유" in op or "HOLD" in s:
+        return "hold"
+    if "매수" in op or "BUY" in s:
+        return "buy"
+    return "hold"
+
+
+def build_company_briefs(con) -> dict[str, dict]:
+    """종목별 기업 브리프: 저장된 사업·리스크 + 실시간 애널리스트·펀더멘털·퀀트 집계."""
+    today = date.today().isoformat()
+
+    # 대표종목 기본 + 산업
+    companies = con.execute(
+        """
+        SELECT c.ticker, c.name, c.level2_id, i.level2_name
+        FROM companies c
+        LEFT JOIN industries i ON c.level2_id = i.level2_id
+        WHERE c.is_representative = 1 AND c.is_etf = 0 AND c.level2_id IS NOT NULL
+        ORDER BY c.level2_id, c.ticker
+        """
+    ).fetchall()
+
+    # 저장된 브리프
+    briefs = {
+        row[0]: {"business": row[1], "risks": row[2], "moat": row[3],
+                 "source": row[4], "updated": row[5]}
+        for row in con.execute(
+            "SELECT ticker, business_summary, risk_summary, moat_summary, source, updated_at FROM company_briefs"
+        ).fetchall()
+    }
+
+    # 최신가 + 1개월 수익률
+    price = {}
+    for row in con.execute(
+        """
+        SELECT c.ticker, n.close AS close_now, m.close AS close_1m
+        FROM companies c
+        LEFT JOIN (SELECT ticker, close FROM price_history
+                   WHERE date=(SELECT MAX(date) FROM price_history)) n ON c.ticker=n.ticker
+        LEFT JOIN (SELECT ticker, close FROM price_history
+                   WHERE date=(SELECT MAX(date) FROM price_history
+                               WHERE date<=date((SELECT MAX(date) FROM price_history),'-30 days'))) m
+                  ON c.ticker=m.ticker
+        WHERE c.is_representative=1
+        """
+    ).fetchall():
+        tk, now, m1 = row
+        ret = round((now - m1) / m1 * 100, 1) if (now and m1 and m1 > 0) else None
+        price[tk] = {"close": now, "ret_1m": ret}
+
+    # 애널리스트 집계 (최근 12주)
+    since = (date.fromisoformat(today) - timedelta(weeks=12)).isoformat()
+    analyst: dict[str, dict] = {}
+    for row in con.execute(
+        """
+        SELECT re.ticker, re.published_date, re.broker, re.title,
+               re.opinion, re.target_price, re.source_url, re.broker_url
+        FROM report_events re
+        JOIN companies c ON re.ticker = c.ticker
+        WHERE c.is_representative=1 AND re.published_date >= ?
+        ORDER BY re.ticker, re.published_date DESC, re.report_id DESC
+        """,
+        (since,),
+    ).fetchall():
+        tk, pdate, broker, title, op, tp, surl, burl = row
+        a = analyst.setdefault(tk, {"n_buy": 0, "n_hold": 0, "n_sell": 0,
+                                    "targets": [], "latest_target": None, "recent": []})
+        b = _opinion_bucket(op)
+        if b == "buy":
+            a["n_buy"] += 1
+        elif b == "sell":
+            a["n_sell"] += 1
+        elif b == "hold":
+            a["n_hold"] += 1
+        if tp:
+            a["targets"].append(tp)
+            if a["latest_target"] is None:
+                a["latest_target"] = tp
+        if len(a["recent"]) < 5:
+            a["recent"].append({"date": pdate, "broker": broker, "title": title,
+                                 "opinion": op, "source_url": surl, "broker_url": burl})
+
+    # 펀더멘털 (DART, 최근 4분기)
+    fundamentals: dict[str, list] = {}
+    for row in con.execute(
+        """
+        SELECT ticker, period_end, revenue, op_income, op_margin, eps_actual
+        FROM company_fundamentals WHERE source='DART'
+        ORDER BY ticker, period_end DESC
+        """
+    ).fetchall():
+        tk = row[0]
+        lst = fundamentals.setdefault(tk, [])
+        if len(lst) < 4:
+            lst.append({"period_end": row[1], "revenue": row[2], "op_income": row[3],
+                        "op_margin": row[4], "eps_actual": row[5]})
+
+    # 글로벌 점유율
+    mshare: dict[str, list] = {}
+    for row in con.execute(
+        """SELECT ticker, segment, global_share, global_rank, as_of, source, note
+           FROM company_market_share ORDER BY ticker, COALESCE(global_rank,999)"""
+    ).fetchall():
+        mshare.setdefault(row[0], []).append({
+            "segment": row[1], "share": row[2], "rank": row[3],
+            "as_of": row[4], "source": row[5], "note": row[6]})
+
+    # 퀀트 (stock_scores 최신)
+    quant = {
+        row[0]: {"buy_score": row[1], "rank_in_level2": row[2], "upside_pct": row[3],
+                 "composite": row[4]}
+        for row in con.execute(
+            """
+            SELECT ss.ticker, ss.buy_score, ss.rank_in_level2, ss.upside_pct, ss.composite
+            FROM stock_scores ss
+            INNER JOIN (SELECT ticker, MAX(calc_date) md FROM stock_scores GROUP BY ticker) l
+              ON ss.ticker=l.ticker AND ss.calc_date=l.md
+            """
+        ).fetchall()
+    }
+
+    # 산업 타이밍 (level2_id 최신)
+    timing = {
+        row[0]: {"timing_state": row[1], "timing_score": row[2]}
+        for row in con.execute(
+            """
+            SELECT ts.level2_id, ts.timing_state, ts.timing_score
+            FROM timing_signals ts
+            INNER JOIN (SELECT level2_id, MAX(calc_date) md FROM timing_signals GROUP BY level2_id) l
+              ON ts.level2_id=l.level2_id AND ts.calc_date=l.md
+            """
+        ).fetchall()
+    }
+
+    result: dict[str, dict] = {}
+    for ticker, name, level2_id, level2_name in companies:
+        br = briefs.get(ticker, {})
+        a  = analyst.get(ticker, {})
+        avg_t = round(sum(a["targets"]) / len(a["targets"])) if a.get("targets") else None
+        q  = quant.get(ticker, {})
+        p  = price.get(ticker, {})
+        risks = None
+        if br.get("risks"):
+            try:
+                risks = json.loads(br["risks"])
+            except Exception:
+                risks = [br["risks"]]
+        result[ticker] = {
+            "ticker": ticker, "name": name,
+            "level2_id": level2_id, "level2_name": level2_name,
+            "business": br.get("business"), "moat": br.get("moat"), "risks": risks,
+            "brief_source": br.get("source"), "brief_updated": br.get("updated"),
+            "close": p.get("close"), "ret_1m": p.get("ret_1m"),
+            "analyst": {
+                "n_buy": a.get("n_buy", 0), "n_hold": a.get("n_hold", 0),
+                "n_sell": a.get("n_sell", 0),
+                "avg_target": avg_t, "latest_target": a.get("latest_target"),
+                "recent": a.get("recent", []),
+            },
+            "fundamentals": fundamentals.get(ticker, []),
+            "market_share": mshare.get(ticker, []),
+            "quant": {
+                "buy_score": q.get("buy_score"), "rank_in_level2": q.get("rank_in_level2"),
+                "upside_pct": q.get("upside_pct"), "composite": q.get("composite"),
+                "timing_state": timing.get(level2_id, {}).get("timing_state"),
+                "timing_score": timing.get(level2_id, {}).get("timing_score"),
+            },
+        }
+    return result
+
+
 def build_meta(con) -> dict:
     n_reports = con.execute("SELECT COUNT(*) FROM report_events").fetchone()[0]
     n_companies = con.execute(
@@ -409,6 +586,7 @@ def run() -> None:
         industry_detail = build_industry_detail(con)
         stock_scores    = build_stock_scores(con)
         market_share    = build_market_share(con)
+        company_briefs  = build_company_briefs(con)
         meta            = build_meta(con)
     finally:
         con.close()
@@ -423,6 +601,7 @@ def run() -> None:
     _write("industry_detail.json", industry_detail)
     _write("stock_scores.json",    stock_scores)
     _write("market_share.json",    market_share)
+    _write("company_briefs.json",  company_briefs)
     _write("meta.json",            meta)
 
     log.info("빌드 완료 → %s", OUTPUT)

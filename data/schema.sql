@@ -199,6 +199,22 @@ CREATE TABLE IF NOT EXISTS company_market_share (
 CREATE INDEX IF NOT EXISTS idx_mshare_ticker ON company_market_share(ticker);
 
 -- ─────────────────────────────────────────
+-- 3.7 기업 브리프 (사업 개요 + 투자 리스크)
+--     사업개요·리스크 텍스트는 1차자료(DART 사업보고서)·애널리스트 리포트를
+--     근거로 생성·캐싱. 애널리스트 의견/펀더멘털/점유율/타이밍은 빌드 시 실시간 집계.
+--     원칙: LLM은 판단(매수/매도)하지 않고 설명만. 추천은 컨센서스+퀀트로 제시.
+-- ─────────────────────────────────────────
+
+CREATE TABLE IF NOT EXISTS company_briefs (
+    ticker           TEXT PRIMARY KEY REFERENCES companies(ticker),
+    business_summary TEXT,    -- 사업 개요 (무엇을 하는 회사인가)
+    risk_summary     TEXT,    -- 투자 리스크 (JSON 배열 문자열: ["...","..."])
+    moat_summary     TEXT,    -- 핵심 경쟁력/해자 (선택)
+    source           TEXT,    -- 근거 출처 표기 (예: 'DART 사업보고서·애널리스트 리포트')
+    updated_at       TEXT     -- 생성/갱신 시점 (YYYY-MM)
+);
+
+-- ─────────────────────────────────────────
 -- 4. 시세 (docs/00 5.1)
 -- ─────────────────────────────────────────
 

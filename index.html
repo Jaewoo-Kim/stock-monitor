@@ -187,6 +187,22 @@
   tr.is-top td{background:var(--up-soft)}
   /* 타이밍 칩(요약/카드) */
   .tchip{font-size:10.5px;font-weight:700;padding:2.5px 8px;border-radius:7px}
+  /* 기업 브리프 */
+  .disc{font-size:11px;color:var(--hint);background:#fafbfc;border:1px solid var(--line);border-radius:8px;padding:8px 12px;margin-bottom:16px;line-height:1.5}
+  .reco{display:flex;gap:16px;flex-wrap:wrap;align-items:stretch}
+  .reco .rmain{flex:0 0 210px;background:linear-gradient(135deg,#14233f,#1d3a6b);color:#fff;border-radius:13px;padding:16px 18px}
+  .reco .rmain .rl{font-size:11.5px;opacity:.8;font-weight:600}
+  .reco .rmain .rv{font-size:18px;font-weight:800;margin-top:4px;line-height:1.3}
+  .reco .rmain .rsub{font-size:11.5px;opacity:.85;margin-top:8px;line-height:1.5}
+  .reco .rstats{flex:1;min-width:240px;display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+  .rstat{background:var(--chip);border-radius:10px;padding:10px 13px}
+  .rstat .sl{font-size:11px;color:var(--sub);font-weight:600}
+  .rstat .sv{font-size:17px;font-weight:800;margin-top:3px;letter-spacing:-.3px}
+  .bizbox{font-size:13.5px;line-height:1.7;color:var(--ink)}
+  .moat{font-size:12.5px;color:var(--up);background:var(--up-soft);border-radius:9px;padding:10px 13px;margin-top:12px;line-height:1.55}
+  .risk{display:flex;gap:9px;padding:9px 0;border-bottom:1px solid var(--line);font-size:13px;line-height:1.5}
+  .risk:last-child{border-bottom:none}
+  .risk .rdot{color:var(--down);flex-shrink:0;font-weight:800}
 
   /* ── 모바일 햄버거 ── */
   .mtop{display:none}
@@ -289,6 +305,12 @@
       <div id="ind-detail-body"><div class="loading">…</div></div>
     </section>
 
+    <!-- ══ 기업 브리프 ══ -->
+    <section class="view" id="v-brief">
+      <span class="back" id="brief-back" onclick="nav('v-stk')"><svg class="ic14"><use href="#ic-chev"/></svg> 돌아가기</span>
+      <div id="brief-body"><div class="loading">…</div></div>
+    </section>
+
     <!-- ══ 종목 ══ -->
     <section class="view" id="v-stk">
       <div class="pagehead">
@@ -311,8 +333,8 @@
 
 <script>
 // ── 전역 상태 ──
-let _industries = [], _detail = {}, _scores = {}, _reports = [], _meta = {}, _mshare = {};
-let _currentStkInd = null;
+let _industries = [], _detail = {}, _scores = {}, _reports = [], _meta = {}, _mshare = {}, _briefs = {};
+let _currentStkInd = null, _briefBack = 'v-stk';
 const BASE = 'data/output';
 
 // ── 상수 ──
@@ -512,7 +534,7 @@ function indDetail(ind, det){
     const upside = s.upside_pct!=null ? `<b>${pctTxt(s.upside_pct)}</b>` : '<span class="mute">—</span>';
     const mom = s.composite!=null ? `<span class="${s.composite>=0?'up':'down'}">${s.composite>=0?'+':''}${(s.composite*100).toFixed(0)}</span>` : '<span class="mute">—</span>';
     const buy = s.buy_score!=null ? `<b class="score-pill num">${s.buy_score.toFixed(0)}</b>` : '<span class="mute">—</span>';
-    return `<tr class="${i===0&&s.buy_score!=null?'is-top':''}">
+    return `<tr class="${i===0&&s.buy_score!=null?'is-top':''}" style="cursor:pointer" onclick="openBrief('${s.ticker}','v-ind-detail')">
       <td><span class="rk">${s.rank??'-'}</span><span class="iname">${s.name}</span></td>
       <td class="num">${won(p.close)}</td>
       <td class="num">${upside}</td>
@@ -573,6 +595,108 @@ function indDetail(ind, det){
     </div>`;
 }
 
+// ── 기업 브리프 ──
+function openBrief(ticker, back){
+  if (back) _briefBack = back;
+  const b = _briefs[ticker];
+  document.getElementById('brief-back').onclick = () => nav(_briefBack);
+  document.getElementById('brief-body').innerHTML = b ? renderBrief(b) : '<div class="empty">기업 데이터 없음</div>';
+  nav('v-brief');
+}
+function renderBrief(b){
+  const a = b.analyst || {}, q = b.quant || {};
+  const nTot = (a.n_buy||0)+(a.n_hold||0)+(a.n_sell||0);
+  // 의견 분포 바
+  const opbar = nTot ? `<div class="opbar" style="height:30px">
+      ${a.n_buy>0?`<span class="seg buy" style="flex:${a.n_buy}">매수 ${a.n_buy}</span>`:''}
+      ${a.n_hold>0?`<span class="seg hold" style="flex:${a.n_hold}">중립 ${a.n_hold}</span>`:''}
+      ${a.n_sell>0?`<span class="seg sell" style="flex:${a.n_sell}">매도 ${a.n_sell}</span>`:''}
+    </div>` : '<div class="empty" style="padding:10px">최근 12주 의견 없음</div>';
+  // 컨센서스 한 줄
+  const consensus = nTot
+    ? `애널리스트 ${nTot}명 중 <b>매수 ${a.n_buy}</b>${a.n_sell?` · 매도 ${a.n_sell}`:''}` : '최근 애널리스트 의견 부족';
+  const upTxt = q.upside_pct!=null ? `${q.upside_pct>=0?'+':''}${q.upside_pct}%` : '—';
+  // 펀더멘털 (DART)
+  const fund = (b.fundamentals||[]);
+  const fundTbl = fund.length ? `<div class="card" style="overflow-x:auto">
+    <table class="tbl"><thead><tr><th>분기</th><th>매출</th><th>영업이익</th><th>영업이익률</th><th>EPS</th></tr></thead>
+    <tbody style="cursor:default">${fund.map(f=>`<tr>
+      <td>${f.period_end}</td><td class="num">${f.revenue!=null?fmt(Math.round(f.revenue/1e8)) +'억':'—'}</td>
+      <td class="num">${f.op_income!=null?fmt(Math.round(f.op_income/1e8))+'억':'—'}</td>
+      <td class="num">${f.op_margin!=null?f.op_margin+'%':'—'}</td>
+      <td class="num">${f.eps_actual!=null?fmt(f.eps_actual):'—'}</td></tr>`).join('')}</tbody></table></div>`
+    : '<div class="empty">DART 실적 수집 후 표시 (DART_API_KEY 설정 시 자동)</div>';
+  // 글로벌 점유율
+  const ms = (b.market_share||[]);
+  const msHtml = ms.length ? ms.map(m=>{
+    const rs = [m.rank!=null?`${m.rank}위`:'', m.share!=null?`${m.share}%`:''].filter(Boolean).join(' · ');
+    return `<div class="pkgline"><span class="pk">${m.segment}</span><span class="pv">${rs||m.note||''} <span class="sub" style="font-size:11px">(${m.source} ${m.as_of})</span></span></div>`;
+  }).join('') : '<div class="empty">글로벌 점유율 데이터 없음</div>';
+  // 최근 리포트
+  const recent = (a.recent||[]).map(r=>{
+    const link = r.source_url?`<a class="lnk" href="${r.source_url}" target="_blank" rel="noopener" style="padding:4px 8px;font-size:11px">원문</a>`:'';
+    const opn = r.opinion?`<span class="opn">${r.opinion}</span>`:'';
+    return `<div class="tl"><span>${(r.date||'').slice(5)} · ${r.title||''} ${opn}</span><span class="tlr">${r.broker} ${link}</span></div>`;
+  }).join('') || '<div class="empty">최근 리포트 없음</div>';
+  // 리스크
+  const risks = (b.risks||[]).map(r=>`<div class="risk"><span class="rdot">!</span><span>${r}</span></div>`).join('')
+    || '<div class="empty">리스크 요약 준비 중</div>';
+  const indLink = b.level2_id?`<span class="link" style="cursor:pointer" onclick="gotoDetail('${b.level2_id}')">${b.level2_name||''} ›</span>`:'';
+
+  return `
+    <div class="pagehead" style="margin-bottom:14px">
+      <div><h2>${b.name} <span class="sub num" style="font-size:14px;font-weight:600">${b.ticker}</span> ${q.timing_state?timingChip(q.timing_state):''}</h2>
+        <div class="desc">${indLink} ${b.close!=null?`· 현재가 <b class="num">${won(b.close)}</b>`:''} ${b.ret_1m!=null?`· 1개월 ${pctTxt(b.ret_1m)}`:''}</div></div>
+    </div>
+    <div class="disc">ℹ️ 이 브리프는 DART 공시·애널리스트 리포트·시세를 종합한 <b>참고 자료</b>입니다. 매수/매도 판단은 제공하지 않으며(애널리스트 컨센서스·퀀트 신호를 집계해 보여줄 뿐), <b>투자 결정과 책임은 본인에게 있습니다.</b></div>
+
+    <div class="card pad" style="margin-bottom:16px">
+      <div class="sectitle"><h3>컨센서스 · 퀀트 종합</h3><span class="sub" style="font-size:12px">추천이 아닌 집계</span></div>
+      <div class="reco">
+        <div class="rmain">
+          <div class="rl">애널리스트 컨센서스</div>
+          <div class="rv">${consensus}</div>
+          <div class="rsub">${b.level2_name||''} 산업 타이밍: <b>${q.timing_state?(TIMING[q.timing_state]||TIMING['관측부족']).label:'—'}</b></div>
+        </div>
+        <div class="rstats">
+          <div class="rstat"><div class="sl">목표가 상승여력</div><div class="sv num">${upTxt}</div></div>
+          <div class="rstat"><div class="sl">평균 목표가</div><div class="sv num">${a.avg_target!=null?won(a.avg_target):'—'}</div></div>
+          <div class="rstat"><div class="sl">퀀트 매수점수</div><div class="sv num">${q.buy_score!=null?q.buy_score.toFixed(0):'—'}</div></div>
+          <div class="rstat"><div class="sl">산업 내 순위</div><div class="sv num">${q.rank_in_level2!=null?q.rank_in_level2+'위':'—'}</div></div>
+        </div>
+      </div>
+      <div style="margin-top:14px"><div class="sub" style="font-size:11.5px;margin-bottom:5px">애널리스트 의견 분포 (최근 12주)</div>${opbar}</div>
+    </div>
+
+    <div class="grid g2" style="margin-bottom:16px">
+      <div class="card pad">
+        <div class="sectitle"><h3>사업 개요</h3>${b.brief_updated?`<span class="sub" style="font-size:11px">${b.brief_updated} 기준</span>`:''}</div>
+        <div class="bizbox">${b.business||'<span class="mute">사업 개요 준비 중 — DART 사업보고서 수집 후 보강</span>'}</div>
+        ${b.moat?`<div class="moat">💪 핵심 경쟁력 — ${b.moat}</div>`:''}
+      </div>
+      <div class="card pad">
+        <div class="sectitle"><h3>⚠️ 투자 리스크</h3></div>
+        ${risks}
+      </div>
+    </div>
+
+    <div class="grid g2" style="margin-bottom:16px">
+      <div>
+        <div class="sectitle"><h3>핵심 펀더멘털</h3><span class="sub" style="font-size:12px">DART 실적</span></div>
+        ${fundTbl}
+      </div>
+      <div class="card pad">
+        <div class="sectitle"><h3>글로벌 시장 점유율</h3></div>
+        ${msHtml}
+      </div>
+    </div>
+
+    <div class="card pad">
+      <div class="sectitle"><h3>최근 애널리스트 리포트</h3><span class="sub" style="font-size:12px">원문 링크</span></div>
+      ${recent}
+    </div>`;
+}
+
 // ── 종목 탭 ──
 function renderStkChips(){
   const list = _industries.filter(i => i.companies && i.companies.length);
@@ -600,7 +724,7 @@ function selectStk(level2Id){
     const comp = s.composite != null
       ? `<span class="${s.composite>=0?'up':'down'}">${s.composite>=0?'+':''}${(s.composite*100).toFixed(0)}</span>` : '<span class="mute">—</span>';
     const buy = s.buy_score != null ? `<b class="score-pill num">${s.buy_score.toFixed(0)}</b>` : '<span class="mute">—</span>';
-    return `<tr class="${i===0&&s.buy_score!=null?'is-top':''}">
+    return `<tr class="${i===0&&s.buy_score!=null?'is-top':''}" onclick="openBrief('${s.ticker}','v-stk')">
       <td><span class="rk">${s.rank??'-'}</span><span class="iname">${s.name}</span><span class="scode">${s.ticker}</span></td>
       <td>${mshareCell(s.ticker)}</td>
       <td class="num">${won(p.close)}</td>
@@ -717,16 +841,18 @@ function homeReports(reports){
 // ── 데이터 로드 ──
 async function loadData(){
   try {
-    const [iR,rR,dR,sR,msR,mR] = await Promise.all([
+    const [iR,rR,dR,sR,msR,brR,mR] = await Promise.all([
       fetch(`${BASE}/industries.json`), fetch(`${BASE}/reports.json`),
       fetch(`${BASE}/industry_detail.json`), fetch(`${BASE}/stock_scores.json`),
-      fetch(`${BASE}/market_share.json`), fetch(`${BASE}/meta.json`),
+      fetch(`${BASE}/market_share.json`), fetch(`${BASE}/company_briefs.json`),
+      fetch(`${BASE}/meta.json`),
     ]);
     _industries = iR.ok ? await iR.json() : [];
     _reports    = rR.ok ? await rR.json() : [];
     _detail     = dR.ok ? await dR.json() : {};
     _scores     = sR.ok ? await sR.json() : {};
     _mshare     = msR.ok ? await msR.json() : {};
+    _briefs     = brR.ok ? await brR.json() : {};
     _meta       = mR.ok ? await mR.json() : {};
 
     // 사이드바

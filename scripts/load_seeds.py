@@ -142,6 +142,37 @@ def load_market_share(cur) -> int:
     return inserted
 
 
+def load_company_briefs(cur) -> int:
+    """기업 브리프 시드(JSON) → company_briefs. FK 미충족 시 스킵."""
+    import json as _json
+    import sqlite3 as _sqlite3
+
+    path = SEED / "company_briefs.json"
+    if not path.exists():
+        return 0
+    data = _json.loads(path.read_text(encoding="utf-8"))
+    inserted = skipped = 0
+    for ticker, b in data.items():
+        risks = b.get("risks")
+        risk_json = _json.dumps(risks, ensure_ascii=False) if risks else None
+        try:
+            cur.execute(
+                """INSERT OR REPLACE INTO company_briefs
+                   (ticker, business_summary, risk_summary, moat_summary, source, updated_at)
+                   VALUES(?, ?, ?, ?, ?, ?)""",
+                (
+                    ticker, b.get("business"), risk_json, b.get("moat"),
+                    b.get("source"), b.get("updated"),
+                ),
+            )
+            inserted += 1
+        except _sqlite3.IntegrityError:
+            skipped += 1
+    if skipped:
+        print(f"  [INFO] company_briefs: {skipped}건 FK 미충족 스킵")
+    return inserted
+
+
 def load_mapping_overrides(cur) -> int:
     import sqlite3 as _sqlite3
 
@@ -168,7 +199,7 @@ _SEED_TABLES = [
     "award_seeds", "analyst_industry_rank", "analyst_scores",
     "mapping_overrides", "company_themes", "report_events",
     "industry_etfs", "company_fundamentals", "company_market_share",
-    "price_history", "industry_index_history", "companies",
+    "company_briefs", "price_history", "industry_index_history", "companies",
     "analysts", "industries", "sectors", "theme_tags",
 ]
 
@@ -198,6 +229,7 @@ def main() -> None:
             ("award_seeds",          load_award_seeds),
             ("mapping_overrides",    load_mapping_overrides),
             ("market_share",         load_market_share),
+            ("company_briefs",       load_company_briefs),
         ]
         for name, fn in steps:
             n = fn(cur)
