@@ -90,7 +90,7 @@ def parse_list_page(page: int = 1) -> list[dict]:
 
     반환: [{stock_name, title, nid, source_url, broker, pdf_available, published_date}, ...]
     """
-    soup = _get(LIST_URL, params={"&page": page})
+    soup = _get(LIST_URL, params={"page": page})
     rows: list[dict] = []
 
     table = soup.select_one("table.type_1")
@@ -276,6 +276,41 @@ def _insert_report(con, rec: dict) -> bool:
 
 
 # ─────────────────────────────────────
+# prev_target 자동 산출 (리비전 신호 활성화)
+# ─────────────────────────────────────
+
+def backfill_prev_targets(con) -> int:
+    """prev_target이 비어 있는 리포트에, 같은 종목의 직전 리포트 목표가를 채운다.
+
+    상세페이지에 '35,000 → 45,000'이 명시된 경우는 그대로 두고(이미 값 있음),
+    그렇지 않은 리포트는 직전 목표가 대비 변화로 리비전(상향/하향)을 잡을 수 있게 한다.
+    멱등 — 여러 번 실행해도 안전.
+    """
+    cur = con.execute(
+        """
+        UPDATE report_events AS r
+        SET prev_target = (
+            SELECT p.target_price FROM report_events p
+            WHERE p.ticker = r.ticker
+              AND p.target_price IS NOT NULL
+              AND p.target_price > 0
+              AND ( p.published_date < r.published_date
+                    OR (p.published_date = r.published_date AND p.report_id < r.report_id) )
+            ORDER BY p.published_date DESC, p.report_id DESC
+            LIMIT 1
+        )
+        WHERE r.ticker IS NOT NULL
+          AND r.target_price IS NOT NULL
+          AND r.prev_target IS NULL
+        """
+    )
+    con.commit()
+    n = cur.rowcount if cur.rowcount and cur.rowcount > 0 else 0
+    log.info("prev_target 자동 산출: %d건", n)
+    return n
+
+
+# ─────────────────────────────────────
 # 진입점
 # ─────────────────────────────────────
 
@@ -342,6 +377,8 @@ def run(max_pages: int = 1, since_date: str | None = None) -> None:
                 break
 
         con.commit()
+        # 직전 목표가 자동 산출 → 리비전 신호 활성화
+        backfill_prev_targets(con)
         log.info(
             "완료: 신규 %d건 / 중복 스킵 %d건 / 날짜 스킵 %d건",
             inserted, skipped_dup, skipped_old,
