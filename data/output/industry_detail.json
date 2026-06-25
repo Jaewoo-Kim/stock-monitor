@@ -21,13 +21,13 @@
         "ticker": "034220",
         "name": "LG디스플레이",
         "close": 12180.0,
-        "ret_1m": null
+        "ret_1m": -19.6
       },
       {
         "ticker": "213420",
         "name": "덕산네오룩스",
         "close": 33850.0,
-        "ret_1m": null
+        "ret_1m": -26.3
       }
     ]
   },
@@ -53,19 +53,19 @@
         "ticker": "009150",
         "name": "삼성전기",
         "close": 1964000.0,
-        "ret_1m": null
+        "ret_1m": 46.6
       },
       {
         "ticker": "011070",
         "name": "LG이노텍",
         "close": 957000.0,
-        "ret_1m": null
+        "ret_1m": 10.8
       },
       {
         "ticker": "066570",
         "name": "LG전자",
         "close": 204500.0,
-        "ret_1m": null
+        "ret_1m": -13.7
       }
     ]
   },
@@ -119,13 +119,13 @@
         "ticker": "000660",
         "name": "SK하이닉스",
         "close": 2580000.0,
-        "ret_1m": null
+        "ret_1m": 32.9
       },
       {
         "ticker": "005930",
         "name": "삼성전자",
         "close": 340500.0,
-        "ret_1m": null
+        "ret_1m": 16.4
       }
     ]
   },
@@ -151,25 +151,25 @@
         "ticker": "000270",
         "name": "기아",
         "close": 138900.0,
-        "ret_1m": null
+        "ret_1m": -15.7
       },
       {
         "ticker": "005380",
         "name": "현대차",
         "close": 509000.0,
-        "ret_1m": null
+        "ret_1m": -22.3
       },
       {
         "ticker": "012330",
         "name": "현대모비스",
         "close": 509000.0,
-        "ret_1m": null
+        "ret_1m": -21.2
       },
       {
         "ticker": "204320",
         "name": "HL만도",
         "close": 50900.0,
-        "ret_1m": null
+        "ret_1m": -19.2
       }
     ]
   },
@@ -195,19 +195,19 @@
         "ticker": "004170",
         "name": "신세계",
         "close": 685000.0,
-        "ret_1m": null
+        "ret_1m": 28.0
       },
       {
         "ticker": "023530",
         "name": "롯데쇼핑",
         "close": 174300.0,
-        "ret_1m": null
+        "ret_1m": 6.7
       },
       {
         "ticker": "139480",
         "name": "이마트",
         "close": 80400.0,
-        "ret_1m": null
+        "ret_1m": -11.2
       }
     ]
   },
@@ -233,31 +233,31 @@
         "ticker": "003230",
         "name": "삼양식품",
         "close": 1122000.0,
-        "ret_1m": null
+        "ret_1m": -14.7
       },
       {
         "ticker": "004370",
         "name": "농심",
         "close": 334000.0,
-        "ret_1m": null
+        "ret_1m": -16.5
       },
       {
         "ticker": "033780",
         "name": "KT&G",
         "close": 168600.0,
-        "ret_1m": null
+        "ret_1m": -10.3
       },
       {
         "ticker": "097950",
         "name": "CJ제일제당",
         "close": 190000.0,
-        "ret_1m": null
+        "ret_1m": -11.6
       },
       {
         "ticker": "271560",
         "name": "오리온",
         "close": 125400.0,
-        "ret_1m": null
+        "ret_1m": -8.4
       }
     ]
   },
@@ -325,19 +325,19 @@
         "ticker": "000720",
         "name": "현대건설",
         "close": 114700.0,
-        "ret_1m": null
+        "ret_1m": -23.7
       },
       {
         "ticker": "028050",
         "name": "삼성E&A",
         "close": 43950.0,
-        "ret_1m": null
+        "ret_1m": -17.7
       },
       {
         "ticker": "375500",
         "name": "DL이앤씨",
         "close": 61900.0,
-        "ret_1m": null
+        "ret_1m": -24.7
       }
     ]
   },
@@ -377,25 +377,25 @@
         "ticker": "009540",
         "name": "HD한국조선해양",
         "close": 368000.0,
-        "ret_1m": null
+        "ret_1m": -12.6
       },
       {
         "ticker": "010140",
         "name": "삼성중공업",
         "close": 24600.0,
-        "ret_1m": null
+        "ret_1m": -16.6
       },
       {
         "ticker": "042660",
         "name": "한화오션",
         "close": 106000.0,
-        "ret_1m": null
+        "ret_1m": -13.3
       },
       {
         "ticker": "329180",
         "name": "HD현대중공업",
         "close": 587000.0,
-        "ret_1m": null
+        "ret_1m": -13.7
       }
     ]
   },
@@ -406,13 +406,13 @@
         "ticker": "015760",
         "name": "한국전력",
         "close": 36750.0,
-        "ret_1m": null
+        "ret_1m": -7.4
       },
       {
         "ticker": "036460",
         "name": "한국가스공사",
         "close": 32450.0,
-        "ret_1m": null
+        "ret_1m": -13.8
       }
     ]
   },
@@ -423,31 +423,31 @@
         "ticker": "003670",
         "name": "포스코퓨처엠",
         "close": 178100.0,
-        "ret_1m": null
+        "ret_1m": -26.7
       },
       {
         "ticker": "006400",
         "name": "삼성SDI",
         "close": 489000.0,
-        "ret_1m": null
+        "ret_1m": -24.4
       },
       {
         "ticker": "066970",
         "name": "엘앤에프",
         "close": 113700.0,
-        "ret_1m": null
+        "ret_1m": -28.4
       },
       {
         "ticker": "247540",
         "name": "에코프로비엠",
         "close": 152500.0,
-        "ret_1m": null
+        "ret_1m": -29.4
       },
       {
         "ticker": "373220",
         "name": "LG에너지솔루션",
         "close": 365500.0,
-        "ret_1m": null
+        "ret_1m": -8.3
       }
     ]
   },
@@ -458,31 +458,31 @@
         "ticker": "036930",
         "name": "주성엔지니어링",
         "close": 182400.0,
-        "ret_1m": null
+        "ret_1m": -18.6
       },
       {
         "ticker": "042700",
         "name": "한미반도체",
         "close": 270000.0,
-        "ret_1m": null
+        "ret_1m": -15.8
       },
       {
         "ticker": "058470",
         "name": "리노공업",
         "close": 85200.0,
-        "ret_1m": null
+        "ret_1m": -20.0
       },
       {
         "ticker": "357780",
         "name": "솔브레인",
         "close": 337500.0,
-        "ret_1m": null
+        "ret_1m": -21.4
       },
       {
         "ticker": "403870",
         "name": "HPSP",
         "close": 50600.0,
-        "ret_1m": null
+        "ret_1m": -7.5
       }
     ]
   },
@@ -493,13 +493,13 @@
         "ticker": "012510",
         "name": "더존비즈온",
         "close": 120000.0,
-        "ret_1m": null
+        "ret_1m": 0.0
       },
       {
         "ticker": "018260",
         "name": "삼성에스디에스",
         "close": 189800.0,
-        "ret_1m": null
+        "ret_1m": -2.5
       }
     ]
   },
@@ -510,19 +510,19 @@
         "ticker": "035900",
         "name": "JYP Ent.",
         "close": 51000.0,
-        "ret_1m": null
+        "ret_1m": -17.2
       },
       {
         "ticker": "041510",
         "name": "에스엠",
         "close": 70600.0,
-        "ret_1m": null
+        "ret_1m": -20.0
       },
       {
         "ticker": "352820",
         "name": "하이브",
         "close": 193900.0,
-        "ret_1m": null
+        "ret_1m": -17.5
       }
     ]
   },
@@ -533,13 +533,13 @@
         "ticker": "036570",
         "name": "엔씨소프트",
         "close": 243500.0,
-        "ret_1m": null
+        "ret_1m": -11.8
       },
       {
         "ticker": "259960",
         "name": "크래프톤",
         "close": 220000.0,
-        "ret_1m": null
+        "ret_1m": -18.8
       }
     ]
   },
@@ -550,13 +550,13 @@
         "ticker": "035420",
         "name": "NAVER",
         "close": 199400.0,
-        "ret_1m": null
+        "ret_1m": -1.8
       },
       {
         "ticker": "035720",
         "name": "카카오",
         "close": 34000.0,
-        "ret_1m": null
+        "ret_1m": -18.8
       }
     ]
   },
@@ -567,19 +567,19 @@
         "ticker": "017670",
         "name": "SK텔레콤",
         "close": 91000.0,
-        "ret_1m": null
+        "ret_1m": -11.5
       },
       {
         "ticker": "030200",
         "name": "KT",
         "close": 51700.0,
-        "ret_1m": null
+        "ret_1m": -7.3
       },
       {
         "ticker": "032640",
         "name": "LG유플러스",
         "close": 14000.0,
-        "ret_1m": null
+        "ret_1m": -11.2
       }
     ]
   },
@@ -590,19 +590,19 @@
         "ticker": "044820",
         "name": "코스맥스",
         "close": 16730.0,
-        "ret_1m": null
+        "ret_1m": -17.0
       },
       {
         "ticker": "051900",
         "name": "LG생활건강",
         "close": 225000.0,
-        "ret_1m": null
+        "ret_1m": -14.3
       },
       {
         "ticker": "090430",
         "name": "아모레퍼시픽",
         "close": 98000.0,
-        "ret_1m": null
+        "ret_1m": -18.3
       },
       {
         "ticker": "257390",
@@ -619,25 +619,25 @@
         "ticker": "145720",
         "name": "덴티움",
         "close": 40200.0,
-        "ret_1m": null
+        "ret_1m": -21.3
       },
       {
         "ticker": "214150",
         "name": "클래시스",
         "close": 45500.0,
-        "ret_1m": null
+        "ret_1m": -11.8
       },
       {
         "ticker": "214450",
         "name": "파마리서치",
         "close": 304500.0,
-        "ret_1m": null
+        "ret_1m": -0.2
       },
       {
         "ticker": "328130",
         "name": "루닛",
         "close": 11140.0,
-        "ret_1m": null
+        "ret_1m": -39.6
       }
     ]
   },
@@ -648,31 +648,31 @@
         "ticker": "000100",
         "name": "유한양행",
         "close": 72300.0,
-        "ret_1m": null
+        "ret_1m": -18.1
       },
       {
         "ticker": "068270",
         "name": "셀트리온",
         "close": 172700.0,
-        "ret_1m": null
+        "ret_1m": -8.8
       },
       {
         "ticker": "128940",
         "name": "한미약품",
         "close": 403000.0,
-        "ret_1m": null
+        "ret_1m": -11.2
       },
       {
         "ticker": "196170",
         "name": "알테오젠",
         "close": 371500.0,
-        "ret_1m": null
+        "ret_1m": 1.9
       },
       {
         "ticker": "207940",
         "name": "삼성바이오로직스",
         "close": 1385000.0,
-        "ret_1m": null
+        "ret_1m": -2.1
       }
     ]
   },
@@ -683,25 +683,25 @@
         "ticker": "055550",
         "name": "신한지주",
         "close": 95700.0,
-        "ret_1m": null
+        "ret_1m": -2.5
       },
       {
         "ticker": "086790",
         "name": "하나금융지주",
         "close": 114200.0,
-        "ret_1m": null
+        "ret_1m": -6.5
       },
       {
         "ticker": "105560",
         "name": "KB금융",
         "close": 151800.0,
-        "ret_1m": null
+        "ret_1m": -5.1
       },
       {
         "ticker": "316140",
         "name": "우리금융지주",
         "close": 29250.0,
-        "ret_1m": null
+        "ret_1m": -7.3
       }
     ]
   },
@@ -712,25 +712,25 @@
         "ticker": "000810",
         "name": "삼성화재",
         "close": 636000.0,
-        "ret_1m": null
+        "ret_1m": 11.8
       },
       {
         "ticker": "001450",
         "name": "현대해상",
         "close": 35150.0,
-        "ret_1m": null
+        "ret_1m": -9.1
       },
       {
         "ticker": "005830",
         "name": "DB손해보험",
         "close": 137300.0,
-        "ret_1m": null
+        "ret_1m": -11.1
       },
       {
         "ticker": "032830",
         "name": "삼성생명",
         "close": 433000.0,
-        "ret_1m": null
+        "ret_1m": 18.8
       }
     ]
   },
@@ -741,25 +741,25 @@
         "ticker": "006800",
         "name": "미래에셋증권",
         "close": 41750.0,
-        "ret_1m": null
+        "ret_1m": -38.1
       },
       {
         "ticker": "016360",
         "name": "삼성증권",
         "close": 107500.0,
-        "ret_1m": null
+        "ret_1m": -17.2
       },
       {
         "ticker": "039490",
         "name": "키움증권",
         "close": 314000.0,
-        "ret_1m": null
+        "ret_1m": -22.9
       },
       {
         "ticker": "071050",
         "name": "한국금융지주",
         "close": 204500.0,
-        "ret_1m": null
+        "ret_1m": -19.6
       }
     ]
   },
@@ -770,25 +770,25 @@
         "ticker": "012450",
         "name": "한화에어로스페이스",
         "close": 1094000.0,
-        "ret_1m": null
+        "ret_1m": -13.2
       },
       {
         "ticker": "047810",
         "name": "한국항공우주",
         "close": 143100.0,
-        "ret_1m": null
+        "ret_1m": -15.0
       },
       {
         "ticker": "064350",
         "name": "현대로템",
         "close": 195500.0,
-        "ret_1m": null
+        "ret_1m": -5.1
       },
       {
         "ticker": "079550",
         "name": "LIG넥스원",
         "close": 824000.0,
-        "ret_1m": null
+        "ret_1m": -10.9
       }
     ]
   },
@@ -799,19 +799,19 @@
         "ticker": "003550",
         "name": "LG",
         "close": 99200.0,
-        "ret_1m": null
+        "ret_1m": -16.3
       },
       {
         "ticker": "028260",
         "name": "삼성물산",
         "close": 481500.0,
-        "ret_1m": null
+        "ret_1m": 14.5
       },
       {
         "ticker": "034730",
         "name": "SK",
         "close": 712000.0,
-        "ret_1m": null
+        "ret_1m": 10.9
       }
     ]
   },
@@ -822,19 +822,19 @@
         "ticker": "241560",
         "name": "두산밥캣",
         "close": 61700.0,
-        "ret_1m": null
+        "ret_1m": -10.3
       },
       {
         "ticker": "277810",
         "name": "레인보우로보틱스",
         "close": 515000.0,
-        "ret_1m": null
+        "ret_1m": -31.7
       },
       {
         "ticker": "454910",
         "name": "두산로보틱스",
         "close": 95000.0,
-        "ret_1m": null
+        "ret_1m": -10.9
       }
     ]
   },
@@ -845,25 +845,25 @@
         "ticker": "001440",
         "name": "대한전선",
         "close": 34150.0,
-        "ret_1m": null
+        "ret_1m": -37.7
       },
       {
         "ticker": "010120",
         "name": "LS ELECTRIC",
         "close": 224500.0,
-        "ret_1m": null
+        "ret_1m": -20.1
       },
       {
         "ticker": "267260",
         "name": "HD현대일렉트릭",
         "close": 937000.0,
-        "ret_1m": null
+        "ret_1m": -20.1
       },
       {
         "ticker": "298040",
         "name": "효성중공업",
         "close": 3353000.0,
-        "ret_1m": null
+        "ret_1m": -16.3
       }
     ]
   },
@@ -874,19 +874,19 @@
         "ticker": "000120",
         "name": "CJ대한통운",
         "close": 74600.0,
-        "ret_1m": null
+        "ret_1m": -16.7
       },
       {
         "ticker": "003490",
         "name": "대한항공",
         "close": 27350.0,
-        "ret_1m": null
+        "ret_1m": 2.1
       },
       {
         "ticker": "011200",
         "name": "HMM",
         "close": 18940.0,
-        "ret_1m": null
+        "ret_1m": -7.6
       }
     ]
   },
@@ -897,19 +897,19 @@
         "ticker": "011170",
         "name": "롯데케미칼",
         "close": 69600.0,
-        "ret_1m": null
+        "ret_1m": -16.0
       },
       {
         "ticker": "011780",
         "name": "금호석유",
         "close": 121300.0,
-        "ret_1m": null
+        "ret_1m": -14.4
       },
       {
         "ticker": "051910",
         "name": "LG화학",
         "close": 297500.0,
-        "ret_1m": null
+        "ret_1m": -15.2
       }
     ]
   },
@@ -920,25 +920,25 @@
         "ticker": "004020",
         "name": "현대제철",
         "close": 29050.0,
-        "ret_1m": null
+        "ret_1m": -30.1
       },
       {
         "ticker": "005490",
         "name": "POSCO홀딩스",
         "close": 331500.0,
-        "ret_1m": null
+        "ret_1m": -25.9
       },
       {
         "ticker": "010130",
         "name": "고려아연",
         "close": 1098000.0,
-        "ret_1m": null
+        "ret_1m": -23.2
       },
       {
         "ticker": "103140",
         "name": "풍산",
         "close": 68600.0,
-        "ret_1m": null
+        "ret_1m": -22.0
       }
     ]
   },
@@ -949,19 +949,19 @@
         "ticker": "010950",
         "name": "S-Oil",
         "close": 107300.0,
-        "ret_1m": null
+        "ret_1m": -1.6
       },
       {
         "ticker": "078930",
         "name": "GS",
         "close": 66100.0,
-        "ret_1m": null
+        "ret_1m": -14.0
       },
       {
         "ticker": "096770",
         "name": "SK이노베이션",
         "close": 98400.0,
-        "ret_1m": null
+        "ret_1m": -20.5
       }
     ]
   }

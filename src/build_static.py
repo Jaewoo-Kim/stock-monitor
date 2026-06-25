@@ -66,6 +66,33 @@ def build_industries(con) -> list[dict]:
         ).fetchall()
     }
 
+    # 최신 타이밍 신호 (level2_id 별)
+    timing = {
+        row[0]: {
+            "timing_state":   row[1],
+            "timing_score":   row[2],
+            "idx_trend_up":   row[3],
+            "idx_ret_4w":     row[4],
+            "idx_ret_12w":    row[5],
+            "idx_rsi14":      row[6],
+            "idx_high_break": row[7],
+            "price_days":     row[8],
+        }
+        for row in con.execute(
+            """
+            SELECT ts.level2_id, ts.timing_state, ts.timing_score,
+                   ts.idx_trend_up, ts.idx_ret_4w, ts.idx_ret_12w,
+                   ts.idx_rsi14, ts.idx_high_break, ts.price_days
+            FROM timing_signals ts
+            INNER JOIN (
+                SELECT level2_id, MAX(calc_date) AS max_date
+                FROM timing_signals GROUP BY level2_id
+            ) latest ON ts.level2_id = latest.level2_id
+                     AND ts.calc_date = latest.max_date
+            """
+        ).fetchall()
+    }
+
     # 산업 기본 정보
     industries = con.execute(
         """
@@ -125,6 +152,7 @@ def build_industries(con) -> list[dict]:
     for (level2_id, level1_id, level2_name, level1_name,
          coverage_density, is_signal_eligible) in industries:
         sig = signals.get(level2_id, {})
+        tim = timing.get(level2_id, {})
         result.append({
             "level2_id":      level2_id,
             "level1_id":      level1_id,
@@ -143,6 +171,15 @@ def build_industries(con) -> list[dict]:
             "n_reports_signal": sig.get("n_reports", 0),
             "n_reports_4w":   report_counts.get(level2_id, 0),
             "calc_date":      sig.get("calc_date"),
+            # 매수 타이밍 (방향 + 가격 확인)
+            "timing_state":   tim.get("timing_state"),
+            "timing_score":   tim.get("timing_score"),
+            "idx_trend_up":   tim.get("idx_trend_up"),
+            "idx_ret_4w":     tim.get("idx_ret_4w"),
+            "idx_ret_12w":    tim.get("idx_ret_12w"),
+            "idx_rsi14":      tim.get("idx_rsi14"),
+            "idx_high_break": tim.get("idx_high_break"),
+            "price_days":     tim.get("price_days"),
             "companies":      rep_companies.get(level2_id, []),
             "etfs":           etfs.get(level2_id, []),
         })
@@ -280,8 +317,9 @@ def build_stock_scores(con) -> dict[str, list]:
     rows = con.execute(
         """
         SELECT ss.ticker, c.name, c.level2_id,
-               ss.eps_rev_z, ss.margin_trend, ss.composite, ss.rank_in_level2,
-               ss.calc_date
+               ss.eps_rev_z, ss.margin_trend, ss.composite,
+               ss.upside_pct, ss.n_targets, ss.share_bonus, ss.buy_score,
+               ss.rank_in_level2, ss.calc_date
         FROM stock_scores ss
         JOIN companies c ON ss.ticker = c.ticker
         INNER JOIN (
@@ -295,14 +333,17 @@ def build_stock_scores(con) -> dict[str, list]:
     ).fetchall()
 
     result: dict[str, list] = {}
-    for (ticker, name, level2_id,
-         eps_rev_z, margin_trend, composite, rank, calc_date) in rows:
+    for (ticker, name, level2_id, eps_rev_z, margin_trend, composite,
+         upside_pct, n_targets, share_bonus, buy_score, rank, calc_date) in rows:
         result.setdefault(level2_id, []).append({
             "ticker":       ticker,
             "name":         name,
             "eps_rev_z":    eps_rev_z,
             "margin_trend": margin_trend,
             "composite":    composite,
+            "upside_pct":   upside_pct,
+            "n_targets":    n_targets,
+            "buy_score":    buy_score,
             "rank":         rank,
             "calc_date":    calc_date,
         })

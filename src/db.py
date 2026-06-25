@@ -20,12 +20,39 @@ def connect() -> sqlite3.Connection:
     return con
 
 
+# 기존 테이블에 나중에 추가된 컬럼 (CREATE IF NOT EXISTS로는 반영 안 됨 → ALTER)
+_COLUMN_MIGRATIONS: dict[str, dict[str, str]] = {
+    "stock_scores": {
+        "upside_pct":  "REAL",
+        "n_targets":   "INTEGER",
+        "share_bonus": "REAL",
+        "buy_score":   "REAL",
+    },
+}
+
+
+def _migrate_columns(con) -> None:
+    """누락 컬럼을 ALTER TABLE ADD COLUMN으로 멱등 추가."""
+    for table, cols in _COLUMN_MIGRATIONS.items():
+        exists = con.execute(
+            "SELECT name FROM sqlite_master WHERE type='table' AND name=?",
+            (table,),
+        ).fetchone()
+        if not exists:
+            continue
+        have = {row[1] for row in con.execute(f"PRAGMA table_info({table})")}
+        for col, col_type in cols.items():
+            if col not in have:
+                con.execute(f"ALTER TABLE {table} ADD COLUMN {col} {col_type}")
+
+
 def init_db() -> None:
-    """schema.sql을 실행해 테이블을 생성(IF NOT EXISTS, 멱등)."""
+    """schema.sql을 실행해 테이블을 생성(IF NOT EXISTS, 멱등) + 컬럼 마이그레이션."""
     sql = SCHEMA_PATH.read_text(encoding="utf-8")
     con = connect()
     try:
         con.executescript(sql)
+        _migrate_columns(con)
         con.commit()
     finally:
         con.close()

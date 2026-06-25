@@ -251,16 +251,43 @@ CREATE TABLE IF NOT EXISTS cycle_signals (
 CREATE INDEX IF NOT EXISTS idx_signal_date  ON cycle_signals(calc_date);
 CREATE INDEX IF NOT EXISTS idx_signal_phase ON cycle_signals(cycle_phase);
 
--- 섹터 내 종목별 펀더멘털 모멘텀 점수
+-- 섹터 내 종목별 펀더멘털 모멘텀 + 매수후보 점수
 CREATE TABLE IF NOT EXISTS stock_scores (
     ticker        TEXT NOT NULL REFERENCES companies(ticker),
     calc_date     TEXT NOT NULL,
-    -- 관절③ 두 축
+    -- 관절③ 펀더멘털 모멘텀
     eps_rev_z     REAL,   -- EPS 리비전 z-score (NULL=데이터없음)
     margin_trend  REAL,   -- 영업이익률 2분기 추세 (-1/0/+1)
-    composite     REAL,   -- 0.5*eps_rev_z + 0.5*margin_trend
-    rank_in_level2 INTEGER, -- 산업 내 순위
+    composite     REAL,   -- 0.5*eps_rev_z + 0.5*margin_trend (모멘텀 축)
+    -- 매수후보 종합 (상승여력 + 모멘텀 + 글로벌 점유율)
+    upside_pct    REAL,   -- 최신 평균 목표가 대비 현재가 상승여력 % (NULL=목표가없음)
+    n_targets     INTEGER,-- 상승여력 산출에 쓰인 목표가 리포트 수
+    share_bonus   REAL,   -- 글로벌 점유율 가산 (0~1)
+    buy_score     REAL,   -- 0~100 종합 매수후보 점수
+    rank_in_level2 INTEGER, -- 산업 내 buy_score 순위
     PRIMARY KEY(ticker, calc_date)
 );
 
 CREATE INDEX IF NOT EXISTS idx_score_date ON stock_scores(calc_date);
+
+-- 산업별 매수 타이밍 신호 (애널리스트 방향 + 가격 확인)
+CREATE TABLE IF NOT EXISTS timing_signals (
+    level2_id      TEXT NOT NULL REFERENCES industries(level2_id),
+    calc_date      TEXT NOT NULL,
+    -- 가격(업종지수) 기반 확인 지표
+    idx_ma20       REAL,    -- 20일 이동평균
+    idx_ma60       REAL,    -- 60일 이동평균
+    idx_trend_up   INTEGER, -- 정배열(MA20>MA60) 1/0
+    idx_ret_4w     REAL,    -- 4주(20영업일) 수익률 %
+    idx_ret_12w    REAL,    -- 12주(60영업일) 수익률 %
+    idx_rsi14      REAL,    -- RSI(14)
+    idx_high_break INTEGER, -- 8주 신고가 돌파 1/0
+    price_days     INTEGER, -- 계산에 쓰인 거래일 수
+    -- 종합 타이밍 판정
+    timing_state   TEXT CHECK(timing_state IN
+                     ('buy','watch','hold','caution','관측부족')),
+    timing_score   REAL,    -- 0~100 (방향*가격확인 종합)
+    PRIMARY KEY(level2_id, calc_date)
+);
+
+CREATE INDEX IF NOT EXISTS idx_timing_date ON timing_signals(calc_date);

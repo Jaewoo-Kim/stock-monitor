@@ -18,6 +18,7 @@ from db import connect  # noqa: E402
 from signals.confirmation import calc_confirmation
 from signals.leading import calc_leading
 from signals.cycle_classifier import classify_all, save_signals
+from signals import timing
 
 log = logging.getLogger(__name__)
 
@@ -58,6 +59,9 @@ def run(as_of: date | None = None) -> None:
                 "  [%s] %s  score=%.3f  n=%d",
                 r["cycle_phase"], r["level2_id"], r["composite_score"], r["n_reports"],
             )
+
+        # 매수 타이밍 (방향 cycle_signals + 가격 확인) — 같은 커넥션 재사용
+        timing.run(con=con, calc_date=ref.isoformat())
     finally:
         con.close()
 
