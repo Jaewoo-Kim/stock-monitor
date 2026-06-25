@@ -487,6 +487,15 @@ def build_company_briefs(con) -> dict[str, dict]:
             "segment": row[1], "share": row[2], "rank": row[3],
             "as_of": row[4], "source": row[5], "note": row[6]})
 
+    # DART 사업보고서 발췌
+    disclosures = {
+        row[0]: {"rcept_no": row[1], "report_nm": row[2], "rcept_dt": row[3],
+                 "biz_overview": row[4], "risk_text": row[5]}
+        for row in con.execute(
+            "SELECT ticker, rcept_no, report_nm, rcept_dt, biz_overview, risk_text FROM company_disclosures"
+        ).fetchall()
+    }
+
     # 퀀트 (stock_scores 최신)
     quant = {
         row[0]: {"buy_score": row[1], "rank_in_level2": row[2], "upside_pct": row[3],
@@ -541,6 +550,7 @@ def build_company_briefs(con) -> dict[str, dict]:
             },
             "fundamentals": fundamentals.get(ticker, []),
             "market_share": mshare.get(ticker, []),
+            "dart": disclosures.get(ticker),
             "quant": {
                 "buy_score": q.get("buy_score"), "rank_in_level2": q.get("rank_in_level2"),
                 "upside_pct": q.get("upside_pct"), "composite": q.get("composite"),

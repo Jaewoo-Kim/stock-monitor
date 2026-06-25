@@ -86,6 +86,18 @@ def step_dart() -> bool:
         return False
 
 
+def step_dart_business() -> bool:
+    log.info("=== [4.5/6] dart_business(사업보고서 발췌) 시작 ===")
+    try:
+        from collectors.dart_business import run
+        run()
+        log.info("=== [4.5/6] dart_business 완료 ===")
+        return True
+    except Exception as exc:
+        log.error("dart_business 실패: %s", exc, exc_info=True)
+        return False
+
+
 def step_signals() -> bool:
     log.info("=== [5/6] signal_engine 시작 ===")
     try:
@@ -138,6 +150,7 @@ def main(run_mapper: bool = False) -> int:
     results["naver_research"]  = step_naver_research()
     results["price_collector"] = step_price_collector()
     results["dart"]            = step_dart()         # DART_API_KEY 없으면 내부 skip
+    results["dart_business"]   = step_dart_business() # DART_API_KEY 없으면 내부 skip
     results["signals"]         = step_signals()
     results["stock_scorer"]    = step_stock_scorer()
     results["build_static"]    = step_build_static()

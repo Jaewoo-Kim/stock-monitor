@@ -214,6 +214,17 @@ CREATE TABLE IF NOT EXISTS company_briefs (
     updated_at       TEXT     -- 생성/갱신 시점 (YYYY-MM)
 );
 
+-- DART 사업보고서 원문 발췌 (1차자료 — 사업의 개요 / 위험)
+CREATE TABLE IF NOT EXISTS company_disclosures (
+    ticker       TEXT PRIMARY KEY REFERENCES companies(ticker),
+    rcept_no     TEXT,    -- DART 접수번호 (원문 링크 구성용)
+    report_nm    TEXT,    -- 보고서명 (예: '사업보고서 (2025.12)')
+    rcept_dt     TEXT,    -- 접수일 YYYYMMDD
+    biz_overview TEXT,    -- '사업의 개요' 발췌
+    risk_text    TEXT,    -- '위험요소' 발췌 (있을 때)
+    fetched_at   TEXT     -- 수집 시점 (YYYY-MM-DD)
+);
+
 -- ─────────────────────────────────────────
 -- 4. 시세 (docs/00 5.1)
 -- ─────────────────────────────────────────
