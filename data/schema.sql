@@ -179,6 +179,26 @@ CREATE TABLE IF NOT EXISTS company_fundamentals (
 CREATE INDEX IF NOT EXISTS idx_fund_ticker ON company_fundamentals(ticker);
 
 -- ─────────────────────────────────────────
+-- 3.6 글로벌 시장 점유율·순위 (수동 시드 — 무료 자동소스 없음)
+--     리서치/리포트에서 확인한 값만 출처·기준시점과 함께 적재.
+--     LLM 추정 금지 (CLAUDE.md 원칙: 판단하지 않고 설명만 한다).
+--     한 기업이 복수 세그먼트(예: 삼성전자 DRAM/NAND/파운드리)를 가질 수 있음.
+-- ─────────────────────────────────────────
+
+CREATE TABLE IF NOT EXISTS company_market_share (
+    ticker        TEXT NOT NULL REFERENCES companies(ticker),
+    segment       TEXT NOT NULL,    -- 제품/세그먼트 (예: 'DRAM', 'EV 배터리', '소형 건설장비')
+    global_share  REAL,             -- 글로벌 점유율 % (NULL 허용)
+    global_rank   INTEGER,          -- 글로벌 순위 (NULL 허용)
+    as_of         TEXT NOT NULL,    -- 기준 시점 (예: '2025Q1', '2024')
+    source        TEXT NOT NULL,    -- 출처 (예: 'TrendForce', 'SNE Research', 'Clarksons')
+    note          TEXT,             -- 비고
+    PRIMARY KEY(ticker, segment, as_of)
+);
+
+CREATE INDEX IF NOT EXISTS idx_mshare_ticker ON company_market_share(ticker);
+
+-- ─────────────────────────────────────────
 -- 4. 시세 (docs/00 5.1)
 -- ─────────────────────────────────────────
 

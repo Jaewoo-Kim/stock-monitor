@@ -282,7 +282,7 @@
 
 <script>
 // ── 전역 상태 ──
-let _industries = [], _detail = {}, _scores = {}, _reports = [], _meta = {};
+let _industries = [], _detail = {}, _scores = {}, _reports = [], _meta = {}, _mshare = {};
 let _currentStkInd = null;
 const BASE = 'data/output';
 
@@ -308,6 +308,24 @@ function pctTxt(p){
 }
 function phaseBadge(ph){
   return `<span class="badge ${PHASE_BADGE[ph]||'b-grey'}">${PHASE_LABEL[ph]||ph}</span>`;
+}
+// 글로벌 시장 점유율·순위 셀 (대표 세그먼트 + 전체 tooltip)
+function mshareCell(ticker){
+  const list = _mshare[ticker];
+  if (!list || !list.length) return '<span class="mute">—</span>';
+  const t = list[0];
+  const parts = [];
+  if (t.rank  != null) parts.push(`${t.rank}위`);
+  if (t.share != null) parts.push(`${t.share}%`);
+  const badge = parts.length
+    ? `<span class="badge ${t.rank===1?'b-up':'b-info'}">${parts.join(' · ')}</span>`
+    : '<span class="badge b-grey">선두권</span>';
+  const more = list.length > 1 ? `<span class="sub" style="font-size:10px;margin-left:4px">+${list.length-1}</span>` : '';
+  const tip = list.map(m => {
+    const r = m.rank!=null?`${m.rank}위`:'', s = m.share!=null?`${m.share}%`:'';
+    return `${m.segment} ${[r,s].filter(Boolean).join(' ')} — ${m.source} ${m.as_of}${m.note?' · '+m.note:''}`;
+  }).join('\n').replace(/"/g,'&quot;');
+  return `<div title="${tip}" style="text-align:left">${badge}${more}<div class="isub">${t.segment}</div></div>`;
 }
 
 // ── 네비게이션 ──
@@ -433,9 +451,10 @@ function indDetail(ind, det){
     const mt = sc?.margin_trend != null
       ? (sc.margin_trend>0?'<span class="up">↑</span>':sc.margin_trend<0?'<span class="down">↓</span>':'<span class="mute">→</span>') : '—';
     return `<tr><td><span class="iname">${c.name}</span><div class="isub num">${c.ticker}</div></td>
+      <td>${mshareCell(c.ticker)}</td>
       <td class="num">${won(c.close)}</td><td class="num">${c.ret_1m!=null?pctTxt(c.ret_1m):'—'}</td>
       <td class="num">${compScore}</td><td class="num">${mt}</td></tr>`;
-  }).join('') || '<tr><td colspan="5" class="empty">시세 수집 전</td></tr>';
+  }).join('') || '<tr><td colspan="6" class="empty">시세 수집 전</td></tr>';
 
   return `
     <div class="pagehead" style="margin-bottom:18px">
@@ -464,8 +483,8 @@ function indDetail(ind, det){
       </div>
       <div>
         <div class="sectitle"><h3>대표 종목 현황</h3></div>
-        <div class="card" style="overflow:hidden">
-          <table class="tbl"><thead><tr><th>종목</th><th>현재가</th><th>1M</th><th>점수</th><th>마진</th></tr></thead>
+        <div class="card" style="overflow-x:auto">
+          <table class="tbl"><thead><tr><th>종목</th><th>글로벌 점유율</th><th>현재가</th><th>1M</th><th>점수</th><th>마진</th></tr></thead>
           <tbody style="cursor:default">${rows}</tbody></table>
         </div>
       </div>
@@ -497,19 +516,21 @@ function selectStk(level2Id){
     const rank = sc?.rank != null ? `<span class="rk">${sc.rank}</span>` : '';
     return `<tr><td>${rank}<span class="iname">${c.name}</span></td>
       <td class="num sub">${c.ticker}</td>
+      <td>${mshareCell(c.ticker)}</td>
       <td class="num">${won(c.close)}</td>
       <td class="num">${c.ret_1m!=null?pctTxt(c.ret_1m):'—'}</td>
       <td class="num">${comp}</td>
       <td>${mt}</td></tr>`;
-  }).join('') || '<tr><td colspan="6" class="empty">시세·점수 수집 후 표시됩니다</td></tr>';
+  }).join('') || '<tr><td colspan="7" class="empty">시세·점수 수집 후 표시됩니다</td></tr>';
 
   document.getElementById('stk-table').innerHTML = `
-    <div style="padding:14px 18px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center">
+    <div style="padding:14px 18px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap">
       <div><b style="font-size:15px">${ind?.level2_name||''}</b> ${ind?phaseBadge(ind.cycle_phase):''}</div>
-      <span class="sub" style="font-size:12px">대표종목 ${comps.length}개 · 점수 = EPS 리비전 + 영업이익률 추세</span>
+      <span class="sub" style="font-size:12px">대표종목 ${comps.length}개 · 글로벌 점유율은 출처·기준시점 포함(마우스 오버)</span>
     </div>
-    <table class="tbl"><thead><tr><th>종목</th><th>코드</th><th>현재가</th><th>1개월</th><th>모멘텀</th><th>영업이익률</th></tr></thead>
-    <tbody>${rows}</tbody></table>`;
+    <div style="overflow-x:auto">
+    <table class="tbl"><thead><tr><th>종목</th><th>코드</th><th>글로벌 점유율·순위</th><th>현재가</th><th>1개월</th><th>모멘텀</th><th>영업이익률</th></tr></thead>
+    <tbody>${rows}</tbody></table></div>`;
 }
 
 // ── 리포트 ──
@@ -579,15 +600,16 @@ function homeReports(reports){
 // ── 데이터 로드 ──
 async function loadData(){
   try {
-    const [iR,rR,dR,sR,mR] = await Promise.all([
+    const [iR,rR,dR,sR,msR,mR] = await Promise.all([
       fetch(`${BASE}/industries.json`), fetch(`${BASE}/reports.json`),
       fetch(`${BASE}/industry_detail.json`), fetch(`${BASE}/stock_scores.json`),
-      fetch(`${BASE}/meta.json`),
+      fetch(`${BASE}/market_share.json`), fetch(`${BASE}/meta.json`),
     ]);
     _industries = iR.ok ? await iR.json() : [];
     _reports    = rR.ok ? await rR.json() : [];
     _detail     = dR.ok ? await dR.json() : {};
     _scores     = sR.ok ? await sR.json() : {};
+    _mshare     = msR.ok ? await msR.json() : {};
     _meta       = mR.ok ? await mR.json() : {};
 
     // 사이드바

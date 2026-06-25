@@ -1,0 +1,166 @@
+{
+  "000270": [
+    {
+      "segment": "글로벌 완성차(그룹)",
+      "share": null,
+      "rank": 3,
+      "as_of": "2025",
+      "source": "언론 집계",
+      "note": "현대차그룹 합산 세계 3위"
+    }
+  ],
+  "000660": [
+    {
+      "segment": "HBM",
+      "share": 62.0,
+      "rank": 1,
+      "as_of": "2025Q2",
+      "source": "Counterpoint",
+      "note": "AI 메모리 선두"
+    },
+    {
+      "segment": "DRAM",
+      "share": 36.0,
+      "rank": 1,
+      "as_of": "2025Q1",
+      "source": "TrendForce",
+      "note": "사상 첫 DRAM 점유율 1위"
+    }
+  ],
+  "005380": [
+    {
+      "segment": "글로벌 완성차(그룹)",
+      "share": null,
+      "rank": 3,
+      "as_of": "2025",
+      "source": "언론 집계",
+      "note": "현대차+기아+제네시스 합산 세계 3위"
+    }
+  ],
+  "005930": [
+    {
+      "segment": "NAND",
+      "share": 32.9,
+      "rank": 1,
+      "as_of": "2025Q2",
+      "source": "TrendForce",
+      "note": "글로벌 1위 유지"
+    },
+    {
+      "segment": "DRAM",
+      "share": 33.7,
+      "rank": 2,
+      "as_of": "2025Q1",
+      "source": "TrendForce",
+      "note": "SK하이닉스에 1위 내줌·메모리 순위 변동 큼"
+    },
+    {
+      "segment": "파운드리",
+      "share": 7.3,
+      "rank": 2,
+      "as_of": "2025Q2",
+      "source": "TrendForce",
+      "note": "TSMC 70%로 1위"
+    }
+  ],
+  "006400": [
+    {
+      "segment": "EV 배터리",
+      "share": 2.4,
+      "rank": 9,
+      "as_of": "2025",
+      "source": "SNE Research",
+      "note": "각형·원통형 중심"
+    }
+  ],
+  "009150": [
+    {
+      "segment": "MLCC(하이엔드)",
+      "share": 18.0,
+      "rank": 2,
+      "as_of": "2025",
+      "source": "업계 집계",
+      "note": "무라타 1위(약 26%)"
+    }
+  ],
+  "009540": [
+    {
+      "segment": "조선(글로벌 그룹)",
+      "share": null,
+      "rank": 1,
+      "as_of": "2025",
+      "source": "Clarksons",
+      "note": "세계 1위 조선그룹·한국 전체 22%"
+    }
+  ],
+  "011070": [
+    {
+      "segment": "스마트폰 카메라모듈",
+      "share": 18.0,
+      "rank": 1,
+      "as_of": "2025",
+      "source": "업계 집계",
+      "note": "Apple 카메라 약 70% 공급"
+    }
+  ],
+  "034220": [
+    {
+      "segment": "OLED 패널(매출)",
+      "share": 21.0,
+      "rank": 2,
+      "as_of": "2025",
+      "source": "Counterpoint",
+      "note": "삼성디스플레이 1위(41%)"
+    }
+  ],
+  "068270": [
+    {
+      "segment": "바이오시밀러",
+      "share": null,
+      "rank": null,
+      "as_of": "2025",
+      "source": "업계 집계",
+      "note": "글로벌 바이오시밀러 선두권"
+    }
+  ],
+  "207940": [
+    {
+      "segment": "바이오 CDMO",
+      "share": 9.4,
+      "rank": 3,
+      "as_of": "2025",
+      "source": "업계 집계",
+      "note": "Lonza·WuXi에 이은 3위권"
+    }
+  ],
+  "241560": [
+    {
+      "segment": "소형 건설장비(북미 스키드스티어)",
+      "share": 28.5,
+      "rank": 1,
+      "as_of": "2025",
+      "source": "Equipment World",
+      "note": "글로벌 컴팩트 장비 선두권"
+    }
+  ],
+  "247540": [
+    {
+      "segment": "하이니켈 양극재",
+      "share": null,
+      "rank": null,
+      "as_of": "2025",
+      "source": "업계 집계",
+      "note": "글로벌 하이니켈 양극재 선두권"
+    }
+  ],
+  "373220": [
+    {
+      "segment": "EV 배터리",
+      "share": 9.2,
+      "rank": 3,
+      "as_of": "2025",
+      "source": "SNE Research",
+      "note": "비중국 시장 1위권"
+    }
+  ]
+}

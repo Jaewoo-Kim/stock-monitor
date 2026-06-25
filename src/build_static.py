@@ -309,6 +309,30 @@ def build_stock_scores(con) -> dict[str, list]:
     return result
 
 
+def build_market_share(con) -> dict[str, list]:
+    """ticker → 글로벌 점유율·순위 목록 (순위 우선, 점유율 내림차순)."""
+    rows = con.execute(
+        """
+        SELECT ticker, segment, global_share, global_rank, as_of, source, note
+        FROM company_market_share
+        ORDER BY ticker,
+                 COALESCE(global_rank, 999),
+                 COALESCE(global_share, -1) DESC
+        """
+    ).fetchall()
+    result: dict[str, list] = {}
+    for ticker, segment, share, rank, as_of, source, note in rows:
+        result.setdefault(ticker, []).append({
+            "segment": segment,
+            "share":   share,
+            "rank":    rank,
+            "as_of":   as_of,
+            "source":  source,
+            "note":    note,
+        })
+    return result
+
+
 def build_meta(con) -> dict:
     n_reports = con.execute("SELECT COUNT(*) FROM report_events").fetchone()[0]
     n_companies = con.execute(
@@ -343,6 +367,7 @@ def run() -> None:
         reports         = build_reports(con)
         industry_detail = build_industry_detail(con)
         stock_scores    = build_stock_scores(con)
+        market_share    = build_market_share(con)
         meta            = build_meta(con)
     finally:
         con.close()
@@ -356,6 +381,7 @@ def run() -> None:
     _write("reports.json",         reports)
     _write("industry_detail.json", industry_detail)
     _write("stock_scores.json",    stock_scores)
+    _write("market_share.json",    market_share)
     _write("meta.json",            meta)
 
     log.info("빌드 완료 → %s", OUTPUT)

@@ -110,6 +110,38 @@ def load_award_seeds(cur) -> int:
     return inserted
 
 
+def load_market_share(cur) -> int:
+    """글로벌 시장 점유율·순위 시드 적재. FK 미충족(ticker 없음) 시 스킵."""
+    import sqlite3 as _sqlite3
+
+    path = SEED / "market_share.csv"
+    if not path.exists():
+        return 0
+    rows = list(csv.DictReader(path.read_text(encoding="utf-8").splitlines()))
+    inserted = skipped = 0
+    for r in rows:
+        share = r.get("global_share", "").strip()
+        rank  = r.get("global_rank", "").strip()
+        try:
+            cur.execute(
+                """INSERT OR REPLACE INTO company_market_share
+                   (ticker, segment, global_share, global_rank, as_of, source, note)
+                   VALUES(?, ?, ?, ?, ?, ?, ?)""",
+                (
+                    r["ticker"], r["segment"],
+                    float(share) if share else None,
+                    int(rank) if rank else None,
+                    r["as_of"], r["source"], r.get("note", "") or None,
+                ),
+            )
+            inserted += 1
+        except _sqlite3.IntegrityError:
+            skipped += 1
+    if skipped:
+        print(f"  [INFO] market_share: {skipped}건 FK 미충족 스킵")
+    return inserted
+
+
 def load_mapping_overrides(cur) -> int:
     import sqlite3 as _sqlite3
 
@@ -135,8 +167,8 @@ def load_mapping_overrides(cur) -> int:
 _SEED_TABLES = [
     "award_seeds", "analyst_industry_rank", "analyst_scores",
     "mapping_overrides", "company_themes", "report_events",
-    "industry_etfs", "company_fundamentals", "price_history",
-    "industry_index_history", "companies",
+    "industry_etfs", "company_fundamentals", "company_market_share",
+    "price_history", "industry_index_history", "companies",
     "analysts", "industries", "sectors", "theme_tags",
 ]
 
@@ -165,6 +197,7 @@ def main() -> None:
             ("analysts",             load_analysts),
             ("award_seeds",          load_award_seeds),
             ("mapping_overrides",    load_mapping_overrides),
+            ("market_share",         load_market_share),
         ]
         for name, fn in steps:
             n = fn(cur)
