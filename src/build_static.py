@@ -275,6 +275,40 @@ def build_industry_detail(con) -> dict[str, dict]:
     return detail
 
 
+def build_stock_scores(con) -> dict[str, list]:
+    """level2_id → 종목 점수 목록 (산업 내 순위순)."""
+    rows = con.execute(
+        """
+        SELECT ss.ticker, c.name, c.level2_id,
+               ss.eps_rev_z, ss.margin_trend, ss.composite, ss.rank_in_level2,
+               ss.calc_date
+        FROM stock_scores ss
+        JOIN companies c ON ss.ticker = c.ticker
+        INNER JOIN (
+            SELECT ticker, MAX(calc_date) AS max_date
+            FROM stock_scores GROUP BY ticker
+        ) latest ON ss.ticker = latest.ticker
+                 AND ss.calc_date = latest.max_date
+        WHERE c.level2_id IS NOT NULL
+        ORDER BY c.level2_id, COALESCE(ss.rank_in_level2, 999)
+        """
+    ).fetchall()
+
+    result: dict[str, list] = {}
+    for (ticker, name, level2_id,
+         eps_rev_z, margin_trend, composite, rank, calc_date) in rows:
+        result.setdefault(level2_id, []).append({
+            "ticker":       ticker,
+            "name":         name,
+            "eps_rev_z":    eps_rev_z,
+            "margin_trend": margin_trend,
+            "composite":    composite,
+            "rank":         rank,
+            "calc_date":    calc_date,
+        })
+    return result
+
+
 def build_meta(con) -> dict:
     n_reports = con.execute("SELECT COUNT(*) FROM report_events").fetchone()[0]
     n_companies = con.execute(
@@ -305,10 +339,11 @@ def run() -> None:
 
     con = connect()
     try:
-        industries     = build_industries(con)
-        reports        = build_reports(con)
+        industries      = build_industries(con)
+        reports         = build_reports(con)
         industry_detail = build_industry_detail(con)
-        meta           = build_meta(con)
+        stock_scores    = build_stock_scores(con)
+        meta            = build_meta(con)
     finally:
         con.close()
 
@@ -320,6 +355,7 @@ def run() -> None:
     _write("industries.json",      industries)
     _write("reports.json",         reports)
     _write("industry_detail.json", industry_detail)
+    _write("stock_scores.json",    stock_scores)
     _write("meta.json",            meta)
 
     log.info("빌드 완료 → %s", OUTPUT)

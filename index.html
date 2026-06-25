@@ -216,6 +216,7 @@
 // ── 전역 상태 ──
 let _industries = [];
 let _detail = {};
+let _scores = {};
 let _currentIndId = null;
 let _currentStkInd = null;
 
@@ -442,10 +443,11 @@ const BASE = 'data/output';
 
 async function loadData() {
   try {
-    const [indRes, repRes, detRes, metaRes] = await Promise.all([
+    const [indRes, repRes, detRes, stkRes, metaRes] = await Promise.all([
       fetch(`${BASE}/industries.json`),
       fetch(`${BASE}/reports.json`),
       fetch(`${BASE}/industry_detail.json`),
+      fetch(`${BASE}/stock_scores.json`),
       fetch(`${BASE}/meta.json`),
     ]);
 
@@ -454,7 +456,8 @@ async function loadData() {
     const meta       = metaRes.ok ? await metaRes.json() : {};
 
     _industries = industries;
-    _detail     = detRes.ok ? await detRes.json() : {};
+    _detail     = detRes.ok  ? await detRes.json()  : {};
+    _scores     = stkRes.ok  ? await stkRes.json()  : {};
 
     // 타임스탬프
     const built = meta.built_at
@@ -617,16 +620,28 @@ function renderStkChips() {
 
 function renderStkList(level2Id) {
   renderStkChips();
-  const det   = _detail[level2Id] || {};
-  const comps = det.companies_detail || [];
-  const ind   = _industries.find(i => i.level2_id === level2Id);
+  const det       = _detail[level2Id] || {};
+  const comps     = det.companies_detail || [];
+  const scoreList = _scores[level2Id] || [];
+  const scoreMap  = Object.fromEntries(scoreList.map(s => [s.ticker, s]));
+  const ind       = _industries.find(i => i.level2_id === level2Id);
   if (!ind) return;
 
   const rows = comps.map(c => {
     const ret   = c.ret_1m != null ? `<span class="${c.ret_1m >= 0 ? 'up' : 'down'}">${c.ret_1m >= 0 ? '+' : ''}${c.ret_1m}%</span>` : '—';
     const close = c.close ? c.close.toLocaleString() + '원' : '—';
+    const sc    = scoreMap[c.ticker];
+    const comp  = sc?.composite != null
+      ? `<span class="badge ${sc.composite >= 0 ? 'b-up' : 'b-down'}" style="font-size:9.5px">${sc.composite >= 0 ? '+' : ''}${(sc.composite * 100).toFixed(0)}</span>`
+      : '';
+    const mtrend = sc?.margin_trend != null
+      ? `<span class="${sc.margin_trend > 0 ? 'up' : sc.margin_trend < 0 ? 'down' : 'mute'}" style="font-size:10px">${sc.margin_trend > 0 ? '↑마진' : sc.margin_trend < 0 ? '↓마진' : '→마진'}</span>`
+      : '';
+    const rank = sc?.rank != null ? `<span class="num" style="font-size:9px;color:var(--hint)">#${sc.rank}</span>` : '';
     return `<div class="srow">
-      <div><span class="snm">${c.name}</span><span class="scode">${c.ticker}</span></div>
+      <div><span class="snm">${c.name}</span><span class="scode">${c.ticker}</span>
+        <div style="margin-top:3px;display:flex;gap:5px;align-items:center">${comp}${mtrend}${rank}</div>
+      </div>
       <div style="text-align:right"><div class="sp num">${close}</div><div class="small">${ret}</div></div>
     </div>`;
   }).join('') || '<div class="hint-txt" style="padding:12px 0">시세 수집 후 표시됩니다</div>';
