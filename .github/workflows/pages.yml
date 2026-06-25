@@ -33,9 +33,9 @@ jobs:
 
       - name: Prepare site directory
         run: |
-          mkdir -p _site/data/output
+          mkdir -p _site/data
           cp index.html _site/
-          cp -r data/output/ _site/data/output/
+          cp -r data/output _site/data/
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
