@@ -63,14 +63,38 @@ def step_naver_research() -> bool:
 
 
 def step_price_collector() -> bool:
-    log.info("=== [3/3] price_collector 시작 ===")
+    log.info("=== [3/5] price_collector 시작 ===")
     try:
         from collectors.price_collector import run
         run(fromdate=_yesterday_yyyymmdd())
-        log.info("=== [3/3] price_collector 완료 ===")
+        log.info("=== [3/5] price_collector 완료 ===")
         return True
     except Exception as exc:
         log.error("price_collector 실패: %s", exc, exc_info=True)
+        return False
+
+
+def step_signals() -> bool:
+    log.info("=== [4/5] signal_engine 시작 ===")
+    try:
+        from signals.run_signals import run
+        run()
+        log.info("=== [4/5] signal_engine 완료 ===")
+        return True
+    except Exception as exc:
+        log.error("signal_engine 실패: %s", exc, exc_info=True)
+        return False
+
+
+def step_build_static() -> bool:
+    log.info("=== [5/5] build_static 시작 ===")
+    try:
+        from build_static import run
+        run()
+        log.info("=== [5/5] build_static 완료 ===")
+        return True
+    except Exception as exc:
+        log.error("build_static 실패: %s", exc, exc_info=True)
         return False
 
 
@@ -84,11 +108,13 @@ def main(run_mapper: bool = False) -> int:
     if run_mapper or today.weekday() == 0:
         results["company_mapper"] = step_company_mapper()
     else:
-        log.info("=== [1/3] company_mapper 스킵 (월요일 전용) ===")
-        results["company_mapper"] = True  # 스킵은 실패 아님
+        log.info("=== [1/5] company_mapper 스킵 (월요일 전용) ===")
+        results["company_mapper"] = True
 
-    results["naver_research"] = step_naver_research()
+    results["naver_research"]  = step_naver_research()
     results["price_collector"] = step_price_collector()
+    results["signals"]         = step_signals()
+    results["build_static"]    = step_build_static()
 
     # 결과 요약
     log.info("─────────────────────────────────")

@@ -1,0 +1,249 @@
+"""정적 JSON 빌더.
+
+DB → data/output/*.json 생성. GitHub Pages / 로컬 서버에서 대시보드가 이 파일을 읽는다.
+
+출력 파일:
+  data/output/industries.json  — 산업별 사이클 현황 + 대표종목 + ETF
+  data/output/reports.json     — 최신 리포트 100건 (산업별)
+  data/output/meta.json        — 빌드 시각, 통계
+
+실행:
+  python src/build_static.py
+"""
+from __future__ import annotations
+
+import json
+import logging
+import sys
+from datetime import date, datetime
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(ROOT / "src"))
+from db import connect  # noqa: E402
+
+log = logging.getLogger(__name__)
+
+OUTPUT = ROOT / "data" / "output"
+
+PHASE_ORDER = {"전환": 0, "확장": 1, "둔화": 2, "바닥": 3, "침체": 4, "관측부족": 5}
+
+
+# ─────────────────────────────────────
+# 산업 현황 JSON
+# ─────────────────────────────────────
+
+def build_industries(con) -> list[dict]:
+    today = date.today().isoformat()
+
+    # 최신 신호 (level2_id 별 가장 최근 calc_date)
+    signals = {
+        row[0]: {
+            "cycle_phase":      row[1],
+            "composite_score":  row[2],
+            "conf_breadth":     row[3],
+            "conf_magnitude":   row[4],
+            "conf_upside_gap":  row[5],
+            "lead_first_turn":  row[6],
+            "lead_accel":       row[7],
+            "phase_confidence": row[8],
+            "n_reports":        row[9],
+            "calc_date":        row[10],
+        }
+        for row in con.execute(
+            """
+            SELECT cs.level2_id, cs.cycle_phase, cs.composite_score,
+                   cs.conf_breadth, cs.conf_magnitude, cs.conf_upside_gap,
+                   cs.lead_first_turn, cs.lead_accel,
+                   cs.phase_confidence, cs.n_reports, cs.calc_date
+            FROM cycle_signals cs
+            INNER JOIN (
+                SELECT level2_id, MAX(calc_date) AS max_date
+                FROM cycle_signals GROUP BY level2_id
+            ) latest ON cs.level2_id = latest.level2_id
+                     AND cs.calc_date = latest.max_date
+            """
+        ).fetchall()
+    }
+
+    # 산업 기본 정보
+    industries = con.execute(
+        """
+        SELECT i.level2_id, i.level1_id, i.level2_name,
+               s.level1_name, i.coverage_density, i.is_signal_eligible
+        FROM industries i
+        JOIN sectors s ON i.level1_id = s.level1_id
+        ORDER BY i.level2_id
+        """
+    ).fetchall()
+
+    # 대표종목 (level2_id → list)
+    rep_companies: dict[str, list] = {}
+    for row in con.execute(
+        """
+        SELECT c.level2_id, c.ticker, c.name,
+               ph.close AS last_close
+        FROM companies c
+        LEFT JOIN (
+            SELECT ticker, close FROM price_history
+            WHERE date = (SELECT MAX(date) FROM price_history)
+        ) ph ON c.ticker = ph.ticker
+        WHERE c.is_representative = 1 AND c.level2_id IS NOT NULL
+        ORDER BY c.level2_id, c.ticker
+        """
+    ).fetchall():
+        level2_id, ticker, name, last_close = row
+        rep_companies.setdefault(level2_id, []).append({
+            "ticker": ticker,
+            "name": name,
+            "last_close": last_close,
+        })
+
+    # 대표 ETF (level2_id → list)
+    etfs: dict[str, list] = {}
+    for row in con.execute(
+        "SELECT level2_id, etf_ticker, etf_name FROM industry_etfs ORDER BY level2_id"
+    ).fetchall():
+        etfs.setdefault(row[0], []).append({"ticker": row[1], "name": row[2]})
+
+    # 최근 리포트 건수 (4주)
+    report_counts: dict[str, int] = {
+        row[0]: row[1]
+        for row in con.execute(
+            """
+            SELECT c.level2_id, COUNT(*) FROM report_events re
+            JOIN companies c ON re.ticker = c.ticker
+            WHERE re.published_date >= date(?, '-28 days')
+              AND c.level2_id IS NOT NULL
+            GROUP BY c.level2_id
+            """,
+            (today,),
+        ).fetchall()
+    }
+
+    result = []
+    for (level2_id, level1_id, level2_name, level1_name,
+         coverage_density, is_signal_eligible) in industries:
+        sig = signals.get(level2_id, {})
+        result.append({
+            "level2_id":      level2_id,
+            "level1_id":      level1_id,
+            "level2_name":    level2_name,
+            "level1_name":    level1_name,
+            "coverage":       coverage_density,
+            "signal_ok":      bool(is_signal_eligible),
+            "cycle_phase":    sig.get("cycle_phase", "관측부족"),
+            "composite_score": sig.get("composite_score"),
+            "conf_breadth":   sig.get("conf_breadth"),
+            "conf_magnitude": sig.get("conf_magnitude"),
+            "upside_gap":     sig.get("conf_upside_gap"),
+            "lead_first_turn": sig.get("lead_first_turn"),
+            "lead_accel":     sig.get("lead_accel"),
+            "phase_confidence": sig.get("phase_confidence"),
+            "n_reports_signal": sig.get("n_reports", 0),
+            "n_reports_4w":   report_counts.get(level2_id, 0),
+            "calc_date":      sig.get("calc_date"),
+            "companies":      rep_companies.get(level2_id, []),
+            "etfs":           etfs.get(level2_id, []),
+        })
+
+    # 사이클 단계 → composite_score 순 정렬
+    result.sort(key=lambda r: (
+        PHASE_ORDER.get(r["cycle_phase"], 5),
+        -(r["composite_score"] or -999),
+    ))
+
+    return result
+
+
+# ─────────────────────────────────────
+# 최신 리포트 JSON
+# ─────────────────────────────────────
+
+def build_reports(con, limit: int = 100) -> list[dict]:
+    rows = con.execute(
+        f"""
+        SELECT re.report_id, re.published_date, re.broker,
+               a.name AS analyst_name,
+               re.ticker, c.name AS company_name,
+               c.level2_id,
+               i.level2_name,
+               re.title, re.opinion, re.target_price, re.prev_target,
+               re.source_url, re.broker_url, re.pdf_available
+        FROM report_events re
+        LEFT JOIN analysts  a ON re.analyst_id = a.analyst_id
+        LEFT JOIN companies c ON re.ticker     = c.ticker
+        LEFT JOIN industries i ON c.level2_id  = i.level2_id
+        ORDER BY re.published_date DESC, re.report_id DESC
+        LIMIT {limit}
+        """
+    ).fetchall()
+
+    cols = [
+        "report_id", "published_date", "broker", "analyst_name",
+        "ticker", "company_name", "level2_id", "level2_name",
+        "title", "opinion", "target_price", "prev_target",
+        "source_url", "broker_url", "pdf_available",
+    ]
+    return [dict(zip(cols, row)) for row in rows]
+
+
+# ─────────────────────────────────────
+# 메타 JSON
+# ─────────────────────────────────────
+
+def build_meta(con) -> dict:
+    n_reports = con.execute("SELECT COUNT(*) FROM report_events").fetchone()[0]
+    n_companies = con.execute(
+        "SELECT COUNT(*) FROM companies WHERE is_representative=1"
+    ).fetchone()[0]
+    last_report = con.execute(
+        "SELECT MAX(published_date) FROM report_events"
+    ).fetchone()[0]
+    last_price = con.execute(
+        "SELECT MAX(date) FROM price_history"
+    ).fetchone()[0]
+
+    return {
+        "built_at": datetime.now().isoformat(timespec="seconds"),
+        "n_reports_total": n_reports,
+        "n_representative_companies": n_companies,
+        "last_report_date": last_report,
+        "last_price_date": last_price,
+    }
+
+
+# ─────────────────────────────────────
+# 메인
+# ─────────────────────────────────────
+
+def run() -> None:
+    OUTPUT.mkdir(parents=True, exist_ok=True)
+
+    con = connect()
+    try:
+        industries = build_industries(con)
+        reports    = build_reports(con)
+        meta       = build_meta(con)
+    finally:
+        con.close()
+
+    def _write(name: str, data) -> None:
+        path = OUTPUT / name
+        path.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
+        log.info("wrote %s (%d items)", path.name, len(data) if isinstance(data, list) else 1)
+
+    _write("industries.json", industries)
+    _write("reports.json",    reports)
+    _write("meta.json",       meta)
+
+    log.info("빌드 완료 → %s", OUTPUT)
+
+
+if __name__ == "__main__":
+    logging.basicConfig(
+        level=logging.INFO,
+        format="%(asctime)s %(levelname)s %(message)s",
+        datefmt="%H:%M:%S",
+    )
+    run()

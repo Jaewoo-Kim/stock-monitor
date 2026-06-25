@@ -196,3 +196,51 @@ CREATE TABLE IF NOT EXISTS industry_index_history (
     close      REAL NOT NULL,
     PRIMARY KEY(level2_id, date)
 );
+
+-- ─────────────────────────────────────────
+-- 5. 신호 엔진 산출물 (Phase 2)
+-- ─────────────────────────────────────────
+
+-- 산업별 주간 신호 스냅샷
+CREATE TABLE IF NOT EXISTS cycle_signals (
+    level2_id        TEXT NOT NULL REFERENCES industries(level2_id),
+    calc_date        TEXT NOT NULL,   -- 계산 기준일 YYYY-MM-DD (보통 일요일)
+    window_weeks     INTEGER NOT NULL, -- 신호 윈도우 (4 or 8주)
+
+    -- 확인 레이어 (목표가 리비전 기반)
+    conf_breadth     REAL,  -- 상향 비율 (-1~1): (상향-하향) / 전체
+    conf_magnitude   REAL,  -- 상향 평균 % (상향 리포트만)
+    conf_upside_gap  INTEGER, -- 업종지수 N주 최고가 돌파 (0/1)
+
+    -- 선행 레이어 (EPS 리비전 기반 — 데이터 부족 시 NULL)
+    lead_breadth     REAL,  -- EPS 상향 비율
+    lead_magnitude   REAL,  -- EPS 상향 평균 %
+    lead_accel       REAL,  -- 리비전 가속도 (Δ breadth)
+    lead_first_turn  INTEGER, -- 최초 양전환 플래그 (0/1)
+
+    -- 종합 점수 & 사이클 상태
+    composite_score  REAL,   -- -1~1, 높을수록 전환·확장
+    cycle_phase      TEXT CHECK(cycle_phase IN
+                       ('확장','전환','둔화','침체','바닥','관측부족')),
+    phase_confidence REAL,   -- 0~1 (데이터 충분도)
+    n_reports        INTEGER NOT NULL DEFAULT 0,  -- 윈도우 내 리포트 수
+
+    PRIMARY KEY(level2_id, calc_date)
+);
+
+CREATE INDEX IF NOT EXISTS idx_signal_date  ON cycle_signals(calc_date);
+CREATE INDEX IF NOT EXISTS idx_signal_phase ON cycle_signals(cycle_phase);
+
+-- 섹터 내 종목별 펀더멘털 모멘텀 점수
+CREATE TABLE IF NOT EXISTS stock_scores (
+    ticker        TEXT NOT NULL REFERENCES companies(ticker),
+    calc_date     TEXT NOT NULL,
+    -- 관절③ 두 축
+    eps_rev_z     REAL,   -- EPS 리비전 z-score (NULL=데이터없음)
+    margin_trend  REAL,   -- 영업이익률 2분기 추세 (-1/0/+1)
+    composite     REAL,   -- 0.5*eps_rev_z + 0.5*margin_trend
+    rank_in_level2 INTEGER, -- 산업 내 순위
+    PRIMARY KEY(ticker, calc_date)
+);
+
+CREATE INDEX IF NOT EXISTS idx_score_date ON stock_scores(calc_date);
