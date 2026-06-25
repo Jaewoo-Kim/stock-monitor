@@ -31,11 +31,16 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
+      - name: Prepare site directory
+        run: |
+          mkdir -p _site/data/output
+          cp index.html _site/
+          cp -r data/output/ _site/data/output/
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # repo root 전체를 서빙 (index.html + data/output/ 포함)
-          path: '.'
+          path: '_site'
 
       - name: Deploy to GitHub Pages
         id: deployment
