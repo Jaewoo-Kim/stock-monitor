@@ -113,6 +113,16 @@ def calc_price_indicators(con, level2_id: str) -> dict:
 # 방향(애널리스트) + 가격 → 타이밍 판정
 # ─────────────────────────────────────
 
+def _latest_l0(con, level2_id: str) -> dict | None:
+    row = con.execute(
+        "SELECT driver_state, driver_score FROM l0_signals WHERE level2_id=?",
+        (level2_id,),
+    ).fetchone()
+    if row is None:
+        return None
+    return {"driver_state": row[0], "driver_score": row[1]}
+
+
 def _latest_cycle(con, level2_id: str) -> dict | None:
     row = con.execute(
         """
@@ -132,8 +142,11 @@ def _latest_cycle(con, level2_id: str) -> dict | None:
     }
 
 
-def _direction_up(cyc: dict | None) -> bool:
-    """애널리스트 신호상 상승 방향인가."""
+def _direction_up(cyc: dict | None, l0: dict | None = None) -> bool:
+    """상승 방향인가 — L0 업황(가장 빠름) + 애널리스트 신호."""
+    # L0 업황 동인이 바닥 통과/상승이면 방향 ON (목표가보다 먼저)
+    if l0 and l0.get("driver_state") in ("turning_up", "rising"):
+        return True
     if not cyc:
         return False
     if cyc["phase"] in ("전환", "확장"):
@@ -145,21 +158,22 @@ def _direction_up(cyc: dict | None) -> bool:
     return False
 
 
-def classify_timing(cyc: dict | None, px: dict) -> tuple[str, float]:
+def classify_timing(cyc: dict | None, px: dict, l0: dict | None = None) -> tuple[str, float]:
     """(timing_state, timing_score 0~100).
 
-    방향(애널리스트)과 가격 확인을 결합. 리포트가 부족해 방향이 비어도
+    방향(L0 업황 + 애널리스트)과 가격 확인을 결합. 리포트가 부족해 방향이 비어도
     가격 추세가 강하면 watch(가격만)으로 노출 — UI에서 근거 구분 표시.
     """
     days = px["price_days"]
     price_ready = days >= MIN_DAYS_MOM
 
-    # 둔화·침체는 가격과 무관하게 주의
+    # 둔화·침체는 가격과 무관하게 주의 (단 L0가 바닥 통과면 예외적으로 관찰)
     phase = cyc["phase"] if cyc else "관측부족"
-    if phase in ("둔화", "침체"):
+    l0_up = bool(l0 and l0.get("driver_state") in ("turning_up", "rising"))
+    if phase in ("둔화", "침체") and not l0_up:
         return "caution", _score(cyc, px, base=20)
 
-    direction_up = _direction_up(cyc)
+    direction_up = _direction_up(cyc, l0)
 
     # 가격 확인 요소
     trend_up = px["idx_trend_up"] == 1
@@ -223,7 +237,8 @@ def run(con=None, calc_date: str | None = None) -> None:
         for level2_id in level2_ids:
             px  = calc_price_indicators(con, level2_id)
             cyc = _latest_cycle(con, level2_id)
-            state, score = classify_timing(cyc, px)
+            l0  = _latest_l0(con, level2_id)
+            state, score = classify_timing(cyc, px, l0)
             con.execute(
                 """
                 INSERT OR REPLACE INTO timing_signals

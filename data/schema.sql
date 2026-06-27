@@ -214,6 +214,33 @@ CREATE TABLE IF NOT EXISTS company_briefs (
     updated_at       TEXT     -- 생성/갱신 시점 (YYYY-MM)
 );
 
+-- ─────────────────────────────────────────
+-- 3.8 L0 업황 동인 지표 (수출 모멘텀 · 재고순환 · 산업 가격)
+--     사이클 산업의 "업황 그 자체"가 도는 걸 가장 먼저 포착하는 0단계.
+--     월간 시계열(범용) + 산업별 지표 정의는 seed(taxonomy)로 관리.
+--     소스: 한국은행 ECOS(수출금액지수·제조업 재고/출하), 관세청 수출 등.
+-- ─────────────────────────────────────────
+
+CREATE TABLE IF NOT EXISTS industry_indicators (
+    indicator_id TEXT NOT NULL,     -- 예: 'export_semi', 'inv_cycle_mfg'
+    level2_id    TEXT NOT NULL REFERENCES industries(level2_id),
+    period       TEXT NOT NULL,     -- 월간 'YYYY-MM' (또는 'YYYY-MM-DD')
+    value        REAL,
+    PRIMARY KEY(indicator_id, level2_id, period)
+);
+
+CREATE INDEX IF NOT EXISTS idx_indic_level2 ON industry_indicators(level2_id);
+
+-- L0 산출 신호 (업황 바닥 통과 여부)
+CREATE TABLE IF NOT EXISTS l0_signals (
+    level2_id    TEXT PRIMARY KEY REFERENCES industries(level2_id),
+    calc_date    TEXT,
+    driver_state TEXT CHECK(driver_state IN
+                  ('turning_up','rising','bottoming','falling','관측부족')),
+    driver_score REAL,    -- -1~1 (업황 방향 강도)
+    detail       TEXT     -- JSON: 지표별 최신값·YoY·모멘텀
+);
+
 -- DART 사업보고서 원문 발췌 (1차자료 — 사업의 개요 / 위험)
 CREATE TABLE IF NOT EXISTS company_disclosures (
     ticker       TEXT PRIMARY KEY REFERENCES companies(ticker),

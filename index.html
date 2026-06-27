@@ -174,7 +174,7 @@
   .vmain .vv{font-size:25px;font-weight:800;letter-spacing:-.5px;margin-top:3px}
   .vmain .vscore{font-size:12px;opacity:.9;margin-top:6px}
   .vmain .vscore b{font-size:15px}
-  .vlegs{flex:1;min-width:260px;display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  .vlegs{flex:1;min-width:260px;display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px}
   .leg{background:var(--chip);border-radius:11px;padding:12px 14px}
   .leg .lh{font-size:11.5px;color:var(--sub);font-weight:700;margin-bottom:8px}
   .leg .lrow{font-size:12.5px;display:flex;justify-content:space-between;gap:8px;padding:3px 0;align-items:center}
@@ -378,6 +378,13 @@ const TIMING = {
   '관측부족':{ label:'관측부족',  cls:'b-grey', vcls:'hold',    desc:'리포트·가격 데이터 부족' },
 };
 function timingChip(state){ const t = TIMING[state]||TIMING['관측부족']; return `<span class="badge tchip ${t.cls}">${t.label}</span>`; }
+const L0_STATE = {
+  turning_up: { label:'업황 바닥 통과', cls:'b-up' },
+  rising:     { label:'업황 상승',      cls:'b-up' },
+  bottoming:  { label:'바닥 다지는 중',  cls:'b-amber' },
+  falling:    { label:'업황 하강',      cls:'b-down' },
+  '관측부족':  { label:'데이터 수집 전',  cls:'b-grey' },
+};
 
 // ── 헬퍼 ──
 const fmt = n => n == null ? '—' : Number(n).toLocaleString('ko-KR');
@@ -525,23 +532,36 @@ function indDetail(ind, det){
     ${legRow('RSI(14)', rsiTxt, rsi==null?null:(rsi>=45&&rsi<=72))}
   </div>`;
 
+  // L0 업황 동인 leg (가장 먼저 도는 0단계)
+  const l0meta = L0_STATE[ind.l0_state] || L0_STATE['관측부족'];
+  const l0up = ind.l0_state==='turning_up' || ind.l0_state==='rising';
+  const l0rows = ind.l0_detail
+    ? Object.values(ind.l0_detail).map(d =>
+        legRow(d.name, `${d.metric>=0?'+':''}${d.metric}%${d.turning?' <span class="up">↑전환</span>':''}`, d.metric>0)).join('')
+    : legRow('수출·재고 동인', 'ECOS 키 등록 후 수집', null);
+  const l0Leg = `<div class="leg">
+    <div class="lh">🏭 업황 동인 (L0) <span class="badge ${l0meta.cls}" style="font-size:9.5px;margin-left:3px">${l0meta.label}</span></div>
+    ${l0rows}
+  </div>`;
+
   const noteParts = [];
+  if (l0up) noteParts.push('<b>업황 동인이 바닥 통과/상승</b> — 가장 빠른 전환 신호');
   noteParts.push(dirUp ? '애널리스트 신호상 <b>상승 전환·확장</b> 방향'
-    : (ind.cycle_phase==='둔화'||ind.cycle_phase==='침체') ? '애널리스트 신호상 <b>둔화·침체</b> — 매수 비권장'
-    : '애널리스트 방향 신호 <b>미확정</b>(리포트 부족)');
+    : (ind.cycle_phase==='둔화'||ind.cycle_phase==='침체') ? '애널리스트 신호상 <b>둔화·침체</b>'
+    : '애널리스트 방향 <b>미확정</b>(리포트 부족)');
   noteParts.push(ind.idx_trend_up==null ? '가격 데이터 축적 중'
     : trendUp ? `가격 <b>정배열</b>${ind.idx_ret_4w>0?` · 4주 +${ind.idx_ret_4w}%`:''}`
-    : '가격 <b>역배열</b>(추세 미확인)');
+    : '가격 <b>역배열</b>');
   const verdict = `<div class="card pad" style="margin-bottom:16px">
     <div class="sectitle"><h3>① 지금 사도 되나? — 매수 타이밍</h3>
-      <span class="sub" style="font-size:12px">방향(애널리스트) + 진입(가격) 결합</span></div>
+      <span class="sub" style="font-size:12px">업황(L0) + 방향(애널리스트) + 진입(가격)</span></div>
     <div class="verdict">
       <div class="vmain ${tmeta.vcls}">
         <div class="vl">매수 타이밍 판정</div>
         <div class="vv">${tmeta.label}</div>
         <div class="vscore">타이밍 점수 <b class="num">${ind.timing_score!=null?ind.timing_score:'—'}</b>/100</div>
       </div>
-      <div class="vlegs">${dirLeg}${priceLeg}</div>
+      <div class="vlegs">${l0Leg}${dirLeg}${priceLeg}</div>
     </div>
     <div class="vnote">${noteParts.join(' · ')}. <span class="mute">${tmeta.desc}.</span></div>
   </div>`;

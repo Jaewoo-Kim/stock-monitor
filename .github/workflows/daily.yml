@@ -49,6 +49,7 @@ jobs:
       - name: Run daily collection
         env:
           DART_API_KEY: ${{ secrets.DART_API_KEY }}
+          ECOS_API_KEY: ${{ secrets.ECOS_API_KEY }}
         run: |
           FLAG=""
           if [ "${{ github.event.inputs.all_steps }}" = "true" ]; then

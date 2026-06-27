@@ -1,0 +1,25 @@
+{
+  "_meta": {
+    "note": "L0 업황 동인 지표 정의(taxonomy). source는 수집기가 참조. ecos.stat_code/item_code는 ECOS 키 발급 후 실제 코드로 검증·확정 (미입력 시 해당 지표 수집 skip).",
+    "indicator_types": {
+      "export": "산업별 수출액 — YoY 음→양 전환이 업황 바닥 통과 신호 (direction +1)",
+      "inv_cycle": "제조업 재고순환(출하증가율−재고증가율) — 개선이 선행 전환 신호 (direction +1)",
+      "price": "산업 핵심 가격(메모리가·BDI·정제마진 등) — 반등이 바닥 통과 (direction +1)"
+    }
+  },
+  "indicators": [
+    { "level2_id": "S1_semilarge", "id": "export_semi", "name": "반도체 수출액", "type": "export", "direction": 1, "source": "ecos", "ecos": { "stat_code": "", "item_code": "", "cycle": "M" } },
+    { "level2_id": "S1_battery",   "id": "export_battery", "name": "이차전지 수출액", "type": "export", "direction": 1, "source": "ecos", "ecos": { "stat_code": "", "item_code": "", "cycle": "M" } },
+    { "level2_id": "S1_display",   "id": "export_display", "name": "디스플레이 수출액", "type": "export", "direction": 1, "source": "ecos", "ecos": { "stat_code": "", "item_code": "", "cycle": "M" } },
+    { "level2_id": "S3_auto",      "id": "export_auto", "name": "자동차 수출액", "type": "export", "direction": 1, "source": "ecos", "ecos": { "stat_code": "", "item_code": "", "cycle": "M" } },
+    { "level2_id": "S7_ship",      "id": "export_ship", "name": "선박 수출액", "type": "export", "direction": 1, "source": "ecos", "ecos": { "stat_code": "", "item_code": "", "cycle": "M" } },
+    { "level2_id": "S8_chemicals", "id": "export_chem", "name": "석유화학 수출액", "type": "export", "direction": 1, "source": "ecos", "ecos": { "stat_code": "", "item_code": "", "cycle": "M" } },
+    { "level2_id": "S8_steel",     "id": "export_steel", "name": "철강 수출액", "type": "export", "direction": 1, "source": "ecos", "ecos": { "stat_code": "", "item_code": "", "cycle": "M" } },
+    { "level2_id": "S9_energy",    "id": "export_oil", "name": "석유제품 수출액", "type": "export", "direction": 1, "source": "ecos", "ecos": { "stat_code": "", "item_code": "", "cycle": "M" } },
+
+    { "level2_id": "S1_semilarge", "id": "inv_mfg", "name": "제조업 재고순환", "type": "inv_cycle", "direction": 1, "source": "ecos", "ecos": { "stat_code": "", "item_code": "", "cycle": "M" } },
+    { "level2_id": "S3_auto",      "id": "inv_mfg", "name": "제조업 재고순환", "type": "inv_cycle", "direction": 1, "source": "ecos", "ecos": { "stat_code": "", "item_code": "", "cycle": "M" } },
+    { "level2_id": "S8_chemicals", "id": "inv_mfg", "name": "제조업 재고순환", "type": "inv_cycle", "direction": 1, "source": "ecos", "ecos": { "stat_code": "", "item_code": "", "cycle": "M" } },
+    { "level2_id": "S8_steel",     "id": "inv_mfg", "name": "제조업 재고순환", "type": "inv_cycle", "direction": 1, "source": "ecos", "ecos": { "stat_code": "", "item_code": "", "cycle": "M" } }
+  ]
+}

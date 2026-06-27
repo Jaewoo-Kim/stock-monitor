@@ -14,20 +14,6 @@
         "source_url": "https://finance.naver.com/research/company_read.naver?nid=93380",
         "broker_url": "https://stock.pstatic.net/stock-research/company/66/20260601_company_523908000.pdf",
         "analyst_name": null
-      },
-      {
-        "date": "2026-05-29",
-        "broker": "하나증권",
-        "ticker": "003670",
-        "company_name": "포스코퓨처엠",
-        "title": "흑연 가치에 대한 고찰",
-        "opinion": "Buy",
-        "target_price": 294000.0,
-        "prev_target": null,
-        "tp_pct": null,
-        "source_url": "https://finance.naver.com/research/company_read.naver?nid=93358",
-        "broker_url": "https://stock.pstatic.net/stock-research/company/57/20260529_company_225001000.pdf",
-        "analyst_name": null
       }
     ],
     "companies_detail": [
@@ -674,20 +660,6 @@
         "source_url": "https://finance.naver.com/research/company_read.naver?nid=93449",
         "broker_url": "https://stock.pstatic.net/stock-research/company/16/20260608_company_172879000.pdf",
         "analyst_name": null
-      },
-      {
-        "date": "2026-05-29",
-        "broker": "키움증권",
-        "ticker": "035420",
-        "company_name": "NAVER",
-        "title": "전략적 판단 필요",
-        "opinion": "Buy",
-        "target_price": 250000.0,
-        "prev_target": 280000.0,
-        "tp_pct": -10.7,
-        "source_url": "https://finance.naver.com/research/company_read.naver?nid=93344",
-        "broker_url": "https://stock.pstatic.net/stock-research/company/39/20260529_company_604931000.pdf",
-        "analyst_name": null
       }
     ],
     "companies_detail": [
@@ -913,34 +885,6 @@
         "tp_pct": -3.4,
         "source_url": "https://finance.naver.com/research/company_read.naver?nid=93542",
         "broker_url": "https://stock.pstatic.net/stock-research/company/16/20260615_company_368844000.pdf",
-        "analyst_name": null
-      },
-      {
-        "date": "2026-05-29",
-        "broker": "유진투자증권",
-        "ticker": "090430",
-        "company_name": "아모레퍼시픽",
-        "title": "1Q26 Review: 차근차근",
-        "opinion": "Buy",
-        "target_price": 150000.0,
-        "prev_target": null,
-        "tp_pct": null,
-        "source_url": "https://finance.naver.com/research/company_read.naver?nid=93349",
-        "broker_url": "https://stock.pstatic.net/stock-research/company/63/20260529_company_335719000.pdf",
-        "analyst_name": null
-      },
-      {
-        "date": "2026-05-29",
-        "broker": "유진투자증권",
-        "ticker": "051900",
-        "company_name": "LG생활건강",
-        "title": "1Q26 Review: 여명 직전",
-        "opinion": "Hold",
-        "target_price": 290000.0,
-        "prev_target": null,
-        "tp_pct": null,
-        "source_url": "https://finance.naver.com/research/company_read.naver?nid=93345",
-        "broker_url": "https://stock.pstatic.net/stock-research/company/63/20260529_company_369761000.pdf",
         "analyst_name": null
       }
     ],
@@ -2077,20 +2021,6 @@
         "tp_pct": null,
         "source_url": "https://finance.naver.com/research/company_read.naver?nid=93561",
         "broker_url": "https://stock.pstatic.net/stock-research/company/15/20260616_company_779188000.pdf",
-        "analyst_name": null
-      },
-      {
-        "date": "2026-05-29",
-        "broker": "DS투자증권",
-        "ticker": "454910",
-        "company_name": "두산로보틱스",
-        "title": "펀더멘털과 내러티브의 작은 변화",
-        "opinion": "중립",
-        "target_price": 92000.0,
-        "prev_target": null,
-        "tp_pct": null,
-        "source_url": "https://finance.naver.com/research/company_read.naver?nid=93362",
-        "broker_url": "https://stock.pstatic.net/stock-research/company/66/20260529_company_165621000.pdf",
         "analyst_name": null
       }
     ],

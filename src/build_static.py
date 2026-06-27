@@ -93,6 +93,15 @@ def build_industries(con) -> list[dict]:
         ).fetchall()
     }
 
+    # L0 업황 동인 신호 (level2_id 별)
+    l0 = {
+        row[0]: {"driver_state": row[1], "driver_score": row[2],
+                 "detail": json.loads(row[3]) if row[3] else None}
+        for row in con.execute(
+            "SELECT level2_id, driver_state, driver_score, detail FROM l0_signals"
+        ).fetchall()
+    }
+
     # 산업 기본 정보
     industries = con.execute(
         """
@@ -153,6 +162,7 @@ def build_industries(con) -> list[dict]:
          coverage_density, is_signal_eligible) in industries:
         sig = signals.get(level2_id, {})
         tim = timing.get(level2_id, {})
+        l0v = l0.get(level2_id, {})
         result.append({
             "level2_id":      level2_id,
             "level1_id":      level1_id,
@@ -180,6 +190,10 @@ def build_industries(con) -> list[dict]:
             "idx_rsi14":      tim.get("idx_rsi14"),
             "idx_high_break": tim.get("idx_high_break"),
             "price_days":     tim.get("price_days"),
+            # L0 업황 동인 (수출·재고순환)
+            "l0_state":       l0v.get("driver_state"),
+            "l0_score":       l0v.get("driver_score"),
+            "l0_detail":      l0v.get("detail"),
             "companies":      rep_companies.get(level2_id, []),
             "etfs":           etfs.get(level2_id, []),
         })

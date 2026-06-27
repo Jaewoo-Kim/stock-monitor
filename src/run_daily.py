@@ -86,6 +86,18 @@ def step_dart() -> bool:
         return False
 
 
+def step_ecos() -> bool:
+    log.info("=== [4.6/6] ecos(L0 업황 동인) 시작 ===")
+    try:
+        from collectors.ecos_collector import run
+        run()
+        log.info("=== [4.6/6] ecos 완료 ===")
+        return True
+    except Exception as exc:
+        log.error("ecos 실패: %s", exc, exc_info=True)
+        return False
+
+
 def step_dart_business() -> bool:
     log.info("=== [4.5/6] dart_business(사업보고서 발췌) 시작 ===")
     try:
@@ -151,7 +163,8 @@ def main(run_mapper: bool = False) -> int:
     results["price_collector"] = step_price_collector()
     results["dart"]            = step_dart()         # DART_API_KEY 없으면 내부 skip
     results["dart_business"]   = step_dart_business() # DART_API_KEY 없으면 내부 skip
-    results["signals"]         = step_signals()
+    results["ecos"]            = step_ecos()          # ECOS_API_KEY 없으면 내부 skip
+    results["signals"]         = step_signals()       # L0 + cycle + timing 포함
     results["stock_scorer"]    = step_stock_scorer()
     results["build_static"]    = step_build_static()
 
