@@ -28,6 +28,12 @@ _COLUMN_MIGRATIONS: dict[str, dict[str, str]] = {
         "share_bonus": "REAL",
         "buy_score":   "REAL",
     },
+    "timing_signals": {
+        "idx_rs_3m":   "REAL",
+        "idx_rs_up":   "INTEGER",
+        "breadth_pct": "REAL",
+        "breadth_up":  "INTEGER",
+    },
 }
 
 

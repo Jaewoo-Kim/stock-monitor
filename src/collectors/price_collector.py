@@ -156,6 +156,79 @@ def collect_prices(con, fromdate: str, todate: str) -> int:
 # industry_index_history 적재
 # ─────────────────────────────────────
 
+def collect_market_index(con, fromdate: str, todate: str,
+                         codes: tuple[str, ...] = ("1001", "2001")) -> int:
+    """시장지수(KOSPI '1001', KOSDAQ '2001') → market_index_history. 상대강도(RS)용."""
+    cur = con.cursor()
+    inserted = 0
+    for code in codes:
+        try:
+            df = krx.get_index_ohlcv_by_date(fromdate, todate, code)
+        except Exception as exc:
+            log.warning("지수 수집 오류 %s: %s", code, exc)
+            continue
+        if df is None or df.empty:
+            continue
+        for idx, row in df.iterrows():
+            d = idx.strftime("%Y-%m-%d") if hasattr(idx, "strftime") else str(idx)[:10]
+            close = float(row.get("종가", row.get("Close", 0)))
+            if close > 0:
+                cur.execute(
+                    "INSERT OR IGNORE INTO market_index_history(code, date, close) VALUES(?,?,?)",
+                    (code, d, close),
+                )
+                inserted += cur.rowcount
+        time.sleep(DELAY_SEC)
+    con.commit()
+    log.info("market_index_history INSERT: %d건", inserted)
+    return inserted
+
+
+def collect_market_proxy(con, code: str = "_UNIV") -> int:
+    """대표종목 등가중 '수익률 지수'를 합성 → market_index_history(code='_UNIV').
+
+    KRX 지수 API에 의존하지 않는 견고한 RS 기준선. 가격 레벨 편향이 없도록
+    일간 평균 수익률을 누적(체인)해 100 기준 지수를 만든다.
+    """
+    rows = con.execute(
+        """SELECT ph.ticker, ph.date, ph.close
+           FROM price_history ph JOIN companies c ON ph.ticker = c.ticker
+           WHERE c.is_representative = 1 AND c.is_etf = 0
+           ORDER BY ph.date"""
+    ).fetchall()
+    if not rows:
+        return 0
+
+    from collections import defaultdict
+    series: dict[str, dict[str, float]] = defaultdict(dict)
+    dates: set[str] = set()
+    for ticker, d, close in rows:
+        series[ticker][d] = close
+        dates.add(d)
+    dates_sorted = sorted(dates)
+
+    cur = con.cursor()
+    cur.execute("DELETE FROM market_index_history WHERE code=?", (code,))
+    idx = 100.0
+    inserted = 0
+    for i, d in enumerate(dates_sorted):
+        if i > 0:
+            pd = dates_sorted[i - 1]
+            rets = [sd[d] / sd[pd] - 1
+                    for sd in series.values()
+                    if d in sd and pd in sd and sd[pd] > 0]
+            if rets:
+                idx *= (1 + sum(rets) / len(rets))
+        cur.execute(
+            "INSERT OR REPLACE INTO market_index_history(code, date, close) VALUES(?,?,?)",
+            (code, d, round(idx, 4)),
+        )
+        inserted += 1
+    con.commit()
+    log.info("market_proxy(%s) 합성: %d일", code, inserted)
+    return inserted
+
+
 def collect_industry_index(con, fromdate: str, todate: str) -> int:
     """대표종목 equal-weight 평균 종가 → industry_index_history.
 
@@ -205,6 +278,8 @@ def run(fromdate: str | None = None, todate: str | None = None) -> None:
     try:
         collect_prices(con, ref_from, ref_to)
         collect_industry_index(con, ref_from, ref_to)
+        collect_market_proxy(con)              # 대표종목 합성 시장지수 (RS 기준선)
+        collect_market_index(con, ref_from, ref_to)  # KRX 지수 (best-effort)
     finally:
         con.close()
 

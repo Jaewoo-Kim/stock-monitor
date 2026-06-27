@@ -77,12 +77,17 @@ def build_industries(con) -> list[dict]:
             "idx_rsi14":      row[6],
             "idx_high_break": row[7],
             "price_days":     row[8],
+            "idx_rs_3m":      row[9],
+            "idx_rs_up":      row[10],
+            "breadth_pct":    row[11],
+            "breadth_up":     row[12],
         }
         for row in con.execute(
             """
             SELECT ts.level2_id, ts.timing_state, ts.timing_score,
                    ts.idx_trend_up, ts.idx_ret_4w, ts.idx_ret_12w,
-                   ts.idx_rsi14, ts.idx_high_break, ts.price_days
+                   ts.idx_rsi14, ts.idx_high_break, ts.price_days,
+                   ts.idx_rs_3m, ts.idx_rs_up, ts.breadth_pct, ts.breadth_up
             FROM timing_signals ts
             INNER JOIN (
                 SELECT level2_id, MAX(calc_date) AS max_date
@@ -190,6 +195,11 @@ def build_industries(con) -> list[dict]:
             "idx_rsi14":      tim.get("idx_rsi14"),
             "idx_high_break": tim.get("idx_high_break"),
             "price_days":     tim.get("price_days"),
+            # L1 산업 전체 전환: 상대강도·폭
+            "idx_rs_3m":      tim.get("idx_rs_3m"),
+            "idx_rs_up":      tim.get("idx_rs_up"),
+            "breadth_pct":    tim.get("breadth_pct"),
+            "breadth_up":     tim.get("breadth_up"),
             # L0 업황 동인 (수출·재고순환)
             "l0_state":       l0v.get("driver_state"),
             "l0_score":       l0v.get("driver_score"),

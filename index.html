@@ -532,6 +532,15 @@ function indDetail(ind, det){
     ${legRow('RSI(14)', rsiTxt, rsi==null?null:(rsi>=45&&rsi<=72))}
   </div>`;
 
+  // L1 산업 전체 전환 leg (상대강도 RS + 폭 Breadth)
+  const rs = ind.idx_rs_3m;
+  const l1Leg = `<div class="leg">
+    <div class="lh">🔁 산업 전체 전환 (L1) — RS·폭</div>
+    ${legRow('상대강도(시장 대비 3M)', rs==null?'—':`<span class="${rs>0?'up':'down'}">${rs>0?'+':''}${rs}%p</span>${ind.idx_rs_up===1?' <span class="up">↑개선</span>':''}`, rs==null?null:rs>0)}
+    ${legRow('산업 폭(60일선 위 비율)', ind.breadth_pct!=null?`${ind.breadth_pct}%${ind.breadth_up===1?' <span class="up">↑</span>':''}`:'—', ind.breadth_pct==null?null:ind.breadth_pct>=60)}
+  </div>`;
+  const l1broad = (rs!=null && rs>0 && ind.breadth_pct!=null && ind.breadth_pct>=60);
+
   // L0 업황 동인 leg (가장 먼저 도는 0단계)
   const l0meta = L0_STATE[ind.l0_state] || L0_STATE['관측부족'];
   const l0up = ind.l0_state==='turning_up' || ind.l0_state==='rising';
@@ -546,6 +555,7 @@ function indDetail(ind, det){
 
   const noteParts = [];
   if (l0up) noteParts.push('<b>업황 동인이 바닥 통과/상승</b> — 가장 빠른 전환 신호');
+  if (l1broad) noteParts.push('<b>산업 전체가 시장 초과상승·광범위 참여</b>(RS·폭)');
   noteParts.push(dirUp ? '애널리스트 신호상 <b>상승 전환·확장</b> 방향'
     : (ind.cycle_phase==='둔화'||ind.cycle_phase==='침체') ? '애널리스트 신호상 <b>둔화·침체</b>'
     : '애널리스트 방향 <b>미확정</b>(리포트 부족)');
@@ -561,7 +571,7 @@ function indDetail(ind, det){
         <div class="vv">${tmeta.label}</div>
         <div class="vscore">타이밍 점수 <b class="num">${ind.timing_score!=null?ind.timing_score:'—'}</b>/100</div>
       </div>
-      <div class="vlegs">${l0Leg}${dirLeg}${priceLeg}</div>
+      <div class="vlegs">${l0Leg}${l1Leg}${dirLeg}${priceLeg}</div>
     </div>
     <div class="vnote">${noteParts.join(' · ')}. <span class="mute">${tmeta.desc}.</span></div>
   </div>`;

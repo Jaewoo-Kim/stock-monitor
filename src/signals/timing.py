@@ -89,6 +89,58 @@ def _high_break(values: list[float], window: int = HIGH_WINDOW) -> int | None:
     return 1 if values[-1] >= max(recent) else 0
 
 
+def _market_closes(con, code: str = "_UNIV") -> list[float]:
+    rows = con.execute(
+        "SELECT close FROM market_index_history WHERE code=? ORDER BY date ASC", (code,)
+    ).fetchall()
+    return [r[0] for r in rows]
+
+
+def _ret_offset(values: list[float], lookback: int, offset: int) -> float | None:
+    """offset일 전 시점 기준 lookback 수익률 %."""
+    i = len(values) - 1 - offset
+    j = i - lookback
+    if j < 0 or values[j] <= 0:
+        return None
+    return (values[i] - values[j]) / values[j] * 100
+
+
+def _rep_stock_closes(con, level2_id: str) -> list[list[float]]:
+    """산업 내 대표종목별 종가 시계열 리스트."""
+    rows = con.execute(
+        """SELECT ph.ticker, ph.close FROM price_history ph
+           JOIN companies c ON ph.ticker = c.ticker
+           WHERE c.is_representative=1 AND c.is_etf=0 AND c.level2_id=?
+           ORDER BY ph.ticker, ph.date""",
+        (level2_id,),
+    ).fetchall()
+    from collections import OrderedDict
+    series: "OrderedDict[str, list]" = OrderedDict()
+    for ticker, close in rows:
+        series.setdefault(ticker, []).append(close)
+    return list(series.values())
+
+
+def _breadth(stock_series: list[list[float]], ma: int = 60, offset: int = 0) -> float | None:
+    """offset일 전 기준, 종가 > ma일선 종목 비율 (%)."""
+    above = total = 0
+    for s in stock_series:
+        end = len(s) - offset
+        if end < ma + 1:
+            continue
+        window = s[end - ma:end]
+        if not window:
+            continue
+        cur = s[end - 1]
+        avg = sum(window) / len(window)
+        total += 1
+        if cur > avg:
+            above += 1
+    if total == 0:
+        return None
+    return round(above / total * 100, 1)
+
+
 def calc_price_indicators(con, level2_id: str) -> dict:
     closes = _closes(con, level2_id)
     n = len(closes)
@@ -97,6 +149,28 @@ def calc_price_indicators(con, level2_id: str) -> dict:
     trend_up = None
     if ma20 is not None and ma60 is not None:
         trend_up = 1 if ma20 > ma60 else 0
+
+    # 상대강도(RS): 업종 3M수익률 − 시장 프록시 3M수익률
+    mkt = _market_closes(con)
+    rs_3m = rs_up = None
+    if n > MIN_DAYS_TREND and len(mkt) > MIN_DAYS_TREND:
+        ind_r = _ret_offset(closes, MIN_DAYS_TREND, 0)
+        mkt_r = _ret_offset(mkt,    MIN_DAYS_TREND, 0)
+        if ind_r is not None and mkt_r is not None:
+            rs_3m = round(ind_r - mkt_r, 2)
+            ind_p = _ret_offset(closes, MIN_DAYS_TREND, MIN_DAYS_MOM)
+            mkt_p = _ret_offset(mkt,    MIN_DAYS_TREND, MIN_DAYS_MOM)
+            if ind_p is not None and mkt_p is not None:
+                rs_up = 1 if rs_3m > (ind_p - mkt_p) else 0
+
+    # 폭(Breadth): 산업 내 60일선 위 종목 비율 + 1개월 전 대비 상승 여부
+    stock_series = _rep_stock_closes(con, level2_id)
+    breadth = _breadth(stock_series, ma=60, offset=0)
+    breadth_prev = _breadth(stock_series, ma=60, offset=MIN_DAYS_MOM)
+    breadth_up = None
+    if breadth is not None and breadth_prev is not None:
+        breadth_up = 1 if breadth > breadth_prev else 0
+
     return {
         "idx_ma20":       round(ma20, 2) if ma20 else None,
         "idx_ma60":       round(ma60, 2) if ma60 else None,
@@ -105,6 +179,10 @@ def calc_price_indicators(con, level2_id: str) -> dict:
         "idx_ret_12w":    _return_pct(closes, MIN_DAYS_TREND),
         "idx_rsi14":      _rsi(closes),
         "idx_high_break": _high_break(closes),
+        "idx_rs_3m":      rs_3m,
+        "idx_rs_up":      rs_up,
+        "breadth_pct":    breadth,
+        "breadth_up":     breadth_up,
         "price_days":     n,
     }
 
@@ -211,6 +289,13 @@ def _score(cyc: dict | None, px: dict, base: float) -> float:
         s += 4
     if px["idx_high_break"] == 1:
         s += 4
+    # L1 산업 전체 전환: 상대강도·폭
+    if (px.get("idx_rs_3m") or 0) > 0:      # 시장 대비 초과상승
+        s += 5
+    if px.get("idx_rs_up") == 1:            # 상대강도 개선 중
+        s += 4
+    if (px.get("breadth_pct") or 0) >= 60 and px.get("breadth_up") == 1:  # 산업 전반 참여 확대
+        s += 5
     rsi = px["idx_rsi14"]
     if rsi is not None and rsi > 75:   # 과매수 → 추격매수 감점
         s -= 6
@@ -244,14 +329,16 @@ def run(con=None, calc_date: str | None = None) -> None:
                 INSERT OR REPLACE INTO timing_signals
                     (level2_id, calc_date, idx_ma20, idx_ma60, idx_trend_up,
                      idx_ret_4w, idx_ret_12w, idx_rsi14, idx_high_break,
+                     idx_rs_3m, idx_rs_up, breadth_pct, breadth_up,
                      price_days, timing_state, timing_score)
-                VALUES (?,?,?,?,?,?,?,?,?,?,?,?)
+                VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
                 """,
                 (
                     level2_id, calc_date, px["idx_ma20"], px["idx_ma60"],
                     px["idx_trend_up"], px["idx_ret_4w"], px["idx_ret_12w"],
-                    px["idx_rsi14"], px["idx_high_break"], px["price_days"],
-                    state, score,
+                    px["idx_rsi14"], px["idx_high_break"],
+                    px["idx_rs_3m"], px["idx_rs_up"], px["breadth_pct"], px["breadth_up"],
+                    px["price_days"], state, score,
                 ),
             )
             saved += 1

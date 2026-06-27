@@ -271,6 +271,14 @@ CREATE TABLE IF NOT EXISTS industry_index_history (
     PRIMARY KEY(level2_id, date)
 );
 
+-- 시장 지수 (상대강도 RS 계산용) — '1001'=KOSPI, '2001'=KOSDAQ
+CREATE TABLE IF NOT EXISTS market_index_history (
+    code   TEXT NOT NULL,
+    date   TEXT NOT NULL,
+    close  REAL NOT NULL,
+    PRIMARY KEY(code, date)
+);
+
 -- ─────────────────────────────────────────
 -- 5. 신호 엔진 산출물 (Phase 2)
 -- ─────────────────────────────────────────
@@ -336,6 +344,11 @@ CREATE TABLE IF NOT EXISTS timing_signals (
     idx_ret_12w    REAL,    -- 12주(60영업일) 수익률 %
     idx_rsi14      REAL,    -- RSI(14)
     idx_high_break INTEGER, -- 8주 신고가 돌파 1/0
+    -- L1 산업 전체 전환 신호
+    idx_rs_3m      REAL,    -- 상대강도: 업종 3M수익률 − KOSPI 3M수익률 (%)
+    idx_rs_up      INTEGER, -- RS 개선 중(최근 RS > 1개월전 RS) 1/0
+    breadth_pct    REAL,    -- 산업 내 60일선 위 종목 비율 (0~100)
+    breadth_up     INTEGER, -- breadth 상승 중(1개월전 대비) 1/0
     price_days     INTEGER, -- 계산에 쓰인 거래일 수
     -- 종합 타이밍 판정
     timing_state   TEXT CHECK(timing_state IN

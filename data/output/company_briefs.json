@@ -72,7 +72,7 @@
       "upside_pct": 10.8,
       "composite": 0.0,
       "timing_state": "관측부족",
-      "timing_score": 12.0
+      "timing_score": 16.0
     }
   },
   "036460": {
@@ -139,7 +139,7 @@
       "upside_pct": null,
       "composite": 1.0,
       "timing_state": "관측부족",
-      "timing_score": 12.0
+      "timing_score": 16.0
     }
   },
   "003670": {
@@ -830,7 +830,7 @@
       "upside_pct": 0.4,
       "composite": 1.0,
       "timing_state": "buy",
-      "timing_score": 83.5
+      "timing_score": 92.5
     }
   },
   "011070": {
@@ -944,7 +944,7 @@
       "upside_pct": 27.2,
       "composite": 1.0,
       "timing_state": "buy",
-      "timing_score": 83.5
+      "timing_score": 92.5
     }
   },
   "066570": {
@@ -1019,7 +1019,7 @@
       "upside_pct": 72.4,
       "composite": 1.0,
       "timing_state": "buy",
-      "timing_score": 83.5
+      "timing_score": 92.5
     }
   },
   "000660": {
@@ -1149,7 +1149,7 @@
       "upside_pct": 25.6,
       "composite": 1.0,
       "timing_state": "buy",
-      "timing_score": 90.1
+      "timing_score": 99.1
     }
   },
   "005930": {
@@ -1287,7 +1287,7 @@
       "upside_pct": 47.8,
       "composite": 1.0,
       "timing_state": "buy",
-      "timing_score": 90.1
+      "timing_score": 99.1
     }
   },
   "036930": {
@@ -1729,7 +1729,7 @@
       "upside_pct": null,
       "composite": 1.0,
       "timing_state": "hold",
-      "timing_score": 41.0
+      "timing_score": 46.0
     }
   },
   "018260": {
@@ -1805,7 +1805,7 @@
       "upside_pct": 25.9,
       "composite": -1.0,
       "timing_state": "hold",
-      "timing_score": 41.0
+      "timing_score": 46.0
     }
   },
   "035900": {
@@ -1913,7 +1913,7 @@
       "upside_pct": 87.5,
       "composite": 1.0,
       "timing_state": "hold",
-      "timing_score": 31.5
+      "timing_score": 35.5
     }
   },
   "041510": {
@@ -1989,7 +1989,7 @@
       "upside_pct": 94.2,
       "composite": 0.0,
       "timing_state": "hold",
-      "timing_score": 31.5
+      "timing_score": 35.5
     }
   },
   "352820": {
@@ -2050,7 +2050,7 @@
       "upside_pct": null,
       "composite": -1.0,
       "timing_state": "hold",
-      "timing_score": 31.5
+      "timing_score": 35.5
     }
   },
   "036570": {
@@ -2291,7 +2291,7 @@
       "upside_pct": 69.6,
       "composite": -1.0,
       "timing_state": "watch",
-      "timing_score": 62.8
+      "timing_score": 66.8
     }
   },
   "035720": {
@@ -2380,7 +2380,7 @@
       "upside_pct": 72.3,
       "composite": 1.0,
       "timing_state": "watch",
-      "timing_score": 62.8
+      "timing_score": 66.8
     }
   },
   "017670": {
@@ -2730,7 +2730,7 @@
       "upside_pct": 107.9,
       "composite": -1.0,
       "timing_state": "hold",
-      "timing_score": 38.9
+      "timing_score": 43.9
     }
   },
   "005380": {
@@ -2836,7 +2836,7 @@
       "upside_pct": 49.1,
       "composite": -1.0,
       "timing_state": "hold",
-      "timing_score": 38.9
+      "timing_score": 43.9
     }
   },
   "012330": {
@@ -2936,7 +2936,7 @@
       "upside_pct": 69.6,
       "composite": -1.0,
       "timing_state": "hold",
-      "timing_score": 38.9
+      "timing_score": 43.9
     }
   },
   "204320": {
@@ -2997,7 +2997,7 @@
       "upside_pct": null,
       "composite": 1.0,
       "timing_state": "hold",
-      "timing_score": 38.9
+      "timing_score": 43.9
     }
   },
   "044820": {
@@ -3377,7 +3377,7 @@
       "upside_pct": 13.0,
       "composite": 1.0,
       "timing_state": "buy",
-      "timing_score": 84.2
+      "timing_score": 93.2
     }
   },
   "023530": {
@@ -3485,7 +3485,7 @@
       "upside_pct": 27.8,
       "composite": 1.0,
       "timing_state": "buy",
-      "timing_score": 84.2
+      "timing_score": 93.2
     }
   },
   "139480": {
@@ -3584,7 +3584,7 @@
       "upside_pct": 57.2,
       "composite": 1.0,
       "timing_state": "buy",
-      "timing_score": 84.2
+      "timing_score": 93.2
     }
   },
   "003230": {
@@ -4147,7 +4147,7 @@
       "upside_pct": 75.2,
       "composite": -1.0,
       "timing_state": "hold",
-      "timing_score": 39.0
+      "timing_score": 43.0
     }
   },
   "214150": {
@@ -4217,7 +4217,7 @@
       "upside_pct": 50.4,
       "composite": -1.0,
       "timing_state": "hold",
-      "timing_score": 39.0
+      "timing_score": 43.0
     }
   },
   "214450": {
@@ -4295,7 +4295,7 @@
       "upside_pct": 92.2,
       "composite": 1.0,
       "timing_state": "hold",
-      "timing_score": 39.0
+      "timing_score": 43.0
     }
   },
   "328130": {
@@ -4365,7 +4365,7 @@
       "upside_pct": null,
       "composite": 1.0,
       "timing_state": "hold",
-      "timing_score": 39.0
+      "timing_score": 43.0
     }
   },
   "000100": {
@@ -4432,7 +4432,7 @@
       "upside_pct": null,
       "composite": -1.0,
       "timing_state": "watch",
-      "timing_score": 58.5
+      "timing_score": 62.5
     }
   },
   "068270": {
@@ -4532,7 +4532,7 @@
       "upside_pct": 57.9,
       "composite": 1.0,
       "timing_state": "watch",
-      "timing_score": 58.5
+      "timing_score": 62.5
     }
   },
   "128940": {
@@ -4634,7 +4634,7 @@
       "upside_pct": 69.6,
       "composite": -1.0,
       "timing_state": "watch",
-      "timing_score": 58.5
+      "timing_score": 62.5
     }
   },
   "196170": {
@@ -4717,7 +4717,7 @@
       "upside_pct": 33.3,
       "composite": 1.0,
       "timing_state": "watch",
-      "timing_score": 58.5
+      "timing_score": 62.5
     }
   },
   "207940": {
@@ -4801,7 +4801,7 @@
       "upside_pct": 44.3,
       "composite": 1.0,
       "timing_state": "watch",
-      "timing_score": 58.5
+      "timing_score": 62.5
     }
   },
   "055550": {
@@ -4871,7 +4871,7 @@
       "upside_pct": 42.9,
       "composite": null,
       "timing_state": "hold",
-      "timing_score": 41.0
+      "timing_score": 45.0
     }
   },
   "086790": {
@@ -4932,7 +4932,7 @@
       "upside_pct": null,
       "composite": null,
       "timing_state": "hold",
-      "timing_score": 41.0
+      "timing_score": 45.0
     }
   },
   "105560": {
@@ -5002,7 +5002,7 @@
       "upside_pct": 44.8,
       "composite": null,
       "timing_state": "hold",
-      "timing_score": 41.0
+      "timing_score": 45.0
     }
   },
   "316140": {
@@ -5063,7 +5063,7 @@
       "upside_pct": null,
       "composite": null,
       "timing_state": "hold",
-      "timing_score": 41.0
+      "timing_score": 45.0
     }
   },
   "000810": {
@@ -5165,7 +5165,7 @@
       "upside_pct": 0.0,
       "composite": null,
       "timing_state": "buy",
-      "timing_score": 80.9
+      "timing_score": 89.9
     }
   },
   "001450": {
@@ -5273,7 +5273,7 @@
       "upside_pct": 15.6,
       "composite": null,
       "timing_state": "buy",
-      "timing_score": 80.9
+      "timing_score": 89.9
     }
   },
   "005830": {
@@ -5381,7 +5381,7 @@
       "upside_pct": 64.0,
       "composite": null,
       "timing_state": "buy",
-      "timing_score": 80.9
+      "timing_score": 89.9
     }
   },
   "032830": {
@@ -5489,7 +5489,7 @@
       "upside_pct": -10.5,
       "composite": null,
       "timing_state": "buy",
-      "timing_score": 80.9
+      "timing_score": 89.9
     }
   },
   "006800": {
@@ -6503,7 +6503,7 @@
       "upside_pct": 57.6,
       "composite": 1.0,
       "timing_state": "buy",
-      "timing_score": 95.2
+      "timing_score": 100.0
     }
   },
   "028260": {
@@ -6616,7 +6616,7 @@
       "upside_pct": 15.3,
       "composite": -1.0,
       "timing_state": "buy",
-      "timing_score": 95.2
+      "timing_score": 100.0
     }
   },
   "034730": {
@@ -6724,7 +6724,7 @@
       "upside_pct": -7.8,
       "composite": -1.0,
       "timing_state": "buy",
-      "timing_score": 95.2
+      "timing_score": 100.0
     }
   },
   "241560": {
@@ -6803,7 +6803,7 @@
       "upside_pct": 3593.8,
       "composite": 1.0,
       "timing_state": "관측부족",
-      "timing_score": 12.0
+      "timing_score": 16.0
     }
   },
   "277810": {
@@ -6864,7 +6864,7 @@
       "upside_pct": null,
       "composite": -1.0,
       "timing_state": "관측부족",
-      "timing_score": 12.0
+      "timing_score": 16.0
     }
   },
   "454910": {
@@ -6934,7 +6934,7 @@
       "upside_pct": -0.3,
       "composite": 1.0,
       "timing_state": "관측부족",
-      "timing_score": 12.0
+      "timing_score": 16.0
     }
   },
   "001440": {
@@ -7010,7 +7010,7 @@
       "upside_pct": 80.5,
       "composite": 1.0,
       "timing_state": "caution",
-      "timing_score": 20.8
+      "timing_score": 25.8
     }
   },
   "010120": {
@@ -7118,7 +7118,7 @@
       "upside_pct": 163.3,
       "composite": 0.0,
       "timing_state": "caution",
-      "timing_score": 20.8
+      "timing_score": 25.8
     }
   },
   "267260": {
@@ -7193,7 +7193,7 @@
       "upside_pct": 52.6,
       "composite": 1.0,
       "timing_state": "caution",
-      "timing_score": 20.8
+      "timing_score": 25.8
     }
   },
   "298040": {
@@ -7271,7 +7271,7 @@
       "upside_pct": 50.9,
       "composite": 1.0,
       "timing_state": "caution",
-      "timing_score": 20.8
+      "timing_score": 25.8
     }
   },
   "009540": {
@@ -7352,7 +7352,7 @@
       "upside_pct": null,
       "composite": 1.0,
       "timing_state": "hold",
-      "timing_score": 41.0
+      "timing_score": 46.0
     }
   },
   "010140": {
@@ -7444,7 +7444,7 @@
       "upside_pct": 72.3,
       "composite": 1.0,
       "timing_state": "hold",
-      "timing_score": 41.0
+      "timing_score": 46.0
     }
   },
   "042660": {
@@ -7519,7 +7519,7 @@
       "upside_pct": 61.0,
       "composite": 1.0,
       "timing_state": "hold",
-      "timing_score": 41.0
+      "timing_score": 46.0
     }
   },
   "329180": {
@@ -7597,7 +7597,7 @@
       "upside_pct": -29.6,
       "composite": 1.0,
       "timing_state": "hold",
-      "timing_score": 41.0
+      "timing_score": 46.0
     }
   },
   "000120": {
@@ -7664,7 +7664,7 @@
       "upside_pct": null,
       "composite": -1.0,
       "timing_state": "hold",
-      "timing_score": 24.5
+      "timing_score": 28.5
     }
   },
   "003490": {
@@ -7748,7 +7748,7 @@
       "upside_pct": 34.0,
       "composite": 1.0,
       "timing_state": "hold",
-      "timing_score": 24.5
+      "timing_score": 28.5
     }
   },
   "011200": {
@@ -7824,7 +7824,7 @@
       "upside_pct": null,
       "composite": -1.0,
       "timing_state": "hold",
-      "timing_score": 24.5
+      "timing_score": 28.5
     }
   },
   "011170": {
@@ -7891,7 +7891,7 @@
       "upside_pct": null,
       "composite": 1.0,
       "timing_state": "관측부족",
-      "timing_score": 12.0
+      "timing_score": 16.0
     }
   },
   "011780": {
@@ -7967,7 +7967,7 @@
       "upside_pct": 50.5,
       "composite": -1.0,
       "timing_state": "관측부족",
-      "timing_score": 12.0
+      "timing_score": 16.0
     }
   },
   "051910": {
@@ -8028,7 +8028,7 @@
       "upside_pct": null,
       "composite": 1.0,
       "timing_state": "관측부족",
-      "timing_score": 12.0
+      "timing_score": 16.0
     }
   },
   "004020": {
@@ -8089,7 +8089,7 @@
       "upside_pct": null,
       "composite": -1.0,
       "timing_state": "관측부족",
-      "timing_score": 12.0
+      "timing_score": 16.0
     }
   },
   "005490": {
@@ -8161,7 +8161,7 @@
       "upside_pct": null,
       "composite": 1.0,
       "timing_state": "관측부족",
-      "timing_score": 12.0
+      "timing_score": 16.0
     }
   },
   "010130": {
@@ -8228,7 +8228,7 @@
       "upside_pct": null,
       "composite": 1.0,
       "timing_state": "관측부족",
-      "timing_score": 12.0
+      "timing_score": 16.0
     }
   },
   "103140": {
@@ -8289,7 +8289,7 @@
       "upside_pct": null,
       "composite": 1.0,
       "timing_state": "관측부족",
-      "timing_score": 12.0
+      "timing_score": 16.0
     }
   },
   "010950": {
