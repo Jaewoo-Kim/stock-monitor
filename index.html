@@ -238,6 +238,7 @@
   <symbol id="ic-ext" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 5h5v5M19 5l-8 8M18 14v5H5V6h5"/></symbol>
   <symbol id="ic-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 6l-6 6 6 6"/></symbol>
   <symbol id="ic-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></symbol>
+  <symbol id="ic-target" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3.5"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/></symbol>
 </defs></svg>
 
 <div class="scrim" id="scrim" onclick="toggleNav(false)"></div>
@@ -253,6 +254,7 @@
   </div>
   <nav class="navlist">
     <button class="navitem on" data-view="v-home" onclick="nav('v-home')"><svg class="ic"><use href="#ic-home"/></svg>요약</button>
+    <button class="navitem" data-view="v-screener" onclick="nav('v-screener')"><svg class="ic"><use href="#ic-target"/></svg>매수 후보<span class="cnt" id="nav-scr-cnt">—</span></button>
     <button class="navitem" data-view="v-ind" onclick="nav('v-ind')"><svg class="ic"><use href="#ic-ind"/></svg>산업<span class="cnt" id="nav-ind-cnt">—</span></button>
     <button class="navitem" data-view="v-stk" onclick="nav('v-stk')"><svg class="ic"><use href="#ic-stock"/></svg>종목</button>
     <button class="navitem" data-view="v-rep" onclick="nav('v-rep')"><svg class="ic"><use href="#ic-report"/></svg>리포트<span class="cnt" id="nav-rep-cnt">—</span></button>
@@ -287,6 +289,17 @@
           <div class="card" id="home-reports"><div class="loading">…</div></div>
         </div>
       </div>
+    </section>
+
+    <!-- ══ 매수 후보 스크리너 ══ -->
+    <section class="view" id="v-screener">
+      <div class="pagehead">
+        <div><h2>매수 후보</h2><div class="desc">산업이 상승 전환 중이면서 종목 매수점수가 높은 순 — 전 산업 통합 랭킹.</div></div>
+        <label style="font-size:12.5px;color:var(--sub);display:flex;align-items:center;gap:6px;cursor:pointer">
+          <input type="checkbox" id="scr-filter" onchange="renderScreener()" checked> 매수적기·관찰 산업만</label>
+      </div>
+      <div class="disc">ℹ️ 추천이 아니라 <b>신호 집계 랭킹</b>입니다. 산업 타이밍(애널리스트 방향+가격)과 종목 매수점수(상승여력·모멘텀·점유율), 애널리스트 컨센서스를 결합했습니다. <b>투자 판단·책임은 본인에게 있습니다.</b></div>
+      <div class="card" id="scr-table"><div class="loading">…</div></div>
     </section>
 
     <!-- ══ 산업 목록 ══ -->
@@ -853,6 +866,44 @@ function homeReports(reports){
   return `<table class="tbl"><thead><tr><th>종목·발행</th><th>의견</th><th>목표가</th><th></th></tr></thead><tbody>${rows}</tbody></table>`;
 }
 
+// ── 매수 후보 스크리너 ──
+const TIMING_BONUS = { buy:15, watch:7, hold:0, caution:-25, '관측부족':-8 };
+function screenerRows(){
+  const list = [];
+  for (const tk in _briefs){
+    const b = _briefs[tk], q = b.quant||{};
+    if (q.buy_score == null) continue;
+    const ts = q.timing_state;
+    const screen = q.buy_score + (TIMING_BONUS[ts] ?? 0);
+    list.push({ ...b, _screen: screen });
+  }
+  list.sort((a,b) => b._screen - a._screen);
+  return list;
+}
+function renderScreener(){
+  const onlyBuy = document.getElementById('scr-filter')?.checked;
+  let rows = screenerRows();
+  if (onlyBuy) rows = rows.filter(r => r.quant.timing_state==='buy' || r.quant.timing_state==='watch');
+  rows = rows.slice(0, 30);
+  const body = rows.map((r,i) => {
+    const q = r.quant||{}, a = r.analyst||{};
+    const nTot = (a.n_buy||0)+(a.n_hold||0)+(a.n_sell||0);
+    const cons = nTot ? `매수 ${a.n_buy}/${nTot}` : '—';
+    const up = q.upside_pct!=null ? pctTxt(q.upside_pct) : '<span class="mute">—</span>';
+    const isBuy = q.timing_state==='buy';
+    return `<tr style="cursor:pointer" class="${i===0?'is-top':''}" onclick="openBrief('${r.ticker}','v-screener')">
+      <td><span class="rk">${i+1}</span><span class="iname">${r.name}</span><span class="scode">${r.ticker}</span></td>
+      <td><span class="link" onclick="event.stopPropagation();gotoDetail('${r.level2_id}')">${r.level2_name||'—'}</span></td>
+      <td>${q.timing_state?timingChip(q.timing_state):'—'}</td>
+      <td class="num">${up}</td>
+      <td class="num sub">${cons}</td>
+      <td class="num"><b class="score-pill">${q.buy_score!=null?q.buy_score.toFixed(0):'—'}</b></td></tr>`;
+  }).join('') || '<tr><td colspan="6" class="empty">조건에 맞는 매수 후보 없음 — 필터를 풀어보세요</td></tr>';
+  document.getElementById('scr-table').innerHTML = `<div style="overflow-x:auto">
+    <table class="tbl"><thead><tr><th>순위·종목</th><th>산업</th><th>산업 타이밍</th><th>목표가 상승여력</th><th>컨센서스</th><th>매수점수</th></tr></thead>
+    <tbody>${body}</tbody></table></div>`;
+}
+
 // ── 데이터 로드 ──
 async function loadData(){
   try {
@@ -880,6 +931,10 @@ async function loadData(){
     // 홈
     document.getElementById('home-stats').innerHTML = homeStats(_meta, _industries);
     document.getElementById('home-timing').innerHTML = homeTiming(_industries);
+    // 매수 후보 스크리너
+    renderScreener();
+    const nCand = screenerRows().filter(r => r.quant.timing_state==='buy' || r.quant.timing_state==='watch').length;
+    document.getElementById('nav-scr-cnt').textContent = nCand;
     document.getElementById('home-phasebar').innerHTML = renderPhaseBar(_industries);
     document.getElementById('home-ranking').innerHTML = homeRanking(_industries);
     document.getElementById('home-reports').innerHTML = homeReports(_reports);
