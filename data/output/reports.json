@@ -1,5 +1,22 @@
 [
   {
+    "report_id": 779,
+    "published_date": "2026-06-29",
+    "broker": "미래에셋증권",
+    "analyst_name": null,
+    "ticker": "006400",
+    "company_name": "삼성SDI",
+    "level2_id": "S1_battery",
+    "level2_name": "2차전지",
+    "title": "2Q26, 7개 분기만의 영업흑자 전환 예상",
+    "opinion": "매수",
+    "target_price": 1000000.0,
+    "prev_target": null,
+    "source_url": "https://finance.naver.com/research/company_read.naver?nid=93721",
+    "broker_url": "https://stock.pstatic.net/stock-research/company/56/20260629_company_676662000.pdf",
+    "pdf_available": 1
+  },
+  {
     "report_id": 778,
     "published_date": "2026-06-26",
     "broker": "키움증권",
@@ -1680,23 +1697,6 @@
     "prev_target": null,
     "source_url": "https://finance.naver.com/research/company_read.naver?nid=93631",
     "broker_url": "https://stock.pstatic.net/stock-research/company/15/20260622_company_990466000.pdf",
-    "pdf_available": 1
-  },
-  {
-    "report_id": 61,
-    "published_date": "2026-06-22",
-    "broker": "대신증권",
-    "analyst_name": null,
-    "ticker": null,
-    "company_name": null,
-    "level2_id": null,
-    "level2_name": null,
-    "title": "NDR 후기: 계획대로 가는 중",
-    "opinion": "Buy",
-    "target_price": 29000.0,
-    "prev_target": null,
-    "source_url": "https://finance.naver.com/research/company_read.naver?nid=93632",
-    "broker_url": "https://stock.pstatic.net/stock-research/company/15/20260622_company_798849000.pdf",
     "pdf_available": 1
   }
 ]

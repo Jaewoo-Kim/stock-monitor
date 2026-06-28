@@ -2,6 +2,20 @@
   "S1_battery": {
     "recent_reports": [
       {
+        "date": "2026-06-29",
+        "broker": "미래에셋증권",
+        "ticker": "006400",
+        "company_name": "삼성SDI",
+        "title": "2Q26, 7개 분기만의 영업흑자 전환 예상",
+        "opinion": "매수",
+        "target_price": 1000000.0,
+        "prev_target": null,
+        "tp_pct": null,
+        "source_url": "https://finance.naver.com/research/company_read.naver?nid=93721",
+        "broker_url": "https://stock.pstatic.net/stock-research/company/56/20260629_company_676662000.pdf",
+        "analyst_name": null
+      },
+      {
         "date": "2026-06-01",
         "broker": "DS투자증권",
         "ticker": "247540",
