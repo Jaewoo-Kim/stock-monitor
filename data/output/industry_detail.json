@@ -276,6 +276,20 @@
   "S1_semilarge": {
     "recent_reports": [
       {
+        "date": "2026-06-29",
+        "broker": "키움증권",
+        "ticker": "005930",
+        "company_name": "삼성전자",
+        "title": "2Q26 영업이익 89조원",
+        "opinion": "Buy",
+        "target_price": 430000.0,
+        "prev_target": 560000.0,
+        "tp_pct": -23.2,
+        "source_url": "https://finance.naver.com/research/company_read.naver?nid=93723",
+        "broker_url": "https://stock.pstatic.net/stock-research/company/39/20260629_company_696104000.pdf",
+        "analyst_name": null
+      },
+      {
         "date": "2026-06-26",
         "broker": "하나증권",
         "ticker": "000660",
@@ -888,6 +902,20 @@
   "S3_cosmetics": {
     "recent_reports": [
       {
+        "date": "2026-06-29",
+        "broker": "하나증권",
+        "ticker": "090430",
+        "company_name": "아모레퍼시픽",
+        "title": "국내 최대 멀티브랜드 화장품 기업의 저력을 ..",
+        "opinion": "Buy",
+        "target_price": 150000.0,
+        "prev_target": 150000.0,
+        "tp_pct": 0.0,
+        "source_url": "https://finance.naver.com/research/company_read.naver?nid=93738",
+        "broker_url": "https://stock.pstatic.net/stock-research/company/57/20260629_company_202221000.pdf",
+        "analyst_name": null
+      },
+      {
         "date": "2026-06-15",
         "broker": "한화투자증권",
         "ticker": "051900",
@@ -931,6 +959,20 @@
   },
   "S3_retail": {
     "recent_reports": [
+      {
+        "date": "2026-06-29",
+        "broker": "유안타증권",
+        "ticker": "004170",
+        "company_name": "신세계",
+        "title": "명품이 끌고, 면세가 밀고 이익 레버리지 본..",
+        "opinion": "Buy",
+        "target_price": 910000.0,
+        "prev_target": 1000000.0,
+        "tp_pct": -9.0,
+        "source_url": "https://finance.naver.com/research/company_read.naver?nid=93734",
+        "broker_url": "https://stock.pstatic.net/stock-research/company/18/20260629_company_387806000.pdf",
+        "analyst_name": null
+      },
       {
         "date": "2026-06-24",
         "broker": "하나증권",
@@ -1124,6 +1166,34 @@
   "S4_food": {
     "recent_reports": [
       {
+        "date": "2026-06-29",
+        "broker": "하나증권",
+        "ticker": "271560",
+        "company_name": "오리온",
+        "title": "리가켐바이오 1,250억원 추가 투자 공시",
+        "opinion": "Buy",
+        "target_price": 220000.0,
+        "prev_target": 180000.0,
+        "tp_pct": 22.2,
+        "source_url": "https://finance.naver.com/research/company_read.naver?nid=93736",
+        "broker_url": "https://stock.pstatic.net/stock-research/company/57/20260629_company_344625000.pdf",
+        "analyst_name": null
+      },
+      {
+        "date": "2026-06-29",
+        "broker": "iM증권",
+        "ticker": "097950",
+        "company_name": "CJ제일제당",
+        "title": "자사주 소각, 중복상장 규제, 합병 공정가액 ..",
+        "opinion": "Buy",
+        "target_price": 215000.0,
+        "prev_target": 370000.0,
+        "tp_pct": -41.9,
+        "source_url": "https://finance.naver.com/research/company_read.naver?nid=93726",
+        "broker_url": "https://stock.pstatic.net/stock-research/company/61/20260629_company_955190000.pdf",
+        "analyst_name": null
+      },
+      {
         "date": "2026-06-26",
         "broker": "한화투자증권",
         "ticker": "271560",
@@ -1287,6 +1357,20 @@
   },
   "S5_pharma": {
     "recent_reports": [
+      {
+        "date": "2026-06-29",
+        "broker": "IBK투자증권",
+        "ticker": "207940",
+        "company_name": "삼성바이오로직스",
+        "title": "하반기 불확실성 해소 기대",
+        "opinion": "매수",
+        "target_price": 2090000.0,
+        "prev_target": 2000000.0,
+        "tp_pct": 4.5,
+        "source_url": "https://finance.naver.com/research/company_read.naver?nid=93731",
+        "broker_url": "https://stock.pstatic.net/stock-research/company/40/20260629_company_978675000.pdf",
+        "analyst_name": null
+      },
       {
         "date": "2026-06-08",
         "broker": "하나증권",
@@ -1624,6 +1708,20 @@
   "S7_construction": {
     "recent_reports": [
       {
+        "date": "2026-06-29",
+        "broker": "IBK투자증권",
+        "ticker": "028050",
+        "company_name": "삼성E&A",
+        "title": "2Q26 Preview: 수주는 이제 시작이다",
+        "opinion": "매수",
+        "target_price": 60000.0,
+        "prev_target": 66000.0,
+        "tp_pct": -9.1,
+        "source_url": "https://finance.naver.com/research/company_read.naver?nid=93724",
+        "broker_url": "https://stock.pstatic.net/stock-research/company/40/20260629_company_410024000.pdf",
+        "analyst_name": null
+      },
+      {
         "date": "2026-06-24",
         "broker": "한화투자증권",
         "ticker": "375500",
@@ -1844,6 +1942,20 @@
   "S7_defense": {
     "recent_reports": [
       {
+        "date": "2026-06-29",
+        "broker": "하나증권",
+        "ticker": "064350",
+        "company_name": "현대로템",
+        "title": "2Q26 프리뷰: 기대치 부합. 주가는 다시 박스..",
+        "opinion": "Buy",
+        "target_price": 283000.0,
+        "prev_target": 316000.0,
+        "tp_pct": -10.4,
+        "source_url": "https://finance.naver.com/research/company_read.naver?nid=93737",
+        "broker_url": "https://stock.pstatic.net/stock-research/company/57/20260629_company_261742000.pdf",
+        "analyst_name": null
+      },
+      {
         "date": "2026-06-01",
         "broker": "유진투자증권",
         "ticker": "064350",
@@ -2024,6 +2136,20 @@
   "S7_machinery": {
     "recent_reports": [
       {
+        "date": "2026-06-29",
+        "broker": "교보증권",
+        "ticker": "241560",
+        "company_name": "두산밥캣",
+        "title": "AI 수요와 필연적인 동행",
+        "opinion": "Buy",
+        "target_price": 2200000.0,
+        "prev_target": 2220000.0,
+        "tp_pct": -0.9,
+        "source_url": "https://finance.naver.com/research/company_read.naver?nid=93741",
+        "broker_url": "https://stock.pstatic.net/stock-research/company/62/20260629_company_867497000.pdf",
+        "analyst_name": null
+      },
+      {
         "date": "2026-06-16",
         "broker": "대신증권",
         "ticker": "241560",
@@ -2190,6 +2316,20 @@
   "S7_ship": {
     "recent_reports": [
       {
+        "date": "2026-06-29",
+        "broker": "유안타증권",
+        "ticker": "329180",
+        "company_name": "HD현대중공업",
+        "title": "Everllence 인수에서 드러나는 AM의 가치",
+        "opinion": "Buy",
+        "target_price": 433000.0,
+        "prev_target": 410000.0,
+        "tp_pct": 5.6,
+        "source_url": "https://finance.naver.com/research/company_read.naver?nid=93733",
+        "broker_url": "https://stock.pstatic.net/stock-research/company/18/20260629_company_881896000.pdf",
+        "analyst_name": null
+      },
+      {
         "date": "2026-06-25",
         "broker": "DS투자증권",
         "ticker": "010140",
@@ -2261,6 +2401,20 @@
   },
   "S7_transport": {
     "recent_reports": [
+      {
+        "date": "2026-06-29",
+        "broker": "신한투자증권",
+        "ticker": "003490",
+        "company_name": "대한항공",
+        "title": "저점마저 높다",
+        "opinion": "매수",
+        "target_price": 35000.0,
+        "prev_target": 38000.0,
+        "tp_pct": -7.9,
+        "source_url": "https://finance.naver.com/research/company_read.naver?nid=93729",
+        "broker_url": null,
+        "analyst_name": null
+      },
       {
         "date": "2026-06-23",
         "broker": "하나증권",
