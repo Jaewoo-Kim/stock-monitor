@@ -45,7 +45,7 @@
     "title": "이익 회복 국면 진입",
     "opinion": "매수",
     "target_price": 107000.0,
-    "prev_target": 140000.0,
+    "prev_target": null,
     "source_url": "https://finance.naver.com/research/company_read.naver?nid=93705",
     "broker_url": "https://stock.pstatic.net/stock-research/company/40/20260626_company_698992000.pdf",
     "pdf_available": 1
@@ -164,7 +164,7 @@
     "title": "두렵지 않다",
     "opinion": "Buy",
     "target_price": 560000.0,
-    "prev_target": 550000.0,
+    "prev_target": null,
     "source_url": "https://finance.naver.com/research/company_read.naver?nid=93712",
     "broker_url": "https://stock.pstatic.net/stock-research/company/15/20260626_company_595731000.pdf",
     "pdf_available": 1
@@ -249,7 +249,7 @@
     "title": "실적과 멀티플 둘 다 열려 있다",
     "opinion": "Buy",
     "target_price": 3600000.0,
-    "prev_target": 4200000.0,
+    "prev_target": null,
     "source_url": "https://finance.naver.com/research/company_read.naver?nid=93717",
     "broker_url": "https://stock.pstatic.net/stock-research/company/57/20260626_company_614113000.pdf",
     "pdf_available": 1
@@ -300,7 +300,7 @@
     "title": "리가켐바이오 추가 투자 관련 코멘트",
     "opinion": "Buy",
     "target_price": 180000.0,
-    "prev_target": 220000.0,
+    "prev_target": 180000.0,
     "source_url": "https://finance.naver.com/research/company_read.naver?nid=93720",
     "broker_url": "https://stock.pstatic.net/stock-research/company/16/20260626_company_841395000.pdf",
     "pdf_available": 1
@@ -538,7 +538,7 @@
     "title": "구조조정에도 연간 조 단위 영업이익 전망",
     "opinion": "매수",
     "target_price": 20000.0,
-    "prev_target": 17000.0,
+    "prev_target": null,
     "source_url": "https://finance.naver.com/research/company_read.naver?nid=93681",
     "broker_url": "https://stock.pstatic.net/stock-research/company/40/20260625_company_813251000.pdf",
     "pdf_available": 1
@@ -589,7 +589,7 @@
     "title": "요즘 Hot한 거제에 다녀왔습니다",
     "opinion": "Buy",
     "target_price": 41000.0,
-    "prev_target": 42000.0,
+    "prev_target": null,
     "source_url": "https://finance.naver.com/research/company_read.naver?nid=93684",
     "broker_url": "https://stock.pstatic.net/stock-research/company/63/20260625_company_737366000.pdf",
     "pdf_available": 1
@@ -657,7 +657,7 @@
     "title": "출격 SKHY US",
     "opinion": "매수",
     "target_price": 4200000.0,
-    "prev_target": 3500000.0,
+    "prev_target": 3800000.0,
     "source_url": "https://finance.naver.com/research/company_read.naver?nid=93688",
     "broker_url": "https://stock.pstatic.net/stock-research/company/56/20260625_company_753994000.pdf",
     "pdf_available": 1
@@ -674,7 +674,7 @@
     "title": "27년에 더욱 부각될 생산능력",
     "opinion": "매수",
     "target_price": 550000.0,
-    "prev_target": 480000.0,
+    "prev_target": 550000.0,
     "source_url": "https://finance.naver.com/research/company_read.naver?nid=93689",
     "broker_url": "https://stock.pstatic.net/stock-research/company/56/20260625_company_79924000.pdf",
     "pdf_available": 1
@@ -708,7 +708,7 @@
     "title": "FLNG 글로벌 1등인데 FDC도?",
     "opinion": "매수",
     "target_price": 42000.0,
-    "prev_target": 40000.0,
+    "prev_target": null,
     "source_url": "https://finance.naver.com/research/company_read.naver?nid=93691",
     "broker_url": "https://stock.pstatic.net/stock-research/company/66/20260625_company_255689000.pdf",
     "pdf_available": 1
@@ -793,7 +793,7 @@
     "title": "사우디의 무리한 과세 통보, 현실화 가능성은..",
     "opinion": "Buy",
     "target_price": 120000.0,
-    "prev_target": 144000.0,
+    "prev_target": null,
     "source_url": "https://finance.naver.com/research/company_read.naver?nid=93663",
     "broker_url": "https://stock.pstatic.net/stock-research/company/61/20260624_company_360343000.pdf",
     "pdf_available": 1
@@ -810,7 +810,7 @@
     "title": "사우디 법인세 과세 이슈 점검",
     "opinion": "Buy",
     "target_price": 144000.0,
-    "prev_target": 120000.0,
+    "prev_target": 144000.0,
     "source_url": "https://finance.naver.com/research/company_read.naver?nid=93664",
     "broker_url": "https://stock.pstatic.net/stock-research/company/63/20260624_company_529810000.pdf",
     "pdf_available": 1
@@ -827,7 +827,7 @@
     "title": "2Q26 Pre: 계절적 비수기 불구하고 견조한 탑..",
     "opinion": "Buy",
     "target_price": 220000.0,
-    "prev_target": 160000.0,
+    "prev_target": null,
     "source_url": "https://finance.naver.com/research/company_read.naver?nid=93665",
     "broker_url": "https://stock.pstatic.net/stock-research/company/57/20260624_company_971857000.pdf",
     "pdf_available": 1
@@ -861,7 +861,7 @@
     "title": "사우디 과세에 대한 과도한 우려",
     "opinion": "Buy",
     "target_price": 120000.0,
-    "prev_target": 110000.0,
+    "prev_target": null,
     "source_url": "https://finance.naver.com/research/company_read.naver?nid=93667",
     "broker_url": "https://stock.pstatic.net/stock-research/company/57/20260624_company_647126000.pdf",
     "pdf_available": 1
@@ -929,7 +929,7 @@
     "title": "법인세 부과 관련 코멘트",
     "opinion": "Buy",
     "target_price": 110000.0,
-    "prev_target": 143000.0,
+    "prev_target": null,
     "source_url": "https://finance.naver.com/research/company_read.naver?nid=93671",
     "broker_url": "https://stock.pstatic.net/stock-research/company/16/20260624_company_517922000.pdf",
     "pdf_available": 1
@@ -946,7 +946,7 @@
     "title": "짙어지는 로보틱스 사업자의 면모",
     "opinion": "Buy",
     "target_price": 810000.0,
-    "prev_target": 900000.0,
+    "prev_target": null,
     "source_url": "https://finance.naver.com/research/company_read.naver?nid=93672",
     "broker_url": "https://stock.pstatic.net/stock-research/company/16/20260624_company_224216000.pdf",
     "pdf_available": 1
@@ -963,7 +963,7 @@
     "title": "핵심은 실적 호조, 광학(카메라)의 경쟁력!",
     "opinion": "Buy",
     "target_price": 1300000.0,
-    "prev_target": 1400000.0,
+    "prev_target": null,
     "source_url": "https://finance.naver.com/research/company_read.naver?nid=93673",
     "broker_url": "https://stock.pstatic.net/stock-research/company/15/20260624_company_471897000.pdf",
     "pdf_available": 1
@@ -1371,7 +1371,7 @@
     "title": "2Q26 Pre: 항공화물의 운임탄력성을 확인하다",
     "opinion": "Buy",
     "target_price": 38000.0,
-    "prev_target": 40000.0,
+    "prev_target": null,
     "source_url": "https://finance.naver.com/research/company_read.naver?nid=93655",
     "broker_url": "https://stock.pstatic.net/stock-research/company/57/20260623_company_691778000.pdf",
     "pdf_available": 1
@@ -1422,7 +1422,7 @@
     "title": "삼성전자發 호재, 한둘이 아니다",
     "opinion": "매수",
     "target_price": 680000.0,
-    "prev_target": 2000.0,
+    "prev_target": null,
     "source_url": "https://finance.naver.com/research/company_read.naver?nid=93658",
     "broker_url": "https://stock.pstatic.net/stock-research/company/56/20260623_company_604485000.pdf",
     "pdf_available": 1
@@ -1507,7 +1507,7 @@
     "title": "2Q26 영업이익 63.7 조원 전망",
     "opinion": "Buy",
     "target_price": 3500000.0,
-    "prev_target": 4300000.0,
+    "prev_target": null,
     "source_url": "https://finance.naver.com/research/company_read.naver?nid=93621",
     "broker_url": "https://stock.pstatic.net/stock-research/company/61/20260623_company_775709000.pdf",
     "pdf_available": 1
@@ -1524,7 +1524,7 @@
     "title": "중기 주가 상승세 유지 예상",
     "opinion": "Buy",
     "target_price": 480000.0,
-    "prev_target": 480000.0,
+    "prev_target": null,
     "source_url": "https://finance.naver.com/research/company_read.naver?nid=93622",
     "broker_url": "https://stock.pstatic.net/stock-research/company/61/20260623_company_679383000.pdf",
     "pdf_available": 1
@@ -1541,7 +1541,7 @@
     "title": "전력 인프라 수주확대 및 중복상장 규제 수혜",
     "opinion": "Buy",
     "target_price": 570000.0,
-    "prev_target": 300000.0,
+    "prev_target": null,
     "source_url": "https://finance.naver.com/research/company_read.naver?nid=93623",
     "broker_url": "https://stock.pstatic.net/stock-research/company/61/20260622_company_660629000.pdf",
     "pdf_available": 1
@@ -1558,7 +1558,7 @@
     "title": "반도체 낙수효과 및 중복상장 규제 수혜",
     "opinion": "Buy",
     "target_price": 950000.0,
-    "prev_target": 880000.0,
+    "prev_target": null,
     "source_url": "https://finance.naver.com/research/company_read.naver?nid=93624",
     "broker_url": "https://stock.pstatic.net/stock-research/company/61/20260622_company_278986000.pdf",
     "pdf_available": 1
@@ -1660,7 +1660,7 @@
     "title": "새로운 가치평가 방식 필요",
     "opinion": "Buy",
     "target_price": 590000.0,
-    "prev_target": 312000.0,
+    "prev_target": 278000.0,
     "source_url": "https://finance.naver.com/research/company_read.naver?nid=93630",
     "broker_url": "https://stock.pstatic.net/stock-research/company/15/20260622_company_764405000.pdf",
     "pdf_available": 1

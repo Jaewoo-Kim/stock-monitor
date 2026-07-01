@@ -280,11 +280,11 @@ def _insert_report(con, rec: dict) -> bool:
 # ─────────────────────────────────────
 
 def backfill_prev_targets(con) -> int:
-    """prev_target이 비어 있는 리포트에, 같은 종목의 직전 리포트 목표가를 채운다.
+    """prev_target을 '같은 증권사(broker)'의 직전 목표가로 채운다 (증권사별 리비전).
 
-    상세페이지에 '35,000 → 45,000'이 명시된 경우는 그대로 두고(이미 값 있음),
-    그렇지 않은 리포트는 직전 목표가 대비 변화로 리비전(상향/하향)을 잡을 수 있게 한다.
-    멱등 — 여러 번 실행해도 안전.
+    같은 종목이라도 증권사가 다르면 목표가 수준이 달라(교차오염) → 반드시 동일
+    증권사의 직전 목표가와 비교해야 진짜 상향/하향 리비전이 된다.
+    권위적·멱등: 매 실행 전체 재계산(동일 증권사 직전값이 없으면 NULL).
     """
     cur = con.execute(
         """
@@ -292,6 +292,7 @@ def backfill_prev_targets(con) -> int:
         SET prev_target = (
             SELECT p.target_price FROM report_events p
             WHERE p.ticker = r.ticker
+              AND p.broker = r.broker
               AND p.target_price IS NOT NULL
               AND p.target_price > 0
               AND ( p.published_date < r.published_date
@@ -301,12 +302,13 @@ def backfill_prev_targets(con) -> int:
         )
         WHERE r.ticker IS NOT NULL
           AND r.target_price IS NOT NULL
-          AND r.prev_target IS NULL
         """
     )
     con.commit()
-    n = cur.rowcount if cur.rowcount and cur.rowcount > 0 else 0
-    log.info("prev_target 자동 산출: %d건", n)
+    n = con.execute(
+        "SELECT COUNT(*) FROM report_events WHERE prev_target IS NOT NULL"
+    ).fetchone()[0]
+    log.info("prev_target(증권사별) 산출: %d건", n)
     return n
 
 
