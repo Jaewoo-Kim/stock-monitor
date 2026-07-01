@@ -158,6 +158,18 @@ def step_build_static() -> bool:
         return False
 
 
+def step_backtest() -> bool:
+    log.info("=== [6.5/6] backtest(신호 검증) 시작 ===")
+    try:
+        from analysis.backtest import run
+        run()
+        log.info("=== [6.5/6] backtest 완료 ===")
+        return True
+    except Exception as exc:
+        log.error("backtest 실패: %s", exc, exc_info=True)
+        return False
+
+
 def main(run_mapper: bool = False) -> int:
     today = date.today()
     log.info("daily batch 시작 — %s", today.isoformat())
@@ -180,6 +192,7 @@ def main(run_mapper: bool = False) -> int:
     results["signals"]         = step_signals()       # L0 + cycle + timing 포함
     results["stock_scorer"]    = step_stock_scorer()
     results["build_static"]    = step_build_static()
+    results["backtest"]        = step_backtest()
 
     # 결과 요약
     log.info("─────────────────────────────────")
