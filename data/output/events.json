@@ -12,6 +12,19 @@
   },
   {
     "date": "2026-07-01",
+    "level2_id": "S6_bank",
+    "level2_name": "은행·금융지주",
+    "event_type": "timing_watch",
+    "from_state": "hold",
+    "to_state": "watch",
+    "detail": {
+      "timing_score": 62.0,
+      "rs_3m": -3.58,
+      "breadth_pct": 25.0
+    }
+  },
+  {
+    "date": "2026-07-01",
     "level2_id": "S4_food",
     "level2_name": "음식료·담배",
     "event_type": "timing_watch",
@@ -20,6 +33,19 @@
     "detail": {
       "timing_score": 57.6,
       "rs_3m": -11.53,
+      "breadth_pct": 0.0
+    }
+  },
+  {
+    "date": "2026-07-01",
+    "level2_id": "S1_battery",
+    "level2_name": "2차전지",
+    "event_type": "timing_watch",
+    "from_state": "관측부족",
+    "to_state": "watch",
+    "detail": {
+      "timing_score": 65.5,
+      "rs_3m": -17.96,
       "breadth_pct": 0.0
     }
   }
