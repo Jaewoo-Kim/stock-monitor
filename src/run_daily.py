@@ -62,6 +62,18 @@ def step_naver_research() -> bool:
         return False
 
 
+def step_consensus() -> bool:
+    log.info("=== [2.5/6] naver_consensus(EPS 추정) 시작 ===")
+    try:
+        from collectors.naver_consensus import run
+        run()
+        log.info("=== [2.5/6] naver_consensus 완료 ===")
+        return True
+    except Exception as exc:
+        log.error("naver_consensus 실패: %s", exc, exc_info=True)
+        return False
+
+
 def step_price_collector() -> bool:
     log.info("=== [3/5] price_collector 시작 ===")
     try:
@@ -160,6 +172,7 @@ def main(run_mapper: bool = False) -> int:
         results["company_mapper"] = True
 
     results["naver_research"]  = step_naver_research()
+    results["consensus"]       = step_consensus()     # 컨센서스 EPS 스냅샷 (L2 선행)
     results["price_collector"] = step_price_collector()
     results["dart"]            = step_dart()         # DART_API_KEY 없으면 내부 skip
     results["dart_business"]   = step_dart_business() # DART_API_KEY 없으면 내부 skip

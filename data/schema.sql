@@ -231,6 +231,19 @@ CREATE TABLE IF NOT EXISTS industry_indicators (
 
 CREATE INDEX IF NOT EXISTS idx_indic_level2 ON industry_indicators(level2_id);
 
+-- L2 선행: 컨센서스 EPS 스냅샷 (네이버 기업실적분석)
+--   같은 fwd_year의 스냅샷 간 변화 = EPS 추정치 리비전(선행 신호).
+CREATE TABLE IF NOT EXISTS eps_consensus (
+    ticker    TEXT NOT NULL REFERENCES companies(ticker),
+    fwd_year  INTEGER NOT NULL,   -- 추정 대상 회계연도 (예: 2026)
+    snapshot  TEXT NOT NULL,      -- 수집일 'YYYY-MM-DD'
+    eps       REAL,               -- 컨센서스 EPS (원)
+    op_income REAL,               -- 컨센서스 영업이익 (백만원, 선택)
+    PRIMARY KEY(ticker, fwd_year, snapshot)
+);
+
+CREATE INDEX IF NOT EXISTS idx_eps_cons ON eps_consensus(ticker, fwd_year);
+
 -- L0 산출 신호 (업황 바닥 통과 여부)
 CREATE TABLE IF NOT EXISTS l0_signals (
     level2_id    TEXT PRIMARY KEY REFERENCES industries(level2_id),
