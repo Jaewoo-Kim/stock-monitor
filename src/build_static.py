@@ -28,6 +28,29 @@ OUTPUT = ROOT / "data" / "output"
 
 PHASE_ORDER = {"전환": 0, "확장": 1, "둔화": 2, "바닥": 3, "침체": 4, "관측부족": 5}
 
+_L0_TURN = {"turning_up": 1.0, "rising": 0.8, "bottoming": 0.4, "falling": 0.0}
+
+
+def _turn_score(rs_3m, breadth_pct, l0_state, composite) -> float | None:
+    """4개 레이어 통합 '전환 강도' 0~100. 백테스트 검증된 L1(RS·폭)에 높은 가중.
+
+    가중: L1 상대강도 0.40 + L1 폭 0.25 + L0 업황 0.15 + L3 목표가 0.20.
+    가용 요소만 사용하고 가중치 재정규화. RS·폭은 항상 존재(가격).
+    """
+    comps: list[tuple[float, float]] = []
+    if rs_3m is not None:
+        comps.append((max(0.0, min(1.0, rs_3m / 60.0)), 0.40))   # +60%p RS → 1.0
+    if breadth_pct is not None:
+        comps.append((breadth_pct / 100.0, 0.25))
+    if l0_state in _L0_TURN:
+        comps.append((_L0_TURN[l0_state], 0.15))
+    if composite is not None:
+        comps.append((max(0.0, min(1.0, composite)), 0.20))       # 목표가 composite 양수분
+    if not comps:
+        return None
+    w = sum(x[1] for x in comps)
+    return round(sum(v * wt for v, wt in comps) / w * 100, 1)
+
 
 # ─────────────────────────────────────
 # 산업 현황 JSON
@@ -204,15 +227,16 @@ def build_industries(con) -> list[dict]:
             "l0_state":       l0v.get("driver_state"),
             "l0_score":       l0v.get("driver_score"),
             "l0_detail":      l0v.get("detail"),
+            # 통합 전환 강도 (L0+L1+L3)
+            "turn_score":     _turn_score(
+                tim.get("idx_rs_3m"), tim.get("breadth_pct"),
+                l0v.get("driver_state"), sig.get("composite_score")),
             "companies":      rep_companies.get(level2_id, []),
             "etfs":           etfs.get(level2_id, []),
         })
 
-    # 사이클 단계 → composite_score 순 정렬
-    result.sort(key=lambda r: (
-        PHASE_ORDER.get(r["cycle_phase"], 5),
-        -(r["composite_score"] or -999),
-    ))
+    # 통합 전환 강도 순 정렬 (검증된 L1 중심) — 데이터 없으면 뒤로
+    result.sort(key=lambda r: -(r["turn_score"] if r["turn_score"] is not None else -1))
 
     return result
 

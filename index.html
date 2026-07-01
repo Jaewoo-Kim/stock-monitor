@@ -484,7 +484,7 @@ function indCard(ind){
     <div class="top">
       <div><div class="nm">${ind.level2_name}</div>
         <div class="sec" style="display:flex;gap:5px;align-items:center;flex-wrap:wrap;margin-top:4px">${ind.level1_name} ${timingChip(ind.timing_state)} ${phaseBadge(ind.cycle_phase)}</div></div>
-      <div><div class="sc num">${scoreDisplay(ind.composite_score)}</div><div class="sclab">SCORE</div></div>
+      <div><div class="sc num">${ind.turn_score!=null?Math.round(ind.turn_score):'—'}</div><div class="sclab">전환강도</div></div>
     </div>
     <div class="track">${track}</div>
     ${kpis}
@@ -637,7 +637,7 @@ function indDetail(ind, det){
   return `
     <div class="pagehead" style="margin-bottom:18px">
       <div><h2>${ind.level2_name} ${timingChip(ind.timing_state)}</h2>
-        <div class="desc">${ind.level1_name} · ${phaseBadge(ind.cycle_phase)} · 종합점수 <b class="score-pill num">${scoreDisplay(ind.composite_score)}</b></div></div>
+        <div class="desc">${ind.level1_name} · ${phaseBadge(ind.cycle_phase)} · 전환강도 <b class="score-pill num">${ind.turn_score!=null?Math.round(ind.turn_score):'—'}</b></div></div>
     </div>
     ${verdict}
     ${candidates}
@@ -864,10 +864,10 @@ function homeRanking(industries){
     `<tr onclick="gotoDetail('${ind.level2_id}')">
       <td><span class="rk">${i+1}</span><span class="iname">${ind.level2_name}</span><div class="isub" style="margin-left:31px">${ind.level1_name}</div></td>
       <td>${timingChip(ind.timing_state)}</td>
-      <td>${phaseBadge(ind.cycle_phase)}</td>
-      <td class="num score-pill">${scoreDisplay(ind.composite_score)}</td></tr>`
+      <td class="num">${ind.idx_rs_3m!=null?`<span class="${ind.idx_rs_3m>0?'up':'down'}">${ind.idx_rs_3m>0?'+':''}${Math.round(ind.idx_rs_3m)}</span>`:'—'}</td>
+      <td class="num score-pill">${ind.turn_score!=null?Math.round(ind.turn_score):'—'}</td></tr>`
   ).join('') || '<tr><td colspan="4" class="empty">데이터 없음</td></tr>';
-  return `<table class="tbl"><thead><tr><th>산업</th><th>타이밍</th><th>국면</th><th>점수</th></tr></thead><tbody>${rows}</tbody></table>`;
+  return `<table class="tbl"><thead><tr><th>산업</th><th>타이밍</th><th>RS</th><th>전환강도</th></tr></thead><tbody>${rows}</tbody></table>`;
 }
 // 매수 타이밍 신호 — buy/watch 산업 우선 노출
 const TIMING_ORDER = { buy:0, watch:1, hold:2, caution:3, '관측부족':4 };
