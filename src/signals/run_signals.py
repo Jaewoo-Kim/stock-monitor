@@ -20,6 +20,7 @@ from signals.leading import calc_leading
 from signals.cycle_classifier import classify_all, save_signals
 from signals import timing
 from signals import l0_industry
+from signals import events
 
 log = logging.getLogger(__name__)
 
@@ -66,6 +67,9 @@ def run(as_of: date | None = None) -> None:
 
         # 매수 타이밍 (L0 업황 + 방향 cycle_signals + 가격 확인) — 같은 커넥션 재사용
         timing.run(con=con, calc_date=ref.isoformat())
+
+        # 신호 변화 이벤트 감지 (알림 피드) — timing/cycle 저장 후
+        events.run(con=con, calc_date=ref.isoformat())
     finally:
         con.close()
 

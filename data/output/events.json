@@ -1,0 +1,26 @@
+[
+  {
+    "date": "2026-07-01",
+    "level2_id": "S4_food",
+    "level2_name": "음식료·담배",
+    "event_type": "phase_turn",
+    "from_state": "바닥",
+    "to_state": "전환",
+    "detail": {
+      "composite_score": 0.175
+    }
+  },
+  {
+    "date": "2026-07-01",
+    "level2_id": "S4_food",
+    "level2_name": "음식료·담배",
+    "event_type": "timing_watch",
+    "from_state": "hold",
+    "to_state": "watch",
+    "detail": {
+      "timing_score": 57.6,
+      "rs_3m": -11.53,
+      "breadth_pct": 0.0
+    }
+  }
+]

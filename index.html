@@ -292,6 +292,8 @@
       <div class="grid g4" id="home-stats" style="margin-bottom:22px"></div>
       <div class="sectitle"><h3>🎯 이번 주 매수 타이밍 신호</h3><span class="sub" style="font-size:12px">방향(애널리스트) + 가격 확인 결합 · 클릭 시 상세</span></div>
       <div id="home-timing" style="margin-bottom:24px"><div class="loading">…</div></div>
+      <div class="sectitle"><h3>🔔 최근 신호 변화</h3><span class="sub" style="font-size:12px">매수적기·국면 전환 알림</span></div>
+      <div id="home-events" style="margin-bottom:24px"></div>
       <div id="home-backtest"></div>
       <div class="sectitle"><h3>국면 분포</h3></div>
       <div class="phasebar" id="home-phasebar" style="margin-bottom:24px"></div>
@@ -362,7 +364,7 @@
 
 <script>
 // ── 전역 상태 ──
-let _industries = [], _detail = {}, _scores = {}, _reports = [], _meta = {}, _mshare = {}, _briefs = {}, _backtest = null;
+let _industries = [], _detail = {}, _scores = {}, _reports = [], _meta = {}, _mshare = {}, _briefs = {}, _backtest = null, _events = [];
 let _currentStkInd = null, _briefBack = 'v-stk';
 const BASE = 'data/output';
 
@@ -950,6 +952,31 @@ function renderScreener(){
     <tbody>${body}</tbody></table></div>`;
 }
 
+// ── 신호 변화 피드(알림) ──
+const EVENT_META = {
+  timing_buy:   { label:'매수적기 전환', cls:'b-up',   ico:'🟢' },
+  timing_watch: { label:'관찰 전환',     cls:'b-info', ico:'🔵' },
+  phase_turn:   { label:'국면 전환',     cls:'b-up',   ico:'🔄' },
+};
+function renderEvents(evs){
+  if (!evs || !evs.length)
+    return '<div class="card pad"><div class="empty">최근 신호 변화 없음 — 매일 배치에서 전환 감지 시 표시</div></div>';
+  const rows = evs.slice(0,12).map(e => {
+    const m = EVENT_META[e.event_type] || { label:e.event_type, cls:'b-grey', ico:'•' };
+    const d = e.detail || {};
+    const extra = [
+      d.timing_score!=null ? `타이밍 ${d.timing_score}` : '',
+      d.rs_3m!=null ? `RS ${d.rs_3m>0?'+':''}${d.rs_3m}%p` : '',
+      d.composite_score!=null ? `점수 ${scoreDisplay(d.composite_score)}` : '',
+    ].filter(Boolean).join(' · ');
+    return `<div class="tl" style="cursor:pointer" onclick="gotoDetail('${e.level2_id}')">
+      <span>${m.ico} <b>${e.level2_name}</b> <span class="badge ${m.cls}" style="font-size:10px">${m.label}</span>
+        <span class="sub" style="font-size:11px">${e.from_state||''}→${e.to_state||''}</span></span>
+      <span class="tlr">${(e.date||'').slice(5)} · ${extra}</span></div>`;
+  }).join('');
+  return `<div class="card pad">${rows}</div>`;
+}
+
 // ── 신호 검증(백테스트) ──
 function renderBacktest(b){
   if (!b || b.ic_rs_fwd == null) return '';
@@ -971,11 +998,12 @@ function renderBacktest(b){
 // ── 데이터 로드 ──
 async function loadData(){
   try {
-    const [iR,rR,dR,sR,msR,brR,btR,mR] = await Promise.all([
+    const [iR,rR,dR,sR,msR,brR,btR,mR,evR] = await Promise.all([
       fetch(`${BASE}/industries.json`), fetch(`${BASE}/reports.json`),
       fetch(`${BASE}/industry_detail.json`), fetch(`${BASE}/stock_scores.json`),
       fetch(`${BASE}/market_share.json`), fetch(`${BASE}/company_briefs.json`),
       fetch(`${BASE}/backtest.json`), fetch(`${BASE}/meta.json`),
+      fetch(`${BASE}/events.json`),
     ]);
     _industries = iR.ok ? await iR.json() : [];
     _reports    = rR.ok ? await rR.json() : [];
@@ -984,6 +1012,7 @@ async function loadData(){
     _mshare     = msR.ok ? await msR.json() : {};
     _briefs     = brR.ok ? await brR.json() : {};
     _backtest   = btR.ok ? await btR.json() : null;
+    _events     = evR.ok ? await evR.json() : [];
     _meta       = mR.ok ? await mR.json() : {};
 
     // 사이드바
@@ -996,6 +1025,7 @@ async function loadData(){
     // 홈
     document.getElementById('home-stats').innerHTML = homeStats(_meta, _industries);
     document.getElementById('home-timing').innerHTML = homeTiming(_industries);
+    document.getElementById('home-events').innerHTML = renderEvents(_events);
     document.getElementById('home-backtest').innerHTML = renderBacktest(_backtest);
     // 매수 후보 스크리너
     renderScreener();

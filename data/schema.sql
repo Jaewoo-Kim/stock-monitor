@@ -371,3 +371,16 @@ CREATE TABLE IF NOT EXISTS timing_signals (
 );
 
 CREATE INDEX IF NOT EXISTS idx_timing_date ON timing_signals(calc_date);
+
+-- 신호 변화 이벤트 (알림 피드): 매수적기/관찰 전환·국면 전환 등
+CREATE TABLE IF NOT EXISTS signal_events (
+    event_date  TEXT NOT NULL,   -- 발생일 (계산일)
+    level2_id   TEXT NOT NULL REFERENCES industries(level2_id),
+    event_type  TEXT NOT NULL,   -- 'timing_buy' | 'timing_watch' | 'phase_turn'
+    from_state  TEXT,
+    to_state    TEXT,
+    detail      TEXT,            -- JSON (score·rs·breadth 등)
+    PRIMARY KEY(event_date, level2_id, event_type)
+);
+
+CREATE INDEX IF NOT EXISTS idx_event_date ON signal_events(event_date);

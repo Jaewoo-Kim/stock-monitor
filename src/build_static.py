@@ -585,6 +585,32 @@ def build_company_briefs(con) -> dict[str, dict]:
     return result
 
 
+def build_events(con, limit: int = 40) -> list[dict]:
+    """최근 신호 변화 이벤트 (알림 피드)."""
+    rows = con.execute(
+        """
+        SELECT e.event_date, e.level2_id, i.level2_name, e.event_type,
+               e.from_state, e.to_state, e.detail
+        FROM signal_events e
+        JOIN industries i ON e.level2_id = i.level2_id
+        ORDER BY e.event_date DESC, e.event_type
+        LIMIT ?
+        """,
+        (limit,),
+    ).fetchall()
+    out = []
+    for ev_date, level2_id, name, etype, frm, to, detail in rows:
+        try:
+            det = json.loads(detail) if detail else {}
+        except Exception:
+            det = {}
+        out.append({
+            "date": ev_date, "level2_id": level2_id, "level2_name": name,
+            "event_type": etype, "from_state": frm, "to_state": to, "detail": det,
+        })
+    return out
+
+
 def build_meta(con) -> dict:
     n_reports = con.execute("SELECT COUNT(*) FROM report_events").fetchone()[0]
     n_companies = con.execute(
@@ -621,6 +647,7 @@ def run() -> None:
         stock_scores    = build_stock_scores(con)
         market_share    = build_market_share(con)
         company_briefs  = build_company_briefs(con)
+        events          = build_events(con)
         meta            = build_meta(con)
     finally:
         con.close()
@@ -636,6 +663,7 @@ def run() -> None:
     _write("stock_scores.json",    stock_scores)
     _write("market_share.json",    market_share)
     _write("company_briefs.json",  company_briefs)
+    _write("events.json",          events)
     _write("meta.json",            meta)
 
     log.info("빌드 완료 → %s", OUTPUT)
