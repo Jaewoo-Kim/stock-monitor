@@ -1,5 +1,29 @@
 [
   {
+    "date": "2026-07-02",
+    "level2_id": "S7_construction",
+    "level2_name": "건설·건자재",
+    "event_type": "phase_turn",
+    "from_state": "관측부족",
+    "to_state": "전환",
+    "detail": {
+      "composite_score": 0.2333
+    }
+  },
+  {
+    "date": "2026-07-02",
+    "level2_id": "S7_construction",
+    "level2_name": "건설·건자재",
+    "event_type": "timing_watch",
+    "from_state": "hold",
+    "to_state": "watch",
+    "detail": {
+      "timing_score": 58.5,
+      "rs_3m": -16.89,
+      "breadth_pct": 33.3
+    }
+  },
+  {
     "date": "2026-07-01",
     "level2_id": "S4_food",
     "level2_name": "음식료·담배",
