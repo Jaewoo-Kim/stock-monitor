@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026-07-07",
+    "level2_id": "S3_cosmetics",
+    "level2_name": "화장품",
+    "event_type": "timing_watch",
+    "from_state": "hold",
+    "to_state": "watch",
+    "detail": {
+      "timing_score": 67.5,
+      "rs_3m": -12.79,
+      "breadth_pct": 33.3
+    }
+  },
+  {
     "date": "2026-07-02",
     "level2_id": "S7_construction",
     "level2_name": "건설·건자재",
