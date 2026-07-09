@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026-07-09",
+    "level2_id": "S7_ship",
+    "level2_name": "조선",
+    "event_type": "timing_watch",
+    "from_state": "관측부족",
+    "to_state": "watch",
+    "detail": {
+      "timing_score": 69.5,
+      "rs_3m": -9.31,
+      "breadth_pct": 0.0
+    }
+  },
+  {
     "date": "2026-07-07",
     "level2_id": "S3_cosmetics",
     "level2_name": "화장품",
