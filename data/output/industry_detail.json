@@ -206,6 +206,20 @@
   "S1_display": {
     "recent_reports": [
       {
+        "date": "2026-07-10",
+        "broker": "IBK투자증권",
+        "ticker": "213420",
+        "company_name": "덕산네오룩스",
+        "title": "불황을 극복한 기술 경쟁력",
+        "opinion": "매수",
+        "target_price": 69000.0,
+        "prev_target": null,
+        "tp_pct": null,
+        "source_url": "https://finance.naver.com/research/company_read.naver?nid=94061",
+        "broker_url": "https://stock.pstatic.net/stock-research/company/40/20260710_company_574226000.pdf",
+        "analyst_name": null
+      },
+      {
         "date": "2026-07-03",
         "broker": "신한투자증권",
         "ticker": "034220",
@@ -273,20 +287,6 @@
         "tp_pct": null,
         "source_url": "https://finance.naver.com/research/company_read.naver?nid=93536",
         "broker_url": "https://stock.pstatic.net/stock-research/company/61/20260615_company_144133000.pdf",
-        "analyst_name": null
-      },
-      {
-        "date": "2026-06-11",
-        "broker": "SK증권",
-        "ticker": "034220",
-        "company_name": "LG디스플레이",
-        "title": "밸류에이션콜: CAPEX 축소 > 재무개선사이클 ..",
-        "opinion": "매수",
-        "target_price": 20000.0,
-        "prev_target": null,
-        "tp_pct": null,
-        "source_url": "https://finance.naver.com/research/company_read.naver?nid=93493",
-        "broker_url": "https://stock.pstatic.net/stock-research/company/64/20260611_company_189588000.pdf",
         "analyst_name": null
       }
     ],
@@ -571,20 +571,6 @@
         "tp_pct": null,
         "source_url": "https://finance.naver.com/research/company_read.naver?nid=93656",
         "broker_url": "https://stock.pstatic.net/stock-research/company/62/20260623_company_834771000.pdf",
-        "analyst_name": null
-      },
-      {
-        "date": "2026-06-11",
-        "broker": "미래에셋증권",
-        "ticker": "011070",
-        "company_name": "LG이노텍",
-        "title": "기판으로 다시 핀다",
-        "opinion": "매수",
-        "target_price": 1400000.0,
-        "prev_target": null,
-        "tp_pct": null,
-        "source_url": "https://finance.naver.com/research/company_read.naver?nid=93502",
-        "broker_url": "https://stock.pstatic.net/stock-research/company/56/20260611_company_784094000.pdf",
         "analyst_name": null
       }
     ],
@@ -1174,6 +1160,34 @@
   "S2_internet": {
     "recent_reports": [
       {
+        "date": "2026-07-10",
+        "broker": "신한투자증권",
+        "ticker": "035420",
+        "company_name": "NAVER",
+        "title": "실적 견조하나, AI 수익화 전까지는 공백",
+        "opinion": "매수",
+        "target_price": 240000.0,
+        "prev_target": null,
+        "tp_pct": null,
+        "source_url": "https://finance.naver.com/research/company_read.naver?nid=94059",
+        "broker_url": null,
+        "analyst_name": null
+      },
+      {
+        "date": "2026-07-10",
+        "broker": "신한투자증권",
+        "ticker": "035720",
+        "company_name": "카카오",
+        "title": "본업 양호하나 AI 수익화 검증 필요",
+        "opinion": "매수",
+        "target_price": 61000.0,
+        "prev_target": null,
+        "tp_pct": null,
+        "source_url": "https://finance.naver.com/research/company_read.naver?nid=94058",
+        "broker_url": null,
+        "analyst_name": null
+      },
+      {
         "date": "2026-07-07",
         "broker": "한화투자증권",
         "ticker": "035720",
@@ -1247,6 +1261,34 @@
   },
   "S2_telecom": {
     "recent_reports": [
+      {
+        "date": "2026-07-10",
+        "broker": "하나증권",
+        "ticker": "017670",
+        "company_name": "SK텔레콤",
+        "title": "2Q 프리뷰 - 실적/배당 정상화 확신 갖는 계..",
+        "opinion": "Buy",
+        "target_price": 140000.0,
+        "prev_target": 140000.0,
+        "tp_pct": 0.0,
+        "source_url": "https://finance.naver.com/research/company_read.naver?nid=94070",
+        "broker_url": "https://stock.pstatic.net/stock-research/company/57/20260710_company_781845000.pdf",
+        "analyst_name": null
+      },
+      {
+        "date": "2026-07-10",
+        "broker": "IBK투자증권",
+        "ticker": "030200",
+        "company_name": "KT",
+        "title": "단기 부진, 성장 스토리는 유효",
+        "opinion": "매수",
+        "target_price": 75000.0,
+        "prev_target": null,
+        "tp_pct": null,
+        "source_url": "https://finance.naver.com/research/company_read.naver?nid=94047",
+        "broker_url": "https://stock.pstatic.net/stock-research/company/40/20260710_company_727797000.pdf",
+        "analyst_name": null
+      },
       {
         "date": "2026-07-09",
         "broker": "하나증권",
@@ -1467,6 +1509,76 @@
   },
   "S3_auto": {
     "recent_reports": [
+      {
+        "date": "2026-07-10",
+        "broker": "신한투자증권",
+        "ticker": "005380",
+        "company_name": "현대차",
+        "title": "하늘을 짊어진 Atlas, 이제 주가를 들어 올릴..",
+        "opinion": "매수",
+        "target_price": 780000.0,
+        "prev_target": 800000.0,
+        "tp_pct": -2.5,
+        "source_url": "https://finance.naver.com/research/company_read.naver?nid=94055",
+        "broker_url": null,
+        "analyst_name": null
+      },
+      {
+        "date": "2026-07-10",
+        "broker": "유진투자증권",
+        "ticker": "000270",
+        "company_name": "기아",
+        "title": "2Q26 Preview: 앞서 가는 실적, 뒤따라갈 주..",
+        "opinion": "Buy",
+        "target_price": 250000.0,
+        "prev_target": null,
+        "tp_pct": null,
+        "source_url": "https://finance.naver.com/research/company_read.naver?nid=94054",
+        "broker_url": "https://stock.pstatic.net/stock-research/company/63/20260710_company_448861000.pdf",
+        "analyst_name": null
+      },
+      {
+        "date": "2026-07-10",
+        "broker": "유진투자증권",
+        "ticker": "012330",
+        "company_name": "현대모비스",
+        "title": "2Q26 Preview: 기대치 부합할 실적, 본격 개..",
+        "opinion": "Buy",
+        "target_price": 740000.0,
+        "prev_target": null,
+        "tp_pct": null,
+        "source_url": "https://finance.naver.com/research/company_read.naver?nid=94050",
+        "broker_url": "https://stock.pstatic.net/stock-research/company/63/20260710_company_570373000.pdf",
+        "analyst_name": null
+      },
+      {
+        "date": "2026-07-10",
+        "broker": "유진투자증권",
+        "ticker": "005380",
+        "company_name": "현대차",
+        "title": "2Q26 Preview: 실적 저점 구간의 매수 기회",
+        "opinion": "Buy",
+        "target_price": 900000.0,
+        "prev_target": null,
+        "tp_pct": null,
+        "source_url": "https://finance.naver.com/research/company_read.naver?nid=94048",
+        "broker_url": "https://stock.pstatic.net/stock-research/company/63/20260710_company_751681000.pdf",
+        "analyst_name": null
+      },
+      {
+        "date": "2026-07-10",
+        "broker": "키움증권",
+        "ticker": "000270",
+        "company_name": "기아",
+        "title": "높아진 BEV Mix가 단기 손익 부담으로",
+        "opinion": "Buy",
+        "target_price": 205000.0,
+        "prev_target": null,
+        "tp_pct": null,
+        "source_url": "https://finance.naver.com/research/company_read.naver?nid=94045",
+        "broker_url": "https://stock.pstatic.net/stock-research/company/39/20260710_company_933825000.pdf",
+        "analyst_name": null
+      },
       {
         "date": "2026-07-09",
         "broker": "신한투자증권",
@@ -1693,6 +1805,20 @@
   },
   "S3_cosmetics": {
     "recent_reports": [
+      {
+        "date": "2026-07-10",
+        "broker": "하나증권",
+        "ticker": "257390",
+        "company_name": "실리콘투",
+        "title": "견조한 유럽, 기대되는 중남미",
+        "opinion": "Buy",
+        "target_price": 52000.0,
+        "prev_target": null,
+        "tp_pct": null,
+        "source_url": "https://finance.naver.com/research/company_read.naver?nid=94072",
+        "broker_url": "https://stock.pstatic.net/stock-research/company/57/20260710_company_613053000.pdf",
+        "analyst_name": null
+      },
       {
         "date": "2026-07-09",
         "broker": "교보증권",
@@ -2016,20 +2142,6 @@
         "source_url": "https://finance.naver.com/research/company_read.naver?nid=93539",
         "broker_url": "https://stock.pstatic.net/stock-research/company/15/20260615_company_11640000.pdf",
         "analyst_name": null
-      },
-      {
-        "date": "2026-06-12",
-        "broker": "하나증권",
-        "ticker": "004170",
-        "company_name": "신세계",
-        "title": "Re-rating의 시간",
-        "opinion": null,
-        "target_price": null,
-        "prev_target": null,
-        "tp_pct": null,
-        "source_url": "https://finance.naver.com/research/company_read.naver?nid=93526",
-        "broker_url": "https://stock.pstatic.net/stock-research/company/57/20260612_company_12016000.pdf",
-        "analyst_name": null
       }
     ],
     "companies_detail": [
@@ -2055,6 +2167,48 @@
   },
   "S4_food": {
     "recent_reports": [
+      {
+        "date": "2026-07-10",
+        "broker": "신한투자증권",
+        "ticker": "097950",
+        "company_name": "CJ제일제당",
+        "title": "바이오 회복 국면 진입",
+        "opinion": "매수",
+        "target_price": 280000.0,
+        "prev_target": null,
+        "tp_pct": null,
+        "source_url": "https://finance.naver.com/research/company_read.naver?nid=94060",
+        "broker_url": null,
+        "analyst_name": null
+      },
+      {
+        "date": "2026-07-10",
+        "broker": "신한투자증권",
+        "ticker": "033780",
+        "company_name": "KT&G",
+        "title": "변동성 국면에서 돋보이는 안정성",
+        "opinion": "매수",
+        "target_price": 220000.0,
+        "prev_target": null,
+        "tp_pct": null,
+        "source_url": "https://finance.naver.com/research/company_read.naver?nid=94057",
+        "broker_url": null,
+        "analyst_name": null
+      },
+      {
+        "date": "2026-07-10",
+        "broker": "키움증권",
+        "ticker": "033780",
+        "company_name": "KT&G",
+        "title": "중간배당과 새로운 주주환원정책 발표에 주목",
+        "opinion": "Buy",
+        "target_price": 220000.0,
+        "prev_target": null,
+        "tp_pct": null,
+        "source_url": "https://finance.naver.com/research/company_read.naver?nid=94046",
+        "broker_url": "https://stock.pstatic.net/stock-research/company/39/20260710_company_790879000.pdf",
+        "analyst_name": null
+      },
       {
         "date": "2026-07-07",
         "broker": "교보증권",
@@ -2276,6 +2430,34 @@
   "S5_pharma": {
     "recent_reports": [
       {
+        "date": "2026-07-10",
+        "broker": "DS투자증권",
+        "ticker": "128940",
+        "company_name": "한미약품",
+        "title": "2Q26 Pre: 쉬어가는 구간",
+        "opinion": "매수",
+        "target_price": 680000.0,
+        "prev_target": 680000.0,
+        "tp_pct": 0.0,
+        "source_url": "https://finance.naver.com/research/company_read.naver?nid=94081",
+        "broker_url": "https://stock.pstatic.net/stock-research/company/66/20260710_company_257481000.pdf",
+        "analyst_name": null
+      },
+      {
+        "date": "2026-07-10",
+        "broker": "하나증권",
+        "ticker": "128940",
+        "company_name": "한미약품",
+        "title": "전과목 만점은 쉽지 않아 (2Q26 Pre)",
+        "opinion": "Buy",
+        "target_price": 710000.0,
+        "prev_target": 710000.0,
+        "tp_pct": 0.0,
+        "source_url": "https://finance.naver.com/research/company_read.naver?nid=94073",
+        "broker_url": "https://stock.pstatic.net/stock-research/company/57/20260710_company_6014000.pdf",
+        "analyst_name": null
+      },
+      {
         "date": "2026-07-06",
         "broker": "IBK투자증권",
         "ticker": "068270",
@@ -2478,20 +2660,6 @@
         "source_url": "https://finance.naver.com/research/company_read.naver?nid=93540",
         "broker_url": "https://stock.pstatic.net/stock-research/company/57/20260615_company_694809000.pdf",
         "analyst_name": null
-      },
-      {
-        "date": "2026-06-12",
-        "broker": "하나증권",
-        "ticker": "105560",
-        "company_name": "KB금융",
-        "title": "2분기 순익은 컨센서스 대폭 상회하는 2조원 ..",
-        "opinion": "Buy",
-        "target_price": 220000.0,
-        "prev_target": null,
-        "tp_pct": null,
-        "source_url": "https://finance.naver.com/research/company_read.naver?nid=93524",
-        "broker_url": "https://stock.pstatic.net/stock-research/company/57/20260612_company_503735000.pdf",
-        "analyst_name": null
       }
     ],
     "companies_detail": [
@@ -2524,6 +2692,20 @@
   "S6_insurance": {
     "recent_reports": [
       {
+        "date": "2026-07-10",
+        "broker": "미래에셋증권",
+        "ticker": "005830",
+        "company_name": "DB손해보험",
+        "title": "수익성 회복의 시작",
+        "opinion": "매수",
+        "target_price": 210000.0,
+        "prev_target": null,
+        "tp_pct": null,
+        "source_url": "https://finance.naver.com/research/company_read.naver?nid=94067",
+        "broker_url": "https://stock.pstatic.net/stock-research/company/56/20260710_company_888909000.pdf",
+        "analyst_name": null
+      },
+      {
         "date": "2026-06-22",
         "broker": "대신증권",
         "ticker": "032830",
@@ -2535,20 +2717,6 @@
         "tp_pct": 112.2,
         "source_url": "https://finance.naver.com/research/company_read.naver?nid=93630",
         "broker_url": "https://stock.pstatic.net/stock-research/company/15/20260622_company_764405000.pdf",
-        "analyst_name": null
-      },
-      {
-        "date": "2026-06-11",
-        "broker": "한화투자증권",
-        "ticker": "032830",
-        "company_name": "삼성생명",
-        "title": "근거가 부족한 NAV 할인율의 축소",
-        "opinion": "Hold",
-        "target_price": 312000.0,
-        "prev_target": 312000.0,
-        "tp_pct": 0.0,
-        "source_url": "https://finance.naver.com/research/company_read.naver?nid=93507",
-        "broker_url": "https://stock.pstatic.net/stock-research/company/16/20260611_company_905729000.pdf",
         "analyst_name": null
       }
     ],
@@ -3218,6 +3386,20 @@
   "S7_power": {
     "recent_reports": [
       {
+        "date": "2026-07-10",
+        "broker": "SK증권",
+        "ticker": "267260",
+        "company_name": "HD현대일렉트릭",
+        "title": "강화된 펀더멘털, 손상된 건 수급",
+        "opinion": "매수",
+        "target_price": 1100000.0,
+        "prev_target": null,
+        "tp_pct": null,
+        "source_url": "https://finance.naver.com/research/company_read.naver?nid=94063",
+        "broker_url": "https://stock.pstatic.net/stock-research/company/64/20260710_company_575054000.pdf",
+        "analyst_name": null
+      },
+      {
         "date": "2026-07-07",
         "broker": "신한투자증권",
         "ticker": "267260",
@@ -3243,76 +3425,6 @@
         "tp_pct": null,
         "source_url": "https://finance.naver.com/research/company_read.naver?nid=93623",
         "broker_url": "https://stock.pstatic.net/stock-research/company/61/20260622_company_660629000.pdf",
-        "analyst_name": null
-      },
-      {
-        "date": "2026-06-11",
-        "broker": "유안타증권",
-        "ticker": "010120",
-        "company_name": "LS ELECTRIC",
-        "title": "수주 가이던스 상향이 가장 빠르게 확인될 기..",
-        "opinion": "Buy",
-        "target_price": 300000.0,
-        "prev_target": null,
-        "tp_pct": null,
-        "source_url": "https://finance.naver.com/research/company_read.naver?nid=93512",
-        "broker_url": "https://stock.pstatic.net/stock-research/company/18/20260611_company_467113000.pdf",
-        "analyst_name": null
-      },
-      {
-        "date": "2026-06-11",
-        "broker": "유안타증권",
-        "ticker": "001440",
-        "company_name": "대한전선",
-        "title": "초고압 수주는 확대, 단기 변수는 주가에 반..",
-        "opinion": "Buy",
-        "target_price": 60000.0,
-        "prev_target": null,
-        "tp_pct": null,
-        "source_url": "https://finance.naver.com/research/company_read.naver?nid=93501",
-        "broker_url": "https://stock.pstatic.net/stock-research/company/18/20260611_company_542880000.pdf",
-        "analyst_name": null
-      },
-      {
-        "date": "2026-06-11",
-        "broker": "유안타증권",
-        "ticker": "267260",
-        "company_name": "HD현대일렉트릭",
-        "title": "초고압 강자, 밸류 부담은 낮아졌다",
-        "opinion": "Buy",
-        "target_price": 1450000.0,
-        "prev_target": null,
-        "tp_pct": null,
-        "source_url": "https://finance.naver.com/research/company_read.naver?nid=93499",
-        "broker_url": "https://stock.pstatic.net/stock-research/company/18/20260611_company_545237000.pdf",
-        "analyst_name": null
-      },
-      {
-        "date": "2026-06-11",
-        "broker": "유안타증권",
-        "ticker": "298040",
-        "company_name": "효성중공업",
-        "title": "편안한 밸류에이션, 강한 수주 가시성",
-        "opinion": "Buy",
-        "target_price": 5000000.0,
-        "prev_target": null,
-        "tp_pct": null,
-        "source_url": "https://finance.naver.com/research/company_read.naver?nid=93497",
-        "broker_url": "https://stock.pstatic.net/stock-research/company/18/20260611_company_203187000.pdf",
-        "analyst_name": null
-      },
-      {
-        "date": "2026-06-11",
-        "broker": "IBK투자증권",
-        "ticker": "298040",
-        "company_name": "효성중공업",
-        "title": "초고압을 넘어 SST까지",
-        "opinion": "매수",
-        "target_price": 4900000.0,
-        "prev_target": null,
-        "tp_pct": null,
-        "source_url": "https://finance.naver.com/research/company_read.naver?nid=93494",
-        "broker_url": "https://stock.pstatic.net/stock-research/company/40/20260611_company_749902000.pdf",
         "analyst_name": null
       }
     ],
@@ -3345,6 +3457,34 @@
   },
   "S7_ship": {
     "recent_reports": [
+      {
+        "date": "2026-07-10",
+        "broker": "iM증권",
+        "ticker": "329180",
+        "company_name": "HD현대중공업",
+        "title": "2Q26 Pre: 본업 좀 봐주세요 좋아요",
+        "opinion": "Buy",
+        "target_price": 860000.0,
+        "prev_target": null,
+        "tp_pct": null,
+        "source_url": "https://finance.naver.com/research/company_read.naver?nid=94053",
+        "broker_url": "https://stock.pstatic.net/stock-research/company/61/20260710_company_977809000.pdf",
+        "analyst_name": null
+      },
+      {
+        "date": "2026-07-10",
+        "broker": "SK증권",
+        "ticker": "329180",
+        "company_name": "HD현대중공업",
+        "title": "멀리 보면 보장된 질적 성장이 기다린다",
+        "opinion": "매수",
+        "target_price": 340000.0,
+        "prev_target": null,
+        "tp_pct": null,
+        "source_url": "https://finance.naver.com/research/company_read.naver?nid=94052",
+        "broker_url": "https://stock.pstatic.net/stock-research/company/64/20260710_company_758792000.pdf",
+        "analyst_name": null
+      },
       {
         "date": "2026-07-09",
         "broker": "대신증권",
