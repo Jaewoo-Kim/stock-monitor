@@ -170,6 +170,18 @@ def step_backtest() -> bool:
         return False
 
 
+def step_notify() -> bool:
+    log.info("=== [7/7] telegram 알림 시작 ===")
+    try:
+        from notify.telegram import run
+        run()
+        log.info("=== [7/7] telegram 알림 완료 ===")
+        return True
+    except Exception as exc:
+        log.error("telegram 알림 실패: %s", exc, exc_info=True)
+        return False
+
+
 def main(run_mapper: bool = False) -> int:
     today = date.today()
     log.info("daily batch 시작 — %s", today.isoformat())
@@ -193,6 +205,7 @@ def main(run_mapper: bool = False) -> int:
     results["stock_scorer"]    = step_stock_scorer()
     results["build_static"]    = step_build_static()
     results["backtest"]        = step_backtest()
+    results["notify"]          = step_notify()    # TELEGRAM_BOT_TOKEN 없으면 내부 skip
 
     # 결과 요약
     log.info("─────────────────────────────────")
