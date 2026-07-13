@@ -110,6 +110,18 @@ def step_ecos() -> bool:
         return False
 
 
+def step_customs_trade() -> bool:
+    log.info("=== [4.7/6] customs_trade(L0 수출 지표) 시작 ===")
+    try:
+        from collectors.customs_trade import run
+        run()
+        log.info("=== [4.7/6] customs_trade 완료 ===")
+        return True
+    except Exception as exc:
+        log.error("customs_trade 실패: %s", exc, exc_info=True)
+        return False
+
+
 def step_dart_business() -> bool:
     log.info("=== [4.5/6] dart_business(사업보고서 발췌) 시작 ===")
     try:
@@ -201,6 +213,7 @@ def main(run_mapper: bool = False) -> int:
     results["dart"]            = step_dart()         # DART_API_KEY 없으면 내부 skip
     results["dart_business"]   = step_dart_business() # DART_API_KEY 없으면 내부 skip
     results["ecos"]            = step_ecos()          # ECOS_API_KEY 없으면 내부 skip
+    results["customs_trade"]   = step_customs_trade() # CUSTOMS_API_KEY 없거나 verified=false면 내부 skip
     results["signals"]         = step_signals()       # L0 + cycle + timing 포함
     results["stock_scorer"]    = step_stock_scorer()
     results["build_static"]    = step_build_static()
