@@ -2217,12 +2217,20 @@
     "close": 230000.0,
     "ret_1m": 16.5,
     "analyst": {
-      "n_buy": 1,
+      "n_buy": 2,
       "n_hold": 0,
       "n_sell": 0,
-      "avg_target": 330000,
-      "latest_target": 330000.0,
+      "avg_target": 340000,
+      "latest_target": 350000.0,
       "recent": [
+        {
+          "date": "2026-07-13",
+          "broker": "SK증권",
+          "title": "높아진 실적 기대감, 높아질 주가",
+          "opinion": "매수",
+          "source_url": "https://finance.naver.com/research/company_read.naver?nid=94097",
+          "broker_url": "https://stock.pstatic.net/stock-research/company/64/20260713_company_225070000.pdf"
+        },
         {
           "date": "2026-07-08",
           "broker": "유안타증권",
@@ -2274,7 +2282,7 @@
     "quant": {
       "buy_score": 57.5,
       "rank_in_level2": 3,
-      "upside_pct": 43.5,
+      "upside_pct": 47.8,
       "composite": -1.0,
       "timing_state": "hold",
       "timing_score": 32.5
@@ -2678,12 +2686,20 @@
     "close": 84000.0,
     "ret_1m": -21.3,
     "analyst": {
-      "n_buy": 6,
+      "n_buy": 7,
       "n_hold": 0,
       "n_sell": 0,
-      "avg_target": 125833,
-      "latest_target": 140000.0,
+      "avg_target": 123571,
+      "latest_target": 110000.0,
       "recent": [
+        {
+          "date": "2026-07-13",
+          "broker": "대신증권",
+          "title": "빠른 회복에 성공",
+          "opinion": "Buy",
+          "source_url": "https://finance.naver.com/research/company_read.naver?nid=94104",
+          "broker_url": "https://stock.pstatic.net/stock-research/company/15/20260713_company_536448000.pdf"
+        },
         {
           "date": "2026-07-10",
           "broker": "하나증권",
@@ -2715,14 +2731,6 @@
           "opinion": "매수",
           "source_url": "https://finance.naver.com/research/company_read.naver?nid=93705",
           "broker_url": "https://stock.pstatic.net/stock-research/company/40/20260626_company_698992000.pdf"
-        },
-        {
-          "date": "2026-06-23",
-          "broker": "하나증권",
-          "title": "7월 전략 - 실적과 AI RAN이 주가 올릴 것",
-          "opinion": "Buy",
-          "source_url": "https://finance.naver.com/research/company_read.naver?nid=93651",
-          "broker_url": "https://stock.pstatic.net/stock-research/company/57/20260623_company_183834000.pdf"
         }
       ]
     },
@@ -2767,7 +2775,7 @@
     "quant": {
       "buy_score": 87.5,
       "rank_in_level2": 1,
-      "upside_pct": 49.8,
+      "upside_pct": 47.1,
       "composite": 1.0,
       "timing_state": "hold",
       "timing_score": 35.0
@@ -2894,12 +2902,20 @@
     "close": 14810.0,
     "ret_1m": -5.8,
     "analyst": {
-      "n_buy": 6,
+      "n_buy": 7,
       "n_hold": 0,
       "n_sell": 0,
       "avg_target": 20000,
-      "latest_target": 19000.0,
+      "latest_target": 20000.0,
       "recent": [
+        {
+          "date": "2026-07-13",
+          "broker": "대신증권",
+          "title": "무선에 강점. DC는 다크호스",
+          "opinion": "Buy",
+          "source_url": "https://finance.naver.com/research/company_read.naver?nid=94105",
+          "broker_url": "https://stock.pstatic.net/stock-research/company/15/20260713_company_158639000.pdf"
+        },
         {
           "date": "2026-07-09",
           "broker": "SK증권",
@@ -2931,14 +2947,6 @@
           "opinion": "Buy",
           "source_url": "https://finance.naver.com/research/company_read.naver?nid=93773",
           "broker_url": "https://stock.pstatic.net/stock-research/company/15/20260630_company_655106000.pdf"
-        },
-        {
-          "date": "2026-06-23",
-          "broker": "하나증권",
-          "title": "7월 전략 - 재료 부상하며 2Q 실적 시즌 주가..",
-          "opinion": "Buy",
-          "source_url": "https://finance.naver.com/research/company_read.naver?nid=93652",
-          "broker_url": "https://stock.pstatic.net/stock-research/company/57/20260623_company_801455000.pdf"
         }
       ]
     },
@@ -3438,12 +3446,20 @@
     "close": 19160.0,
     "ret_1m": 12.8,
     "analyst": {
-      "n_buy": 7,
+      "n_buy": 8,
       "n_hold": 0,
       "n_sell": 0,
-      "avg_target": 244286,
+      "avg_target": 245000,
       "latest_target": 250000.0,
       "recent": [
+        {
+          "date": "2026-07-13",
+          "broker": "유진투자증권",
+          "title": "2Q26 Preview: 선 성수기와 미국 흑전 기대",
+          "opinion": "Buy",
+          "source_url": "https://finance.naver.com/research/company_read.naver?nid=94102",
+          "broker_url": "https://stock.pstatic.net/stock-research/company/63/20260713_company_395667000.pdf"
+        },
         {
           "date": "2026-07-08",
           "broker": "SK증권",
@@ -3475,14 +3491,6 @@
           "opinion": "Buy",
           "source_url": "https://finance.naver.com/research/company_read.naver?nid=93902",
           "broker_url": "https://stock.pstatic.net/stock-research/company/18/20260706_company_365276000.pdf"
-        },
-        {
-          "date": "2026-07-06",
-          "broker": "하나증권",
-          "title": "실적 모멘텀 회복과 밸류에이션의 정상화 국..",
-          "opinion": "Buy",
-          "source_url": "https://finance.naver.com/research/company_read.naver?nid=93908",
-          "broker_url": "https://stock.pstatic.net/stock-research/company/57/20260706_company_629647000.pdf"
         }
       ]
     },
@@ -3527,7 +3535,7 @@
     "quant": {
       "buy_score": 87.5,
       "rank_in_level2": 1,
-      "upside_pct": 1175.0,
+      "upside_pct": 1178.7,
       "composite": 1.0,
       "timing_state": "hold",
       "timing_score": 48.0
@@ -4134,12 +4142,20 @@
     "close": 1146000.0,
     "ret_1m": 7.2,
     "analyst": {
-      "n_buy": 5,
+      "n_buy": 6,
       "n_hold": 0,
       "n_sell": 0,
-      "avg_target": 1912000,
-      "latest_target": 1800000.0,
+      "avg_target": 1885000,
+      "latest_target": 1750000.0,
       "recent": [
+        {
+          "date": "2026-07-13",
+          "broker": "신한투자증권",
+          "title": "숫자가 증명하는 경쟁력",
+          "opinion": "매수",
+          "source_url": "https://finance.naver.com/research/company_read.naver?nid=94094",
+          "broker_url": null
+        },
         {
           "date": "2026-07-02",
           "broker": "하나증권",
@@ -4171,14 +4187,6 @@
           "opinion": "매수",
           "source_url": "https://finance.naver.com/research/company_read.naver?nid=92948",
           "broker_url": "https://stock.pstatic.net/stock-research/company/66/20260514_company_763645000.pdf"
-        },
-        {
-          "date": "2026-05-14",
-          "broker": "한화투자증권",
-          "title": "공급 병목 완화에 따른 추가 성장 기대",
-          "opinion": "Buy",
-          "source_url": "https://finance.naver.com/research/company_read.naver?nid=92956",
-          "broker_url": "https://stock.pstatic.net/stock-research/company/16/20260514_company_323251000.pdf"
         }
       ]
     },
@@ -4223,7 +4231,7 @@
     "quant": {
       "buy_score": 87.5,
       "rank_in_level2": 1,
-      "upside_pct": 66.8,
+      "upside_pct": 64.5,
       "composite": 1.0,
       "timing_state": "hold",
       "timing_score": 43.0
@@ -4242,12 +4250,20 @@
     "close": 362000.0,
     "ret_1m": -2.0,
     "analyst": {
-      "n_buy": 5,
+      "n_buy": 6,
       "n_hold": 0,
       "n_sell": 0,
-      "avg_target": 546000,
-      "latest_target": 540000.0,
+      "avg_target": 550000,
+      "latest_target": 570000.0,
       "recent": [
+        {
+          "date": "2026-07-13",
+          "broker": "교보증권",
+          "title": "예상 대비 선방 중",
+          "opinion": "Buy",
+          "source_url": "https://finance.naver.com/research/company_read.naver?nid=94120",
+          "broker_url": "https://stock.pstatic.net/stock-research/company/62/20260713_company_773611000.pdf"
+        },
         {
           "date": "2026-07-02",
           "broker": "하나증권",
@@ -4279,14 +4295,6 @@
           "opinion": "Buy",
           "source_url": "https://finance.naver.com/research/company_read.naver?nid=93078",
           "broker_url": "https://stock.pstatic.net/stock-research/company/18/20260518_company_606344000.pdf"
-        },
-        {
-          "date": "2026-05-18",
-          "broker": "한화투자증권",
-          "title": "해외 성장 눈높이 상향",
-          "opinion": "Buy",
-          "source_url": "https://finance.naver.com/research/company_read.naver?nid=93083",
-          "broker_url": "https://stock.pstatic.net/stock-research/company/16/20260518_company_12840000.pdf"
         }
       ]
     },
@@ -4331,7 +4339,7 @@
     "quant": {
       "buy_score": 87.5,
       "rank_in_level2": 2,
-      "upside_pct": 50.8,
+      "upside_pct": 51.9,
       "composite": 1.0,
       "timing_state": "hold",
       "timing_score": 43.0
@@ -4558,12 +4566,20 @@
     "close": 140300.0,
     "ret_1m": 9.6,
     "analyst": {
-      "n_buy": 7,
+      "n_buy": 8,
       "n_hold": 0,
       "n_sell": 0,
-      "avg_target": 182857,
-      "latest_target": 180000.0,
+      "avg_target": 180000,
+      "latest_target": 160000.0,
       "recent": [
+        {
+          "date": "2026-07-13",
+          "broker": "신한투자증권",
+          "title": "비수기에도 흔들림 없는 성장",
+          "opinion": "매수",
+          "source_url": "https://finance.naver.com/research/company_read.naver?nid=94095",
+          "broker_url": null
+        },
         {
           "date": "2026-06-26",
           "broker": "한화투자증권",
@@ -4595,14 +4611,6 @@
           "opinion": "Buy",
           "source_url": "https://finance.naver.com/research/company_read.naver?nid=93577",
           "broker_url": "https://stock.pstatic.net/stock-research/company/62/20260617_company_724152000.pdf"
-        },
-        {
-          "date": "2026-05-19",
-          "broker": "신한투자증권",
-          "title": "춘절 끝, 이제는 앞만 보고 달린다",
-          "opinion": "매수",
-          "source_url": "https://finance.naver.com/research/company_read.naver?nid=93119",
-          "broker_url": null
         }
       ]
     },
@@ -4645,9 +4653,9 @@
       "risk_text": "투자위험도가 극히 낮으며, 현단계에서 합리적으로 예측가능한 장래의 어떠한 환경변화에도 영향을 받지 않을 만큼 안정적임. - AA 전반적인 채무상환 능력이 매우 높아 투자위험도가 매우 낮지만 AAA등급에 비해 다소 열등한 요소가 있음. - A 전반적인 채무상환 능력이 높아 투자위험도는 낮은 수준이지만 장래 급격한 환경변화에 따라 다소 영향을 받을 가능성이 있음. - BBB 전반적인 채무상환 능력은 인정되지만 장래 환경변화로 전반적인 채무상환 능력이 저하될 가능성이 있음. - BB 전반적인 채무상환 능력에 당면 문제는 없지만 장래의 안정성면에서는 투기적 요소가 내포되어 있음. - B 전반적인 채무상환 능력이 부족하여 투기적이며, 장래의 안정성에 대해서는 현단계에서 단언할 수 없음. - CCC 채무불이행이 발생할 가능성을 내포하고 있어 매우 투기적임. - CC 채무불이행이 발생할 가능성이 높아 등급에 비해 불안요소가 더욱 많음. - C 채무불이행이 발생할 가능성이 높고 현단계에서는 장래 회복될 가능성이 없을 것으로 판단됨. - D 채무 지급불능상태에 있음. - 자. 회사의 주권상장(또는 등록ㆍ지정) 및 특례상장에 관한 사항 주권상장(또는 등록ㆍ지정)현황 주권상장(또는 등록ㆍ지정)일자 특례상장 유형 유가증권시장 상장 2017년 07월 07일 해당사항 없음 2. 회사의 연혁 가. 회사의 본점소재지 및 그 변경 본점 소재지: 서울시 용산구 백범로 90다길 13 (1) 회사의 연혁 2021.01 Orion International Euro LLC 지분투자2021.03 ORION F&B US, INC 신규 설립으로 계열회사 추가2021.05 Orion(Bei Tun) Agro Processing Co., Ltd 청산에 의한 계열회사 제외2024.03 (주)리가켐바이오사이언스 지분 취득에 따른 계열회사 추가2024.10 상해안라이바이오과학기술유한공사 지분투자 주주결의 및 지분투자(23%)2025.03 Iksuda Therapeutics Limited 지분 취득에 따른 계열회사 추가2025.06 MY PHUOC 3 Confectionery Co., Ltd. 지분 취득에 따른 계열회사 추가2025.11 MY PHUOC 3 Confectionery Co., Ltd. 흡수합병에 따른 계열회사 제외2025.12 어업회사법인 오리온수협 합작회사 설립에 따른 계열회사 추가 (2) 회사의 연혁(주요종속회사) 회 사 명 회사의 연혁 Orion FoodVina Co., Ltd 2025.06 MY PHUOC 3 Confectionery Co., Ltd 100% 지분 취득2025.12 MY PHUOC 3 Confectionery Co., Ltd 100% 흡수 합병 Orion Food Co., Ltd 2024.10 상해안라이바이오과학기술유한공사 지분투자 주주결의 및 지분투자(23%) Orion Food(Shanghai) Co., Ltd 2021.01 젤리라인 증설2021.01 SS Cake라인 증설2023.12 젤리 2차 라인 증설 Orion Food(Guangzhou) Co., Ltd - Pan OrionCorp. Limited 2021.01 Orion International Euro LLC 지분투자2024.03 (주)리가켐바이오사이언스 지분 …"
     },
     "quant": {
-      "buy_score": 76.6,
+      "buy_score": 74.3,
       "rank_in_level2": 3,
-      "upside_pct": 30.3,
+      "upside_pct": 28.3,
       "composite": 1.0,
       "timing_state": "hold",
       "timing_score": 43.0
@@ -5175,12 +5183,20 @@
     "close": 409000.0,
     "ret_1m": -1.0,
     "analyst": {
-      "n_buy": 8,
+      "n_buy": 9,
       "n_hold": 0,
       "n_sell": 0,
-      "avg_target": 675000,
-      "latest_target": 710000.0,
+      "avg_target": 677778,
+      "latest_target": 700000.0,
       "recent": [
+        {
+          "date": "2026-07-13",
+          "broker": "교보증권",
+          "title": "2Q26 Preveiw; 소네페글루타이드 계약금으로 ..",
+          "opinion": "Buy",
+          "source_url": "https://finance.naver.com/research/company_read.naver?nid=94121",
+          "broker_url": "https://stock.pstatic.net/stock-research/company/62/20260713_company_382017000.pdf"
+        },
         {
           "date": "2026-07-10",
           "broker": "하나증권",
@@ -5212,14 +5228,6 @@
           "opinion": "Buy",
           "source_url": "https://finance.naver.com/research/company_read.naver?nid=93403",
           "broker_url": "https://stock.pstatic.net/stock-research/company/62/20260604_company_597111000.pdf"
-        },
-        {
-          "date": "2026-06-04",
-          "broker": "미래에셋증권",
-          "title": "LILLY - It's Hanmi",
-          "opinion": "매수",
-          "source_url": "https://finance.naver.com/research/company_read.naver?nid=93405",
-          "broker_url": "https://stock.pstatic.net/stock-research/company/56/20260604_company_727645000.pdf"
         }
       ]
     },
@@ -5264,7 +5272,7 @@
     "quant": {
       "buy_score": 57.5,
       "rank_in_level2": 4,
-      "upside_pct": 65.0,
+      "upside_pct": 65.7,
       "composite": -1.0,
       "timing_state": "hold",
       "timing_score": 39.0
@@ -5470,12 +5478,20 @@
     "close": 107300.0,
     "ret_1m": 10.5,
     "analyst": {
-      "n_buy": 3,
+      "n_buy": 4,
       "n_hold": 0,
       "n_sell": 0,
-      "avg_target": 131667,
-      "latest_target": 130000.0,
+      "avg_target": 131000,
+      "latest_target": 129000.0,
       "recent": [
+        {
+          "date": "2026-07-13",
+          "broker": "유안타증권",
+          "title": "실적과 주주환원 모두 양호",
+          "opinion": "Buy",
+          "source_url": "https://finance.naver.com/research/company_read.naver?nid=94112",
+          "broker_url": "https://stock.pstatic.net/stock-research/company/18/20260713_company_139519000.pdf"
+        },
         {
           "date": "2026-07-07",
           "broker": "대신증권",
@@ -5541,9 +5557,9 @@
       "risk_text": "투자위험회피에서 위험회피의 비효과적인 부분으로 인하여 당기손익 및 기타포괄손익에 미치는 금액 및 계정과목은 다음과 같습니다.① 제 25(당) 기 (단위: 백만원) 구 분 기타포괄손익으로 인식한 보고기간의 위험회피손익 당기손익으로 인식한위험회피의 비효과적인 부분(*2) 현금흐름위험회피적립금에서 당기손익으로재분류한 금액 현금흐름위험회피 이자율위험(*1) (209,145) (8,743) 1,567 환위험(*1) (35,688) 2,776 (160,443) 위험회피중단 1,532 - (28) 순투자위험회피 환위험(*1) 59,096 21,422 - 합 계 (184,205) 15,455 (158,904) ② 제 24(전) 기 (단위: 백만원) 구 분 기타포괄손익으로 인식한 보고기간의 위험회피손익 당기손익으로 인식한위험회피의 비효과적인 부분(*2) 현금흐름위험회피적립금에서 당기손익으로재분류한 금액 현금흐름위험회피 이자율위험(*1) 89,293 (5,034) (151) 환위험(*1) 2,548 (6,184) 210,424 위험회피중단 (39,621) - 47,957 순투자위험회피 환위험(*1) (221,221) (1,191) - 합 계 (169,001) (12,409) 258,230 (*1) 관련 계정과목은 이자율스왑자산/부채 및 통화스왑자산/부채, 통화선도자산/부채, 차입금으로 표시되어 있습니다. (*2) 위험회피의 비효과적인 부분이라 함은 위험회피수단과 위험회피대상항목의 위험회피손익의 차이입니다. (5) 위험회피회계가 연결재무제표에 미치는 영향1) 위험회피목적 및 전략연결실체는 연결실체의 자산과 부채에서 발생하는 이자율위험과 환위험, 그리고 주가변동위험을 회피하기 위하여 파생금융상품을 거래하고 있습니다. 연결실체는 원화구조화사채, 외화발행금융사채, 원화구조화예금, 외화투자채권, 외화수익증권의 시장이자율, 환율 및 주가변동으로 인한 공정가치변동위험을 회피하기 위하여 이자율 스왑, 통화선도, 통화스왑 및 주식선물을 활용하는 공정가치 위험회피회계를 적용하고 있으며, 원화차입부채, 원화사채, 외화사채, 외화구조화예금, 외화채권, 원화채권의 시장이자율 및 환율 변동으로 인한 현금흐름변동위험을 회피하기 위하여 이자율선도, 이자율스왑, 통화선도 및 통화스왑을 활용하는 현금흐름위험회피회계를 적용하고 있습니다. 또한, 해외사업장 순투자의 환율변동위험을 회피하기 위하여 통화선도 및 비파생금융상품을 활용하는 해외사업장 순투자 위험회피회계를 적용하고 있습니다. 2) 당기말과 전기말 현재 위험회피수단의 시기별 명목금액 및 평균 헤지비율은 다음과 같습니다.① 제 25(당) 기말 (단위: 백만원) 구 분 1년 이내 1년 초과2년 이내 2년 초과3년 이내 3년 초과4년 이내 4년 초과5년 이내 5년 초과 합 계 이자율 위험 위험회피수단 명목금액 2,485,060 2,219,475 2,553,701 2,008,399 450,481 3,895,641 13,612,757 평균 가격조건(*1) 1.86% 1.60% 1.75% 1.73% 1.14% 0.42% 1.34% 평균 헤지비율 100% 100% 100% 100% 100% 100% 100% 환위험(*2) 위험회피수단 명목금액 4,344,598 3,288,511 3,353,841 1,941,689 …"
     },
     "quant": {
-      "buy_score": 53.0,
+      "buy_score": 52.4,
       "rank_in_level2": 4,
-      "upside_pct": 22.7,
+      "upside_pct": 22.1,
       "composite": null,
       "timing_state": "watch",
       "timing_score": 67.0
@@ -5562,12 +5578,20 @@
     "close": 122300.0,
     "ret_1m": 8.8,
     "analyst": {
-      "n_buy": 2,
+      "n_buy": 3,
       "n_hold": 0,
       "n_sell": 0,
-      "avg_target": 154500,
-      "latest_target": 166000.0,
+      "avg_target": 159667,
+      "latest_target": 170000.0,
       "recent": [
+        {
+          "date": "2026-07-13",
+          "broker": "유안타증권",
+          "title": "충당금 우려 크지 않다",
+          "opinion": "Buy",
+          "source_url": "https://finance.naver.com/research/company_read.naver?nid=94114",
+          "broker_url": "https://stock.pstatic.net/stock-research/company/18/20260713_company_96508000.pdf"
+        },
         {
           "date": "2026-07-07",
           "broker": "하나증권",
@@ -5625,9 +5649,9 @@
       "risk_text": "위험요소를 적용하여 내부등급법으로 산출하고 있으며, 그 외 자회사의 경우 거래상대방 신용도, 담보 및 보증유무 등으로 차별화된 위험도를 적용하여 표준방법으로 산출하고 있습니다.나. 시장위험은 주식, 금리, 외환 등 시장가격 변동으로 발생할 수 있는 잠재적 손실 가능성으로, 시장위험가중자산은 은행업감독업무 시행세칙 상의 표준방법을 적용하여 산출된 민감도위험, 부도위험, 잔여위험 합계로 구성된 시장위험 소요자기자본에 12.5를 곱하여 산출하고 있습니다. 다. 운영위험은 부적절한 프로세스, 사람, 시스템 등으로 발생할 수 있는 잠재적 손실가능성으로, 운영위험가중자산은 은행업감독업무 시행세칙 상의 표준방법을 적용하여 산출된 이자, 서비스, 금융거래 등 재무지표 기반 측정치인 영업지수요소와 평균적인 과거 손실금액을 반영한 내부손실승수를 곱하여 산출된 운영리스크 소요자기자본에 12.5를 곱하여 산출하고 있습니다. 자기자본비율에 대한 공시 당기말 자기자본비율은 잠정치 입니다. 자기자본비율에 대한 공시 당기 (단위 : 백만원) 공시금액 총자기자본 45,097,605 총자기자본 기본자본 43,124,228 기본자본 보통주자본 38,664,123 기타기본자본 4,460,105 보완자본 1,973,377 위험가중자산 288,939,391 위험가중자산 신용위험가중자산 248,224,355 시장위험가중자산 15,238,010 운영위험가중자산 25,477,026 보통주자본비율 0.1338 기본자본비율 0.1493 총자본비율 0.1561 전기 (단위 : 백만원) 공시금액 총자기자본 43,555,625 총자기자본 기본자본 41,260,657 기본자본 보통주자본 36,924,738 기타기본자본 4,335,919 보완자본 2,294,968 위험가중자산 279,403,863 위험가중자산 신용위험가중자산 240,365,159 시장위험가중자산 15,068,504 운영위험가중자산 23,970,200 보통주자본비율 0.1322 기본자본비율 0.1477 총자본비율 0.1559 내부자본 적정성에 대한 기술 내부자본은 금융기관이 보유하고 있는 포트폴리오에서 발생가능한 위험을 커버할수있는 수준의 자본을 보유하고 있는지를 판단하기 위해 내부 관리목적으로 정의한 자본으로 정의됩니다. 연결기업이 내부자본을 관리하는 목적은 투자한 영업으로부터 발생 가능한 손실 가능성을 일정 수준 이내로 통제하면서 위험 대비 수익이 극대화되도록 영업 포트폴리오를 조정하고, 내부자본 규모와 실제 사용 가능한 자본 (이하 \"가용자본\") 규모를 비교하여 재무 건전성의 척도로 활용하는 것입니다. 관리 지표는 가용자본 대비 내부자본한도 비율인 위험성향비율과 내부자본한도 대비 내부자본 사용량의 비율인 한도소진율입니다. 내부자본 한도는 시장전망, 가용자본 규모 및 위험 성향, 목표 신용등급, 영업전략 등의 요소를 반영하여 설정하고 있습니다. 위험 유형별 및 관계기업별 내부자본 한도는 매년 1회 이상 그룹리스크관리위원회의 결의로 배분하고 있습니다. 신규사업 또는 영업확대 등에 의하여 내부자본 한도 초과가 예상되는 경우에는 그룹리스크관리위원회의 사전 승인을 받아야 합니다. 11. 영업부문 정보 (연결) 보고부문을 식별하기 위하여 사용한 요소에 대한 기술 연결기업은 성과를 평가하거나 자원을 배분하는 …"
     },
     "quant": {
-      "buy_score": 57.1,
+      "buy_score": 61.9,
       "rank_in_level2": 2,
-      "upside_pct": 26.3,
+      "upside_pct": 30.6,
       "composite": null,
       "timing_state": "watch",
       "timing_score": 67.0
@@ -5902,7 +5926,7 @@
       "upside_pct": -3.0,
       "composite": null,
       "timing_state": "watch",
-      "timing_score": 72.6
+      "timing_score": 72.1
     }
   },
   "001450": {
@@ -6010,7 +6034,7 @@
       "upside_pct": 9.5,
       "composite": null,
       "timing_state": "watch",
-      "timing_score": 72.6
+      "timing_score": 72.1
     }
   },
   "005830": {
@@ -6026,12 +6050,20 @@
     "close": 151400.0,
     "ret_1m": 11.2,
     "analyst": {
-      "n_buy": 6,
+      "n_buy": 7,
       "n_hold": 0,
       "n_sell": 0,
-      "avg_target": 220833,
-      "latest_target": 210000.0,
+      "avg_target": 220714,
+      "latest_target": 220000.0,
       "recent": [
+        {
+          "date": "2026-07-13",
+          "broker": "iM증권",
+          "title": "투자손익 중심의 호실적 예상",
+          "opinion": "Buy",
+          "source_url": "https://finance.naver.com/research/company_read.naver?nid=94087",
+          "broker_url": "https://stock.pstatic.net/stock-research/company/61/20260713_company_238827000.pdf"
+        },
         {
           "date": "2026-07-10",
           "broker": "미래에셋증권",
@@ -6063,14 +6095,6 @@
           "opinion": "매수",
           "source_url": "https://finance.naver.com/research/company_read.naver?nid=93054",
           "broker_url": null
-        },
-        {
-          "date": "2026-05-18",
-          "broker": "한화투자증권",
-          "title": "어닝 쇼크지만 추정치 변동은 제한적",
-          "opinion": "Buy",
-          "source_url": "https://finance.naver.com/research/company_read.naver?nid=93082",
-          "broker_url": "https://stock.pstatic.net/stock-research/company/16/20260518_company_104277000.pdf"
         }
       ]
     },
@@ -6115,10 +6139,10 @@
     "quant": {
       "buy_score": 72.5,
       "rank_in_level2": 1,
-      "upside_pct": 45.9,
+      "upside_pct": 45.8,
       "composite": null,
       "timing_state": "watch",
-      "timing_score": 72.6
+      "timing_score": 72.1
     }
   },
   "032830": {
@@ -6226,7 +6250,7 @@
       "upside_pct": 15.7,
       "composite": null,
       "timing_state": "watch",
-      "timing_score": 72.6
+      "timing_score": 72.1
     }
   },
   "006800": {
@@ -6707,12 +6731,20 @@
     "close": 43500.0,
     "ret_1m": -2.1,
     "analyst": {
-      "n_buy": 11,
+      "n_buy": 12,
       "n_hold": 0,
       "n_sell": 0,
-      "avg_target": 67273,
-      "latest_target": 70000.0,
+      "avg_target": 67000,
+      "latest_target": 64000.0,
       "recent": [
+        {
+          "date": "2026-07-13",
+          "broker": "신한투자증권",
+          "title": "단기 실적, 중장기 전망 모두 긍정적",
+          "opinion": "매수",
+          "source_url": "https://finance.naver.com/research/company_read.naver?nid=94096",
+          "broker_url": null
+        },
         {
           "date": "2026-07-06",
           "broker": "미래에셋증권",
@@ -6744,14 +6776,6 @@
           "opinion": "Buy",
           "source_url": "https://finance.naver.com/research/company_read.naver?nid=93850",
           "broker_url": "https://stock.pstatic.net/stock-research/company/39/20260702_company_998468000.pdf"
-        },
-        {
-          "date": "2026-07-01",
-          "broker": "한화투자증권",
-          "title": "여러모로 편안한 한 해",
-          "opinion": "Buy",
-          "source_url": "https://finance.naver.com/research/company_read.naver?nid=93828",
-          "broker_url": "https://stock.pstatic.net/stock-research/company/16/20260701_company_211959000.pdf"
         }
       ]
     },
@@ -6796,7 +6820,7 @@
     "quant": {
       "buy_score": 57.5,
       "rank_in_level2": 3,
-      "upside_pct": 54.6,
+      "upside_pct": 54.0,
       "composite": -1.0,
       "timing_state": "watch",
       "timing_score": 57.1
@@ -6815,12 +6839,20 @@
     "close": 59700.0,
     "ret_1m": -11.6,
     "analyst": {
-      "n_buy": 9,
+      "n_buy": 10,
       "n_hold": 0,
       "n_sell": 0,
-      "avg_target": 121889,
+      "avg_target": 119700,
       "latest_target": 100000.0,
       "recent": [
+        {
+          "date": "2026-07-13",
+          "broker": "신한투자증권",
+          "title": "수익성은 확보, 이제 외형을 챙길 시점",
+          "opinion": "매수",
+          "source_url": "https://finance.naver.com/research/company_read.naver?nid=94093",
+          "broker_url": null
+        },
         {
           "date": "2026-07-07",
           "broker": "미래에셋증권",
@@ -6852,14 +6884,6 @@
           "opinion": "Buy",
           "source_url": "https://finance.naver.com/research/company_read.naver?nid=93664",
           "broker_url": "https://stock.pstatic.net/stock-research/company/63/20260624_company_529810000.pdf"
-        },
-        {
-          "date": "2026-06-24",
-          "broker": "하나증권",
-          "title": "사우디 과세에 대한 과도한 우려",
-          "opinion": "Buy",
-          "source_url": "https://finance.naver.com/research/company_read.naver?nid=93667",
-          "broker_url": "https://stock.pstatic.net/stock-research/company/57/20260624_company_647126000.pdf"
         }
       ]
     },
@@ -6904,7 +6928,7 @@
     "quant": {
       "buy_score": 87.5,
       "rank_in_level2": 2,
-      "upside_pct": 104.2,
+      "upside_pct": 100.5,
       "composite": 1.0,
       "timing_state": "watch",
       "timing_score": 57.1
@@ -7859,8 +7883,8 @@
       "rank_in_level2": 3,
       "upside_pct": 112.8,
       "composite": 1.0,
-      "timing_state": "관측부족",
-      "timing_score": 12.0
+      "timing_state": "hold",
+      "timing_score": 24.5
     }
   },
   "010120": {
@@ -7876,12 +7900,20 @@
     "close": 183500.0,
     "ret_1m": -11.8,
     "analyst": {
-      "n_buy": 6,
+      "n_buy": 7,
       "n_hold": 0,
       "n_sell": 0,
-      "avg_target": 576667,
-      "latest_target": 570000.0,
+      "avg_target": 532143,
+      "latest_target": 265000.0,
       "recent": [
+        {
+          "date": "2026-07-13",
+          "broker": "iM증권",
+          "title": "AI 데이터센터 수주증가로 실적 개선 가속화",
+          "opinion": "Buy",
+          "source_url": "https://finance.naver.com/research/company_read.naver?nid=94089",
+          "broker_url": "https://stock.pstatic.net/stock-research/company/61/20260713_company_209238000.pdf"
+        },
         {
           "date": "2026-06-22",
           "broker": "iM증권",
@@ -7913,14 +7945,6 @@
           "opinion": "Buy",
           "source_url": "https://finance.naver.com/research/company_read.naver?nid=93221",
           "broker_url": "https://stock.pstatic.net/stock-research/company/39/20260522_company_544740000.pdf"
-        },
-        {
-          "date": "2026-05-19",
-          "broker": "SK증권",
-          "title": "우호적인 업황 지속",
-          "opinion": "매수",
-          "source_url": "https://finance.naver.com/research/company_read.naver?nid=93132",
-          "broker_url": "https://stock.pstatic.net/stock-research/company/64/20260519_company_83752000.pdf"
         }
       ]
     },
@@ -7965,10 +7989,10 @@
     "quant": {
       "buy_score": 72.5,
       "rank_in_level2": 4,
-      "upside_pct": 214.3,
+      "upside_pct": 190.0,
       "composite": 0.0,
-      "timing_state": "관측부족",
-      "timing_score": 12.0
+      "timing_state": "hold",
+      "timing_score": 24.5
     }
   },
   "267260": {
@@ -8064,8 +8088,8 @@
       "rank_in_level2": 1,
       "upside_pct": 65.8,
       "composite": 1.0,
-      "timing_state": "관측부족",
-      "timing_score": 12.0
+      "timing_state": "hold",
+      "timing_score": 24.5
     }
   },
   "298040": {
@@ -8148,8 +8172,8 @@
       "rank_in_level2": 2,
       "upside_pct": 84.1,
       "composite": 1.0,
-      "timing_state": "관측부족",
-      "timing_score": 12.0
+      "timing_state": "hold",
+      "timing_score": 24.5
     }
   },
   "009540": {
@@ -8229,8 +8253,8 @@
       "rank_in_level2": 3,
       "upside_pct": null,
       "composite": 1.0,
-      "timing_state": "watch",
-      "timing_score": 69.5
+      "timing_state": "hold",
+      "timing_score": 39.0
     }
   },
   "010140": {
@@ -8246,12 +8270,28 @@
     "close": 21150.0,
     "ret_1m": -19.0,
     "analyst": {
-      "n_buy": 5,
+      "n_buy": 7,
       "n_hold": 0,
       "n_sell": 0,
-      "avg_target": 40600,
+      "avg_target": 40143,
       "latest_target": 40000.0,
       "recent": [
+        {
+          "date": "2026-07-13",
+          "broker": "SK증권",
+          "title": "아쉬운 실적을 잊게 해줄 FDC",
+          "opinion": "매수",
+          "source_url": "https://finance.naver.com/research/company_read.naver?nid=94086",
+          "broker_url": "https://stock.pstatic.net/stock-research/company/64/20260713_company_586868000.pdf"
+        },
+        {
+          "date": "2026-07-13",
+          "broker": "유안타증권",
+          "title": "2Q26 Pre: 보다 중요한 하반기 FDC",
+          "opinion": "Buy",
+          "source_url": "https://finance.naver.com/research/company_read.naver?nid=94110",
+          "broker_url": "https://stock.pstatic.net/stock-research/company/18/20260713_company_355854000.pdf"
+        },
         {
           "date": "2026-07-09",
           "broker": "대신증권",
@@ -8275,22 +8315,6 @@
           "opinion": "Buy",
           "source_url": "https://finance.naver.com/research/company_read.naver?nid=93684",
           "broker_url": "https://stock.pstatic.net/stock-research/company/63/20260625_company_737366000.pdf"
-        },
-        {
-          "date": "2026-06-25",
-          "broker": "DS투자증권",
-          "title": "FLNG 글로벌 1등인데 FDC도?",
-          "opinion": "매수",
-          "source_url": "https://finance.naver.com/research/company_read.naver?nid=93691",
-          "broker_url": "https://stock.pstatic.net/stock-research/company/66/20260625_company_255689000.pdf"
-        },
-        {
-          "date": "2026-05-26",
-          "broker": "한화투자증권",
-          "title": "이제부터가 진짜",
-          "opinion": "Buy",
-          "source_url": "https://finance.naver.com/research/company_read.naver?nid=93267",
-          "broker_url": "https://stock.pstatic.net/stock-research/company/16/20260526_company_809154000.pdf"
         }
       ]
     },
@@ -8335,10 +8359,10 @@
     "quant": {
       "buy_score": 87.5,
       "rank_in_level2": 1,
-      "upside_pct": 92.0,
+      "upside_pct": 89.8,
       "composite": 1.0,
-      "timing_state": "watch",
-      "timing_score": 69.5
+      "timing_state": "hold",
+      "timing_score": 39.0
     }
   },
   "042660": {
@@ -8359,12 +8383,20 @@
     "close": 82000.0,
     "ret_1m": -20.5,
     "analyst": {
-      "n_buy": 5,
+      "n_buy": 6,
       "n_hold": 0,
       "n_sell": 0,
-      "avg_target": 162200,
-      "latest_target": 163000.0,
+      "avg_target": 157500,
+      "latest_target": 134000.0,
       "recent": [
+        {
+          "date": "2026-07-13",
+          "broker": "SK증권",
+          "title": "CPSP는 지난 일, 향후 사업에 집중",
+          "opinion": "매수",
+          "source_url": "https://finance.naver.com/research/company_read.naver?nid=94085",
+          "broker_url": "https://stock.pstatic.net/stock-research/company/64/20260713_company_582290000.pdf"
+        },
         {
           "date": "2026-07-09",
           "broker": "대신증권",
@@ -8396,14 +8428,6 @@
           "opinion": "Buy",
           "source_url": "https://finance.naver.com/research/company_read.naver?nid=93897",
           "broker_url": "https://stock.pstatic.net/stock-research/company/18/20260706_company_602435000.pdf"
-        },
-        {
-          "date": "2026-05-19",
-          "broker": "SK증권",
-          "title": "불확실성 해소 앞두고 할인율 축소 기대",
-          "opinion": "매수",
-          "source_url": "https://finance.naver.com/research/company_read.naver?nid=93131",
-          "broker_url": "https://stock.pstatic.net/stock-research/company/64/20260519_company_898026000.pdf"
         }
       ]
     },
@@ -8448,10 +8472,10 @@
     "quant": {
       "buy_score": 87.5,
       "rank_in_level2": 2,
-      "upside_pct": 97.8,
+      "upside_pct": 92.1,
       "composite": 1.0,
-      "timing_state": "watch",
-      "timing_score": 69.5
+      "timing_state": "hold",
+      "timing_score": 39.0
     }
   },
   "329180": {
@@ -8467,12 +8491,20 @@
     "close": 517000.0,
     "ret_1m": -16.7,
     "analyst": {
-      "n_buy": 3,
+      "n_buy": 4,
       "n_hold": 0,
       "n_sell": 0,
-      "avg_target": 536667,
-      "latest_target": 340000.0,
+      "avg_target": 505500,
+      "latest_target": 412000.0,
       "recent": [
+        {
+          "date": "2026-07-13",
+          "broker": "유안타증권",
+          "title": "2Q226 Pre: 보다 중요한 하반기 DC향 수주",
+          "opinion": "Buy",
+          "source_url": "https://finance.naver.com/research/company_read.naver?nid=94111",
+          "broker_url": "https://stock.pstatic.net/stock-research/company/18/20260713_company_587801000.pdf"
+        },
         {
           "date": "2026-07-10",
           "broker": "SK증권",
@@ -8540,12 +8572,12 @@
     "market_share": [],
     "dart": null,
     "quant": {
-      "buy_score": 46.8,
+      "buy_score": 42.5,
       "rank_in_level2": 4,
-      "upside_pct": 3.8,
+      "upside_pct": -2.2,
       "composite": 1.0,
-      "timing_state": "watch",
-      "timing_score": 69.5
+      "timing_state": "hold",
+      "timing_score": 39.0
     }
   },
   "000120": {
@@ -9089,12 +9121,20 @@
     "close": 304000.0,
     "ret_1m": -15.3,
     "analyst": {
-      "n_buy": 2,
+      "n_buy": 3,
       "n_hold": 0,
       "n_sell": 0,
-      "avg_target": 645000,
-      "latest_target": 550000.0,
+      "avg_target": 586667,
+      "latest_target": 470000.0,
       "recent": [
+        {
+          "date": "2026-07-13",
+          "broker": "미래에셋증권",
+          "title": "실적 개선에 따른 저평가 해소 기대",
+          "opinion": "Buy",
+          "source_url": "https://finance.naver.com/research/company_read.naver?nid=94107",
+          "broker_url": "https://stock.pstatic.net/stock-research/company/56/20260713_company_753862000.pdf"
+        },
         {
           "date": "2026-07-07",
           "broker": "한화투자증권",
@@ -9154,7 +9194,7 @@
     "quant": {
       "buy_score": 87.5,
       "rank_in_level2": 1,
-      "upside_pct": 112.2,
+      "upside_pct": 93.0,
       "composite": 1.0,
       "timing_state": "관측부족",
       "timing_score": 16.0
@@ -9316,12 +9356,20 @@
     "close": 131600.0,
     "ret_1m": 21.3,
     "analyst": {
-      "n_buy": 2,
+      "n_buy": 3,
       "n_hold": 0,
       "n_sell": 0,
-      "avg_target": 187500,
-      "latest_target": 200000.0,
+      "avg_target": 185000,
+      "latest_target": 180000.0,
       "recent": [
+        {
+          "date": "2026-07-13",
+          "broker": "신한투자증권",
+          "title": "유가는 내려도, 정제마진은 강하다",
+          "opinion": "매수",
+          "source_url": "https://finance.naver.com/research/company_read.naver?nid=94091",
+          "broker_url": null
+        },
         {
           "date": "2026-07-07",
           "broker": "하나증권",
@@ -9381,7 +9429,7 @@
     "quant": {
       "buy_score": 87.5,
       "rank_in_level2": 1,
-      "upside_pct": 42.5,
+      "upside_pct": 40.6,
       "composite": 1.0,
       "timing_state": "관측부족",
       "timing_score": 25.0
