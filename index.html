@@ -290,6 +290,8 @@
         <div><h2>요약</h2><div class="desc" id="home-desc">전체 산업의 사이클 국면과 최신 신호를 한눈에 봅니다.</div></div>
       </div>
       <div class="grid g4" id="home-stats" style="margin-bottom:22px"></div>
+      <div class="sectitle"><h3>🌐 산업별 수출입 동향 (L0)</h3><span class="sub" style="font-size:12px">관세청 무역통계 기준 · 업황 바닥통과를 가장 먼저 포착하는 0단계 신호</span></div>
+      <div class="card" id="home-l0" style="margin-bottom:24px"><div class="loading">…</div></div>
       <div class="sectitle"><h3>🎯 이번 주 매수 타이밍 신호</h3><span class="sub" style="font-size:12px">방향(애널리스트) + 가격 확인 결합 · 클릭 시 상세</span></div>
       <div id="home-timing" style="margin-bottom:24px"><div class="loading">…</div></div>
       <div class="sectitle"><h3>🔔 최근 신호 변화</h3><span class="sub" style="font-size:12px">매수적기·국면 전환 알림</span></div>
@@ -388,6 +390,11 @@ const L0_STATE = {
   falling:    { label:'업황 하강',      cls:'b-down' },
   '관측부족':  { label:'데이터 수집 전',  cls:'b-grey' },
 };
+function l0Badge(ind){
+  if (!ind.l0_detail || !Object.keys(ind.l0_detail).length) return '';
+  const meta = L0_STATE[ind.l0_state] || L0_STATE['관측부족'];
+  return `<span class="badge ${meta.cls}" style="font-size:10.5px">🏭 ${meta.label}</span>`;
+}
 
 // ── 헬퍼 ──
 const fmt = n => n == null ? '—' : Number(n).toLocaleString('ko-KR');
@@ -483,7 +490,7 @@ function indCard(ind){
   return `<div class="card indcard" onclick="gotoDetail('${ind.level2_id}')">
     <div class="top">
       <div><div class="nm">${ind.level2_name}</div>
-        <div class="sec" style="display:flex;gap:5px;align-items:center;flex-wrap:wrap;margin-top:4px">${ind.level1_name} ${timingChip(ind.timing_state)} ${phaseBadge(ind.cycle_phase)}</div></div>
+        <div class="sec" style="display:flex;gap:5px;align-items:center;flex-wrap:wrap;margin-top:4px">${ind.level1_name} ${timingChip(ind.timing_state)} ${phaseBadge(ind.cycle_phase)} ${l0Badge(ind)}</div></div>
       <div><div class="sc num">${ind.turn_score!=null?Math.round(ind.turn_score):'—'}</div><div class="sclab">전환강도</div></div>
     </div>
     <div class="track">${track}</div>
@@ -904,6 +911,25 @@ function homeTiming(industries){
   }).join('');
   return `<div class="grid g3">${cards}</div>`;
 }
+// 산업별 수출입 동향(L0) — 요약 화면 최상단
+function homeExportTrend(industries){
+  const tracked = (industries||[]).filter(i => i.l0_detail && Object.keys(i.l0_detail).length);
+  if (!tracked.length){
+    return '<div class="empty">관세청 API 검증 후 표시됩니다 (docs/06_수출입동향_L0_연동_v1.md 참조)</div>';
+  }
+  const ranked = [...tracked].sort((a,b) => (b.l0_score??-1) - (a.l0_score??-1));
+  const rows = ranked.map(ind => {
+    const meta = L0_STATE[ind.l0_state] || L0_STATE['관측부족'];
+    const top = Object.values(ind.l0_detail)[0];
+    return `<tr onclick="gotoDetail('${ind.level2_id}')">
+      <td><span class="iname">${ind.level2_name}</span><div class="isub">${ind.level1_name}</div></td>
+      <td><span class="badge ${meta.cls}" style="font-size:11.5px">${meta.label}</span></td>
+      <td class="num">${top && top.metric!=null ? `<span class="${top.metric>=0?'up':'down'}">${top.metric>=0?'+':''}${top.metric}%</span>` : '—'}</td>
+      <td style="color:var(--hint);font-size:11.5px">${top && top.period ? top.period : '—'}</td>
+    </tr>`;
+  }).join('');
+  return `<table class="tbl"><thead><tr><th>산업</th><th>업황(L0)</th><th>수출 YoY</th><th>기준월</th></tr></thead><tbody>${rows}</tbody></table>`;
+}
 function homeReports(reports){
   const rows = reports.slice(0,8).map(r => {
     const opn = r.opinion ? `<span class="opn">${r.opinion}</span>` : '';
@@ -1029,6 +1055,7 @@ async function loadData(){
 
     // 홈
     document.getElementById('home-stats').innerHTML = homeStats(_meta, _industries);
+    document.getElementById('home-l0').innerHTML = homeExportTrend(_industries);
     document.getElementById('home-timing').innerHTML = homeTiming(_industries);
     document.getElementById('home-events').innerHTML = renderEvents(_events);
     document.getElementById('home-backtest').innerHTML = renderBacktest(_backtest);
