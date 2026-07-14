@@ -547,10 +547,15 @@ function indDetail(ind, det){
   // L0 업황 동인 leg (가장 먼저 도는 0단계)
   const l0meta = L0_STATE[ind.l0_state] || L0_STATE['관측부족'];
   const l0up = ind.l0_state==='turning_up' || ind.l0_state==='rising';
+  const L0_SRC_LABEL = { customs: '관세청', ecos: 'ECOS' };
   const l0rows = ind.l0_detail
-    ? Object.values(ind.l0_detail).map(d =>
-        legRow(d.name, `${d.metric>=0?'+':''}${d.metric}%${d.turning?' <span class="up">↑전환</span>':''}`, d.metric>0)).join('')
-    : legRow('수출·재고 동인', 'ECOS 키 등록 후 수집', null);
+    ? Object.values(ind.l0_detail).map(d => {
+        const src = L0_SRC_LABEL[d.source] || d.source || '';
+        const meta = (d.period || src)
+          ? ` <span class="mute" style="font-size:10px">(${[d.period, src].filter(Boolean).join(' · ')})</span>` : '';
+        return legRow(d.name, `${d.metric>=0?'+':''}${d.metric}%${d.turning?' <span class="up">↑전환</span>':''}${meta}`, d.metric>0);
+      }).join('')
+    : legRow('수출·재고 동인', '관세청·ECOS API 키 등록 후 수집', null);
   const l0Leg = `<div class="leg">
     <div class="lh">🏭 업황 동인 (L0) <span class="badge ${l0meta.cls}" style="font-size:9.5px;margin-left:3px">${l0meta.label}</span></div>
     ${l0rows}
