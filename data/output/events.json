@@ -1,5 +1,68 @@
 [
   {
+    "date": "2026-07-14",
+    "level2_id": "S7_ship",
+    "level2_name": "조선",
+    "event_type": "phase_turn",
+    "from_state": "관측부족",
+    "to_state": "전환",
+    "detail": {
+      "composite_score": 0.2333
+    }
+  },
+  {
+    "date": "2026-07-14",
+    "level2_id": "S6_bank",
+    "level2_name": "은행·금융지주",
+    "event_type": "timing_buy",
+    "from_state": "watch",
+    "to_state": "buy",
+    "detail": {
+      "timing_score": 97.5,
+      "rs_3m": 16.33,
+      "breadth_pct": 75.0
+    }
+  },
+  {
+    "date": "2026-07-14",
+    "level2_id": "S9_energy",
+    "level2_name": "정유·에너지",
+    "event_type": "timing_watch",
+    "from_state": "관측부족",
+    "to_state": "watch",
+    "detail": {
+      "timing_score": 77.5,
+      "rs_3m": 4.66,
+      "breadth_pct": 66.7
+    }
+  },
+  {
+    "date": "2026-07-14",
+    "level2_id": "S7_transport",
+    "level2_name": "운송 (해운·항공·물류)",
+    "event_type": "timing_watch",
+    "from_state": "관측부족",
+    "to_state": "watch",
+    "detail": {
+      "timing_score": 69.5,
+      "rs_3m": -22.39,
+      "breadth_pct": 0.0
+    }
+  },
+  {
+    "date": "2026-07-14",
+    "level2_id": "S7_ship",
+    "level2_name": "조선",
+    "event_type": "timing_watch",
+    "from_state": "hold",
+    "to_state": "watch",
+    "detail": {
+      "timing_score": 62.5,
+      "rs_3m": -8.82,
+      "breadth_pct": 0.0
+    }
+  },
+  {
     "date": "2026-07-09",
     "level2_id": "S7_ship",
     "level2_name": "조선",
