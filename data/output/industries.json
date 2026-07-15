@@ -1,56 +1,60 @@
 [
   {
-    "level2_id": "S3_retail",
-    "level1_id": "S3",
-    "level2_name": "유통·이커머스",
-    "level1_name": "경기소비재",
-    "coverage": 2,
+    "level2_id": "S1_semilarge",
+    "level1_id": "S1",
+    "level2_name": "반도체 (대형)",
+    "level1_name": "IT·테크",
+    "coverage": 3,
     "signal_ok": true,
     "cycle_phase": "전환",
-    "composite_score": 0.175,
-    "conf_breadth": 0.25,
-    "conf_magnitude": 21.493506493506494,
+    "composite_score": 0.1909,
+    "conf_breadth": 0.2727272727272727,
+    "conf_magnitude": 9.441786283891545,
     "upside_gap": 0,
     "lead_first_turn": null,
     "lead_accel": null,
-    "phase_confidence": 0.4,
-    "n_reports_signal": 4,
-    "n_reports_4w": 8,
-    "calc_date": "2026-07-14",
+    "phase_confidence": 1.0,
+    "n_reports_signal": 11,
+    "n_reports_4w": 27,
+    "calc_date": "2026-07-15",
     "timing_state": "watch",
-    "timing_score": 68.6,
+    "timing_score": 72.9,
     "idx_trend_up": 1,
-    "idx_ret_4w": -9.27,
-    "idx_ret_12w": 59.4,
-    "idx_rsi14": 35.7,
+    "idx_ret_4w": -1.38,
+    "idx_ret_12w": 95.6,
+    "idx_rsi14": 39.5,
     "idx_high_break": 0,
-    "price_days": 123,
-    "idx_rs_3m": 56.79,
-    "idx_rs_up": 0,
-    "breadth_pct": 66.7,
+    "price_days": 124,
+    "idx_rs_3m": 95.32,
+    "idx_rs_up": 1,
+    "breadth_pct": 50.0,
     "breadth_up": 0,
-    "l0_state": null,
+    "l0_state": "관측부족",
     "l0_score": null,
     "l0_detail": null,
-    "turn_score": 68.3,
+    "turn_score": 66.3,
     "companies": [
       {
-        "ticker": "004170",
-        "name": "신세계",
-        "last_close": 591000.0
+        "ticker": "000660",
+        "name": "SK하이닉스",
+        "last_close": 1913000.0
       },
       {
-        "ticker": "023530",
-        "name": "롯데쇼핑",
-        "last_close": 154300.0
-      },
-      {
-        "ticker": "139480",
-        "name": "이마트",
-        "last_close": 82300.0
+        "ticker": "005930",
+        "name": "삼성전자",
+        "last_close": 263000.0
       }
     ],
-    "etfs": []
+    "etfs": [
+      {
+        "ticker": "091160",
+        "name": "KODEX 반도체"
+      },
+      {
+        "ticker": "455280",
+        "name": "TIGER Fn반도체TOP10"
+      }
+    ]
   },
   {
     "level2_id": "S7_holding",
@@ -68,39 +72,92 @@
     "lead_accel": null,
     "phase_confidence": 0.5,
     "n_reports_signal": 5,
-    "n_reports_4w": 7,
-    "calc_date": "2026-07-14",
+    "n_reports_4w": 6,
+    "calc_date": "2026-07-15",
     "timing_state": "watch",
-    "timing_score": 72.3,
+    "timing_score": 76.3,
     "idx_trend_up": 1,
-    "idx_ret_4w": -13.66,
-    "idx_ret_12w": 55.28,
-    "idx_rsi14": 38.1,
+    "idx_ret_4w": -7.49,
+    "idx_ret_12w": 50.19,
+    "idx_rsi14": 35.2,
     "idx_high_break": 0,
-    "price_days": 123,
-    "idx_rs_3m": 52.67,
-    "idx_rs_up": 0,
+    "price_days": 124,
+    "idx_rs_3m": 49.91,
+    "idx_rs_up": 1,
     "breadth_pct": 33.3,
     "breadth_up": 0,
     "l0_state": null,
     "l0_score": null,
     "l0_detail": null,
-    "turn_score": 61.0,
+    "turn_score": 58.8,
     "companies": [
       {
         "ticker": "003550",
         "name": "LG",
-        "last_close": 99300.0
+        "last_close": 96400.0
       },
       {
         "ticker": "028260",
         "name": "삼성물산",
-        "last_close": 361000.0
+        "last_close": 354000.0
       },
       {
         "ticker": "034730",
         "name": "SK",
-        "last_close": 583000.0
+        "last_close": 562000.0
+      }
+    ],
+    "etfs": []
+  },
+  {
+    "level2_id": "S3_retail",
+    "level1_id": "S3",
+    "level2_name": "유통·이커머스",
+    "level1_name": "경기소비재",
+    "coverage": 2,
+    "signal_ok": true,
+    "cycle_phase": "전환",
+    "composite_score": 0.175,
+    "conf_breadth": 0.25,
+    "conf_magnitude": 21.493506493506494,
+    "upside_gap": 0,
+    "lead_first_turn": null,
+    "lead_accel": null,
+    "phase_confidence": 0.4,
+    "n_reports_signal": 4,
+    "n_reports_4w": 8,
+    "calc_date": "2026-07-15",
+    "timing_state": "watch",
+    "timing_score": 72.6,
+    "idx_trend_up": 1,
+    "idx_ret_4w": -4.41,
+    "idx_ret_12w": 55.19,
+    "idx_rsi14": 23.3,
+    "idx_high_break": 0,
+    "price_days": 124,
+    "idx_rs_3m": 54.91,
+    "idx_rs_up": 1,
+    "breadth_pct": 33.3,
+    "breadth_up": 0,
+    "l0_state": null,
+    "l0_score": null,
+    "l0_detail": null,
+    "turn_score": 57.0,
+    "companies": [
+      {
+        "ticker": "004170",
+        "name": "신세계",
+        "last_close": 561000.0
+      },
+      {
+        "ticker": "023530",
+        "name": "롯데쇼핑",
+        "last_close": 146000.0
+      },
+      {
+        "ticker": "139480",
+        "name": "이마트",
+        "last_close": 80300.0
       }
     ],
     "etfs": []
@@ -122,16 +179,16 @@
     "phase_confidence": 1.0,
     "n_reports_signal": 11,
     "n_reports_4w": 20,
-    "calc_date": "2026-07-14",
+    "calc_date": "2026-07-15",
     "timing_state": "watch",
     "timing_score": 71.7,
     "idx_trend_up": 1,
-    "idx_ret_4w": -33.68,
-    "idx_ret_12w": 135.22,
-    "idx_rsi14": 21.7,
+    "idx_ret_4w": -31.07,
+    "idx_ret_12w": 134.53,
+    "idx_rsi14": 19.0,
     "idx_high_break": 0,
-    "price_days": 123,
-    "idx_rs_3m": 132.62,
+    "price_days": 124,
+    "idx_rs_3m": 134.25,
     "idx_rs_up": 0,
     "breadth_pct": 0.0,
     "breadth_up": 0,
@@ -143,17 +200,17 @@
       {
         "ticker": "009150",
         "name": "삼성전기",
-        "last_close": 1289000.0
+        "last_close": 1260000.0
       },
       {
         "ticker": "011070",
         "name": "LG이노텍",
-        "last_close": 661000.0
+        "last_close": 641000.0
       },
       {
         "ticker": "066570",
         "name": "LG전자",
-        "last_close": 185600.0
+        "last_close": 185400.0
       }
     ],
     "etfs": [
@@ -180,106 +237,49 @@
     "phase_confidence": 0.7,
     "n_reports_signal": 7,
     "n_reports_4w": 5,
-    "calc_date": "2026-07-14",
+    "calc_date": "2026-07-15",
     "timing_state": "watch",
     "timing_score": 73.0,
     "idx_trend_up": 1,
-    "idx_ret_4w": -9.57,
-    "idx_ret_12w": 34.65,
-    "idx_rsi14": 37.1,
+    "idx_ret_4w": -5.98,
+    "idx_ret_12w": 33.18,
+    "idx_rsi14": 35.2,
     "idx_high_break": 0,
-    "price_days": 123,
-    "idx_rs_3m": 32.05,
+    "price_days": 124,
+    "idx_rs_3m": 32.9,
     "idx_rs_up": 1,
     "breadth_pct": 75.0,
     "breadth_up": 0,
     "l0_state": null,
     "l0_score": null,
     "l0_detail": null,
-    "turn_score": 51.9,
+    "turn_score": 52.6,
     "companies": [
       {
         "ticker": "000810",
         "name": "삼성화재",
-        "last_close": 639000.0
+        "last_close": 628000.0
       },
       {
         "ticker": "001450",
         "name": "현대해상",
-        "last_close": 38550.0
+        "last_close": 37200.0
       },
       {
         "ticker": "005830",
         "name": "DB손해보험",
-        "last_close": 159100.0
+        "last_close": 161000.0
       },
       {
         "ticker": "032830",
         "name": "삼성생명",
-        "last_close": 326000.0
+        "last_close": 317000.0
       }
     ],
     "etfs": [
       {
         "ticker": "140560",
         "name": "KODEX 보험"
-      }
-    ]
-  },
-  {
-    "level2_id": "S1_semilarge",
-    "level1_id": "S1",
-    "level2_name": "반도체 (대형)",
-    "level1_name": "IT·테크",
-    "coverage": 3,
-    "signal_ok": true,
-    "cycle_phase": "전환",
-    "composite_score": 0.1909,
-    "conf_breadth": 0.2727272727272727,
-    "conf_magnitude": 9.441786283891545,
-    "upside_gap": 0,
-    "lead_first_turn": null,
-    "lead_accel": null,
-    "phase_confidence": 1.0,
-    "n_reports_signal": 11,
-    "n_reports_4w": 27,
-    "calc_date": "2026-07-14",
-    "timing_state": "watch",
-    "timing_score": 68.9,
-    "idx_trend_up": 1,
-    "idx_ret_4w": -12.48,
-    "idx_ret_12w": 94.56,
-    "idx_rsi14": 40.1,
-    "idx_high_break": 0,
-    "price_days": 123,
-    "idx_rs_3m": 91.95,
-    "idx_rs_up": 0,
-    "breadth_pct": 0.0,
-    "breadth_up": 0,
-    "l0_state": "관측부족",
-    "l0_score": null,
-    "l0_detail": null,
-    "turn_score": 51.6,
-    "companies": [
-      {
-        "ticker": "000660",
-        "name": "SK하이닉스",
-        "last_close": 1845000.0
-      },
-      {
-        "ticker": "005930",
-        "name": "삼성전자",
-        "last_close": 254500.0
-      }
-    ],
-    "etfs": [
-      {
-        "ticker": "091160",
-        "name": "KODEX 반도체"
-      },
-      {
-        "ticker": "455280",
-        "name": "TIGER Fn반도체TOP10"
       }
     ]
   },
@@ -291,52 +291,52 @@
     "coverage": 3,
     "signal_ok": true,
     "cycle_phase": "관측부족",
-    "composite_score": 0.3,
+    "composite_score": 0.0,
     "conf_breadth": 0.0,
     "conf_magnitude": 0.0,
-    "upside_gap": 1,
+    "upside_gap": 0,
     "lead_first_turn": null,
     "lead_accel": null,
     "phase_confidence": 0.1,
     "n_reports_signal": 1,
     "n_reports_4w": 10,
-    "calc_date": "2026-07-14",
-    "timing_state": "buy",
-    "timing_score": 97.5,
+    "calc_date": "2026-07-15",
+    "timing_state": "watch",
+    "timing_score": 72.0,
     "idx_trend_up": 1,
-    "idx_ret_4w": 5.69,
-    "idx_ret_12w": 18.93,
-    "idx_rsi14": 57.3,
-    "idx_high_break": 1,
-    "price_days": 123,
-    "idx_rs_3m": 16.33,
+    "idx_ret_4w": 15.74,
+    "idx_ret_12w": 18.38,
+    "idx_rsi14": 52.5,
+    "idx_high_break": 0,
+    "price_days": 124,
+    "idx_rs_3m": 18.1,
     "idx_rs_up": 1,
     "breadth_pct": 75.0,
-    "breadth_up": 0,
+    "breadth_up": 1,
     "l0_state": null,
     "l0_score": null,
     "l0_detail": null,
-    "turn_score": 41.9,
+    "turn_score": 36.3,
     "companies": [
       {
         "ticker": "055550",
         "name": "신한지주",
-        "last_close": 108600.0
+        "last_close": 106500.0
       },
       {
         "ticker": "086790",
         "name": "하나금융지주",
-        "last_close": 132600.0
+        "last_close": 134000.0
       },
       {
         "ticker": "105560",
         "name": "KB금융",
-        "last_close": 186200.0
+        "last_close": 180000.0
       },
       {
         "ticker": "316140",
         "name": "우리금융지주",
-        "last_close": 31200.0
+        "last_close": 30700.0
       }
     ],
     "etfs": [
@@ -367,19 +367,19 @@
     "timing_state": "hold",
     "timing_score": 46.0,
     "idx_trend_up": 1,
-    "idx_ret_4w": -16.72,
-    "idx_ret_12w": 14.17,
-    "idx_rsi14": 22.1,
+    "idx_ret_4w": -12.1,
+    "idx_ret_12w": 15.67,
+    "idx_rsi14": 24.8,
     "idx_high_break": 0,
-    "price_days": 123,
-    "idx_rs_3m": 11.56,
+    "price_days": 124,
+    "idx_rs_3m": 15.39,
     "idx_rs_up": 0,
     "breadth_pct": 50.0,
     "breadth_up": 0,
     "l0_state": null,
     "l0_score": null,
     "l0_detail": null,
-    "turn_score": 31.1,
+    "turn_score": 35.0,
     "companies": [
       {
         "ticker": "012510",
@@ -389,7 +389,7 @@
       {
         "ticker": "018260",
         "name": "삼성에스디에스",
-        "last_close": 190200.0
+        "last_close": 193000.0
       }
     ],
     "etfs": []
@@ -402,113 +402,50 @@
     "coverage": 2,
     "signal_ok": true,
     "cycle_phase": "관측부족",
-    "composite_score": 0.3,
+    "composite_score": 0.0,
     "conf_breadth": null,
     "conf_magnitude": null,
-    "upside_gap": 1,
+    "upside_gap": 0,
     "lead_first_turn": null,
     "lead_accel": null,
     "phase_confidence": 0.0,
     "n_reports_signal": 0,
     "n_reports_4w": 5,
-    "calc_date": "2026-07-14",
-    "timing_state": "watch",
-    "timing_score": 77.5,
+    "calc_date": "2026-07-15",
+    "timing_state": "관측부족",
+    "timing_score": 30.0,
     "idx_trend_up": 0,
-    "idx_ret_4w": 9.08,
-    "idx_ret_12w": 7.27,
-    "idx_rsi14": 59.0,
+    "idx_ret_4w": 11.41,
+    "idx_ret_12w": 4.68,
+    "idx_rsi14": 52.9,
     "idx_high_break": 0,
-    "price_days": 123,
-    "idx_rs_3m": 4.66,
+    "price_days": 124,
+    "idx_rs_3m": 4.4,
     "idx_rs_up": 1,
     "breadth_pct": 66.7,
     "breadth_up": 1,
     "l0_state": "관측부족",
     "l0_score": null,
     "l0_detail": null,
-    "turn_score": 30.3,
+    "turn_score": 23.1,
     "companies": [
       {
         "ticker": "010950",
         "name": "S-Oil",
-        "last_close": 139500.0
+        "last_close": 131400.0
       },
       {
         "ticker": "078930",
         "name": "GS",
-        "last_close": 79500.0
+        "last_close": 79000.0
       },
       {
         "ticker": "096770",
         "name": "SK이노베이션",
-        "last_close": 110200.0
+        "last_close": 104900.0
       }
     ],
     "etfs": []
-  },
-  {
-    "level2_id": "S3_cosmetics",
-    "level1_id": "S3",
-    "level2_name": "화장품",
-    "level1_name": "경기소비재",
-    "coverage": 3,
-    "signal_ok": true,
-    "cycle_phase": "관측부족",
-    "composite_score": 0.0,
-    "conf_breadth": 0.0,
-    "conf_magnitude": 0.0,
-    "upside_gap": 0,
-    "lead_first_turn": null,
-    "lead_accel": null,
-    "phase_confidence": 0.2,
-    "n_reports_signal": 2,
-    "n_reports_4w": 13,
-    "calc_date": "2026-07-14",
-    "timing_state": "hold",
-    "timing_score": 48.0,
-    "idx_trend_up": 0,
-    "idx_ret_4w": 4.9,
-    "idx_ret_12w": 1.28,
-    "idx_rsi14": 55.8,
-    "idx_high_break": 0,
-    "price_days": 123,
-    "idx_rs_3m": -1.32,
-    "idx_rs_up": 1,
-    "breadth_pct": 66.7,
-    "breadth_up": 1,
-    "l0_state": null,
-    "l0_score": null,
-    "l0_detail": null,
-    "turn_score": 19.6,
-    "companies": [
-      {
-        "ticker": "044820",
-        "name": "코스맥스",
-        "last_close": 20950.0
-      },
-      {
-        "ticker": "051900",
-        "name": "LG생활건강",
-        "last_close": 248500.0
-      },
-      {
-        "ticker": "090430",
-        "name": "아모레퍼시픽",
-        "last_close": 121600.0
-      },
-      {
-        "ticker": "257390",
-        "name": "실리콘투",
-        "last_close": null
-      }
-    ],
-    "etfs": [
-      {
-        "ticker": "228800",
-        "name": "TIGER 화장품"
-      }
-    ]
   },
   {
     "level2_id": "S7_transport",
@@ -518,47 +455,47 @@
     "coverage": 2,
     "signal_ok": true,
     "cycle_phase": "관측부족",
-    "composite_score": 0.7,
-    "conf_breadth": 1.0,
+    "composite_score": 0.35,
+    "conf_breadth": 0.5,
     "conf_magnitude": 7.894736842105263,
     "upside_gap": 0,
     "lead_first_turn": null,
     "lead_accel": null,
-    "phase_confidence": 0.1,
-    "n_reports_signal": 1,
-    "n_reports_4w": 4,
-    "calc_date": "2026-07-14",
+    "phase_confidence": 0.2,
+    "n_reports_signal": 2,
+    "n_reports_4w": 8,
+    "calc_date": "2026-07-15",
     "timing_state": "watch",
-    "timing_score": 69.5,
+    "timing_score": 64.2,
     "idx_trend_up": 0,
-    "idx_ret_4w": -5.74,
-    "idx_ret_12w": -19.78,
-    "idx_rsi14": 28.1,
+    "idx_ret_4w": -1.74,
+    "idx_ret_12w": -18.79,
+    "idx_rsi14": 23.4,
     "idx_high_break": 0,
-    "price_days": 123,
-    "idx_rs_3m": -22.39,
+    "price_days": 124,
+    "idx_rs_3m": -19.07,
     "idx_rs_up": 1,
-    "breadth_pct": 0.0,
-    "breadth_up": 0,
+    "breadth_pct": 33.3,
+    "breadth_up": 1,
     "l0_state": null,
     "l0_score": null,
     "l0_detail": null,
-    "turn_score": 16.5,
+    "turn_score": 18.0,
     "companies": [
       {
         "ticker": "000120",
         "name": "CJ대한통운",
-        "last_close": 73600.0
+        "last_close": 71700.0
       },
       {
         "ticker": "003490",
         "name": "대한항공",
-        "last_close": 25850.0
+        "last_close": 26500.0
       },
       {
         "ticker": "011200",
         "name": "HMM",
-        "last_close": 19550.0
+        "last_close": 19760.0
       }
     ],
     "etfs": []
@@ -580,46 +517,109 @@
     "phase_confidence": 0.1,
     "n_reports_signal": 1,
     "n_reports_4w": 1,
-    "calc_date": "2026-07-14",
+    "calc_date": "2026-07-15",
     "timing_state": "hold",
     "timing_score": 48.0,
     "idx_trend_up": 0,
-    "idx_ret_4w": 10.19,
-    "idx_ret_12w": 6.68,
-    "idx_rsi14": 54.2,
+    "idx_ret_4w": 15.29,
+    "idx_ret_12w": 3.64,
+    "idx_rsi14": 52.6,
     "idx_high_break": 0,
-    "price_days": 123,
-    "idx_rs_3m": 4.07,
+    "price_days": 124,
+    "idx_rs_3m": 3.36,
     "idx_rs_up": 1,
     "breadth_pct": 25.0,
     "breadth_up": 1,
     "l0_state": null,
     "l0_score": null,
     "l0_detail": null,
-    "turn_score": 10.5,
+    "turn_score": 10.0,
     "companies": [
       {
         "ticker": "145720",
         "name": "덴티움",
-        "last_close": 40950.0
+        "last_close": 39550.0
       },
       {
         "ticker": "214150",
         "name": "클래시스",
-        "last_close": 47450.0
+        "last_close": 45550.0
       },
       {
         "ticker": "214450",
         "name": "파마리서치",
-        "last_close": 330500.0
+        "last_close": 318500.0
       },
       {
         "ticker": "328130",
         "name": "루닛",
-        "last_close": 9910.0
+        "last_close": 9550.0
       }
     ],
     "etfs": []
+  },
+  {
+    "level2_id": "S3_cosmetics",
+    "level1_id": "S3",
+    "level2_name": "화장품",
+    "level1_name": "경기소비재",
+    "coverage": 3,
+    "signal_ok": true,
+    "cycle_phase": "관측부족",
+    "composite_score": 0.0,
+    "conf_breadth": 0.0,
+    "conf_magnitude": 0.0,
+    "upside_gap": 0,
+    "lead_first_turn": null,
+    "lead_accel": null,
+    "phase_confidence": 0.2,
+    "n_reports_signal": 2,
+    "n_reports_4w": 13,
+    "calc_date": "2026-07-15",
+    "timing_state": "hold",
+    "timing_score": 48.0,
+    "idx_trend_up": 0,
+    "idx_ret_4w": 5.88,
+    "idx_ret_12w": 0.38,
+    "idx_rsi14": 52.4,
+    "idx_high_break": 0,
+    "price_days": 124,
+    "idx_rs_3m": 0.1,
+    "idx_rs_up": 1,
+    "breadth_pct": 33.3,
+    "breadth_up": 1,
+    "l0_state": null,
+    "l0_score": null,
+    "l0_detail": null,
+    "turn_score": 9.9,
+    "companies": [
+      {
+        "ticker": "044820",
+        "name": "코스맥스",
+        "last_close": 20650.0
+      },
+      {
+        "ticker": "051900",
+        "name": "LG생활건강",
+        "last_close": 240500.0
+      },
+      {
+        "ticker": "090430",
+        "name": "아모레퍼시픽",
+        "last_close": 120000.0
+      },
+      {
+        "ticker": "257390",
+        "name": "실리콘투",
+        "last_close": null
+      }
+    ],
+    "etfs": [
+      {
+        "ticker": "228800",
+        "name": "TIGER 화장품"
+      }
+    ]
   },
   {
     "level2_id": "S1_battery",
@@ -638,16 +638,16 @@
     "phase_confidence": 0.2,
     "n_reports_signal": 2,
     "n_reports_4w": 12,
-    "calc_date": "2026-07-14",
+    "calc_date": "2026-07-15",
     "timing_state": "watch",
     "timing_score": 60.2,
     "idx_trend_up": 0,
-    "idx_ret_4w": -24.53,
-    "idx_ret_12w": -21.22,
-    "idx_rsi14": 23.0,
+    "idx_ret_4w": -19.53,
+    "idx_ret_12w": -24.88,
+    "idx_rsi14": 22.3,
     "idx_high_break": 0,
-    "price_days": 123,
-    "idx_rs_3m": -23.83,
+    "price_days": 124,
+    "idx_rs_3m": -25.16,
     "idx_rs_up": 0,
     "breadth_pct": 0.0,
     "breadth_up": 0,
@@ -659,27 +659,27 @@
       {
         "ticker": "003670",
         "name": "포스코퓨처엠",
-        "last_close": 150700.0
+        "last_close": 144300.0
       },
       {
         "ticker": "006400",
         "name": "삼성SDI",
-        "last_close": 440000.0
+        "last_close": 427500.0
       },
       {
         "ticker": "066970",
         "name": "엘앤에프",
-        "last_close": 101300.0
+        "last_close": 90800.0
       },
       {
         "ticker": "247540",
         "name": "에코프로비엠",
-        "last_close": 119800.0
+        "last_close": 112600.0
       },
       {
         "ticker": "373220",
         "name": "LG에너지솔루션",
-        "last_close": 328500.0
+        "last_close": 322000.0
       }
     ],
     "etfs": [
@@ -710,16 +710,16 @@
     "phase_confidence": 0.0,
     "n_reports_signal": 0,
     "n_reports_4w": 1,
-    "calc_date": "2026-07-14",
+    "calc_date": "2026-07-15",
     "timing_state": "관측부족",
     "timing_score": 16.0,
     "idx_trend_up": 0,
-    "idx_ret_4w": -18.96,
-    "idx_ret_12w": -1.8,
-    "idx_rsi14": 21.8,
+    "idx_ret_4w": -8.16,
+    "idx_ret_12w": -3.21,
+    "idx_rsi14": 26.2,
     "idx_high_break": 0,
-    "price_days": 123,
-    "idx_rs_3m": -4.41,
+    "price_days": 124,
+    "idx_rs_3m": -3.49,
     "idx_rs_up": 1,
     "breadth_pct": 20.0,
     "breadth_up": 0,
@@ -731,27 +731,27 @@
       {
         "ticker": "036930",
         "name": "주성엔지니어링",
-        "last_close": 182500.0
+        "last_close": 192600.0
       },
       {
         "ticker": "042700",
         "name": "한미반도체",
-        "last_close": 205500.0
+        "last_close": 207500.0
       },
       {
         "ticker": "058470",
         "name": "리노공업",
-        "last_close": 72300.0
+        "last_close": 73100.0
       },
       {
         "ticker": "357780",
         "name": "솔브레인",
-        "last_close": 308500.0
+        "last_close": 304500.0
       },
       {
         "ticker": "403870",
         "name": "HPSP",
-        "last_close": 41900.0
+        "last_close": 42000.0
       }
     ],
     "etfs": [
@@ -777,18 +777,18 @@
     "lead_accel": null,
     "phase_confidence": 0.3,
     "n_reports_signal": 3,
-    "n_reports_4w": 15,
-    "calc_date": "2026-07-14",
+    "n_reports_4w": 19,
+    "calc_date": "2026-07-15",
     "timing_state": "watch",
-    "timing_score": 62.5,
+    "timing_score": 58.5,
     "idx_trend_up": 0,
-    "idx_ret_4w": -21.4,
-    "idx_ret_12w": -6.22,
-    "idx_rsi14": 11.6,
+    "idx_ret_4w": -19.63,
+    "idx_ret_12w": -10.33,
+    "idx_rsi14": 9.7,
     "idx_high_break": 0,
-    "price_days": 123,
-    "idx_rs_3m": -8.82,
-    "idx_rs_up": 1,
+    "price_days": 124,
+    "idx_rs_3m": -10.61,
+    "idx_rs_up": 0,
     "breadth_pct": 0.0,
     "breadth_up": 0,
     "l0_state": "관측부족",
@@ -799,22 +799,22 @@
       {
         "ticker": "009540",
         "name": "HD한국조선해양",
-        "last_close": 341500.0
+        "last_close": 327000.0
       },
       {
         "ticker": "010140",
         "name": "삼성중공업",
-        "last_close": 22050.0
+        "last_close": 21250.0
       },
       {
         "ticker": "042660",
         "name": "한화오션",
-        "last_close": 78800.0
+        "last_close": 76800.0
       },
       {
         "ticker": "329180",
         "name": "HD현대중공업",
-        "last_close": 487500.0
+        "last_close": 466000.0
       }
     ],
     "etfs": [
@@ -841,33 +841,33 @@
     "phase_confidence": 0.0,
     "n_reports_signal": 0,
     "n_reports_4w": 4,
-    "calc_date": "2026-07-14",
+    "calc_date": "2026-07-15",
     "timing_state": "관측부족",
     "timing_score": 17.0,
     "idx_trend_up": 0,
-    "idx_ret_4w": -11.22,
-    "idx_ret_12w": 6.45,
-    "idx_rsi14": 46.0,
+    "idx_ret_4w": -10.56,
+    "idx_ret_12w": 3.27,
+    "idx_rsi14": 42.4,
     "idx_high_break": 0,
-    "price_days": 123,
-    "idx_rs_3m": 3.85,
+    "price_days": 124,
+    "idx_rs_3m": 2.99,
     "idx_rs_up": 0,
     "breadth_pct": 0.0,
     "breadth_up": 0,
     "l0_state": null,
     "l0_score": null,
     "l0_detail": null,
-    "turn_score": 3.0,
+    "turn_score": 2.3,
     "companies": [
       {
         "ticker": "036570",
         "name": "엔씨소프트",
-        "last_close": 240500.0
+        "last_close": 227500.0
       },
       {
         "ticker": "259960",
         "name": "크래프톤",
-        "last_close": 238000.0
+        "last_close": 230000.0
       }
     ],
     "etfs": [
@@ -894,43 +894,43 @@
     "phase_confidence": 0.4,
     "n_reports_signal": 4,
     "n_reports_4w": 23,
-    "calc_date": "2026-07-14",
+    "calc_date": "2026-07-15",
     "timing_state": "caution",
     "timing_score": 19.8,
     "idx_trend_up": 0,
-    "idx_ret_4w": -30.42,
-    "idx_ret_12w": 6.19,
-    "idx_rsi14": 15.7,
+    "idx_ret_4w": -26.01,
+    "idx_ret_12w": 1.26,
+    "idx_rsi14": 11.4,
     "idx_high_break": 0,
-    "price_days": 123,
-    "idx_rs_3m": 3.58,
+    "price_days": 124,
+    "idx_rs_3m": 0.98,
     "idx_rs_up": 0,
     "breadth_pct": 0.0,
     "breadth_up": 0,
     "l0_state": "관측부족",
     "l0_score": null,
     "l0_detail": null,
-    "turn_score": 2.8,
+    "turn_score": 0.8,
     "companies": [
       {
         "ticker": "000270",
         "name": "기아",
-        "last_close": 143500.0
+        "last_close": 139600.0
       },
       {
         "ticker": "005380",
         "name": "현대차",
-        "last_close": 444000.0
+        "last_close": 424500.0
       },
       {
         "ticker": "012330",
         "name": "현대모비스",
-        "last_close": 487500.0
+        "last_close": 466000.0
       },
       {
         "ticker": "204320",
         "name": "HL만도",
-        "last_close": 47600.0
+        "last_close": 44850.0
       }
     ],
     "etfs": [
@@ -961,12 +961,12 @@
     "timing_state": "관측부족",
     "timing_score": 16.0,
     "idx_trend_up": 0,
-    "idx_ret_4w": -7.91,
-    "idx_ret_12w": -11.5,
-    "idx_rsi14": 25.1,
+    "idx_ret_4w": -5.01,
+    "idx_ret_12w": -11.24,
+    "idx_rsi14": 26.9,
     "idx_high_break": 0,
-    "price_days": 123,
-    "idx_rs_3m": -14.11,
+    "price_days": 124,
+    "idx_rs_3m": -11.53,
     "idx_rs_up": 1,
     "breadth_pct": 0.0,
     "breadth_up": 0,
@@ -978,12 +978,12 @@
       {
         "ticker": "015760",
         "name": "한국전력",
-        "last_close": 34250.0
+        "last_close": 33950.0
       },
       {
         "ticker": "036460",
         "name": "한국가스공사",
-        "last_close": 32700.0
+        "last_close": 32350.0
       }
     ],
     "etfs": []
@@ -1004,17 +1004,17 @@
     "lead_accel": null,
     "phase_confidence": null,
     "n_reports_signal": 0,
-    "n_reports_4w": 5,
+    "n_reports_4w": 4,
     "calc_date": null,
     "timing_state": "관측부족",
     "timing_score": 12.0,
     "idx_trend_up": 0,
-    "idx_ret_4w": -20.84,
-    "idx_ret_12w": -27.64,
-    "idx_rsi14": 10.9,
+    "idx_ret_4w": -14.48,
+    "idx_ret_12w": -26.39,
+    "idx_rsi14": 11.6,
     "idx_high_break": 0,
-    "price_days": 123,
-    "idx_rs_3m": -30.24,
+    "price_days": 124,
+    "idx_rs_3m": -26.67,
     "idx_rs_up": 0,
     "breadth_pct": 0.0,
     "breadth_up": 0,
@@ -1026,12 +1026,12 @@
       {
         "ticker": "034220",
         "name": "LG디스플레이",
-        "last_close": 10360.0
+        "last_close": 10350.0
       },
       {
         "ticker": "213420",
         "name": "덕산네오룩스",
-        "last_close": 29150.0
+        "last_close": 28750.0
       }
     ],
     "etfs": []
@@ -1043,26 +1043,26 @@
     "level1_name": "커뮤니케이션서비스",
     "coverage": 2,
     "signal_ok": true,
-    "cycle_phase": "관측부족",
+    "cycle_phase": "침체",
     "composite_score": -0.7,
     "conf_breadth": -1.0,
     "conf_magnitude": 0.0,
     "upside_gap": 0,
     "lead_first_turn": null,
     "lead_accel": null,
-    "phase_confidence": 0.2,
-    "n_reports_signal": 2,
-    "n_reports_4w": 5,
-    "calc_date": "2026-07-14",
-    "timing_state": "hold",
-    "timing_score": 32.5,
+    "phase_confidence": 0.3,
+    "n_reports_signal": 3,
+    "n_reports_4w": 7,
+    "calc_date": "2026-07-15",
+    "timing_state": "caution",
+    "timing_score": 17.5,
     "idx_trend_up": 0,
-    "idx_ret_4w": 0.13,
-    "idx_ret_12w": -18.84,
-    "idx_rsi14": 45.0,
+    "idx_ret_4w": 2.34,
+    "idx_ret_12w": -18.0,
+    "idx_rsi14": 40.5,
     "idx_high_break": 0,
-    "price_days": 123,
-    "idx_rs_3m": -21.44,
+    "price_days": 124,
+    "idx_rs_3m": -18.28,
     "idx_rs_up": 1,
     "breadth_pct": 0.0,
     "breadth_up": 0,
@@ -1074,17 +1074,17 @@
       {
         "ticker": "035900",
         "name": "JYP Ent.",
-        "last_close": 49650.0
+        "last_close": 47750.0
       },
       {
         "ticker": "041510",
         "name": "에스엠",
-        "last_close": 74900.0
+        "last_close": 72300.0
       },
       {
         "ticker": "352820",
         "name": "하이브",
-        "last_close": 213000.0
+        "last_close": 206000.0
       }
     ],
     "etfs": [
@@ -1111,16 +1111,16 @@
     "phase_confidence": 0.2,
     "n_reports_signal": 2,
     "n_reports_4w": 7,
-    "calc_date": "2026-07-14",
+    "calc_date": "2026-07-15",
     "timing_state": "hold",
     "timing_score": 35.0,
     "idx_trend_up": 0,
-    "idx_ret_4w": -24.68,
-    "idx_ret_12w": -7.82,
+    "idx_ret_4w": -31.66,
+    "idx_ret_12w": -10.42,
     "idx_rsi14": 3.6,
     "idx_high_break": 0,
-    "price_days": 123,
-    "idx_rs_3m": -10.43,
+    "price_days": 124,
+    "idx_rs_3m": -10.7,
     "idx_rs_up": 0,
     "breadth_pct": 0.0,
     "breadth_up": 0,
@@ -1132,12 +1132,12 @@
       {
         "ticker": "035420",
         "name": "NAVER",
-        "last_close": 188000.0
+        "last_close": 183200.0
       },
       {
         "ticker": "035720",
         "name": "카카오",
-        "last_close": 34750.0
+        "last_close": 33850.0
       }
     ],
     "etfs": [
@@ -1163,17 +1163,17 @@
     "lead_accel": null,
     "phase_confidence": 0.8,
     "n_reports_signal": 8,
-    "n_reports_4w": 19,
-    "calc_date": "2026-07-14",
+    "n_reports_4w": 21,
+    "calc_date": "2026-07-15",
     "timing_state": "hold",
     "timing_score": 35.0,
     "idx_trend_up": 0,
-    "idx_ret_4w": -12.97,
-    "idx_ret_12w": -2.1,
-    "idx_rsi14": 9.7,
+    "idx_ret_4w": -15.07,
+    "idx_ret_12w": -4.36,
+    "idx_rsi14": 9.9,
     "idx_high_break": 0,
-    "price_days": 123,
-    "idx_rs_3m": -4.71,
+    "price_days": 124,
+    "idx_rs_3m": -4.64,
     "idx_rs_up": 0,
     "breadth_pct": 0.0,
     "breadth_up": 0,
@@ -1185,17 +1185,17 @@
       {
         "ticker": "017670",
         "name": "SK텔레콤",
-        "last_close": 85700.0
+        "last_close": 83900.0
       },
       {
         "ticker": "030200",
         "name": "KT",
-        "last_close": 52700.0
+        "last_close": 51600.0
       },
       {
         "ticker": "032640",
         "name": "LG유플러스",
-        "last_close": 14530.0
+        "last_close": 14250.0
       }
     ],
     "etfs": []
@@ -1216,18 +1216,18 @@
     "lead_accel": null,
     "phase_confidence": 0.7,
     "n_reports_signal": 7,
-    "n_reports_4w": 16,
-    "calc_date": "2026-07-14",
+    "n_reports_4w": 17,
+    "calc_date": "2026-07-15",
     "timing_state": "hold",
-    "timing_score": 39.0,
+    "timing_score": 35.0,
     "idx_trend_up": 0,
-    "idx_ret_4w": -1.97,
-    "idx_ret_12w": -6.23,
-    "idx_rsi14": 43.8,
+    "idx_ret_4w": -1.64,
+    "idx_ret_12w": -7.08,
+    "idx_rsi14": 40.3,
     "idx_high_break": 0,
-    "price_days": 123,
-    "idx_rs_3m": -8.83,
-    "idx_rs_up": 1,
+    "price_days": 124,
+    "idx_rs_3m": -7.36,
+    "idx_rs_up": 0,
     "breadth_pct": 0.0,
     "breadth_up": 0,
     "l0_state": null,
@@ -1238,27 +1238,27 @@
       {
         "ticker": "003230",
         "name": "삼양식품",
-        "last_close": 1110000.0
+        "last_close": 1072000.0
       },
       {
         "ticker": "004370",
         "name": "농심",
-        "last_close": 356000.0
+        "last_close": 350500.0
       },
       {
         "ticker": "033780",
         "name": "KT&G",
-        "last_close": 174300.0
+        "last_close": 171000.0
       },
       {
         "ticker": "097950",
         "name": "CJ제일제당",
-        "last_close": 191900.0
+        "last_close": 186000.0
       },
       {
         "ticker": "271560",
         "name": "오리온",
-        "last_close": 133700.0
+        "last_close": 128400.0
       }
     ],
     "etfs": [
@@ -1284,17 +1284,17 @@
     "lead_accel": null,
     "phase_confidence": 0.4,
     "n_reports_signal": 4,
-    "n_reports_4w": 6,
-    "calc_date": "2026-07-14",
+    "n_reports_4w": 7,
+    "calc_date": "2026-07-15",
     "timing_state": "hold",
-    "timing_score": 39.0,
+    "timing_score": 43.0,
     "idx_trend_up": 0,
-    "idx_ret_4w": -3.07,
-    "idx_ret_12w": -13.14,
-    "idx_rsi14": 49.1,
+    "idx_ret_4w": 3.04,
+    "idx_ret_12w": -17.61,
+    "idx_rsi14": 43.1,
     "idx_high_break": 0,
-    "price_days": 123,
-    "idx_rs_3m": -15.75,
+    "price_days": 124,
+    "idx_rs_3m": -17.89,
     "idx_rs_up": 1,
     "breadth_pct": 0.0,
     "breadth_up": 0,
@@ -1306,27 +1306,27 @@
       {
         "ticker": "000100",
         "name": "유한양행",
-        "last_close": 68100.0
+        "last_close": 66700.0
       },
       {
         "ticker": "068270",
         "name": "셀트리온",
-        "last_close": 175100.0
+        "last_close": 172800.0
       },
       {
         "ticker": "128940",
         "name": "한미약품",
-        "last_close": 381500.0
+        "last_close": 356500.0
       },
       {
         "ticker": "196170",
         "name": "알테오젠",
-        "last_close": 316500.0
+        "last_close": 279500.0
       },
       {
         "ticker": "207940",
         "name": "삼성바이오로직스",
-        "last_close": 1400000.0
+        "last_close": 1368000.0
       }
     ],
     "etfs": [
@@ -1348,25 +1348,25 @@
     "coverage": 2,
     "signal_ok": true,
     "cycle_phase": "바닥",
-    "composite_score": 0.0,
-    "conf_breadth": 0.0,
+    "composite_score": -0.1167,
+    "conf_breadth": -0.16666666666666666,
     "conf_magnitude": 0.0,
     "upside_gap": 0,
     "lead_first_turn": null,
     "lead_accel": null,
-    "phase_confidence": 0.5,
-    "n_reports_signal": 5,
-    "n_reports_4w": 8,
-    "calc_date": "2026-07-14",
+    "phase_confidence": 0.6,
+    "n_reports_signal": 6,
+    "n_reports_4w": 9,
+    "calc_date": "2026-07-15",
     "timing_state": "hold",
-    "timing_score": 39.0,
+    "timing_score": 37.2,
     "idx_trend_up": 0,
-    "idx_ret_4w": -10.25,
-    "idx_ret_12w": -10.77,
-    "idx_rsi14": 37.8,
+    "idx_ret_4w": -5.83,
+    "idx_ret_12w": -14.64,
+    "idx_rsi14": 28.8,
     "idx_high_break": 0,
-    "price_days": 123,
-    "idx_rs_3m": -13.37,
+    "price_days": 124,
+    "idx_rs_3m": -14.92,
     "idx_rs_up": 1,
     "breadth_pct": 0.0,
     "breadth_up": 0,
@@ -1378,22 +1378,22 @@
       {
         "ticker": "006800",
         "name": "미래에셋증권",
-        "last_close": 40000.0
+        "last_close": 38750.0
       },
       {
         "ticker": "016360",
         "name": "삼성증권",
-        "last_close": 108800.0
+        "last_close": 101900.0
       },
       {
         "ticker": "039490",
         "name": "키움증권",
-        "last_close": 323500.0
+        "last_close": 308000.0
       },
       {
         "ticker": "071050",
         "name": "한국금융지주",
-        "last_close": 237000.0
+        "last_close": 216500.0
       }
     ],
     "etfs": [
@@ -1411,25 +1411,25 @@
     "coverage": 2,
     "signal_ok": true,
     "cycle_phase": "바닥",
-    "composite_score": 0.0,
-    "conf_breadth": 0.0,
+    "composite_score": -0.1,
+    "conf_breadth": -0.14285714285714285,
     "conf_magnitude": 7.462686567164178,
     "upside_gap": 0,
     "lead_first_turn": null,
     "lead_accel": null,
-    "phase_confidence": 0.6,
-    "n_reports_signal": 6,
+    "phase_confidence": 0.7,
+    "n_reports_signal": 7,
     "n_reports_4w": 20,
-    "calc_date": "2026-07-14",
+    "calc_date": "2026-07-15",
     "timing_state": "hold",
-    "timing_score": 35.0,
+    "timing_score": 33.5,
     "idx_trend_up": 0,
-    "idx_ret_4w": -19.53,
-    "idx_ret_12w": -26.15,
-    "idx_rsi14": 26.0,
+    "idx_ret_4w": -13.48,
+    "idx_ret_12w": -29.23,
+    "idx_rsi14": 15.6,
     "idx_high_break": 0,
-    "price_days": 123,
-    "idx_rs_3m": -28.76,
+    "price_days": 124,
+    "idx_rs_3m": -29.51,
     "idx_rs_up": 0,
     "breadth_pct": 0.0,
     "breadth_up": 0,
@@ -1441,17 +1441,17 @@
       {
         "ticker": "000720",
         "name": "현대건설",
-        "last_close": 101500.0
+        "last_close": 98000.0
       },
       {
         "ticker": "028050",
         "name": "삼성E&A",
-        "last_close": 41100.0
+        "last_close": 40150.0
       },
       {
         "ticker": "375500",
         "name": "DL이앤씨",
-        "last_close": 60300.0
+        "last_close": 59500.0
       }
     ],
     "etfs": [
@@ -1477,18 +1477,18 @@
     "lead_accel": null,
     "phase_confidence": 0.0,
     "n_reports_signal": 0,
-    "n_reports_4w": 4,
-    "calc_date": "2026-07-14",
+    "n_reports_4w": 5,
+    "calc_date": "2026-07-15",
     "timing_state": "관측부족",
-    "timing_score": 16.0,
+    "timing_score": 12.0,
     "idx_trend_up": 0,
-    "idx_ret_4w": -6.22,
-    "idx_ret_12w": -25.61,
-    "idx_rsi14": 39.8,
+    "idx_ret_4w": -7.92,
+    "idx_ret_12w": -33.24,
+    "idx_rsi14": 24.2,
     "idx_high_break": 0,
-    "price_days": 123,
-    "idx_rs_3m": -28.21,
-    "idx_rs_up": 1,
+    "price_days": 124,
+    "idx_rs_3m": -33.52,
+    "idx_rs_up": 0,
     "breadth_pct": 0.0,
     "breadth_up": 0,
     "l0_state": null,
@@ -1499,22 +1499,22 @@
       {
         "ticker": "012450",
         "name": "한화에어로스페이스",
-        "last_close": 936000.0
+        "last_close": 872000.0
       },
       {
         "ticker": "047810",
         "name": "한국항공우주",
-        "last_close": 143500.0
+        "last_close": 141100.0
       },
       {
         "ticker": "064350",
         "name": "현대로템",
-        "last_close": 170000.0
+        "last_close": 165400.0
       },
       {
         "ticker": "079550",
         "name": "LIG넥스원",
-        "last_close": 725000.0
+        "last_close": 665000.0
       }
     ],
     "etfs": [
@@ -1540,17 +1540,17 @@
     "lead_accel": null,
     "phase_confidence": 0.0,
     "n_reports_signal": 0,
-    "n_reports_4w": 3,
-    "calc_date": "2026-07-14",
+    "n_reports_4w": 2,
+    "calc_date": "2026-07-15",
     "timing_state": "관측부족",
     "timing_score": 12.0,
     "idx_trend_up": 0,
-    "idx_ret_4w": -37.46,
-    "idx_ret_12w": -20.12,
-    "idx_rsi14": 7.1,
+    "idx_ret_4w": -33.56,
+    "idx_ret_12w": -22.93,
+    "idx_rsi14": 7.7,
     "idx_high_break": 0,
-    "price_days": 123,
-    "idx_rs_3m": -22.73,
+    "price_days": 124,
+    "idx_rs_3m": -23.21,
     "idx_rs_up": 0,
     "breadth_pct": 0.0,
     "breadth_up": 0,
@@ -1562,17 +1562,17 @@
       {
         "ticker": "241560",
         "name": "두산밥캣",
-        "last_close": 61600.0
+        "last_close": 63200.0
       },
       {
         "ticker": "277810",
         "name": "레인보우로보틱스",
-        "last_close": 415000.0
+        "last_close": 400500.0
       },
       {
         "ticker": "454910",
         "name": "두산로보틱스",
-        "last_close": 70100.0
+        "last_close": 66700.0
       }
     ],
     "etfs": [
@@ -1599,16 +1599,16 @@
     "phase_confidence": 0.5,
     "n_reports_signal": 5,
     "n_reports_4w": 8,
-    "calc_date": "2026-07-14",
+    "calc_date": "2026-07-15",
     "timing_state": "hold",
     "timing_score": 32.9,
     "idx_trend_up": 0,
-    "idx_ret_4w": -20.34,
-    "idx_ret_12w": -1.32,
-    "idx_rsi14": 24.8,
+    "idx_ret_4w": -14.79,
+    "idx_ret_12w": 0.08,
+    "idx_rsi14": 23.9,
     "idx_high_break": 0,
-    "price_days": 123,
-    "idx_rs_3m": -3.92,
+    "price_days": 124,
+    "idx_rs_3m": -0.2,
     "idx_rs_up": 0,
     "breadth_pct": 0.0,
     "breadth_up": 0,
@@ -1620,22 +1620,22 @@
       {
         "ticker": "001440",
         "name": "대한전선",
-        "last_close": 28300.0
+        "last_close": 28000.0
       },
       {
         "ticker": "010120",
         "name": "LS ELECTRIC",
-        "last_close": 184500.0
+        "last_close": 187700.0
       },
       {
         "ticker": "267260",
         "name": "HD현대일렉트릭",
-        "last_close": 788000.0
+        "last_close": 797000.0
       },
       {
         "ticker": "298040",
         "name": "효성중공업",
-        "last_close": 2666000.0
+        "last_close": 2677000.0
       }
     ],
     "etfs": [
@@ -1662,16 +1662,16 @@
     "phase_confidence": 0.0,
     "n_reports_signal": 0,
     "n_reports_4w": 1,
-    "calc_date": "2026-07-14",
+    "calc_date": "2026-07-15",
     "timing_state": "관측부족",
     "timing_score": 12.0,
     "idx_trend_up": 0,
-    "idx_ret_4w": -20.79,
-    "idx_ret_12w": -15.92,
-    "idx_rsi14": 17.0,
+    "idx_ret_4w": -16.1,
+    "idx_ret_12w": -19.46,
+    "idx_rsi14": 14.8,
     "idx_high_break": 0,
-    "price_days": 123,
-    "idx_rs_3m": -18.52,
+    "price_days": 124,
+    "idx_rs_3m": -19.74,
     "idx_rs_up": 0,
     "breadth_pct": 0.0,
     "breadth_up": 0,
@@ -1683,17 +1683,17 @@
       {
         "ticker": "011170",
         "name": "롯데케미칼",
-        "last_close": 60600.0
+        "last_close": 59800.0
       },
       {
         "ticker": "011780",
         "name": "금호석유",
-        "last_close": 117400.0
+        "last_close": 116100.0
       },
       {
         "ticker": "051910",
         "name": "LG화학",
-        "last_close": 260500.0
+        "last_close": 255000.0
       }
     ],
     "etfs": [
@@ -1720,16 +1720,16 @@
     "phase_confidence": 0.0,
     "n_reports_signal": 0,
     "n_reports_4w": 8,
-    "calc_date": "2026-07-14",
+    "calc_date": "2026-07-15",
     "timing_state": "관측부족",
     "timing_score": 16.0,
     "idx_trend_up": 0,
-    "idx_ret_4w": -19.32,
-    "idx_ret_12w": -27.91,
-    "idx_rsi14": 19.2,
+    "idx_ret_4w": -12.66,
+    "idx_ret_12w": -28.11,
+    "idx_rsi14": 13.0,
     "idx_high_break": 0,
-    "price_days": 123,
-    "idx_rs_3m": -30.52,
+    "price_days": 124,
+    "idx_rs_3m": -28.39,
     "idx_rs_up": 1,
     "breadth_pct": 0.0,
     "breadth_up": 0,
@@ -1741,22 +1741,22 @@
       {
         "ticker": "004020",
         "name": "현대제철",
-        "last_close": 26800.0
+        "last_close": 26250.0
       },
       {
         "ticker": "005490",
         "name": "POSCO홀딩스",
-        "last_close": 308000.0
+        "last_close": 303500.0
       },
       {
         "ticker": "010130",
         "name": "고려아연",
-        "last_close": 1025000.0
+        "last_close": 1015000.0
       },
       {
         "ticker": "103140",
         "name": "풍산",
-        "last_close": 62800.0
+        "last_close": 60700.0
       }
     ],
     "etfs": [

@@ -10,7 +10,7 @@
       "n_targets": 0,
       "buy_score": 65.0,
       "rank": 1,
-      "calc_date": "2026-07-14"
+      "calc_date": "2026-07-15"
     },
     {
       "ticker": "015760",
@@ -18,11 +18,11 @@
       "eps_rev_z": null,
       "margin_trend": 0.0,
       "composite": 0.0,
-      "upside_pct": 28.5,
+      "upside_pct": 29.6,
       "n_targets": 2,
-      "buy_score": 59.6,
+      "buy_score": 60.8,
       "rank": 2,
-      "calc_date": "2026-07-14"
+      "calc_date": "2026-07-15"
     }
   ],
   "S1_battery": [
@@ -32,11 +32,11 @@
       "eps_rev_z": null,
       "margin_trend": 1.0,
       "composite": 1.0,
-      "upside_pct": 95.1,
+      "upside_pct": 103.7,
       "n_targets": 1,
       "buy_score": 87.5,
       "rank": 1,
-      "calc_date": "2026-07-14"
+      "calc_date": "2026-07-15"
     },
     {
       "ticker": "006400",
@@ -44,11 +44,11 @@
       "eps_rev_z": null,
       "margin_trend": 1.0,
       "composite": 1.0,
-      "upside_pct": 59.1,
+      "upside_pct": 63.7,
       "n_targets": 1,
       "buy_score": 85.0,
       "rank": 2,
-      "calc_date": "2026-07-14"
+      "calc_date": "2026-07-15"
     },
     {
       "ticker": "066970",
@@ -60,7 +60,7 @@
       "n_targets": 0,
       "buy_score": 65.0,
       "rank": 3,
-      "calc_date": "2026-07-14"
+      "calc_date": "2026-07-15"
     },
     {
       "ticker": "373220",
@@ -68,11 +68,11 @@
       "eps_rev_z": null,
       "margin_trend": -1.0,
       "composite": -1.0,
-      "upside_pct": 66.4,
+      "upside_pct": 69.8,
       "n_targets": 6,
       "buy_score": 62.5,
       "rank": 4,
-      "calc_date": "2026-07-14"
+      "calc_date": "2026-07-15"
     },
     {
       "ticker": "247540",
@@ -80,11 +80,11 @@
       "eps_rev_z": null,
       "margin_trend": -1.0,
       "composite": -1.0,
-      "upside_pct": 60.0,
+      "upside_pct": 70.2,
       "n_targets": 3,
       "buy_score": 57.5,
       "rank": 5,
-      "calc_date": "2026-07-14"
+      "calc_date": "2026-07-15"
     }
   ],
   "S1_display": [
@@ -94,11 +94,11 @@
       "eps_rev_z": null,
       "margin_trend": 1.0,
       "composite": 1.0,
-      "upside_pct": 75.4,
+      "upside_pct": 75.5,
       "n_targets": 6,
       "buy_score": 92.5,
       "rank": 1,
-      "calc_date": "2026-07-14"
+      "calc_date": "2026-07-15"
     },
     {
       "ticker": "213420",
@@ -106,11 +106,11 @@
       "eps_rev_z": null,
       "margin_trend": 0.0,
       "composite": 0.0,
-      "upside_pct": 127.6,
+      "upside_pct": 130.7,
       "n_targets": 3,
       "buy_score": 72.5,
       "rank": 2,
-      "calc_date": "2026-07-14"
+      "calc_date": "2026-07-15"
     }
   ],
   "S1_hardware": [
@@ -120,11 +120,11 @@
       "eps_rev_z": null,
       "margin_trend": 1.0,
       "composite": 1.0,
-      "upside_pct": 89.1,
+      "upside_pct": 95.0,
       "n_targets": 9,
       "buy_score": 100.0,
       "rank": 1,
-      "calc_date": "2026-07-14"
+      "calc_date": "2026-07-15"
     },
     {
       "ticker": "009150",
@@ -132,11 +132,11 @@
       "eps_rev_z": null,
       "margin_trend": 1.0,
       "composite": 1.0,
-      "upside_pct": 84.6,
+      "upside_pct": 88.8,
       "n_targets": 17,
       "buy_score": 92.5,
       "rank": 2,
-      "calc_date": "2026-07-14"
+      "calc_date": "2026-07-15"
     },
     {
       "ticker": "066570",
@@ -144,11 +144,11 @@
       "eps_rev_z": null,
       "margin_trend": 1.0,
       "composite": 1.0,
-      "upside_pct": 52.7,
+      "upside_pct": 52.8,
       "n_targets": 6,
       "buy_score": 87.5,
       "rank": 3,
-      "calc_date": "2026-07-14"
+      "calc_date": "2026-07-15"
     }
   ],
   "S1_semilarge": [
@@ -158,11 +158,11 @@
       "eps_rev_z": null,
       "margin_trend": 1.0,
       "composite": 1.0,
-      "upside_pct": 103.8,
+      "upside_pct": 97.2,
       "n_targets": 23,
       "buy_score": 100.0,
       "rank": 1,
-      "calc_date": "2026-07-14"
+      "calc_date": "2026-07-15"
     },
     {
       "ticker": "000660",
@@ -170,11 +170,11 @@
       "eps_rev_z": null,
       "margin_trend": 1.0,
       "composite": 1.0,
-      "upside_pct": 105.8,
+      "upside_pct": 98.5,
       "n_targets": 15,
       "buy_score": 100.0,
       "rank": 2,
-      "calc_date": "2026-07-14"
+      "calc_date": "2026-07-15"
     }
   ],
   "S1_semiparts": [
@@ -184,11 +184,11 @@
       "eps_rev_z": null,
       "margin_trend": 1.0,
       "composite": 1.0,
-      "upside_pct": 84.8,
+      "upside_pct": 87.2,
       "n_targets": 3,
       "buy_score": 87.5,
       "rank": 1,
-      "calc_date": "2026-07-14"
+      "calc_date": "2026-07-15"
     },
     {
       "ticker": "058470",
@@ -196,11 +196,11 @@
       "eps_rev_z": null,
       "margin_trend": 0.0,
       "composite": 0.0,
-      "upside_pct": 79.8,
+      "upside_pct": 77.8,
       "n_targets": 2,
       "buy_score": 72.5,
       "rank": 2,
-      "calc_date": "2026-07-14"
+      "calc_date": "2026-07-15"
     },
     {
       "ticker": "403870",
@@ -208,11 +208,11 @@
       "eps_rev_z": null,
       "margin_trend": -1.0,
       "composite": -1.0,
-      "upside_pct": 50.4,
+      "upside_pct": 50.0,
       "n_targets": 1,
       "buy_score": 57.5,
       "rank": 3,
-      "calc_date": "2026-07-14"
+      "calc_date": "2026-07-15"
     },
     {
       "ticker": "042700",
@@ -224,7 +224,7 @@
       "n_targets": 0,
       "buy_score": 35.0,
       "rank": 4,
-      "calc_date": "2026-07-14"
+      "calc_date": "2026-07-15"
     },
     {
       "ticker": "036930",
@@ -236,7 +236,7 @@
       "n_targets": 0,
       "buy_score": 35.0,
       "rank": 5,
-      "calc_date": "2026-07-14"
+      "calc_date": "2026-07-15"
     }
   ],
   "S1_software": [
@@ -250,7 +250,7 @@
       "n_targets": 0,
       "buy_score": 65.0,
       "rank": 1,
-      "calc_date": "2026-07-14"
+      "calc_date": "2026-07-15"
     },
     {
       "ticker": "018260",
@@ -258,11 +258,11 @@
       "eps_rev_z": null,
       "margin_trend": -1.0,
       "composite": -1.0,
-      "upside_pct": 31.4,
+      "upside_pct": 29.5,
       "n_targets": 5,
-      "buy_score": 47.8,
+      "buy_score": 45.7,
       "rank": 2,
-      "calc_date": "2026-07-14"
+      "calc_date": "2026-07-15"
     }
   ],
   "S2_entertainment": [
@@ -272,11 +272,11 @@
       "eps_rev_z": null,
       "margin_trend": 1.0,
       "composite": 1.0,
-      "upside_pct": 81.7,
-      "n_targets": 9,
+      "upside_pct": 86.4,
+      "n_targets": 10,
       "buy_score": 87.5,
       "rank": 1,
-      "calc_date": "2026-07-14"
+      "calc_date": "2026-07-15"
     },
     {
       "ticker": "041510",
@@ -284,11 +284,11 @@
       "eps_rev_z": null,
       "margin_trend": 0.0,
       "composite": 0.0,
-      "upside_pct": 77.6,
-      "n_targets": 1,
+      "upside_pct": 68.0,
+      "n_targets": 2,
       "buy_score": 72.5,
       "rank": 2,
-      "calc_date": "2026-07-14"
+      "calc_date": "2026-07-15"
     },
     {
       "ticker": "352820",
@@ -296,11 +296,11 @@
       "eps_rev_z": null,
       "margin_trend": -1.0,
       "composite": -1.0,
-      "upside_pct": 59.6,
+      "upside_pct": 65.0,
       "n_targets": 3,
       "buy_score": 57.5,
       "rank": 3,
-      "calc_date": "2026-07-14"
+      "calc_date": "2026-07-15"
     }
   ],
   "S2_game": [
@@ -310,11 +310,11 @@
       "eps_rev_z": null,
       "margin_trend": 1.0,
       "composite": 1.0,
-      "upside_pct": 67.0,
+      "upside_pct": 72.8,
       "n_targets": 4,
       "buy_score": 87.5,
       "rank": 1,
-      "calc_date": "2026-07-14"
+      "calc_date": "2026-07-15"
     },
     {
       "ticker": "036570",
@@ -326,7 +326,7 @@
       "n_targets": 0,
       "buy_score": 65.0,
       "rank": 2,
-      "calc_date": "2026-07-14"
+      "calc_date": "2026-07-15"
     }
   ],
   "S2_internet": [
@@ -336,11 +336,11 @@
       "eps_rev_z": null,
       "margin_trend": 1.0,
       "composite": 1.0,
-      "upside_pct": 71.5,
+      "upside_pct": 76.1,
       "n_targets": 5,
       "buy_score": 87.5,
       "rank": 1,
-      "calc_date": "2026-07-14"
+      "calc_date": "2026-07-15"
     },
     {
       "ticker": "035420",
@@ -348,11 +348,11 @@
       "eps_rev_z": null,
       "margin_trend": -1.0,
       "composite": -1.0,
-      "upside_pct": 76.5,
+      "upside_pct": 81.1,
       "n_targets": 11,
       "buy_score": 57.5,
       "rank": 2,
-      "calc_date": "2026-07-14"
+      "calc_date": "2026-07-15"
     }
   ],
   "S2_telecom": [
@@ -362,11 +362,11 @@
       "eps_rev_z": null,
       "margin_trend": 1.0,
       "composite": 1.0,
-      "upside_pct": 44.2,
-      "n_targets": 7,
+      "upside_pct": 45.0,
+      "n_targets": 9,
       "buy_score": 87.5,
       "rank": 1,
-      "calc_date": "2026-07-14"
+      "calc_date": "2026-07-15"
     },
     {
       "ticker": "032640",
@@ -374,11 +374,11 @@
       "eps_rev_z": null,
       "margin_trend": 1.0,
       "composite": 1.0,
-      "upside_pct": 37.6,
+      "upside_pct": 40.4,
       "n_targets": 7,
-      "buy_score": 84.8,
+      "buy_score": 87.5,
       "rank": 2,
-      "calc_date": "2026-07-14"
+      "calc_date": "2026-07-15"
     },
     {
       "ticker": "030200",
@@ -386,11 +386,11 @@
       "eps_rev_z": null,
       "margin_trend": 0.0,
       "composite": 0.0,
-      "upside_pct": 42.1,
+      "upside_pct": 45.1,
       "n_targets": 8,
       "buy_score": 72.5,
       "rank": 3,
-      "calc_date": "2026-07-14"
+      "calc_date": "2026-07-15"
     }
   ],
   "S3_auto": [
@@ -400,11 +400,11 @@
       "eps_rev_z": null,
       "margin_trend": 1.0,
       "composite": 1.0,
-      "upside_pct": 80.7,
-      "n_targets": 2,
+      "upside_pct": 61.6,
+      "n_targets": 4,
       "buy_score": 87.5,
       "rank": 1,
-      "calc_date": "2026-07-14"
+      "calc_date": "2026-07-15"
     },
     {
       "ticker": "005380",
@@ -412,11 +412,11 @@
       "eps_rev_z": null,
       "margin_trend": -1.0,
       "composite": -1.0,
-      "upside_pct": 73.4,
+      "upside_pct": 81.4,
       "n_targets": 7,
       "buy_score": 62.5,
       "rank": 2,
-      "calc_date": "2026-07-14"
+      "calc_date": "2026-07-15"
     },
     {
       "ticker": "000270",
@@ -424,11 +424,11 @@
       "eps_rev_z": null,
       "margin_trend": -1.0,
       "composite": -1.0,
-      "upside_pct": 74.7,
+      "upside_pct": 79.6,
       "n_targets": 7,
       "buy_score": 62.5,
       "rank": 3,
-      "calc_date": "2026-07-14"
+      "calc_date": "2026-07-15"
     },
     {
       "ticker": "012330",
@@ -436,11 +436,11 @@
       "eps_rev_z": null,
       "margin_trend": -1.0,
       "composite": -1.0,
-      "upside_pct": 68.7,
+      "upside_pct": 76.4,
       "n_targets": 9,
       "buy_score": 57.5,
       "rank": 4,
-      "calc_date": "2026-07-14"
+      "calc_date": "2026-07-15"
     }
   ],
   "S3_cosmetics": [
@@ -450,11 +450,11 @@
       "eps_rev_z": null,
       "margin_trend": 1.0,
       "composite": 1.0,
-      "upside_pct": 1069.5,
+      "upside_pct": 1086.4,
       "n_targets": 8,
       "buy_score": 87.5,
       "rank": 1,
-      "calc_date": "2026-07-14"
+      "calc_date": "2026-07-15"
     },
     {
       "ticker": "090430",
@@ -462,11 +462,11 @@
       "eps_rev_z": null,
       "margin_trend": 1.0,
       "composite": 1.0,
-      "upside_pct": 37.3,
+      "upside_pct": 39.2,
       "n_targets": 4,
-      "buy_score": 84.5,
+      "buy_score": 86.6,
       "rank": 2,
-      "calc_date": "2026-07-14"
+      "calc_date": "2026-07-15"
     },
     {
       "ticker": "051900",
@@ -474,11 +474,11 @@
       "eps_rev_z": null,
       "margin_trend": 1.0,
       "composite": 1.0,
-      "upside_pct": 14.7,
+      "upside_pct": 18.5,
       "n_targets": 2,
-      "buy_score": 59.0,
+      "buy_score": 63.3,
       "rank": 3,
-      "calc_date": "2026-07-14"
+      "calc_date": "2026-07-15"
     },
     {
       "ticker": "257390",
@@ -490,7 +490,7 @@
       "n_targets": 0,
       "buy_score": null,
       "rank": null,
-      "calc_date": "2026-07-14"
+      "calc_date": "2026-07-15"
     }
   ],
   "S3_retail": [
@@ -500,11 +500,11 @@
       "eps_rev_z": null,
       "margin_trend": 1.0,
       "composite": 1.0,
-      "upside_pct": 45.8,
+      "upside_pct": 49.4,
       "n_targets": 5,
       "buy_score": 87.5,
       "rank": 1,
-      "calc_date": "2026-07-14"
+      "calc_date": "2026-07-15"
     },
     {
       "ticker": "004170",
@@ -512,11 +512,11 @@
       "eps_rev_z": null,
       "margin_trend": 1.0,
       "composite": 1.0,
-      "upside_pct": 42.3,
+      "upside_pct": 49.9,
       "n_targets": 7,
       "buy_score": 87.5,
       "rank": 2,
-      "calc_date": "2026-07-14"
+      "calc_date": "2026-07-15"
     },
     {
       "ticker": "023530",
@@ -524,25 +524,37 @@
       "eps_rev_z": null,
       "margin_trend": 1.0,
       "composite": 1.0,
-      "upside_pct": 50.1,
+      "upside_pct": 58.7,
       "n_targets": 6,
       "buy_score": 87.5,
       "rank": 3,
-      "calc_date": "2026-07-14"
+      "calc_date": "2026-07-15"
     }
   ],
   "S4_food": [
+    {
+      "ticker": "271560",
+      "name": "오리온",
+      "eps_rev_z": null,
+      "margin_trend": 1.0,
+      "composite": 1.0,
+      "upside_pct": 40.2,
+      "n_targets": 8,
+      "buy_score": 87.5,
+      "rank": 1,
+      "calc_date": "2026-07-15"
+    },
     {
       "ticker": "003230",
       "name": "삼양식품",
       "eps_rev_z": null,
       "margin_trend": 1.0,
       "composite": 1.0,
-      "upside_pct": 69.8,
+      "upside_pct": 75.8,
       "n_targets": 6,
       "buy_score": 87.5,
-      "rank": 1,
-      "calc_date": "2026-07-14"
+      "rank": 2,
+      "calc_date": "2026-07-15"
     },
     {
       "ticker": "004370",
@@ -550,23 +562,11 @@
       "eps_rev_z": null,
       "margin_trend": 1.0,
       "composite": 1.0,
-      "upside_pct": 54.5,
+      "upside_pct": 56.9,
       "n_targets": 6,
       "buy_score": 87.5,
-      "rank": 2,
-      "calc_date": "2026-07-14"
-    },
-    {
-      "ticker": "271560",
-      "name": "오리온",
-      "eps_rev_z": null,
-      "margin_trend": 1.0,
-      "composite": 1.0,
-      "upside_pct": 34.6,
-      "n_targets": 8,
-      "buy_score": 81.4,
       "rank": 3,
-      "calc_date": "2026-07-14"
+      "calc_date": "2026-07-15"
     },
     {
       "ticker": "033780",
@@ -574,11 +574,11 @@
       "eps_rev_z": null,
       "margin_trend": 1.0,
       "composite": 1.0,
-      "upside_pct": 33.4,
-      "n_targets": 4,
-      "buy_score": 80.1,
+      "upside_pct": 33.3,
+      "n_targets": 5,
+      "buy_score": 80.0,
       "rank": 4,
-      "calc_date": "2026-07-14"
+      "calc_date": "2026-07-15"
     },
     {
       "ticker": "097950",
@@ -586,11 +586,11 @@
       "eps_rev_z": null,
       "margin_trend": -1.0,
       "composite": -1.0,
-      "upside_pct": 48.1,
+      "upside_pct": 52.8,
       "n_targets": 7,
       "buy_score": 57.5,
       "rank": 5,
-      "calc_date": "2026-07-14"
+      "calc_date": "2026-07-15"
     }
   ],
   "S5_medtech": [
@@ -600,11 +600,11 @@
       "eps_rev_z": null,
       "margin_trend": 1.0,
       "composite": 1.0,
-      "upside_pct": 87.6,
+      "upside_pct": 94.7,
       "n_targets": 2,
       "buy_score": 87.5,
       "rank": 1,
-      "calc_date": "2026-07-14"
+      "calc_date": "2026-07-15"
     },
     {
       "ticker": "328130",
@@ -616,7 +616,7 @@
       "n_targets": 0,
       "buy_score": 65.0,
       "rank": 2,
-      "calc_date": "2026-07-14"
+      "calc_date": "2026-07-15"
     },
     {
       "ticker": "214150",
@@ -624,11 +624,11 @@
       "eps_rev_z": null,
       "margin_trend": -1.0,
       "composite": -1.0,
-      "upside_pct": 47.5,
+      "upside_pct": 53.7,
       "n_targets": 1,
       "buy_score": 57.5,
       "rank": 3,
-      "calc_date": "2026-07-14"
+      "calc_date": "2026-07-15"
     },
     {
       "ticker": "145720",
@@ -636,11 +636,11 @@
       "eps_rev_z": null,
       "margin_trend": -1.0,
       "composite": -1.0,
-      "upside_pct": 80.7,
+      "upside_pct": 87.1,
       "n_targets": 2,
       "buy_score": 57.5,
       "rank": 4,
-      "calc_date": "2026-07-14"
+      "calc_date": "2026-07-15"
     }
   ],
   "S5_pharma": [
@@ -650,11 +650,11 @@
       "eps_rev_z": null,
       "margin_trend": 1.0,
       "composite": 1.0,
-      "upside_pct": 35.7,
+      "upside_pct": 38.9,
       "n_targets": 2,
-      "buy_score": 87.7,
+      "buy_score": 91.3,
       "rank": 1,
-      "calc_date": "2026-07-14"
+      "calc_date": "2026-07-15"
     },
     {
       "ticker": "068270",
@@ -662,11 +662,11 @@
       "eps_rev_z": null,
       "margin_trend": 1.0,
       "composite": 1.0,
-      "upside_pct": 52.8,
+      "upside_pct": 54.8,
       "n_targets": 4,
       "buy_score": 87.5,
       "rank": 2,
-      "calc_date": "2026-07-14"
+      "calc_date": "2026-07-15"
     },
     {
       "ticker": "196170",
@@ -674,11 +674,11 @@
       "eps_rev_z": null,
       "margin_trend": 1.0,
       "composite": 1.0,
-      "upside_pct": 58.0,
-      "n_targets": 2,
+      "upside_pct": 88.4,
+      "n_targets": 3,
       "buy_score": 87.5,
       "rank": 3,
-      "calc_date": "2026-07-14"
+      "calc_date": "2026-07-15"
     },
     {
       "ticker": "128940",
@@ -686,11 +686,11 @@
       "eps_rev_z": null,
       "margin_trend": -1.0,
       "composite": -1.0,
-      "upside_pct": 77.7,
+      "upside_pct": 90.1,
       "n_targets": 9,
       "buy_score": 57.5,
       "rank": 4,
-      "calc_date": "2026-07-14"
+      "calc_date": "2026-07-15"
     },
     {
       "ticker": "000100",
@@ -702,7 +702,7 @@
       "n_targets": 0,
       "buy_score": 35.0,
       "rank": 5,
-      "calc_date": "2026-07-14"
+      "calc_date": "2026-07-15"
     }
   ],
   "S6_bank": [
@@ -712,11 +712,11 @@
       "eps_rev_z": null,
       "margin_trend": null,
       "composite": null,
-      "upside_pct": 37.8,
+      "upside_pct": 40.1,
       "n_targets": 1,
-      "buy_score": 70.0,
+      "buy_score": 72.5,
       "rank": 1,
-      "calc_date": "2026-07-14"
+      "calc_date": "2026-07-15"
     },
     {
       "ticker": "055550",
@@ -724,11 +724,11 @@
       "eps_rev_z": null,
       "margin_trend": null,
       "composite": null,
-      "upside_pct": 20.6,
+      "upside_pct": 23.0,
       "n_targets": 4,
-      "buy_score": 50.7,
+      "buy_score": 53.4,
       "rank": 2,
-      "calc_date": "2026-07-14"
+      "calc_date": "2026-07-15"
     },
     {
       "ticker": "086790",
@@ -736,11 +736,11 @@
       "eps_rev_z": null,
       "margin_trend": null,
       "composite": null,
-      "upside_pct": 20.4,
+      "upside_pct": 19.2,
       "n_targets": 3,
-      "buy_score": 50.4,
+      "buy_score": 49.1,
       "rank": 3,
-      "calc_date": "2026-07-14"
+      "calc_date": "2026-07-15"
     },
     {
       "ticker": "105560",
@@ -748,11 +748,11 @@
       "eps_rev_z": null,
       "margin_trend": null,
       "composite": null,
-      "upside_pct": 14.3,
+      "upside_pct": 18.2,
       "n_targets": 4,
-      "buy_score": 43.6,
+      "buy_score": 48.0,
       "rank": 4,
-      "calc_date": "2026-07-14"
+      "calc_date": "2026-07-15"
     }
   ],
   "S6_insurance": [
@@ -762,11 +762,11 @@
       "eps_rev_z": null,
       "margin_trend": null,
       "composite": null,
-      "upside_pct": 38.7,
+      "upside_pct": 37.1,
       "n_targets": 7,
-      "buy_score": 71.0,
+      "buy_score": 69.2,
       "rank": 1,
-      "calc_date": "2026-07-14"
+      "calc_date": "2026-07-15"
     },
     {
       "ticker": "032830",
@@ -774,11 +774,11 @@
       "eps_rev_z": null,
       "margin_trend": null,
       "composite": null,
-      "upside_pct": 22.1,
+      "upside_pct": 25.6,
       "n_targets": 10,
-      "buy_score": 52.4,
+      "buy_score": 56.3,
       "rank": 2,
-      "calc_date": "2026-07-14"
+      "calc_date": "2026-07-15"
     },
     {
       "ticker": "001450",
@@ -786,11 +786,11 @@
       "eps_rev_z": null,
       "margin_trend": null,
       "composite": null,
-      "upside_pct": 7.8,
+      "upside_pct": 11.8,
       "n_targets": 7,
-      "buy_score": 36.3,
+      "buy_score": 40.8,
       "rank": 3,
-      "calc_date": "2026-07-14"
+      "calc_date": "2026-07-15"
     },
     {
       "ticker": "000810",
@@ -798,11 +798,11 @@
       "eps_rev_z": null,
       "margin_trend": null,
       "composite": null,
-      "upside_pct": 3.6,
+      "upside_pct": 5.4,
       "n_targets": 8,
-      "buy_score": 31.6,
+      "buy_score": 33.6,
       "rank": 4,
-      "calc_date": "2026-07-14"
+      "calc_date": "2026-07-15"
     }
   ],
   "S6_securities": [
@@ -812,11 +812,11 @@
       "eps_rev_z": null,
       "margin_trend": 1.0,
       "composite": 1.0,
-      "upside_pct": 48.6,
+      "upside_pct": 62.7,
       "n_targets": 9,
       "buy_score": 87.5,
       "rank": 1,
-      "calc_date": "2026-07-14"
+      "calc_date": "2026-07-15"
     },
     {
       "ticker": "016360",
@@ -824,11 +824,11 @@
       "eps_rev_z": null,
       "margin_trend": null,
       "composite": null,
-      "upside_pct": 56.5,
+      "upside_pct": 67.1,
       "n_targets": 4,
       "buy_score": 72.5,
       "rank": 2,
-      "calc_date": "2026-07-14"
+      "calc_date": "2026-07-15"
     },
     {
       "ticker": "006800",
@@ -836,11 +836,11 @@
       "eps_rev_z": null,
       "margin_trend": -1.0,
       "composite": -1.0,
-      "upside_pct": 75.8,
-      "n_targets": 3,
+      "upside_pct": 69.0,
+      "n_targets": 4,
       "buy_score": 57.5,
       "rank": 3,
-      "calc_date": "2026-07-14"
+      "calc_date": "2026-07-15"
     },
     {
       "ticker": "039490",
@@ -848,11 +848,11 @@
       "eps_rev_z": null,
       "margin_trend": -1.0,
       "composite": -1.0,
-      "upside_pct": 77.7,
+      "upside_pct": 86.7,
       "n_targets": 2,
       "buy_score": 57.5,
       "rank": 4,
-      "calc_date": "2026-07-14"
+      "calc_date": "2026-07-15"
     }
   ],
   "S7_construction": [
@@ -862,11 +862,11 @@
       "eps_rev_z": null,
       "margin_trend": 1.0,
       "composite": 1.0,
-      "upside_pct": 124.1,
+      "upside_pct": 132.1,
       "n_targets": 2,
       "buy_score": 87.5,
       "rank": 1,
-      "calc_date": "2026-07-14"
+      "calc_date": "2026-07-15"
     },
     {
       "ticker": "375500",
@@ -874,11 +874,11 @@
       "eps_rev_z": null,
       "margin_trend": 1.0,
       "composite": 1.0,
-      "upside_pct": 98.6,
-      "n_targets": 11,
+      "upside_pct": 94.2,
+      "n_targets": 14,
       "buy_score": 87.5,
       "rank": 2,
-      "calc_date": "2026-07-14"
+      "calc_date": "2026-07-15"
     },
     {
       "ticker": "028050",
@@ -886,11 +886,11 @@
       "eps_rev_z": null,
       "margin_trend": -1.0,
       "composite": -1.0,
-      "upside_pct": 63.0,
-      "n_targets": 12,
+      "upside_pct": 67.1,
+      "n_targets": 13,
       "buy_score": 57.5,
       "rank": 3,
-      "calc_date": "2026-07-14"
+      "calc_date": "2026-07-15"
     }
   ],
   "S7_defense": [
@@ -904,7 +904,7 @@
       "n_targets": 0,
       "buy_score": 65.0,
       "rank": 1,
-      "calc_date": "2026-07-14"
+      "calc_date": "2026-07-15"
     },
     {
       "ticker": "012450",
@@ -912,11 +912,11 @@
       "eps_rev_z": null,
       "margin_trend": -1.0,
       "composite": -1.0,
-      "upside_pct": 90.9,
+      "upside_pct": 104.9,
       "n_targets": 3,
       "buy_score": 57.5,
       "rank": 2,
-      "calc_date": "2026-07-14"
+      "calc_date": "2026-07-15"
     },
     {
       "ticker": "064350",
@@ -924,11 +924,11 @@
       "eps_rev_z": null,
       "margin_trend": -1.0,
       "composite": -1.0,
-      "upside_pct": 75.3,
-      "n_targets": 2,
+      "upside_pct": 82.6,
+      "n_targets": 3,
       "buy_score": 57.5,
       "rank": 3,
-      "calc_date": "2026-07-14"
+      "calc_date": "2026-07-15"
     },
     {
       "ticker": "047810",
@@ -936,11 +936,11 @@
       "eps_rev_z": null,
       "margin_trend": -1.0,
       "composite": -1.0,
-      "upside_pct": 36.6,
+      "upside_pct": 38.9,
       "n_targets": 1,
-      "buy_score": 53.7,
+      "buy_score": 56.3,
       "rank": 4,
-      "calc_date": "2026-07-14"
+      "calc_date": "2026-07-15"
     }
   ],
   "S7_holding": [
@@ -950,23 +950,11 @@
       "eps_rev_z": null,
       "margin_trend": 1.0,
       "composite": 1.0,
-      "upside_pct": 57.8,
+      "upside_pct": 62.5,
       "n_targets": 3,
       "buy_score": 87.5,
       "rank": 1,
-      "calc_date": "2026-07-14"
-    },
-    {
-      "ticker": "028260",
-      "name": "삼성물산",
-      "eps_rev_z": null,
-      "margin_trend": -1.0,
-      "composite": -1.0,
-      "upside_pct": 65.5,
-      "n_targets": 8,
-      "buy_score": 57.5,
-      "rank": 2,
-      "calc_date": "2026-07-14"
+      "calc_date": "2026-07-15"
     },
     {
       "ticker": "034730",
@@ -974,11 +962,23 @@
       "eps_rev_z": null,
       "margin_trend": -1.0,
       "composite": -1.0,
-      "upside_pct": 39.6,
+      "upside_pct": 44.8,
       "n_targets": 8,
-      "buy_score": 57.0,
+      "buy_score": 57.5,
+      "rank": 2,
+      "calc_date": "2026-07-15"
+    },
+    {
+      "ticker": "028260",
+      "name": "삼성물산",
+      "eps_rev_z": null,
+      "margin_trend": -1.0,
+      "composite": -1.0,
+      "upside_pct": 68.8,
+      "n_targets": 8,
+      "buy_score": 57.5,
       "rank": 3,
-      "calc_date": "2026-07-14"
+      "calc_date": "2026-07-15"
     }
   ],
   "S7_machinery": [
@@ -988,11 +988,11 @@
       "eps_rev_z": null,
       "margin_trend": 1.0,
       "composite": 1.0,
-      "upside_pct": 2235.5,
+      "upside_pct": 2176.4,
       "n_targets": 3,
       "buy_score": 100.0,
       "rank": 1,
-      "calc_date": "2026-07-14"
+      "calc_date": "2026-07-15"
     },
     {
       "ticker": "454910",
@@ -1000,11 +1000,11 @@
       "eps_rev_z": null,
       "margin_trend": 1.0,
       "composite": 1.0,
-      "upside_pct": 31.2,
+      "upside_pct": 37.9,
       "n_targets": 1,
-      "buy_score": 77.6,
+      "buy_score": 85.1,
       "rank": 2,
-      "calc_date": "2026-07-14"
+      "calc_date": "2026-07-15"
     },
     {
       "ticker": "277810",
@@ -1016,7 +1016,7 @@
       "n_targets": 0,
       "buy_score": 35.0,
       "rank": 3,
-      "calc_date": "2026-07-14"
+      "calc_date": "2026-07-15"
     }
   ],
   "S7_power": [
@@ -1026,11 +1026,11 @@
       "eps_rev_z": null,
       "margin_trend": 1.0,
       "composite": 1.0,
-      "upside_pct": 74.5,
+      "upside_pct": 72.5,
       "n_targets": 4,
       "buy_score": 87.5,
       "rank": 1,
-      "calc_date": "2026-07-14"
+      "calc_date": "2026-07-15"
     },
     {
       "ticker": "298040",
@@ -1038,11 +1038,11 @@
       "eps_rev_z": null,
       "margin_trend": 1.0,
       "composite": 1.0,
-      "upside_pct": 86.3,
+      "upside_pct": 85.5,
       "n_targets": 3,
       "buy_score": 87.5,
       "rank": 2,
-      "calc_date": "2026-07-14"
+      "calc_date": "2026-07-15"
     },
     {
       "ticker": "001440",
@@ -1050,11 +1050,11 @@
       "eps_rev_z": null,
       "margin_trend": 1.0,
       "composite": 1.0,
-      "upside_pct": 112.0,
+      "upside_pct": 114.3,
       "n_targets": 2,
       "buy_score": 87.5,
       "rank": 3,
-      "calc_date": "2026-07-14"
+      "calc_date": "2026-07-15"
     },
     {
       "ticker": "010120",
@@ -1062,25 +1062,37 @@
       "eps_rev_z": null,
       "margin_trend": 0.0,
       "composite": 0.0,
-      "upside_pct": 172.7,
+      "upside_pct": 168.0,
       "n_targets": 8,
       "buy_score": 72.5,
       "rank": 4,
-      "calc_date": "2026-07-14"
+      "calc_date": "2026-07-15"
     }
   ],
   "S7_ship": [
+    {
+      "ticker": "009540",
+      "name": "HD한국조선해양",
+      "eps_rev_z": null,
+      "margin_trend": 1.0,
+      "composite": 1.0,
+      "upside_pct": 83.5,
+      "n_targets": 1,
+      "buy_score": 100.0,
+      "rank": 1,
+      "calc_date": "2026-07-15"
+    },
     {
       "ticker": "010140",
       "name": "삼성중공업",
       "eps_rev_z": null,
       "margin_trend": 1.0,
       "composite": 1.0,
-      "upside_pct": 82.1,
-      "n_targets": 7,
+      "upside_pct": 90.0,
+      "n_targets": 8,
       "buy_score": 87.5,
-      "rank": 1,
-      "calc_date": "2026-07-14"
+      "rank": 2,
+      "calc_date": "2026-07-15"
     },
     {
       "ticker": "042660",
@@ -1088,23 +1100,11 @@
       "eps_rev_z": null,
       "margin_trend": 1.0,
       "composite": 1.0,
-      "upside_pct": 99.9,
-      "n_targets": 6,
+      "upside_pct": 102.6,
+      "n_targets": 7,
       "buy_score": 87.5,
-      "rank": 2,
-      "calc_date": "2026-07-14"
-    },
-    {
-      "ticker": "009540",
-      "name": "HD한국조선해양",
-      "eps_rev_z": null,
-      "margin_trend": 1.0,
-      "composite": 1.0,
-      "upside_pct": null,
-      "n_targets": 0,
-      "buy_score": 77.5,
       "rank": 3,
-      "calc_date": "2026-07-14"
+      "calc_date": "2026-07-15"
     },
     {
       "ticker": "329180",
@@ -1112,11 +1112,11 @@
       "eps_rev_z": null,
       "margin_trend": 1.0,
       "composite": 1.0,
-      "upside_pct": 22.7,
-      "n_targets": 5,
-      "buy_score": 68.0,
+      "upside_pct": 38.5,
+      "n_targets": 6,
+      "buy_score": 85.8,
       "rank": 4,
-      "calc_date": "2026-07-14"
+      "calc_date": "2026-07-15"
     }
   ],
   "S7_transport": [
@@ -1126,11 +1126,11 @@
       "eps_rev_z": null,
       "margin_trend": 1.0,
       "composite": 1.0,
-      "upside_pct": 53.4,
-      "n_targets": 3,
+      "upside_pct": 44.5,
+      "n_targets": 7,
       "buy_score": 87.5,
       "rank": 1,
-      "calc_date": "2026-07-14"
+      "calc_date": "2026-07-15"
     },
     {
       "ticker": "000120",
@@ -1142,7 +1142,7 @@
       "n_targets": 0,
       "buy_score": 35.0,
       "rank": 2,
-      "calc_date": "2026-07-14"
+      "calc_date": "2026-07-15"
     },
     {
       "ticker": "011200",
@@ -1150,11 +1150,11 @@
       "eps_rev_z": null,
       "margin_trend": -1.0,
       "composite": -1.0,
-      "upside_pct": 7.4,
+      "upside_pct": 6.3,
       "n_targets": 1,
-      "buy_score": 20.8,
+      "buy_score": 19.6,
       "rank": 3,
-      "calc_date": "2026-07-14"
+      "calc_date": "2026-07-15"
     }
   ],
   "S8_chemicals": [
@@ -1168,7 +1168,7 @@
       "n_targets": 0,
       "buy_score": 65.0,
       "rank": 1,
-      "calc_date": "2026-07-14"
+      "calc_date": "2026-07-15"
     },
     {
       "ticker": "011170",
@@ -1180,7 +1180,7 @@
       "n_targets": 0,
       "buy_score": 65.0,
       "rank": 2,
-      "calc_date": "2026-07-14"
+      "calc_date": "2026-07-15"
     },
     {
       "ticker": "011780",
@@ -1188,11 +1188,11 @@
       "eps_rev_z": null,
       "margin_trend": -1.0,
       "composite": -1.0,
-      "upside_pct": 51.2,
+      "upside_pct": 52.9,
       "n_targets": 2,
       "buy_score": 57.5,
       "rank": 3,
-      "calc_date": "2026-07-14"
+      "calc_date": "2026-07-15"
     }
   ],
   "S8_steel": [
@@ -1202,11 +1202,11 @@
       "eps_rev_z": null,
       "margin_trend": 1.0,
       "composite": 1.0,
-      "upside_pct": 90.5,
+      "upside_pct": 93.3,
       "n_targets": 3,
       "buy_score": 87.5,
       "rank": 1,
-      "calc_date": "2026-07-14"
+      "calc_date": "2026-07-15"
     },
     {
       "ticker": "103140",
@@ -1214,11 +1214,11 @@
       "eps_rev_z": null,
       "margin_trend": 1.0,
       "composite": 1.0,
-      "upside_pct": 75.2,
+      "upside_pct": 81.2,
       "n_targets": 1,
       "buy_score": 87.5,
       "rank": 2,
-      "calc_date": "2026-07-14"
+      "calc_date": "2026-07-15"
     },
     {
       "ticker": "010130",
@@ -1230,7 +1230,7 @@
       "n_targets": 0,
       "buy_score": 65.0,
       "rank": 3,
-      "calc_date": "2026-07-14"
+      "calc_date": "2026-07-15"
     },
     {
       "ticker": "004020",
@@ -1238,11 +1238,11 @@
       "eps_rev_z": null,
       "margin_trend": -1.0,
       "composite": -1.0,
-      "upside_pct": 71.6,
+      "upside_pct": 75.2,
       "n_targets": 4,
       "buy_score": 57.5,
       "rank": 4,
-      "calc_date": "2026-07-14"
+      "calc_date": "2026-07-15"
     }
   ],
   "S9_energy": [
@@ -1252,11 +1252,11 @@
       "eps_rev_z": null,
       "margin_trend": 1.0,
       "composite": 1.0,
-      "upside_pct": 29.9,
+      "upside_pct": 37.9,
       "n_targets": 4,
-      "buy_score": 76.1,
+      "buy_score": 85.1,
       "rank": 1,
-      "calc_date": "2026-07-14"
+      "calc_date": "2026-07-15"
     },
     {
       "ticker": "078930",
@@ -1268,7 +1268,7 @@
       "n_targets": 0,
       "buy_score": 65.0,
       "rank": 2,
-      "calc_date": "2026-07-14"
+      "calc_date": "2026-07-15"
     },
     {
       "ticker": "096770",
@@ -1276,11 +1276,11 @@
       "eps_rev_z": null,
       "margin_trend": -1.0,
       "composite": -1.0,
-      "upside_pct": 72.4,
+      "upside_pct": 81.1,
       "n_targets": 2,
       "buy_score": 57.5,
       "rank": 3,
-      "calc_date": "2026-07-14"
+      "calc_date": "2026-07-15"
     }
   ]
 }
