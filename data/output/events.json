@@ -1,5 +1,31 @@
 [
   {
+    "date": "2026-07-16",
+    "level2_id": "S9_energy",
+    "level2_name": "정유·에너지",
+    "event_type": "timing_watch",
+    "from_state": "관측부족",
+    "to_state": "watch",
+    "detail": {
+      "timing_score": 81.5,
+      "rs_3m": 13.72,
+      "breadth_pct": 66.7
+    }
+  },
+  {
+    "date": "2026-07-16",
+    "level2_id": "S1_software",
+    "level2_name": "소프트웨어·IT서비스",
+    "event_type": "timing_watch",
+    "from_state": "hold",
+    "to_state": "watch",
+    "detail": {
+      "timing_score": 67.0,
+      "rs_3m": 46.97,
+      "breadth_pct": 50.0
+    }
+  },
+  {
     "date": "2026-07-14",
     "level2_id": "S7_ship",
     "level2_name": "조선",
