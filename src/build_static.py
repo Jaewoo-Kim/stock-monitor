@@ -635,6 +635,25 @@ def build_events(con, limit: int = 40) -> list[dict]:
     return out
 
 
+def build_ir_calendar(con) -> list[dict]:
+    """관심종목 IR·배당 캘린더 (data/seed/watchlist.json 기반, DART 공시)."""
+    rows = con.execute(
+        """
+        SELECT e.ticker, c.name, e.event_type, e.rcept_dt, e.report_nm, e.dart_url
+        FROM ir_events e
+        LEFT JOIN companies c ON e.ticker = c.ticker
+        ORDER BY e.rcept_dt DESC
+        """
+    ).fetchall()
+    return [
+        {
+            "ticker": ticker, "name": name or ticker, "event_type": etype,
+            "date": rcept_dt, "title": report_nm, "dart_url": dart_url,
+        }
+        for ticker, name, etype, rcept_dt, report_nm, dart_url in rows
+    ]
+
+
 def build_meta(con) -> dict:
     n_reports = con.execute("SELECT COUNT(*) FROM report_events").fetchone()[0]
     n_companies = con.execute(
@@ -672,6 +691,7 @@ def run() -> None:
         market_share    = build_market_share(con)
         company_briefs  = build_company_briefs(con)
         events          = build_events(con)
+        ir_calendar     = build_ir_calendar(con)
         meta            = build_meta(con)
     finally:
         con.close()
@@ -688,6 +708,7 @@ def run() -> None:
     _write("market_share.json",    market_share)
     _write("company_briefs.json",  company_briefs)
     _write("events.json",          events)
+    _write("ir_calendar.json",     ir_calendar)
     _write("meta.json",            meta)
 
     log.info("빌드 완료 → %s", OUTPUT)

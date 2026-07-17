@@ -25,6 +25,12 @@ chmod +x setup.sh   # 압축 해제 시 실행권한이 풀릴 수 있음
 가상환경 생성, 의존성 설치, `.env` 생성, git 초기화를 한 번에 처리한다.
 `.env`가 생성되면 안내된 링크에서 API 키를 발급해 채운다 (DART·ECOS·Gemini는 무료).
 
+**텔레그램 알림 봇 발급** (무료):
+1. 텔레그램에서 `@BotFather` 검색 → `/newbot` → 안내에 따라 봇 생성 → 발급된 토큰을 `TELEGRAM_BOT_TOKEN`에 입력
+2. 생성된 봇과 대화 시작 (아무 메시지나 전송)
+3. `https://api.telegram.org/bot<토큰>/getUpdates` 접속 → 응답의 `chat.id` 값을 `TELEGRAM_CHAT_ID`에 입력
+4. 로컬 테스트: `python src/notify/telegram.py` (토큰 미설정 시 자동 skip, 알림 대상 없으면 무전송)
+
 ### 2. private repo 연결 (아직 안 했다면)
 
 ```bash
