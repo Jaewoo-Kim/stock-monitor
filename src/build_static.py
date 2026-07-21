@@ -32,6 +32,19 @@ _L0_TURN = {"turning_up": 1.0, "rising": 0.8, "bottoming": 0.4, "falling": 0.0}
 
 TARGET_WINDOW_WEEKS = 12  # 목표주가 컨센서스 집계 윈도우 (stock_scorer._upside 와 동일)
 
+# 목표가/현재가 배율이 이 범위를 벗어나면 파싱 오류로 간주(stock_scorer.py와 동일 —
+# 백테스트로 실제 사례 확인: 두산밥캣 목표가 2건이 종가의 30배). 전량 탈락 시 원본 유지.
+SANE_RATIO_LO = 0.2
+SANE_RATIO_HI = 5.0
+
+
+def _sane_targets(targets: list[float], close: float | None) -> list[float]:
+    """현재가 대비 배율이 비현실적인 목표가(파싱 오류 추정)를 절사 전에 제외."""
+    if not close or close <= 0:
+        return targets
+    cleaned = [t for t in targets if SANE_RATIO_LO <= t / close <= SANE_RATIO_HI]
+    return cleaned or targets
+
 
 def _trimmed_mean(values: list[float]) -> float | None:
     """최상위·최하위 1개씩 제거 후 평균 (3개 미만이면 단순평균 — 절사 불가)."""
@@ -105,6 +118,7 @@ def _industry_target_consensus(con, weeks: int = TARGET_WINDOW_WEEKS) -> dict[st
         close = closes.get(ticker)
         if not close or close <= 0:
             continue
+        targets = _sane_targets(targets, close)
         avg_target = _trimmed_mean(targets)  # 종목 내 여러 리포트 목표가부터 절사평균
         upside = (avg_target - close) / close * 100
         by_level2.setdefault(ticker_level2[ticker], []).append(upside)
@@ -657,9 +671,9 @@ def build_company_briefs(con) -> dict[str, dict]:
     for ticker, name, level2_id, level2_name in companies:
         br = briefs.get(ticker, {})
         a  = analyst.get(ticker, {})
-        avg_t = round(_trimmed_mean(a["targets"])) if a.get("targets") else None
         q  = quant.get(ticker, {})
         p  = price.get(ticker, {})
+        avg_t = round(_trimmed_mean(_sane_targets(a["targets"], p.get("close")))) if a.get("targets") else None
         risks = None
         if br.get("risks"):
             try:

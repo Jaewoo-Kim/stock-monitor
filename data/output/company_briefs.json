@@ -7807,7 +7807,7 @@
       "n_buy": 3,
       "n_hold": 0,
       "n_sell": 0,
-      "avg_target": 2000000,
+      "avg_target": 96000,
       "latest_target": 96000.0,
       "recent": [
         {
@@ -7886,7 +7886,7 @@
     "quant": {
       "buy_score": 100.0,
       "rank_in_level2": 1,
-      "upside_pct": 3069.6,
+      "upside_pct": 52.1,
       "composite": 1.0,
       "timing_state": "관측부족",
       "timing_score": 20.0
@@ -8364,7 +8364,7 @@
       "n_buy": 6,
       "n_hold": 0,
       "n_sell": 0,
-      "avg_target": 4725000,
+      "avg_target": 4966667,
       "latest_target": 185000.0,
       "recent": [
         {
@@ -8450,7 +8450,7 @@
     "quant": {
       "buy_score": 87.5,
       "rank_in_level2": 2,
-      "upside_pct": 64.7,
+      "upside_pct": 73.2,
       "composite": 1.0,
       "timing_state": "hold",
       "timing_score": 40.9

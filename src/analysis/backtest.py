@@ -25,6 +25,11 @@ if str(ROOT / "src") not in sys.path:
     sys.path.insert(0, str(ROOT / "src"))
 
 from db import connect
+from signals.timing import (
+    OVERSOLD_DEV20_MAX,
+    OVERSOLD_RET5D_MAX,
+    OVERSOLD_RSI_MAX,
+)
 
 log = logging.getLogger(__name__)
 
@@ -32,6 +37,9 @@ LOOKBACK = 60   # RS·추세 계산 (3개월)
 FWD_DAYS = 20   # forward 4주
 STEP = 3        # as-of 간격(거래일)
 OUTPUT = ROOT / "data" / "output"
+
+OVERSOLD_LOOKBACK = 20            # MA20 계산 최소 거래일
+OVERSOLD_FWD_SET = (5, 10, 20)    # 낙폭과대 이후 forward 거래일 다지점 검증
 
 
 def _sma(v: list[float], n: int, end: int) -> float | None:
@@ -63,6 +71,101 @@ def _spearman(xs: list[float], ys: list[float]) -> float | None:
     dx = sum((rx[i] - mx) ** 2 for i in range(n)) ** 0.5
     dy = sum((ry[i] - my) ** 2 for i in range(n)) ** 0.5
     return num / (dx * dy) if dx and dy else None
+
+
+def _rsi14(closes: list[float]) -> float | None:
+    period = 14
+    if len(closes) < period + 1:
+        return None
+    gains = losses = 0.0
+    for i in range(len(closes) - period, len(closes)):
+        d = closes[i] - closes[i - 1]
+        if d >= 0:
+            gains += d
+        else:
+            losses -= d
+    avg_gain, avg_loss = gains / period, losses / period
+    if avg_loss == 0:
+        return 100.0
+    return 100 - 100 / (1 + avg_gain / avg_loss)
+
+
+def _run_oversold(ind_series: dict) -> dict:
+    """단기 낙폭과대(oversold_flag) 신호 검증 — as-of 시점 룩어헤드 없이 재구성해
+    forward 수익률(5/10/20 거래일)을 baseline(전체 관측치)과 비교.
+
+    일별 관측치는 연속된 날짜끼리 자기상관이 크므로(같은 급락 구간이 여러 날
+    반복 플래그됨), 연속 구간을 하나의 '이벤트'로 묶어 최초일 기준으로도 별도 집계
+    — 이벤트 단위가 실질적인 유효 표본 수에 더 가깝다.
+    """
+    max_fwd = max(OVERSOLD_FWD_SET)
+    all_obs: list[dict] = []
+    flagged_by_ind: dict[str, list[int]] = {}
+
+    for level2_id, series in ind_series.items():
+        closes = [c for _, c in series]
+        n = len(closes)
+        idxs = []
+        for i in range(OVERSOLD_LOOKBACK, n - max_fwd):
+            window = closes[: i + 1]
+            ma20 = sum(window[-20:]) / 20
+            if ma20 == 0:
+                continue
+            dev20 = (closes[i] - ma20) / ma20 * 100
+            if closes[i - 5] <= 0:
+                continue
+            ret5 = (closes[i] - closes[i - 5]) / closes[i - 5] * 100
+            rsi14 = _rsi14(window[-15:]) if len(window) >= 15 else None
+            if rsi14 is None:
+                continue
+            fwd = {f: (closes[i + f] - closes[i]) / closes[i] * 100 for f in OVERSOLD_FWD_SET}
+            flagged = (ret5 <= OVERSOLD_RET5D_MAX and rsi14 <= OVERSOLD_RSI_MAX
+                       and dev20 <= OVERSOLD_DEV20_MAX)
+            all_obs.append({"flagged": flagged, **fwd})
+            if flagged:
+                idxs.append(i)
+        if idxs:
+            flagged_by_ind[level2_id] = idxs
+
+    def _avg(vals: list[float]) -> float | None:
+        return round(sum(vals) / len(vals), 2) if vals else None
+
+    def _winrate(vals: list[float]) -> float | None:
+        return round(sum(1 for v in vals if v > 0) / len(vals) * 100, 1) if vals else None
+
+    def _summarize(obs: list[dict]) -> dict:
+        return {
+            "n_obs": len(obs),
+            **{f"fwd{f}_avg_pct": _avg([o[f] for o in obs]) for f in OVERSOLD_FWD_SET},
+            **{f"fwd{f}_winrate": _winrate([o[f] for o in obs]) for f in OVERSOLD_FWD_SET},
+        }
+
+    baseline = _summarize(all_obs)
+    flagged_daily = _summarize([o for o in all_obs if o["flagged"]])
+
+    # 연속 구간(같은 급락 에피소드)을 1건으로 묶어 최초일만 채택 — 일별 관측치는
+    # 자기상관이 커서(같은 급락이 여러 날 반복 플래그) 유효 표본을 과대추정하므로 보정
+    event_obs: list[dict] = []
+    for level2_id, idxs in flagged_by_ind.items():
+        closes = [c for _, c in ind_series[level2_id]]
+        prev = None
+        for i in sorted(idxs):
+            if prev is None or i - prev > 1:
+                event_obs.append({f: (closes[i + f] - closes[i]) / closes[i] * 100 for f in OVERSOLD_FWD_SET})
+            prev = i
+    events = {"n_events": len(event_obs), **{k: v for k, v in _summarize(event_obs).items() if k != "n_obs"}}
+
+    return {
+        "thresholds": {
+            "ret5d_max": OVERSOLD_RET5D_MAX, "rsi_max": OVERSOLD_RSI_MAX, "dev20_max": OVERSOLD_DEV20_MAX,
+        },
+        "baseline": baseline,
+        "flagged_daily": flagged_daily,
+        "flagged_events": events,
+        "note": "이벤트=연속 플래그 구간을 1건으로 묶은 것(자기상관 보정, 유효표본에 가까움). "
+                "fwd5·10일은 baseline 대비 초과수익 확인되나 fwd20일은 baseline보다 낮음 — "
+                "낙폭과대는 초단기(~1주) 되돌림 참고용이며 1개월 이상 시계에서는 근거로 쓰지 않는다.",
+    }
 
 
 def run() -> dict:
@@ -124,6 +227,8 @@ def run() -> dict:
     up = [obs_fwd[k] for k in range(len(obs_fwd)) if obs_trend[k] == 1]
     dn = [obs_fwd[k] for k in range(len(obs_fwd)) if obs_trend[k] == 0]
 
+    oversold = _run_oversold(ind_series)
+
     result = {
         "as_of": datetime.now().isoformat(timespec="seconds"),
         "n_obs": len(obs_fwd),
@@ -136,6 +241,7 @@ def run() -> dict:
         "trend_dn_fwd_pct": round(sum(dn) / len(dn), 2) if dn else None,
         "avg_fwd_pct": round(sum(obs_fwd) / len(obs_fwd), 2) if obs_fwd else None,
         "note": "가격이력 ~6개월 · 표본 소량 · 디렉셔널 참고용",
+        "oversold": oversold,
     }
 
     OUTPUT.mkdir(parents=True, exist_ok=True)
@@ -144,6 +250,10 @@ def run() -> dict:
     log.info("backtest: n=%d IC=%s RS상위 fwd=%s%% RS하위=%s%%",
              result["n_obs"], result["ic_rs_fwd"],
              result["rs_high_fwd_pct"], result["rs_low_fwd_pct"])
+    log.info("oversold backtest: events=%d fwd5=%s%% fwd20=%s%% (baseline fwd5=%s%% fwd20=%s%%)",
+             oversold["flagged_events"]["n_events"],
+             oversold["flagged_events"]["fwd5_avg_pct"], oversold["flagged_events"]["fwd20_avg_pct"],
+             oversold["baseline"]["fwd5_avg_pct"], oversold["baseline"]["fwd20_avg_pct"])
     return result
 
 

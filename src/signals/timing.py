@@ -21,6 +21,13 @@
   방향 기반)은 그대로 두고, timing_score에 소폭 가산 + UI에 별도 배지로만
   표시 — 사이클 하강 중에도 "매수 적기"로 둔갑시키지 않는다.
 
+  백테스트 검증(src/analysis/backtest.py `_run_oversold`, 이벤트 36건, 20개 산업
+  분산): forward 5·10거래일은 baseline 대비 초과수익(+1.9%p/+0.0%p, 승률
+  63.9%/63.9% vs 53.6%/50.9%)이 확인되나, forward 20거래일은 baseline보다
+  오히려 낮음(-0.58% vs +2.76%, 승률 50.0% vs 46.7% — 거의 우위 없음). 즉
+  효과는 초단기(~1주)에 한정되고 1개월 시계에서는 반전 위험이 있다 — 그래서
+  timing_state를 바꾸지 않고 소폭 가산에 그친다.
+
 산출물: timing_signals 테이블.
 """
 from __future__ import annotations

@@ -134,6 +134,21 @@ def _composite(eps_z_norm: float | None, mtrend: int | None) -> float | None:
 # 상승여력 (목표가 대비 현재가)
 # ─────────────────────────────────────
 
+# 목표가/현재가 배율이 이 범위를 벗어나면 파싱 오류로 간주(백테스트로 확인된 실제
+# 사례: 두산밥캣 목표가 2건이 종가의 30배— 단순 절사평균만으로는 다수(2/3건)가
+# 같은 방향 오류일 때 걸러내지 못함). 전량 탈락 시엔 원본을 그대로 사용(과잉 제거 방지).
+SANE_RATIO_LO = 0.2
+SANE_RATIO_HI = 5.0
+
+
+def _sane_targets(targets: list[float], close: float | None) -> list[float]:
+    """현재가 대비 배율이 비현실적인 목표가(파싱 오류 추정)를 절사 전에 제외."""
+    if not close or close <= 0:
+        return targets
+    cleaned = [t for t in targets if SANE_RATIO_LO <= t / close <= SANE_RATIO_HI]
+    return cleaned or targets
+
+
 def _trimmed_mean(values: list[float]) -> float | None:
     """최상위·최하위 1개씩 제거 후 평균 (3개 미만이면 단순평균 — 절사 불가)."""
     if not values:
@@ -165,6 +180,7 @@ def _upside(con, ticker: str, calc_date: str, weeks: int = 12) -> tuple[float | 
     close = _latest_close(con, ticker)
     if not targets or not close or close <= 0:
         return None, 0
+    targets = _sane_targets(targets, close)
     avg_target = _trimmed_mean(targets)
     return round((avg_target - close) / close * 100, 1), len(targets)
 
