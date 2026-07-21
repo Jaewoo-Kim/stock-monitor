@@ -13,6 +13,14 @@
   caution — 둔화·침체                                   → 주의
   관측부족 — 신호/가격 데이터 부족
 
+보조 신호 — 단기 낙폭과대(oversold_flag):
+  서비스 취지(CLAUDE.md)상 일간 등락 자체를 헤드라인 신호로 쓰지 않는다. 다만
+  "그날그날 주가에 따라 타이밍이 좋아질 수 있다"(단기 과매도 되돌림 후보)는
+  현실을 반영하기 위해, 1주 급락 + RSI 과매도 + 20일선 이격 과다가 동시에
+  나타날 때만 별도 플래그로 노출한다. 위 buy/watch/hold/caution 판정(사이클
+  방향 기반)은 그대로 두고, timing_score에 소폭 가산 + UI에 별도 배지로만
+  표시 — 사이클 하강 중에도 "매수 적기"로 둔갑시키지 않는다.
+
 산출물: timing_signals 테이블.
 """
 from __future__ import annotations
@@ -34,6 +42,11 @@ MIN_DAYS_TREND = 60   # MA60 계산 최소 거래일
 MIN_DAYS_MOM   = 20   # 4주 모멘텀 최소 거래일
 RSI_PERIOD     = 14
 HIGH_WINDOW    = 40   # 8주 ≈ 40 거래일
+
+# 단기 낙폭과대 판정 임계값 — 세 조건 동시 충족 시에만 플래그(노이즈 최소화)
+OVERSOLD_RET5D_MAX = -7.0   # 5거래일(1주) 수익률 -7% 이하
+OVERSOLD_RSI_MAX   = 32.0   # RSI(14) 32 이하 (과매도)
+OVERSOLD_DEV20_MAX = -8.0   # 20일선 대비 이격도 -8% 이하
 
 
 # ─────────────────────────────────────
@@ -80,6 +93,27 @@ def _rsi(values: list[float], period: int = RSI_PERIOD) -> float | None:
         return 100.0
     rs = avg_gain / avg_loss
     return round(100 - 100 / (1 + rs), 1)
+
+
+def _dev_from_ma(values: list[float], ma: float | None) -> float | None:
+    """최근 종가의 n일 이동평균 대비 이격도 %."""
+    if ma is None or ma == 0 or not values:
+        return None
+    return round((values[-1] - ma) / ma * 100, 2)
+
+
+def _oversold_flag(ret_5d: float | None, rsi14: float | None, dev_ma20: float | None) -> int | None:
+    """1주 급락 + RSI 과매도 + 20일선 이격 과다 동시 충족 시 1 (단기 낙폭과대).
+
+    사이클 방향과 무관한 보조 신호 — 세 조건 모두 있어야 판정 가능.
+    """
+    if ret_5d is None or rsi14 is None or dev_ma20 is None:
+        return None
+    return 1 if (
+        ret_5d <= OVERSOLD_RET5D_MAX
+        and rsi14 <= OVERSOLD_RSI_MAX
+        and dev_ma20 <= OVERSOLD_DEV20_MAX
+    ) else 0
 
 
 def _high_break(values: list[float], window: int = HIGH_WINDOW) -> int | None:
@@ -171,18 +205,26 @@ def calc_price_indicators(con, level2_id: str) -> dict:
     if breadth is not None and breadth_prev is not None:
         breadth_up = 1 if breadth > breadth_prev else 0
 
+    # 단기 낙폭과대(과매도 되돌림 후보) — 사이클 방향과 별개의 보조 신호
+    rsi14 = _rsi(closes)
+    ret_5d = _return_pct(closes, 5)
+    dev_ma20 = _dev_from_ma(closes, ma20)
+
     return {
         "idx_ma20":       round(ma20, 2) if ma20 else None,
         "idx_ma60":       round(ma60, 2) if ma60 else None,
         "idx_trend_up":   trend_up,
         "idx_ret_4w":     _return_pct(closes, MIN_DAYS_MOM),
         "idx_ret_12w":    _return_pct(closes, MIN_DAYS_TREND),
-        "idx_rsi14":      _rsi(closes),
+        "idx_rsi14":      rsi14,
         "idx_high_break": _high_break(closes),
         "idx_rs_3m":      rs_3m,
         "idx_rs_up":      rs_up,
         "breadth_pct":    breadth,
         "breadth_up":     breadth_up,
+        "idx_ret_5d":     ret_5d,
+        "idx_dev_ma20":   dev_ma20,
+        "oversold_flag":  _oversold_flag(ret_5d, rsi14, dev_ma20),
         "price_days":     n,
     }
 
@@ -299,6 +341,8 @@ def _score(cyc: dict | None, px: dict, base: float) -> float:
     rsi = px["idx_rsi14"]
     if rsi is not None and rsi > 75:   # 과매수 → 추격매수 감점
         s -= 6
+    if px.get("oversold_flag") == 1:   # 단기 낙폭과대 → 되돌림 여지 소폭 가산(주 신호는 아님)
+        s += 8
     return round(max(0, min(100, s)), 1)
 
 
@@ -330,14 +374,16 @@ def run(con=None, calc_date: str | None = None) -> None:
                     (level2_id, calc_date, idx_ma20, idx_ma60, idx_trend_up,
                      idx_ret_4w, idx_ret_12w, idx_rsi14, idx_high_break,
                      idx_rs_3m, idx_rs_up, breadth_pct, breadth_up,
+                     idx_ret_5d, idx_dev_ma20, oversold_flag,
                      price_days, timing_state, timing_score)
-                VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
+                VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
                 """,
                 (
                     level2_id, calc_date, px["idx_ma20"], px["idx_ma60"],
                     px["idx_trend_up"], px["idx_ret_4w"], px["idx_ret_12w"],
                     px["idx_rsi14"], px["idx_high_break"],
                     px["idx_rs_3m"], px["idx_rs_up"], px["breadth_pct"], px["breadth_up"],
+                    px["idx_ret_5d"], px["idx_dev_ma20"], px["oversold_flag"],
                     px["price_days"], state, score,
                 ),
             )

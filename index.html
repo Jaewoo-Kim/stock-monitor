@@ -71,6 +71,7 @@
   .b-amber{background:var(--amber-soft);color:#8a5a06}
   .b-grey{background:var(--chip);color:#5b6573}
   .b-down{background:var(--down-soft);color:#a52a2a}
+  .b-oversold{background:#f1ecfb;color:#5b3fae}
 
   /* ── KPI stat 카드 ── */
   .stat{padding:17px 19px;display:flex;flex-direction:column;gap:3px}
@@ -381,6 +382,12 @@ const TIMING = {
   '관측부족':{ label:'관측부족',  cls:'b-grey', vcls:'hold',    desc:'리포트·가격 데이터 부족' },
 };
 function timingChip(state){ const t = TIMING[state]||TIMING['관측부족']; return `<span class="badge tchip ${t.cls}">${t.label}</span>`; }
+// 단기 낙폭과대(과매도 되돌림 후보) — 사이클 방향과 별개의 보조 배지
+function oversoldBadge(ind){
+  if (ind.oversold_flag !== 1) return '';
+  const tip = `1주 ${ind.idx_ret_5d!=null?ind.idx_ret_5d+'%':'—'} · RSI ${ind.idx_rsi14!=null?ind.idx_rsi14:'—'} · 20일선 대비 ${ind.idx_dev_ma20!=null?ind.idx_dev_ma20+'%':'—'}`.replace(/"/g,'&quot;');
+  return `<span class="badge tchip b-oversold" title="${tip}">⚡ 낙폭과대</span>`;
+}
 const L0_STATE = {
   turning_up: { label:'업황 바닥 통과', cls:'b-up' },
   rising:     { label:'업황 상승',      cls:'b-up' },
@@ -480,14 +487,18 @@ function indCard(ind){
          <div class="kpi" style="flex:1"><div class="kl">리포트 (4주)</div><div class="kv num mute">${ind.n_reports_4w}건 · 신호 임계치 미달</div></div>
        </div>`;
   const comp = (ind.companies||[]).slice(0,3).map(c=>c.name).join(' · ') || '대표종목 미지정';
+  const targetKpi = ind.target_upside_avg != null
+    ? `<div class="kpi"><div class="kl">목표가 컨센서스(절사평균)</div><div class="kv num">${pctTxt(ind.target_upside_avg)} <span class="sub" style="font-size:9.5px">· ${ind.target_upside_n}개사</span></div></div>`
+    : '';
   return `<div class="card indcard" onclick="gotoDetail('${ind.level2_id}')">
     <div class="top">
       <div><div class="nm">${ind.level2_name}</div>
-        <div class="sec" style="display:flex;gap:5px;align-items:center;flex-wrap:wrap;margin-top:4px">${ind.level1_name} ${timingChip(ind.timing_state)} ${phaseBadge(ind.cycle_phase)}</div></div>
+        <div class="sec" style="display:flex;gap:5px;align-items:center;flex-wrap:wrap;margin-top:4px">${ind.level1_name} ${timingChip(ind.timing_state)} ${phaseBadge(ind.cycle_phase)} ${oversoldBadge(ind)}</div></div>
       <div><div class="sc num">${ind.turn_score!=null?Math.round(ind.turn_score):'—'}</div><div class="sclab">전환강도</div></div>
     </div>
     <div class="track">${track}</div>
     ${kpis}
+    ${targetKpi ? `<div class="kpis" style="margin-top:8px">${targetKpi}</div>` : ''}
     <div class="foot">🏢 ${comp}</div>
   </div>`;
 }
@@ -522,17 +533,22 @@ function indDetail(ind, det){
     ${legRow('목표가 리비전 Breadth', breadthTxt(ind.conf_breadth), ind.conf_breadth>0)}
     ${legRow('목표가 상향폭', ind.conf_magnitude!=null?`<span class="up">+${ind.conf_magnitude.toFixed(1)}%</span>`:'—', ind.conf_magnitude>0)}
     ${legRow('선행 EPS 전환', ind.lead_first_turn===1?'최초 양전환':'—', ind.lead_first_turn===1)}
+    ${legRow('목표가 컨센서스(절사평균)', ind.target_upside_avg!=null?`${pctTxt(ind.target_upside_avg)} <span class="sub" style="font-size:10.5px">${ind.target_upside_n}개사</span>`:'—', ind.target_upside_avg!=null?ind.target_upside_avg>0:null)}
   </div>`;
 
   const trendUp = ind.idx_trend_up===1;
   const rsi = ind.idx_rsi14;
   const rsiTxt = rsi==null?'—':`${rsi} ${rsi>70?'<span class="down">과매수</span>':rsi<35?'<span class="up">과매도</span>':'<span class="mute">중립</span>'}`;
+  const oversoldTxt = ind.oversold_flag===1
+    ? `<span style="color:#5b3fae;font-weight:700">⚡ 낙폭과대</span> · 1주 ${ind.idx_ret_5d!=null?pctTxt(ind.idx_ret_5d):'—'} · 20일선 ${ind.idx_dev_ma20!=null?ind.idx_dev_ma20+'%':'—'}`
+    : (ind.idx_ret_5d!=null ? `1주 ${pctTxt(ind.idx_ret_5d)}` : '—');
   const priceLeg = `<div class="leg">
     <div class="lh">📈 진입 — 가격 확인 (업종지수)</div>
     ${legRow('추세 (MA20 vs MA60)', ind.idx_trend_up==null?'데이터 부족':trendUp?'<span class="up">정배열</span>':'<span class="down">역배열</span>', ind.idx_trend_up==null?null:trendUp)}
     ${legRow('4주 모멘텀', ind.idx_ret_4w!=null?pctTxt(ind.idx_ret_4w):'—', ind.idx_ret_4w>0)}
     ${legRow('8주 신고가 돌파', ind.idx_high_break===1?'돌파':(ind.idx_high_break===0?'미돌파':'—'), ind.idx_high_break===1)}
     ${legRow('RSI(14)', rsiTxt, rsi==null?null:(rsi>=45&&rsi<=72))}
+    ${legRow('단기 낙폭(1주)', oversoldTxt, null)}
   </div>`;
 
   // L1 산업 전체 전환 leg (상대강도 RS + 폭 Breadth)
@@ -565,6 +581,7 @@ function indDetail(ind, det){
   noteParts.push(ind.idx_trend_up==null ? '가격 데이터 축적 중'
     : trendUp ? `가격 <b>정배열</b>${ind.idx_ret_4w>0?` · 4주 +${ind.idx_ret_4w}%`:''}`
     : '가격 <b>역배열</b>');
+  if (ind.oversold_flag===1) noteParts.push('⚡ <b>단기 낙폭과대</b>(1주 급락+RSI 과매도+20일선 이격 과다) — 사이클 방향과 별개로 기술적 반등 관찰 대상일 뿐, 그 자체가 매수신호는 아님');
   const verdict = `<div class="card pad" style="margin-bottom:16px">
     <div class="sectitle"><h3>① 지금 사도 되나? — 매수 타이밍</h3>
       <span class="sub" style="font-size:12px">업황(L0) + 방향(애널리스트) + 진입(가격)</span></div>
@@ -636,7 +653,7 @@ function indDetail(ind, det){
 
   return `
     <div class="pagehead" style="margin-bottom:18px">
-      <div><h2>${ind.level2_name} ${timingChip(ind.timing_state)}</h2>
+      <div><h2>${ind.level2_name} ${timingChip(ind.timing_state)} ${oversoldBadge(ind)}</h2>
         <div class="desc">${ind.level1_name} · ${phaseBadge(ind.cycle_phase)} · 전환강도 <b class="score-pill num">${ind.turn_score!=null?Math.round(ind.turn_score):'—'}</b></div></div>
     </div>
     ${verdict}
@@ -889,12 +906,12 @@ function homeTiming(industries){
     return `<div class="card indcard" onclick="gotoDetail('${ind.level2_id}')">
       <div class="top">
         <div><div class="nm">${ind.level2_name}</div>
-          <div class="sec" style="margin-top:4px">${ind.level1_name} ${phaseBadge(ind.cycle_phase)}</div></div>
+          <div class="sec" style="display:flex;gap:5px;align-items:center;flex-wrap:wrap;margin-top:4px">${ind.level1_name} ${phaseBadge(ind.cycle_phase)} ${oversoldBadge(ind)}</div></div>
         <div style="text-align:right"><span class="badge ${t.cls}" style="font-size:12px">${t.label}</span>
           <div class="sclab" style="margin-top:5px">타이밍 ${ind.timing_score??'—'}</div></div>
       </div>
       <div style="font-size:12px;color:var(--sub);margin-top:11px">${pickTxt}</div>
-      <div style="font-size:11.5px;color:var(--hint);margin-top:4px">📈 ${priceTxt}</div>
+      <div style="font-size:11.5px;color:var(--hint);margin-top:4px">📈 ${priceTxt}${ind.target_upside_avg!=null?` · 목표가 컨센서스 ${pctTxt(ind.target_upside_avg)}`:''}</div>
     </div>`;
   }).join('');
   return `<div class="grid g3">${cards}</div>`;

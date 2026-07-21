@@ -2512,20 +2512,6 @@
         "source_url": "https://finance.naver.com/research/company_read.naver?nid=93665",
         "broker_url": "https://stock.pstatic.net/stock-research/company/57/20260624_company_971857000.pdf",
         "analyst_name": null
-      },
-      {
-        "date": "2026-06-22",
-        "broker": "하나증권",
-        "ticker": "097950",
-        "company_name": "CJ제일제당",
-        "title": "2Q26 Pre: 좋아질 일만 남았다",
-        "opinion": "Buy",
-        "target_price": 370000.0,
-        "prev_target": 240000.0,
-        "tp_pct": 54.2,
-        "source_url": "https://finance.naver.com/research/company_read.naver?nid=93633",
-        "broker_url": "https://stock.pstatic.net/stock-research/company/57/20260622_company_648947000.pdf",
-        "analyst_name": null
       }
     ],
     "companies_detail": [
@@ -3063,20 +3049,6 @@
         "tp_pct": null,
         "source_url": "https://finance.naver.com/research/company_read.naver?nid=94067",
         "broker_url": "https://stock.pstatic.net/stock-research/company/56/20260710_company_888909000.pdf",
-        "analyst_name": null
-      },
-      {
-        "date": "2026-06-22",
-        "broker": "대신증권",
-        "ticker": "032830",
-        "company_name": "삼성생명",
-        "title": "새로운 가치평가 방식 필요",
-        "opinion": "Buy",
-        "target_price": 590000.0,
-        "prev_target": 278000.0,
-        "tp_pct": 112.2,
-        "source_url": "https://finance.naver.com/research/company_read.naver?nid=93630",
-        "broker_url": "https://stock.pstatic.net/stock-research/company/15/20260622_company_764405000.pdf",
         "analyst_name": null
       }
     ],
@@ -3752,20 +3724,6 @@
         "source_url": "https://finance.naver.com/research/company_read.naver?nid=93658",
         "broker_url": "https://stock.pstatic.net/stock-research/company/56/20260623_company_604485000.pdf",
         "analyst_name": null
-      },
-      {
-        "date": "2026-06-22",
-        "broker": "iM증권",
-        "ticker": "034730",
-        "company_name": "SK",
-        "title": "반도체 낙수효과 및 중복상장 규제 수혜",
-        "opinion": "Buy",
-        "target_price": 950000.0,
-        "prev_target": null,
-        "tp_pct": null,
-        "source_url": "https://finance.naver.com/research/company_read.naver?nid=93624",
-        "broker_url": "https://stock.pstatic.net/stock-research/company/61/20260622_company_278986000.pdf",
-        "analyst_name": null
       }
     ],
     "companies_detail": [
@@ -4023,20 +3981,6 @@
         "tp_pct": null,
         "source_url": "https://finance.naver.com/research/company_read.naver?nid=93949",
         "broker_url": null,
-        "analyst_name": null
-      },
-      {
-        "date": "2026-06-22",
-        "broker": "iM증권",
-        "ticker": "010120",
-        "company_name": "LS ELECTRIC",
-        "title": "전력 인프라 수주확대 및 중복상장 규제 수혜",
-        "opinion": "Buy",
-        "target_price": 570000.0,
-        "prev_target": null,
-        "tp_pct": null,
-        "source_url": "https://finance.naver.com/research/company_read.naver?nid=93623",
-        "broker_url": "https://stock.pstatic.net/stock-research/company/61/20260622_company_660629000.pdf",
         "analyst_name": null
       }
     ],

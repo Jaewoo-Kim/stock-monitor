@@ -30,6 +30,18 @@ PHASE_ORDER = {"전환": 0, "확장": 1, "둔화": 2, "바닥": 3, "침체": 4, 
 
 _L0_TURN = {"turning_up": 1.0, "rising": 0.8, "bottoming": 0.4, "falling": 0.0}
 
+TARGET_WINDOW_WEEKS = 12  # 목표주가 컨센서스 집계 윈도우 (stock_scorer._upside 와 동일)
+
+
+def _trimmed_mean(values: list[float]) -> float | None:
+    """최상위·최하위 1개씩 제거 후 평균 (3개 미만이면 단순평균 — 절사 불가)."""
+    if not values:
+        return None
+    vals = sorted(values)
+    if len(vals) >= 3:
+        vals = vals[1:-1]
+    return sum(vals) / len(vals)
+
 
 def _turn_score(rs_3m, breadth_pct, l0_state, composite) -> float | None:
     """4개 레이어 통합 '전환 강도' 0~100. 백테스트 검증된 L1(RS·폭)에 높은 가중.
@@ -50,6 +62,60 @@ def _turn_score(rs_3m, breadth_pct, l0_state, composite) -> float | None:
         return None
     w = sum(x[1] for x in comps)
     return round(sum(v * wt for v, wt in comps) / w * 100, 1)
+
+
+def _industry_target_consensus(con, weeks: int = TARGET_WINDOW_WEEKS) -> dict[str, dict]:
+    """산업별 목표주가 컨센서스 절사평균.
+
+    산업 내 각 종목의 최근 N주 평균 목표가 → 최신 종가 대비 상승여력 %를 구하고,
+    산업 내 종목별 상승여력 값들 중 최고·최저 1개씩을 제외한 평균을 낸다
+    (원화 목표주가 자체는 종목별 주가 스케일이 달라 산업 단위로 직접 평균할 수
+    없으므로, 상승여력 %로 정규화한 뒤 절사평균을 적용).
+    """
+    since = (date.today() - timedelta(weeks=weeks)).isoformat()
+
+    rows = con.execute(
+        """
+        SELECT c.level2_id, re.ticker, re.target_price
+        FROM report_events re
+        JOIN companies c ON re.ticker = c.ticker
+        WHERE re.target_price IS NOT NULL AND re.target_price > 0
+          AND re.published_date >= ?
+          AND c.level2_id IS NOT NULL
+        """,
+        (since,),
+    ).fetchall()
+
+    by_ticker: dict[str, list[float]] = {}
+    ticker_level2: dict[str, str] = {}
+    for level2_id, ticker, tp in rows:
+        by_ticker.setdefault(ticker, []).append(tp)
+        ticker_level2[ticker] = level2_id
+
+    closes = {
+        row[0]: row[1]
+        for row in con.execute(
+            """SELECT ticker, close FROM price_history
+               WHERE date = (SELECT MAX(date) FROM price_history)"""
+        ).fetchall()
+    }
+
+    by_level2: dict[str, list[float]] = {}
+    for ticker, targets in by_ticker.items():
+        close = closes.get(ticker)
+        if not close or close <= 0:
+            continue
+        avg_target = _trimmed_mean(targets)  # 종목 내 여러 리포트 목표가부터 절사평균
+        upside = (avg_target - close) / close * 100
+        by_level2.setdefault(ticker_level2[ticker], []).append(upside)
+
+    return {
+        level2_id: {
+            "target_upside_avg": round(_trimmed_mean(vals), 1),
+            "target_upside_n":   len(vals),
+        }
+        for level2_id, vals in by_level2.items()
+    }
 
 
 # ─────────────────────────────────────
@@ -104,13 +170,17 @@ def build_industries(con) -> list[dict]:
             "idx_rs_up":      row[10],
             "breadth_pct":    row[11],
             "breadth_up":     row[12],
+            "idx_ret_5d":     row[13],
+            "idx_dev_ma20":   row[14],
+            "oversold_flag":  row[15],
         }
         for row in con.execute(
             """
             SELECT ts.level2_id, ts.timing_state, ts.timing_score,
                    ts.idx_trend_up, ts.idx_ret_4w, ts.idx_ret_12w,
                    ts.idx_rsi14, ts.idx_high_break, ts.price_days,
-                   ts.idx_rs_3m, ts.idx_rs_up, ts.breadth_pct, ts.breadth_up
+                   ts.idx_rs_3m, ts.idx_rs_up, ts.breadth_pct, ts.breadth_up,
+                   ts.idx_ret_5d, ts.idx_dev_ma20, ts.oversold_flag
             FROM timing_signals ts
             INNER JOIN (
                 SELECT level2_id, MAX(calc_date) AS max_date
@@ -120,6 +190,10 @@ def build_industries(con) -> list[dict]:
             """
         ).fetchall()
     }
+
+    # 산업별 목표주가 컨센서스 절사평균 (대표종목별 평균 목표가 → 상승여력 %,
+    # 산업 내 종목 값들 중 최고·최저 제거 후 평균)
+    target_consensus = _industry_target_consensus(con)
 
     # L0 업황 동인 신호 (level2_id 별)
     l0 = {
@@ -191,6 +265,7 @@ def build_industries(con) -> list[dict]:
         sig = signals.get(level2_id, {})
         tim = timing.get(level2_id, {})
         l0v = l0.get(level2_id, {})
+        tgt = target_consensus.get(level2_id, {})
         result.append({
             "level2_id":      level2_id,
             "level1_id":      level1_id,
@@ -223,6 +298,13 @@ def build_industries(con) -> list[dict]:
             "idx_rs_up":      tim.get("idx_rs_up"),
             "breadth_pct":    tim.get("breadth_pct"),
             "breadth_up":     tim.get("breadth_up"),
+            # 단기 낙폭과대 (사이클 방향과 별개의 보조 신호 — CLAUDE.md 원칙②)
+            "idx_ret_5d":     tim.get("idx_ret_5d"),
+            "idx_dev_ma20":   tim.get("idx_dev_ma20"),
+            "oversold_flag":  tim.get("oversold_flag"),
+            # 산업별 목표주가 컨센서스 (절사평균 상승여력 %)
+            "target_upside_avg": tgt.get("target_upside_avg"),
+            "target_upside_n":   tgt.get("target_upside_n", 0),
             # L0 업황 동인 (수출·재고순환)
             "l0_state":       l0v.get("driver_state"),
             "l0_score":       l0v.get("driver_score"),
@@ -575,7 +657,7 @@ def build_company_briefs(con) -> dict[str, dict]:
     for ticker, name, level2_id, level2_name in companies:
         br = briefs.get(ticker, {})
         a  = analyst.get(ticker, {})
-        avg_t = round(sum(a["targets"]) / len(a["targets"])) if a.get("targets") else None
+        avg_t = round(_trimmed_mean(a["targets"])) if a.get("targets") else None
         q  = quant.get(ticker, {})
         p  = price.get(ticker, {})
         risks = None

@@ -357,6 +357,10 @@ CREATE TABLE IF NOT EXISTS timing_signals (
     idx_ret_12w    REAL,    -- 12주(60영업일) 수익률 %
     idx_rsi14      REAL,    -- RSI(14)
     idx_high_break INTEGER, -- 8주 신고가 돌파 1/0
+    -- 단기 낙폭과대(과매도 되돌림 후보) — 사이클 방향과 별개의 보조 신호
+    idx_ret_5d     REAL,    -- 5거래일(1주) 수익률 %
+    idx_dev_ma20   REAL,    -- 20일선 대비 이격도 % ((종가-MA20)/MA20)
+    oversold_flag  INTEGER, -- 1주 급락+RSI과매도+이격도 과다 동시 충족 1/0 (단독 매수신호 아님)
     -- L1 산업 전체 전환 신호
     idx_rs_3m      REAL,    -- 상대강도: 업종 3M수익률 − KOSPI 3M수익률 (%)
     idx_rs_up      INTEGER, -- RS 개선 중(최근 RS > 1개월전 RS) 1/0

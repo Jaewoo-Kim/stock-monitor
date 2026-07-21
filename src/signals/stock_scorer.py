@@ -134,6 +134,16 @@ def _composite(eps_z_norm: float | None, mtrend: int | None) -> float | None:
 # 상승여력 (목표가 대비 현재가)
 # ─────────────────────────────────────
 
+def _trimmed_mean(values: list[float]) -> float | None:
+    """최상위·최하위 1개씩 제거 후 평균 (3개 미만이면 단순평균 — 절사 불가)."""
+    if not values:
+        return None
+    vals = sorted(values)
+    if len(vals) >= 3:
+        vals = vals[1:-1]
+    return sum(vals) / len(vals)
+
+
 def _latest_close(con, ticker: str) -> float | None:
     row = con.execute(
         "SELECT close FROM price_history WHERE ticker=? ORDER BY date DESC LIMIT 1",
@@ -143,7 +153,7 @@ def _latest_close(con, ticker: str) -> float | None:
 
 
 def _upside(con, ticker: str, calc_date: str, weeks: int = 12) -> tuple[float | None, int]:
-    """최근 12주 평균 목표가 대비 현재가 상승여력 %. (upside_pct, n_targets)."""
+    """최근 12주 목표가 절사평균(최고·최저 제거) 대비 현재가 상승여력 %. (upside_pct, n_targets)."""
     since = (date.fromisoformat(calc_date) - timedelta(weeks=weeks)).isoformat()
     rows = con.execute(
         """SELECT target_price FROM report_events
@@ -155,7 +165,7 @@ def _upside(con, ticker: str, calc_date: str, weeks: int = 12) -> tuple[float | 
     close = _latest_close(con, ticker)
     if not targets or not close or close <= 0:
         return None, 0
-    avg_target = mean(targets)
+    avg_target = _trimmed_mean(targets)
     return round((avg_target - close) / close * 100, 1), len(targets)
 
 
