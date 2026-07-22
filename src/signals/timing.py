@@ -17,16 +17,17 @@
   서비스 취지(CLAUDE.md)상 일간 등락 자체를 헤드라인 신호로 쓰지 않는다. 다만
   "그날그날 주가에 따라 타이밍이 좋아질 수 있다"(단기 과매도 되돌림 후보)는
   현실을 반영하기 위해, 1주 급락 + RSI 과매도 + 20일선 이격 과다가 동시에
-  나타날 때만 별도 플래그로 노출한다. 위 buy/watch/hold/caution 판정(사이클
-  방향 기반)은 그대로 두고, timing_score에 소폭 가산 + UI에 별도 배지로만
-  표시 — 사이클 하강 중에도 "매수 적기"로 둔갑시키지 않는다.
+  나타날 때만 별도 플래그로 노출한다. buy/watch/hold/caution 판정(사이클 방향
+  기반)은 절대 바꾸지 않고, UI에 별도 배지로만 노출한다.
 
-  백테스트 검증(src/analysis/backtest.py `_run_oversold`, 이벤트 36건, 20개 산업
-  분산): forward 5·10거래일은 baseline 대비 초과수익(+1.9%p/+0.0%p, 승률
-  63.9%/63.9% vs 53.6%/50.9%)이 확인되나, forward 20거래일은 baseline보다
-  오히려 낮음(-0.58% vs +2.76%, 승률 50.0% vs 46.7% — 거의 우위 없음). 즉
-  효과는 초단기(~1주)에 한정되고 1개월 시계에서는 반전 위험이 있다 — 그래서
-  timing_state를 바꾸지 않고 소폭 가산에 그친다.
+  백테스트 검증(src/analysis/backtest.py `_run_oversold`, 가격이력 ~6개월·단일
+  국면, 이벤트 36건): forward 5일 초과수익 방향은 양(+2.0%p)이나 |t|≈1.5로
+  통계적으로 유의하지 않고(95% 기준 미달), 80% 검정력을 확보하려면 그룹당
+  수백 건 이상 필요(표본을 ~9배 더 모아야 함) — forward 20일은 오히려
+  baseline보다 낮아 반전 위험 방향은 일관되나 이 역시 유의하지 않다. 즉 지금은
+  "검증된 엣지"가 아니라 "약한 가설"이므로, timing_score에는 가산하지 않고
+  순수 정보성 배지로만 노출한다(과거엔 +8점 가산했으나 유의성 미확보로 제거,
+  2026-07-21). 표본이 더 쌓이면 backtest.json의 significance 필드로 재평가.
 
 산출물: timing_signals 테이블.
 """
@@ -348,8 +349,8 @@ def _score(cyc: dict | None, px: dict, base: float) -> float:
     rsi = px["idx_rsi14"]
     if rsi is not None and rsi > 75:   # 과매수 → 추격매수 감점
         s -= 6
-    if px.get("oversold_flag") == 1:   # 단기 낙폭과대 → 되돌림 여지 소폭 가산(주 신호는 아님)
-        s += 8
+    # oversold_flag는 timing_score에 가산하지 않음 — 백테스트로 유의성 미확보
+    # (모듈 docstring 참고). 순수 정보성 배지로만 노출.
     return round(max(0, min(100, s)), 1)
 
 

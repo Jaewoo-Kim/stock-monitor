@@ -964,7 +964,7 @@
       "upside_pct": 71.3,
       "composite": 1.0,
       "timing_state": "watch",
-      "timing_score": 79.7
+      "timing_score": 71.7
     }
   },
   "011070": {
@@ -1086,7 +1086,7 @@
       "upside_pct": 86.9,
       "composite": 1.0,
       "timing_state": "watch",
-      "timing_score": 79.7
+      "timing_score": 71.7
     }
   },
   "066570": {
@@ -1199,7 +1199,7 @@
       "upside_pct": 43.0,
       "composite": 1.0,
       "timing_state": "watch",
-      "timing_score": 79.7
+      "timing_score": 71.7
     }
   },
   "000660": {
@@ -3180,7 +3180,7 @@
       "upside_pct": 73.8,
       "composite": -1.0,
       "timing_state": "caution",
-      "timing_score": 27.8
+      "timing_score": 19.8
     }
   },
   "005380": {
@@ -3302,7 +3302,7 @@
       "upside_pct": 78.2,
       "composite": -1.0,
       "timing_state": "caution",
-      "timing_score": 27.8
+      "timing_score": 19.8
     }
   },
   "012330": {
@@ -3410,7 +3410,7 @@
       "upside_pct": 68.7,
       "composite": -1.0,
       "timing_state": "caution",
-      "timing_score": 27.8
+      "timing_score": 19.8
     }
   },
   "204320": {
@@ -3510,7 +3510,7 @@
       "upside_pct": 58.9,
       "composite": 1.0,
       "timing_state": "caution",
-      "timing_score": 27.8
+      "timing_score": 19.8
     }
   },
   "044820": {
@@ -3996,7 +3996,7 @@
       "upside_pct": 41.6,
       "composite": 1.0,
       "timing_state": "watch",
-      "timing_score": 80.6
+      "timing_score": 72.6
     }
   },
   "023530": {
@@ -4104,7 +4104,7 @@
       "upside_pct": 50.7,
       "composite": 1.0,
       "timing_state": "watch",
-      "timing_score": 80.6
+      "timing_score": 72.6
     }
   },
   "139480": {
@@ -4217,7 +4217,7 @@
       "upside_pct": 55.3,
       "composite": 1.0,
       "timing_state": "watch",
-      "timing_score": 80.6
+      "timing_score": 72.6
     }
   },
   "003230": {
@@ -6899,7 +6899,7 @@
       "upside_pct": 79.5,
       "composite": 1.0,
       "timing_state": "hold",
-      "timing_score": 41.5
+      "timing_score": 33.5
     }
   },
   "028050": {
@@ -7007,7 +7007,7 @@
       "upside_pct": 57.9,
       "composite": -1.0,
       "timing_state": "hold",
-      "timing_score": 41.5
+      "timing_score": 33.5
     }
   },
   "375500": {
@@ -7115,7 +7115,7 @@
       "upside_pct": 88.3,
       "composite": 1.0,
       "timing_state": "hold",
-      "timing_score": 41.5
+      "timing_score": 33.5
     }
   },
   "012450": {
@@ -7889,7 +7889,7 @@
       "upside_pct": 52.1,
       "composite": 1.0,
       "timing_state": "관측부족",
-      "timing_score": 20.0
+      "timing_score": 12.0
     }
   },
   "277810": {
@@ -7956,7 +7956,7 @@
       "upside_pct": null,
       "composite": -1.0,
       "timing_state": "관측부족",
-      "timing_score": 20.0
+      "timing_score": 12.0
     }
   },
   "454910": {
@@ -8032,7 +8032,7 @@
       "upside_pct": 30.3,
       "composite": 1.0,
       "timing_state": "관측부족",
-      "timing_score": 20.0
+      "timing_score": 12.0
     }
   },
   "001440": {
@@ -8124,7 +8124,7 @@
       "upside_pct": 100.3,
       "composite": 1.0,
       "timing_state": "hold",
-      "timing_score": 40.9
+      "timing_score": 32.9
     }
   },
   "010120": {
@@ -8232,7 +8232,7 @@
       "upside_pct": 135.7,
       "composite": 0.0,
       "timing_state": "hold",
-      "timing_score": 40.9
+      "timing_score": 32.9
     }
   },
   "267260": {
@@ -8345,7 +8345,7 @@
       "upside_pct": 70.1,
       "composite": 1.0,
       "timing_state": "hold",
-      "timing_score": 40.9
+      "timing_score": 32.9
     }
   },
   "298040": {
@@ -8453,7 +8453,7 @@
       "upside_pct": 73.2,
       "composite": 1.0,
       "timing_state": "hold",
-      "timing_score": 40.9
+      "timing_score": 32.9
     }
   },
   "009540": {
@@ -8543,7 +8543,7 @@
       "upside_pct": 79.1,
       "composite": 1.0,
       "timing_state": "watch",
-      "timing_score": 70.5
+      "timing_score": 62.5
     }
   },
   "010140": {
@@ -8651,7 +8651,7 @@
       "upside_pct": 85.4,
       "composite": 1.0,
       "timing_state": "watch",
-      "timing_score": 70.5
+      "timing_score": 62.5
     }
   },
   "042660": {
@@ -8764,7 +8764,7 @@
       "upside_pct": 89.3,
       "composite": 1.0,
       "timing_state": "watch",
-      "timing_score": 70.5
+      "timing_score": 62.5
     }
   },
   "329180": {
@@ -8866,7 +8866,7 @@
       "upside_pct": 36.0,
       "composite": 1.0,
       "timing_state": "watch",
-      "timing_score": 70.5
+      "timing_score": 62.5
     }
   },
   "000120": {
@@ -9437,7 +9437,7 @@
       "upside_pct": 71.1,
       "composite": -1.0,
       "timing_state": "관측부족",
-      "timing_score": 24.0
+      "timing_score": 16.0
     }
   },
   "005490": {
@@ -9534,7 +9534,7 @@
       "upside_pct": 74.9,
       "composite": 1.0,
       "timing_state": "관측부족",
-      "timing_score": 24.0
+      "timing_score": 16.0
     }
   },
   "010130": {
@@ -9601,7 +9601,7 @@
       "upside_pct": null,
       "composite": 1.0,
       "timing_state": "관측부족",
-      "timing_score": 24.0
+      "timing_score": 16.0
     }
   },
   "103140": {
@@ -9677,7 +9677,7 @@
       "upside_pct": 76.3,
       "composite": 1.0,
       "timing_state": "관측부족",
-      "timing_score": 24.0
+      "timing_score": 16.0
     }
   },
   "010950": {

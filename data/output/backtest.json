@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-07-21T10:08:18",
+  "as_of": "2026-07-22T02:04:43",
   "n_obs": 450,
   "lookback_days": 60,
   "fwd_days": 20,
@@ -15,6 +15,26 @@
       "ret5d_max": -7.0,
       "rsi_max": 32.0,
       "dev20_max": -8.0
+    },
+    "significance": {
+      "fwd5": {
+        "diff_pct": 2.0,
+        "t_stat": 1.54,
+        "significant_5pct": false,
+        "n_needed_per_group": 329
+      },
+      "fwd10": {
+        "diff_pct": 0.05,
+        "t_stat": 0.04,
+        "significant_5pct": false,
+        "n_needed_per_group": 977604
+      },
+      "fwd20": {
+        "diff_pct": -3.41,
+        "t_stat": -1.41,
+        "significant_5pct": false,
+        "n_needed_per_group": 542
+      }
     },
     "baseline": {
       "n_obs": 2550,
@@ -43,6 +63,6 @@
       "fwd10_winrate": 63.9,
       "fwd20_winrate": 50.0
     },
-    "note": "이벤트=연속 플래그 구간을 1건으로 묶은 것(자기상관 보정, 유효표본에 가까움). fwd5·10일은 baseline 대비 초과수익 확인되나 fwd20일은 baseline보다 낮음 — 낙폭과대는 초단기(~1주) 되돌림 참고용이며 1개월 이상 시계에서는 근거로 쓰지 않는다."
+    "note": "이벤트=연속 플래그 구간을 1건으로 묶은 것(자기상관 보정, 유효표본에 가까움 — 그래도 n≈수십에 불과). fwd5일 초과수익은 방향은 양(+)이나 |t|<1.96로 통계적으로 유의하지 않고(가격이력 ~6개월·단일 국면 표본), 80% 검정력을 확보하려면 그룹당 수백 건 이상 필요 추정(significance.n_needed_per_group) — 현재는 확정된 엣지가 아니라 약한 가설이므로 timing_score에는 가산하지 않고 정보성 배지로만 노출한다."
   }
 }

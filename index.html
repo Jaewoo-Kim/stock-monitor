@@ -581,7 +581,7 @@ function indDetail(ind, det){
   noteParts.push(ind.idx_trend_up==null ? '가격 데이터 축적 중'
     : trendUp ? `가격 <b>정배열</b>${ind.idx_ret_4w>0?` · 4주 +${ind.idx_ret_4w}%`:''}`
     : '가격 <b>역배열</b>');
-  if (ind.oversold_flag===1) noteParts.push('⚡ <b>단기 낙폭과대</b>(1주 급락+RSI 과매도+20일선 이격 과다) — 백테스트상 효과는 <b>약 1주</b>에 한정, 1개월 시계에선 오히려 baseline보다 열위(반전 위험). 사이클 방향과 별개의 초단기 참고용, 매수신호 아님');
+  if (ind.oversold_flag===1) noteParts.push('⚡ <b>단기 낙폭과대</b>(1주 급락+RSI 과매도+20일선 이격 과다) — 백테스트(표본 6개월·이벤트 36건)상 방향은 +지만 통계적으로 유의하지 않은 약한 가설. 점수에 반영하지 않은 순수 참고 배지, 매수신호 아님(하단 신호 검증 참고)');
   const verdict = `<div class="card pad" style="margin-bottom:16px">
     <div class="sectitle"><h3>① 지금 사도 되나? — 매수 타이밍</h3>
       <span class="sub" style="font-size:12px">업황(L0) + 방향(애널리스트) + 진입(가격)</span></div>
@@ -1015,19 +1015,23 @@ function renderBacktest(b){
 // 낙폭과대(oversold_flag) 백테스트 — baseline(전체) vs 플래그 이벤트의 forward 수익률
 function renderOversoldBacktest(o){
   if (!o) return '';
-  const base = o.baseline, evt = o.flagged_events;
+  const base = o.baseline, evt = o.flagged_events, sig = o.significance || {};
   const row = (f) => {
     const bAvg = base[`fwd${f}_avg_pct`], eAvg = evt[`fwd${f}_avg_pct`];
     const excess = (bAvg!=null && eAvg!=null) ? (eAvg - bAvg) : null;
+    const s = sig[`fwd${f}`] || {};
+    const sigTxt = s.significant_5pct===true ? '<span class="up">유의(p&lt;.05)</span>'
+      : s.t_stat!=null ? `<span class="mute">유의하지 않음(t=${s.t_stat})</span>` : '<span class="mute">—</span>';
     return `<div class="rstat">
       <div class="sl">forward ${f}거래일</div>
       <div class="sv num ${excess>=0?'up':'down'}" style="font-size:15px">${eAvg!=null?pctTxt(eAvg):'—'} <span class="sub" style="font-size:10.5px;font-weight:600">승률${evt[`fwd${f}_winrate`]??'—'}%</span></div>
       <div class="hint" style="font-size:10.5px;margin-top:2px">baseline ${bAvg!=null?pctTxt(bAvg):'—'} 대비 ${excess!=null?(excess>=0?'+':'')+excess.toFixed(1)+'%p':'—'}</div>
+      <div class="hint" style="font-size:10.5px;margin-top:1px">${sigTxt}${s.n_needed_per_group?` · 80%검정력엔 그룹당 ~${fmt(s.n_needed_per_group)}건 필요`:''}</div>
     </div>`;
   };
   return `<div style="margin-top:18px;padding-top:16px;border-top:1px solid var(--line)">
     <div class="sectitle" style="margin-bottom:10px"><h3 style="font-size:13.5px">⚡ 단기 낙폭과대(oversold) 신호 검증</h3>
-      <span class="sub" style="font-size:12px">플래그 이벤트 ${evt.n_events}건(연속구간 1건 처리) vs baseline(전체 관측치 ${base.n_obs}건)</span></div>
+      <span class="sub" style="font-size:12px">플래그 이벤트 ${evt.n_events}건(연속구간 1건 처리) vs baseline(전체 관측치 ${base.n_obs}건) · 표본 매우 작음</span></div>
     <div class="grid g3">${row(5)}${row(10)}${row(20)}</div>
     <div class="disc" style="margin-top:10px;margin-bottom:0">${o.note}</div>
   </div>`;

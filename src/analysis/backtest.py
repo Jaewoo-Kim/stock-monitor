@@ -155,16 +155,47 @@ def _run_oversold(ind_series: dict) -> dict:
             prev = i
     events = {"n_events": len(event_obs), **{k: v for k, v in _summarize(event_obs).items() if k != "n_obs"}}
 
+    # 이벤트 vs baseline 차이의 통계적 유의성(Welch's t 근사) — 표본이 매우 작아
+    # (n_events≈수십) 방향성 힌트 이상으로 해석하지 않도록 t값·유의성 여부를 함께 기록.
+    # 필요표본은 관측된 효과크기를 그대로 유지한다는(낙관적) 가정 하의 근사치일 뿐이다.
+    def _stats_test(ev_vals: list[float], bl_vals: list[float]) -> dict:
+        n_e, n_b = len(ev_vals), len(bl_vals)
+        if n_e < 2 or n_b < 2:
+            return {"diff_pct": None, "t_stat": None, "significant_5pct": None, "n_needed_per_group": None}
+        mean_e, mean_b = sum(ev_vals) / n_e, sum(bl_vals) / n_b
+        var_e = sum((v - mean_e) ** 2 for v in ev_vals) / (n_e - 1)
+        var_b = sum((v - mean_b) ** 2 for v in bl_vals) / (n_b - 1)
+        se = (var_e / n_e + var_b / n_b) ** 0.5
+        diff = mean_e - mean_b
+        t = diff / se if se > 0 else None
+        # 80% 검정력 필요 표본(그룹당, 근사): ((z_alpha+z_beta)^2 * 2 * sd_pooled^2) / diff^2
+        sd_pooled = (((n_e - 1) * var_e + (n_b - 1) * var_b) / (n_e + n_b - 2)) ** 0.5 if (n_e + n_b) > 2 else None
+        n_needed = round(((1.96 + 0.84) ** 2) * 2 * (sd_pooled ** 2) / (diff ** 2)) if (sd_pooled and diff) else None
+        return {
+            "diff_pct": round(diff, 2),
+            "t_stat": round(t, 2) if t is not None else None,
+            "significant_5pct": (abs(t) >= 1.96) if t is not None else None,
+            "n_needed_per_group": n_needed,
+        }
+
+    significance = {
+        f"fwd{f}": _stats_test([o[f] for o in event_obs], [o[f] for o in all_obs if not o["flagged"]])
+        for f in OVERSOLD_FWD_SET
+    }
+
     return {
         "thresholds": {
             "ret5d_max": OVERSOLD_RET5D_MAX, "rsi_max": OVERSOLD_RSI_MAX, "dev20_max": OVERSOLD_DEV20_MAX,
         },
+        "significance": significance,
         "baseline": baseline,
         "flagged_daily": flagged_daily,
         "flagged_events": events,
-        "note": "이벤트=연속 플래그 구간을 1건으로 묶은 것(자기상관 보정, 유효표본에 가까움). "
-                "fwd5·10일은 baseline 대비 초과수익 확인되나 fwd20일은 baseline보다 낮음 — "
-                "낙폭과대는 초단기(~1주) 되돌림 참고용이며 1개월 이상 시계에서는 근거로 쓰지 않는다.",
+        "note": "이벤트=연속 플래그 구간을 1건으로 묶은 것(자기상관 보정, 유효표본에 가까움 — 그래도 "
+                "n≈수십에 불과). fwd5일 초과수익은 방향은 양(+)이나 |t|<1.96로 통계적으로 유의하지 "
+                "않고(가격이력 ~6개월·단일 국면 표본), 80% 검정력을 확보하려면 그룹당 수백 건 이상 "
+                "필요 추정(significance.n_needed_per_group) — 현재는 확정된 엣지가 아니라 약한 "
+                "가설이므로 timing_score에는 가산하지 않고 정보성 배지로만 노출한다.",
     }
 
 

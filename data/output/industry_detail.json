@@ -1606,20 +1606,6 @@
         "source_url": "https://finance.naver.com/research/company_read.naver?nid=93705",
         "broker_url": "https://stock.pstatic.net/stock-research/company/40/20260626_company_698992000.pdf",
         "analyst_name": null
-      },
-      {
-        "date": "2026-06-23",
-        "broker": "하나증권",
-        "ticker": "030200",
-        "company_name": "KT",
-        "title": "7월 전략 - 영업 비용에 대한 신중한 접근 필..",
-        "opinion": "Buy",
-        "target_price": 76000.0,
-        "prev_target": 76000.0,
-        "tp_pct": 0.0,
-        "source_url": "https://finance.naver.com/research/company_read.naver?nid=93653",
-        "broker_url": "https://stock.pstatic.net/stock-research/company/57/20260623_company_282332000.pdf",
-        "analyst_name": null
       }
     ],
     "companies_detail": [
@@ -3710,20 +3696,6 @@
         "source_url": "https://finance.naver.com/research/company_read.naver?nid=93795",
         "broker_url": "https://stock.pstatic.net/stock-research/company/16/20260630_company_271037000.pdf",
         "analyst_name": null
-      },
-      {
-        "date": "2026-06-23",
-        "broker": "미래에셋증권",
-        "ticker": "028260",
-        "company_name": "삼성물산",
-        "title": "삼성전자發 호재, 한둘이 아니다",
-        "opinion": "매수",
-        "target_price": 680000.0,
-        "prev_target": null,
-        "tp_pct": null,
-        "source_url": "https://finance.naver.com/research/company_read.naver?nid=93658",
-        "broker_url": "https://stock.pstatic.net/stock-research/company/56/20260623_company_604485000.pdf",
-        "analyst_name": null
       }
     ],
     "companies_detail": [
@@ -4391,20 +4363,6 @@
         "tp_pct": null,
         "source_url": "https://finance.naver.com/research/company_read.naver?nid=93907",
         "broker_url": "https://stock.pstatic.net/stock-research/company/57/20260706_company_468098000.pdf",
-        "analyst_name": null
-      },
-      {
-        "date": "2026-06-23",
-        "broker": "하나증권",
-        "ticker": "003490",
-        "company_name": "대한항공",
-        "title": "2Q26 Pre: 항공화물의 운임탄력성을 확인하다",
-        "opinion": "Buy",
-        "target_price": 38000.0,
-        "prev_target": null,
-        "tp_pct": null,
-        "source_url": "https://finance.naver.com/research/company_read.naver?nid=93655",
-        "broker_url": "https://stock.pstatic.net/stock-research/company/57/20260623_company_691778000.pdf",
         "analyst_name": null
       }
     ],
