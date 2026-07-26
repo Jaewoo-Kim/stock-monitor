@@ -1,5 +1,79 @@
 [
   {
+    "date": "2026-07-26",
+    "level2_id": "S7_construction",
+    "level2_name": "건설·건자재",
+    "event_type": "phase_turn",
+    "from_state": "바닥",
+    "to_state": "전환",
+    "detail": {
+      "composite_score": 0.175
+    }
+  },
+  {
+    "date": "2026-07-26",
+    "level2_id": "S6_bank",
+    "level2_name": "은행·금융지주",
+    "event_type": "phase_turn",
+    "from_state": "관측부족",
+    "to_state": "전환",
+    "detail": {
+      "composite_score": 0.38
+    }
+  },
+  {
+    "date": "2026-07-26",
+    "level2_id": "S6_bank",
+    "level2_name": "은행·금융지주",
+    "event_type": "timing_buy",
+    "from_state": "watch",
+    "to_state": "buy",
+    "detail": {
+      "timing_score": 94.7,
+      "rs_3m": 12.91,
+      "breadth_pct": 75.0
+    }
+  },
+  {
+    "date": "2026-07-26",
+    "level2_id": "S7_machinery",
+    "level2_name": "기계·로봇",
+    "event_type": "timing_watch",
+    "from_state": "관측부족",
+    "to_state": "watch",
+    "detail": {
+      "timing_score": 64.2,
+      "rs_3m": -12.96,
+      "breadth_pct": 0.0
+    }
+  },
+  {
+    "date": "2026-07-26",
+    "level2_id": "S7_construction",
+    "level2_name": "건설·건자재",
+    "event_type": "timing_watch",
+    "from_state": "hold",
+    "to_state": "watch",
+    "detail": {
+      "timing_score": 57.6,
+      "rs_3m": -32.22,
+      "breadth_pct": 0.0
+    }
+  },
+  {
+    "date": "2026-07-26",
+    "level2_id": "S3_cosmetics",
+    "level2_name": "화장품",
+    "event_type": "timing_watch",
+    "from_state": "hold",
+    "to_state": "watch",
+    "detail": {
+      "timing_score": 71.0,
+      "rs_3m": 0.55,
+      "breadth_pct": 33.3
+    }
+  },
+  {
     "date": "2026-07-16",
     "level2_id": "S9_energy",
     "level2_name": "정유·에너지",
