@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026-07-29",
+    "level2_id": "S5_medtech",
+    "level2_name": "의료기기·미용의료",
+    "event_type": "timing_watch",
+    "from_state": "hold",
+    "to_state": "watch",
+    "detail": {
+      "timing_score": 76.5,
+      "rs_3m": 20.65,
+      "breadth_pct": 25.0
+    }
+  },
+  {
     "date": "2026-07-28",
     "level2_id": "S7_machinery",
     "level2_name": "기계·로봇",
