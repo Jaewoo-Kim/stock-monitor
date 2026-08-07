@@ -1,5 +1,42 @@
 [
   {
+    "date": "2026-08-07",
+    "level2_id": "S4_food",
+    "level2_name": "음식료·담배",
+    "event_type": "phase_turn",
+    "from_state": "바닥",
+    "to_state": "전환",
+    "detail": {
+      "composite_score": 0.4167
+    }
+  },
+  {
+    "date": "2026-08-07",
+    "level2_id": "S9_energy",
+    "level2_name": "정유·에너지",
+    "event_type": "timing_buy",
+    "from_state": "watch",
+    "to_state": "buy",
+    "detail": {
+      "timing_score": 96.6,
+      "rs_3m": 12.16,
+      "breadth_pct": 66.7
+    }
+  },
+  {
+    "date": "2026-08-07",
+    "level2_id": "S4_food",
+    "level2_name": "음식료·담배",
+    "event_type": "timing_watch",
+    "from_state": "hold",
+    "to_state": "watch",
+    "detail": {
+      "timing_score": 79.3,
+      "rs_3m": 1.75,
+      "breadth_pct": 80.0
+    }
+  },
+  {
     "date": "2026-08-05",
     "level2_id": "S5_medtech",
     "level2_name": "의료기기·미용의료",
