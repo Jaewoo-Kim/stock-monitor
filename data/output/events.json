@@ -1,5 +1,31 @@
 [
   {
+    "date": "2026-08-11",
+    "level2_id": "S3_cosmetics",
+    "level2_name": "화장품",
+    "event_type": "timing_buy",
+    "from_state": "watch",
+    "to_state": "buy",
+    "detail": {
+      "timing_score": 100.0,
+      "rs_3m": 26.43,
+      "breadth_pct": 100.0
+    }
+  },
+  {
+    "date": "2026-08-11",
+    "level2_id": "S7_ship",
+    "level2_name": "조선",
+    "event_type": "timing_watch",
+    "from_state": "caution",
+    "to_state": "watch",
+    "detail": {
+      "timing_score": 59.2,
+      "rs_3m": -11.29,
+      "breadth_pct": 25.0
+    }
+  },
+  {
     "date": "2026-08-10",
     "level2_id": "S5_medtech",
     "level2_name": "의료기기·미용의료",
