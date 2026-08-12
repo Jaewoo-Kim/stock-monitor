@@ -1,5 +1,16 @@
 [
   {
+    "date": "2026-08-12",
+    "level2_id": "S7_transport",
+    "level2_name": "운송 (해운·항공·물류)",
+    "event_type": "phase_turn",
+    "from_state": "관측부족",
+    "to_state": "전환",
+    "detail": {
+      "composite_score": 0.175
+    }
+  },
+  {
     "date": "2026-08-11",
     "level2_id": "S3_cosmetics",
     "level2_name": "화장품",
