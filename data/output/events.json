@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026-08-18",
+    "level2_id": "S1_semiparts",
+    "level2_name": "반도체 소부장",
+    "event_type": "timing_watch",
+    "from_state": "관측부족",
+    "to_state": "watch",
+    "detail": {
+      "timing_score": 58.3,
+      "rs_3m": -15.1,
+      "breadth_pct": 0.0
+    }
+  },
+  {
     "date": "2026-08-12",
     "level2_id": "S7_transport",
     "level2_name": "운송 (해운·항공·물류)",
