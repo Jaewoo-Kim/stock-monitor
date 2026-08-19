@@ -71,6 +71,15 @@
   .b-amber{background:var(--amber-soft);color:#8a5a06}
   .b-grey{background:var(--chip);color:#5b6573}
   .b-down{background:var(--down-soft);color:#a52a2a}
+  .calgrid{display:grid;grid-template-columns:repeat(7,1fr);gap:5px}
+  .calgrid .calhd{font-size:11px;color:var(--sub);text-align:center;padding:4px 0;font-weight:600}
+  .calgrid .calday{min-height:56px;border:1px solid var(--line);border-radius:8px;padding:5px 5px 3px;font-size:11px}
+  .calgrid .calday.empty{border-color:transparent}
+  .calgrid .calday.today{border-color:var(--accent)}
+  .calgrid .calday .dn{font-weight:700;color:var(--sub);font-size:11px}
+  .calgrid .calday .de{margin-top:3px;display:flex;flex-direction:column;gap:2px}
+  .calgrid .calday .de span{font-size:9.5px;padding:1px 4px;border-radius:5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  @media (max-width:640px){.calgrid .calday{min-height:40px;font-size:9.5px}.calgrid .calday .de span{font-size:8.5px}}
 
   /* ── KPI stat 카드 ── */
   .stat{padding:17px 19px;display:flex;flex-direction:column;gap:3px}
@@ -254,6 +263,7 @@
   <symbol id="ic-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 6l-6 6 6 6"/></symbol>
   <symbol id="ic-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></symbol>
   <symbol id="ic-target" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3.5"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/></symbol>
+  <symbol id="ic-cal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></symbol>
 </defs></svg>
 
 <div class="scrim" id="scrim" onclick="toggleNav(false)"></div>
@@ -273,6 +283,7 @@
     <button class="navitem" data-view="v-ind" onclick="nav('v-ind')"><svg class="ic"><use href="#ic-ind"/></svg>산업<span class="cnt" id="nav-ind-cnt">—</span></button>
     <button class="navitem" data-view="v-stk" onclick="nav('v-stk')"><svg class="ic"><use href="#ic-stock"/></svg>종목</button>
     <button class="navitem" data-view="v-rep" onclick="nav('v-rep')"><svg class="ic"><use href="#ic-report"/></svg>리포트<span class="cnt" id="nav-rep-cnt">—</span></button>
+    <button class="navitem" data-view="v-cal" onclick="nav('v-cal')"><svg class="ic"><use href="#ic-cal"/></svg>캘린더<span class="cnt" id="nav-cal-cnt">—</span></button>
   </nav>
   <div class="sidefoot" id="sidefoot">데이터 로딩 중…</div>
 </aside>
@@ -290,6 +301,8 @@
         <div><h2>요약</h2><div class="desc" id="home-desc">전체 산업의 사이클 국면과 최신 신호를 한눈에 봅니다.</div></div>
       </div>
       <div class="grid g4" id="home-stats" style="margin-bottom:22px"></div>
+      <div class="sectitle"><h3>🌐 산업별 수출입 동향 (L0)</h3><span class="sub" style="font-size:12px">관세청 무역통계 기준 · 업황 바닥통과를 가장 먼저 포착하는 0단계 신호</span></div>
+      <div class="card" id="home-l0" style="margin-bottom:24px"><div class="loading">…</div></div>
       <div class="sectitle"><h3>🎯 이번 주 매수 타이밍 신호</h3><span class="sub" style="font-size:12px">방향(애널리스트) + 가격 확인 결합 · 클릭 시 상세</span></div>
       <div id="home-timing" style="margin-bottom:24px"><div class="loading">…</div></div>
       <div class="sectitle"><h3>🔔 최근 신호 변화</h3><span class="sub" style="font-size:12px">매수적기·국면 전환 알림</span></div>
@@ -359,6 +372,23 @@
       <div class="card" id="rep-table"><div class="loading">…</div></div>
     </section>
 
+    <!-- ══ IR·배당 캘린더 ══ -->
+    <section class="view" id="v-cal">
+      <div class="pagehead">
+        <div><h2>캘린더</h2><div class="desc">관심종목 IR·배당 공시 — data/seed/watchlist.json으로 관리. 날짜는 공시 발표일, 정확한 일정은 원문 확인.</div></div>
+      </div>
+      <div class="card pad" style="margin-bottom:16px">
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px">
+          <button class="lnk" onclick="calShiftMonth(-1)">‹ 이전달</button>
+          <div class="nm" id="cal-month-label" style="font-size:15px">—</div>
+          <button class="lnk" onclick="calShiftMonth(1)">다음달 ›</button>
+        </div>
+        <div id="cal-grid" class="calgrid"></div>
+      </div>
+      <div class="sectitle"><h3>전체 일정</h3><span class="sub" style="font-size:12px">최신순 · 클릭 시 DART 원문</span></div>
+      <div class="card" id="cal-table"><div class="loading">…</div></div>
+    </section>
+
   </div>
 </div>
 
@@ -388,6 +418,11 @@ const L0_STATE = {
   falling:    { label:'업황 하강',      cls:'b-down' },
   '관측부족':  { label:'데이터 수집 전',  cls:'b-grey' },
 };
+function l0Badge(ind){
+  if (!ind.l0_detail || !Object.keys(ind.l0_detail).length) return '';
+  const meta = L0_STATE[ind.l0_state] || L0_STATE['관측부족'];
+  return `<span class="badge ${meta.cls}" style="font-size:10.5px">🏭 ${meta.label}</span>`;
+}
 
 // ── 헬퍼 ──
 const fmt = n => n == null ? '—' : Number(n).toLocaleString('ko-KR');
@@ -483,7 +518,7 @@ function indCard(ind){
   return `<div class="card indcard" onclick="gotoDetail('${ind.level2_id}')">
     <div class="top">
       <div><div class="nm">${ind.level2_name}</div>
-        <div class="sec" style="display:flex;gap:5px;align-items:center;flex-wrap:wrap;margin-top:4px">${ind.level1_name} ${timingChip(ind.timing_state)} ${phaseBadge(ind.cycle_phase)}</div></div>
+        <div class="sec" style="display:flex;gap:5px;align-items:center;flex-wrap:wrap;margin-top:4px">${ind.level1_name} ${timingChip(ind.timing_state)} ${phaseBadge(ind.cycle_phase)} ${l0Badge(ind)}</div></div>
       <div><div class="sc num">${ind.turn_score!=null?Math.round(ind.turn_score):'—'}</div><div class="sclab">전환강도</div></div>
     </div>
     <div class="track">${track}</div>
@@ -547,10 +582,15 @@ function indDetail(ind, det){
   // L0 업황 동인 leg (가장 먼저 도는 0단계)
   const l0meta = L0_STATE[ind.l0_state] || L0_STATE['관측부족'];
   const l0up = ind.l0_state==='turning_up' || ind.l0_state==='rising';
+  const L0_SRC_LABEL = { customs: '관세청', ecos: 'ECOS' };
   const l0rows = ind.l0_detail
-    ? Object.values(ind.l0_detail).map(d =>
-        legRow(d.name, `${d.metric>=0?'+':''}${d.metric}%${d.turning?' <span class="up">↑전환</span>':''}`, d.metric>0)).join('')
-    : legRow('수출·재고 동인', 'ECOS 키 등록 후 수집', null);
+    ? Object.values(ind.l0_detail).map(d => {
+        const src = L0_SRC_LABEL[d.source] || d.source || '';
+        const meta = (d.period || src)
+          ? ` <span class="mute" style="font-size:10px">(${[d.period, src].filter(Boolean).join(' · ')})</span>` : '';
+        return legRow(d.name, `${d.metric>=0?'+':''}${d.metric}%${d.turning?' <span class="up">↑전환</span>':''}${meta}`, d.metric>0);
+      }).join('')
+    : legRow('수출·재고 동인', '관세청·ECOS API 키 등록 후 수집', null);
   const l0Leg = `<div class="leg">
     <div class="lh">🏭 업황 동인 (L0) <span class="badge ${l0meta.cls}" style="font-size:9.5px;margin-left:3px">${l0meta.label}</span></div>
     ${l0rows}
@@ -821,6 +861,57 @@ function selectStk(level2Id){
 }
 
 // ── 리포트 ──
+// ── IR·배당 캘린더 ──
+const CAL_EVENT_META = { ir: { label:'IR', cls:'b-info' }, dividend: { label:'배당', cls:'b-amber' } };
+let _irCal = [];
+let _calMonth = new Date();
+
+function calShiftMonth(delta){
+  _calMonth = new Date(_calMonth.getFullYear(), _calMonth.getMonth()+delta, 1);
+  renderCalGrid();
+}
+
+function renderCalGrid(){
+  const y = _calMonth.getFullYear(), m = _calMonth.getMonth();
+  document.getElementById('cal-month-label').textContent = `${y}년 ${m+1}월`;
+  const firstDow = new Date(y, m, 1).getDay();
+  const daysInMonth = new Date(y, m+1, 0).getDate();
+  const todayStr = new Date().toISOString().slice(0,10);
+
+  const byDate = {};
+  _irCal.forEach(e => { (byDate[e.date] = byDate[e.date]||[]).push(e); });
+
+  const hd = ['일','월','화','수','목','금','토'].map(d=>`<div class="calhd">${d}</div>`).join('');
+  const cells = [];
+  for (let i=0;i<firstDow;i++) cells.push('<div class="calday empty"></div>');
+  for (let d=1; d<=daysInMonth; d++){
+    const dateStr = `${y}-${String(m+1).padStart(2,'0')}-${String(d).padStart(2,'0')}`;
+    const evs = byDate[dateStr] || [];
+    const isToday = dateStr === todayStr;
+    const chips = evs.slice(0,3).map(e => {
+      const meta = CAL_EVENT_META[e.event_type] || {label:e.event_type, cls:'b-grey'};
+      return `<span class="badge ${meta.cls}" title="${e.name} · ${e.title}">${e.name}</span>`;
+    }).join('');
+    const more = evs.length>3 ? `<span class="mute" style="font-size:9px">+${evs.length-3}</span>` : '';
+    cells.push(`<div class="calday${isToday?' today':''}"><div class="dn">${d}</div><div class="de">${chips}${more}</div></div>`);
+  }
+  document.getElementById('cal-grid').innerHTML = hd + cells.join('');
+}
+
+function calTable(events){
+  const rows = events.map(e => {
+    const meta = CAL_EVENT_META[e.event_type] || {label:e.event_type, cls:'b-grey'};
+    return `<tr onclick="window.open('${e.dart_url}','_blank')" style="cursor:pointer">
+      <td class="num sub">${e.date}</td>
+      <td><span class="badge ${meta.cls}">${meta.label}</span></td>
+      <td><span class="iname">${e.name}</span><div class="isub">${e.ticker}</div></td>
+      <td style="font-size:12.5px;color:var(--sub)">${e.title}</td>
+      <td style="text-align:right"><a class="lnk" href="${e.dart_url}" target="_blank" rel="noopener" onclick="event.stopPropagation()" style="padding:5px 9px">원문 <svg class="ic14"><use href="#ic-ext"/></svg></a></td>
+    </tr>`;
+  }).join('') || '<tr><td colspan="5" class="empty">등록된 일정 없음 — data/seed/watchlist.json에 관심종목을 추가하고 DART_API_KEY를 등록하세요</td></tr>';
+  return `<table class="tbl"><thead><tr><th>날짜(공시)</th><th>구분</th><th>종목</th><th>제목</th><th style="text-align:right">링크</th></tr></thead><tbody>${rows}</tbody></table>`;
+}
+
 function repTable(reports){
   const rows = reports.map(r => {
     let tp = '—';
@@ -898,6 +989,25 @@ function homeTiming(industries){
     </div>`;
   }).join('');
   return `<div class="grid g3">${cards}</div>`;
+}
+// 산업별 수출입 동향(L0) — 요약 화면 최상단
+function homeExportTrend(industries){
+  const tracked = (industries||[]).filter(i => i.l0_detail && Object.keys(i.l0_detail).length);
+  if (!tracked.length){
+    return '<div class="empty">관세청 API 검증 후 표시됩니다 (docs/06_수출입동향_L0_연동_v1.md 참조)</div>';
+  }
+  const ranked = [...tracked].sort((a,b) => (b.l0_score??-1) - (a.l0_score??-1));
+  const rows = ranked.map(ind => {
+    const meta = L0_STATE[ind.l0_state] || L0_STATE['관측부족'];
+    const top = Object.values(ind.l0_detail)[0];
+    return `<tr onclick="gotoDetail('${ind.level2_id}')">
+      <td><span class="iname">${ind.level2_name}</span><div class="isub">${ind.level1_name}</div></td>
+      <td><span class="badge ${meta.cls}" style="font-size:11.5px">${meta.label}</span></td>
+      <td class="num">${top && top.metric!=null ? `<span class="${top.metric>=0?'up':'down'}">${top.metric>=0?'+':''}${top.metric}%</span>` : '—'}</td>
+      <td style="color:var(--hint);font-size:11.5px">${top && top.period ? top.period : '—'}</td>
+    </tr>`;
+  }).join('');
+  return `<table class="tbl"><thead><tr><th>산업</th><th>업황(L0)</th><th>수출 YoY</th><th>기준월</th></tr></thead><tbody>${rows}</tbody></table>`;
 }
 function homeReports(reports){
   const rows = reports.slice(0,8).map(r => {
@@ -998,12 +1108,12 @@ function renderBacktest(b){
 // ── 데이터 로드 ──
 async function loadData(){
   try {
-    const [iR,rR,dR,sR,msR,brR,btR,mR,evR] = await Promise.all([
+    const [iR,rR,dR,sR,msR,brR,btR,mR,evR,calR] = await Promise.all([
       fetch(`${BASE}/industries.json`), fetch(`${BASE}/reports.json`),
       fetch(`${BASE}/industry_detail.json`), fetch(`${BASE}/stock_scores.json`),
       fetch(`${BASE}/market_share.json`), fetch(`${BASE}/company_briefs.json`),
       fetch(`${BASE}/backtest.json`), fetch(`${BASE}/meta.json`),
-      fetch(`${BASE}/events.json`),
+      fetch(`${BASE}/events.json`), fetch(`${BASE}/ir_calendar.json`),
     ]);
     _industries = iR.ok ? await iR.json() : [];
     _reports    = rR.ok ? await rR.json() : [];
@@ -1014,6 +1124,7 @@ async function loadData(){
     _backtest   = btR.ok ? await btR.json() : null;
     _events     = evR.ok ? await evR.json() : [];
     _meta       = mR.ok ? await mR.json() : {};
+    _irCal      = calR.ok ? await calR.json() : [];
 
     // 사이드바
     document.getElementById('nav-ind-cnt').textContent = _industries.length;
@@ -1024,6 +1135,7 @@ async function loadData(){
 
     // 홈
     document.getElementById('home-stats').innerHTML = homeStats(_meta, _industries);
+    document.getElementById('home-l0').innerHTML = homeExportTrend(_industries);
     document.getElementById('home-timing').innerHTML = homeTiming(_industries);
     document.getElementById('home-events').innerHTML = renderEvents(_events);
     document.getElementById('home-backtest').innerHTML = renderBacktest(_backtest);
@@ -1048,6 +1160,15 @@ async function loadData(){
     // 리포트
     document.getElementById('rep-table').innerHTML = repTable(_reports);
     document.getElementById('rep-desc').textContent = `최신 애널리스트 리포트 ${_reports.length}건 — 원문 링크 포함.`;
+
+    // 캘린더
+    document.getElementById('nav-cal-cnt').textContent = _irCal.length;
+    if (_irCal.length){
+      const [y,m] = _irCal[0].date.split('-');
+      _calMonth = new Date(Number(y), Number(m)-1, 1);
+    }
+    renderCalGrid();
+    document.getElementById('cal-table').innerHTML = calTable(_irCal);
 
   } catch(err){
     console.error('데이터 로드 실패:', err);

@@ -384,3 +384,22 @@ CREATE TABLE IF NOT EXISTS signal_events (
 );
 
 CREATE INDEX IF NOT EXISTS idx_event_date ON signal_events(event_date);
+
+-- ─────────────────────────────────────────
+-- 6. 관심종목 IR·배당 캘린더 (사용자 지정 watchlist, data/seed/watchlist.json)
+--    DART 공시검색 기반. rcept_dt는 "공시 발표일"이며, 실제 IR 개최일·배당
+--    기준일/지급일은 공시 원문(dart_url)에서 확인해야 함 (원칙: 출처 링크 필수).
+-- ─────────────────────────────────────────
+
+CREATE TABLE IF NOT EXISTS ir_events (
+    ticker      TEXT NOT NULL REFERENCES companies(ticker),
+    rcept_no    TEXT NOT NULL,   -- DART 접수번호 (공시 고유키)
+    event_type  TEXT NOT NULL CHECK(event_type IN ('ir','dividend')),
+    rcept_dt    TEXT NOT NULL,   -- 공시 발표일 'YYYY-MM-DD'
+    report_nm   TEXT NOT NULL,   -- 공시 제목
+    dart_url    TEXT NOT NULL,   -- DART 원문 링크
+    created_at  TEXT NOT NULL DEFAULT (datetime('now')),
+    PRIMARY KEY(ticker, rcept_no)
+);
+
+CREATE INDEX IF NOT EXISTS idx_ir_events_date ON ir_events(rcept_dt);
