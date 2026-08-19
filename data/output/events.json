@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026-08-19",
+    "level2_id": "S2_telecom",
+    "level2_name": "통신",
+    "event_type": "timing_watch",
+    "from_state": "hold",
+    "to_state": "watch",
+    "detail": {
+      "timing_score": 72.5,
+      "rs_3m": 4.12,
+      "breadth_pct": 33.3
+    }
+  },
+  {
     "date": "2026-08-18",
     "level2_id": "S1_semiparts",
     "level2_name": "반도체 소부장",
@@ -481,19 +494,6 @@
     "detail": {
       "timing_score": 57.6,
       "rs_3m": -11.53,
-      "breadth_pct": 0.0
-    }
-  },
-  {
-    "date": "2026-07-01",
-    "level2_id": "S1_battery",
-    "level2_name": "2차전지",
-    "event_type": "timing_watch",
-    "from_state": "관측부족",
-    "to_state": "watch",
-    "detail": {
-      "timing_score": 65.5,
-      "rs_3m": -17.96,
       "breadth_pct": 0.0
     }
   }
