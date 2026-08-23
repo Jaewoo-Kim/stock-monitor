@@ -1,5 +1,55 @@
 [
   {
+    "date": "2026-08-23",
+    "level2_id": "S3_auto",
+    "level2_name": "자동차·부품",
+    "event_type": "phase_turn",
+    "from_state": "바닥",
+    "to_state": "전환",
+    "detail": {
+      "composite_score": 0.18
+    }
+  },
+  {
+    "date": "2026-08-23",
+    "level2_id": "S3_auto",
+    "level2_name": "자동차·부품",
+    "event_type": "timing_watch",
+    "from_state": "hold",
+    "to_state": "watch",
+    "detail": {
+      "timing_score": 66.7,
+      "rs_3m": 1.75,
+      "breadth_pct": 0.0
+    }
+  },
+  {
+    "date": "2026-08-23",
+    "level2_id": "S2_telecom",
+    "level2_name": "통신",
+    "event_type": "timing_watch",
+    "from_state": "hold",
+    "to_state": "watch",
+    "detail": {
+      "timing_score": 71.0,
+      "rs_3m": 5.49,
+      "breadth_pct": 33.3
+    }
+  },
+  {
+    "date": "2026-08-23",
+    "level2_id": "S1_semiparts",
+    "level2_name": "반도체 소부장",
+    "event_type": "timing_watch",
+    "from_state": "관측부족",
+    "to_state": "watch",
+    "detail": {
+      "timing_score": 58.5,
+      "rs_3m": -16.43,
+      "breadth_pct": 0.0
+    }
+  },
+  {
     "date": "2026-08-19",
     "level2_id": "S2_telecom",
     "level2_name": "통신",
@@ -445,56 +495,6 @@
     "to_state": "전환",
     "detail": {
       "composite_score": 0.2333
-    }
-  },
-  {
-    "date": "2026-07-02",
-    "level2_id": "S7_construction",
-    "level2_name": "건설·건자재",
-    "event_type": "timing_watch",
-    "from_state": "hold",
-    "to_state": "watch",
-    "detail": {
-      "timing_score": 58.5,
-      "rs_3m": -16.89,
-      "breadth_pct": 33.3
-    }
-  },
-  {
-    "date": "2026-07-01",
-    "level2_id": "S4_food",
-    "level2_name": "음식료·담배",
-    "event_type": "phase_turn",
-    "from_state": "바닥",
-    "to_state": "전환",
-    "detail": {
-      "composite_score": 0.175
-    }
-  },
-  {
-    "date": "2026-07-01",
-    "level2_id": "S6_bank",
-    "level2_name": "은행·금융지주",
-    "event_type": "timing_watch",
-    "from_state": "hold",
-    "to_state": "watch",
-    "detail": {
-      "timing_score": 62.0,
-      "rs_3m": -3.58,
-      "breadth_pct": 25.0
-    }
-  },
-  {
-    "date": "2026-07-01",
-    "level2_id": "S4_food",
-    "level2_name": "음식료·담배",
-    "event_type": "timing_watch",
-    "from_state": "hold",
-    "to_state": "watch",
-    "detail": {
-      "timing_score": 57.6,
-      "rs_3m": -11.53,
-      "breadth_pct": 0.0
     }
   }
 ]
