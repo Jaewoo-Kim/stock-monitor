@@ -1,5 +1,42 @@
 [
   {
+    "date": "2026-08-24",
+    "level2_id": "S7_ship",
+    "level2_name": "조선",
+    "event_type": "phase_turn",
+    "from_state": "바닥",
+    "to_state": "전환",
+    "detail": {
+      "composite_score": 0.1263
+    }
+  },
+  {
+    "date": "2026-08-24",
+    "level2_id": "S7_ship",
+    "level2_name": "조선",
+    "event_type": "timing_watch",
+    "from_state": "hold",
+    "to_state": "watch",
+    "detail": {
+      "timing_score": 56.9,
+      "rs_3m": -16.53,
+      "breadth_pct": 0.0
+    }
+  },
+  {
+    "date": "2026-08-24",
+    "level2_id": "S7_holding",
+    "level2_name": "지주·복합기업",
+    "event_type": "timing_watch",
+    "from_state": "hold",
+    "to_state": "watch",
+    "detail": {
+      "timing_score": 62.4,
+      "rs_3m": 33.27,
+      "breadth_pct": 33.3
+    }
+  },
+  {
     "date": "2026-08-23",
     "level2_id": "S3_auto",
     "level2_name": "자동차·부품",
@@ -458,43 +495,6 @@
       "timing_score": 62.5,
       "rs_3m": -8.82,
       "breadth_pct": 0.0
-    }
-  },
-  {
-    "date": "2026-07-09",
-    "level2_id": "S7_ship",
-    "level2_name": "조선",
-    "event_type": "timing_watch",
-    "from_state": "관측부족",
-    "to_state": "watch",
-    "detail": {
-      "timing_score": 69.5,
-      "rs_3m": -9.31,
-      "breadth_pct": 0.0
-    }
-  },
-  {
-    "date": "2026-07-07",
-    "level2_id": "S3_cosmetics",
-    "level2_name": "화장품",
-    "event_type": "timing_watch",
-    "from_state": "hold",
-    "to_state": "watch",
-    "detail": {
-      "timing_score": 67.5,
-      "rs_3m": -12.79,
-      "breadth_pct": 33.3
-    }
-  },
-  {
-    "date": "2026-07-02",
-    "level2_id": "S7_construction",
-    "level2_name": "건설·건자재",
-    "event_type": "phase_turn",
-    "from_state": "관측부족",
-    "to_state": "전환",
-    "detail": {
-      "composite_score": 0.2333
     }
   }
 ]
