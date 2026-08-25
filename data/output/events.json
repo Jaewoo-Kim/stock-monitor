@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026-08-25",
+    "level2_id": "S8_steel",
+    "level2_name": "철강·비철금속",
+    "event_type": "timing_watch",
+    "from_state": "hold",
+    "to_state": "watch",
+    "detail": {
+      "timing_score": 65.7,
+      "rs_3m": -8.97,
+      "breadth_pct": 50.0
+    }
+  },
+  {
     "date": "2026-08-24",
     "level2_id": "S7_ship",
     "level2_name": "조선",
@@ -481,19 +494,6 @@
     "detail": {
       "timing_score": 69.5,
       "rs_3m": -22.39,
-      "breadth_pct": 0.0
-    }
-  },
-  {
-    "date": "2026-07-14",
-    "level2_id": "S7_ship",
-    "level2_name": "조선",
-    "event_type": "timing_watch",
-    "from_state": "hold",
-    "to_state": "watch",
-    "detail": {
-      "timing_score": 62.5,
-      "rs_3m": -8.82,
       "breadth_pct": 0.0
     }
   }
