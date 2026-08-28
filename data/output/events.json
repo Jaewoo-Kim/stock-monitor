@@ -1,5 +1,68 @@
 [
   {
+    "date": "2026-08-28",
+    "level2_id": "S2_telecom",
+    "level2_name": "통신",
+    "event_type": "phase_turn",
+    "from_state": "바닥",
+    "to_state": "전환",
+    "detail": {
+      "composite_score": 0.214
+    }
+  },
+  {
+    "date": "2026-08-28",
+    "level2_id": "S4_food",
+    "level2_name": "음식료·담배",
+    "event_type": "timing_buy",
+    "from_state": "watch",
+    "to_state": "buy",
+    "detail": {
+      "timing_score": 90.1,
+      "rs_3m": 15.08,
+      "breadth_pct": 40.0
+    }
+  },
+  {
+    "date": "2026-08-28",
+    "level2_id": "S6_bank",
+    "level2_name": "은행·금융지주",
+    "event_type": "timing_watch",
+    "from_state": "hold",
+    "to_state": "watch",
+    "detail": {
+      "timing_score": 71.4,
+      "rs_3m": 15.85,
+      "breadth_pct": 100.0
+    }
+  },
+  {
+    "date": "2026-08-28",
+    "level2_id": "S5_medtech",
+    "level2_name": "의료기기·미용의료",
+    "event_type": "timing_watch",
+    "from_state": "caution",
+    "to_state": "watch",
+    "detail": {
+      "timing_score": 64.6,
+      "rs_3m": 18.14,
+      "breadth_pct": 25.0
+    }
+  },
+  {
+    "date": "2026-08-28",
+    "level2_id": "S1_semilarge",
+    "level2_name": "반도체 (대형)",
+    "event_type": "timing_watch",
+    "from_state": "caution",
+    "to_state": "watch",
+    "detail": {
+      "timing_score": 65.7,
+      "rs_3m": 28.02,
+      "breadth_pct": 0.0
+    }
+  },
+  {
     "date": "2026-08-27",
     "level2_id": "S5_pharma",
     "level2_name": "제약·바이오",
@@ -430,69 +493,6 @@
       "timing_score": 57.6,
       "rs_3m": -32.22,
       "breadth_pct": 0.0
-    }
-  },
-  {
-    "date": "2026-07-26",
-    "level2_id": "S3_cosmetics",
-    "level2_name": "화장품",
-    "event_type": "timing_watch",
-    "from_state": "hold",
-    "to_state": "watch",
-    "detail": {
-      "timing_score": 71.0,
-      "rs_3m": 0.55,
-      "breadth_pct": 33.3
-    }
-  },
-  {
-    "date": "2026-07-16",
-    "level2_id": "S9_energy",
-    "level2_name": "정유·에너지",
-    "event_type": "timing_watch",
-    "from_state": "관측부족",
-    "to_state": "watch",
-    "detail": {
-      "timing_score": 81.5,
-      "rs_3m": 13.72,
-      "breadth_pct": 66.7
-    }
-  },
-  {
-    "date": "2026-07-16",
-    "level2_id": "S1_software",
-    "level2_name": "소프트웨어·IT서비스",
-    "event_type": "timing_watch",
-    "from_state": "hold",
-    "to_state": "watch",
-    "detail": {
-      "timing_score": 67.0,
-      "rs_3m": 46.97,
-      "breadth_pct": 50.0
-    }
-  },
-  {
-    "date": "2026-07-14",
-    "level2_id": "S7_ship",
-    "level2_name": "조선",
-    "event_type": "phase_turn",
-    "from_state": "관측부족",
-    "to_state": "전환",
-    "detail": {
-      "composite_score": 0.2333
-    }
-  },
-  {
-    "date": "2026-07-14",
-    "level2_id": "S6_bank",
-    "level2_name": "은행·금융지주",
-    "event_type": "timing_buy",
-    "from_state": "watch",
-    "to_state": "buy",
-    "detail": {
-      "timing_score": 97.5,
-      "rs_3m": 16.33,
-      "breadth_pct": 75.0
     }
   }
 ]
