@@ -1,5 +1,31 @@
 [
   {
+    "date": "2026-09-01",
+    "level2_id": "S8_chemicals",
+    "level2_name": "화학·석유화학",
+    "event_type": "timing_watch",
+    "from_state": "hold",
+    "to_state": "watch",
+    "detail": {
+      "timing_score": 62.7,
+      "rs_3m": -20.23,
+      "breadth_pct": 33.3
+    }
+  },
+  {
+    "date": "2026-09-01",
+    "level2_id": "S1_battery",
+    "level2_name": "2차전지",
+    "event_type": "timing_watch",
+    "from_state": "caution",
+    "to_state": "watch",
+    "detail": {
+      "timing_score": 73.2,
+      "rs_3m": -15.94,
+      "breadth_pct": 60.0
+    }
+  },
+  {
     "date": "2026-08-31",
     "level2_id": "S7_power",
     "level2_name": "전력기기·전선",
@@ -467,28 +493,6 @@
       "timing_score": 66.7,
       "rs_3m": 8.99,
       "breadth_pct": 50.0
-    }
-  },
-  {
-    "date": "2026-07-26",
-    "level2_id": "S7_construction",
-    "level2_name": "건설·건자재",
-    "event_type": "phase_turn",
-    "from_state": "바닥",
-    "to_state": "전환",
-    "detail": {
-      "composite_score": 0.175
-    }
-  },
-  {
-    "date": "2026-07-26",
-    "level2_id": "S6_bank",
-    "level2_name": "은행·금융지주",
-    "event_type": "phase_turn",
-    "from_state": "관측부족",
-    "to_state": "전환",
-    "detail": {
-      "composite_score": 0.38
     }
   }
 ]
