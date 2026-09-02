@@ -1,13 +1,13 @@
 {
-  "as_of": "2026-09-02T00:07:26",
-  "n_obs": 630,
+  "as_of": "2026-09-02T23:58:27",
+  "n_obs": 660,
   "lookback_days": 60,
   "fwd_days": 20,
-  "ic_rs_fwd": -0.028,
-  "rs_high_fwd_pct": 4.43,
-  "rs_low_fwd_pct": -1.84,
-  "trend_up_fwd_pct": -0.12,
-  "trend_dn_fwd_pct": 1.92,
-  "avg_fwd_pct": 0.7,
+  "ic_rs_fwd": -0.024,
+  "rs_high_fwd_pct": 4.68,
+  "rs_low_fwd_pct": -1.24,
+  "trend_up_fwd_pct": 0.01,
+  "trend_dn_fwd_pct": 2.64,
+  "avg_fwd_pct": 1.11,
   "note": "가격이력 ~6개월 · 표본 소량 · 디렉셔널 참고용"
 }

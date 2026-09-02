@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026-09-02",
+    "level2_id": "S6_bank",
+    "level2_name": "은행·금융지주",
+    "event_type": "timing_buy",
+    "from_state": "watch",
+    "to_state": "buy",
+    "detail": {
+      "timing_score": 97.3,
+      "rs_3m": 17.73,
+      "breadth_pct": 100.0
+    }
+  },
+  {
     "date": "2026-09-01",
     "level2_id": "S8_chemicals",
     "level2_name": "화학·석유화학",
@@ -480,19 +493,6 @@
       "timing_score": 66.3,
       "rs_3m": -2.55,
       "breadth_pct": 20.0
-    }
-  },
-  {
-    "date": "2026-07-28",
-    "level2_id": "S2_internet",
-    "level2_name": "인터넷·플랫폼",
-    "event_type": "timing_watch",
-    "from_state": "hold",
-    "to_state": "watch",
-    "detail": {
-      "timing_score": 66.7,
-      "rs_3m": 8.99,
-      "breadth_pct": 50.0
     }
   }
 ]
