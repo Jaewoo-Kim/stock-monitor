@@ -1,5 +1,16 @@
 [
   {
+    "date": "2026-09-04",
+    "level2_id": "S5_pharma",
+    "level2_name": "제약·바이오",
+    "event_type": "phase_turn",
+    "from_state": "바닥",
+    "to_state": "전환",
+    "detail": {
+      "composite_score": 0.2205
+    }
+  },
+  {
     "date": "2026-09-02",
     "level2_id": "S6_bank",
     "level2_name": "은행·금융지주",
@@ -480,19 +491,6 @@
     "to_state": "전환",
     "detail": {
       "composite_score": 0.28
-    }
-  },
-  {
-    "date": "2026-07-28",
-    "level2_id": "S5_pharma",
-    "level2_name": "제약·바이오",
-    "event_type": "timing_watch",
-    "from_state": "hold",
-    "to_state": "watch",
-    "detail": {
-      "timing_score": 66.3,
-      "rs_3m": -2.55,
-      "breadth_pct": 20.0
     }
   }
 ]
