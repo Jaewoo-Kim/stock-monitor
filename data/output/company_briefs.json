@@ -320,7 +320,7 @@
       "upside_pct": 38.3,
       "composite": -1.0,
       "timing_state": "watch",
-      "timing_score": 65.5
+      "timing_score": 66.2
     }
   },
   "006400": {
@@ -442,7 +442,7 @@
       "upside_pct": 45.5,
       "composite": -1.0,
       "timing_state": "watch",
-      "timing_score": 65.5
+      "timing_score": 66.2
     }
   },
   "066970": {
@@ -542,7 +542,7 @@
       "upside_pct": 10.3,
       "composite": 1.0,
       "timing_state": "watch",
-      "timing_score": 65.5
+      "timing_score": 66.2
     }
   },
   "247540": {
@@ -664,7 +664,7 @@
       "upside_pct": 86.0,
       "composite": -1.0,
       "timing_state": "watch",
-      "timing_score": 65.5
+      "timing_score": 66.2
     }
   },
   "373220": {
@@ -786,7 +786,7 @@
       "upside_pct": 56.0,
       "composite": -1.0,
       "timing_state": "watch",
-      "timing_score": 65.5
+      "timing_score": 66.2
     }
   },
   "034220": {
@@ -3709,12 +3709,20 @@
     "close": 24800.0,
     "ret_1m": 24.3,
     "analyst": {
-      "n_buy": 17,
+      "n_buy": 18,
       "n_hold": 0,
       "n_sell": 0,
-      "avg_target": 259000,
-      "latest_target": 363000.0,
+      "avg_target": 264056,
+      "latest_target": 350000.0,
       "recent": [
+        {
+          "date": "2026-09-07",
+          "broker": "SK증권",
+          "title": "On Track",
+          "opinion": "매수",
+          "source_url": "https://finance.naver.com/research/company_read.naver?nid=96023",
+          "broker_url": "https://stock.pstatic.net/stock-research/company/64/20260907_company_609046000.pdf"
+        },
         {
           "date": "2026-09-03",
           "broker": "유안타증권",
@@ -3746,14 +3754,6 @@
           "opinion": "매수",
           "source_url": "https://finance.naver.com/research/company_read.naver?nid=95473",
           "broker_url": "https://stock.pstatic.net/stock-research/company/64/20260812_company_940285000.pdf"
-        },
-        {
-          "date": "2026-08-12",
-          "broker": "유진투자증권",
-          "title": "2Q26 Review: 창사 이래 첫 미국 흑자",
-          "opinion": "Buy",
-          "source_url": "https://finance.naver.com/research/company_read.naver?nid=95478",
-          "broker_url": "https://stock.pstatic.net/stock-research/company/63/20260812_company_658500000.pdf"
         }
       ]
     },
@@ -3798,7 +3798,7 @@
     "quant": {
       "buy_score": 87.5,
       "rank_in_level2": 1,
-      "upside_pct": 944.4,
+      "upside_pct": 964.7,
       "composite": 1.0,
       "timing_state": "buy",
       "timing_score": 100.0
@@ -5444,7 +5444,7 @@
       "upside_pct": 62.4,
       "composite": -1.0,
       "timing_state": "buy",
-      "timing_score": 97.3
+      "timing_score": 95.4
     }
   },
   "068270": {
@@ -5566,7 +5566,7 @@
       "upside_pct": 35.3,
       "composite": -1.0,
       "timing_state": "buy",
-      "timing_score": 97.3
+      "timing_score": 95.4
     }
   },
   "128940": {
@@ -5674,7 +5674,7 @@
       "upside_pct": 37.1,
       "composite": -1.0,
       "timing_state": "buy",
-      "timing_score": 97.3
+      "timing_score": 95.4
     }
   },
   "196170": {
@@ -5787,7 +5787,7 @@
       "upside_pct": 65.1,
       "composite": 1.0,
       "timing_state": "buy",
-      "timing_score": 97.3
+      "timing_score": 95.4
     }
   },
   "207940": {
@@ -5909,7 +5909,7 @@
       "upside_pct": 31.4,
       "composite": 1.0,
       "timing_state": "buy",
-      "timing_score": 97.3
+      "timing_score": 95.4
     }
   },
   "055550": {
@@ -6141,10 +6141,10 @@
     "close": 169100.0,
     "ret_1m": -0.2,
     "analyst": {
-      "n_buy": 12,
+      "n_buy": 11,
       "n_hold": 0,
       "n_sell": 0,
-      "avg_target": 217417,
+      "avg_target": 217182,
       "latest_target": 200000.0,
       "recent": [
         {
@@ -6222,9 +6222,9 @@
     "market_share": [],
     "dart": null,
     "quant": {
-      "buy_score": 59.7,
+      "buy_score": 59.5,
       "rank_in_level2": 1,
-      "upside_pct": 28.6,
+      "upside_pct": 28.4,
       "composite": null,
       "timing_state": "watch",
       "timing_score": 79.7
@@ -6437,7 +6437,7 @@
       "upside_pct": 18.5,
       "composite": null,
       "timing_state": "watch",
-      "timing_score": 69.5
+      "timing_score": 69.4
     }
   },
   "001450": {
@@ -6545,7 +6545,7 @@
       "upside_pct": 6.9,
       "composite": null,
       "timing_state": "watch",
-      "timing_score": 69.5
+      "timing_score": 69.4
     }
   },
   "005830": {
@@ -6561,12 +6561,20 @@
     "close": 190900.0,
     "ret_1m": 21.9,
     "analyst": {
-      "n_buy": 12,
+      "n_buy": 13,
       "n_hold": 0,
       "n_sell": 0,
-      "avg_target": 229750,
+      "avg_target": 231308,
       "latest_target": 250000.0,
       "recent": [
+        {
+          "date": "2026-09-04",
+          "broker": "대신증권",
+          "title": "새로운 밸류업 정책으로 확대되는 배당총액",
+          "opinion": "Buy",
+          "source_url": "https://finance.naver.com/research/company_read.naver?nid=96012",
+          "broker_url": "https://stock.pstatic.net/stock-research/company/15/20260904_company_30144000.pdf"
+        },
         {
           "date": "2026-09-03",
           "broker": "대신증권",
@@ -6598,14 +6606,6 @@
           "opinion": null,
           "source_url": "https://finance.naver.com/research/company_read.naver?nid=95928",
           "broker_url": "https://stock.pstatic.net/stock-research/company/39/20260831_company_783548000.pdf"
-        },
-        {
-          "date": "2026-08-31",
-          "broker": "신한투자증권",
-          "title": "밸류업 공시 분석: 배당은 확대, 성장은 유보",
-          "opinion": "매수",
-          "source_url": "https://finance.naver.com/research/company_read.naver?nid=95935",
-          "broker_url": null
         }
       ]
     },
@@ -6648,12 +6648,12 @@
       "risk_text": "위험요소에 효율적으로 대응할 수 있도록 각종 위험을 신속 정확하게 인식/측정하여 위험을 적정수준으로 관리하며, 위험 대비 수익을 극대화하도록 정책을 운영하고 있습니다. 연결회사는 직면한 위험수준이 가용자본 대비 적정한 수준으로 유지될 수 있도록 위험자본을 각 위험종류별로 배분하고, 할당된 위험자본 관리를 위해 한도를 설정하여 관리합니다. 이는 안정적 수익기반 확보 및 기업가치의 극대화 달성을 가능하게 합니다.(2) 위험관리 절차연결회사의 위험관리 절차는 인식, 측정, 모니터링 및 통제, 보고의 단계로 이루어져 있으며, 다음과 같은 활동을 수행하고 있습니다.- 위험의 인식(Identification) : 경영활동의 주요 프로세스를 분석하여 발생 가능한 위험을 식별하고 있습니다. 특히 재무위험은 보험위험(생명장기/일반손해보험), 시장위험(금리위험 포함), 신용위험, 유동성위험 등 으로 구분하여 중요한 위험으로 인식하고 있습니다.- 위험의 측정(Measuring) : 위험 유형별로 관리대상의 특성(보험계약 속성, 고객 속성, 자산 운용현황 등)에 따라 위험액을 측정하고 그 규모의 적정성을 평가하는 단계로서, 연결회사의 중요한 위험(보험위험, 시장위험, 신용위험 등)을 측정 및 평가하고 있습니다. - 위험의 모니터링(Monitoring) 및 통제(Controlling) : 전사위험을 가용자본 내에서 관리하기 위해 적정 수준의 위험한도를 설정하고 이의 초과여부를 상시 모니터링하고 있습니다. 또한 주요 의사결정사항에 대해서는 사전관리체계 및 사후관리체계를 구축하여 운영하고 있습니다.- 위험의 보고(Reporting) : 위험요인에 대한 모니터링 결과와 조치방안을 정기적으로 위험관리위원회 및 경영진에 보고하고 있습니다.(3) 내부 자본적정성 평가 및 관리절차연결회사는 보험회사 위험기준 자기자본의 건전성을 나타내는 지표로 감독기관에서 규정하고 있는 지급여력제도 기준에 따라 지급여력비율을 산출하고 있습니다. 연결회사는 제도에 따른 요구자본을 기준으로 개별 리스크별로 요구자본을 배분하고, 할당된 요구자본 내 관리를 위한 한도를 설정하여 안정적 자본관리를 위해 노력하고 있습니다. 이에 대한 요구자본 할당 및 한도 기준에 대해서는 위험관리위원회 승인을 받아 운영하고, 관련사항에 대해서는 정기적인 모니터링을 통해 통제 및 관리하고 있으며, 위원회 및 경영진에게 정기적으로 보고하고 있습니다.연결회사에서는 생명장기손해보험위험, 일반손해보험위험, 시장위험(금리위험 포함), 신용위험에 대한 각 위험별 위험관리시스템을 구축하여 개별 위험액 산출 및 스트레스 테스트 등을 수행하고 있으며, 산출된 위험액으로 한도관리를 하는 등 위험관리에 활용하고 있습니다.또한 보험업감독규정 등에 따라 2018년부터 자체위험 및 지급여력평가(ORSA)체제를 구축하고, 위험관리체제 및 장래 지급여력 수준의 적정성을 자체적으로 평가, 관리하고 있습니다.(4)"
     },
     "quant": {
-      "buy_score": 50.4,
+      "buy_score": 51.4,
       "rank_in_level2": 2,
-      "upside_pct": 20.4,
+      "upside_pct": 21.2,
       "composite": null,
       "timing_state": "watch",
-      "timing_score": 69.5
+      "timing_score": 69.4
     }
   },
   "032830": {
@@ -6761,7 +6761,7 @@
       "upside_pct": 38.7,
       "composite": null,
       "timing_state": "watch",
-      "timing_score": 69.5
+      "timing_score": 69.4
     }
   },
   "006800": {
@@ -6869,7 +6869,7 @@
       "upside_pct": 85.6,
       "composite": -1.0,
       "timing_state": "caution",
-      "timing_score": 19.6
+      "timing_score": 18.1
     }
   },
   "016360": {
@@ -6977,7 +6977,7 @@
       "upside_pct": 80.5,
       "composite": null,
       "timing_state": "caution",
-      "timing_score": 19.6
+      "timing_score": 18.1
     }
   },
   "039490": {
@@ -7085,7 +7085,7 @@
       "upside_pct": 76.5,
       "composite": 1.0,
       "timing_state": "caution",
-      "timing_score": 19.6
+      "timing_score": 18.1
     }
   },
   "071050": {
@@ -7193,7 +7193,7 @@
       "upside_pct": 79.1,
       "composite": 1.0,
       "timing_state": "caution",
-      "timing_score": 19.6
+      "timing_score": 18.1
     }
   },
   "000720": {
@@ -9784,7 +9784,7 @@
       "upside_pct": 75.8,
       "composite": -1.0,
       "timing_state": "hold",
-      "timing_score": 44.0
+      "timing_score": 42.0
     }
   },
   "011780": {
@@ -9892,7 +9892,7 @@
       "upside_pct": 43.4,
       "composite": -1.0,
       "timing_state": "hold",
-      "timing_score": 44.0
+      "timing_score": 42.0
     }
   },
   "051910": {
@@ -10000,7 +10000,7 @@
       "upside_pct": 43.1,
       "composite": -1.0,
       "timing_state": "hold",
-      "timing_score": 44.0
+      "timing_score": 42.0
     }
   },
   "004020": {
