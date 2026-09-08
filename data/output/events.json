@@ -1,5 +1,55 @@
 [
   {
+    "date": "2026-09-08",
+    "level2_id": "S1_semilarge",
+    "level2_name": "반도체 (대형)",
+    "event_type": "phase_turn",
+    "from_state": "바닥",
+    "to_state": "전환",
+    "detail": {
+      "composite_score": 0.464
+    }
+  },
+  {
+    "date": "2026-09-08",
+    "level2_id": "S6_bank",
+    "level2_name": "은행·금융지주",
+    "event_type": "timing_buy",
+    "from_state": "watch",
+    "to_state": "buy",
+    "detail": {
+      "timing_score": 100.0,
+      "rs_3m": 22.67,
+      "breadth_pct": 100.0
+    }
+  },
+  {
+    "date": "2026-09-08",
+    "level2_id": "S7_defense",
+    "level2_name": "방산·우주항공",
+    "event_type": "timing_watch",
+    "from_state": "hold",
+    "to_state": "watch",
+    "detail": {
+      "timing_score": 66.9,
+      "rs_3m": -13.05,
+      "breadth_pct": 0.0
+    }
+  },
+  {
+    "date": "2026-09-08",
+    "level2_id": "S1_semiparts",
+    "level2_name": "반도체 소부장",
+    "event_type": "timing_watch",
+    "from_state": "관측부족",
+    "to_state": "watch",
+    "detail": {
+      "timing_score": 56.4,
+      "rs_3m": -14.78,
+      "breadth_pct": 40.0
+    }
+  },
+  {
     "date": "2026-09-04",
     "level2_id": "S5_pharma",
     "level2_name": "제약·바이오",
@@ -443,54 +493,6 @@
       "timing_score": 75.6,
       "rs_3m": 10.68,
       "breadth_pct": 66.7
-    }
-  },
-  {
-    "date": "2026-07-30",
-    "level2_id": "S3_cosmetics",
-    "level2_name": "화장품",
-    "event_type": "phase_turn",
-    "from_state": "바닥",
-    "to_state": "전환",
-    "detail": {
-      "composite_score": 0.305
-    }
-  },
-  {
-    "date": "2026-07-30",
-    "level2_id": "S5_medtech",
-    "level2_name": "의료기기·미용의료",
-    "event_type": "timing_buy",
-    "from_state": "watch",
-    "to_state": "buy",
-    "detail": {
-      "timing_score": 97.5,
-      "rs_3m": 24.86,
-      "breadth_pct": 25.0
-    }
-  },
-  {
-    "date": "2026-07-29",
-    "level2_id": "S5_medtech",
-    "level2_name": "의료기기·미용의료",
-    "event_type": "timing_watch",
-    "from_state": "hold",
-    "to_state": "watch",
-    "detail": {
-      "timing_score": 76.5,
-      "rs_3m": 20.65,
-      "breadth_pct": 25.0
-    }
-  },
-  {
-    "date": "2026-07-28",
-    "level2_id": "S7_machinery",
-    "level2_name": "기계·로봇",
-    "event_type": "phase_turn",
-    "from_state": "관측부족",
-    "to_state": "전환",
-    "detail": {
-      "composite_score": 0.28
     }
   }
 ]
