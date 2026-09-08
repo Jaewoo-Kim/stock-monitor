@@ -386,9 +386,9 @@
       "eps_rev_z": null,
       "margin_trend": -1.0,
       "composite": -1.0,
-      "upside_pct": 28.4,
-      "n_targets": 22,
-      "buy_score": 44.5,
+      "upside_pct": 29.3,
+      "n_targets": 23,
+      "buy_score": 45.5,
       "rank": 3,
       "calc_date": "2026-09-08"
     }
@@ -650,8 +650,8 @@
       "eps_rev_z": null,
       "margin_trend": 1.0,
       "composite": 1.0,
-      "upside_pct": 70.5,
-      "n_targets": 8,
+      "upside_pct": 71.7,
+      "n_targets": 9,
       "buy_score": 87.5,
       "rank": 1,
       "calc_date": "2026-09-08"
@@ -1138,9 +1138,9 @@
       "eps_rev_z": null,
       "margin_trend": 1.0,
       "composite": 1.0,
-      "upside_pct": 26.1,
-      "n_targets": 7,
-      "buy_score": 71.9,
+      "upside_pct": 25.6,
+      "n_targets": 8,
+      "buy_score": 71.3,
       "rank": 2,
       "calc_date": "2026-09-08"
     },

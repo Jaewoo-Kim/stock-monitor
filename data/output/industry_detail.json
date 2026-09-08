@@ -880,6 +880,20 @@
   "S2_telecom": {
     "recent_reports": [
       {
+        "date": "2026-09-09",
+        "broker": "하나증권",
+        "ticker": "017670",
+        "company_name": "SK텔레콤",
+        "title": "데이터센터 확장이 주주에게 호재인 이유",
+        "opinion": "Buy",
+        "target_price": 140000.0,
+        "prev_target": 140000.0,
+        "tp_pct": 0.0,
+        "source_url": "https://finance.naver.com/research/company_read.naver?nid=96054",
+        "broker_url": "https://stock.pstatic.net/stock-research/company/57/20260909_company_414777000.pdf",
+        "analyst_name": null
+      },
+      {
         "date": "2026-09-07",
         "broker": "대신증권",
         "ticker": "017670",
@@ -2300,6 +2314,20 @@
   "S5_pharma": {
     "recent_reports": [
       {
+        "date": "2026-09-09",
+        "broker": "신한투자증권",
+        "ticker": "196170",
+        "company_name": "알테오젠",
+        "title": "노바티스 Del-desiran 가치 제외",
+        "opinion": "매수",
+        "target_price": 520000.0,
+        "prev_target": 540000.0,
+        "tp_pct": -3.7,
+        "source_url": "https://finance.naver.com/research/company_read.naver?nid=96049",
+        "broker_url": null,
+        "analyst_name": null
+      },
+      {
         "date": "2026-09-08",
         "broker": "하나증권",
         "ticker": "196170",
@@ -3655,6 +3683,20 @@
   },
   "S7_transport": {
     "recent_reports": [
+      {
+        "date": "2026-09-09",
+        "broker": "미래에셋증권",
+        "ticker": "003490",
+        "company_name": "대한항공",
+        "title": "통합을 앞두고 나타난 원화 강세",
+        "opinion": "매수",
+        "target_price": 37000.0,
+        "prev_target": 33000.0,
+        "tp_pct": 12.1,
+        "source_url": "https://finance.naver.com/research/company_read.naver?nid=96044",
+        "broker_url": "https://stock.pstatic.net/stock-research/company/56/20260909_company_620313000.pdf",
+        "analyst_name": null
+      },
       {
         "date": "2026-08-26",
         "broker": "대신증권",
