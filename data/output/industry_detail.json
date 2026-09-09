@@ -98,34 +98,20 @@
         "source_url": "https://finance.naver.com/research/company_read.naver?nid=95445",
         "broker_url": "https://stock.pstatic.net/stock-research/company/78/20260812_company_35834000.pdf",
         "analyst_name": null
-      },
-      {
-        "date": "2026-08-11",
-        "broker": "유진투자증권",
-        "ticker": "036460",
-        "company_name": "한국가스공사",
-        "title": "미수금 다시 증가 시작",
-        "opinion": "Buy",
-        "target_price": 59000.0,
-        "prev_target": null,
-        "tp_pct": null,
-        "source_url": "https://finance.naver.com/research/company_read.naver?nid=95411",
-        "broker_url": "https://stock.pstatic.net/stock-research/company/63/20260811_company_889659000.pdf",
-        "analyst_name": null
       }
     ],
     "companies_detail": [
       {
         "ticker": "015760",
         "name": "한국전력",
-        "close": 32750.0,
-        "ret_1m": -8.9
+        "close": 34100.0,
+        "ret_1m": -5.1
       },
       {
         "ticker": "036460",
         "name": "한국가스공사",
-        "close": 35100.0,
-        "ret_1m": 1.0
+        "close": 35400.0,
+        "ret_1m": 1.9
       }
     ]
   },
@@ -178,32 +164,32 @@
       {
         "ticker": "003670",
         "name": "포스코퓨처엠",
-        "close": 182600.0,
-        "ret_1m": 23.8
+        "close": 180600.0,
+        "ret_1m": 22.4
       },
       {
         "ticker": "006400",
         "name": "삼성SDI",
-        "close": 541000.0,
-        "ret_1m": 26.7
+        "close": 530000.0,
+        "ret_1m": 24.1
       },
       {
         "ticker": "066970",
         "name": "엘앤에프",
-        "close": 114500.0,
-        "ret_1m": 43.5
+        "close": 113700.0,
+        "ret_1m": 42.5
       },
       {
         "ticker": "247540",
         "name": "에코프로비엠",
-        "close": 106700.0,
-        "ret_1m": 4.1
+        "close": 104800.0,
+        "ret_1m": 2.2
       },
       {
         "ticker": "373220",
         "name": "LG에너지솔루션",
-        "close": 362500.0,
-        "ret_1m": 5.1
+        "close": 348500.0,
+        "ret_1m": 1.0
       }
     ]
   },
@@ -242,14 +228,14 @@
       {
         "ticker": "034220",
         "name": "LG디스플레이",
-        "close": 9210.0,
-        "ret_1m": -3.7
+        "close": 8940.0,
+        "ret_1m": -6.5
       },
       {
         "ticker": "213420",
         "name": "덕산네오룩스",
-        "close": 33350.0,
-        "ret_1m": -1.9
+        "close": 30650.0,
+        "ret_1m": -9.9
       }
     ]
   },
@@ -324,54 +310,26 @@
         "source_url": "https://finance.naver.com/research/company_read.naver?nid=95548",
         "broker_url": "https://stock.pstatic.net/stock-research/company/61/20260813_company_375435000.pdf",
         "analyst_name": null
-      },
-      {
-        "date": "2026-08-11",
-        "broker": "하나증권",
-        "ticker": "009150",
-        "company_name": "삼성전기",
-        "title": "[NDR 후기] 수급 불안을 먹고 자라는 중",
-        "opinion": "Buy",
-        "target_price": 3000000.0,
-        "prev_target": 3000000.0,
-        "tp_pct": 0.0,
-        "source_url": "https://finance.naver.com/research/company_read.naver?nid=95429",
-        "broker_url": "https://stock.pstatic.net/stock-research/company/57/20260811_company_927724000.pdf",
-        "analyst_name": null
-      },
-      {
-        "date": "2026-08-11",
-        "broker": "유안타증권",
-        "ticker": "009150",
-        "company_name": "삼성전기",
-        "title": "LTA 본격화, 서버가 이끄는 P와 Q",
-        "opinion": "Buy",
-        "target_price": 2300000.0,
-        "prev_target": 2300000.0,
-        "tp_pct": 0.0,
-        "source_url": "https://finance.naver.com/research/company_read.naver?nid=95422",
-        "broker_url": "https://stock.pstatic.net/stock-research/company/18/20260811_company_266835000.pdf",
-        "analyst_name": null
       }
     ],
     "companies_detail": [
       {
         "ticker": "009150",
         "name": "삼성전기",
-        "close": 1454000.0,
-        "ret_1m": 18.3
+        "close": 1370000.0,
+        "ret_1m": 11.5
       },
       {
         "ticker": "011070",
         "name": "LG이노텍",
-        "close": 586000.0,
-        "ret_1m": 5.8
+        "close": 545000.0,
+        "ret_1m": -1.6
       },
       {
         "ticker": "066570",
         "name": "LG전자",
-        "close": 214000.0,
-        "ret_1m": 22.1
+        "close": 205000.0,
+        "ret_1m": 17.0
       }
     ]
   },
@@ -488,48 +446,20 @@
         "source_url": "https://finance.naver.com/research/company_read.naver?nid=95624",
         "broker_url": "https://stock.pstatic.net/stock-research/company/56/20260814_company_333834000.pdf",
         "analyst_name": null
-      },
-      {
-        "date": "2026-08-11",
-        "broker": "미래에셋증권",
-        "ticker": "000660",
-        "company_name": "SK하이닉스",
-        "title": "역사적 업적의 연속",
-        "opinion": "매수",
-        "target_price": 2800000.0,
-        "prev_target": 2800000.0,
-        "tp_pct": 0.0,
-        "source_url": "https://finance.naver.com/research/company_read.naver?nid=95416",
-        "broker_url": "https://stock.pstatic.net/stock-research/company/56/20260811_company_362199000.pdf",
-        "analyst_name": null
-      },
-      {
-        "date": "2026-08-11",
-        "broker": "미래에셋증권",
-        "ticker": "005930",
-        "company_name": "삼성전자",
-        "title": "비중확대의 적기",
-        "opinion": "매수",
-        "target_price": 370000.0,
-        "prev_target": 370000.0,
-        "tp_pct": 0.0,
-        "source_url": "https://finance.naver.com/research/company_read.naver?nid=95415",
-        "broker_url": "https://stock.pstatic.net/stock-research/company/56/20260811_company_224552000.pdf",
-        "analyst_name": null
       }
     ],
     "companies_detail": [
       {
         "ticker": "000660",
         "name": "SK하이닉스",
-        "close": 1783000.0,
-        "ret_1m": 19.3
+        "close": 1793000.0,
+        "ret_1m": 19.9
       },
       {
         "ticker": "005930",
         "name": "삼성전자",
-        "close": 270000.0,
-        "ret_1m": 17.1
+        "close": 269500.0,
+        "ret_1m": 16.9
       }
     ]
   },
@@ -554,26 +484,26 @@
       {
         "ticker": "036930",
         "name": "주성엔지니어링",
-        "close": 187200.0,
-        "ret_1m": 40.3
+        "close": 194600.0,
+        "ret_1m": 45.9
       },
       {
         "ticker": "042700",
         "name": "한미반도체",
-        "close": 240500.0,
-        "ret_1m": 20.0
+        "close": 244500.0,
+        "ret_1m": 21.9
       },
       {
         "ticker": "058470",
         "name": "리노공업",
-        "close": 68400.0,
-        "ret_1m": 2.2
+        "close": 68900.0,
+        "ret_1m": 3.0
       },
       {
         "ticker": "357780",
         "name": "솔브레인",
-        "close": 340500.0,
-        "ret_1m": 14.5
+        "close": 325500.0,
+        "ret_1m": 9.4
       },
       {
         "ticker": "403870",
@@ -696,40 +626,26 @@
         "source_url": "https://finance.naver.com/research/company_read.naver?nid=95442",
         "broker_url": "https://stock.pstatic.net/stock-research/company/78/20260812_company_355932000.pdf",
         "analyst_name": null
-      },
-      {
-        "date": "2026-08-11",
-        "broker": "iM증권",
-        "ticker": "041510",
-        "company_name": "에스엠",
-        "title": "하반기 숨 고르기, 내년 성장 모멘텀 재개",
-        "opinion": "Buy",
-        "target_price": 120000.0,
-        "prev_target": null,
-        "tp_pct": null,
-        "source_url": "https://finance.naver.com/research/company_read.naver?nid=95405",
-        "broker_url": "https://stock.pstatic.net/stock-research/company/61/20260811_company_708700000.pdf",
-        "analyst_name": null
       }
     ],
     "companies_detail": [
       {
         "ticker": "035900",
         "name": "JYP Ent.",
-        "close": 39500.0,
-        "ret_1m": -16.2
+        "close": 39550.0,
+        "ret_1m": -16.1
       },
       {
         "ticker": "041510",
         "name": "에스엠",
-        "close": 79900.0,
-        "ret_1m": 8.4
+        "close": 82700.0,
+        "ret_1m": 12.2
       },
       {
         "ticker": "352820",
         "name": "하이브",
-        "close": 180800.0,
-        "ret_1m": 0.1
+        "close": 181400.0,
+        "ret_1m": 0.4
       }
     ]
   },
@@ -866,14 +782,14 @@
       {
         "ticker": "035420",
         "name": "NAVER",
-        "close": 218000.0,
-        "ret_1m": -3.5
+        "close": 214500.0,
+        "ret_1m": -5.1
       },
       {
         "ticker": "035720",
         "name": "카카오",
-        "close": 36550.0,
-        "ret_1m": -4.6
+        "close": 35400.0,
+        "ret_1m": -7.6
       }
     ]
   },
@@ -1108,20 +1024,20 @@
       {
         "ticker": "017670",
         "name": "SK텔레콤",
-        "close": 93800.0,
-        "ret_1m": 3.0
+        "close": 92400.0,
+        "ret_1m": 1.4
       },
       {
         "ticker": "030200",
         "name": "KT",
-        "close": 54900.0,
-        "ret_1m": 2.6
+        "close": 54300.0,
+        "ret_1m": 1.5
       },
       {
         "ticker": "032640",
         "name": "LG유플러스",
-        "close": 15090.0,
-        "ret_1m": 0.6
+        "close": 14880.0,
+        "ret_1m": -0.8
       }
     ]
   },
@@ -1230,26 +1146,26 @@
       {
         "ticker": "000270",
         "name": "기아",
-        "close": 128400.0,
-        "ret_1m": -3.9
+        "close": 125400.0,
+        "ret_1m": -6.1
       },
       {
         "ticker": "005380",
         "name": "현대차",
-        "close": 393000.0,
-        "ret_1m": -1.8
+        "close": 385000.0,
+        "ret_1m": -3.8
       },
       {
         "ticker": "012330",
         "name": "현대모비스",
-        "close": 432000.0,
-        "ret_1m": -15.0
+        "close": 415000.0,
+        "ret_1m": -18.3
       },
       {
         "ticker": "204320",
         "name": "HL만도",
-        "close": 50200.0,
-        "ret_1m": -2.0
+        "close": 48600.0,
+        "ret_1m": -5.1
       }
     ]
   },
@@ -1540,20 +1456,20 @@
       {
         "ticker": "044820",
         "name": "코스맥스",
-        "close": 23400.0,
-        "ret_1m": 2.2
+        "close": 23200.0,
+        "ret_1m": 1.3
       },
       {
         "ticker": "051900",
         "name": "LG생활건강",
-        "close": 293000.0,
-        "ret_1m": -9.6
+        "close": 290000.0,
+        "ret_1m": -10.5
       },
       {
         "ticker": "090430",
         "name": "아모레퍼시픽",
-        "close": 140800.0,
-        "ret_1m": 2.2
+        "close": 140000.0,
+        "ret_1m": 1.6
       },
       {
         "ticker": "257390",
@@ -1565,6 +1481,20 @@
   },
   "S3_retail": {
     "recent_reports": [
+      {
+        "date": "2026-09-10",
+        "broker": "IBK투자증권",
+        "ticker": "139480",
+        "company_name": "이마트",
+        "title": "스타벅스 부진과 본업의 호조",
+        "opinion": "매수",
+        "target_price": 100000.0,
+        "prev_target": 100000.0,
+        "tp_pct": 0.0,
+        "source_url": "https://finance.naver.com/research/company_read.naver?nid=96068",
+        "broker_url": "https://stock.pstatic.net/stock-research/company/40/20260910_company_32572000.pdf",
+        "analyst_name": null
+      },
       {
         "date": "2026-09-08",
         "broker": "iM증권",
@@ -1822,20 +1752,20 @@
       {
         "ticker": "004170",
         "name": "신세계",
-        "close": 396500.0,
-        "ret_1m": -7.3
+        "close": 404500.0,
+        "ret_1m": -5.4
       },
       {
         "ticker": "023530",
         "name": "롯데쇼핑",
-        "close": 112300.0,
-        "ret_1m": -1.9
+        "close": 117800.0,
+        "ret_1m": 2.9
       },
       {
         "ticker": "139480",
         "name": "이마트",
-        "close": 74200.0,
-        "ret_1m": -8.8
+        "close": 75900.0,
+        "ret_1m": -6.8
       }
     ]
   },
@@ -2126,32 +2056,32 @@
       {
         "ticker": "003230",
         "name": "삼양식품",
-        "close": 1330000.0,
-        "ret_1m": 7.9
+        "close": 1291000.0,
+        "ret_1m": 4.7
       },
       {
         "ticker": "004370",
         "name": "농심",
-        "close": 415000.0,
-        "ret_1m": 6.4
+        "close": 417000.0,
+        "ret_1m": 6.9
       },
       {
         "ticker": "033780",
         "name": "KT&G",
-        "close": 170300.0,
-        "ret_1m": -6.8
+        "close": 169800.0,
+        "ret_1m": -7.1
       },
       {
         "ticker": "097950",
         "name": "CJ제일제당",
-        "close": 182800.0,
-        "ret_1m": -10.0
+        "close": 183000.0,
+        "ret_1m": -9.9
       },
       {
         "ticker": "271560",
         "name": "오리온",
-        "close": 123000.0,
-        "ret_1m": -9.2
+        "close": 121100.0,
+        "ret_1m": -10.6
       }
     ]
   },
@@ -2288,26 +2218,26 @@
       {
         "ticker": "145720",
         "name": "덴티움",
-        "close": 38050.0,
-        "ret_1m": -6.4
+        "close": 37200.0,
+        "ret_1m": -8.5
       },
       {
         "ticker": "214150",
         "name": "클래시스",
-        "close": 32000.0,
-        "ret_1m": -29.7
+        "close": 31350.0,
+        "ret_1m": -31.2
       },
       {
         "ticker": "214450",
         "name": "파마리서치",
-        "close": 376500.0,
-        "ret_1m": -4.6
+        "close": 369000.0,
+        "ret_1m": -6.5
       },
       {
         "ticker": "328130",
         "name": "루닛",
-        "close": 8870.0,
-        "ret_1m": -17.4
+        "close": 8700.0,
+        "ret_1m": -19.0
       }
     ]
   },
@@ -2598,32 +2528,32 @@
       {
         "ticker": "000100",
         "name": "유한양행",
-        "close": 80700.0,
-        "ret_1m": 3.7
+        "close": 79100.0,
+        "ret_1m": 1.7
       },
       {
         "ticker": "068270",
         "name": "셀트리온",
-        "close": 186300.0,
-        "ret_1m": -4.5
+        "close": 183100.0,
+        "ret_1m": -6.1
       },
       {
         "ticker": "128940",
         "name": "한미약품",
-        "close": 475500.0,
-        "ret_1m": 21.6
+        "close": 471000.0,
+        "ret_1m": 20.5
       },
       {
         "ticker": "196170",
         "name": "알테오젠",
-        "close": 286000.0,
-        "ret_1m": -2.6
+        "close": 277000.0,
+        "ret_1m": -5.6
       },
       {
         "ticker": "207940",
         "name": "삼성바이오로직스",
-        "close": 1466000.0,
-        "ret_1m": -3.2
+        "close": 1440000.0,
+        "ret_1m": -4.9
       }
     ]
   },
@@ -2662,26 +2592,26 @@
       {
         "ticker": "055550",
         "name": "신한지주",
-        "close": 113900.0,
-        "ret_1m": 6.1
+        "close": 113200.0,
+        "ret_1m": 5.4
       },
       {
         "ticker": "086790",
         "name": "하나금융지주",
-        "close": 138900.0,
-        "ret_1m": 4.2
+        "close": 136800.0,
+        "ret_1m": 2.6
       },
       {
         "ticker": "105560",
         "name": "KB금융",
-        "close": 175900.0,
-        "ret_1m": 2.6
+        "close": 173700.0,
+        "ret_1m": 1.3
       },
       {
         "ticker": "316140",
         "name": "우리금융지주",
-        "close": 34200.0,
-        "ret_1m": 2.1
+        "close": 34050.0,
+        "ret_1m": 1.6
       }
     ]
   },
@@ -2972,26 +2902,26 @@
       {
         "ticker": "000810",
         "name": "삼성화재",
-        "close": 656000.0,
-        "ret_1m": 1.2
+        "close": 647000.0,
+        "ret_1m": -0.2
       },
       {
         "ticker": "001450",
         "name": "현대해상",
-        "close": 51000.0,
-        "ret_1m": 32.0
+        "close": 50300.0,
+        "ret_1m": 30.1
       },
       {
         "ticker": "005830",
         "name": "DB손해보험",
-        "close": 192400.0,
-        "ret_1m": 20.4
+        "close": 187300.0,
+        "ret_1m": 17.2
       },
       {
         "ticker": "032830",
         "name": "삼성생명",
-        "close": 312000.0,
-        "ret_1m": 8.5
+        "close": 308000.0,
+        "ret_1m": 7.1
       }
     ]
   },
@@ -3108,46 +3038,32 @@
         "source_url": "https://finance.naver.com/research/company_read.naver?nid=95525",
         "broker_url": "https://stock.pstatic.net/stock-research/company/64/20260813_company_264239000.pdf",
         "analyst_name": null
-      },
-      {
-        "date": "2026-08-11",
-        "broker": "키움증권",
-        "ticker": "071050",
-        "company_name": "한국금융지주",
-        "title": "2Q26 Re: 국내 증시 호조에 기반한 실적 서프..",
-        "opinion": "Buy",
-        "target_price": 310000.0,
-        "prev_target": null,
-        "tp_pct": null,
-        "source_url": "https://finance.naver.com/research/company_read.naver?nid=95400",
-        "broker_url": "https://stock.pstatic.net/stock-research/company/39/20260811_company_909105000.pdf",
-        "analyst_name": null
       }
     ],
     "companies_detail": [
       {
         "ticker": "006800",
         "name": "미래에셋증권",
-        "close": 34700.0,
-        "ret_1m": 0.4
+        "close": 35050.0,
+        "ret_1m": 1.4
       },
       {
         "ticker": "016360",
         "name": "삼성증권",
-        "close": 87700.0,
-        "ret_1m": -8.1
+        "close": 87300.0,
+        "ret_1m": -8.5
       },
       {
         "ticker": "039490",
         "name": "키움증권",
-        "close": 272500.0,
-        "ret_1m": -6.2
+        "close": 273000.0,
+        "ret_1m": -6.0
       },
       {
         "ticker": "071050",
         "name": "한국금융지주",
-        "close": 190900.0,
-        "ret_1m": -6.4
+        "close": 192500.0,
+        "ret_1m": -5.6
       }
     ]
   },
@@ -3200,20 +3116,20 @@
       {
         "ticker": "000720",
         "name": "현대건설",
-        "close": 126900.0,
-        "ret_1m": 12.7
+        "close": 131400.0,
+        "ret_1m": 16.7
       },
       {
         "ticker": "028050",
         "name": "삼성E&A",
-        "close": 48000.0,
-        "ret_1m": -2.9
+        "close": 49150.0,
+        "ret_1m": -0.6
       },
       {
         "ticker": "375500",
         "name": "DL이앤씨",
-        "close": 78000.0,
-        "ret_1m": 8.2
+        "close": 78600.0,
+        "ret_1m": 9.0
       }
     ]
   },
@@ -3252,26 +3168,26 @@
       {
         "ticker": "012450",
         "name": "한화에어로스페이스",
-        "close": 1039000.0,
-        "ret_1m": -1.4
+        "close": 1027000.0,
+        "ret_1m": -2.6
       },
       {
         "ticker": "047810",
         "name": "한국항공우주",
-        "close": 129400.0,
-        "ret_1m": -13.8
+        "close": 127800.0,
+        "ret_1m": -14.9
       },
       {
         "ticker": "064350",
         "name": "현대로템",
-        "close": 127200.0,
-        "ret_1m": -11.8
+        "close": 126300.0,
+        "ret_1m": -12.4
       },
       {
         "ticker": "079550",
         "name": "LIG넥스원",
-        "close": 659000.0,
-        "ret_1m": -6.1
+        "close": 666000.0,
+        "ret_1m": -5.1
       }
     ]
   },
@@ -3422,20 +3338,20 @@
       {
         "ticker": "003550",
         "name": "LG",
-        "close": 124500.0,
-        "ret_1m": 19.1
+        "close": 118900.0,
+        "ret_1m": 13.8
       },
       {
         "ticker": "028260",
         "name": "삼성물산",
-        "close": 384000.0,
-        "ret_1m": 15.0
+        "close": 382000.0,
+        "ret_1m": 14.4
       },
       {
         "ticker": "034730",
         "name": "SK",
-        "close": 611000.0,
-        "ret_1m": 20.0
+        "close": 603000.0,
+        "ret_1m": 18.5
       }
     ]
   },
@@ -3586,26 +3502,26 @@
       {
         "ticker": "001440",
         "name": "대한전선",
-        "close": 28650.0,
-        "ret_1m": 4.6
+        "close": 28750.0,
+        "ret_1m": 4.9
       },
       {
         "ticker": "010120",
         "name": "LS ELECTRIC",
-        "close": 207000.0,
-        "ret_1m": 2.2
+        "close": 200500.0,
+        "ret_1m": -1.0
       },
       {
         "ticker": "267260",
         "name": "HD현대일렉트릭",
-        "close": 763000.0,
-        "ret_1m": 0.3
+        "close": 728000.0,
+        "ret_1m": -4.3
       },
       {
         "ticker": "298040",
         "name": "효성중공업",
-        "close": 2965000.0,
-        "ret_1m": 9.5
+        "close": 2834000.0,
+        "ret_1m": 4.7
       }
     ]
   },
@@ -3658,26 +3574,26 @@
       {
         "ticker": "009540",
         "name": "HD한국조선해양",
-        "close": 351500.0,
-        "ret_1m": -12.1
+        "close": 346500.0,
+        "ret_1m": -13.4
       },
       {
         "ticker": "010140",
         "name": "삼성중공업",
-        "close": 21400.0,
-        "ret_1m": -3.2
+        "close": 21300.0,
+        "ret_1m": -3.6
       },
       {
         "ticker": "042660",
         "name": "한화오션",
-        "close": 87300.0,
-        "ret_1m": -3.7
+        "close": 86100.0,
+        "ret_1m": -5.1
       },
       {
         "ticker": "329180",
         "name": "HD현대중공업",
-        "close": 449000.0,
-        "ret_1m": -11.4
+        "close": 444500.0,
+        "ret_1m": -12.3
       }
     ]
   },
@@ -3842,20 +3758,20 @@
       {
         "ticker": "000120",
         "name": "CJ대한통운",
-        "close": 73700.0,
-        "ret_1m": -5.8
+        "close": 73600.0,
+        "ret_1m": -5.9
       },
       {
         "ticker": "003490",
         "name": "대한항공",
-        "close": 30350.0,
-        "ret_1m": 10.4
+        "close": 30100.0,
+        "ret_1m": 9.5
       },
       {
         "ticker": "011200",
         "name": "HMM",
-        "close": 21450.0,
-        "ret_1m": 0.2
+        "close": 21150.0,
+        "ret_1m": -1.2
       }
     ]
   },
@@ -3874,46 +3790,32 @@
         "source_url": "https://finance.naver.com/research/company_read.naver?nid=95444",
         "broker_url": "https://stock.pstatic.net/stock-research/company/78/20260812_company_757932000.pdf",
         "analyst_name": null
-      },
-      {
-        "date": "2026-08-11",
-        "broker": "한화투자증권",
-        "ticker": "010130",
-        "company_name": "고려아연",
-        "title": "NDR 후기: 이익 체력 재차 증명한 분기, 전략..",
-        "opinion": "Buy",
-        "target_price": 1593000.0,
-        "prev_target": null,
-        "tp_pct": null,
-        "source_url": "https://finance.naver.com/research/company_read.naver?nid=95433",
-        "broker_url": "https://stock.pstatic.net/stock-research/company/16/20260811_company_418437000.pdf",
-        "analyst_name": null
       }
     ],
     "companies_detail": [
       {
         "ticker": "004020",
         "name": "현대제철",
-        "close": 32400.0,
-        "ret_1m": 15.1
+        "close": 32850.0,
+        "ret_1m": 16.7
       },
       {
         "ticker": "005490",
         "name": "POSCO홀딩스",
-        "close": 335500.0,
-        "ret_1m": 5.2
+        "close": 328500.0,
+        "ret_1m": 3.0
       },
       {
         "ticker": "010130",
         "name": "고려아연",
-        "close": 1224000.0,
-        "ret_1m": -0.8
+        "close": 1213000.0,
+        "ret_1m": -1.7
       },
       {
         "ticker": "103140",
         "name": "풍산",
-        "close": 76500.0,
-        "ret_1m": -8.7
+        "close": 78400.0,
+        "ret_1m": -6.4
       }
     ]
   },
@@ -4008,20 +3910,20 @@
       {
         "ticker": "010950",
         "name": "S-Oil",
-        "close": 157600.0,
-        "ret_1m": 26.2
+        "close": 159400.0,
+        "ret_1m": 27.6
       },
       {
         "ticker": "078930",
         "name": "GS",
-        "close": 125600.0,
-        "ret_1m": 27.1
+        "close": 124500.0,
+        "ret_1m": 26.0
       },
       {
         "ticker": "096770",
         "name": "SK이노베이션",
-        "close": 137900.0,
-        "ret_1m": 27.0
+        "close": 138000.0,
+        "ret_1m": 27.1
       }
     ]
   },
@@ -4037,8 +3939,8 @@
       {
         "ticker": "018260",
         "name": "삼성에스디에스",
-        "close": 242500.0,
-        "ret_1m": 4.3
+        "close": 230000.0,
+        "ret_1m": -1.1
       }
     ]
   },
@@ -4048,14 +3950,14 @@
       {
         "ticker": "036570",
         "name": "엔씨소프트",
-        "close": 223000.0,
-        "ret_1m": -6.9
+        "close": 211500.0,
+        "ret_1m": -11.7
       },
       {
         "ticker": "259960",
         "name": "크래프톤",
-        "close": 218000.0,
-        "ret_1m": -5.2
+        "close": 213500.0,
+        "ret_1m": -7.2
       }
     ]
   },
@@ -4065,20 +3967,20 @@
       {
         "ticker": "241560",
         "name": "두산밥캣",
-        "close": 63700.0,
-        "ret_1m": -0.5
+        "close": 62700.0,
+        "ret_1m": -2.0
       },
       {
         "ticker": "277810",
         "name": "레인보우로보틱스",
-        "close": 448000.0,
-        "ret_1m": -8.5
+        "close": 433000.0,
+        "ret_1m": -11.5
       },
       {
         "ticker": "454910",
         "name": "두산로보틱스",
-        "close": 70400.0,
-        "ret_1m": -0.4
+        "close": 69300.0,
+        "ret_1m": -2.0
       }
     ]
   },
@@ -4088,20 +3990,20 @@
       {
         "ticker": "011170",
         "name": "롯데케미칼",
-        "close": 58800.0,
-        "ret_1m": 0.2
+        "close": 57400.0,
+        "ret_1m": -2.2
       },
       {
         "ticker": "011780",
         "name": "금호석유",
-        "close": 126000.0,
-        "ret_1m": 3.5
+        "close": 123800.0,
+        "ret_1m": 1.7
       },
       {
         "ticker": "051910",
         "name": "LG화학",
-        "close": 279500.0,
-        "ret_1m": 7.1
+        "close": 270000.0,
+        "ret_1m": 3.4
       }
     ]
   }
