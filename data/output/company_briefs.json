@@ -319,8 +319,8 @@
       "rank_in_level2": 5,
       "upside_pct": 26.7,
       "composite": -1.0,
-      "timing_state": "hold",
-      "timing_score": 47.4
+      "timing_state": "관측부족",
+      "timing_score": 24.4
     }
   },
   "006400": {
@@ -441,8 +441,8 @@
       "rank_in_level2": 4,
       "upside_pct": 36.4,
       "composite": -1.0,
-      "timing_state": "hold",
-      "timing_score": 47.4
+      "timing_state": "관측부족",
+      "timing_score": 24.4
     }
   },
   "066970": {
@@ -541,8 +541,8 @@
       "rank_in_level2": 3,
       "upside_pct": 8.3,
       "composite": 1.0,
-      "timing_state": "hold",
-      "timing_score": 47.4
+      "timing_state": "관측부족",
+      "timing_score": 24.4
     }
   },
   "247540": {
@@ -663,8 +663,8 @@
       "rank_in_level2": 2,
       "upside_pct": 72.0,
       "composite": -1.0,
-      "timing_state": "hold",
-      "timing_score": 47.4
+      "timing_state": "관측부족",
+      "timing_score": 24.4
     }
   },
   "373220": {
@@ -785,8 +785,8 @@
       "rank_in_level2": 1,
       "upside_pct": 46.1,
       "composite": -1.0,
-      "timing_state": "hold",
-      "timing_score": 47.4
+      "timing_state": "관측부족",
+      "timing_score": 24.4
     }
   },
   "034220": {
@@ -1489,7 +1489,7 @@
       "upside_pct": 88.4,
       "composite": -1.0,
       "timing_state": "watch",
-      "timing_score": 66.5
+      "timing_score": 67.0
     }
   },
   "005930": {
@@ -1627,7 +1627,7 @@
       "upside_pct": 81.3,
       "composite": -1.0,
       "timing_state": "watch",
-      "timing_score": 66.5
+      "timing_score": 67.0
     }
   },
   "036930": {
@@ -2567,7 +2567,7 @@
       "upside_pct": null,
       "composite": -1.0,
       "timing_state": "hold",
-      "timing_score": 35.0
+      "timing_score": 32.0
     }
   },
   "259960": {
@@ -2675,7 +2675,7 @@
       "upside_pct": 79.6,
       "composite": 1.0,
       "timing_state": "hold",
-      "timing_score": 35.0
+      "timing_score": 32.0
     }
   },
   "035420": {
@@ -2788,7 +2788,7 @@
       "upside_pct": 58.8,
       "composite": 1.0,
       "timing_state": "hold",
-      "timing_score": 47.2
+      "timing_score": 47.1
     }
   },
   "035720": {
@@ -2901,7 +2901,7 @@
       "upside_pct": 65.5,
       "composite": -1.0,
       "timing_state": "hold",
-      "timing_score": 47.2
+      "timing_score": 47.1
     }
   },
   "017670": {
@@ -3793,7 +3793,7 @@
       "upside_pct": 1103.0,
       "composite": 1.0,
       "timing_state": "buy",
-      "timing_score": 99.3
+      "timing_score": 99.4
     }
   },
   "051900": {
@@ -3901,7 +3901,7 @@
       "upside_pct": 14.2,
       "composite": -1.0,
       "timing_state": "buy",
-      "timing_score": 99.3
+      "timing_score": 99.4
     }
   },
   "090430": {
@@ -4014,7 +4014,7 @@
       "upside_pct": 29.6,
       "composite": 1.0,
       "timing_state": "buy",
-      "timing_score": 99.3
+      "timing_score": 99.4
     }
   },
   "257390": {
@@ -4087,7 +4087,7 @@
       "upside_pct": null,
       "composite": null,
       "timing_state": "buy",
-      "timing_score": 99.3
+      "timing_score": 99.4
     }
   },
   "004170": {
@@ -4653,10 +4653,10 @@
     "close": 168400.0,
     "ret_1m": -9.3,
     "analyst": {
-      "n_buy": 12,
+      "n_buy": 11,
       "n_hold": 0,
       "n_sell": 0,
-      "avg_target": 239167,
+      "avg_target": 239091,
       "latest_target": 250000.0,
       "recent": [
         {
@@ -5436,7 +5436,7 @@
       "upside_pct": 65.0,
       "composite": -1.0,
       "timing_state": "buy",
-      "timing_score": 97.3
+      "timing_score": 97.4
     }
   },
   "068270": {
@@ -5558,7 +5558,7 @@
       "upside_pct": 37.7,
       "composite": -1.0,
       "timing_state": "buy",
-      "timing_score": 97.3
+      "timing_score": 97.4
     }
   },
   "128940": {
@@ -5666,7 +5666,7 @@
       "upside_pct": 31.4,
       "composite": -1.0,
       "timing_state": "buy",
-      "timing_score": 97.3
+      "timing_score": 97.4
     }
   },
   "196170": {
@@ -5779,7 +5779,7 @@
       "upside_pct": 75.7,
       "composite": 1.0,
       "timing_state": "buy",
-      "timing_score": 97.3
+      "timing_score": 97.4
     }
   },
   "207940": {
@@ -5901,7 +5901,7 @@
       "upside_pct": 35.9,
       "composite": 1.0,
       "timing_state": "buy",
-      "timing_score": 97.3
+      "timing_score": 97.4
     }
   },
   "055550": {
@@ -8043,10 +8043,10 @@
     "close": 376000.0,
     "ret_1m": 11.9,
     "analyst": {
-      "n_buy": 10,
+      "n_buy": 9,
       "n_hold": 0,
       "n_sell": 0,
-      "avg_target": 516000,
+      "avg_target": 504444,
       "latest_target": 550000.0,
       "recent": [
         {
@@ -8130,9 +8130,9 @@
       "risk_text": "위험요소가 내포되어 있다. CC 원리금의 채무불이행이 발생할 가능성이 높다. C 원리금의 채무불이행이 발생할 가능성이 지극히 높다. D 현재 채무불이행 상태에 있다. ※ AA부터 B까지는 동일 등급내에서 세분하여 구분할 필요가 있는 경우에는 \"＋\" 또는 \"－\"의 기호를 부여할 수 있다.※ 예비평정의 경우 당해 등급기호의 앞에 \"P\"를 부기한다.※ 미공시 등급의 경우 당해 등급기호의 앞에 \"U\"를 부기한다. - R&I(日) : 장기신용등급 (상환기간 1년 이상) 등 급 의 미 AAA 원리금 지급의 안정성이 제일 높음. AA+AA AA- AAA보다는 낮으나 높은 등급으로 평가됨. A+AA- 현재 안정성은 적당하나 향후 악화될 가능성이 있음. BBB+BBB BBB- 현재 원리금 지급은 가능하나 향후 안정성은 부족함. BB+BB BB- 원리금 지급의 안정성은 중간이며, 투기적 요소가 있음. B+B B- 원리금 지급의 안정성이 낮음. CCC 지급불능의 가능성이 있음. CC 지급불능의 가능성이 큼. C 최저등급 - R&I(日) : 단기신용등급 (상환기간 1년 미만) 등 급 의 미 a-1 단기상환능력이 매우 우수함. a-2 a-1보다는 낮으나 높은 등급으로 평가됨. 단, 경제상황 및 영업여건 등에따라 영향을 받을 가능성이 높음. a-3 현재의 단기 상환능력은 적당하나 향후 악화될 가능성이 매우 높음. b 단기 지급능력이 의심되는 투기 등급임. c 단기 채무 지급 불능 가능성 있음. - S&P(美) : 장기신용등급 (상환기간 1년 이상) 등 급 의 미 AAA 채무상환능력이 극히 높음, 최고등급 AA+ AA AA- 채무상환능력이 매우 높음 A+ A A- 채무상환능력은 충분하나 경제 상황 악화 및 변화에 다소 취약함 BBB+ BBB BBB- 채무상환능력은 충분하나 상위 등급에 비해 경제 상황 악화에좀 더 취약함 BB+ BB BB- 가까운 장래에 채무불이행이 발생할 가능성은 비교적 낮으나경영, 재무, 경제 상황 악화에 대한 불확실성이 큼 B+ B B- 경영, 재무, 경제 상황 악화에 좀 더 취약하나현재로서는 채무상환능력이 있음 CCC 현재 채무불이행 가능성이 있으며 채무상환은 경영, 재무, 경제 상황이 호의적일 경우에만 가능함 CC 채무불이행 가능성이 높음, 부도 상태는 아니지만사실상 부도가 예상됨 C 현재 채무불이행 가능성이 매우 높으며 최종 회수율은상위등급 채무보다 낮게 추정됨 D 금융채무불이행 상태 혹은 묵시적 계약(imputed promises) 파기, 또는 파산 신청 혹은 이와 유사한 상태 - Moody's(美) : 장기신용등급 (상환기간 1년 이상) 등 급 의 미 Aaa 채무상환능력 최상, 신용위험 최소 Aa1 Aa2 Aa3 채무상환능력 높음, 신용위험 매우 낮음 A1 A2 A3 채무상환능력 중상, 신용위험 낮음 Baa1 Baa2 Baa3 채무상환능력 중간, 신용위험 크지 않으나투기적 요소가 있음 Ba1 Ba2 Ba3 투기적 성향, 신용위험 상당함 B1 B2 B3 투기적 성향, 신용위험 높음 Caa 투기적 성향 높음, 신용위험 매우 높음 Ca 투기적 성향 매우 높음, 가까운 시일 내부도발생 가능, 원리금 상환가능성 존재 C 부도 상태, 원리금 상환가능성 낮음 자. 회사의 주권상장(또는 등록ㆍ지정)여부 및 특례상장에 관한 …"
     },
     "quant": {
-      "buy_score": 54.4,
+      "buy_score": 51.0,
       "rank_in_level2": 3,
-      "upside_pct": 37.2,
+      "upside_pct": 34.2,
       "composite": -1.0,
       "timing_state": "hold",
       "timing_score": 45.6
@@ -8594,7 +8594,7 @@
       "upside_pct": 63.6,
       "composite": -1.0,
       "timing_state": "watch",
-      "timing_score": 60.4
+      "timing_score": 61.3
     }
   },
   "010120": {
@@ -8702,7 +8702,7 @@
       "upside_pct": 89.1,
       "composite": -1.0,
       "timing_state": "watch",
-      "timing_score": 60.4
+      "timing_score": 61.3
     }
   },
   "267260": {
@@ -8815,7 +8815,7 @@
       "upside_pct": 56.8,
       "composite": 1.0,
       "timing_state": "watch",
-      "timing_score": 60.4
+      "timing_score": 61.3
     }
   },
   "298040": {
@@ -8923,7 +8923,7 @@
       "upside_pct": 8.6,
       "composite": -1.0,
       "timing_state": "watch",
-      "timing_score": 60.4
+      "timing_score": 61.3
     }
   },
   "009540": {
@@ -9476,10 +9476,10 @@
     "close": 29800.0,
     "ret_1m": 11.0,
     "analyst": {
-      "n_buy": 8,
+      "n_buy": 7,
       "n_hold": 0,
       "n_sell": 0,
-      "avg_target": 38125,
+      "avg_target": 37857,
       "latest_target": 37000.0,
       "recent": [
         {
@@ -9563,9 +9563,9 @@
       "risk_text": "위험요소당사는 지분상품에서 발생하는 가격변동위험에 노출되어 있습니다. 지분상품은 매매목적이 아닌 전략적 목적으로 보유하고 있으며, 당사는 해당 투자자산을 활발하게 매매하고 있지 않습니다.(5) 위험노출 정도 및 관리 전략당사는 유가, 환율, 금리 변동성을 제거 혹은 최소화하기 위하여, 체계적이고 적극적인 시장 위험관리를 수행하고 있습니다.위험관리는 크게 Natural Hedging 과 Active Hedging 의 두 가지로 구분됩니다. 대한항공의 위험관리 전략은 위의 두 가지 Hedging기법을 사용함으로써 시장의 위험 요소를 최소화하는데 있습니다. 2025년 12월말 기준, 당사가 위험에 노출된 포지션과 변동성 및 대응전략은 아래 표와 같습니다. 변수 Position 영향 우리회사 위험관리 (Strategy) 유가 연간 예상 유류 소모량:약 3,050만 배럴 유가 1달러(배럴당) 변동 시: 약 3천 50만불 손익변동 발생 Natural Hedge ● 원화 고정금리 차입 추진 ● 엔화/유로화 등 잉여 저금리 통화 고정금리 차입 Active Hedge (파생상품을 통한 헷지) ● 유가 - 연간 예상 유류 소모량의 최대 50% 내 헷지 시행 - 시장 상황 및 유가 수준 고려하여, 적합한 헷지 상품 활용(당사는 주로 Zero Cost Collar 상품 이용) ● 환율/금리 - 통화/이자율 스왑 계약 등을 통해 차입구조 관리 환율 평가손익 측면 순외화부채: 약 55억불 환율 10원 변동 시: 약 550억원의 외화평가손익 발생 Cash Flow 측면 연간 예상 달러 부족량: 약 16억불 환율 10원 변동 시: 약 160억원의 Cash 변동 발생 금리 변동금리차입금: 약 5.7조원고정금리차입금: 약 6.3조원 (리스회계기준 변경: 4.0조원 제외) 평균 금리 1% 변동 시: 약 570억원의 이자비용 증감 발생 (6) 위험 관리 조직 (가) 대한항공은 상기 위험을 헷지하기 위해 아래와 같은 리스크 관리 방법을 시행 중입니다. 1) 내부적 리스크 관리방법 상계(Netting), 매칭(Matching), 리딩(Leading), 래깅(Lagging) 등 실시 2) 외부적 리스크 관리 방법 - 유가: 유류비 변동을 최소화하기 위한 헷지 실행 (선도(Forward), 스왑(Swap), 옵션(Option) 등 파생상품을 이용) - 통화: Exposure의 일정부분에 대한 헷지 실행 (선도(Forward), 스왑(Swap), 옵션(Option) 등 파생상품을 이용) (나) 대한항공은 현재 자금기획팀에서 5명의 리스크 관리 담당이 업무를 전담하고 있습니다. 나. 파생거래 (1) 당기말 현재 연결실체는 유가변동으로 인한 위험을 회피하기 위한 유가옵션계약과 환율 및 이자율 변동으로 인한 위험을 회피하기 위한 통화이자율스왑계약 등을 한국산업은행 등 금융기관과 체결하고 있으며, 당기말 현재 당사 및 종속회사의 파생상품 약정내역은 다음과 같습니다. 구분 계약잔액 거래상대방 최초계약일 최종만기일 비고 계약내용 유가옵션 BBL 15,300,000 BNP 외 12개 금융기관 2024년 06월 01일 2027년 10월 31일 매매목적회계 PUT/CALL 헷지 계약가격에 따른 ZERO COST COLLAR 방식 정산 이자율스왑 KRW …"
     },
     "quant": {
-      "buy_score": 73.9,
+      "buy_score": 72.9,
       "rank_in_level2": 1,
-      "upside_pct": 27.9,
+      "upside_pct": 27.0,
       "composite": 1.0,
       "timing_state": "watch",
       "timing_score": 68.6
