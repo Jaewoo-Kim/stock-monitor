@@ -1,5 +1,31 @@
 [
   {
+    "date": "2026-09-16",
+    "level2_id": "S7_construction",
+    "level2_name": "건설·건자재",
+    "event_type": "timing_watch",
+    "from_state": "hold",
+    "to_state": "watch",
+    "detail": {
+      "timing_score": 76.7,
+      "rs_3m": 5.1,
+      "breadth_pct": 100.0
+    }
+  },
+  {
+    "date": "2026-09-16",
+    "level2_id": "S1_software",
+    "level2_name": "소프트웨어·IT서비스",
+    "event_type": "timing_watch",
+    "from_state": "hold",
+    "to_state": "watch",
+    "detail": {
+      "timing_score": 72.0,
+      "rs_3m": 54.91,
+      "breadth_pct": 100.0
+    }
+  },
+  {
     "date": "2026-09-11",
     "level2_id": "S7_construction",
     "level2_name": "건설·건자재",
@@ -469,30 +495,6 @@
       "timing_score": 97.5,
       "rs_3m": 18.89,
       "breadth_pct": 25.0
-    }
-  },
-  {
-    "date": "2026-08-05",
-    "level2_id": "S2_internet",
-    "level2_name": "인터넷·플랫폼",
-    "event_type": "timing_watch",
-    "from_state": "hold",
-    "to_state": "watch",
-    "detail": {
-      "timing_score": 66.7,
-      "rs_3m": 9.88,
-      "breadth_pct": 50.0
-    }
-  },
-  {
-    "date": "2026-08-04",
-    "level2_id": "S9_energy",
-    "level2_name": "정유·에너지",
-    "event_type": "phase_turn",
-    "from_state": "관측부족",
-    "to_state": "전환",
-    "detail": {
-      "composite_score": 0.175
     }
   }
 ]
