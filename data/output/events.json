@@ -1,5 +1,31 @@
 [
   {
+    "date": "2026-09-17",
+    "level2_id": "S5_pharma",
+    "level2_name": "제약·바이오",
+    "event_type": "timing_buy",
+    "from_state": "watch",
+    "to_state": "buy",
+    "detail": {
+      "timing_score": 90.2,
+      "rs_3m": 9.51,
+      "breadth_pct": 40.0
+    }
+  },
+  {
+    "date": "2026-09-17",
+    "level2_id": "S8_steel",
+    "level2_name": "철강·비철금속",
+    "event_type": "timing_watch",
+    "from_state": "hold",
+    "to_state": "watch",
+    "detail": {
+      "timing_score": 62.0,
+      "rs_3m": -11.18,
+      "breadth_pct": 50.0
+    }
+  },
+  {
     "date": "2026-09-16",
     "level2_id": "S7_construction",
     "level2_name": "건설·건자재",
@@ -469,32 +495,6 @@
       "timing_score": 96.6,
       "rs_3m": 12.16,
       "breadth_pct": 66.7
-    }
-  },
-  {
-    "date": "2026-08-07",
-    "level2_id": "S4_food",
-    "level2_name": "음식료·담배",
-    "event_type": "timing_watch",
-    "from_state": "hold",
-    "to_state": "watch",
-    "detail": {
-      "timing_score": 79.3,
-      "rs_3m": 1.75,
-      "breadth_pct": 80.0
-    }
-  },
-  {
-    "date": "2026-08-05",
-    "level2_id": "S5_medtech",
-    "level2_name": "의료기기·미용의료",
-    "event_type": "timing_buy",
-    "from_state": "watch",
-    "to_state": "buy",
-    "detail": {
-      "timing_score": 97.5,
-      "rs_3m": 18.89,
-      "breadth_pct": 25.0
     }
   }
 ]
