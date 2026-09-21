@@ -1512,34 +1512,6 @@
         "source_url": "https://finance.naver.com/research/company_read.naver?nid=95827",
         "broker_url": "https://stock.pstatic.net/stock-research/company/64/20260824_company_930117000.pdf",
         "analyst_name": null
-      },
-      {
-        "date": "2026-08-21",
-        "broker": "대신증권",
-        "ticker": "003550",
-        "company_name": "LG",
-        "title": "엔비디아가 LG를 고른 이유",
-        "opinion": "Buy",
-        "target_price": 130000.0,
-        "prev_target": 130000.0,
-        "tp_pct": 0.0,
-        "source_url": "https://finance.naver.com/research/company_read.naver?nid=95810",
-        "broker_url": "https://stock.pstatic.net/stock-research/company/15/20260821_company_35227000.pdf",
-        "analyst_name": null
-      },
-      {
-        "date": "2026-08-21",
-        "broker": "유안타증권",
-        "ticker": "034730",
-        "company_name": "SK",
-        "title": "아직 시작도 안했다",
-        "opinion": "Buy",
-        "target_price": 830000.0,
-        "prev_target": null,
-        "tp_pct": null,
-        "source_url": "https://finance.naver.com/research/company_read.naver?nid=95802",
-        "broker_url": "https://stock.pstatic.net/stock-research/company/18/20260821_company_49560000.pdf",
-        "analyst_name": null
       }
     ],
     "companies_detail": [
