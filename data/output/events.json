@@ -1,5 +1,29 @@
 [
   {
+    "date": "2026-09-25",
+    "level2_id": "S7_holding",
+    "level2_name": "지주·복합기업",
+    "event_type": "phase_turn",
+    "from_state": "바닥",
+    "to_state": "전환",
+    "detail": {
+      "composite_score": 0.27
+    }
+  },
+  {
+    "date": "2026-09-25",
+    "level2_id": "S7_holding",
+    "level2_name": "지주·복합기업",
+    "event_type": "timing_watch",
+    "from_state": "hold",
+    "to_state": "watch",
+    "detail": {
+      "timing_score": 68.0,
+      "rs_3m": 8.38,
+      "breadth_pct": 33.3
+    }
+  },
+  {
     "date": "2026-09-24",
     "level2_id": "S1_semiparts",
     "level2_name": "반도체 소부장",
@@ -473,30 +497,6 @@
       "timing_score": 58.3,
       "rs_3m": -15.1,
       "breadth_pct": 0.0
-    }
-  },
-  {
-    "date": "2026-08-12",
-    "level2_id": "S7_transport",
-    "level2_name": "운송 (해운·항공·물류)",
-    "event_type": "phase_turn",
-    "from_state": "관측부족",
-    "to_state": "전환",
-    "detail": {
-      "composite_score": 0.175
-    }
-  },
-  {
-    "date": "2026-08-11",
-    "level2_id": "S3_cosmetics",
-    "level2_name": "화장품",
-    "event_type": "timing_buy",
-    "from_state": "watch",
-    "to_state": "buy",
-    "detail": {
-      "timing_score": 100.0,
-      "rs_3m": 26.43,
-      "breadth_pct": 100.0
     }
   }
 ]

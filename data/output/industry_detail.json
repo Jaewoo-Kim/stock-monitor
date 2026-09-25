@@ -316,90 +316,6 @@
         "source_url": "https://finance.naver.com/research/company_read.naver?nid=95922",
         "broker_url": "https://stock.pstatic.net/stock-research/company/38/20260828_company_14166000.pdf",
         "analyst_name": null
-      },
-      {
-        "date": "2026-08-27",
-        "broker": "한화투자증권",
-        "ticker": "005380",
-        "company_name": "현대차",
-        "title": "2026 CID - 권역별 현지화와 사업 효율화에 ..",
-        "opinion": "Buy",
-        "target_price": 760000.0,
-        "prev_target": 760000.0,
-        "tp_pct": 0.0,
-        "source_url": "https://finance.naver.com/research/company_read.naver?nid=95906",
-        "broker_url": "https://stock.pstatic.net/stock-research/company/16/20260827_company_236315000.pdf",
-        "analyst_name": null
-      },
-      {
-        "date": "2026-08-27",
-        "broker": "하나증권",
-        "ticker": "005380",
-        "company_name": "현대차",
-        "title": "2026년 CEO Investor Day 핵심내용",
-        "opinion": "Buy",
-        "target_price": 650000.0,
-        "prev_target": null,
-        "tp_pct": null,
-        "source_url": "https://finance.naver.com/research/company_read.naver?nid=95899",
-        "broker_url": "https://stock.pstatic.net/stock-research/company/57/20260827_company_79656000.pdf",
-        "analyst_name": null
-      },
-      {
-        "date": "2026-08-27",
-        "broker": "미래에셋증권",
-        "ticker": "005380",
-        "company_name": "현대차",
-        "title": "26년 CID, 25년 대비 주요 변화 내용",
-        "opinion": "매수",
-        "target_price": 840000.0,
-        "prev_target": 840000.0,
-        "tp_pct": 0.0,
-        "source_url": "https://finance.naver.com/research/company_read.naver?nid=95898",
-        "broker_url": "https://stock.pstatic.net/stock-research/company/56/20260827_company_715999000.pdf",
-        "analyst_name": null
-      },
-      {
-        "date": "2026-08-27",
-        "broker": "iM증권",
-        "ticker": "005380",
-        "company_name": "현대차",
-        "title": "CID 2026 Review: 자동차라는 본질에 집중",
-        "opinion": "Buy",
-        "target_price": 650000.0,
-        "prev_target": 650000.0,
-        "tp_pct": 0.0,
-        "source_url": "https://finance.naver.com/research/company_read.naver?nid=95896",
-        "broker_url": "https://stock.pstatic.net/stock-research/company/61/20260827_company_286526000.pdf",
-        "analyst_name": null
-      },
-      {
-        "date": "2026-08-27",
-        "broker": "대신증권",
-        "ticker": "005380",
-        "company_name": "현대차",
-        "title": "2026년 CID 리뷰 & QnA 요약",
-        "opinion": "Buy",
-        "target_price": 740000.0,
-        "prev_target": 740000.0,
-        "tp_pct": 0.0,
-        "source_url": "https://finance.naver.com/research/company_read.naver?nid=95895",
-        "broker_url": "https://stock.pstatic.net/stock-research/company/15/20260827_company_599502000.pdf",
-        "analyst_name": null
-      },
-      {
-        "date": "2026-08-27",
-        "broker": "키움증권",
-        "ticker": "005380",
-        "company_name": "현대차",
-        "title": "2026 CEO Investor Day Takeaways",
-        "opinion": null,
-        "target_price": null,
-        "prev_target": null,
-        "tp_pct": null,
-        "source_url": "https://finance.naver.com/research/company_read.naver?nid=95889",
-        "broker_url": "https://stock.pstatic.net/stock-research/company/39/20260827_company_837946000.pdf",
-        "analyst_name": null
       }
     ],
     "companies_detail": [
@@ -844,20 +760,6 @@
         "source_url": "https://finance.naver.com/research/company_read.naver?nid=95944",
         "broker_url": "https://stock.pstatic.net/stock-research/company/57/20260831_company_73632000.pdf",
         "analyst_name": null
-      },
-      {
-        "date": "2026-08-27",
-        "broker": "신한투자증권",
-        "ticker": "128940",
-        "company_name": "한미약품",
-        "title": "K-비만, 전설의 시작",
-        "opinion": "매수",
-        "target_price": 650000.0,
-        "prev_target": 510000.0,
-        "tp_pct": 27.5,
-        "source_url": "https://finance.naver.com/research/company_read.naver?nid=95890",
-        "broker_url": null,
-        "analyst_name": null
       }
     ],
     "companies_detail": [
@@ -907,20 +809,6 @@
         "tp_pct": 6.7,
         "source_url": "https://finance.naver.com/research/company_read.naver?nid=95971",
         "broker_url": null,
-        "analyst_name": null
-      },
-      {
-        "date": "2026-08-27",
-        "broker": "하나증권",
-        "ticker": "316140",
-        "company_name": "우리금융지주",
-        "title": "3분기 증익 가능성 높다. CET 1 비율도 14% ..",
-        "opinion": "Buy",
-        "target_price": 43000.0,
-        "prev_target": 43000.0,
-        "tp_pct": 0.0,
-        "source_url": "https://finance.naver.com/research/company_read.naver?nid=95900",
-        "broker_url": "https://stock.pstatic.net/stock-research/company/57/20260827_company_51347000.pdf",
         "analyst_name": null
       }
     ],
@@ -1323,48 +1211,6 @@
         "tp_pct": 17.1,
         "source_url": "https://finance.naver.com/research/company_read.naver?nid=95920",
         "broker_url": "https://stock.pstatic.net/stock-research/company/18/20260828_company_426820000.pdf",
-        "analyst_name": null
-      },
-      {
-        "date": "2026-08-27",
-        "broker": "하나증권",
-        "ticker": "096770",
-        "company_name": "SK이노베이션",
-        "title": "SKIET 흡수합병에 따른 기존 주주 보호정책 ..",
-        "opinion": "Buy",
-        "target_price": 200000.0,
-        "prev_target": 200000.0,
-        "tp_pct": 0.0,
-        "source_url": "https://finance.naver.com/research/company_read.naver?nid=95901",
-        "broker_url": "https://stock.pstatic.net/stock-research/company/57/20260827_company_159569000.pdf",
-        "analyst_name": null
-      },
-      {
-        "date": "2026-08-27",
-        "broker": "iM증권",
-        "ticker": "096770",
-        "company_name": "SK이노베이션",
-        "title": "SKIET 합병: 좋은 업황에 끼얹은 찬물",
-        "opinion": "Buy",
-        "target_price": 190000.0,
-        "prev_target": 190000.0,
-        "tp_pct": 0.0,
-        "source_url": "https://finance.naver.com/research/company_read.naver?nid=95885",
-        "broker_url": "https://stock.pstatic.net/stock-research/company/61/20260827_company_552541000.pdf",
-        "analyst_name": null
-      },
-      {
-        "date": "2026-08-27",
-        "broker": "신한투자증권",
-        "ticker": "096770",
-        "company_name": "SK이노베이션",
-        "title": "SKIET 흡수합병, 단순화를 넘어 정상화로",
-        "opinion": "매수",
-        "target_price": 190000.0,
-        "prev_target": null,
-        "tp_pct": null,
-        "source_url": "https://finance.naver.com/research/company_read.naver?nid=95883",
-        "broker_url": null,
         "analyst_name": null
       }
     ],
