@@ -807,10 +807,10 @@
     "close": 8500.0,
     "ret_1m": -11.0,
     "analyst": {
-      "n_buy": 6,
+      "n_buy": 5,
       "n_hold": 0,
       "n_sell": 0,
-      "avg_target": 16333,
+      "avg_target": 16000,
       "latest_target": 17000.0,
       "recent": [
         {
@@ -905,7 +905,7 @@
     "quant": {
       "buy_score": 92.5,
       "rank_in_level2": 1,
-      "upside_pct": 92.2,
+      "upside_pct": 88.2,
       "composite": 1.0,
       "timing_state": "관측부족",
       "timing_score": 16.0
@@ -1124,7 +1124,7 @@
       "upside_pct": 67.1,
       "composite": -1.0,
       "timing_state": "hold",
-      "timing_score": 45.7
+      "timing_score": 46.1
     }
   },
   "011070": {
@@ -1246,7 +1246,7 @@
       "upside_pct": 111.2,
       "composite": 0.0,
       "timing_state": "hold",
-      "timing_score": 45.7
+      "timing_score": 46.1
     }
   },
   "066570": {
@@ -1267,10 +1267,10 @@
     "close": 210500.0,
     "ret_1m": 5.4,
     "analyst": {
-      "n_buy": 12,
+      "n_buy": 11,
       "n_hold": 0,
       "n_sell": 0,
-      "avg_target": 263333,
+      "avg_target": 263636,
       "latest_target": 350000.0,
       "recent": [
         {
@@ -1354,12 +1354,12 @@
       "risk_text": null
     },
     "quant": {
-      "buy_score": 70.7,
+      "buy_score": 70.9,
       "rank_in_level2": 2,
-      "upside_pct": 25.1,
+      "upside_pct": 25.2,
       "composite": 1.0,
       "timing_state": "hold",
-      "timing_score": 45.7
+      "timing_score": 46.1
     }
   },
   "000660": {
@@ -1510,10 +1510,10 @@
     "close": 286500.0,
     "ret_1m": 11.5,
     "analyst": {
-      "n_buy": 24,
+      "n_buy": 23,
       "n_hold": 0,
       "n_sell": 0,
-      "avg_target": 480833,
+      "avg_target": 480870,
       "latest_target": 400000.0,
       "recent": [
         {
@@ -2284,7 +2284,7 @@
       "upside_pct": 81.4,
       "composite": 1.0,
       "timing_state": "caution",
-      "timing_score": 14.7
+      "timing_score": 16.7
     }
   },
   "041510": {
@@ -2392,7 +2392,7 @@
       "upside_pct": 37.3,
       "composite": 1.0,
       "timing_state": "caution",
-      "timing_score": 14.7
+      "timing_score": 16.7
     }
   },
   "352820": {
@@ -2500,7 +2500,7 @@
       "upside_pct": 113.5,
       "composite": -1.0,
       "timing_state": "caution",
-      "timing_score": 14.7
+      "timing_score": 16.7
     }
   },
   "036570": {
@@ -3347,7 +3347,7 @@
       "upside_pct": 99.2,
       "composite": -1.0,
       "timing_state": "관측부족",
-      "timing_score": 9.9
+      "timing_score": 7.5
     }
   },
   "005380": {
@@ -3469,7 +3469,7 @@
       "upside_pct": 112.2,
       "composite": -1.0,
       "timing_state": "관측부족",
-      "timing_score": 9.9
+      "timing_score": 7.5
     }
   },
   "012330": {
@@ -3577,7 +3577,7 @@
       "upside_pct": 105.4,
       "composite": -1.0,
       "timing_state": "관측부족",
-      "timing_score": 9.9
+      "timing_score": 7.5
     }
   },
   "204320": {
@@ -3685,7 +3685,7 @@
       "upside_pct": 54.1,
       "composite": -1.0,
       "timing_state": "관측부족",
-      "timing_score": 9.9
+      "timing_score": 7.5
     }
   },
   "044820": {
@@ -5428,7 +5428,7 @@
       "upside_pct": 78.4,
       "composite": -1.0,
       "timing_state": "hold",
-      "timing_score": 46.6
+      "timing_score": 46.2
     }
   },
   "068270": {
@@ -5550,7 +5550,7 @@
       "upside_pct": 41.5,
       "composite": -1.0,
       "timing_state": "hold",
-      "timing_score": 46.6
+      "timing_score": 46.2
     }
   },
   "128940": {
@@ -5658,7 +5658,7 @@
       "upside_pct": 25.2,
       "composite": -1.0,
       "timing_state": "hold",
-      "timing_score": 46.6
+      "timing_score": 46.2
     }
   },
   "196170": {
@@ -5771,7 +5771,7 @@
       "upside_pct": 95.3,
       "composite": 1.0,
       "timing_state": "hold",
-      "timing_score": 46.6
+      "timing_score": 46.2
     }
   },
   "207940": {
@@ -5893,7 +5893,7 @@
       "upside_pct": 44.6,
       "composite": 1.0,
       "timing_state": "hold",
-      "timing_score": 46.6
+      "timing_score": 46.2
     }
   },
   "055550": {
@@ -5909,10 +5909,10 @@
     "close": 110100.0,
     "ret_1m": 6.6,
     "analyst": {
-      "n_buy": 10,
+      "n_buy": 9,
       "n_hold": 0,
       "n_sell": 0,
-      "avg_target": 132800,
+      "avg_target": 133111,
       "latest_target": 130000.0,
       "recent": [
         {
@@ -5996,12 +5996,12 @@
       "risk_text": "투자위험회피에서 위험회피의 비효과적인 부분으로 인하여 당기손익 및 기타포괄손익에 미치는 금액 및 계정과목은 다음과 같습니다.① 제 25(당) 기 (단위: 백만원) 구 분 기타포괄손익으로 인식한 보고기간의 위험회피손익 당기손익으로 인식한위험회피의 비효과적인 부분(*2) 현금흐름위험회피적립금에서 당기손익으로재분류한 금액 현금흐름위험회피 이자율위험(*1) (209,145) (8,743) 1,567 환위험(*1) (35,688) 2,776 (160,443) 위험회피중단 1,532 - (28) 순투자위험회피 환위험(*1) 59,096 21,422 - 합 계 (184,205) 15,455 (158,904) ② 제 24(전) 기 (단위: 백만원) 구 분 기타포괄손익으로 인식한 보고기간의 위험회피손익 당기손익으로 인식한위험회피의 비효과적인 부분(*2) 현금흐름위험회피적립금에서 당기손익으로재분류한 금액 현금흐름위험회피 이자율위험(*1) 89,293 (5,034) (151) 환위험(*1) 2,548 (6,184) 210,424 위험회피중단 (39,621) - 47,957 순투자위험회피 환위험(*1) (221,221) (1,191) - 합 계 (169,001) (12,409) 258,230 (*1) 관련 계정과목은 이자율스왑자산/부채 및 통화스왑자산/부채, 통화선도자산/부채, 차입금으로 표시되어 있습니다. (*2) 위험회피의 비효과적인 부분이라 함은 위험회피수단과 위험회피대상항목의 위험회피손익의 차이입니다. (5) 위험회피회계가 연결재무제표에 미치는 영향1) 위험회피목적 및 전략연결실체는 연결실체의 자산과 부채에서 발생하는 이자율위험과 환위험, 그리고 주가변동위험을 회피하기 위하여 파생금융상품을 거래하고 있습니다. 연결실체는 원화구조화사채, 외화발행금융사채, 원화구조화예금, 외화투자채권, 외화수익증권의 시장이자율, 환율 및 주가변동으로 인한 공정가치변동위험을 회피하기 위하여 이자율 스왑, 통화선도, 통화스왑 및 주식선물을 활용하는 공정가치 위험회피회계를 적용하고 있으며, 원화차입부채, 원화사채, 외화사채, 외화구조화예금, 외화채권, 원화채권의 시장이자율 및 환율 변동으로 인한 현금흐름변동위험을 회피하기 위하여 이자율선도, 이자율스왑, 통화선도 및 통화스왑을 활용하는 현금흐름위험회피회계를 적용하고 있습니다. 또한, 해외사업장 순투자의 환율변동위험을 회피하기 위하여 통화선도 및 비파생금융상품을 활용하는 해외사업장 순투자 위험회피회계를 적용하고 있습니다. 2) 당기말과 전기말 현재 위험회피수단의 시기별 명목금액 및 평균 헤지비율은 다음과 같습니다.① 제 25(당) 기말 (단위: 백만원) 구 분 1년 이내 1년 초과2년 이내 2년 초과3년 이내 3년 초과4년 이내 4년 초과5년 이내 5년 초과 합 계 이자율 위험 위험회피수단 명목금액 2,485,060 2,219,475 2,553,701 2,008,399 450,481 3,895,641 13,612,757 평균 가격조건(*1) 1.86% 1.60% 1.75% 1.73% 1.14% 0.42% 1.34% 평균 헤지비율 100% 100% 100% 100% 100% 100% 100% 환위험(*2) 위험회피수단 명목금액 4,344,598 3,288,511 3,353,841 1,941,689 …"
     },
     "quant": {
-      "buy_score": 50.7,
+      "buy_score": 51.0,
       "rank_in_level2": 4,
-      "upside_pct": 20.6,
+      "upside_pct": 20.9,
       "composite": null,
       "timing_state": "buy",
-      "timing_score": 97.2
+      "timing_score": 95.6
     }
   },
   "086790": {
@@ -6109,7 +6109,7 @@
       "upside_pct": 23.8,
       "composite": null,
       "timing_state": "buy",
-      "timing_score": 97.2
+      "timing_score": 95.6
     }
   },
   "105560": {
@@ -6211,7 +6211,7 @@
       "upside_pct": 26.0,
       "composite": null,
       "timing_state": "buy",
-      "timing_score": 97.2
+      "timing_score": 95.6
     }
   },
   "316140": {
@@ -6319,7 +6319,7 @@
       "upside_pct": 21.7,
       "composite": null,
       "timing_state": "buy",
-      "timing_score": 97.2
+      "timing_score": 95.6
     }
   },
   "000810": {
@@ -6869,10 +6869,10 @@
     "close": 91300.0,
     "ret_1m": 5.4,
     "analyst": {
-      "n_buy": 8,
+      "n_buy": 7,
       "n_hold": 0,
       "n_sell": 0,
-      "avg_target": 153778,
+      "avg_target": 150750,
       "latest_target": 113000.0,
       "recent": [
         {
@@ -6958,7 +6958,7 @@
     "quant": {
       "buy_score": 72.5,
       "rank_in_level2": 3,
-      "upside_pct": 68.4,
+      "upside_pct": 65.1,
       "composite": null,
       "timing_state": "caution",
       "timing_score": 22.1
@@ -6977,10 +6977,10 @@
     "close": 265000.0,
     "ret_1m": -0.9,
     "analyst": {
-      "n_buy": 7,
+      "n_buy": 6,
       "n_hold": 0,
       "n_sell": 0,
-      "avg_target": 483571,
+      "avg_target": 472500,
       "latest_target": 420000.0,
       "recent": [
         {
@@ -7066,7 +7066,7 @@
     "quant": {
       "buy_score": 87.5,
       "rank_in_level2": 2,
-      "upside_pct": 82.5,
+      "upside_pct": 78.3,
       "composite": 1.0,
       "timing_state": "caution",
       "timing_score": 22.1
@@ -7290,7 +7290,7 @@
       "upside_pct": 38.5,
       "composite": 0.0,
       "timing_state": "watch",
-      "timing_score": 70.8
+      "timing_score": 70.2
     }
   },
   "028050": {
@@ -7398,7 +7398,7 @@
       "upside_pct": 39.1,
       "composite": -1.0,
       "timing_state": "watch",
-      "timing_score": 70.8
+      "timing_score": 70.2
     }
   },
   "375500": {
@@ -7506,7 +7506,7 @@
       "upside_pct": 22.9,
       "composite": -1.0,
       "timing_state": "watch",
-      "timing_score": 70.8
+      "timing_score": 70.2
     }
   },
   "012450": {
@@ -8035,10 +8035,10 @@
     "close": 368500.0,
     "ret_1m": 1.1,
     "analyst": {
-      "n_buy": 8,
+      "n_buy": 7,
       "n_hold": 0,
       "n_sell": 0,
-      "avg_target": 482500,
+      "avg_target": 467143,
       "latest_target": 550000.0,
       "recent": [
         {
@@ -8122,9 +8122,9 @@
       "risk_text": "위험요소가 내포되어 있다. CC 원리금의 채무불이행이 발생할 가능성이 높다. C 원리금의 채무불이행이 발생할 가능성이 지극히 높다. D 현재 채무불이행 상태에 있다. ※ AA부터 B까지는 동일 등급내에서 세분하여 구분할 필요가 있는 경우에는 \"＋\" 또는 \"－\"의 기호를 부여할 수 있다.※ 예비평정의 경우 당해 등급기호의 앞에 \"P\"를 부기한다.※ 미공시 등급의 경우 당해 등급기호의 앞에 \"U\"를 부기한다. - R&I(日) : 장기신용등급 (상환기간 1년 이상) 등 급 의 미 AAA 원리금 지급의 안정성이 제일 높음. AA+AA AA- AAA보다는 낮으나 높은 등급으로 평가됨. A+AA- 현재 안정성은 적당하나 향후 악화될 가능성이 있음. BBB+BBB BBB- 현재 원리금 지급은 가능하나 향후 안정성은 부족함. BB+BB BB- 원리금 지급의 안정성은 중간이며, 투기적 요소가 있음. B+B B- 원리금 지급의 안정성이 낮음. CCC 지급불능의 가능성이 있음. CC 지급불능의 가능성이 큼. C 최저등급 - R&I(日) : 단기신용등급 (상환기간 1년 미만) 등 급 의 미 a-1 단기상환능력이 매우 우수함. a-2 a-1보다는 낮으나 높은 등급으로 평가됨. 단, 경제상황 및 영업여건 등에따라 영향을 받을 가능성이 높음. a-3 현재의 단기 상환능력은 적당하나 향후 악화될 가능성이 매우 높음. b 단기 지급능력이 의심되는 투기 등급임. c 단기 채무 지급 불능 가능성 있음. - S&P(美) : 장기신용등급 (상환기간 1년 이상) 등 급 의 미 AAA 채무상환능력이 극히 높음, 최고등급 AA+ AA AA- 채무상환능력이 매우 높음 A+ A A- 채무상환능력은 충분하나 경제 상황 악화 및 변화에 다소 취약함 BBB+ BBB BBB- 채무상환능력은 충분하나 상위 등급에 비해 경제 상황 악화에좀 더 취약함 BB+ BB BB- 가까운 장래에 채무불이행이 발생할 가능성은 비교적 낮으나경영, 재무, 경제 상황 악화에 대한 불확실성이 큼 B+ B B- 경영, 재무, 경제 상황 악화에 좀 더 취약하나현재로서는 채무상환능력이 있음 CCC 현재 채무불이행 가능성이 있으며 채무상환은 경영, 재무, 경제 상황이 호의적일 경우에만 가능함 CC 채무불이행 가능성이 높음, 부도 상태는 아니지만사실상 부도가 예상됨 C 현재 채무불이행 가능성이 매우 높으며 최종 회수율은상위등급 채무보다 낮게 추정됨 D 금융채무불이행 상태 혹은 묵시적 계약(imputed promises) 파기, 또는 파산 신청 혹은 이와 유사한 상태 - Moody's(美) : 장기신용등급 (상환기간 1년 이상) 등 급 의 미 Aaa 채무상환능력 최상, 신용위험 최소 Aa1 Aa2 Aa3 채무상환능력 높음, 신용위험 매우 낮음 A1 A2 A3 채무상환능력 중상, 신용위험 낮음 Baa1 Baa2 Baa3 채무상환능력 중간, 신용위험 크지 않으나투기적 요소가 있음 Ba1 Ba2 Ba3 투기적 성향, 신용위험 상당함 B1 B2 B3 투기적 성향, 신용위험 높음 Caa 투기적 성향 높음, 신용위험 매우 높음 Ca 투기적 성향 매우 높음, 가까운 시일 내부도발생 가능, 원리금 상환가능성 존재 C 부도 상태, 원리금 상환가능성 낮음 자. 회사의 주권상장(또는 등록ㆍ지정)여부 및 특례상장에 관한 …"
     },
     "quant": {
-      "buy_score": 47.3,
+      "buy_score": 42.7,
       "rank_in_level2": 3,
-      "upside_pct": 30.9,
+      "upside_pct": 26.8,
       "composite": -1.0,
       "timing_state": "watch",
       "timing_score": 68.0
@@ -8586,7 +8586,7 @@
       "upside_pct": 62.3,
       "composite": -1.0,
       "timing_state": "watch",
-      "timing_score": 64.7
+      "timing_score": 63.8
     }
   },
   "010120": {
@@ -8694,7 +8694,7 @@
       "upside_pct": 88.9,
       "composite": -1.0,
       "timing_state": "watch",
-      "timing_score": 64.7
+      "timing_score": 63.8
     }
   },
   "267260": {
@@ -8807,7 +8807,7 @@
       "upside_pct": 65.1,
       "composite": 1.0,
       "timing_state": "watch",
-      "timing_score": 64.7
+      "timing_score": 63.8
     }
   },
   "298040": {
@@ -8915,7 +8915,7 @@
       "upside_pct": 10.0,
       "composite": -1.0,
       "timing_state": "watch",
-      "timing_score": 64.7
+      "timing_score": 63.8
     }
   },
   "009540": {
@@ -9021,7 +9021,7 @@
       "upside_pct": 76.3,
       "composite": 1.0,
       "timing_state": "관측부족",
-      "timing_score": 9.9
+      "timing_score": 11.1
     }
   },
   "010140": {
@@ -9129,7 +9129,7 @@
       "upside_pct": 91.2,
       "composite": 0.0,
       "timing_state": "관측부족",
-      "timing_score": 9.9
+      "timing_score": 11.1
     }
   },
   "042660": {
@@ -9242,7 +9242,7 @@
       "upside_pct": 87.2,
       "composite": 0.0,
       "timing_state": "관측부족",
-      "timing_score": 9.9
+      "timing_score": 11.1
     }
   },
   "329180": {
@@ -9344,7 +9344,7 @@
       "upside_pct": 38.1,
       "composite": -1.0,
       "timing_state": "관측부족",
-      "timing_score": 9.9
+      "timing_score": 11.1
     }
   },
   "000120": {
@@ -10515,7 +10515,7 @@
       "upside_pct": 15.2,
       "composite": 1.0,
       "timing_state": "buy",
-      "timing_score": 98.6
+      "timing_score": 98.8
     }
   },
   "078930": {
@@ -10591,7 +10591,7 @@
       "upside_pct": 24.8,
       "composite": 1.0,
       "timing_state": "buy",
-      "timing_score": 98.6
+      "timing_score": 98.8
     }
   },
   "096770": {
@@ -10699,7 +10699,7 @@
       "upside_pct": 28.7,
       "composite": 1.0,
       "timing_state": "buy",
-      "timing_score": 98.6
+      "timing_score": 98.8
     }
   }
 }

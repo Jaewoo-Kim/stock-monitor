@@ -264,20 +264,6 @@
         "source_url": "https://finance.naver.com/research/company_read.naver?nid=95960",
         "broker_url": "https://stock.pstatic.net/stock-research/company/57/20260901_company_976082000.pdf",
         "analyst_name": null
-      },
-      {
-        "date": "2026-08-28",
-        "broker": "미래에셋증권",
-        "ticker": "017670",
-        "company_name": "SK텔레콤",
-        "title": "SK호라이즌과 SK하이퍼의 시너지 효과 본격화",
-        "opinion": "매수",
-        "target_price": 150000.0,
-        "prev_target": 120000.0,
-        "tp_pct": 25.0,
-        "source_url": "https://finance.naver.com/research/company_read.naver?nid=95918",
-        "broker_url": "https://stock.pstatic.net/stock-research/company/56/20260828_company_358452000.pdf",
-        "analyst_name": null
       }
     ],
     "companies_detail": [
@@ -298,50 +284,6 @@
         "name": "LG유플러스",
         "close": 14630.0,
         "ret_1m": -1.6
-      }
-    ]
-  },
-  "S3_auto": {
-    "recent_reports": [
-      {
-        "date": "2026-08-28",
-        "broker": "현대차증권",
-        "ticker": "005380",
-        "company_name": "현대차",
-        "title": "CID 2026: It’s a great time to be at Hyun..",
-        "opinion": "Buy",
-        "target_price": 630000.0,
-        "prev_target": null,
-        "tp_pct": null,
-        "source_url": "https://finance.naver.com/research/company_read.naver?nid=95922",
-        "broker_url": "https://stock.pstatic.net/stock-research/company/38/20260828_company_14166000.pdf",
-        "analyst_name": null
-      }
-    ],
-    "companies_detail": [
-      {
-        "ticker": "000270",
-        "name": "기아",
-        "close": 116200.0,
-        "ret_1m": -11.6
-      },
-      {
-        "ticker": "005380",
-        "name": "현대차",
-        "close": 357000.0,
-        "ret_1m": -13.8
-      },
-      {
-        "ticker": "012330",
-        "name": "현대모비스",
-        "close": 369000.0,
-        "ret_1m": -26.0
-      },
-      {
-        "ticker": "204320",
-        "name": "HL만도",
-        "close": 45500.0,
-        "ret_1m": -11.0
       }
     ]
   },
@@ -586,50 +528,6 @@
         "name": "오리온",
         "close": 110200.0,
         "ret_1m": -14.1
-      }
-    ]
-  },
-  "S5_medtech": {
-    "recent_reports": [
-      {
-        "date": "2026-08-28",
-        "broker": "신한투자증권",
-        "ticker": "214150",
-        "company_name": "클래시스",
-        "title": "NDR 후기: 눈높이 하향 반영 완료",
-        "opinion": "매수",
-        "target_price": 62000.0,
-        "prev_target": 62000.0,
-        "tp_pct": 0.0,
-        "source_url": "https://finance.naver.com/research/company_read.naver?nid=95917",
-        "broker_url": null,
-        "analyst_name": null
-      }
-    ],
-    "companies_detail": [
-      {
-        "ticker": "145720",
-        "name": "덴티움",
-        "close": 36800.0,
-        "ret_1m": -0.1
-      },
-      {
-        "ticker": "214150",
-        "name": "클래시스",
-        "close": 30750.0,
-        "ret_1m": -7.9
-      },
-      {
-        "ticker": "214450",
-        "name": "파마리서치",
-        "close": 323500.0,
-        "ret_1m": -22.2
-      },
-      {
-        "ticker": "328130",
-        "name": "루닛",
-        "close": 9870.0,
-        "ret_1m": 6.6
       }
     ]
   },
@@ -1198,20 +1096,6 @@
         "source_url": "https://finance.naver.com/research/company_read.naver?nid=95950",
         "broker_url": "https://stock.pstatic.net/stock-research/company/61/20260901_company_188873000.pdf",
         "analyst_name": null
-      },
-      {
-        "date": "2026-08-28",
-        "broker": "유안타증권",
-        "ticker": "010950",
-        "company_name": "S-Oil",
-        "title": "미국 Valero 마진을 넘어서다!",
-        "opinion": "Buy",
-        "target_price": 205000.0,
-        "prev_target": 175000.0,
-        "tp_pct": 17.1,
-        "source_url": "https://finance.naver.com/research/company_read.naver?nid=95920",
-        "broker_url": "https://stock.pstatic.net/stock-research/company/18/20260828_company_426820000.pdf",
-        "analyst_name": null
       }
     ],
     "companies_detail": [
@@ -1358,6 +1242,64 @@
         "name": "크래프톤",
         "close": 198500.0,
         "ret_1m": -11.4
+      }
+    ]
+  },
+  "S3_auto": {
+    "recent_reports": [],
+    "companies_detail": [
+      {
+        "ticker": "000270",
+        "name": "기아",
+        "close": 116200.0,
+        "ret_1m": -11.6
+      },
+      {
+        "ticker": "005380",
+        "name": "현대차",
+        "close": 357000.0,
+        "ret_1m": -13.8
+      },
+      {
+        "ticker": "012330",
+        "name": "현대모비스",
+        "close": 369000.0,
+        "ret_1m": -26.0
+      },
+      {
+        "ticker": "204320",
+        "name": "HL만도",
+        "close": 45500.0,
+        "ret_1m": -11.0
+      }
+    ]
+  },
+  "S5_medtech": {
+    "recent_reports": [],
+    "companies_detail": [
+      {
+        "ticker": "145720",
+        "name": "덴티움",
+        "close": 36800.0,
+        "ret_1m": -0.1
+      },
+      {
+        "ticker": "214150",
+        "name": "클래시스",
+        "close": 30750.0,
+        "ret_1m": -7.9
+      },
+      {
+        "ticker": "214450",
+        "name": "파마리서치",
+        "close": 323500.0,
+        "ret_1m": -22.2
+      },
+      {
+        "ticker": "328130",
+        "name": "루닛",
+        "close": 9870.0,
+        "ret_1m": 6.6
       }
     ]
   },
