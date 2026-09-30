@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026-09-30",
+    "level2_id": "S2_internet",
+    "level2_name": "인터넷·플랫폼",
+    "event_type": "timing_watch",
+    "from_state": "hold",
+    "to_state": "watch",
+    "detail": {
+      "timing_score": 67.6,
+      "rs_3m": 8.69,
+      "breadth_pct": 0.0
+    }
+  },
+  {
     "date": "2026-09-25",
     "level2_id": "S7_holding",
     "level2_name": "지주·복합기업",
@@ -484,19 +497,6 @@
       "timing_score": 72.5,
       "rs_3m": 4.12,
       "breadth_pct": 33.3
-    }
-  },
-  {
-    "date": "2026-08-18",
-    "level2_id": "S1_semiparts",
-    "level2_name": "반도체 소부장",
-    "event_type": "timing_watch",
-    "from_state": "관측부족",
-    "to_state": "watch",
-    "detail": {
-      "timing_score": 58.3,
-      "rs_3m": -15.1,
-      "breadth_pct": 0.0
     }
   }
 ]
