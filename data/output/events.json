@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026-10-02",
+    "level2_id": "S1_semiparts",
+    "level2_name": "반도체 소부장",
+    "event_type": "timing_buy",
+    "from_state": "watch",
+    "to_state": "buy",
+    "detail": {
+      "timing_score": 96.9,
+      "rs_3m": 14.06,
+      "breadth_pct": 100.0
+    }
+  },
+  {
     "date": "2026-10-01",
     "level2_id": "S1_semiparts",
     "level2_name": "반도체 소부장",
@@ -484,19 +497,6 @@
       "timing_score": 66.7,
       "rs_3m": 1.75,
       "breadth_pct": 0.0
-    }
-  },
-  {
-    "date": "2026-08-23",
-    "level2_id": "S2_telecom",
-    "level2_name": "통신",
-    "event_type": "timing_watch",
-    "from_state": "hold",
-    "to_state": "watch",
-    "detail": {
-      "timing_score": 71.0,
-      "rs_3m": 5.49,
-      "breadth_pct": 33.3
     }
   }
 ]
