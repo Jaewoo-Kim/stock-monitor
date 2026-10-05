@@ -395,50 +395,6 @@
       }
     ]
   },
-  "S6_insurance": {
-    "recent_reports": [
-      {
-        "date": "2026-09-04",
-        "broker": "대신증권",
-        "ticker": "005830",
-        "company_name": "DB손해보험",
-        "title": "새로운 밸류업 정책으로 확대되는 배당총액",
-        "opinion": "Buy",
-        "target_price": 250000.0,
-        "prev_target": 250000.0,
-        "tp_pct": 0.0,
-        "source_url": "https://finance.naver.com/research/company_read.naver?nid=96012",
-        "broker_url": "https://stock.pstatic.net/stock-research/company/15/20260904_company_30144000.pdf",
-        "analyst_name": null
-      }
-    ],
-    "companies_detail": [
-      {
-        "ticker": "000810",
-        "name": "삼성화재",
-        "close": 633000.0,
-        "ret_1m": -6.5
-      },
-      {
-        "ticker": "001450",
-        "name": "현대해상",
-        "close": 47400.0,
-        "ret_1m": -11.2
-      },
-      {
-        "ticker": "005830",
-        "name": "DB손해보험",
-        "close": 183000.0,
-        "ret_1m": -5.0
-      },
-      {
-        "ticker": "032830",
-        "name": "삼성생명",
-        "close": 282500.0,
-        "ret_1m": -8.7
-      }
-    ]
-  },
   "S7_power": {
     "recent_reports": [
       {
@@ -789,6 +745,35 @@
         "name": "우리금융지주",
         "close": 33600.0,
         "ret_1m": -2.7
+      }
+    ]
+  },
+  "S6_insurance": {
+    "recent_reports": [],
+    "companies_detail": [
+      {
+        "ticker": "000810",
+        "name": "삼성화재",
+        "close": 633000.0,
+        "ret_1m": -6.5
+      },
+      {
+        "ticker": "001450",
+        "name": "현대해상",
+        "close": 47400.0,
+        "ret_1m": -11.2
+      },
+      {
+        "ticker": "005830",
+        "name": "DB손해보험",
+        "close": 183000.0,
+        "ret_1m": -5.0
+      },
+      {
+        "ticker": "032830",
+        "name": "삼성생명",
+        "close": 282500.0,
+        "ret_1m": -8.7
       }
     ]
   },

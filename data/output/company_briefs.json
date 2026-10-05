@@ -916,10 +916,10 @@
     "close": 30100.0,
     "ret_1m": -11.2,
     "analyst": {
-      "n_buy": 4,
+      "n_buy": 3,
       "n_hold": 0,
       "n_sell": 0,
-      "avg_target": 63625,
+      "avg_target": 61833,
       "latest_target": 69000.0,
       "recent": [
         {
@@ -945,14 +945,6 @@
           "opinion": "Buy",
           "source_url": "https://finance.naver.com/research/company_read.naver?nid=95214",
           "broker_url": "https://stock.pstatic.net/stock-research/company/61/20260807_company_877285000.pdf"
-        },
-        {
-          "date": "2026-07-10",
-          "broker": "IBK투자증권",
-          "title": "불황을 극복한 기술 경쟁력",
-          "opinion": "매수",
-          "source_url": "https://finance.naver.com/research/company_read.naver?nid=94061",
-          "broker_url": "https://stock.pstatic.net/stock-research/company/40/20260710_company_574226000.pdf"
         }
       ]
     },
@@ -991,7 +983,7 @@
     "quant": {
       "buy_score": 87.5,
       "rank_in_level2": 2,
-      "upside_pct": 111.4,
+      "upside_pct": 105.4,
       "composite": 1.0,
       "timing_state": "관측부족",
       "timing_score": 16.0
@@ -2680,10 +2672,10 @@
     "close": 191900.0,
     "ret_1m": -10.7,
     "analyst": {
-      "n_buy": 12,
+      "n_buy": 11,
       "n_hold": 0,
       "n_sell": 0,
-      "avg_target": 330833,
+      "avg_target": 339091,
       "latest_target": 320000.0,
       "recent": [
         {
@@ -2769,7 +2761,7 @@
     "quant": {
       "buy_score": 87.5,
       "rank_in_level2": 1,
-      "upside_pct": 72.4,
+      "upside_pct": 76.7,
       "composite": 1.0,
       "timing_state": "watch",
       "timing_score": 63.6
@@ -2793,10 +2785,10 @@
     "close": 33600.0,
     "ret_1m": -7.9,
     "analyst": {
-      "n_buy": 16,
+      "n_buy": 15,
       "n_hold": 0,
       "n_sell": 0,
-      "avg_target": 57750,
+      "avg_target": 57533,
       "latest_target": 70000.0,
       "recent": [
         {
@@ -2882,7 +2874,7 @@
     "quant": {
       "buy_score": 57.5,
       "rank_in_level2": 2,
-      "upside_pct": 71.9,
+      "upside_pct": 71.2,
       "composite": -1.0,
       "timing_state": "watch",
       "timing_score": 63.6
@@ -2901,10 +2893,10 @@
     "close": 86200.0,
     "ret_1m": -8.9,
     "analyst": {
-      "n_buy": 18,
+      "n_buy": 17,
       "n_hold": 1,
       "n_sell": 0,
-      "avg_target": 121789,
+      "avg_target": 120778,
       "latest_target": 140000.0,
       "recent": [
         {
@@ -2990,10 +2982,10 @@
     "quant": {
       "buy_score": 57.5,
       "rank_in_level2": 1,
-      "upside_pct": 41.3,
+      "upside_pct": 40.1,
       "composite": -1.0,
       "timing_state": "watch",
-      "timing_score": 63.3
+      "timing_score": 63.5
     }
   },
   "030200": {
@@ -3009,10 +3001,10 @@
     "close": 51900.0,
     "ret_1m": -3.9,
     "analyst": {
-      "n_buy": 14,
+      "n_buy": 13,
       "n_hold": 0,
       "n_sell": 0,
-      "avg_target": 74143,
+      "avg_target": 74077,
       "latest_target": 76000.0,
       "recent": [
         {
@@ -3098,10 +3090,10 @@
     "quant": {
       "buy_score": 57.5,
       "rank_in_level2": 2,
-      "upside_pct": 42.9,
+      "upside_pct": 42.7,
       "composite": -1.0,
       "timing_state": "watch",
-      "timing_score": 63.3
+      "timing_score": 63.5
     }
   },
   "032640": {
@@ -3209,7 +3201,7 @@
       "upside_pct": 37.1,
       "composite": -1.0,
       "timing_state": "watch",
-      "timing_score": 63.3
+      "timing_score": 63.5
     }
   },
   "000270": {
@@ -3230,10 +3222,10 @@
     "close": 113300.0,
     "ret_1m": -13.6,
     "analyst": {
-      "n_buy": 15,
+      "n_buy": 13,
       "n_hold": 0,
       "n_sell": 0,
-      "avg_target": 227000,
+      "avg_target": 226923,
       "latest_target": 205000.0,
       "recent": [
         {
@@ -3328,7 +3320,7 @@
     "quant": {
       "buy_score": 62.5,
       "rank_in_level2": 2,
-      "upside_pct": 100.4,
+      "upside_pct": 100.3,
       "composite": -1.0,
       "timing_state": "관측부족",
       "timing_score": 10.8
@@ -3352,10 +3344,10 @@
     "close": 349000.0,
     "ret_1m": -12.9,
     "analyst": {
-      "n_buy": 19,
+      "n_buy": 17,
       "n_hold": 0,
       "n_sell": 0,
-      "avg_target": 760526,
+      "avg_target": 751176,
       "latest_target": 630000.0,
       "recent": [
         {
@@ -3450,7 +3442,7 @@
     "quant": {
       "buy_score": 62.5,
       "rank_in_level2": 1,
-      "upside_pct": 117.9,
+      "upside_pct": 115.2,
       "composite": -1.0,
       "timing_state": "관측부족",
       "timing_score": 10.8
@@ -3469,10 +3461,10 @@
     "close": 381000.0,
     "ret_1m": -14.1,
     "analyst": {
-      "n_buy": 15,
+      "n_buy": 14,
       "n_hold": 0,
       "n_sell": 0,
-      "avg_target": 758000,
+      "avg_target": 759286,
       "latest_target": 750000.0,
       "recent": [
         {
@@ -3558,7 +3550,7 @@
     "quant": {
       "buy_score": 57.5,
       "rank_in_level2": 3,
-      "upside_pct": 99.0,
+      "upside_pct": 99.3,
       "composite": -1.0,
       "timing_state": "관측부족",
       "timing_score": 10.8
@@ -4014,10 +4006,10 @@
     "close": null,
     "ret_1m": null,
     "analyst": {
-      "n_buy": 9,
+      "n_buy": 8,
       "n_hold": 0,
       "n_sell": 0,
-      "avg_target": 56889,
+      "avg_target": 57500,
       "latest_target": 62000.0,
       "recent": [
         {
@@ -4179,7 +4171,7 @@
       "upside_pct": 119.0,
       "composite": 1.0,
       "timing_state": "caution",
-      "timing_score": 14.8
+      "timing_score": 14.9
     }
   },
   "023530": {
@@ -4287,7 +4279,7 @@
       "upside_pct": 77.6,
       "composite": 1.0,
       "timing_state": "caution",
-      "timing_score": 14.8
+      "timing_score": 14.9
     }
   },
   "139480": {
@@ -4400,7 +4392,7 @@
       "upside_pct": 44.1,
       "composite": 1.0,
       "timing_state": "caution",
-      "timing_score": 14.8
+      "timing_score": 14.9
     }
   },
   "003230": {
@@ -4512,8 +4504,8 @@
       "rank_in_level2": 3,
       "upside_pct": 51.3,
       "composite": 0.0,
-      "timing_state": "watch",
-      "timing_score": 71.1
+      "timing_state": "hold",
+      "timing_score": 50.3
     }
   },
   "004370": {
@@ -4620,8 +4612,8 @@
       "rank_in_level2": 2,
       "upside_pct": 39.0,
       "composite": 1.0,
-      "timing_state": "watch",
-      "timing_score": 71.1
+      "timing_state": "hold",
+      "timing_score": 50.3
     }
   },
   "033780": {
@@ -4637,10 +4629,10 @@
     "close": 174700.0,
     "ret_1m": -0.1,
     "analyst": {
-      "n_buy": 10,
+      "n_buy": 8,
       "n_hold": 0,
       "n_sell": 0,
-      "avg_target": 238000,
+      "avg_target": 242500,
       "latest_target": 250000.0,
       "recent": [
         {
@@ -4724,12 +4716,12 @@
       "risk_text": "주요 위험 소요 자금 및 기존 사업과의 유사성을 감안할 때 본 사업목적에 따른 손익 등의 위험은 경미할 것으로 예상하고 있습니다. 부수적으로 개인정보보호를 위한 법령 위반시 과태료 등의 제재 사항이 발생할 수 있는 위험은 존재합니다. (7) 향후 추진계획 당사는 온라인몰 매출 확대를 통해 국내 핵심 판매 채널로서 온라인몰을 육성하고, 시스템 고도화를 통해 릴 디바이스 고객을 체계적으로 관리할 계획입니다. (8) 미추진 사유 해당사항 없음 [ 인쇄 및 인쇄관련 산업 ] (1) 사업 분야 및 진출 목적 당사는 담배관련"
     },
     "quant": {
-      "buy_score": 53.2,
+      "buy_score": 56.1,
       "rank_in_level2": 5,
-      "upside_pct": 36.2,
+      "upside_pct": 38.8,
       "composite": -1.0,
-      "timing_state": "watch",
-      "timing_score": 71.1
+      "timing_state": "hold",
+      "timing_score": 50.3
     }
   },
   "097950": {
@@ -4745,10 +4737,10 @@
     "close": 178100.0,
     "ret_1m": -4.1,
     "analyst": {
-      "n_buy": 11,
+      "n_buy": 10,
       "n_hold": 0,
       "n_sell": 0,
-      "avg_target": 257818,
+      "avg_target": 255600,
       "latest_target": 166000.0,
       "recent": [
         {
@@ -4834,10 +4826,10 @@
     "quant": {
       "buy_score": 57.5,
       "rank_in_level2": 4,
-      "upside_pct": 44.8,
+      "upside_pct": 43.5,
       "composite": -1.0,
-      "timing_state": "watch",
-      "timing_score": 71.1
+      "timing_state": "hold",
+      "timing_score": 50.3
     }
   },
   "271560": {
@@ -4944,8 +4936,8 @@
       "rank_in_level2": 1,
       "upside_pct": 62.5,
       "composite": 1.0,
-      "timing_state": "watch",
-      "timing_score": 71.1
+      "timing_state": "hold",
+      "timing_score": 50.3
     }
   },
   "145720": {
@@ -5412,7 +5404,7 @@
       "upside_pct": 76.9,
       "composite": -1.0,
       "timing_state": "hold",
-      "timing_score": 42.6
+      "timing_score": 43.3
     }
   },
   "068270": {
@@ -5534,7 +5526,7 @@
       "upside_pct": 37.7,
       "composite": -1.0,
       "timing_state": "hold",
-      "timing_score": 42.6
+      "timing_score": 43.3
     }
   },
   "128940": {
@@ -5550,10 +5542,10 @@
     "close": 500000.0,
     "ret_1m": 1.6,
     "analyst": {
-      "n_buy": 16,
+      "n_buy": 14,
       "n_hold": 0,
       "n_sell": 0,
-      "avg_target": 650000,
+      "avg_target": 643571,
       "latest_target": 650000.0,
       "recent": [
         {
@@ -5637,12 +5629,12 @@
       "risk_text": null
     },
     "quant": {
-      "buy_score": 46.2,
+      "buy_score": 44.8,
       "rank_in_level2": 5,
-      "upside_pct": 30.0,
+      "upside_pct": 28.7,
       "composite": -1.0,
       "timing_state": "hold",
-      "timing_score": 42.6
+      "timing_score": 43.3
     }
   },
   "196170": {
@@ -5755,7 +5747,7 @@
       "upside_pct": 85.7,
       "composite": 1.0,
       "timing_state": "hold",
-      "timing_score": 42.6
+      "timing_score": 43.3
     }
   },
   "207940": {
@@ -5877,7 +5869,7 @@
       "upside_pct": 40.1,
       "composite": 1.0,
       "timing_state": "hold",
-      "timing_score": 42.6
+      "timing_score": 43.3
     }
   },
   "055550": {
@@ -6529,10 +6521,10 @@
     "close": 183000.0,
     "ret_1m": -5.0,
     "analyst": {
-      "n_buy": 13,
+      "n_buy": 12,
       "n_hold": 0,
       "n_sell": 0,
-      "avg_target": 231308,
+      "avg_target": 233083,
       "latest_target": 250000.0,
       "recent": [
         {
@@ -6616,9 +6608,9 @@
       "risk_text": "위험요소에 효율적으로 대응할 수 있도록 각종 위험을 신속 정확하게 인식/측정하여 위험을 적정수준으로 관리하며, 위험 대비 수익을 극대화하도록 정책을 운영하고 있습니다. 연결회사는 직면한 위험수준이 가용자본 대비 적정한 수준으로 유지될 수 있도록 위험자본을 각 위험종류별로 배분하고, 할당된 위험자본 관리를 위해 한도를 설정하여 관리합니다. 이는 안정적 수익기반 확보 및 기업가치의 극대화 달성을 가능하게 합니다.(2) 위험관리 절차연결회사의 위험관리 절차는 인식, 측정, 모니터링 및 통제, 보고의 단계로 이루어져 있으며, 다음과 같은 활동을 수행하고 있습니다.- 위험의 인식(Identification) : 경영활동의 주요 프로세스를 분석하여 발생 가능한 위험을 식별하고 있습니다. 특히 재무위험은 보험위험(생명장기/일반손해보험), 시장위험(금리위험 포함), 신용위험, 유동성위험 등 으로 구분하여 중요한 위험으로 인식하고 있습니다.- 위험의 측정(Measuring) : 위험 유형별로 관리대상의 특성(보험계약 속성, 고객 속성, 자산 운용현황 등)에 따라 위험액을 측정하고 그 규모의 적정성을 평가하는 단계로서, 연결회사의 중요한 위험(보험위험, 시장위험, 신용위험 등)을 측정 및 평가하고 있습니다. - 위험의 모니터링(Monitoring) 및 통제(Controlling) : 전사위험을 가용자본 내에서 관리하기 위해 적정 수준의 위험한도를 설정하고 이의 초과여부를 상시 모니터링하고 있습니다. 또한 주요 의사결정사항에 대해서는 사전관리체계 및 사후관리체계를 구축하여 운영하고 있습니다.- 위험의 보고(Reporting) : 위험요인에 대한 모니터링 결과와 조치방안을 정기적으로 위험관리위원회 및 경영진에 보고하고 있습니다.(3) 내부 자본적정성 평가 및 관리절차연결회사는 보험회사 위험기준 자기자본의 건전성을 나타내는 지표로 감독기관에서 규정하고 있는 지급여력제도 기준에 따라 지급여력비율을 산출하고 있습니다. 연결회사는 제도에 따른 요구자본을 기준으로 개별 리스크별로 요구자본을 배분하고, 할당된 요구자본 내 관리를 위한 한도를 설정하여 안정적 자본관리를 위해 노력하고 있습니다. 이에 대한 요구자본 할당 및 한도 기준에 대해서는 위험관리위원회 승인을 받아 운영하고, 관련사항에 대해서는 정기적인 모니터링을 통해 통제 및 관리하고 있으며, 위원회 및 경영진에게 정기적으로 보고하고 있습니다.연결회사에서는 생명장기손해보험위험, 일반손해보험위험, 시장위험(금리위험 포함), 신용위험에 대한 각 위험별 위험관리시스템을 구축하여 개별 위험액 산출 및 스트레스 테스트 등을 수행하고 있으며, 산출된 위험액으로 한도관리를 하는 등 위험관리에 활용하고 있습니다.또한 보험업감독규정 등에 따라 2018년부터 자체위험 및 지급여력평가(ORSA)체제를 구축하고, 위험관리체제 및 장래 지급여력 수준의 적정성을 자체적으로 평가, 관리하고 있습니다.(4)"
     },
     "quant": {
-      "buy_score": 57.2,
+      "buy_score": 58.3,
       "rank_in_level2": 2,
-      "upside_pct": 26.4,
+      "upside_pct": 27.4,
       "composite": null,
       "timing_state": "watch",
       "timing_score": 65.2
@@ -6837,7 +6829,7 @@
       "upside_pct": 92.3,
       "composite": -1.0,
       "timing_state": "caution",
-      "timing_score": 23.1
+      "timing_score": 21.3
     }
   },
   "016360": {
@@ -6945,7 +6937,7 @@
       "upside_pct": 67.7,
       "composite": null,
       "timing_state": "caution",
-      "timing_score": 23.1
+      "timing_score": 21.3
     }
   },
   "039490": {
@@ -7053,7 +7045,7 @@
       "upside_pct": 81.4,
       "composite": 1.0,
       "timing_state": "caution",
-      "timing_score": 23.1
+      "timing_score": 21.3
     }
   },
   "071050": {
@@ -7161,7 +7153,7 @@
       "upside_pct": 82.5,
       "composite": 1.0,
       "timing_state": "caution",
-      "timing_score": 23.1
+      "timing_score": 21.3
     }
   },
   "000720": {
@@ -7478,9 +7470,9 @@
     ],
     "market_share": [],
     "dart": {
-      "rcept_no": "20260515002039",
+      "rcept_no": "20260814003447",
       "report_nm": "[기재정정]사업보고서 (2025.12)",
-      "rcept_dt": "20260515",
+      "rcept_dt": "20260814",
       "biz_overview": "사업의 개요 당사가 수행하는 사업은 주요 공사형태 및 용역 제공방식에 따라 사업을 토목, 주택, 플랜트, 발전/환경사업 등으로 구분할 수 있습니다. 당사의 종속회사가 영위하는 사업을 사업부문별로 살펴보면 다음과 같습니다.국내 주택, 토목사업을 영위하는 DL건설㈜, 사업부지 개발 및 아파트 신축, 분양(디벨로퍼) 사업을 수행하는 PFV인 오산랜드마크프로젝트㈜, 부동산 개발 사업을 수행하는 ㈜인천도화1임대주택위탁관리부동산투자회사, ㈜엔에스파트너스, ㈜사우북변도시개발, ㈜삼호시트론시티, 해외 건설공사를 수행하기 위해 설립된 해외 현지 법인(DL Saudi Arabia Co., Ltd., PT. DLENC UTAMA CONSTRUCTION, 달림(남경)건설관리 유한공사, DL USA, Inc., DL INSAAT GELISTIRME A.S., Daelim RUS LLC., DL Engineering & Construction Malaysia Sdn. Bhd., DLE&C FZCO) 그리고 친환경 탈탄소 사업을영위하는 CARBONCO PTE. Ltd. 가 있습니다.연결실체가 영위하는 각 사업부문의 주된 제품 및 서비스와 당기 매출은 아래와 같습니다. (단위 : 백만원) 사업부문 회사",
       "risk_text": "위험요소연결실체의 재무부문은 영업을 관리하고 국내외 금융시장의 접근을 조직하며, 각 위험의 범위와 규모를 분석한 내부위험보고서를 통하여 연결실체의 영업과 관련한 금융위험을 감시하고 관리하는 역할을 하고 있습니다. 이러한 위험들은 시장위험(통화위험, 가격위험 포함), 신용위험, 유동성위험을 포함하고 있습니다. 화폐성외화자산부채의 장부가액에 대한 공시 화폐성외화자산부채의 장부가액에 대한 공시 당기 (단위 : 백만원) 위험 시장위험 환위험 위험에 대한 노출정도에 대한 기술 연결실체는 외화로 표시된 거래를 수행하고 있으므로 환율변동으로 인한 위험에 노출되어 있습니다. 환율변동으로 인한 위험의 노출정도는 파생상품계약을 활용하여 승인된 정책에서 정하는 한도 내에서 관리하고 있습니다. 보고기간종료일 현재 환율변동위험에 노출된 자산 및 부채의 장부금액은 다음과 같습니다. 외화금융자산, 원화환산금액 1,664,411 외화금융부채, 원화환산금액 244,703 전기 (단위 : 백만원) 위험 시장위험 환위험 위험에 대한 노출정도에 대한 기술 연결실체는 외화로 표시된 거래를 수행하고 있으므로 환율변동으로 인한 위험에 노출되어 있습니다. 환율변동으로 인한 위험의 노출정도는 파생상품계약을 활용하여 승인된 정책에서 정하는 한도 내에서 관리하고 있습니다. 보고기간종료일 현재 환율변동위험에 노출된 자산 및 부채의 장부금액은 다음과 같습니다. 외화금융자산, 원화환산금액 1,414,628 외화금융부채, 원화환산금액 692,761 시장위험에 대한 공시 시장위험의 각 유형별 민감도분석 보고기간 말 현재 노출된 시장위험의 각 유형별 민감도 분석 당기 (단위 : 백만원) 위험 시장위험 환위험 시장위험의 각 유형별 민감도분석 기술 연결실체는 내부적으로 환율변동으로 인한 환율변동위험을 정기적으로 측정하고 있습니다. 보고기간종료일 현재 상기 자산, 부채에 적용되는 환율이 10% 변동시 환율변동으로 인한 당기 손익과 순자산에 미치는 영향(법인세효과 반영 전)은 다음과 같습니다. 시장위험의 각 유형별 민감도분석 기술 시장변수 상승 시 당기손익 증가 141,971 시장변수 하락 시 당기손익 감소 (141,971) 시장변수 상승 시 순자산 증가 141,971 시장변수 하락 시 순자산 감소 (141,971) 전기 (단위 : 백만원) 위험 시장위험 환위험 시장위험의 각 유형별 민감도분석 기술 연결실체는 내부적으로 환율변동으로 인한 환율변동위험을 정기적으로 측정하고 있습니다. 보고기간종료일 현재 상기 자산, 부채에 적용되는 환율이 10% 변동시 환율변동으로 인한 당기 손익과 순자산에 미치는 영향(법인세효과 반영 전)은 다음과 같습니다. 시장위험의 각 유형별 민감도분석 기술 시장변수 상승 시 당기손익 증가 72,187 시장변수 하락 시 당기손익 감소 (72,187) 시장변수 상승 시 순자산 증가 72,187 시장변수 하락 시 순자산 감소 (72,187) 신용위험에 대한 공시 신용위험신용위험은 계약상대방이 계약상의 의무를 불이행하여 연결실체에 재무적 손실을 미칠 위험을 의미합니다. 연결실체는 채무불이행으로 인한 재무적손실을 경감시키는 수단으로써 거래처의 신용도 검토 및 충분한 담보를 수취하는 정책 등을 채택하고 있습니다. 연결실체의 신용위험노출 및 거래처의 신용등급을 …"
     },
@@ -7597,7 +7589,7 @@
       "upside_pct": 60.5,
       "composite": -1.0,
       "timing_state": "관측부족",
-      "timing_score": 16.9
+      "timing_score": 15.7
     }
   },
   "047810": {
@@ -7710,7 +7702,7 @@
       "upside_pct": 37.6,
       "composite": 1.0,
       "timing_state": "관측부족",
-      "timing_score": 16.9
+      "timing_score": 15.7
     }
   },
   "064350": {
@@ -7818,7 +7810,7 @@
       "upside_pct": 144.0,
       "composite": 1.0,
       "timing_state": "관측부족",
-      "timing_score": 16.9
+      "timing_score": 15.7
     }
   },
   "079550": {
@@ -7885,7 +7877,7 @@
       "upside_pct": null,
       "composite": 1.0,
       "timing_state": "관측부족",
-      "timing_score": 16.9
+      "timing_score": 15.7
     }
   },
   "003550": {
@@ -8699,10 +8691,10 @@
     "close": 674000.0,
     "ret_1m": -12.4,
     "analyst": {
-      "n_buy": 12,
+      "n_buy": 11,
       "n_hold": 0,
       "n_sell": 0,
-      "avg_target": 1150417,
+      "avg_target": 1155000,
       "latest_target": 900000.0,
       "recent": [
         {
@@ -8788,7 +8780,7 @@
     "quant": {
       "buy_score": 87.5,
       "rank_in_level2": 1,
-      "upside_pct": 70.7,
+      "upside_pct": 71.4,
       "composite": 1.0,
       "timing_state": "watch",
       "timing_score": 63.8
@@ -9242,10 +9234,10 @@
     "close": 432000.0,
     "ret_1m": -4.6,
     "analyst": {
-      "n_buy": 15,
+      "n_buy": 13,
       "n_hold": 0,
       "n_sell": 0,
-      "avg_target": 613267,
+      "avg_target": 615308,
       "latest_target": 280000.0,
       "recent": [
         {
@@ -9325,7 +9317,7 @@
     "quant": {
       "buy_score": 57.5,
       "rank_in_level2": 4,
-      "upside_pct": 42.0,
+      "upside_pct": 42.4,
       "composite": -1.0,
       "timing_state": "관측부족",
       "timing_score": 11.6
