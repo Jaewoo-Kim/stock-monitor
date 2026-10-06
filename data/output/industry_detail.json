@@ -1,50 +1,4 @@
 {
-  "S1_semilarge": {
-    "recent_reports": [
-      {
-        "date": "2026-09-07",
-        "broker": "미래에셋증권",
-        "ticker": "005930",
-        "company_name": "삼성전자",
-        "title": "HBM으로 매크로 우려 극복",
-        "opinion": "매수",
-        "target_price": 400000.0,
-        "prev_target": 370000.0,
-        "tp_pct": 8.1,
-        "source_url": "https://finance.naver.com/research/company_read.naver?nid=96027",
-        "broker_url": "https://stock.pstatic.net/stock-research/company/56/20260907_company_868953000.pdf",
-        "analyst_name": null
-      },
-      {
-        "date": "2026-09-07",
-        "broker": "미래에셋증권",
-        "ticker": "000660",
-        "company_name": "SK하이닉스",
-        "title": "HBM 고객 다변화 본격화",
-        "opinion": "매수",
-        "target_price": 3100000.0,
-        "prev_target": 2800000.0,
-        "tp_pct": 10.7,
-        "source_url": "https://finance.naver.com/research/company_read.naver?nid=96025",
-        "broker_url": "https://stock.pstatic.net/stock-research/company/56/20260907_company_806609000.pdf",
-        "analyst_name": null
-      }
-    ],
-    "companies_detail": [
-      {
-        "ticker": "000660",
-        "name": "SK하이닉스",
-        "close": 1828000.0,
-        "ret_1m": 8.0
-      },
-      {
-        "ticker": "005930",
-        "name": "삼성전자",
-        "close": 274500.0,
-        "ret_1m": 5.2
-      }
-    ]
-  },
   "S2_internet": {
     "recent_reports": [
       {
@@ -92,20 +46,6 @@
         "source_url": "https://finance.naver.com/research/company_read.naver?nid=96054",
         "broker_url": "https://stock.pstatic.net/stock-research/company/57/20260909_company_414777000.pdf",
         "analyst_name": null
-      },
-      {
-        "date": "2026-09-07",
-        "broker": "대신증권",
-        "ticker": "017670",
-        "company_name": "SK텔레콤",
-        "title": "하이퍼와 호라이즌 투트랙",
-        "opinion": "Buy",
-        "target_price": 110000.0,
-        "prev_target": 110000.0,
-        "tp_pct": 0.0,
-        "source_url": "https://finance.naver.com/research/company_read.naver?nid=96031",
-        "broker_url": "https://stock.pstatic.net/stock-research/company/15/20260907_company_971100000.pdf",
-        "analyst_name": null
       }
     ],
     "companies_detail": [
@@ -126,92 +66,6 @@
         "name": "LG유플러스",
         "close": 14520.0,
         "ret_1m": -4.6
-      }
-    ]
-  },
-  "S3_cosmetics": {
-    "recent_reports": [
-      {
-        "date": "2026-09-07",
-        "broker": "SK증권",
-        "ticker": "044820",
-        "company_name": "코스맥스",
-        "title": "On Track",
-        "opinion": "매수",
-        "target_price": 350000.0,
-        "prev_target": 290000.0,
-        "tp_pct": 20.7,
-        "source_url": "https://finance.naver.com/research/company_read.naver?nid=96023",
-        "broker_url": "https://stock.pstatic.net/stock-research/company/64/20260907_company_609046000.pdf",
-        "analyst_name": null
-      },
-      {
-        "date": "2026-09-07",
-        "broker": "유안타증권",
-        "ticker": "044820",
-        "company_name": "코스맥스",
-        "title": "[다시봐] 강점이 부각 & 확대되는 시기",
-        "opinion": null,
-        "target_price": null,
-        "prev_target": null,
-        "tp_pct": null,
-        "source_url": "https://finance.naver.com/research/company_read.naver?nid=96029",
-        "broker_url": "https://stock.pstatic.net/stock-research/company/18/20260907_company_3782000.pdf",
-        "analyst_name": null
-      },
-      {
-        "date": "2026-09-07",
-        "broker": "SK증권",
-        "ticker": "090430",
-        "company_name": "아모레퍼시픽",
-        "title": "안정적인 실적 성장 궤도 진입",
-        "opinion": "매수",
-        "target_price": 180000.0,
-        "prev_target": 180000.0,
-        "tp_pct": 0.0,
-        "source_url": "https://finance.naver.com/research/company_read.naver?nid=96026",
-        "broker_url": "https://stock.pstatic.net/stock-research/company/64/20260907_company_893671000.pdf",
-        "analyst_name": null
-      },
-      {
-        "date": "2026-09-07",
-        "broker": "SK증권",
-        "ticker": "257390",
-        "company_name": "실리콘투",
-        "title": "벤더사 역할이 중요해지는 구간",
-        "opinion": "매수",
-        "target_price": 62000.0,
-        "prev_target": null,
-        "tp_pct": null,
-        "source_url": "https://finance.naver.com/research/company_read.naver?nid=96024",
-        "broker_url": "https://stock.pstatic.net/stock-research/company/64/20260907_company_534778000.pdf",
-        "analyst_name": null
-      }
-    ],
-    "companies_detail": [
-      {
-        "ticker": "044820",
-        "name": "코스맥스",
-        "close": 25050.0,
-        "ret_1m": -2.1
-      },
-      {
-        "ticker": "051900",
-        "name": "LG생활건강",
-        "close": 273000.0,
-        "ret_1m": -10.8
-      },
-      {
-        "ticker": "090430",
-        "name": "아모레퍼시픽",
-        "close": 136500.0,
-        "ret_1m": -6.7
-      },
-      {
-        "ticker": "257390",
-        "name": "실리콘투",
-        "close": null,
-        "ret_1m": null
       }
     ]
   },
@@ -395,50 +249,6 @@
       }
     ]
   },
-  "S7_power": {
-    "recent_reports": [
-      {
-        "date": "2026-09-07",
-        "broker": "대신증권",
-        "ticker": "010120",
-        "company_name": "LS ELECTRIC",
-        "title": "내러티브가 실적으로 증명되기 시작!",
-        "opinion": "Buy",
-        "target_price": 630000.0,
-        "prev_target": 630000.0,
-        "tp_pct": 0.0,
-        "source_url": "https://finance.naver.com/research/company_read.naver?nid=96030",
-        "broker_url": "https://stock.pstatic.net/stock-research/company/15/20260907_company_373596000.pdf",
-        "analyst_name": null
-      }
-    ],
-    "companies_detail": [
-      {
-        "ticker": "001440",
-        "name": "대한전선",
-        "close": 30400.0,
-        "ret_1m": 6.1
-      },
-      {
-        "ticker": "010120",
-        "name": "LS ELECTRIC",
-        "close": 206000.0,
-        "ret_1m": 0.7
-      },
-      {
-        "ticker": "267260",
-        "name": "HD현대일렉트릭",
-        "close": 674000.0,
-        "ret_1m": -12.4
-      },
-      {
-        "ticker": "298040",
-        "name": "효성중공업",
-        "close": 2805000.0,
-        "ret_1m": -3.8
-      }
-    ]
-  },
   "S7_transport": {
     "recent_reports": [
       {
@@ -569,6 +379,23 @@
       }
     ]
   },
+  "S1_semilarge": {
+    "recent_reports": [],
+    "companies_detail": [
+      {
+        "ticker": "000660",
+        "name": "SK하이닉스",
+        "close": 1828000.0,
+        "ret_1m": 8.0
+      },
+      {
+        "ticker": "005930",
+        "name": "삼성전자",
+        "close": 274500.0,
+        "ret_1m": 5.2
+      }
+    ]
+  },
   "S1_semiparts": {
     "recent_reports": [],
     "companies_detail": [
@@ -687,6 +514,35 @@
         "name": "HL만도",
         "close": 46700.0,
         "ret_1m": -7.2
+      }
+    ]
+  },
+  "S3_cosmetics": {
+    "recent_reports": [],
+    "companies_detail": [
+      {
+        "ticker": "044820",
+        "name": "코스맥스",
+        "close": 25050.0,
+        "ret_1m": -2.1
+      },
+      {
+        "ticker": "051900",
+        "name": "LG생활건강",
+        "close": 273000.0,
+        "ret_1m": -10.8
+      },
+      {
+        "ticker": "090430",
+        "name": "아모레퍼시픽",
+        "close": 136500.0,
+        "ret_1m": -6.7
+      },
+      {
+        "ticker": "257390",
+        "name": "실리콘투",
+        "close": null,
+        "ret_1m": null
       }
     ]
   },
@@ -901,6 +757,35 @@
         "name": "두산로보틱스",
         "close": 71800.0,
         "ret_1m": 4.1
+      }
+    ]
+  },
+  "S7_power": {
+    "recent_reports": [],
+    "companies_detail": [
+      {
+        "ticker": "001440",
+        "name": "대한전선",
+        "close": 30400.0,
+        "ret_1m": 6.1
+      },
+      {
+        "ticker": "010120",
+        "name": "LS ELECTRIC",
+        "close": 206000.0,
+        "ret_1m": 0.7
+      },
+      {
+        "ticker": "267260",
+        "name": "HD현대일렉트릭",
+        "close": 674000.0,
+        "ret_1m": -12.4
+      },
+      {
+        "ticker": "298040",
+        "name": "효성중공업",
+        "close": 2805000.0,
+        "ret_1m": -3.8
       }
     ]
   },
