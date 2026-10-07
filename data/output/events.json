@@ -1,5 +1,44 @@
 [
   {
+    "date": "2026-10-07",
+    "level2_id": "S9_energy",
+    "level2_name": "정유·에너지",
+    "event_type": "timing_buy",
+    "from_state": "watch",
+    "to_state": "buy",
+    "detail": {
+      "timing_score": 93.6,
+      "rs_3m": 53.91,
+      "breadth_pct": 100.0
+    }
+  },
+  {
+    "date": "2026-10-07",
+    "level2_id": "S1_battery",
+    "level2_name": "2차전지",
+    "event_type": "timing_buy",
+    "from_state": "watch",
+    "to_state": "buy",
+    "detail": {
+      "timing_score": 97.5,
+      "rs_3m": -8.66,
+      "breadth_pct": 100.0
+    }
+  },
+  {
+    "date": "2026-10-07",
+    "level2_id": "S6_bank",
+    "level2_name": "은행·금융지주",
+    "event_type": "timing_watch",
+    "from_state": "hold",
+    "to_state": "watch",
+    "detail": {
+      "timing_score": 67.0,
+      "rs_3m": 22.41,
+      "breadth_pct": 50.0
+    }
+  },
+  {
     "date": "2026-10-02",
     "level2_id": "S1_semiparts",
     "level2_name": "반도체 소부장",
@@ -459,43 +498,6 @@
     "detail": {
       "timing_score": 56.9,
       "rs_3m": -16.53,
-      "breadth_pct": 0.0
-    }
-  },
-  {
-    "date": "2026-08-24",
-    "level2_id": "S7_holding",
-    "level2_name": "지주·복합기업",
-    "event_type": "timing_watch",
-    "from_state": "hold",
-    "to_state": "watch",
-    "detail": {
-      "timing_score": 62.4,
-      "rs_3m": 33.27,
-      "breadth_pct": 33.3
-    }
-  },
-  {
-    "date": "2026-08-23",
-    "level2_id": "S3_auto",
-    "level2_name": "자동차·부품",
-    "event_type": "phase_turn",
-    "from_state": "바닥",
-    "to_state": "전환",
-    "detail": {
-      "composite_score": 0.18
-    }
-  },
-  {
-    "date": "2026-08-23",
-    "level2_id": "S3_auto",
-    "level2_name": "자동차·부품",
-    "event_type": "timing_watch",
-    "from_state": "hold",
-    "to_state": "watch",
-    "detail": {
-      "timing_score": 66.7,
-      "rs_3m": 1.75,
       "breadth_pct": 0.0
     }
   }
