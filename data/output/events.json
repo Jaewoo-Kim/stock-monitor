@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026-10-08",
+    "level2_id": "S7_construction",
+    "level2_name": "건설·건자재",
+    "event_type": "timing_watch",
+    "from_state": "hold",
+    "to_state": "watch",
+    "detail": {
+      "timing_score": 71.0,
+      "rs_3m": 2.21,
+      "breadth_pct": 66.7
+    }
+  },
+  {
     "date": "2026-10-07",
     "level2_id": "S9_energy",
     "level2_name": "정유·에너지",
@@ -486,19 +499,6 @@
     "to_state": "전환",
     "detail": {
       "composite_score": 0.1263
-    }
-  },
-  {
-    "date": "2026-08-24",
-    "level2_id": "S7_ship",
-    "level2_name": "조선",
-    "event_type": "timing_watch",
-    "from_state": "hold",
-    "to_state": "watch",
-    "detail": {
-      "timing_score": 56.9,
-      "rs_3m": -16.53,
-      "breadth_pct": 0.0
     }
   }
 ]
