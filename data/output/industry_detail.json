@@ -1,42 +1,4 @@
 {
-  "S3_retail": {
-    "recent_reports": [
-      {
-        "date": "2026-09-10",
-        "broker": "IBK투자증권",
-        "ticker": "139480",
-        "company_name": "이마트",
-        "title": "스타벅스 부진과 본업의 호조",
-        "opinion": "매수",
-        "target_price": 100000.0,
-        "prev_target": 100000.0,
-        "tp_pct": 0.0,
-        "source_url": "https://finance.naver.com/research/company_read.naver?nid=96068",
-        "broker_url": "https://stock.pstatic.net/stock-research/company/40/20260910_company_32572000.pdf",
-        "analyst_name": null
-      }
-    ],
-    "companies_detail": [
-      {
-        "ticker": "004170",
-        "name": "신세계",
-        "close": 318000.0,
-        "ret_1m": -19.8
-      },
-      {
-        "ticker": "023530",
-        "name": "롯데쇼핑",
-        "close": 98800.0,
-        "ret_1m": -12.0
-      },
-      {
-        "ticker": "139480",
-        "name": "이마트",
-        "close": 71100.0,
-        "ret_1m": -4.2
-      }
-    ]
-  },
   "S10_utility": {
     "recent_reports": [],
     "companies_detail": [
@@ -333,6 +295,29 @@
         "name": "실리콘투",
         "close": null,
         "ret_1m": null
+      }
+    ]
+  },
+  "S3_retail": {
+    "recent_reports": [],
+    "companies_detail": [
+      {
+        "ticker": "004170",
+        "name": "신세계",
+        "close": 318000.0,
+        "ret_1m": -19.8
+      },
+      {
+        "ticker": "023530",
+        "name": "롯데쇼핑",
+        "close": 98800.0,
+        "ret_1m": -12.0
+      },
+      {
+        "ticker": "139480",
+        "name": "이마트",
+        "close": 71100.0,
+        "ret_1m": -4.2
       }
     ]
   },
