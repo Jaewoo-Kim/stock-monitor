@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026-10-15",
+    "level2_id": "S1_battery",
+    "level2_name": "2차전지",
+    "event_type": "timing_buy",
+    "from_state": "watch",
+    "to_state": "buy",
+    "detail": {
+      "timing_score": 100.0,
+      "rs_3m": 10.98,
+      "breadth_pct": 80.0
+    }
+  },
+  {
     "date": "2026-10-08",
     "level2_id": "S7_construction",
     "level2_name": "건설·건자재",
@@ -488,17 +501,6 @@
       "timing_score": 65.7,
       "rs_3m": -8.97,
       "breadth_pct": 50.0
-    }
-  },
-  {
-    "date": "2026-08-24",
-    "level2_id": "S7_ship",
-    "level2_name": "조선",
-    "event_type": "phase_turn",
-    "from_state": "바닥",
-    "to_state": "전환",
-    "detail": {
-      "composite_score": 0.1263
     }
   }
 ]
