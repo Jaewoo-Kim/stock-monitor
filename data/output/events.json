@@ -1,5 +1,44 @@
 [
   {
+    "date": "2026-10-19",
+    "level2_id": "S7_machinery",
+    "level2_name": "기계·로봇",
+    "event_type": "timing_watch",
+    "from_state": "관측부족",
+    "to_state": "watch",
+    "detail": {
+      "timing_score": 58.6,
+      "rs_3m": -29.44,
+      "breadth_pct": 0.0
+    }
+  },
+  {
+    "date": "2026-10-19",
+    "level2_id": "S5_medtech",
+    "level2_name": "의료기기·미용의료",
+    "event_type": "timing_watch",
+    "from_state": "hold",
+    "to_state": "watch",
+    "detail": {
+      "timing_score": 63.3,
+      "rs_3m": 6.69,
+      "breadth_pct": 0.0
+    }
+  },
+  {
+    "date": "2026-10-19",
+    "level2_id": "S2_entertainment",
+    "level2_name": "엔터테인먼트·미디어",
+    "event_type": "timing_watch",
+    "from_state": "관측부족",
+    "to_state": "watch",
+    "detail": {
+      "timing_score": 68.6,
+      "rs_3m": 2.54,
+      "breadth_pct": 33.3
+    }
+  },
+  {
     "date": "2026-10-15",
     "level2_id": "S1_battery",
     "level2_name": "2차전지",
@@ -464,43 +503,6 @@
       "timing_score": 65.7,
       "rs_3m": 28.02,
       "breadth_pct": 0.0
-    }
-  },
-  {
-    "date": "2026-08-27",
-    "level2_id": "S5_pharma",
-    "level2_name": "제약·바이오",
-    "event_type": "phase_turn",
-    "from_state": "바닥",
-    "to_state": "전환",
-    "detail": {
-      "composite_score": 0.2964
-    }
-  },
-  {
-    "date": "2026-08-27",
-    "level2_id": "S5_pharma",
-    "level2_name": "제약·바이오",
-    "event_type": "timing_buy",
-    "from_state": "hold",
-    "to_state": "buy",
-    "detail": {
-      "timing_score": 100.0,
-      "rs_3m": 13.18,
-      "breadth_pct": 80.0
-    }
-  },
-  {
-    "date": "2026-08-25",
-    "level2_id": "S8_steel",
-    "level2_name": "철강·비철금속",
-    "event_type": "timing_watch",
-    "from_state": "hold",
-    "to_state": "watch",
-    "detail": {
-      "timing_score": 65.7,
-      "rs_3m": -8.97,
-      "breadth_pct": 50.0
     }
   }
 ]
