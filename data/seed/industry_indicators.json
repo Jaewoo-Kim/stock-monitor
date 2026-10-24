@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "note": "L0 업황 동인 지표 정의(taxonomy). source는 수집기가 참조. ecos.stat_code/item_code는 ECOS 키 발급 후 실제 코드로 검증·확정 (미입력 시 해당 지표 수집 skip).",
+    "note": "L0 업황 동인 지표 정의(taxonomy). source는 수집기가 참조. ecos.stat_code/item_code는 ECOS 키 발급 후 실제 코드로 검증·확정 (미입력 시 해당 지표 수집 skip). export 지표는 관세청 무역통계 오픈API(data.go.kr) 기준 customs.hs_code 사용 — hs_code는 1차 추정치이므로 customs.verified=true로 바뀌기 전까지 수집기가 skip한다. 검증 방법: docs/06_수출입동향_L0_연동_v1.md 참조.",
     "indicator_types": {
       "export": "산업별 수출액 — YoY 음→양 전환이 업황 바닥 통과 신호 (direction +1)",
       "inv_cycle": "제조업 재고순환(출하증가율−재고증가율) — 개선이 선행 전환 신호 (direction +1)",
@@ -8,14 +8,14 @@
     }
   },
   "indicators": [
-    { "level2_id": "S1_semilarge", "id": "export_semi", "name": "반도체 수출액", "type": "export", "direction": 1, "source": "ecos", "ecos": { "stat_code": "", "item_code": "", "cycle": "M" } },
-    { "level2_id": "S1_battery",   "id": "export_battery", "name": "이차전지 수출액", "type": "export", "direction": 1, "source": "ecos", "ecos": { "stat_code": "", "item_code": "", "cycle": "M" } },
-    { "level2_id": "S1_display",   "id": "export_display", "name": "디스플레이 수출액", "type": "export", "direction": 1, "source": "ecos", "ecos": { "stat_code": "", "item_code": "", "cycle": "M" } },
-    { "level2_id": "S3_auto",      "id": "export_auto", "name": "자동차 수출액", "type": "export", "direction": 1, "source": "ecos", "ecos": { "stat_code": "", "item_code": "", "cycle": "M" } },
-    { "level2_id": "S7_ship",      "id": "export_ship", "name": "선박 수출액", "type": "export", "direction": 1, "source": "ecos", "ecos": { "stat_code": "", "item_code": "", "cycle": "M" } },
-    { "level2_id": "S8_chemicals", "id": "export_chem", "name": "석유화학 수출액", "type": "export", "direction": 1, "source": "ecos", "ecos": { "stat_code": "", "item_code": "", "cycle": "M" } },
-    { "level2_id": "S8_steel",     "id": "export_steel", "name": "철강 수출액", "type": "export", "direction": 1, "source": "ecos", "ecos": { "stat_code": "", "item_code": "", "cycle": "M" } },
-    { "level2_id": "S9_energy",    "id": "export_oil", "name": "석유제품 수출액", "type": "export", "direction": 1, "source": "ecos", "ecos": { "stat_code": "", "item_code": "", "cycle": "M" } },
+    { "level2_id": "S1_semilarge", "id": "export_semi", "name": "반도체 수출액", "type": "export", "direction": 1, "source": "customs", "customs": { "hs_code": "8542", "digits": 4, "verified": false, "note": "전자집적회로. 8541(개별소자)은 미포함 — 필요시 추가 검토" } },
+    { "level2_id": "S1_battery",   "id": "export_battery", "name": "이차전지 수출액", "type": "export", "direction": 1, "source": "customs", "customs": { "hs_code": "850760", "digits": 6, "verified": false, "note": "리튬이온 축전지" } },
+    { "level2_id": "S1_display",   "id": "export_display", "name": "디스플레이 수출액", "type": "export", "direction": 1, "source": "customs", "customs": { "hs_code": "8524", "digits": 4, "verified": false, "note": "평판디스플레이모듈(HS2022 신설 품목) — 그 이전 시계열은 8528/9013에 흩어져 있어 장기 비교 시 주의" } },
+    { "level2_id": "S3_auto",      "id": "export_auto", "name": "자동차 수출액", "type": "export", "direction": 1, "source": "customs", "customs": { "hs_code": "8703", "digits": 4, "verified": false, "note": "승용차 중심. 화물차(8704)·부품(8708)은 미포함 — MOTIE 발표치와 범위가 다를 수 있음" } },
+    { "level2_id": "S7_ship",      "id": "export_ship", "name": "선박 수출액", "type": "export", "direction": 1, "source": "customs", "customs": { "hs_code": "89", "digits": 2, "verified": false, "note": "선박과 그 밖의 수상 구조물(챕터 전체)" } },
+    { "level2_id": "S8_chemicals", "id": "export_chem", "name": "석유화학 수출액", "type": "export", "direction": 1, "source": "customs", "customs": { "hs_code": "39", "digits": 2, "verified": false, "note": "플라스틱(챕터39)만 우선 반영 — 한국 '석유화학' 통상 정의는 유기화학품(29)·고무(40)도 포함해 범위가 더 넓을 수 있음, 검증 최우선순위" } },
+    { "level2_id": "S8_steel",     "id": "export_steel", "name": "철강 수출액", "type": "export", "direction": 1, "source": "customs", "customs": { "hs_code": "72", "digits": 2, "verified": false, "note": "철강(챕터72). 철강제품(73)은 미포함" } },
+    { "level2_id": "S9_energy",    "id": "export_oil", "name": "석유제품 수출액", "type": "export", "direction": 1, "source": "customs", "customs": { "hs_code": "2710", "digits": 4, "verified": false, "note": "석유와 역청유(원유 제외)" } },
 
     { "level2_id": "S1_semilarge", "id": "inv_mfg", "name": "제조업 재고순환", "type": "inv_cycle", "direction": 1, "source": "ecos", "ecos": { "stat_code": "", "item_code": "", "cycle": "M" } },
     { "level2_id": "S3_auto",      "id": "inv_mfg", "name": "제조업 재고순환", "type": "inv_cycle", "direction": 1, "source": "ecos", "ecos": { "stat_code": "", "item_code": "", "cycle": "M" } },

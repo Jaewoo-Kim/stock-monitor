@@ -137,14 +137,17 @@ def run(con=None, calc_date: str | None = None) -> None:
         for level2_id, defs in by_ind.items():
             parts, detail = [], {}
             for d in defs:
-                vals = [v for _, v in _series(con, level2_id, d["id"])]
+                series = _series(con, level2_id, d["id"])
+                vals = [v for _, v in series]
                 ev = _EVAL.get(d["type"], lambda _v: None)(vals)
                 if ev is None:
                     continue
                 w = TYPE_WEIGHT.get(d["type"], 0.3)
                 parts.append((ev, w))
                 detail[d["id"]] = {"name": d["name"], "type": d["type"],
-                                   "metric": ev["metric"], "turning": ev["turning"]}
+                                   "metric": ev["metric"], "turning": ev["turning"],
+                                   "period": series[-1][0] if series else None,
+                                   "source": d.get("source")}
 
             if not parts:
                 state, score = "관측부족", None
