@@ -228,10 +228,10 @@
     "close": 167400.0,
     "ret_1m": -6.7,
     "analyst": {
-      "n_buy": 5,
+      "n_buy": 3,
       "n_hold": 0,
       "n_sell": 0,
-      "avg_target": 243400,
+      "avg_target": 232333,
       "latest_target": 226000.0,
       "recent": [
         {
@@ -257,22 +257,6 @@
           "opinion": "Buy",
           "source_url": "https://finance.naver.com/research/company_read.naver?nid=94992",
           "broker_url": "https://stock.pstatic.net/stock-research/company/57/20260803_company_489209000.pdf"
-        },
-        {
-          "date": "2026-07-31",
-          "broker": "대신증권",
-          "title": "저점을 다져가는 중",
-          "opinion": "Buy",
-          "source_url": "https://finance.naver.com/research/company_read.naver?nid=94874",
-          "broker_url": "https://stock.pstatic.net/stock-research/company/15/20260731_company_523222000.pdf"
-        },
-        {
-          "date": "2026-07-31",
-          "broker": "DS투자증권",
-          "title": "하반기에 몰린 물량과 판가",
-          "opinion": "매수",
-          "source_url": "https://finance.naver.com/research/company_read.naver?nid=94917",
-          "broker_url": "https://stock.pstatic.net/stock-research/company/66/20260731_company_908391000.pdf"
         }
       ]
     },
@@ -315,9 +299,9 @@
       "risk_text": "위험요소가 내포되어 있다. CC 원리금의 채무불이행이 발생할 가능성이 높다. C 원리금의 채무불이행이 발생할 가능성이 지극히 높다. D 현재 채무불이행 상태에 있다. 주1) AA부터 B까지는 동일 등급내에서 세분하여 구분할 필요가 있는 경우에는\"＋\" 또는 \"－\"의 기호를 부여할 수 있다.주2) Stable : 향후 1~2년 내에 등급의 변동 가능성이 낮음 ② 한국기업평가 : 기업어음 신용평가기업어음 신용평가는 기업이 단기 운영자금 조달을 위하여 발행한 기업어음의 상환능력에 영향을 미치는 요소를 분석·평가하여 그 상환능력을 신용등급으로 표시합니다. 기업어음 신용평가는 발행기업의 단기적 영업상황과 유동성 위험 등 단기 채무상환능력을 중점적으로 파악합니다. 신용등급 등급의 정의 A1 단기적인 원리금 지급확실성이 매우 높으며, 예측 가능한 장래의 환경변화에 영향을 받을 가능성이 낮다. A2 단기적인 원리금 지급확실성이 높지만, 장래의 환경변화에 의해 영향을 받을 가능성이 상위 등급에 비해서는 높다. A3 단기적인 원리급 지급확실성은 있으나, 장래의 한경변화에 따라 저하될 가능성이 내포되어 있다. B 최소한의 단기적인 원리금 지급확실성은 인정되나, 그 안전성은 가변적이어서 투기적이다. C 단기적인 원리금 지급확실성이 의문시되며, 채무불이행이 발생할 가능성이 높다. D 현재 채무불이행 상태에 있다. 주1) A2부터 B까지는 동일 등급내에서 상대적인 우열을 나타내기 위하여\"＋\" 또는 \"－\"의 기호를 부여할 수 있다.주2) 미공시 등급의 경우 당해 등급기호의 앞에 \"U\"를 부기한다. ③ 한국신용평가 : 회사채 신용평가기업 신용평가 등급체계 및 정의와 동일하며, 원리금 지급능력의 정도에 따라 AAA부터 D까지 10개 등급으로 분류됩니다. 등급 중 AAA부터 BBB까지는 원리금 상환능력이 인정되는 투자등급이며, BB에서 C까지는 환경변화에 따라 크게 영향을 받는 투기등급으로 분류됩니다. 신용등급 등급의 정의 AAA 원리금 상환가능성이 최고 수준이다. AA 원리금 상환가능성이 매우 높지만, 상위등급(AAA)에 비해 다소 열위한 면이 있다. A 원리금 상환가능성이 높지만, 상위등급(AA)에 비해 경제여건 및 환경변화에 따라 영향을 받기 쉬운 면이 있다. BBB 원리금 상환가능성이 일정수준 인정되지만, 상위등급(A)에 비해 경제여건 및 환경변화에 따라 저하될 가능성이 있다. BB 원리금 상환가능성에 불확실성이 내포되어 있어 투기적 요소를 갖고 있다. B 원리금 상환가능성에 대한 불확실성이 상당하여 상위등급(BB)에 비해 투기적 요소가 크다. CCC 채무불이행의 위험 수준이 높고 원리금 상환가능성이 의문시된다. CC 채무불이행의 위험 수준이 매우 높고, 원리금 상환가능성이 희박하다. C 채무불이행의 위험 수준이 극히 높고 원리금 상환가능성이 없다. D 상환불능상태이다. 주1) 상기 등급 중 AA부터 B등급까지 \"＋\" 또는 \"－\" 부호를 부가하여 동일 등급 내에서의 우열을 나타낼 수 있습니다.주2) Stable : 현 등급부여 시점에서 개별 채권의 신용도에 영향을 미칠 만한 주요 평가요소가 안정적일 것으로 예측되는 경우 ④ 한국신용평가 : 기업어음 신용평가기업어음 신용평가는 기업이 발행하는 기업어음에 대해 단기적인 신용도에 초점을 맞추어 …"
     },
     "quant": {
-      "buy_score": 57.5,
+      "buy_score": 56.1,
       "rank_in_level2": 4,
-      "upside_pct": 45.4,
+      "upside_pct": 38.8,
       "composite": -1.0,
       "timing_state": "hold",
       "timing_score": 50.0
@@ -341,10 +325,10 @@
     "close": 515000.0,
     "ret_1m": -3.9,
     "analyst": {
-      "n_buy": 6,
+      "n_buy": 3,
       "n_hold": 0,
       "n_sell": 0,
-      "avg_target": 810667,
+      "avg_target": 835667,
       "latest_target": 1000000.0,
       "recent": [
         {
@@ -370,22 +354,6 @@
           "opinion": "매수",
           "source_url": "https://finance.naver.com/research/company_read.naver?nid=95008",
           "broker_url": "https://stock.pstatic.net/stock-research/company/66/20260803_company_398808000.pdf"
-        },
-        {
-          "date": "2026-07-31",
-          "broker": "미래에셋증권",
-          "title": "바뀐 것이 하나도 없음",
-          "opinion": "매수",
-          "source_url": "https://finance.naver.com/research/company_read.naver?nid=94867",
-          "broker_url": "https://stock.pstatic.net/stock-research/company/56/20260731_company_199751000.pdf"
-        },
-        {
-          "date": "2026-07-31",
-          "broker": "대신증권",
-          "title": "예상보다 빨라진 흑전",
-          "opinion": "Buy",
-          "source_url": "https://finance.naver.com/research/company_read.naver?nid=94875",
-          "broker_url": "https://stock.pstatic.net/stock-research/company/15/20260731_company_917421000.pdf"
         }
       ]
     },
@@ -439,7 +407,7 @@
     "quant": {
       "buy_score": 55.0,
       "rank_in_level2": 5,
-      "upside_pct": 57.4,
+      "upside_pct": 62.3,
       "composite": -1.0,
       "timing_state": "hold",
       "timing_score": 50.0
@@ -685,10 +653,10 @@
     "close": 391500.0,
     "ret_1m": 10.1,
     "analyst": {
-      "n_buy": 4,
+      "n_buy": 1,
       "n_hold": 0,
       "n_sell": 0,
-      "avg_target": 535000,
+      "avg_target": 550000,
       "latest_target": 550000.0,
       "recent": [
         {
@@ -698,30 +666,6 @@
           "opinion": "Buy",
           "source_url": "https://finance.naver.com/research/company_read.naver?nid=95066",
           "broker_url": "https://stock.pstatic.net/stock-research/company/15/20260805_company_890085000.pdf"
-        },
-        {
-          "date": "2026-07-31",
-          "broker": "미래에셋증권",
-          "title": "EV도 회복 국면 진입",
-          "opinion": "매수",
-          "source_url": "https://finance.naver.com/research/company_read.naver?nid=94870",
-          "broker_url": "https://stock.pstatic.net/stock-research/company/56/20260731_company_573791000.pdf"
-        },
-        {
-          "date": "2026-07-31",
-          "broker": "하나증권",
-          "title": "하반기 강한 증익 모멘텀",
-          "opinion": "Buy",
-          "source_url": "https://finance.naver.com/research/company_read.naver?nid=94891",
-          "broker_url": "https://stock.pstatic.net/stock-research/company/57/20260731_company_2192000.pdf"
-        },
-        {
-          "date": "2026-07-31",
-          "broker": "DS투자증권",
-          "title": "지연된 물량, 채워지는 수주",
-          "opinion": "매수",
-          "source_url": "https://finance.naver.com/research/company_read.naver?nid=94915",
-          "broker_url": "https://stock.pstatic.net/stock-research/company/66/20260731_company_531646000.pdf"
         }
       ]
     },
@@ -773,9 +717,9 @@
       "risk_text": "투자위험회피에 대한 위험회피수단으로 지정하고 있습니다. 확정계약의 외화위험회피는 현금흐름위험회피로 회계처리하고 있습니다. 연결회사는 위험회피 개시시점에 위험회피를 수행하는 위험관리의 목적과 전략에 따라 위험회피수단과 위험회피대상항목의 관계를 문서화하고 있습니다. 또한 연결회사는 위험회피의 개시시점과 후속기간에 위험회피수단이 회피대상위험으로 인한 위험회피대상항목의 공정가치 또는 현금흐름의 변동을 상쇄하는데 효과적인지 여부를 문서화하고 있습니다. 위험회피관계가 다음의 위험회피효과에 대한 요구사항을 모두 충족하는 경우에 효과적입니다. ㆍ 위험회피대상항목과 위험회피수단 사이에 경제적 관계가 있는 경우 ㆍ 신용위험의 효과가 위험회피대상항목과 위험회피수단의 경제적 관계로 인한 가치변동보다 지배적이지 않은 경우 ㆍ 위험회피관계의 위험회피비율이 회사가 실제로 위험을 회피하는 위험회피대상항목의 수량과 위험회피대상항목의 수량의 위험을 회피하기 위해 회사가 실제 사용하는 위험회피수단의 수량의 비율과 같은 경우 위험회피관계가 위험회피비율과 관련된 위험회피 효과성의 요구사항을 더는 충족하지 못하지만 지정된 위험회피관계에 대한 위험관리의 목적이 동일하게 유지되고 있다면, 위험회피관계가 다시 적용조건을 충족할 수 있도록 위험회피관계의 위험회피비율을 조정하고 있습니다(위험회피 재조정). 연결회사는 선도계약의 공정가치 전체(즉 선도요소 포함) 변동을 선도계약을 포함하는 위험회피관계 전체에 대한 위험회피수단으로 지정하고 있습니다. 연결회사는 예상거래를 위험회피하기 위해 옵션계약을 이용하는 경우에 옵션의 내재가치만 위험회피수단으로 지정하였습니다. 기업회계기준서 제1039호 '금융상품: 인식과 측정'에서는 옵션의 공정가치 중 시간가치 변동(즉 지정되지 않은 요소)는 즉시 당기손익으로 인식되었습니다. 기업회계기준서 제1109호 '금융상품'에서는 위험회피대상항목과 관련된 옵션의 시간가치 변동('대응된 시간가치')은 기타포괄손익으로 인식하고 자본의 자본에 누적된 금액은 위험회피대상항목이 당기손익에 영향을 미치는 기간에 당기손익으로 재분류되거나 자본에서 제거하고 비금융항목의 장부금액에 직접 포함됩니다. 연결회사는 옵션계약의 내재가치만을 위험회피수단으로 지정하였습니다(즉 시간가치는 제외). 대응된 옵션의 시간가치는 기타포괄손익으로 인식하며 위험회피원가적립금에 누적됩니다. 위험회피대상항목이 거래와 관련된 것이라면 시간가치는 위험회피대상항목이 당기손익에 영향을 미칠 때 당기손익으로 재분류됩니다. 위험회피대상항목이 기간과 관련된 것이라면 위험회피원가적립금에 누적된 금액은 합리적인 기준에 따라 당기손익으로 재분류되며, 연결회사는 정액 상각을 적용하고 있습니다. 재분류된 금액은 위험회피대상항목과 동일한 항목으로 당기손익에 인식됩니다. 위험회피대상항목이 비금융항목인 경우 위험회피원가적립금에 누적된 금액은 자본에서 직접 제거하며 인식된 비금융항목의 최초 장부금액에 포함됩니다. 또한 위험회피원가적립금이 차손이며 그 차손의 전부나 일부가 미래 기간에 회복되지 않을 것으로 예상된다면 그 금액은 즉시 당기손익으로 재분류됩니다. 1-1) 공정가치위험회피 적격한 위험회피수단의 손익은 당기손익으로 인식합니다. 다만 위험회피수단이 기타포괄손익-공정가치측정항목으로 지정된 지분상품을 …"
     },
     "quant": {
-      "buy_score": 58.8,
+      "buy_score": 62.5,
       "rank_in_level2": 2,
-      "upside_pct": 36.7,
+      "upside_pct": 40.5,
       "composite": -1.0,
       "timing_state": "hold",
       "timing_score": 50.0
@@ -799,21 +743,12 @@
     "close": 7220.0,
     "ret_1m": -15.8,
     "analyst": {
-      "n_buy": 1,
+      "n_buy": 0,
       "n_hold": 0,
       "n_sell": 0,
-      "avg_target": 17000,
-      "latest_target": 17000.0,
-      "recent": [
-        {
-          "date": "2026-07-31",
-          "broker": "IBK투자증권",
-          "title": "칩플레이션에도 수익성을 증명해야 할 순간",
-          "opinion": "매수",
-          "source_url": "https://finance.naver.com/research/company_read.naver?nid=94865",
-          "broker_url": "https://stock.pstatic.net/stock-research/company/40/20260731_company_575660000.pdf"
-        }
-      ]
+      "avg_target": null,
+      "latest_target": null,
+      "recent": []
     },
     "fundamentals": [
       {
@@ -863,9 +798,9 @@
       "risk_text": "위험요소를 사전에 대체하고 보다 안정화된 관리 Process를 구축하였습니다. 해당 Process 구축을 위해 사외 기관과의 협업을 통해 사전에 규제 동향을 파악하여 자사 대응전략을 수립하였으며, 개발/구매/품질/분석부서와의 업무협업을 통해 효과적인 관리방안을 도출 및 적용하였습니다. - Gate01 협력사단계 : 신규 협력사 등록 전 Audit 실시(유해물질 대응 프로세스 점검) - Gate02 부품개발단계 : 개발 부품 환경성 평가 실시(3단계 : 서류심사, XRF Test, 정밀분석) - Gate03 제품개발단계 : 모델 환경성 평가 실시, 제품 라벨링 실시(RoHS Verified) - Gate04 양산 단계 : 양산 부품 주기적 유해물질 Test를 통한 공정관리(리스크 평가를 통한 등급별 Test 실시)유해물질을 Level A-I, A-II, B-I, B-II의 4등급으로 분류하여 효과적으로 관리하는 '제품 유해물질 관리 체계'를 운영하고 있습니다. 특히, 글로벌 제품 유해물질 규제에서 금지하는 물질 외에도, 인체와 환경에 유해성을 일으키는 물질에 대해서도 Level B 물질로 지정하고, 이를 대체하는 기술 및 부품을 개발하여 자사 제품에 확대 적용하는 노력들로 규제 외 유해물질들의 점진적 저감 및 제거하는 자발적 저감 활동을 지속적으로 추진하고 있습니다. - Level A-I(사용금지물질) : EU RoHS 규제에서 지정한 10종 및 특정 고객사 지정 금지물질 - Level A-II(사용금지물질) : Level A-I 이외 법규 및 협약에서 금지하는 물질 및 고객사 지정 금지물질 - Level B-I(자발적사용저감물질) : 자발적으로 일정 기간을 두고 대체를 진행하는 물질 - Level B-II(관찰물질) : 현 시점에서는 사용 금지하고 있지 않지만 향후 금지가 예상되는 물질또한, RoHS 국제시험표준인 IEC 62321 개정작업에도 적극 참여하여 자사 halogen-free 시험방법인 연소IC(C-IC: Combustion Ion Chromatography)법이 IEC 표준으로 채택되어 2013년 6월에 정식 표준(표준명: IEC 62321-3-2)으로 발간되었습니다. 당사는 2017년 Global 검사/검증 시험 및 인증 기관인 SGS로부터 업계 최초로 OLED TV 디스플레이 모듈에 대해 SGS Eco Label 인증을 받은 이후 지속적으로 획득하고 있으며 2024년에는 SGS EEPS 인증(구 Eco Label 인증)으로 업데이트 하였습니다. 2022년에는 모니터, 노트북, 태블릿, 자동차 디스플레이 모듈로 인증을 확대하여 모니터, 노트북 디스플레이 모듈은 당사 최초로 SGS Eco Label 인증을 획득하였으며, 자동차 디스플레이 모듈은 업계 최초로 소비전력 우수성을 바탕으로 동일 인증을 획득하였고 유지/관리하고 있습니다. 2023년에는 하이엔드 16인치 노트북과 27인치 모니터용 LCD 패널이 자사 최초로 재활용 소재를 적용하여 SGS Eco Label을 획득하였으며, 투명디스플레이 30인치, 55인치 제품에 대해 유해물질 개선 기술을 적용하여 업계 최초로 동일 인증을 획득하였습니다.2022년에는 향균 필름을 적용한 27인치 모니터 디스플레이가 향균 성능에 대한 SGSPerformance …"
     },
     "quant": {
-      "buy_score": 92.5,
-      "rank_in_level2": 1,
-      "upside_pct": 135.5,
+      "buy_score": 70.0,
+      "rank_in_level2": 2,
+      "upside_pct": null,
       "composite": 1.0,
       "timing_state": "관측부족",
       "timing_score": 16.0
@@ -950,7 +885,7 @@
     "dart": null,
     "quant": {
       "buy_score": 87.5,
-      "rank_in_level2": 2,
+      "rank_in_level2": 1,
       "upside_pct": 139.7,
       "composite": 1.0,
       "timing_state": "관측부족",
@@ -975,10 +910,10 @@
     "close": 1146000.0,
     "ret_1m": -20.0,
     "analyst": {
-      "n_buy": 12,
+      "n_buy": 5,
       "n_hold": 0,
       "n_sell": 0,
-      "avg_target": 2375000,
+      "avg_target": 2370000,
       "latest_target": 2800000.0,
       "recent": [
         {
@@ -1073,7 +1008,7 @@
     "quant": {
       "buy_score": 62.5,
       "rank_in_level2": 3,
-      "upside_pct": 107.2,
+      "upside_pct": 106.8,
       "composite": -1.0,
       "timing_state": "hold",
       "timing_score": 31.1
@@ -1187,10 +1122,10 @@
     "close": 158500.0,
     "ret_1m": -21.9,
     "analyst": {
-      "n_buy": 6,
+      "n_buy": 2,
       "n_hold": 0,
       "n_sell": 0,
-      "avg_target": 258333,
+      "avg_target": 300000,
       "latest_target": 350000.0,
       "recent": [
         {
@@ -1208,30 +1143,6 @@
           "opinion": "Buy",
           "source_url": "https://finance.naver.com/research/company_read.naver?nid=95548",
           "broker_url": "https://stock.pstatic.net/stock-research/company/61/20260813_company_375435000.pdf"
-        },
-        {
-          "date": "2026-07-31",
-          "broker": "신한투자증권",
-          "title": "실적 체력 확인, 반등 기대 구간",
-          "opinion": "매수",
-          "source_url": "https://finance.naver.com/research/company_read.naver?nid=94854",
-          "broker_url": null
-        },
-        {
-          "date": "2026-07-31",
-          "broker": "대신증권",
-          "title": "3Q 실적도 좋다! AI향 공조, 로봇의 구체화!",
-          "opinion": "Buy",
-          "source_url": "https://finance.naver.com/research/company_read.naver?nid=94877",
-          "broker_url": "https://stock.pstatic.net/stock-research/company/15/20260731_company_442496000.pdf"
-        },
-        {
-          "date": "2026-07-31",
-          "broker": "하나증권",
-          "title": "강해진 이익 체력과 신사업 가속화",
-          "opinion": "Buy",
-          "source_url": "https://finance.naver.com/research/company_read.naver?nid=94890",
-          "broker_url": "https://stock.pstatic.net/stock-research/company/57/20260731_company_25386000.pdf"
         }
       ]
     },
@@ -1276,7 +1187,7 @@
     "quant": {
       "buy_score": 87.5,
       "rank_in_level2": 1,
-      "upside_pct": 63.0,
+      "upside_pct": 89.3,
       "composite": 1.0,
       "timing_state": "hold",
       "timing_score": 31.1
@@ -1300,10 +1211,10 @@
     "close": 1234000.0,
     "ret_1m": -34.3,
     "analyst": {
-      "n_buy": 9,
+      "n_buy": 8,
       "n_hold": 0,
       "n_sell": 0,
-      "avg_target": 3250000,
+      "avg_target": 3193750,
       "latest_target": 3100000.0,
       "recent": [
         {
@@ -1406,7 +1317,7 @@
     "quant": {
       "buy_score": 70.0,
       "rank_in_level2": 2,
-      "upside_pct": 163.4,
+      "upside_pct": 158.8,
       "composite": -1.0,
       "timing_state": "관측부족",
       "timing_score": 12.0
@@ -1430,10 +1341,10 @@
     "close": 214500.0,
     "ret_1m": -22.0,
     "analyst": {
-      "n_buy": 13,
+      "n_buy": 5,
       "n_hold": 0,
       "n_sell": 0,
-      "avg_target": 466923,
+      "avg_target": 390000,
       "latest_target": 400000.0,
       "recent": [
         {
@@ -1544,7 +1455,7 @@
     "quant": {
       "buy_score": 70.0,
       "rank_in_level2": 1,
-      "upside_pct": 117.7,
+      "upside_pct": 81.8,
       "composite": -1.0,
       "timing_state": "관측부족",
       "timing_score": 12.0
@@ -1979,10 +1890,10 @@
     "close": 209000.0,
     "ret_1m": -7.1,
     "analyst": {
-      "n_buy": 4,
+      "n_buy": 1,
       "n_hold": 0,
       "n_sell": 0,
-      "avg_target": 280000,
+      "avg_target": 370000,
       "latest_target": 370000.0,
       "recent": [
         {
@@ -1992,30 +1903,6 @@
           "opinion": "Buy",
           "source_url": "https://finance.naver.com/research/company_read.naver?nid=95349",
           "broker_url": "https://stock.pstatic.net/stock-research/company/15/20260810_company_887588000.pdf"
-        },
-        {
-          "date": "2026-07-31",
-          "broker": "미래에셋증권",
-          "title": "차별화된 AI 인프라 사업자",
-          "opinion": "매수",
-          "source_url": "https://finance.naver.com/research/company_read.naver?nid=94868",
-          "broker_url": "https://stock.pstatic.net/stock-research/company/56/20260731_company_542262000.pdf"
-        },
-        {
-          "date": "2026-07-31",
-          "broker": "하나증권",
-          "title": "데이터센터 로드맵 공개, 경쟁력 부각 전망",
-          "opinion": "Buy",
-          "source_url": "https://finance.naver.com/research/company_read.naver?nid=94897",
-          "broker_url": "https://stock.pstatic.net/stock-research/company/57/20260731_company_263121000.pdf"
-        },
-        {
-          "date": "2026-07-31",
-          "broker": "교보증권",
-          "title": "글로벌 테넌트 유치 가능성 시사 긍정적",
-          "opinion": "Buy",
-          "source_url": "https://finance.naver.com/research/company_read.naver?nid=94916",
-          "broker_url": "https://stock.pstatic.net/stock-research/company/62/20260731_company_135240000.pdf"
         }
       ]
     },
@@ -2058,9 +1945,9 @@
       "risk_text": "위험요소를 가지고 있는 보고기간 말 현재의 미래에 관한 주요 가정 및 기타 추정불확실성의 주요 원천은 다음과 같습니다. 1) 거래가격 배분 가격이 확정된 주석 2.(6)에서 설명하고 있는 SI(System Integration)서비스는 계약상 복수의 수행의무를 포함할 수 있으며, 이러한 계약의 거래가격은 상대적 개별 판매가격 기준으로 각 수행의무에 배분하여야 합니다. 경영진은 계약 개시시점에 제공될 것으로 예상되는 하드웨어 및 소프트웨어 종류와 유사한 상황에서 유사한 고객에게 제공되는 용역의 관측 가능한 가격에 기초하여 개별 판매가격을 추정합니다. 할인이 제공되는 경우에는 두 수행의무의 상대적 개별 판매가격 기준으로 배분합니다. 2) 추정총계약원가 공사수익금액은 누적발생계약원가를 기준으로 측정하는 진행률의 영향을 받으며, 총계약원가는 재료비, 노무비, 프로젝트기간 등의 미래 예상치에 근거하여 추정합니다. 당사는 추정총계약원가에 유의적인 변동이 있는지를 주기적으로 검토하고 보고기간말 현재의 진행률 산정할 때에 그 변동사항을 반영하고 있습니다. 3) 손상 검사 - 영업권 영업권의 손상여부를 검토하기 위한 현금창출단위의 회수가능금액은 사용가치의 계산에 기초하여 결정됩니다. 영업권의 회수가능액은 차기연도 사업계획 달성 여부에 가장 민감하게 영향을 받을 것이라고 판단하였습니다. 사업계획은"
     },
     "quant": {
-      "buy_score": 50.8,
+      "buy_score": 57.5,
       "rank_in_level2": 1,
-      "upside_pct": 34.0,
+      "upside_pct": 77.0,
       "composite": -1.0,
       "timing_state": "hold",
       "timing_score": 46.0
@@ -2805,8 +2692,8 @@
       "rank_in_level2": 1,
       "upside_pct": 71.7,
       "composite": -1.0,
-      "timing_state": "watch",
-      "timing_score": 61.4
+      "timing_state": "hold",
+      "timing_score": 40.4
     }
   },
   "030200": {
@@ -2913,8 +2800,8 @@
       "rank_in_level2": 2,
       "upside_pct": 55.6,
       "composite": -1.0,
-      "timing_state": "watch",
-      "timing_score": 61.4
+      "timing_state": "hold",
+      "timing_score": 40.4
     }
   },
   "032640": {
@@ -2930,10 +2817,10 @@
     "close": 14510.0,
     "ret_1m": -0.1,
     "analyst": {
-      "n_buy": 12,
+      "n_buy": 11,
       "n_hold": 0,
       "n_sell": 0,
-      "avg_target": 19958,
+      "avg_target": 19955,
       "latest_target": 20000.0,
       "recent": [
         {
@@ -3021,8 +2908,8 @@
       "rank_in_level2": 3,
       "upside_pct": 37.5,
       "composite": -1.0,
-      "timing_state": "watch",
-      "timing_score": 61.4
+      "timing_state": "hold",
+      "timing_score": 40.4
     }
   },
   "000270": {
@@ -3308,10 +3195,10 @@
     "close": 37850.0,
     "ret_1m": -20.1,
     "analyst": {
-      "n_buy": 6,
+      "n_buy": 1,
       "n_hold": 0,
       "n_sell": 0,
-      "avg_target": 73833,
+      "avg_target": 81000,
       "latest_target": 81000.0,
       "recent": [
         {
@@ -3321,38 +3208,6 @@
           "opinion": "매수",
           "source_url": "https://finance.naver.com/research/company_read.naver?nid=95009",
           "broker_url": "https://stock.pstatic.net/stock-research/company/66/20260803_company_325906000.pdf"
-        },
-        {
-          "date": "2026-07-31",
-          "broker": "유진투자증권",
-          "title": "2Q26 Review: 하반기에 빛날 만도",
-          "opinion": "Buy",
-          "source_url": "https://finance.naver.com/research/company_read.naver?nid=94842",
-          "broker_url": "https://stock.pstatic.net/stock-research/company/63/20260731_company_452490000.pdf"
-        },
-        {
-          "date": "2026-07-31",
-          "broker": "미래에셋증권",
-          "title": "2Q26 리뷰: 로봇 액추에이터 수주 기대",
-          "opinion": "매수",
-          "source_url": "https://finance.naver.com/research/company_read.naver?nid=94861",
-          "broker_url": "https://stock.pstatic.net/stock-research/company/56/20260731_company_724934000.pdf"
-        },
-        {
-          "date": "2026-07-31",
-          "broker": "한화투자증권",
-          "title": "본업 수익성 개선과 로봇 상용화 준비 지속",
-          "opinion": "Buy",
-          "source_url": "https://finance.naver.com/research/company_read.naver?nid=94902",
-          "broker_url": "https://stock.pstatic.net/stock-research/company/16/20260731_company_8394000.pdf"
-        },
-        {
-          "date": "2026-07-31",
-          "broker": "하나증권",
-          "title": "자동차 섀시에서 로봇 관절로 이어질 시간",
-          "opinion": "Buy",
-          "source_url": "https://finance.naver.com/research/company_read.naver?nid=94908",
-          "broker_url": "https://stock.pstatic.net/stock-research/company/57/20260731_company_886681000.pdf"
         }
       ]
     },
@@ -3397,7 +3252,7 @@
     "quant": {
       "buy_score": 57.5,
       "rank_in_level2": 2,
-      "upside_pct": 95.1,
+      "upside_pct": 114.0,
       "composite": -1.0,
       "timing_state": "관측부족",
       "timing_score": 16.0
@@ -3504,7 +3359,7 @@
     },
     "quant": {
       "buy_score": 87.5,
-      "rank_in_level2": 2,
+      "rank_in_level2": 1,
       "upside_pct": 1122.7,
       "composite": 1.0,
       "timing_state": "hold",
@@ -3613,10 +3468,10 @@
     "close": 132400.0,
     "ret_1m": -8.5,
     "analyst": {
-      "n_buy": 8,
+      "n_buy": 4,
       "n_hold": 0,
       "n_sell": 0,
-      "avg_target": 185375,
+      "avg_target": 182000,
       "latest_target": 180000.0,
       "recent": [
         {
@@ -3650,14 +3505,6 @@
           "opinion": "Buy",
           "source_url": "https://finance.naver.com/research/company_read.naver?nid=94983",
           "broker_url": "https://stock.pstatic.net/stock-research/company/18/20260803_company_950035000.pdf"
-        },
-        {
-          "date": "2026-07-31",
-          "broker": "SK증권",
-          "title": "성장 궤도 진입",
-          "opinion": "매수",
-          "source_url": "https://finance.naver.com/research/company_read.naver?nid=94853",
-          "broker_url": "https://stock.pstatic.net/stock-research/company/64/20260731_company_738629000.pdf"
         }
       ]
     },
@@ -3700,9 +3547,9 @@
       "risk_text": null
     },
     "quant": {
-      "buy_score": 87.5,
-      "rank_in_level2": 1,
-      "upside_pct": 40.0,
+      "buy_score": 84.7,
+      "rank_in_level2": 2,
+      "upside_pct": 37.5,
       "composite": 1.0,
       "timing_state": "hold",
       "timing_score": 50.0
@@ -4711,8 +4558,8 @@
       "rank_in_level2": 4,
       "upside_pct": 75.8,
       "composite": -1.0,
-      "timing_state": "hold",
-      "timing_score": 40.9
+      "timing_state": "watch",
+      "timing_score": 63.7
     }
   },
   "214150": {
@@ -4728,10 +4575,10 @@
     "close": 27900.0,
     "ret_1m": -9.7,
     "analyst": {
-      "n_buy": 8,
+      "n_buy": 7,
       "n_hold": 0,
       "n_sell": 0,
-      "avg_target": 60125,
+      "avg_target": 59857,
       "latest_target": 62000.0,
       "recent": [
         {
@@ -4817,10 +4664,10 @@
     "quant": {
       "buy_score": 57.5,
       "rank_in_level2": 3,
-      "upside_pct": 115.5,
+      "upside_pct": 114.5,
       "composite": -1.0,
-      "timing_state": "hold",
-      "timing_score": 40.9
+      "timing_state": "watch",
+      "timing_score": 63.7
     }
   },
   "214450": {
@@ -4927,8 +4774,8 @@
       "rank_in_level2": 1,
       "upside_pct": 113.4,
       "composite": 1.0,
-      "timing_state": "hold",
-      "timing_score": 40.9
+      "timing_state": "watch",
+      "timing_score": 63.7
     }
   },
   "328130": {
@@ -4994,8 +4841,8 @@
       "rank_in_level2": 2,
       "upside_pct": null,
       "composite": 1.0,
-      "timing_state": "hold",
-      "timing_score": 40.9
+      "timing_state": "watch",
+      "timing_score": 63.7
     }
   },
   "000100": {
@@ -5011,10 +4858,10 @@
     "close": 83000.0,
     "ret_1m": 9.4,
     "analyst": {
-      "n_buy": 5,
+      "n_buy": 3,
       "n_hold": 0,
       "n_sell": 0,
-      "avg_target": 132000,
+      "avg_target": 131667,
       "latest_target": 140000.0,
       "recent": [
         {
@@ -5040,22 +4887,6 @@
           "opinion": "매수",
           "source_url": "https://finance.naver.com/research/company_read.naver?nid=94977",
           "broker_url": "https://stock.pstatic.net/stock-research/company/64/20260803_company_126897000.pdf"
-        },
-        {
-          "date": "2026-07-31",
-          "broker": "신한투자증권",
-          "title": "유럽 진출로 브랜드 뉴 데이",
-          "opinion": "매수",
-          "source_url": "https://finance.naver.com/research/company_read.naver?nid=94855",
-          "broker_url": null
-        },
-        {
-          "date": "2026-07-31",
-          "broker": "미래에셋증권",
-          "title": "라즈클루즈 침투 가속화와 기술수출 기대",
-          "opinion": "매수",
-          "source_url": "https://finance.naver.com/research/company_read.naver?nid=94869",
-          "broker_url": "https://stock.pstatic.net/stock-research/company/56/20260731_company_201400000.pdf"
         }
       ]
     },
@@ -5100,7 +4931,7 @@
     "quant": {
       "buy_score": 57.5,
       "rank_in_level2": 3,
-      "upside_pct": 59.0,
+      "upside_pct": 58.6,
       "composite": -1.0,
       "timing_state": "관측부족",
       "timing_score": 21.0
@@ -6454,7 +6285,7 @@
     },
     "quant": {
       "buy_score": 72.5,
-      "rank_in_level2": 3,
+      "rank_in_level2": 2,
       "upside_pct": 91.7,
       "composite": null,
       "timing_state": "관측부족",
@@ -6474,53 +6305,12 @@
     "close": 216000.0,
     "ret_1m": -18.5,
     "analyst": {
-      "n_buy": 5,
+      "n_buy": 0,
       "n_hold": 0,
       "n_sell": 0,
-      "avg_target": 467000,
-      "latest_target": 420000.0,
-      "recent": [
-        {
-          "date": "2026-07-31",
-          "broker": "신한투자증권",
-          "title": "올해 주주환원을 얼마나 할지 감도 안 옴",
-          "opinion": "매수",
-          "source_url": "https://finance.naver.com/research/company_read.naver?nid=94848",
-          "broker_url": null
-        },
-        {
-          "date": "2026-07-31",
-          "broker": "대신증권",
-          "title": "전 부문 실적 약진함에 따라 어닝 서프라이즈..",
-          "opinion": "Buy",
-          "source_url": "https://finance.naver.com/research/company_read.naver?nid=94879",
-          "broker_url": "https://stock.pstatic.net/stock-research/company/15/20260731_company_225893000.pdf"
-        },
-        {
-          "date": "2026-07-31",
-          "broker": "하나증권",
-          "title": "2026년 2분기 컨퍼런스 콜 요약",
-          "opinion": "Buy",
-          "source_url": "https://finance.naver.com/research/company_read.naver?nid=94885",
-          "broker_url": "https://stock.pstatic.net/stock-research/company/57/20260731_company_361159000.pdf"
-        },
-        {
-          "date": "2026-07-31",
-          "broker": "하나증권",
-          "title": "2Q26 Re - 트레이딩과 해외주식 부문이 예상..",
-          "opinion": "Buy",
-          "source_url": "https://finance.naver.com/research/company_read.naver?nid=94896",
-          "broker_url": "https://stock.pstatic.net/stock-research/company/57/20260731_company_669399000.pdf"
-        },
-        {
-          "date": "2026-07-31",
-          "broker": "교보증권",
-          "title": "2Q26 Review: 분기별 사상 최대 실적, Top pi..",
-          "opinion": "Buy",
-          "source_url": "https://finance.naver.com/research/company_read.naver?nid=94924",
-          "broker_url": "https://stock.pstatic.net/stock-research/company/62/20260731_company_581728000.pdf"
-        }
-      ]
+      "avg_target": null,
+      "latest_target": null,
+      "recent": []
     },
     "fundamentals": [
       {
@@ -6561,9 +6351,9 @@
       "risk_text": "위험요소간 상관관계 및 분산효과로 인하여 회사전체위험 VaR와 일치하지 않습니다. (단위: 천원) 구 분 기초 평균 최고 최저 기말(주1) 분산효과 반영전 VaR 이자율위험 428,615,774 328,550,532 428,615,774 274,065,000 344,793,000 주식가격위험 588,817,419 842,689,561 1,070,350,000 560,769,000 902,241,000 회사전체위험 1,591,471,678 1,681,190,517 1,868,100,000 1,518,570,000 1,604,400,000 분산효과 반영후 VaR 이자율위험 36,100,349 28,322,245 38,692,223 20,590,113 30,398,540 주식가격위험 75,344,077 96,166,621 148,994,429 54,658,321 147,996,747 회사전체위험 84,467,264 98,789,036 151,474,962 59,410,175 149,950,011 (주1) 각 위험유형별 VaR의 합계는 위험요소간 상관관계 및 분산효과로 인하여 회사전체위험 VaR와 일치하지 않습니다. 3) 위험요소가.이자율위험트레이딩포지션의 이자율위험은 원화표시 채무증권, 국채선물, 이자율 스왑에서 주로 발생합니다. 이자율위험은 VaR와 민감도분석 등을 통하여 관리하고 있습니다.나.주식가격위험주식가격위험은 주로 주식, 주가지수 선물/옵션 및 주식연계 파생상품에서 발생합니다. 주식가격위험은 VaR 측정 및 민감도 분석 등을 수행하여 관리합니다. 다. 외환위험외환위험은 난외계정인 외환선도계약이나 통화스왑 뿐만 아니라 기능통화 이외의 외화표시 자산, 부채의 보유를 통해 발생하게 됩니다. 외환위험은 환율의 변동으로 인하여 금융상품의 공정가치나 미래현금흐름이 변동할 위험을 의미합니다. 외환위험은기능통화 이외의 통화로 표시된 금융상품에서 발생하는 것으로 역사적 환율로 측정하는 비화폐성항목이나 기능통화로 표시된 금융상품에서는 발생하지 않습니다. 당사는 손절매 및 보유 한도를 설정하기 위하여 트레이딩 및 비트레이딩 포지션의 외화 순노출 금액을 통화별로 관리하고 있습니다. 44-4. 금융자산과 금융부채의 상계회사는 장외파생상품거래와 관련하여 ISDA(International Derivatives Swaps and Dealers Association) 또는 유사 약정을 통해 거래상대방과 일괄 상계약정거래를 하고 있습니다. 환매조건부채권 매매 및 유가증권 대차거래등에 대해서도 파생상품과 유사한 약정을 통해 상계약정거래가 이루어지고 있습니다. 동 약정에 따라 거래상대방의 부도등의 신용사건 발생시 거래상대방과의 거래는 해지되며, 해지 시점에 각 거래당사자가 지급 또는 지급받아야 할 금액을 상계하여 지급 또는 수취하고 있습니다. 44-4-1. 당기말 및 전기말 현재 상계되는 금융자산, 실행가능한 일괄상계약정 및 이와 유사한 약정의 적용을 받는 금융자산은 다음과 같습니다. (단위: 천원) 구 분 인식된금융자산 총액 상계되는 인식된금융부채 총액 재무제표에표시되는금융자산 순액 재무상태표에 상계되지 않은관련 금액 순 액 금융상품 수취한 현금담보 파생상품 관련자산: 옵션/미수금 등(주1) 1,127,476,684 - …"
     },
     "quant": {
-      "buy_score": 87.5,
-      "rank_in_level2": 2,
-      "upside_pct": 116.2,
+      "buy_score": 65.0,
+      "rank_in_level2": 3,
+      "upside_pct": null,
       "composite": 1.0,
       "timing_state": "관측부족",
       "timing_score": 11.8
@@ -6850,7 +6640,7 @@
     },
     "quant": {
       "buy_score": 35.0,
-      "rank_in_level2": 3,
+      "rank_in_level2": 2,
       "upside_pct": null,
       "composite": -1.0,
       "timing_state": "hold",
@@ -6870,53 +6660,12 @@
     "close": 58400.0,
     "ret_1m": -31.6,
     "analyst": {
-      "n_buy": 7,
+      "n_buy": 0,
       "n_hold": 0,
       "n_sell": 0,
-      "avg_target": 94857,
-      "latest_target": 90000.0,
-      "recent": [
-        {
-          "date": "2026-07-31",
-          "broker": "신한투자증권",
-          "title": "수익성 개선 효과 지속",
-          "opinion": "매수",
-          "source_url": "https://finance.naver.com/research/company_read.naver?nid=94841",
-          "broker_url": null
-        },
-        {
-          "date": "2026-07-31",
-          "broker": "iM증권",
-          "title": "2Q26 Re: 인상적인 영업이익, 아쉬운 플랜트 ..",
-          "opinion": "Buy",
-          "source_url": "https://finance.naver.com/research/company_read.naver?nid=94844",
-          "broker_url": "https://stock.pstatic.net/stock-research/company/61/20260731_company_861041000.pdf"
-        },
-        {
-          "date": "2026-07-31",
-          "broker": "유진투자증권",
-          "title": "2연속 어닝 서프라이즈, Top-Pick 유지",
-          "opinion": "Buy",
-          "source_url": "https://finance.naver.com/research/company_read.naver?nid=94860",
-          "broker_url": "https://stock.pstatic.net/stock-research/company/63/20260731_company_941603000.pdf"
-        },
-        {
-          "date": "2026-07-31",
-          "broker": "미래에셋증권",
-          "title": "마진율 개선에 따른 호실적",
-          "opinion": "매수",
-          "source_url": "https://finance.naver.com/research/company_read.naver?nid=94872",
-          "broker_url": "https://stock.pstatic.net/stock-research/company/56/20260731_company_731579000.pdf"
-        },
-        {
-          "date": "2026-07-31",
-          "broker": "한화투자증권",
-          "title": "[2Q26 Review] 두 개 분기 연속 서프라이즈",
-          "opinion": "Buy",
-          "source_url": "https://finance.naver.com/research/company_read.naver?nid=94892",
-          "broker_url": "https://stock.pstatic.net/stock-research/company/16/20260731_company_150034000.pdf"
-        }
-      ]
+      "avg_target": null,
+      "latest_target": null,
+      "recent": []
     },
     "fundamentals": [
       {
@@ -6957,9 +6706,9 @@
       "risk_text": "위험요소연결실체의 재무부문은 영업을 관리하고 국내외 금융시장의 접근을 조직하며, 각 위험의 범위와 규모를 분석한 내부위험보고서를 통하여 연결실체의 영업과 관련한 금융위험을 감시하고 관리하는 역할을 하고 있습니다. 이러한 위험들은 시장위험(통화위험, 가격위험 포함), 신용위험, 유동성위험을 포함하고 있습니다. 화폐성외화자산부채의 장부가액에 대한 공시 화폐성외화자산부채의 장부가액에 대한 공시 당기 (단위 : 백만원) 위험 시장위험 환위험 위험에 대한 노출정도에 대한 기술 연결실체는 외화로 표시된 거래를 수행하고 있으므로 환율변동으로 인한 위험에 노출되어 있습니다. 환율변동으로 인한 위험의 노출정도는 파생상품계약을 활용하여 승인된 정책에서 정하는 한도 내에서 관리하고 있습니다. 보고기간종료일 현재 환율변동위험에 노출된 자산 및 부채의 장부금액은 다음과 같습니다. 외화금융자산, 원화환산금액 1,664,411 외화금융부채, 원화환산금액 244,703 전기 (단위 : 백만원) 위험 시장위험 환위험 위험에 대한 노출정도에 대한 기술 연결실체는 외화로 표시된 거래를 수행하고 있으므로 환율변동으로 인한 위험에 노출되어 있습니다. 환율변동으로 인한 위험의 노출정도는 파생상품계약을 활용하여 승인된 정책에서 정하는 한도 내에서 관리하고 있습니다. 보고기간종료일 현재 환율변동위험에 노출된 자산 및 부채의 장부금액은 다음과 같습니다. 외화금융자산, 원화환산금액 1,414,628 외화금융부채, 원화환산금액 692,761 시장위험에 대한 공시 시장위험의 각 유형별 민감도분석 보고기간 말 현재 노출된 시장위험의 각 유형별 민감도 분석 당기 (단위 : 백만원) 위험 시장위험 환위험 시장위험의 각 유형별 민감도분석 기술 연결실체는 내부적으로 환율변동으로 인한 환율변동위험을 정기적으로 측정하고 있습니다. 보고기간종료일 현재 상기 자산, 부채에 적용되는 환율이 10% 변동시 환율변동으로 인한 당기 손익과 순자산에 미치는 영향(법인세효과 반영 전)은 다음과 같습니다. 시장위험의 각 유형별 민감도분석 기술 시장변수 상승 시 당기손익 증가 141,971 시장변수 하락 시 당기손익 감소 (141,971) 시장변수 상승 시 순자산 증가 141,971 시장변수 하락 시 순자산 감소 (141,971) 전기 (단위 : 백만원) 위험 시장위험 환위험 시장위험의 각 유형별 민감도분석 기술 연결실체는 내부적으로 환율변동으로 인한 환율변동위험을 정기적으로 측정하고 있습니다. 보고기간종료일 현재 상기 자산, 부채에 적용되는 환율이 10% 변동시 환율변동으로 인한 당기 손익과 순자산에 미치는 영향(법인세효과 반영 전)은 다음과 같습니다. 시장위험의 각 유형별 민감도분석 기술 시장변수 상승 시 당기손익 증가 72,187 시장변수 하락 시 당기손익 감소 (72,187) 시장변수 상승 시 순자산 증가 72,187 시장변수 하락 시 순자산 감소 (72,187) 신용위험에 대한 공시 신용위험신용위험은 계약상대방이 계약상의 의무를 불이행하여 연결실체에 재무적 손실을 미칠 위험을 의미합니다. 연결실체는 채무불이행으로 인한 재무적손실을 경감시키는 수단으로써 거래처의 신용도 검토 및 충분한 담보를 수취하는 정책 등을 채택하고 있습니다. 연결실체의 신용위험노출 및 거래처의 신용등급을 …"
     },
     "quant": {
-      "buy_score": 57.5,
-      "rank_in_level2": 2,
-      "upside_pct": 62.4,
+      "buy_score": 35.0,
+      "rank_in_level2": 3,
+      "upside_pct": null,
       "composite": -1.0,
       "timing_state": "hold",
       "timing_score": 38.8
@@ -7090,21 +6839,12 @@
     "close": 104900.0,
     "ret_1m": -19.3,
     "analyst": {
-      "n_buy": 1,
+      "n_buy": 0,
       "n_hold": 0,
       "n_sell": 0,
-      "avg_target": 186000,
-      "latest_target": 186000.0,
-      "recent": [
-        {
-          "date": "2026-07-31",
-          "broker": "DS투자증권",
-          "title": "실적도 수주도 하반기에 달려있다",
-          "opinion": "매수",
-          "source_url": "https://finance.naver.com/research/company_read.naver?nid=94912",
-          "broker_url": "https://stock.pstatic.net/stock-research/company/66/20260731_company_39672000.pdf"
-        }
-      ]
+      "avg_target": null,
+      "latest_target": null,
+      "recent": []
     },
     "fundamentals": [
       {
@@ -7145,9 +6885,9 @@
       "risk_text": "투자위험도가 극히 낮으며, 현단계에서합리적으로 예측가능한 장래의 어떠한 환경변화에도 영향을 받지 않을 만큼안정적임. A2 적기상환능력이 우수하여 투자위험도가 매우 낮지만 A1등급에 비해 다소 열등한요소가 있음. A3 적기상환능력이 양호하며, 투자위험도는 낮은 수준이지만 장래 급격한환경변화에 따라 다소 영향을 받을 가능성이 있음. B 적기상환능력은 인정되지만 투기적 요소가 내재되어 있음. C 적기상환능력이 의문시됨. D 지급불능 상태에 있음. ※ 위 등급중 A2등급부터 B등급까지는 등급내의 상대적인 우열에 따라 +, - 기호가 첨부됨. - 회사채 신용등급 신용등급 내용 AAA 원리금 지급확실성이 최고수준으로 투자위험도가 극히 낮으며, 현단계에서합리적으로 예측가능한 장래의 어떠한 환경변화에도 영향을 받지않을 만큼안정적임. AA 원리금 지급확실성이 매우 높아 투자위험도가 매우 낮지만 AAA등급에 비해 다소열등한 요소가 있음. A 원리금 지급확실성이 높아 투자위험도가 낮은 수준이지만 장래 급격한환경변화에 따라 다소 영향을 받을 가능성이 있음. BBB 원리금 지급확실성은 인정되지만 장래 환경변화로 지급확실성이 저하될가능성이 있음. BB 원리금 지급확실성에 당면문제는 없지만 장래의 안정성면에서는 투기적 요소가 내포되어 있음. B 원리금 지급확실성이 부족하여 투기적이며, 장래의 안정성에 대해서는현단계에서 단언할 수 없음. CCC 채무불이행이 발생할 가능성을 내포하고 있어 매우 투기적임. CC 채무불이행이 발생할 가능성이 높아 상위등급에 비해 불안요소가 더욱 많음. C 채무불이행이 발생할 가능성이 극히 높고 현단계에서는 장래 회복될 가능성이 없을 것으로 판단됨. D 원금 또는 이자가 지급불능 상태에 있음. ※ 위 등급중 AA등급부터 CCC등급까지는 등급내의 상대적인 우열에 따라 +, - 기호가 첨부됨. 한국신용평가- 기업어음 신용등급의 정의 신용등급 내용 A1 적기상환가능성이 최상급이다. A2 적기상환가능성이 우수하지만, 상위등급(A1)에 비해 다소 열위한 면이 있다. A3 적기상환가능성은 일정수준 인정되지만, 단기적인 환경변화에 따라 영향을 받을 가능성이 있다. B 적기상환가능성에 불확실성이 내포되어 있어 투기적인 요소가 크다. C 적기상환가능성이 의문시되고 채무불이행의 위험이 매우 높다. D 상환불능상태이다. ※ 상기 등급 중 A2부터 B등급까지는 +,- 부호를 부가하여 동일등급 내에서의 우열을 나타내고 있음. - 회사채 신용등급 신용등급 내용 AAA 원리금 상환가능성이 최고 수준이다. AA 원리금 상환가능성이 매우 높지만, 상위등급(AAA)에 비해 다소 열위한 면이 있다. A 원리금 상환가능성이 높지만, 상위등급(AA)에 비해 경제여건 및 환경변화에 따라 영향을 받기 쉬운 면이 있다. BBB 원리금 상환가능성이 일정수준 인정되지만, 상위등급(A)에 비해 경제여건 및 환경변화에 따라 저하될 가능성이 있다. BB 원리금 상환가능성에 불확실성이 내포되어 있어 투기적 요소를 갖고 있다. B 원리금 상환가능성에 대한 불확실성이 상당하여 상위등급(BB)에 비해 투기적 요소가 크다. CCC 채무불이행의 위험 수준이 높고 원리금 상환가능성이 의문시된다. CC 채무불이행의 위험 수준이 매우 높고 원리금 상환가능성이 희박하다. C …"
     },
     "quant": {
-      "buy_score": 87.5,
-      "rank_in_level2": 1,
-      "upside_pct": 77.3,
+      "buy_score": 65.0,
+      "rank_in_level2": 3,
+      "upside_pct": null,
       "composite": 1.0,
       "timing_state": "관측부족",
       "timing_score": 16.0
@@ -7213,7 +6953,7 @@
     },
     "quant": {
       "buy_score": 65.0,
-      "rank_in_level2": 3,
+      "rank_in_level2": 2,
       "upside_pct": null,
       "composite": 1.0,
       "timing_state": "관측부족",
@@ -7280,7 +7020,7 @@
     },
     "quant": {
       "buy_score": 65.0,
-      "rank_in_level2": 2,
+      "rank_in_level2": 1,
       "upside_pct": null,
       "composite": 1.0,
       "timing_state": "관측부족",
@@ -7418,10 +7158,10 @@
     "close": 287500.0,
     "ret_1m": -22.0,
     "analyst": {
-      "n_buy": 2,
+      "n_buy": 1,
       "n_hold": 0,
       "n_sell": 0,
-      "avg_target": 535000,
+      "avg_target": 550000,
       "latest_target": 550000.0,
       "recent": [
         {
@@ -7431,14 +7171,6 @@
           "opinion": "매수",
           "source_url": "https://finance.naver.com/research/company_read.naver?nid=95827",
           "broker_url": "https://stock.pstatic.net/stock-research/company/64/20260824_company_930117000.pdf"
-        },
-        {
-          "date": "2026-07-31",
-          "broker": "한화투자증권",
-          "title": "[2Q26 Review] 모든 것이 탄탄하다",
-          "opinion": "Buy",
-          "source_url": "https://finance.naver.com/research/company_read.naver?nid=94889",
-          "broker_url": "https://stock.pstatic.net/stock-research/company/16/20260731_company_224030000.pdf"
         }
       ]
     },
@@ -7483,7 +7215,7 @@
     "quant": {
       "buy_score": 57.5,
       "rank_in_level2": 3,
-      "upside_pct": 86.1,
+      "upside_pct": 91.3,
       "composite": -1.0,
       "timing_state": "hold",
       "timing_score": 31.6
@@ -7829,29 +7561,12 @@
     "close": 22000.0,
     "ret_1m": -27.3,
     "analyst": {
-      "n_buy": 2,
+      "n_buy": 0,
       "n_hold": 0,
       "n_sell": 0,
-      "avg_target": 54250,
-      "latest_target": 48500.0,
-      "recent": [
-        {
-          "date": "2026-07-31",
-          "broker": "유안타증권",
-          "title": "3개 분기 연속 최대 실적",
-          "opinion": "Buy",
-          "source_url": "https://finance.naver.com/research/company_read.naver?nid=94883",
-          "broker_url": "https://stock.pstatic.net/stock-research/company/18/20260731_company_25093000.pdf"
-        },
-        {
-          "date": "2026-07-31",
-          "broker": "하나증권",
-          "title": "본질적인 성장이 지속되는 중",
-          "opinion": "Buy",
-          "source_url": "https://finance.naver.com/research/company_read.naver?nid=94904",
-          "broker_url": "https://stock.pstatic.net/stock-research/company/57/20260731_company_252014000.pdf"
-        }
-      ]
+      "avg_target": null,
+      "latest_target": null,
+      "recent": []
     },
     "fundamentals": [
       {
@@ -7892,9 +7607,9 @@
       "risk_text": "주요 위험위 2024년 03월 29일 추가한 사업목적은 해상풍력 개발의 본격화를 전제로 합니다. 다만, 정부 정책의 변화 및 고금리로 인한 해상풍력 프로젝트 개발 지연 등의 위험이 있습니다. 7. 향후 추진계획위 2024년 03월 29일 추가한 사업목적은 4. 사업 추진현황에 명시하였듯, 해저케이블 공장 준공을 통해 본격화하여 사업 추진 중입니다. 8. 미추진 사유위 2024년 03월 29일 추가한 사업목적은 중점 사업으로 지속 추진 예정이므로 해당사항 없습니다. II. 사업의 내용 1. 사업의 개요 당사는 1941년에 세워진 대한민국 최초의 조선전선에서 시작하였으며, 1968년 12월 27일 기업공개를 실시하였습니다. (등기서류상 설립일은 1955년 02월 21일 입니다.) 대한전선 주식회사 및 종속회사는 전선부문 단일 사업부문으로 이루어져 있으며, 회사의 주요 생산 및 판매 품목은 초고압케이블 등 전력선, 소재, 통신케이블 등입니다.이를 기반으로 각종 전기공사까지 케이블 산업 전반에 대한 종합 솔루션을 제공하고 있습니다.[사업부문별"
     },
     "quant": {
-      "buy_score": 57.5,
+      "buy_score": 35.0,
       "rank_in_level2": 4,
-      "upside_pct": 146.6,
+      "upside_pct": null,
       "composite": -1.0,
       "timing_state": "관측부족",
       "timing_score": 12.0
@@ -9233,10 +8948,10 @@
     "close": 286000.0,
     "ret_1m": -10.5,
     "analyst": {
-      "n_buy": 3,
+      "n_buy": 1,
       "n_hold": 0,
       "n_sell": 0,
-      "avg_target": 593333,
+      "avg_target": 490000,
       "latest_target": 490000.0,
       "recent": [
         {
@@ -9246,22 +8961,6 @@
           "opinion": "매수",
           "source_url": "https://finance.naver.com/research/company_read.naver?nid=94957",
           "broker_url": null
-        },
-        {
-          "date": "2026-07-31",
-          "broker": "한화투자증권",
-          "title": "이차전지 소재부문 9분기 만에 흑자 전환",
-          "opinion": "Buy",
-          "source_url": "https://finance.naver.com/research/company_read.naver?nid=94898",
-          "broker_url": "https://stock.pstatic.net/stock-research/company/16/20260731_company_338376000.pdf"
-        },
-        {
-          "date": "2026-07-31",
-          "broker": "하나증권",
-          "title": "철강과 리튬 사업의 체력 개선 확인!",
-          "opinion": "Buy",
-          "source_url": "https://finance.naver.com/research/company_read.naver?nid=94900",
-          "broker_url": "https://stock.pstatic.net/stock-research/company/57/20260731_company_835028000.pdf"
         }
       ]
     },
@@ -9306,7 +9005,7 @@
     "quant": {
       "buy_score": 87.5,
       "rank_in_level2": 1,
-      "upside_pct": 107.5,
+      "upside_pct": 71.3,
       "composite": 1.0,
       "timing_state": "관측부족",
       "timing_score": 14.8
@@ -9616,8 +9315,8 @@
       "rank_in_level2": 3,
       "upside_pct": 28.7,
       "composite": 1.0,
-      "timing_state": "watch",
-      "timing_score": 72.2
+      "timing_state": "hold",
+      "timing_score": 47.4
     }
   },
   "078930": {
@@ -9692,8 +9391,8 @@
       "rank_in_level2": 1,
       "upside_pct": 57.4,
       "composite": 1.0,
-      "timing_state": "watch",
-      "timing_score": 72.2
+      "timing_state": "hold",
+      "timing_score": 47.4
     }
   },
   "096770": {
@@ -9709,10 +9408,10 @@
     "close": 141000.0,
     "ret_1m": 0.6,
     "analyst": {
-      "n_buy": 6,
+      "n_buy": 4,
       "n_hold": 0,
       "n_sell": 0,
-      "avg_target": 190167,
+      "avg_target": 192500,
       "latest_target": 190000.0,
       "recent": [
         {
@@ -9746,14 +9445,6 @@
           "opinion": "Buy",
           "source_url": "https://finance.naver.com/research/company_read.naver?nid=95901",
           "broker_url": "https://stock.pstatic.net/stock-research/company/57/20260827_company_159569000.pdf"
-        },
-        {
-          "date": "2026-07-31",
-          "broker": "유진투자증권",
-          "title": "전쟁 수혜 + 배터리 보상금 반영",
-          "opinion": "Buy",
-          "source_url": "https://finance.naver.com/research/company_read.naver?nid=94840",
-          "broker_url": "https://stock.pstatic.net/stock-research/company/63/20260731_company_959506000.pdf"
         }
       ]
     },
@@ -9796,12 +9487,12 @@
       "risk_text": "위험요소를 가지고 있는 보고기간말 현재의 거래에 관한 주요 가정 및 기타 추정 불확실성의 주요 원천입니다. (1) 금융자산의 공정가치 평가 장기투자증권 및 파생금융상품 등은 최초인식 이후 공정가치로 측정하며, 공정가치 변동에 따른 평가손익을 당기손익 또는 기타포괄손익누계액으로 반영하고 있습니다.공정가치 측정시 활성시장에서 공시되는 시장가격이 있는 경우에는 그 시장가격을 공정가치로 적용하나, 그러한 시장가격이 없는 경우에는 미래기대현금흐름과 할인율에 대한 경영자의 판단을 요구하는 평가기법을 이용하여 공정가치를 추정하고 있습니다. (2) 매출채권, 대여금 및 기타채권에 대한 손실충당금의 계산 설정 기대신용손실을 측정할 때 연결실체는 합리적이고 뒷받침할 수 있는 미래 전망정보를 이용하며, 그러한 정보는 서로 다른 경제적 변수의 미래 변동 및 그러한 변수들이 상호 어떻게 영향을 미치는지에 대한 가정에 기초합니다. 채무불이행시 손실률은 채무불이행이 발생했을 때의 손실액에 대한 추정치입니다. 이는 계약상 현금흐름과 채권자가 수취할 것으로 예상하는 현금흐름의 차이에 기초하며, 담보와 신용보강에 따른 현금흐름을 고려합니다. 채무불이행 발생확률은 기대신용손실을 측정하기 위한 주요 투입변수를 구성합니다.채무불이행 발생확률은 대상기간에 걸친 채무불이행의 발생가능성에 대한 추정치이며, 과거정보 및 미래상황에 대한 가정과 기대를 포함합니다. (3) 재고자산의 순실현가능가치의 측정 재고자산은 취득원가와 순실현가능가치 중 낮은 금액으로 측정하고 있습니다. 순실현가능가치 측정은 예상판매가격 및 예상판매비용의 추정이 필요하며, 이러한 추정에 경영진의 판단이 중요한 역할을 하게 됩니다. (4) 비금융자산의 손상 연결실체는 매 보고기간말에 모든 비금융자산에 대하여 손상징후의 존재 여부를 평가하고 있습니다. 영업권 등 비한정 내용연수의 무형자산에 대해서는 손상 징후가 있는지와 관계없이 적어도 매년 손상검사를 수행하며 기타 비금융자산에 대해서는 장부금액이 회수가능하지 않을 것이라는 징후가 있을 때 손상검사를 수행합니다. 사용가치를 계산하기 위하여 경영자는 해당 자산이나 현금창출단위로부터 발생하는 미래기대현금흐름을 추정하고 동 미래기대현금흐름의 현재가치를 계산하기 위한 적절한 할인율을 선택하여야 합니다. (5) 확정급여형 퇴직급여제도 연결실체는 확정급여형 퇴직급여제도를 운영하고 있습니다. 확정급여채무는 매 보고기간말에 보험수리적 평가를 수행하여 계산되며, 이러한 보험수리적 평가방법을 적용하기 위해서는 할인율, 기대임금상승률, 사망률 등에 대한 가정을 추정하는 것이 필요합니다. 퇴직급여제도는 장기간이라는 성격으로 인하여 이러한 추정에 중요한 불확실성을 포함하고 있습니다. (6) 이연법인세 이연법인세자산ㆍ부채의 인식과 측정은 경영진의 판단을 필요로 합니다. 특히, 이연법인세자산의 인식여부와 인식범위는 미래상황에 대한 가정과 경영진의 판단에 의해영향을 받게 됩니다. (7) 리스 연결실체는 리스기간을 산정할 때에 연장선택권을 행사하거나 종료선택권을 행사하지 않을 경제적 유인이 생기게 하는 관련되는 사실 및 상황을 모두 고려합니다. 연장선택권의 대상 기간(또는 종료선택권의 대상 기간)은 리스이용자가 연장선택권을 행사할 것(또는 행사하지 않을 것)이 상당히 …"
     },
     "quant": {
-      "buy_score": 81.8,
+      "buy_score": 83.6,
       "rank_in_level2": 2,
-      "upside_pct": 34.9,
+      "upside_pct": 36.5,
       "composite": 1.0,
-      "timing_state": "watch",
-      "timing_score": 72.2
+      "timing_state": "hold",
+      "timing_score": 47.4
     }
   }
 }
