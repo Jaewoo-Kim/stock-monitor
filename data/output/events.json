@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026-10-29",
+    "level2_id": "S1_software",
+    "level2_name": "소프트웨어·IT서비스",
+    "event_type": "timing_watch",
+    "from_state": "hold",
+    "to_state": "watch",
+    "detail": {
+      "timing_score": 68.0,
+      "rs_3m": 50.14,
+      "breadth_pct": 100.0
+    }
+  },
+  {
     "date": "2026-10-26",
     "level2_id": "S5_medtech",
     "level2_name": "의료기기·미용의료",
@@ -492,17 +505,6 @@
       "timing_score": 63.0,
       "rs_3m": -20.28,
       "breadth_pct": 0.0
-    }
-  },
-  {
-    "date": "2026-08-28",
-    "level2_id": "S2_telecom",
-    "level2_name": "통신",
-    "event_type": "phase_turn",
-    "from_state": "바닥",
-    "to_state": "전환",
-    "detail": {
-      "composite_score": 0.214
     }
   }
 ]
