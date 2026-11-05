@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026-11-05",
+    "level2_id": "S5_pharma",
+    "level2_name": "제약·바이오",
+    "event_type": "timing_watch",
+    "from_state": "관측부족",
+    "to_state": "watch",
+    "detail": {
+      "timing_score": 77.5,
+      "rs_3m": 22.4,
+      "breadth_pct": 60.0
+    }
+  },
+  {
     "date": "2026-10-29",
     "level2_id": "S1_software",
     "level2_name": "소프트웨어·IT서비스",
@@ -492,19 +505,6 @@
     "to_state": "전환",
     "detail": {
       "composite_score": 0.4182
-    }
-  },
-  {
-    "date": "2026-08-31",
-    "level2_id": "S7_power",
-    "level2_name": "전력기기·전선",
-    "event_type": "timing_watch",
-    "from_state": "hold",
-    "to_state": "watch",
-    "detail": {
-      "timing_score": 63.0,
-      "rs_3m": -20.28,
-      "breadth_pct": 0.0
     }
   }
 ]
