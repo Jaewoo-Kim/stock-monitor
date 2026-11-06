@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026-11-06",
+    "level2_id": "S2_internet",
+    "level2_name": "인터넷·플랫폼",
+    "event_type": "timing_watch",
+    "from_state": "관측부족",
+    "to_state": "watch",
+    "detail": {
+      "timing_score": 68.5,
+      "rs_3m": 8.86,
+      "breadth_pct": 0.0
+    }
+  },
+  {
     "date": "2026-11-05",
     "level2_id": "S5_pharma",
     "level2_name": "제약·바이오",
@@ -494,17 +507,6 @@
     "to_state": "전환",
     "detail": {
       "composite_score": 0.2662
-    }
-  },
-  {
-    "date": "2026-08-31",
-    "level2_id": "S1_semilarge",
-    "level2_name": "반도체 (대형)",
-    "event_type": "phase_turn",
-    "from_state": "바닥",
-    "to_state": "전환",
-    "detail": {
-      "composite_score": 0.4182
     }
   }
 ]
