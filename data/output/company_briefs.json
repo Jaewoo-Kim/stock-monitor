@@ -9,8 +9,8 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 30000.0,
-    "ret_1m": 0.2,
+    "close": 30550.0,
+    "ret_1m": 2.0,
     "analyst": {
       "n_buy": 0,
       "n_hold": 0,
@@ -59,7 +59,7 @@
     },
     "quant": {
       "buy_score": 65.0,
-      "rank_in_level2": 2,
+      "rank_in_level2": 1,
       "upside_pct": null,
       "composite": 1.0,
       "timing_state": "관측부족",
@@ -76,24 +76,15 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 36900.0,
-    "ret_1m": 2.2,
+    "close": 36100.0,
+    "ret_1m": 0.0,
     "analyst": {
-      "n_buy": 1,
+      "n_buy": 0,
       "n_hold": 0,
       "n_sell": 0,
-      "avg_target": 54000,
-      "latest_target": 54000.0,
-      "recent": [
-        {
-          "date": "2026-08-18",
-          "broker": "메리츠증권",
-          "title": "2Q26 Review: 호실적과 자원 개발 모멘텀",
-          "opinion": "Buy",
-          "source_url": "https://finance.naver.com/research/company_read.naver?nid=95741",
-          "broker_url": "https://stock.pstatic.net/stock-research/company/17/20260818_company_791597000.pdf"
-        }
-      ]
+      "avg_target": null,
+      "latest_target": null,
+      "recent": []
     },
     "fundamentals": [
       {
@@ -134,9 +125,9 @@
       "risk_text": "투자위험회피 (29,220) 112,063 확정급여제도의 재측정요소 1,264 12,735 관계기업투자 3,201 3,931 해외사업환산손익 1,067 (5,049) 합 계 (44,258) 199,980 (5) 당기말 및 전기말 현재 재무상태표에 인식된 이연법인세자산(부채)의 내역은 다음과 같습니다. (당기말) (단위: 백만원) 구 분 기 초 당기손익에인식된 금액 기타포괄손익에인식된 금액 기 타 기 말 일시적차이에 대한 이연법인세 원료비손익 (4,017,403) 162,464 - - (3,854,939) 파생상품평가이익 (183,070) 82,477 - - (100,593) 파생상품평가손실 85,207 24,819 - - 110,026 퇴직급여충당금 72,190 9,687 862 - 82,739 퇴직보험예치금 (71,343) (10,549) - - (81,892) 외화환산손실 1,071,495 (116,173) - - 955,322 외화환산이익 (844,221) (10,535) (29,220) - (883,976) 파생상품부채(위험회피) 10,548 480 (1,767) - 9,261 파생상품자산(위험회피) (9,980) (445) - - (10,425) 기타포괄손익-공정가치측정금융자산평가이익 (6,002) 9,892 (3,974) - (84) 국고보조금 33,152 (187) - - 32,965 압축기장충당금 (25,570) (1,143) - - (26,713) 공사부담금 561 (3) - - 558 일시상각 (598) 7 - - (591) 유형자산감가상각 69,735 69,663 - 4,206 143,604 리스선박 (17,746) 17,746 - - - 리스부채 60,308 10,807 (14,829) - 56,286 재평가차익 (505,432) 7,141 - - (498,291) 감가상각의제 (859,149) (38,420) - - (897,569) 지분법평가 (68,485) 27,474 3,147 - (37,864) 간주배당소득(CFC) 137,499 (2,185) - - 135,314 소송충당부채 153,062 (19,753) - - 133,309 종속기업투자손상차손 88,714 42,857 - - 131,571 기타 (123,810) 99,094 1,523 1,380 (21,813) 소 계 (4,950,338) 365,215 (44,258) 5,586 (4,623,795) 미사용세무상결손금및세액공제에 대한 이연법인세 세무상결손금 3,474,610 (430,532) - (22,551) 3,021,527 세액공제 127,261 (21,337) - 3,757 109,681 기타 236,373 259 - (29,169) 207,463 소 계 3,838,244 (451,610) - (47,963) 3,338,671 합 계 (1,112,094) (86,395) (44,258) (42,377) (1,285,124) (전기말) (단위: 백만원) 구 분 기 초 당기손익에인식된 금액 기타포괄손익에인식된 금액 기 타 기 말 일시적차이에 대한 이연법인세 원료비손익 (4,076,929) 59,526 - - (4,017,403) 파생상품평가이익 (76,699) (106,371) - - (183,070) 파생상품평가손실 …"
     },
     "quant": {
-      "buy_score": 72.5,
-      "rank_in_level2": 1,
-      "upside_pct": 46.3,
+      "buy_score": 50.0,
+      "rank_in_level2": 2,
+      "upside_pct": null,
       "composite": 0.0,
       "timing_state": "관측부족",
       "timing_score": 25.0
@@ -152,8 +143,8 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 152200.0,
-    "ret_1m": -19.9,
+    "close": 166500.0,
+    "ret_1m": -12.4,
     "analyst": {
       "n_buy": 0,
       "n_hold": 0,
@@ -224,8 +215,8 @@
     ],
     "brief_source": "DART 사업보고서·애널리스트 리포트 종합",
     "brief_updated": "2026-06",
-    "close": 409000.0,
-    "ret_1m": -26.6,
+    "close": 449000.0,
+    "ret_1m": -19.4,
     "analyst": {
       "n_buy": 0,
       "n_hold": 0,
@@ -300,8 +291,8 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 69900.0,
-    "ret_1m": -40.3,
+    "close": 76200.0,
+    "ret_1m": -34.9,
     "analyst": {
       "n_buy": 0,
       "n_hold": 0,
@@ -372,8 +363,8 @@
     ],
     "brief_source": "DART 사업보고서·애널리스트 리포트 종합",
     "brief_updated": "2026-06",
-    "close": 75800.0,
-    "ret_1m": -39.1,
+    "close": 81200.0,
+    "ret_1m": -34.7,
     "analyst": {
       "n_buy": 0,
       "n_hold": 0,
@@ -462,8 +453,8 @@
     ],
     "brief_source": "DART 사업보고서·애널리스트 리포트 종합",
     "brief_updated": "2026-06",
-    "close": 318000.0,
-    "ret_1m": -17.8,
+    "close": 328000.0,
+    "ret_1m": -15.2,
     "analyst": {
       "n_buy": 0,
       "n_hold": 0,
@@ -543,8 +534,8 @@
     ],
     "brief_source": "DART 사업보고서·애널리스트 리포트 종합",
     "brief_updated": "2026-06",
-    "close": 7050.0,
-    "ret_1m": -14.6,
+    "close": 7250.0,
+    "ret_1m": -12.2,
     "analyst": {
       "n_buy": 0,
       "n_hold": 0,
@@ -619,8 +610,8 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 20250.0,
-    "ret_1m": -31.6,
+    "close": 20900.0,
+    "ret_1m": -29.4,
     "analyst": {
       "n_buy": 0,
       "n_hold": 0,
@@ -685,8 +676,8 @@
     ],
     "brief_source": "DART 사업보고서·애널리스트 리포트 종합",
     "brief_updated": "2026-06",
-    "close": 815000.0,
-    "ret_1m": -49.3,
+    "close": 870000.0,
+    "ret_1m": -45.9,
     "analyst": {
       "n_buy": 3,
       "n_hold": 0,
@@ -770,7 +761,7 @@
     "quant": {
       "buy_score": 62.5,
       "rank_in_level2": 3,
-      "upside_pct": 167.9,
+      "upside_pct": 151.0,
       "composite": -1.0,
       "timing_state": "관측부족",
       "timing_score": 12.0
@@ -791,8 +782,8 @@
     ],
     "brief_source": "DART 사업보고서·애널리스트 리포트 종합",
     "brief_updated": "2026-06",
-    "close": 261500.0,
-    "ret_1m": -55.8,
+    "close": 277000.0,
+    "ret_1m": -53.1,
     "analyst": {
       "n_buy": 0,
       "n_hold": 0,
@@ -872,24 +863,15 @@
     ],
     "brief_source": "DART 사업보고서·애널리스트 리포트 종합",
     "brief_updated": "2026-06",
-    "close": 133800.0,
-    "ret_1m": -36.0,
+    "close": 138600.0,
+    "ret_1m": -33.7,
     "analyst": {
-      "n_buy": 1,
+      "n_buy": 0,
       "n_hold": 0,
       "n_sell": 0,
-      "avg_target": 350000,
-      "latest_target": 350000.0,
-      "recent": [
-        {
-          "date": "2026-08-18",
-          "broker": "교보증권",
-          "title": "AIDC, 10월 2.5조원의 수주 전망",
-          "opinion": "Buy",
-          "source_url": "https://finance.naver.com/research/company_read.naver?nid=95721",
-          "broker_url": "https://stock.pstatic.net/stock-research/company/62/20260818_company_43313000.pdf"
-        }
-      ]
+      "avg_target": null,
+      "latest_target": null,
+      "recent": []
     },
     "fundamentals": [
       {
@@ -930,9 +912,9 @@
       "risk_text": null
     },
     "quant": {
-      "buy_score": 87.5,
+      "buy_score": 65.0,
       "rank_in_level2": 1,
-      "upside_pct": 161.6,
+      "upside_pct": null,
       "composite": 1.0,
       "timing_state": "관측부족",
       "timing_score": 12.0
@@ -953,8 +935,8 @@
     ],
     "brief_source": "DART 사업보고서·애널리스트 리포트 종합",
     "brief_updated": "2026-06",
-    "close": 1115000.0,
-    "ret_1m": -35.0,
+    "close": 1198000.0,
+    "ret_1m": -30.1,
     "analyst": {
       "n_buy": 4,
       "n_hold": 0,
@@ -1054,7 +1036,7 @@
     "quant": {
       "buy_score": 70.0,
       "rank_in_level2": 2,
-      "upside_pct": 183.6,
+      "upside_pct": 164.0,
       "composite": -1.0,
       "timing_state": "관측부족",
       "timing_score": 12.0
@@ -1075,8 +1057,8 @@
     ],
     "brief_source": "DART 사업보고서·애널리스트 리포트 종합",
     "brief_updated": "2026-06",
-    "close": 187000.0,
-    "ret_1m": -30.5,
+    "close": 197300.0,
+    "ret_1m": -26.7,
     "analyst": {
       "n_buy": 2,
       "n_hold": 0,
@@ -1168,7 +1150,7 @@
     "quant": {
       "buy_score": 70.0,
       "rank_in_level2": 1,
-      "upside_pct": 105.9,
+      "upside_pct": 95.1,
       "composite": -1.0,
       "timing_state": "관측부족",
       "timing_score": 12.0
@@ -1184,8 +1166,8 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 139300.0,
-    "ret_1m": -44.6,
+    "close": 151500.0,
+    "ret_1m": -39.8,
     "analyst": {
       "n_buy": 0,
       "n_hold": 0,
@@ -1237,8 +1219,8 @@
       "rank_in_level2": 5,
       "upside_pct": null,
       "composite": -1.0,
-      "timing_state": "hold",
-      "timing_score": 41.0
+      "timing_state": "관측부족",
+      "timing_score": 12.0
     }
   },
   "042700": {
@@ -1256,8 +1238,8 @@
     ],
     "brief_source": "DART 사업보고서·애널리스트 리포트 종합",
     "brief_updated": "2026-06",
-    "close": 157500.0,
-    "ret_1m": -40.3,
+    "close": 171700.0,
+    "ret_1m": -35.0,
     "analyst": {
       "n_buy": 0,
       "n_hold": 0,
@@ -1309,8 +1291,8 @@
       "rank_in_level2": 2,
       "upside_pct": null,
       "composite": -1.0,
-      "timing_state": "hold",
-      "timing_score": 41.0
+      "timing_state": "관측부족",
+      "timing_score": 12.0
     }
   },
   "058470": {
@@ -1323,8 +1305,8 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 45850.0,
-    "ret_1m": -46.1,
+    "close": 48250.0,
+    "ret_1m": -43.3,
     "analyst": {
       "n_buy": 0,
       "n_hold": 0,
@@ -1376,8 +1358,8 @@
       "rank_in_level2": 4,
       "upside_pct": null,
       "composite": -1.0,
-      "timing_state": "hold",
-      "timing_score": 41.0
+      "timing_state": "관측부족",
+      "timing_score": 12.0
     }
   },
   "357780": {
@@ -1390,8 +1372,8 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 249500.0,
-    "ret_1m": -38.7,
+    "close": 265500.0,
+    "ret_1m": -34.8,
     "analyst": {
       "n_buy": 1,
       "n_hold": 0,
@@ -1450,10 +1432,10 @@
     "quant": {
       "buy_score": 87.5,
       "rank_in_level2": 1,
-      "upside_pct": 122.0,
+      "upside_pct": 108.7,
       "composite": 1.0,
-      "timing_state": "hold",
-      "timing_score": 41.0
+      "timing_state": "관측부족",
+      "timing_score": 12.0
     }
   },
   "403870": {
@@ -1466,8 +1448,8 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 33850.0,
-    "ret_1m": -48.4,
+    "close": 36300.0,
+    "ret_1m": -44.7,
     "analyst": {
       "n_buy": 0,
       "n_hold": 0,
@@ -1519,8 +1501,8 @@
       "rank_in_level2": 3,
       "upside_pct": null,
       "composite": -1.0,
-      "timing_state": "hold",
-      "timing_score": 41.0
+      "timing_state": "관측부족",
+      "timing_score": 12.0
     }
   },
   "012510": {
@@ -1587,7 +1569,7 @@
       "upside_pct": null,
       "composite": -1.0,
       "timing_state": "관측부족",
-      "timing_score": 26.0
+      "timing_score": 30.0
     }
   },
   "018260": {
@@ -1600,8 +1582,8 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 218000.0,
-    "ret_1m": 5.3,
+    "close": 231500.0,
+    "ret_1m": 11.8,
     "analyst": {
       "n_buy": 0,
       "n_hold": 0,
@@ -1654,7 +1636,7 @@
       "upside_pct": null,
       "composite": -1.0,
       "timing_state": "관측부족",
-      "timing_score": 26.0
+      "timing_score": 30.0
     }
   },
   "035900": {
@@ -1667,8 +1649,8 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 40150.0,
-    "ret_1m": 3.7,
+    "close": 39750.0,
+    "ret_1m": 2.7,
     "analyst": {
       "n_buy": 0,
       "n_hold": 0,
@@ -1734,8 +1716,8 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 77200.0,
-    "ret_1m": -2.5,
+    "close": 73800.0,
+    "ret_1m": -6.8,
     "analyst": {
       "n_buy": 0,
       "n_hold": 0,
@@ -1801,8 +1783,8 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 142800.0,
-    "ret_1m": -14.5,
+    "close": 143500.0,
+    "ret_1m": -14.1,
     "analyst": {
       "n_buy": 0,
       "n_hold": 0,
@@ -1868,8 +1850,8 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 211500.0,
-    "ret_1m": -10.4,
+    "close": 211000.0,
+    "ret_1m": -10.6,
     "analyst": {
       "n_buy": 0,
       "n_hold": 0,
@@ -1922,7 +1904,7 @@
       "upside_pct": null,
       "composite": -1.0,
       "timing_state": "관측부족",
-      "timing_score": 25.0
+      "timing_score": 21.0
     }
   },
   "259960": {
@@ -1935,8 +1917,8 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 218500.0,
-    "ret_1m": 9.2,
+    "close": 205500.0,
+    "ret_1m": 2.8,
     "analyst": {
       "n_buy": 0,
       "n_hold": 0,
@@ -1989,7 +1971,7 @@
       "upside_pct": null,
       "composite": 1.0,
       "timing_state": "관측부족",
-      "timing_score": 25.0
+      "timing_score": 21.0
     }
   },
   "035420": {
@@ -2007,8 +1989,8 @@
     ],
     "brief_source": "DART 사업보고서·애널리스트 리포트 종합",
     "brief_updated": "2026-06",
-    "close": 184700.0,
-    "ret_1m": -1.8,
+    "close": 192300.0,
+    "ret_1m": 2.2,
     "analyst": {
       "n_buy": 2,
       "n_hold": 0,
@@ -2075,7 +2057,7 @@
     "quant": {
       "buy_score": 87.5,
       "rank_in_level2": 1,
-      "upside_pct": 94.9,
+      "upside_pct": 87.2,
       "composite": 1.0,
       "timing_state": "watch",
       "timing_score": 68.5
@@ -2204,8 +2186,8 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 77100.0,
-    "ret_1m": -11.3,
+    "close": 81900.0,
+    "ret_1m": -5.8,
     "analyst": {
       "n_buy": 4,
       "n_hold": 0,
@@ -2288,10 +2270,10 @@
     "quant": {
       "buy_score": 57.5,
       "rank_in_level2": 1,
-      "upside_pct": 75.1,
+      "upside_pct": 64.8,
       "composite": -1.0,
       "timing_state": "관측부족",
-      "timing_score": 26.0
+      "timing_score": 21.0
     }
   },
   "030200": {
@@ -2304,8 +2286,8 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 52800.0,
-    "ret_1m": 3.3,
+    "close": 50900.0,
+    "ret_1m": -0.4,
     "analyst": {
       "n_buy": 1,
       "n_hold": 0,
@@ -2364,10 +2346,10 @@
     "quant": {
       "buy_score": 57.5,
       "rank_in_level2": 2,
-      "upside_pct": 43.9,
+      "upside_pct": 49.3,
       "composite": -1.0,
       "timing_state": "관측부족",
-      "timing_score": 26.0
+      "timing_score": 21.0
     }
   },
   "032640": {
@@ -2380,8 +2362,8 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 16380.0,
-    "ret_1m": 13.2,
+    "close": 15860.0,
+    "ret_1m": 9.6,
     "analyst": {
       "n_buy": 1,
       "n_hold": 0,
@@ -2438,12 +2420,12 @@
       "risk_text": "위험요소가 내포되어 있습니다. CC 원리금의 채무불이행이 발생할 가능성이 높습니다. C 원리금의 채무불이행이 발생할 가능성이 지극히 높습니다. D 현재 채무불이행 상태에 있습니다. CP A1 적기상환능력이 최고수준이며, 그 안전성은 현 단계에서 합리적 으로 예측가능한 장래의 환경에 영향을 받지 않을만큼 높습니다. A2 적기상환능력이 우수하지만, 그 안정성은 A1에 비하여 다소열등한 요소가 있습니다. A3 적기상환능력이 양호하지만, 그 안정성은 급격한 환경 변화에따라 다소 영향을 받을 가능성이 있습니다. B 최소한의 적기상환능력은 인정되나, 그 안정성이 환경변화로저하될 가능성이 있어, 투기적인 요소를 내포하고 있습니다. C 적기상환능력 및 그 안정성이 매우 가변적이어서 투기적인 요소가 강합니다. D 현재 채무불이행 상태에 있습니다. 자. 회사의 주권상장(또는 등록ㆍ지정) 및 특례상장에 관한 사항 주권상장(또는 등록ㆍ지정)현황 주권상장(또는 등록ㆍ지정)일자 특례상장 유형 유가증권시장 상장 2008년 04월 21일 해당사항 없음 2. 회사의 연혁 가. 회사의 본점소재지 및 그 변경 2015.04.10 서울특별시 용산구 한강대로 32 LG유플러스 빌딩 나. 경영진 및 감사의 중요한 변동 보고서 작성기준일 현재 회사의"
     },
     "quant": {
-      "buy_score": 37.4,
+      "buy_score": 41.9,
       "rank_in_level2": 3,
-      "upside_pct": 22.1,
+      "upside_pct": 26.1,
       "composite": -1.0,
       "timing_state": "관측부족",
-      "timing_score": 26.0
+      "timing_score": 21.0
     }
   },
   "000270": {
@@ -2461,8 +2443,8 @@
     ],
     "brief_source": "DART 사업보고서·애널리스트 리포트 종합",
     "brief_updated": "2026-06",
-    "close": 97300.0,
-    "ret_1m": -11.0,
+    "close": 96000.0,
+    "ret_1m": -12.2,
     "analyst": {
       "n_buy": 0,
       "n_hold": 0,
@@ -2542,8 +2524,8 @@
     ],
     "brief_source": "DART 사업보고서·애널리스트 리포트 종합",
     "brief_updated": "2026-06",
-    "close": 268000.0,
-    "ret_1m": -20.4,
+    "close": 274000.0,
+    "ret_1m": -18.6,
     "analyst": {
       "n_buy": 6,
       "n_hold": 0,
@@ -2643,7 +2625,7 @@
     "quant": {
       "buy_score": 62.5,
       "rank_in_level2": 1,
-      "upside_pct": 165.5,
+      "upside_pct": 159.7,
       "composite": -1.0,
       "timing_state": "관측부족",
       "timing_score": 16.0
@@ -2659,8 +2641,8 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 331500.0,
-    "ret_1m": -10.8,
+    "close": 348000.0,
+    "ret_1m": -6.3,
     "analyst": {
       "n_buy": 0,
       "n_hold": 0,
@@ -2726,8 +2708,8 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 31650.0,
-    "ret_1m": -30.4,
+    "close": 33850.0,
+    "ret_1m": -25.6,
     "analyst": {
       "n_buy": 0,
       "n_hold": 0,
@@ -2793,8 +2775,8 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 21300.0,
-    "ret_1m": -16.8,
+    "close": 21750.0,
+    "ret_1m": -15.0,
     "analyst": {
       "n_buy": 3,
       "n_hold": 0,
@@ -2877,7 +2859,7 @@
     "quant": {
       "buy_score": 87.5,
       "rank_in_level2": 2,
-      "upside_pct": 1485.3,
+      "upside_pct": 1452.5,
       "composite": 1.0,
       "timing_state": "관측부족",
       "timing_score": 21.0
@@ -2893,8 +2875,8 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 235000.0,
-    "ret_1m": -13.1,
+    "close": 231500.0,
+    "ret_1m": -14.4,
     "analyst": {
       "n_buy": 1,
       "n_hold": 0,
@@ -2953,7 +2935,7 @@
     "quant": {
       "buy_score": 57.5,
       "rank_in_level2": 3,
-      "upside_pct": 48.9,
+      "upside_pct": 51.2,
       "composite": -1.0,
       "timing_state": "관측부족",
       "timing_score": 21.0
@@ -2974,8 +2956,8 @@
     ],
     "brief_source": "DART 사업보고서·애널리스트 리포트 종합",
     "brief_updated": "2026-06",
-    "close": 127000.0,
-    "ret_1m": -8.2,
+    "close": 128800.0,
+    "ret_1m": -6.9,
     "analyst": {
       "n_buy": 2,
       "n_hold": 0,
@@ -3042,7 +3024,7 @@
     "quant": {
       "buy_score": 87.5,
       "rank_in_level2": 1,
-      "upside_pct": 49.6,
+      "upside_pct": 47.5,
       "composite": 1.0,
       "timing_state": "관측부족",
       "timing_score": 21.0
@@ -3061,10 +3043,10 @@
     "close": null,
     "ret_1m": null,
     "analyst": {
-      "n_buy": 4,
+      "n_buy": 3,
       "n_hold": 0,
       "n_sell": 0,
-      "avg_target": 57000,
+      "avg_target": 57333,
       "latest_target": 62000.0,
       "recent": [
         {
@@ -3090,14 +3072,6 @@
           "opinion": "Buy",
           "source_url": "https://finance.naver.com/research/company_read.naver?nid=95771",
           "broker_url": "https://stock.pstatic.net/stock-research/company/16/20260819_company_948594000.pdf"
-        },
-        {
-          "date": "2026-08-18",
-          "broker": "유안타증권",
-          "title": "실적으로 증명한 성장성",
-          "opinion": "Buy",
-          "source_url": "https://finance.naver.com/research/company_read.naver?nid=95704",
-          "broker_url": "https://stock.pstatic.net/stock-research/company/18/20260818_company_40777000.pdf"
         }
       ]
     },
@@ -3123,8 +3097,8 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 245500.0,
-    "ret_1m": -22.8,
+    "close": 246000.0,
+    "ret_1m": -22.6,
     "analyst": {
       "n_buy": 1,
       "n_hold": 0,
@@ -3183,7 +3157,7 @@
     "quant": {
       "buy_score": 87.5,
       "rank_in_level2": 2,
-      "upside_pct": 177.0,
+      "upside_pct": 176.4,
       "composite": 1.0,
       "timing_state": "관측부족",
       "timing_score": 12.0
@@ -3199,8 +3173,8 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 81900.0,
-    "ret_1m": -17.1,
+    "close": 82000.0,
+    "ret_1m": -17.0,
     "analyst": {
       "n_buy": 1,
       "n_hold": 0,
@@ -3259,7 +3233,7 @@
     "quant": {
       "buy_score": 87.5,
       "rank_in_level2": 3,
-      "upside_pct": 132.0,
+      "upside_pct": 131.7,
       "composite": 1.0,
       "timing_state": "관측부족",
       "timing_score": 12.0
@@ -3280,8 +3254,8 @@
     ],
     "brief_source": "DART 사업보고서·애널리스트 리포트 종합",
     "brief_updated": "2026-06",
-    "close": 71400.0,
-    "ret_1m": 0.4,
+    "close": 71200.0,
+    "ret_1m": 0.1,
     "analyst": {
       "n_buy": 3,
       "n_hold": 0,
@@ -3356,7 +3330,7 @@
     "quant": {
       "buy_score": 87.5,
       "rank_in_level2": 1,
-      "upside_pct": 48.5,
+      "upside_pct": 48.9,
       "composite": 1.0,
       "timing_state": "관측부족",
       "timing_score": 12.0
@@ -3377,13 +3351,13 @@
     ],
     "brief_source": "DART 사업보고서·애널리스트 리포트 종합",
     "brief_updated": "2026-06",
-    "close": 1148000.0,
-    "ret_1m": -5.2,
+    "close": 1189000.0,
+    "ret_1m": -1.8,
     "analyst": {
-      "n_buy": 6,
+      "n_buy": 1,
       "n_hold": 0,
       "n_sell": 0,
-      "avg_target": 1843333,
+      "avg_target": 1800000,
       "latest_target": 1800000.0,
       "recent": [
         {
@@ -3393,38 +3367,6 @@
           "opinion": "Buy",
           "source_url": "https://finance.naver.com/research/company_read.naver?nid=95879",
           "broker_url": "https://stock.pstatic.net/stock-research/company/57/20260826_company_718581000.pdf"
-        },
-        {
-          "date": "2026-08-18",
-          "broker": "키움증권",
-          "title": "예상대로 순항 중",
-          "opinion": "Buy",
-          "source_url": "https://finance.naver.com/research/company_read.naver?nid=95663",
-          "broker_url": "https://stock.pstatic.net/stock-research/company/39/20260818_company_226082000.pdf"
-        },
-        {
-          "date": "2026-08-18",
-          "broker": "신한투자증권",
-          "title": "Special One",
-          "opinion": "매수",
-          "source_url": "https://finance.naver.com/research/company_read.naver?nid=95691",
-          "broker_url": null
-        },
-        {
-          "date": "2026-08-18",
-          "broker": "유안타증권",
-          "title": "더 이상 할인할 이유가 없다",
-          "opinion": "Buy",
-          "source_url": "https://finance.naver.com/research/company_read.naver?nid=95708",
-          "broker_url": "https://stock.pstatic.net/stock-research/company/18/20260818_company_654881000.pdf"
-        },
-        {
-          "date": "2026-08-18",
-          "broker": "교보증권",
-          "title": "슬슬 중국 신공장 모멘텀 반영됩니다",
-          "opinion": "Buy",
-          "source_url": "https://finance.naver.com/research/company_read.naver?nid=95724",
-          "broker_url": "https://stock.pstatic.net/stock-research/company/62/20260818_company_481495000.pdf"
         }
       ]
     },
@@ -3469,7 +3411,7 @@
     "quant": {
       "buy_score": 72.5,
       "rank_in_level2": 2,
-      "upside_pct": 60.6,
+      "upside_pct": 51.4,
       "composite": 0.0,
       "timing_state": "관측부족",
       "timing_score": 21.0
@@ -3488,10 +3430,10 @@
     "close": 400000.0,
     "ret_1m": 0.3,
     "analyst": {
-      "n_buy": 6,
+      "n_buy": 1,
       "n_hold": 0,
       "n_sell": 0,
-      "avg_target": 563333,
+      "avg_target": 540000,
       "latest_target": 540000.0,
       "recent": [
         {
@@ -3501,38 +3443,6 @@
           "opinion": "Buy",
           "source_url": "https://finance.naver.com/research/company_read.naver?nid=96041",
           "broker_url": "https://stock.pstatic.net/stock-research/company/57/20260908_company_144096000.pdf"
-        },
-        {
-          "date": "2026-08-18",
-          "broker": "키움증권",
-          "title": "辛 브랜드의 확장",
-          "opinion": "Buy",
-          "source_url": "https://finance.naver.com/research/company_read.naver?nid=95664",
-          "broker_url": "https://stock.pstatic.net/stock-research/company/39/20260818_company_148460000.pdf"
-        },
-        {
-          "date": "2026-08-18",
-          "broker": "신한투자증권",
-          "title": "해외가 답했다, 실적 성장 재개",
-          "opinion": "매수",
-          "source_url": "https://finance.naver.com/research/company_read.naver?nid=95690",
-          "broker_url": null
-        },
-        {
-          "date": "2026-08-18",
-          "broker": "유안타증권",
-          "title": "해외 성장의 질이 달라졌다",
-          "opinion": "Buy",
-          "source_url": "https://finance.naver.com/research/company_read.naver?nid=95707",
-          "broker_url": "https://stock.pstatic.net/stock-research/company/18/20260818_company_691767000.pdf"
-        },
-        {
-          "date": "2026-08-18",
-          "broker": "하나증권",
-          "title": "2Q26 Re: 해외 견조한 성장 + 환율 효과",
-          "opinion": "Buy",
-          "source_url": "https://finance.naver.com/research/company_read.naver?nid=95711",
-          "broker_url": "https://stock.pstatic.net/stock-research/company/57/20260818_company_522311000.pdf"
         }
       ]
     },
@@ -3575,9 +3485,9 @@
       "risk_text": "주요 위험은 시장위험, 신용위험 및 유동성위험입니다. 당사의 재무위험관리는 재무팀이 주관하고 있으며, 경영진은 각 위험별 관리절차가 회사의 정책에 부합하는지 면밀히 검토하여 운영하고 있습니다. 또한 투기 목적의 파생상품거래를 실행하지 않는 것이 기본 정책입니다.재무위험관리의 주요 대상인 금융자산은 현금및현금성자산, 장단기금융상품, 기타금융자산, 매출채권및기타채권 등으로 구성되어 있으며, 금융부채는 차입금, 매입채무및 기타채무 등으로 구성되어 있습니다. (1) 시장위험시장위험은 시장가격의 변동으로 인하여 금융상품의 공정가치가 변동할 위험입니다.시장위험은 이자율위험, 환위험 등 유형으로 구성됩니다. 다음의 민감도 분석은 당기 및 전기와 관련되어 있습니다. 1) 이자율위험 이자율위험은 시장이자율의 변동으로 인하여 금융상품의 공정가치나 미래현금흐름이 변동할 위험입니다. 당사는 변동이자부 차입금과 관련된 시장이자율의 변동위험에 노출되어 있습니다. 이에 따라 당사의 경영진은 이자율 변동으로 인한 불확실성과금융비용의 최소화를 위하여 차입금리의 지속적인 인하, 저금리 정책자금 활용, 국내외 금리동향 모니터링 실시 및 대응방안 수립 등을 통해 이자율 위험을 관리하고 있습니다. 보고기간종료일 현재 변동이자율이 적용되는 차입금은 24,393,300천원 (전기말 : 24,990,000천원)입니다. 보고기간종료일 현재 다른 모든 변수가 동일하고 이자율이 1% 변동하는 경우, 변동이자부 차입금의 이자비용이 법인세차감전순손익에 미치는 영향은 다음과 같습니다. (단위: 천원) 구분 당기 전기 1% 상승시 1% 하락시 1% 상승시 1% 하락시 이자비용 243,933 (243,933) 249,900 (249,900) 2) 환위험환위험은 환율의 변동으로 인하여 금융상품의 공정가치나 미래현금흐름이 변동할 위험입니다. 당사는 영업활동 및 해외사업장 순투자 등으로 인한 환위험에 노출되어 있습니다. 당사는 환위험의 최소화를 위해 환리스크 관리체계 구축 등을 통하여 환위험을 관리하고 있으며, 투기적 외환거래를 금지하고 있습니다. 환율변동위험에 노출되는 환포지션의 주요 통화로는 USD, JPY, CNY, EUR 등이 있습니다. 보고기간종료일 현재 기능통화 이외의 외화로 표시된 화폐성자산 및 부채의 장부금액은 다음과 같습니다. (단위: 천원) 구분 당기말 전기말 자산 부채 자산 부채 USD 67,583,917 33,814,300 69,870,115 39,930,109 EUR 168,572 2,458,467 - 1,387,137 JPY 11,000,382 850,062 8,884,655 832,660 CNY 2,169,121 8,733,169 1,396,462 7,072,273 AUD 23,570,740 - 13,452,540 - CAD 2,246,576 125,726 2,417,180 - GBP - 61,837 - - CHF 780,809 971,755 1,456,064 197,913 당사는 내부적으로 환율 변동에 대한 환위험을 정기적으로 측정하고 있습니다.보고기간종료일 현재 각 외화에 대한 기능통화의 환율이 5% 변동시 당기손익에 미치는 영향은 다음과 같습니다. (단위: 천원) 구분 당기 전기 5% 상승시 5% 하락시 5% 상승시 5% 하락시 USD …"
     },
     "quant": {
-      "buy_score": 87.5,
+      "buy_score": 81.9,
       "rank_in_level2": 1,
-      "upside_pct": 40.8,
+      "upside_pct": 35.0,
       "composite": 1.0,
       "timing_state": "관측부족",
       "timing_score": 21.0
@@ -3593,8 +3503,8 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 185300.0,
-    "ret_1m": 3.7,
+    "close": 176700.0,
+    "ret_1m": -1.1,
     "analyst": {
       "n_buy": 0,
       "n_hold": 0,
@@ -3643,7 +3553,7 @@
     },
     "quant": {
       "buy_score": 35.0,
-      "rank_in_level2": 5,
+      "rank_in_level2": 4,
       "upside_pct": null,
       "composite": -1.0,
       "timing_state": "관측부족",
@@ -3660,13 +3570,13 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 179500.0,
-    "ret_1m": -1.2,
+    "close": 178000.0,
+    "ret_1m": -2.0,
     "analyst": {
-      "n_buy": 4,
+      "n_buy": 1,
       "n_hold": 0,
       "n_sell": 0,
-      "avg_target": 221500,
+      "avg_target": 166000,
       "latest_target": 166000.0,
       "recent": [
         {
@@ -3676,30 +3586,6 @@
           "opinion": "매수",
           "source_url": "https://finance.naver.com/research/company_read.naver?nid=95743",
           "broker_url": "https://stock.pstatic.net/stock-research/company/56/20260819_company_366830000.pdf"
-        },
-        {
-          "date": "2026-08-18",
-          "broker": "하나증권",
-          "title": "그룹 계열사 전반의 수익성 개선 필요",
-          "opinion": "Buy",
-          "source_url": "https://finance.naver.com/research/company_read.naver?nid=95719",
-          "broker_url": "https://stock.pstatic.net/stock-research/company/57/20260818_company_538037000.pdf"
-        },
-        {
-          "date": "2026-08-18",
-          "broker": "DS투자증권",
-          "title": "웰니스와 신성장 투자 구간 통과 중",
-          "opinion": "매수",
-          "source_url": "https://finance.naver.com/research/company_read.naver?nid=95725",
-          "broker_url": "https://stock.pstatic.net/stock-research/company/66/20260818_company_715642000.pdf"
-        },
-        {
-          "date": "2026-08-18",
-          "broker": "한화투자증권",
-          "title": "2Q25 Review: 고무적 성장과 아쉬운 수익성",
-          "opinion": "Buy",
-          "source_url": "https://finance.naver.com/research/company_read.naver?nid=95739",
-          "broker_url": "https://stock.pstatic.net/stock-research/company/16/20260818_company_194961000.pdf"
         }
       ]
     },
@@ -3742,9 +3628,9 @@
       "risk_text": "위험요소가 내포되어 있습니다. CC Ca CC 원리금의 채무불이행이 발생할 가능성이 높습니다. C C C 원리금의 채무불이행이 발생할 가능성이 지극히 높습니다. D - D 현재 채무불이행 상태에 있습니다. 기업어음 및 단기사채 A1 - - 적기상환능력이 최고수준이며, 그 안전성은 현 단계에서합리적으로 예측가능한 장래의 환경에 영향을 받지 않을 만큼높습니다. A2 - - 적기상환능력이 우수하지만, 그 안정성은 A1에 비하여 다소열등한 요소가 있습니다. A3 - - 적기상환능력이 양호하지만, 그 안정성은 급격한 환경 변화에따라 다소 영향을 받을 가능성이 있습니다. B - - 최소한의 적기상환능력은 인정되나, 그 안정성이 환경변화로저하될 가능성이 있어, 투기적인 요소를 내포하고 있습니다. C - - 적기상환능력 및 그 안정성이 매우 가변적이어서 투기적인요소가 강합니다. D - - 현재 채무불이행 상태에 있습니다. 바. 연결대상 종속회사 개황 당사는 보고서 작성 기준일 현재 씨제이 기업집단(최상위 지배기업: CJ주식회사)의 중간지배기업으로서, 당사를 제외한 연결대상 종속회사는 220개사이며, 국내 23개사(상장 3개사), 해외 197개사입니다. (1) 연결대상 종속회사 개황 (단위 : 사) 구분 연결대상회사수 주요종속회사수 기초 증가 감소 기말 상장 3 - - 3 2 비상장 220 2 5 217 46 합계 223 2 5 220 48 ※상세 현황은 '상세표-1. 연결대상 종속회사 현황(상세)' 참조 (2) 연결대상회사의 변동내용 구 분 자회사 사 유 신규연결 CJ E&C HUNGARY KFT. 신규설립 CJ LOGISTICS POLAND SP. Z O.O. 신규설립 연결제외 DRAYTON FOODS, LLC 합병소멸 CJ FOODS AGRI JAPAN.,LTD 청산 CJ FOODS MYANMAR CO.,LTD. 매각 CJ YOUTELL (HUNAN)BIOTECH CO.,LTD 매각 CJ YOUTELL (SHANDONG)BIOTECH CO.,LTD 매각 사. 중소기업 등 해당 여부 중소기업 해당 여부 미해당 벤처기업 해당 여부 미해당 중견기업 해당 여부 미해당 아. 회사의 주권상장(또는 등록ㆍ지정)여부 및 특례상장에 관한 사항 주권상장(또는 등록ㆍ지정)현황 주권상장(또는 등록ㆍ지정)일자 특례상장 유형 유가증권시장 상장 2007년 09월 28일 해당사항 없음 2. 회사의 연혁 회사 및 주요 종속회사의 최근 5사업연도에 대한 연혁은 아래와 같습니다. [회사의 연혁] 2021년 06월 CJ ROKIN LOGISTICS AND SUPPLY CHAIN CO. LTD 매각 2021년 10월 씨제이바이오사이언스(주) 인수 2021년 12월 BATAVIA BIOSCIENCES B.V. 인수 2022년 01월 국내 건강사업부문 씨제이웰케어(주)로 현금 및 현물출자 신설 2023년 01월 연결회사 미국 슈완스 컴퍼니 (SCHWAN'S COMPANY)가 연결회사 CJ AMERICA INC로부터 CJ FOODS USA INC. 지분 인수 2023년 07월 SICHUAN JIXIANGJU FOOD CO., LTD 매각 2025년 10월 씨제이피드앤케어(주) 등 종속기업 14개사 매각 계약 체결 [경영진 및 감사의 중요한 변동] 변동일자 주총종류 …"
     },
     "quant": {
-      "buy_score": 38.8,
-      "rank_in_level2": 4,
-      "upside_pct": 23.4,
+      "buy_score": 12.5,
+      "rank_in_level2": 5,
+      "upside_pct": -6.7,
       "composite": -1.0,
       "timing_state": "관측부족",
       "timing_score": 21.0
@@ -3760,8 +3646,8 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 117100.0,
-    "ret_1m": 10.4,
+    "close": 113700.0,
+    "ret_1m": 7.2,
     "analyst": {
       "n_buy": 0,
       "n_hold": 0,
@@ -3827,8 +3713,8 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 38750.0,
-    "ret_1m": -2.8,
+    "close": 38650.0,
+    "ret_1m": -3.0,
     "analyst": {
       "n_buy": 0,
       "n_hold": 0,
@@ -3894,13 +3780,13 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 25500.0,
-    "ret_1m": -17.2,
+    "close": 25800.0,
+    "ret_1m": -16.2,
     "analyst": {
-      "n_buy": 2,
+      "n_buy": 1,
       "n_hold": 0,
       "n_sell": 0,
-      "avg_target": 56000,
+      "avg_target": 62000,
       "latest_target": 62000.0,
       "recent": [
         {
@@ -3910,14 +3796,6 @@
           "opinion": "매수",
           "source_url": "https://finance.naver.com/research/company_read.naver?nid=95917",
           "broker_url": null
-        },
-        {
-          "date": "2026-08-18",
-          "broker": "유안타증권",
-          "title": "실적 컨센서스 하회, 가이던스 하향 조정",
-          "opinion": "Buy",
-          "source_url": "https://finance.naver.com/research/company_read.naver?nid=95705",
-          "broker_url": "https://stock.pstatic.net/stock-research/company/18/20260818_company_845731000.pdf"
         }
       ]
     },
@@ -3962,7 +3840,7 @@
     "quant": {
       "buy_score": 57.5,
       "rank_in_level2": 3,
-      "upside_pct": 119.6,
+      "upside_pct": 140.3,
       "composite": -1.0,
       "timing_state": "관측부족",
       "timing_score": 12.0
@@ -3978,24 +3856,15 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 234500.0,
-    "ret_1m": -24.1,
+    "close": 249000.0,
+    "ret_1m": -19.4,
     "analyst": {
-      "n_buy": 1,
+      "n_buy": 0,
       "n_hold": 0,
       "n_sell": 0,
-      "avg_target": 600000,
-      "latest_target": 600000.0,
-      "recent": [
-        {
-          "date": "2026-08-18",
-          "broker": "미래에셋증권",
-          "title": "아시아 견문록: 다각화의 힘은 더 강해질 것",
-          "opinion": "매수",
-          "source_url": "https://finance.naver.com/research/company_read.naver?nid=95700",
-          "broker_url": "https://stock.pstatic.net/stock-research/company/56/20260818_company_30395000.pdf"
-        }
-      ]
+      "avg_target": null,
+      "latest_target": null,
+      "recent": []
     },
     "fundamentals": [
       {
@@ -4036,9 +3905,9 @@
       "risk_text": "위험요소 당사는 지분상품에서 발생하는 가격변동위험에 노출되어 있습니다. 당기말 및 전기말 현재 다른 변수가 일정하고 지분상품의 가격이 10% 변동할 경우 가격변동이 자본에 미치는 영향은 다음과 같습니다. (단위: 원) 구분 당기말 전기말 10% 상승시 10% 하락시 10% 상승시 10% 하락시 순자산증가(감소) 1,378,202,218 (1,378,202,218) 3,938,961,005 (3,938,961,005) 31. 주당이익 (1) 기본주당이익 당기 및 전기 중 기본주당이익 계산내역은 다음과 같습니다. 1) 기본주당이익 (단위: 주,원) 구분 당기 전기 보통주순이익 163,418,388,726 91,093,382,497 가중평균유통보통주식수 10,389,648 10,294,668 기본주당이익 15,729 8,849 2) 보통주에 귀속되는 당기순손익 (단위: 원) 구분 당기 전기 당기순손익 163,418,388,726 91,093,382,497 보통주에 귀속되는 순손익 163,418,388,726 91,093,382,497 3) 가중평균유통보통주식수 (단위: 주) 구분 당기 전기 기초 발행보통주식수 10,389,648 10,200,471 복합금융상품의 보통주 전환 - 189,177 가중평균유통보통주식수 10,389,648 10,294,668 (2) 희석주당이익전기는 잠재적보통주에 의한 희석효과가 없으므로 희석주당이익은 기본주당이익과 동일합니다. 당기 중 희석주당이익 계산내역은 다음과 같습니다. 1) 희석주당이익 (단위: 주,원) 구분 당기 보통주순이익 170,999,147,165 가중평균희석유통보통주식수 11,565,295 희석주당이익 14,786 2) 보통주에 귀속되는 희석순손익 (단위: 원) 구분 당기 당기순손익 163,418,388,726 이자비용 7,580,758,439 희석주에 귀속되는 순손익 170,999,147,165 3) 희석가중평균유통보통주식수 (단위: 주) 구분 당기 기초 발행보통주식수 10,389,648 복합금융상품의 전환 가정 1,175,647 가중평균희석유통보통주식수 11,565,295 32. 현금흐름표 (1) 당기 및 전기 중 당기순이익에 대한 조정내역은 다음과 같습니다. (단위: 원) 구분 당기 전기 법인세비용 47,609,033,071 24,086,726,475 이자수익 (14,037,282,859) (7,151,484,400) 이자비용 9,958,013,153 3,727,855,920 당기손익인식금융자산평가이익 (5,447,153,302) (11,496,562,835) 당기손익인식금융자산평가손실 1,969,860,880 21,170,208,916 당기손익인식금융자산처분손실 967,492,344 211,646,239 당기손익인식금융자산처분이익 (2,920,940,771) (873,378,894) 파생상품처분손실 - 11,646,351,740 파생상품평가이익 - (5,353,479,828) 무형자산처분손실 192,101,658 - 유형자산처분이익 (13,735,335) (8,763,915) 유형자산처분손실 808,474 - 재고자산폐기손실 667,891,583 3,475,067,926 재고자산평가손실 317,172,287 1,069,265,080 사채상환손실 - …"
     },
     "quant": {
-      "buy_score": 87.5,
+      "buy_score": 65.0,
       "rank_in_level2": 1,
-      "upside_pct": 155.9,
+      "upside_pct": null,
       "composite": 1.0,
       "timing_state": "관측부족",
       "timing_score": 12.0
@@ -4054,8 +3923,8 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 16290.0,
-    "ret_1m": 46.0,
+    "close": 16780.0,
+    "ret_1m": 50.4,
     "analyst": {
       "n_buy": 0,
       "n_hold": 0,
@@ -4121,8 +3990,8 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 78000.0,
-    "ret_1m": 3.7,
+    "close": 78200.0,
+    "ret_1m": 4.0,
     "analyst": {
       "n_buy": 1,
       "n_hold": 0,
@@ -4181,10 +4050,10 @@
     "quant": {
       "buy_score": 57.5,
       "rank_in_level2": 3,
-      "upside_pct": 79.5,
+      "upside_pct": 79.0,
       "composite": -1.0,
       "timing_state": "관측부족",
-      "timing_score": 30.0
+      "timing_score": 26.0
     }
   },
   "068270": {
@@ -4202,8 +4071,8 @@
     ],
     "brief_source": "DART 사업보고서·애널리스트 리포트 종합",
     "brief_updated": "2026-06",
-    "close": 211000.0,
-    "ret_1m": 15.6,
+    "close": 204500.0,
+    "ret_1m": 12.0,
     "analyst": {
       "n_buy": 1,
       "n_hold": 0,
@@ -4271,10 +4140,10 @@
     "quant": {
       "buy_score": 12.5,
       "rank_in_level2": 5,
-      "upside_pct": -71.1,
+      "upside_pct": -70.2,
       "composite": -1.0,
       "timing_state": "관측부족",
-      "timing_score": 30.0
+      "timing_score": 26.0
     }
   },
   "128940": {
@@ -4287,8 +4156,8 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 478500.0,
-    "ret_1m": -10.4,
+    "close": 489000.0,
+    "ret_1m": -8.4,
     "analyst": {
       "n_buy": 7,
       "n_hold": 0,
@@ -4377,12 +4246,12 @@
       "risk_text": null
     },
     "quant": {
-      "buy_score": 57.5,
+      "buy_score": 55.1,
       "rank_in_level2": 4,
-      "upside_pct": 40.9,
+      "upside_pct": 37.9,
       "composite": -1.0,
       "timing_state": "관측부족",
-      "timing_score": 30.0
+      "timing_score": 26.0
     }
   },
   "196170": {
@@ -4400,8 +4269,8 @@
     ],
     "brief_source": "DART 사업보고서·애널리스트 리포트 종합",
     "brief_updated": "2026-06",
-    "close": 166900.0,
-    "ret_1m": -34.4,
+    "close": 174900.0,
+    "ret_1m": -31.3,
     "analyst": {
       "n_buy": 5,
       "n_hold": 0,
@@ -4492,10 +4361,10 @@
     "quant": {
       "buy_score": 87.5,
       "rank_in_level2": 1,
-      "upside_pct": 192.4,
+      "upside_pct": 179.0,
       "composite": 1.0,
       "timing_state": "관측부족",
-      "timing_score": 30.0
+      "timing_score": 26.0
     }
   },
   "207940": {
@@ -4513,8 +4382,8 @@
     ],
     "brief_source": "DART 사업보고서·애널리스트 리포트 종합",
     "brief_updated": "2026-06",
-    "close": 1517000.0,
-    "ret_1m": 18.7,
+    "close": 1474000.0,
+    "ret_1m": 15.3,
     "analyst": {
       "n_buy": 4,
       "n_hold": 0,
@@ -4604,12 +4473,12 @@
       "risk_text": "위험요소가 내포되어 있다. CC 원리금의 채무불이행이 발생할 가능성이 높다. C 원리금의 채무불이행이 발생할 가능성이 지극히 높다. D 현재 채무불이행 상태에 있다. ※ AA부터 B까지는 동일 등급내에서 세분하여 구분할 필요가 있는 경우에는 \"＋\" 또는 \"－\"의 기호를 부여할 수 있다.※ 예비평정의 경우 당해 등급기호의 앞에 \"P\"를 부기한다.※ 미공시 등급의 경우 당해 등급기호의 앞에 \"U\"를 부기한다. - NICE신용평가 : 회사채 등급 회사채 등급의 정의 AAA 원리금 지급확실성이 최고 수준이며, 현단계에서 합리적으로 예측가능한 장래의어떠한 환경변화에도 영향을 받지 않을 만큼 안정적임. AA 원리금 지급확실성이 매우 높지만 AAA의 등급에 비해 다소 열등한 요소가 있음. A 원리금 지급확실성이 높지만 장래 급격한 환경변화에 따라 다소 영향을 받을 가능성이 있음. BBB 원리금 지급확실성은 인정되지만 장래 환경변화로 원리금 지급확실성이 저하될 가능성이 있음. BB 원리금 지급확실성에 당면 문제는 없지만 장래의 안정성 면에서는 투기적 요소가 내포되어 있음 B 원리금 지급확실성이 부족하여 투기적이며, 장래의 안정성에 대해서는 현단계에서단언할 수 없음. CCC 채무불이행이 발생할 가능성을 내포하고 있어 매우 투기적임. CC 채무불이행이 발생할 가능성이 높아 상위등급에 비해 불안요소가 더욱 많음. C 채무불이행이 발생할 가능성이 극히 높고 현단계에서는 장래 회복될 가능성이 없을 것으로 판단됨. D 원금 또는 이자가 지급불능상태에 있음. ※ AA부터 B까지는 동일 등급내에서 세분하여 구분할 필요가 있는 경우에는 \"＋\" 또는 \"－\"의 기호를 부여할 수 있다. 자. 주권상장(또는 등록ㆍ지정)여부 및 특례상장에 관한 사항 주권상장(또는 등록ㆍ지정)현황 주권상장(또는 등록ㆍ지정)일자 특례상장 유형 유가증권시장 상장 2016년 11월 10일 해당사항 없음 2. 회사의 연혁 가. 회사의 본점소재지 및 그 변경 당사의 본점소재지는 인천광역시 연수구 송도바이오대로 300 (송도동)입니다.공시대상기간 중 본점소재지의 변경 사항은 없습니다. 나. 경영진 및 감사의 중요한 변동(1) 대표이사의 변경 해당사항 없습니다. (2) 주요 경영진의 변동 변동일자 주총종류 선임 임기만료또는 해임 신규 재선임 2022년 03월 29일 정기주총 사외이사 이창우사외이사 박재완 사내이사 김동중사외이사 허근녕 사외이사 정석우사외이사 권순조 2023년 03월 17일 정기주총 사내이사 노균사외이사 안도걸 사내이사 존림 (Rim John Chongbo)사외이사 김유니스경희 사내이사 김태한 2024년 03월 15일 정기주총 사외이사 서승환 - - 2025년 03월 14일 정기주총 사내이사 유승호사외이사 이호승 사외이사 이창우 사내이사 김동중사외이사 허근녕 ※ 2023년 1월 18일 박재완 사외이사가 중도 사임하였습니다.※ 2024년 3월 15일 안도걸 사외이사가 중도 사임하였습니다.※ 2025년 3월 14일 제14기 정기주주총회에서 유승호 사내이사, 이호승 사외이사가 신규 선임되었으며 이창우 사외이사가 재선임되었습니다. 김동중 사내이사, 허근녕 사외이사는 임기가 만료되었습니다.※ 보고서 제출일 현재 당사의"
     },
     "quant": {
-      "buy_score": 81.5,
+      "buy_score": 85.8,
       "rank_in_level2": 2,
-      "upside_pct": 30.2,
+      "upside_pct": 34.0,
       "composite": 1.0,
       "timing_state": "관측부족",
-      "timing_score": 30.0
+      "timing_score": 26.0
     }
   },
   "055550": {
@@ -4622,8 +4491,8 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 87100.0,
-    "ret_1m": -15.4,
+    "close": 85800.0,
+    "ret_1m": -16.7,
     "analyst": {
       "n_buy": 0,
       "n_hold": 0,
@@ -4689,8 +4558,8 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 118000.0,
-    "ret_1m": -8.0,
+    "close": 118400.0,
+    "ret_1m": -7.6,
     "analyst": {
       "n_buy": 1,
       "n_hold": 0,
@@ -4747,9 +4616,9 @@
       "risk_text": "위험요소를 적용하여 내부등급법으로 산출하고 있으며, 그 외 자회사의 경우 거래상대방 신용도, 담보 및 보증유무 등으로 차별화된 위험도를 적용하여 표준방법으로 산출하고 있습니다.나. 시장위험은 주식, 금리, 외환 등 시장가격 변동으로 발생할 수 있는 잠재적 손실 가능성으로, 시장위험가중자산은 은행업감독업무 시행세칙 상의 표준방법을 적용하여 산출된 민감도위험, 부도위험, 잔여위험 합계로 구성된 시장위험 소요자기자본에 12.5를 곱하여 산출하고 있습니다. 다. 운영위험은 부적절한 프로세스, 사람, 시스템 등으로 발생할 수 있는 잠재적 손실가능성으로, 운영위험가중자산은 은행업감독업무 시행세칙 상의 표준방법을 적용하여 산출된 이자, 서비스, 금융거래 등 재무지표 기반 측정치인 영업지수요소와 평균적인 과거 손실금액을 반영한 내부손실승수를 곱하여 산출된 운영리스크 소요자기자본에 12.5를 곱하여 산출하고 있습니다. 자기자본비율에 대한 공시 당기말 자기자본비율은 잠정치 입니다. 자기자본비율에 대한 공시 당기 (단위 : 백만원) 공시금액 총자기자본 45,097,605 총자기자본 기본자본 43,124,228 기본자본 보통주자본 38,664,123 기타기본자본 4,460,105 보완자본 1,973,377 위험가중자산 288,939,391 위험가중자산 신용위험가중자산 248,224,355 시장위험가중자산 15,238,010 운영위험가중자산 25,477,026 보통주자본비율 0.1338 기본자본비율 0.1493 총자본비율 0.1561 전기 (단위 : 백만원) 공시금액 총자기자본 43,555,625 총자기자본 기본자본 41,260,657 기본자본 보통주자본 36,924,738 기타기본자본 4,335,919 보완자본 2,294,968 위험가중자산 279,403,863 위험가중자산 신용위험가중자산 240,365,159 시장위험가중자산 15,068,504 운영위험가중자산 23,970,200 보통주자본비율 0.1322 기본자본비율 0.1477 총자본비율 0.1559 내부자본 적정성에 대한 기술 내부자본은 금융기관이 보유하고 있는 포트폴리오에서 발생가능한 위험을 커버할수있는 수준의 자본을 보유하고 있는지를 판단하기 위해 내부 관리목적으로 정의한 자본으로 정의됩니다. 연결기업이 내부자본을 관리하는 목적은 투자한 영업으로부터 발생 가능한 손실 가능성을 일정 수준 이내로 통제하면서 위험 대비 수익이 극대화되도록 영업 포트폴리오를 조정하고, 내부자본 규모와 실제 사용 가능한 자본 (이하 \"가용자본\") 규모를 비교하여 재무 건전성의 척도로 활용하는 것입니다. 관리 지표는 가용자본 대비 내부자본한도 비율인 위험성향비율과 내부자본한도 대비 내부자본 사용량의 비율인 한도소진율입니다. 내부자본 한도는 시장전망, 가용자본 규모 및 위험 성향, 목표 신용등급, 영업전략 등의 요소를 반영하여 설정하고 있습니다. 위험 유형별 및 관계기업별 내부자본 한도는 매년 1회 이상 그룹리스크관리위원회의 결의로 배분하고 있습니다. 신규사업 또는 영업확대 등에 의하여 내부자본 한도 초과가 예상되는 경우에는 그룹리스크관리위원회의 사전 승인을 받아야 합니다. 11. 영업부문 정보 (연결) 보고부문을 식별하기 위하여 사용한 요소에 대한 기술 연결기업은 성과를 평가하거나 자원을 배분하는 …"
     },
     "quant": {
-      "buy_score": 67.5,
+      "buy_score": 67.0,
       "rank_in_level2": 2,
-      "upside_pct": 35.6,
+      "upside_pct": 35.1,
       "composite": null,
       "timing_state": "관측부족",
       "timing_score": 17.0
@@ -4765,8 +4634,8 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 152500.0,
-    "ret_1m": -9.4,
+    "close": 152800.0,
+    "ret_1m": -9.2,
     "analyst": {
       "n_buy": 0,
       "n_hold": 0,
@@ -4826,8 +4695,8 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 31450.0,
-    "ret_1m": -5.8,
+    "close": 31150.0,
+    "ret_1m": -6.7,
     "analyst": {
       "n_buy": 1,
       "n_hold": 0,
@@ -4884,9 +4753,9 @@
       "risk_text": "위험요소는 회피대상위험에 포함되지 않습니다. 따라서 위험회피대상항목 현금흐름 지급 시기의 불일치, 위험회피수단 거래상대방의 가격마진, 위험회피수단 거래 당사자 일방의 신용위험 변동에 따라 위험회피의 비효과적인 부분이 발생할 수 있습니다. 통화선도계약에 따라 위험회피대상과 위험회피수단의 공정가치 변동이 실질적으로 동일한 수준에서 상쇄될 수 있는 방법으로 위험회피비율을 결정합니다.동 위험회피관계에서는 위험회피대상항목의 공정가치 변동요소 중 가장 유의적인 부분인 환율변동만을 회피대상위험으로 지정하며, 신용위험이나 유동성위험 등 기타 위험요소는 회피대상위험에 포함되지 않습니다. 이에 따라 통화선도계약의 결제시점과 외화표시 항목의 현금흐름 시기의 불일치, 거래상대방의 신용위험 변동, 또는 시장환율과 계약환율 간의 차이로 인해 위험회피의 비효과적인 부분이 발생할 수 있습니다. 통화선도계약에 따라 위험회피대상과 위험회피수단의 공정가치 변동이 실질적으로 동일한 수준에서 상쇄될 수 있는 방법으로 위험회피비율을 결정합니다.동 위험회피관계에서는 위험회피대상항목의 공정가치 변동요소 중 가장 유의적인 부분인 환율변동만을 회피대상위험으로 지정하며, 신용위험이나 유동성위험 등 기타 위험요소는 회피대상위험에 포함되지 않습니다. 이에 따라 통화선도계약의 결제시점과 외화표시 항목의 현금흐름 시기의 불일치, 거래상대방의 신용위험 변동, 또는 시장환율과 계약환율 간의 차이로 인해 위험회피의 비효과적인 부분이 발생할 수 있습니다. 위험회피수단과 위험회피대상항목 간의 경제적 관계에 대한 기술 이자율스왑계약과 위험회피대상항목은 기초변수인 시장이자율의 변동에 영향을 받으며, 연결회사는 이자율스왑계약의 가치와 위험회피대상항목의 가치가 일반적으로 반대방향으로 변동할 것이라 기대하고 있습니다. 통화선도계약과 위험회피대상항목은 기초변수인 환율의 변동에 영향을 받으며, 연결회사는 통화선도계약의 가치와 위험회피대상항목의 가치가 일반적으로 반대방향으로 변동할 것이라 기대하고 있습니다. 통화선도계약과 위험회피대상항목은 기초변수인 환율의 변동에 영향을 받으며, 연결회사는 통화선도계약의 가치와 위험회피대상항목의 가치가 일반적으로 반대방향으로 변동할 것이라 기대하고 있습니다. 위험회피수단의 성격 및 평가방법에 대한 기술 보고기간 말의 이자율스왑의 공정가치는 보고기간말 현재의 수익률곡선과 계약에 내재된 신용위험을 이용하여 추정한 미래현금흐름을 할인하여 결정되며, 평균이자율은보고기간말 미결제잔액에 근거하여 결정됩니다. 이자율스왑에 적용되는 변동이자율은 Compounding SOFR 또는 CD 3M + 가산금리입니다. 연결회사는 위험회피수단으로 지정된 각 이자율스왑 계약조건에 따라 고정이자율에 따른 이자를 수취하고 변동이자율에 따른 이자를 지급하고 있습니다. 통화선도계약은 사전에 정해진 약정금액과 약정환율에 따라 미래 일정일에 외화를 매도하는 조건으로 체결되어 있으며, 개시일에 초기 계약금액을 교환하고 종료일에는 거래체결 시 약정한 외화 원금을 반환합니다. 그 결과 위험회피거래를 통해 외화표시자산의 환율변동으로 인한 평가손익 변동을 상쇄함으로써 외화유가증권 및 외화사모사채의 환율변동에 따른 공정가치 변동위험을 제거하는 것입니다. 통화선도계약은 사전에 정해진 약정금액과 약정환율에 …"
     },
     "quant": {
-      "buy_score": 68.8,
+      "buy_score": 70.2,
       "rank_in_level2": 1,
-      "upside_pct": 36.7,
+      "upside_pct": 38.0,
       "composite": null,
       "timing_state": "관측부족",
       "timing_score": 17.0
@@ -4902,8 +4771,8 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 616000.0,
-    "ret_1m": -1.4,
+    "close": 601000.0,
+    "ret_1m": -3.8,
     "analyst": {
       "n_buy": 0,
       "n_hold": 0,
@@ -4963,13 +4832,13 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 41600.0,
-    "ret_1m": -13.4,
+    "close": 39900.0,
+    "ret_1m": -17.0,
     "analyst": {
-      "n_buy": 7,
+      "n_buy": 3,
       "n_hold": 0,
       "n_sell": 0,
-      "avg_target": 58143,
+      "avg_target": 58000,
       "latest_target": 58000.0,
       "recent": [
         {
@@ -4995,22 +4864,6 @@
           "opinion": "Buy",
           "source_url": "https://finance.naver.com/research/company_read.naver?nid=95766",
           "broker_url": "https://stock.pstatic.net/stock-research/company/15/20260819_company_592348000.pdf"
-        },
-        {
-          "date": "2026-08-18",
-          "broker": "iM증권",
-          "title": "미운 오리새끼는 백조가 될 수 있는가",
-          "opinion": "Buy",
-          "source_url": "https://finance.naver.com/research/company_read.naver?nid=95666",
-          "broker_url": "https://stock.pstatic.net/stock-research/company/61/20260818_company_372129000.pdf"
-        },
-        {
-          "date": "2026-08-18",
-          "broker": "신한투자증권",
-          "title": "긴 터널의 끝",
-          "opinion": "매수",
-          "source_url": "https://finance.naver.com/research/company_read.naver?nid=95689",
-          "broker_url": null
         }
       ]
     },
@@ -5053,9 +4906,9 @@
       "risk_text": null
     },
     "quant": {
-      "buy_score": 72.3,
+      "buy_score": 72.5,
       "rank_in_level2": 2,
-      "upside_pct": 39.8,
+      "upside_pct": 45.4,
       "composite": null,
       "timing_state": "관측부족",
       "timing_score": 17.0
@@ -5071,8 +4924,8 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 172900.0,
-    "ret_1m": -7.2,
+    "close": 171500.0,
+    "ret_1m": -8.0,
     "analyst": {
       "n_buy": 7,
       "n_hold": 0,
@@ -5161,9 +5014,9 @@
       "risk_text": "위험요소에 효율적으로 대응할 수 있도록 각종 위험을 신속 정확하게 인식/측정하여 위험을 적정수준으로 관리하며, 위험 대비 수익을 극대화하도록 정책을 운영하고 있습니다. 연결회사는 직면한 위험수준이 가용자본 대비 적정한 수준으로 유지될 수 있도록 위험자본을 각 위험종류별로 배분하고, 할당된 위험자본 관리를 위해 한도를 설정하여 관리합니다. 이는 안정적 수익기반 확보 및 기업가치의 극대화 달성을 가능하게 합니다.(2) 위험관리 절차연결회사의 위험관리 절차는 인식, 측정, 모니터링 및 통제, 보고의 단계로 이루어져 있으며, 다음과 같은 활동을 수행하고 있습니다.- 위험의 인식(Identification) : 경영활동의 주요 프로세스를 분석하여 발생 가능한 위험을 식별하고 있습니다. 특히 재무위험은 보험위험(생명장기/일반손해보험), 시장위험(금리위험 포함), 신용위험, 유동성위험 등 으로 구분하여 중요한 위험으로 인식하고 있습니다.- 위험의 측정(Measuring) : 위험 유형별로 관리대상의 특성(보험계약 속성, 고객 속성, 자산 운용현황 등)에 따라 위험액을 측정하고 그 규모의 적정성을 평가하는 단계로서, 연결회사의 중요한 위험(보험위험, 시장위험, 신용위험 등)을 측정 및 평가하고 있습니다. - 위험의 모니터링(Monitoring) 및 통제(Controlling) : 전사위험을 가용자본 내에서 관리하기 위해 적정 수준의 위험한도를 설정하고 이의 초과여부를 상시 모니터링하고 있습니다. 또한 주요 의사결정사항에 대해서는 사전관리체계 및 사후관리체계를 구축하여 운영하고 있습니다.- 위험의 보고(Reporting) : 위험요인에 대한 모니터링 결과와 조치방안을 정기적으로 위험관리위원회 및 경영진에 보고하고 있습니다.(3) 내부 자본적정성 평가 및 관리절차연결회사는 보험회사 위험기준 자기자본의 건전성을 나타내는 지표로 감독기관에서 규정하고 있는 지급여력제도 기준에 따라 지급여력비율을 산출하고 있습니다. 연결회사는 제도에 따른 요구자본을 기준으로 개별 리스크별로 요구자본을 배분하고, 할당된 요구자본 내 관리를 위한 한도를 설정하여 안정적 자본관리를 위해 노력하고 있습니다. 이에 대한 요구자본 할당 및 한도 기준에 대해서는 위험관리위원회 승인을 받아 운영하고, 관련사항에 대해서는 정기적인 모니터링을 통해 통제 및 관리하고 있으며, 위원회 및 경영진에게 정기적으로 보고하고 있습니다.연결회사에서는 생명장기손해보험위험, 일반손해보험위험, 시장위험(금리위험 포함), 신용위험에 대한 각 위험별 위험관리시스템을 구축하여 개별 위험액 산출 및 스트레스 테스트 등을 수행하고 있으며, 산출된 위험액으로 한도관리를 하는 등 위험관리에 활용하고 있습니다.또한 보험업감독규정 등에 따라 2018년부터 자체위험 및 지급여력평가(ORSA)체제를 구축하고, 위험관리체제 및 장래 지급여력 수준의 적정성을 자체적으로 평가, 관리하고 있습니다.(4)"
     },
     "quant": {
-      "buy_score": 70.0,
+      "buy_score": 71.3,
       "rank_in_level2": 3,
-      "upside_pct": 37.8,
+      "upside_pct": 38.9,
       "composite": null,
       "timing_state": "관측부족",
       "timing_score": 17.0
@@ -5179,8 +5032,8 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 237000.0,
-    "ret_1m": -14.9,
+    "close": 242500.0,
+    "ret_1m": -12.9,
     "analyst": {
       "n_buy": 0,
       "n_hold": 1,
@@ -5239,7 +5092,7 @@
     "quant": {
       "buy_score": 72.5,
       "rank_in_level2": 1,
-      "upside_pct": 53.2,
+      "upside_pct": 49.7,
       "composite": null,
       "timing_state": "관측부족",
       "timing_score": 17.0
@@ -5255,24 +5108,15 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 20900.0,
-    "ret_1m": -31.5,
+    "close": 21650.0,
+    "ret_1m": -29.0,
     "analyst": {
       "n_buy": 0,
-      "n_hold": 1,
+      "n_hold": 0,
       "n_sell": 0,
       "avg_target": null,
       "latest_target": null,
-      "recent": [
-        {
-          "date": "2026-08-18",
-          "broker": "신한투자증권",
-          "title": "변액, 성장 엔진이자 배당 제약 요인",
-          "opinion": "중립",
-          "source_url": "https://finance.naver.com/research/company_read.naver?nid=95677",
-          "broker_url": null
-        }
-      ]
+      "recent": []
     },
     "fundamentals": [
       {
@@ -5331,8 +5175,8 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 71500.0,
-    "ret_1m": -19.6,
+    "close": 72500.0,
+    "ret_1m": -18.4,
     "analyst": {
       "n_buy": 0,
       "n_hold": 0,
@@ -5398,8 +5242,8 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 181400.0,
-    "ret_1m": -26.3,
+    "close": 183700.0,
+    "ret_1m": -25.3,
     "analyst": {
       "n_buy": 0,
       "n_hold": 0,
@@ -5465,8 +5309,8 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 118000.0,
-    "ret_1m": -32.2,
+    "close": 120000.0,
+    "ret_1m": -31.0,
     "analyst": {
       "n_buy": 0,
       "n_hold": 0,
@@ -5537,8 +5381,8 @@
     ],
     "brief_source": "DART 사업보고서·애널리스트 리포트 종합",
     "brief_updated": "2026-06",
-    "close": 73600.0,
-    "ret_1m": -33.3,
+    "close": 83500.0,
+    "ret_1m": -24.4,
     "analyst": {
       "n_buy": 2,
       "n_hold": 0,
@@ -5605,7 +5449,7 @@
     "quant": {
       "buy_score": 72.5,
       "rank_in_level2": 1,
-      "upside_pct": 134.4,
+      "upside_pct": 106.6,
       "composite": 0.0,
       "timing_state": "관측부족",
       "timing_score": 21.0
@@ -5621,8 +5465,8 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 60500.0,
-    "ret_1m": 24.1,
+    "close": 63900.0,
+    "ret_1m": 31.1,
     "analyst": {
       "n_buy": 0,
       "n_hold": 0,
@@ -5688,8 +5532,8 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 50300.0,
-    "ret_1m": -30.1,
+    "close": 55700.0,
+    "ret_1m": -22.6,
     "analyst": {
       "n_buy": 0,
       "n_hold": 0,
@@ -5760,8 +5604,8 @@
     ],
     "brief_source": "DART 사업보고서·애널리스트 리포트 종합",
     "brief_updated": "2026-06",
-    "close": 638000.0,
-    "ret_1m": -34.8,
+    "close": 656000.0,
+    "ret_1m": -33.0,
     "analyst": {
       "n_buy": 2,
       "n_hold": 0,
@@ -5822,7 +5666,7 @@
     "quant": {
       "buy_score": 57.5,
       "rank_in_level2": 4,
-      "upside_pct": 186.8,
+      "upside_pct": 179.0,
       "composite": -1.0,
       "timing_state": "관측부족",
       "timing_score": 12.0
@@ -5843,8 +5687,8 @@
     ],
     "brief_source": "DART 사업보고서·애널리스트 리포트 종합",
     "brief_updated": "2026-06",
-    "close": 99000.0,
-    "ret_1m": -18.4,
+    "close": 101000.0,
+    "ret_1m": -16.7,
     "analyst": {
       "n_buy": 0,
       "n_hold": 0,
@@ -5910,8 +5754,8 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 69500.0,
-    "ret_1m": -35.6,
+    "close": 72300.0,
+    "ret_1m": -33.0,
     "analyst": {
       "n_buy": 0,
       "n_hold": 0,
@@ -5977,8 +5821,8 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 292500.0,
-    "ret_1m": -55.9,
+    "close": 338500.0,
+    "ret_1m": -49.0,
     "analyst": {
       "n_buy": 0,
       "n_hold": 0,
@@ -6049,8 +5893,8 @@
     ],
     "brief_source": "DART 사업보고서·애널리스트 리포트 종합",
     "brief_updated": "2026-06",
-    "close": 90700.0,
-    "ret_1m": -17.9,
+    "close": 90400.0,
+    "ret_1m": -18.2,
     "analyst": {
       "n_buy": 1,
       "n_hold": 0,
@@ -6109,7 +5953,7 @@
     "quant": {
       "buy_score": 87.5,
       "rank_in_level2": 1,
-      "upside_pct": 43.3,
+      "upside_pct": 43.8,
       "composite": 1.0,
       "timing_state": "관측부족",
       "timing_score": 12.0
@@ -6130,8 +5974,8 @@
     ],
     "brief_source": "DART 사업보고서·애널리스트 리포트 종합",
     "brief_updated": "2026-06",
-    "close": 267500.0,
-    "ret_1m": -20.3,
+    "close": 276000.0,
+    "ret_1m": -17.7,
     "analyst": {
       "n_buy": 1,
       "n_hold": 0,
@@ -6190,7 +6034,7 @@
     "quant": {
       "buy_score": 57.5,
       "rank_in_level2": 3,
-      "upside_pct": 105.6,
+      "upside_pct": 99.3,
       "composite": -1.0,
       "timing_state": "관측부족",
       "timing_score": 12.0
@@ -6206,13 +6050,13 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 446000.0,
-    "ret_1m": -22.6,
+    "close": 475500.0,
+    "ret_1m": -17.4,
     "analyst": {
-      "n_buy": 4,
+      "n_buy": 2,
       "n_hold": 0,
       "n_sell": 0,
-      "avg_target": 800000,
+      "avg_target": 815000,
       "latest_target": 800000.0,
       "recent": [
         {
@@ -6230,22 +6074,6 @@
           "opinion": "Buy",
           "source_url": "https://finance.naver.com/research/company_read.naver?nid=95802",
           "broker_url": "https://stock.pstatic.net/stock-research/company/18/20260821_company_49560000.pdf"
-        },
-        {
-          "date": "2026-08-18",
-          "broker": "하나증권",
-          "title": "하이닉스가 끌고 이노베이션이 민다",
-          "opinion": "Buy",
-          "source_url": "https://finance.naver.com/research/company_read.naver?nid=95720",
-          "broker_url": "https://stock.pstatic.net/stock-research/company/57/20260818_company_633579000.pdf"
-        },
-        {
-          "date": "2026-08-18",
-          "broker": "한화투자증권",
-          "title": "2Q26 Review: AI DC로 향하는 SK",
-          "opinion": "Buy",
-          "source_url": "https://finance.naver.com/research/company_read.naver?nid=95740",
-          "broker_url": "https://stock.pstatic.net/stock-research/company/16/20260818_company_254605000.pdf"
         }
       ]
     },
@@ -6290,7 +6118,7 @@
     "quant": {
       "buy_score": 57.5,
       "rank_in_level2": 2,
-      "upside_pct": 79.4,
+      "upside_pct": 71.4,
       "composite": -1.0,
       "timing_state": "관측부족",
       "timing_score": 12.0
@@ -6306,8 +6134,8 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 52200.0,
-    "ret_1m": -4.9,
+    "close": 53600.0,
+    "ret_1m": -2.4,
     "analyst": {
       "n_buy": 0,
       "n_hold": 0,
@@ -6382,8 +6210,8 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 300500.0,
-    "ret_1m": -32.8,
+    "close": 320500.0,
+    "ret_1m": -28.4,
     "analyst": {
       "n_buy": 0,
       "n_hold": 0,
@@ -6449,8 +6277,8 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 48400.0,
-    "ret_1m": -32.2,
+    "close": 50400.0,
+    "ret_1m": -29.4,
     "analyst": {
       "n_buy": 0,
       "n_hold": 0,
@@ -6516,8 +6344,8 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 16380.0,
-    "ret_1m": -44.9,
+    "close": 17900.0,
+    "ret_1m": -39.8,
     "analyst": {
       "n_buy": 0,
       "n_hold": 0,
@@ -6583,13 +6411,13 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 109200.0,
-    "ret_1m": -46.7,
+    "close": 119700.0,
+    "ret_1m": -41.6,
     "analyst": {
-      "n_buy": 8,
+      "n_buy": 6,
       "n_hold": 0,
       "n_sell": 0,
-      "avg_target": 536750,
+      "avg_target": 525333,
       "latest_target": 630000.0,
       "recent": [
         {
@@ -6675,7 +6503,7 @@
     "quant": {
       "buy_score": 57.5,
       "rank_in_level2": 3,
-      "upside_pct": 391.5,
+      "upside_pct": 338.9,
       "composite": -1.0,
       "timing_state": "관측부족",
       "timing_score": 12.0
@@ -6696,8 +6524,8 @@
     ],
     "brief_source": "DART 사업보고서·애널리스트 리포트 종합",
     "brief_updated": "2026-06",
-    "close": 352500.0,
-    "ret_1m": -44.0,
+    "close": 391500.0,
+    "ret_1m": -37.9,
     "analyst": {
       "n_buy": 1,
       "n_hold": 0,
@@ -6756,7 +6584,7 @@
     "quant": {
       "buy_score": 87.5,
       "rank_in_level2": 1,
-      "upside_pct": 155.3,
+      "upside_pct": 129.9,
       "composite": 1.0,
       "timing_state": "관측부족",
       "timing_score": 12.0
@@ -6772,8 +6600,8 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 1512000.0,
-    "ret_1m": -42.3,
+    "close": 1718000.0,
+    "ret_1m": -34.4,
     "analyst": {
       "n_buy": 1,
       "n_hold": 0,
@@ -6832,7 +6660,7 @@
     "quant": {
       "buy_score": 57.5,
       "rank_in_level2": 2,
-      "upside_pct": 164.6,
+      "upside_pct": 132.8,
       "composite": -1.0,
       "timing_state": "관측부족",
       "timing_score": 12.0
@@ -6853,8 +6681,8 @@
     ],
     "brief_source": "DART 사업보고서·애널리스트 리포트 종합",
     "brief_updated": "2026-06",
-    "close": 235500.0,
-    "ret_1m": -21.6,
+    "close": 243500.0,
+    "ret_1m": -19.0,
     "analyst": {
       "n_buy": 1,
       "n_hold": 0,
@@ -6922,7 +6750,7 @@
     "quant": {
       "buy_score": 100.0,
       "rank_in_level2": 1,
-      "upside_pct": 125.9,
+      "upside_pct": 118.5,
       "composite": 1.0,
       "timing_state": "관측부족",
       "timing_score": 12.0
@@ -6938,8 +6766,8 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 15170.0,
-    "ret_1m": -22.2,
+    "close": 16270.0,
+    "ret_1m": -16.6,
     "analyst": {
       "n_buy": 0,
       "n_hold": 0,
@@ -7010,8 +6838,8 @@
     ],
     "brief_source": "DART 사업보고서·애널리스트 리포트 종합",
     "brief_updated": "2026-06",
-    "close": 45100.0,
-    "ret_1m": -39.1,
+    "close": 47700.0,
+    "ret_1m": -35.6,
     "analyst": {
       "n_buy": 2,
       "n_hold": 0,
@@ -7078,7 +6906,7 @@
     "quant": {
       "buy_score": 72.5,
       "rank_in_level2": 2,
-      "upside_pct": 285.8,
+      "upside_pct": 264.8,
       "composite": 0.0,
       "timing_state": "관측부족",
       "timing_score": 12.0
@@ -7094,8 +6922,8 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 253000.0,
-    "ret_1m": -36.7,
+    "close": 264500.0,
+    "ret_1m": -33.8,
     "analyst": {
       "n_buy": 0,
       "n_hold": 0,
@@ -7155,8 +6983,8 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 67900.0,
-    "ret_1m": -3.7,
+    "close": 67600.0,
+    "ret_1m": -4.1,
     "analyst": {
       "n_buy": 0,
       "n_hold": 0,
@@ -7222,8 +7050,8 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 29150.0,
-    "ret_1m": -4.9,
+    "close": 32600.0,
+    "ret_1m": 6.4,
     "analyst": {
       "n_buy": 1,
       "n_hold": 0,
@@ -7280,9 +7108,9 @@
       "risk_text": "위험요소당사는 지분상품에서 발생하는 가격변동위험에 노출되어 있습니다. 지분상품은 매매목적이 아닌 전략적 목적으로 보유하고 있으며, 당사는 해당 투자자산을 활발하게 매매하고 있지 않습니다.(5) 위험노출 정도 및 관리 전략당사는 유가, 환율, 금리 변동성을 제거 혹은 최소화하기 위하여, 체계적이고 적극적인 시장 위험관리를 수행하고 있습니다.위험관리는 크게 Natural Hedging 과 Active Hedging 의 두 가지로 구분됩니다. 대한항공의 위험관리 전략은 위의 두 가지 Hedging기법을 사용함으로써 시장의 위험 요소를 최소화하는데 있습니다. 2025년 12월말 기준, 당사가 위험에 노출된 포지션과 변동성 및 대응전략은 아래 표와 같습니다. 변수 Position 영향 우리회사 위험관리 (Strategy) 유가 연간 예상 유류 소모량:약 3,050만 배럴 유가 1달러(배럴당) 변동 시: 약 3천 50만불 손익변동 발생 Natural Hedge ● 원화 고정금리 차입 추진 ● 엔화/유로화 등 잉여 저금리 통화 고정금리 차입 Active Hedge (파생상품을 통한 헷지) ● 유가 - 연간 예상 유류 소모량의 최대 50% 내 헷지 시행 - 시장 상황 및 유가 수준 고려하여, 적합한 헷지 상품 활용(당사는 주로 Zero Cost Collar 상품 이용) ● 환율/금리 - 통화/이자율 스왑 계약 등을 통해 차입구조 관리 환율 평가손익 측면 순외화부채: 약 55억불 환율 10원 변동 시: 약 550억원의 외화평가손익 발생 Cash Flow 측면 연간 예상 달러 부족량: 약 16억불 환율 10원 변동 시: 약 160억원의 Cash 변동 발생 금리 변동금리차입금: 약 5.7조원고정금리차입금: 약 6.3조원 (리스회계기준 변경: 4.0조원 제외) 평균 금리 1% 변동 시: 약 570억원의 이자비용 증감 발생 (6) 위험 관리 조직 (가) 대한항공은 상기 위험을 헷지하기 위해 아래와 같은 리스크 관리 방법을 시행 중입니다. 1) 내부적 리스크 관리방법 상계(Netting), 매칭(Matching), 리딩(Leading), 래깅(Lagging) 등 실시 2) 외부적 리스크 관리 방법 - 유가: 유류비 변동을 최소화하기 위한 헷지 실행 (선도(Forward), 스왑(Swap), 옵션(Option) 등 파생상품을 이용) - 통화: Exposure의 일정부분에 대한 헷지 실행 (선도(Forward), 스왑(Swap), 옵션(Option) 등 파생상품을 이용) (나) 대한항공은 현재 자금기획팀에서 5명의 리스크 관리 담당이 업무를 전담하고 있습니다. 나. 파생거래 (1) 당기말 현재 연결실체는 유가변동으로 인한 위험을 회피하기 위한 유가옵션계약과 환율 및 이자율 변동으로 인한 위험을 회피하기 위한 통화이자율스왑계약 등을 한국산업은행 등 금융기관과 체결하고 있으며, 당기말 현재 당사 및 종속회사의 파생상품 약정내역은 다음과 같습니다. 구분 계약잔액 거래상대방 최초계약일 최종만기일 비고 계약내용 유가옵션 BBL 15,300,000 BNP 외 12개 금융기관 2024년 06월 01일 2027년 10월 31일 매매목적회계 PUT/CALL 헷지 계약가격에 따른 ZERO COST COLLAR 방식 정산 이자율스왑 KRW …"
     },
     "quant": {
-      "buy_score": 72.8,
+      "buy_score": 57.7,
       "rank_in_level2": 1,
-      "upside_pct": 26.9,
+      "upside_pct": 13.5,
       "composite": 1.0,
       "timing_state": "관측부족",
       "timing_score": 21.0
@@ -7298,8 +7126,8 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 20750.0,
-    "ret_1m": -2.4,
+    "close": 20350.0,
+    "ret_1m": -4.2,
     "analyst": {
       "n_buy": 1,
       "n_hold": 0,
@@ -7356,9 +7184,9 @@
       "risk_text": null
     },
     "quant": {
-      "buy_score": 57.3,
+      "buy_score": 57.5,
       "rank_in_level2": 2,
-      "upside_pct": 39.8,
+      "upside_pct": 42.5,
       "composite": -1.0,
       "timing_state": "관측부족",
       "timing_score": 21.0
@@ -7374,8 +7202,8 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 43900.0,
-    "ret_1m": -27.3,
+    "close": 47900.0,
+    "ret_1m": -20.7,
     "analyst": {
       "n_buy": 0,
       "n_hold": 0,
@@ -7428,7 +7256,7 @@
       "upside_pct": null,
       "composite": -1.0,
       "timing_state": "관측부족",
-      "timing_score": 16.0
+      "timing_score": 21.0
     }
   },
   "011780": {
@@ -7441,8 +7269,8 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 95700.0,
-    "ret_1m": -17.2,
+    "close": 100100.0,
+    "ret_1m": -13.4,
     "analyst": {
       "n_buy": 0,
       "n_hold": 0,
@@ -7495,7 +7323,7 @@
       "upside_pct": null,
       "composite": -1.0,
       "timing_state": "관측부족",
-      "timing_score": 16.0
+      "timing_score": 21.0
     }
   },
   "051910": {
@@ -7508,8 +7336,8 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 222000.0,
-    "ret_1m": -19.1,
+    "close": 234500.0,
+    "ret_1m": -14.6,
     "analyst": {
       "n_buy": 0,
       "n_hold": 0,
@@ -7562,7 +7390,7 @@
       "upside_pct": null,
       "composite": -1.0,
       "timing_state": "관측부족",
-      "timing_score": 16.0
+      "timing_score": 21.0
     }
   },
   "004020": {
@@ -7575,8 +7403,8 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 27800.0,
-    "ret_1m": -1.9,
+    "close": 28650.0,
+    "ret_1m": 1.1,
     "analyst": {
       "n_buy": 0,
       "n_hold": 0,
@@ -7641,8 +7469,8 @@
     ],
     "brief_source": "DART 사업보고서·애널리스트 리포트 종합",
     "brief_updated": "2026-06",
-    "close": 258000.0,
-    "ret_1m": -16.2,
+    "close": 269500.0,
+    "ret_1m": -12.5,
     "analyst": {
       "n_buy": 0,
       "n_hold": 0,
@@ -7708,8 +7536,8 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 936000.0,
-    "ret_1m": -12.2,
+    "close": 957000.0,
+    "ret_1m": -10.2,
     "analyst": {
       "n_buy": 0,
       "n_hold": 0,
@@ -7775,8 +7603,8 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 51000.0,
-    "ret_1m": -25.3,
+    "close": 52300.0,
+    "ret_1m": -23.4,
     "analyst": {
       "n_buy": 0,
       "n_hold": 0,
@@ -7842,8 +7670,8 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 105900.0,
-    "ret_1m": -38.0,
+    "close": 105400.0,
+    "ret_1m": -38.3,
     "analyst": {
       "n_buy": 1,
       "n_hold": 0,
@@ -7902,10 +7730,10 @@
     "quant": {
       "buy_score": 87.5,
       "rank_in_level2": 2,
-      "upside_pct": 93.6,
+      "upside_pct": 94.5,
       "composite": 1.0,
-      "timing_state": "hold",
-      "timing_score": 46.0
+      "timing_state": "관측부족",
+      "timing_score": 17.0
     }
   },
   "078930": {
@@ -7918,8 +7746,8 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 78700.0,
-    "ret_1m": -28.3,
+    "close": 83000.0,
+    "ret_1m": -24.4,
     "analyst": {
       "n_buy": 0,
       "n_hold": 0,
@@ -7971,8 +7799,8 @@
       "rank_in_level2": 3,
       "upside_pct": null,
       "composite": 1.0,
-      "timing_state": "hold",
-      "timing_score": 46.0
+      "timing_state": "관측부족",
+      "timing_score": 17.0
     }
   },
   "096770": {
@@ -7985,8 +7813,8 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 106600.0,
-    "ret_1m": -33.2,
+    "close": 109500.0,
+    "ret_1m": -31.3,
     "analyst": {
       "n_buy": 4,
       "n_hold": 0,
@@ -8069,10 +7897,10 @@
     "quant": {
       "buy_score": 87.5,
       "rank_in_level2": 1,
-      "upside_pct": 80.6,
+      "upside_pct": 75.8,
       "composite": 1.0,
-      "timing_state": "hold",
-      "timing_score": 46.0
+      "timing_state": "관측부족",
+      "timing_score": 17.0
     }
   }
 }
