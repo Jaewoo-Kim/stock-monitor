@@ -169,17 +169,17 @@
         "eps_actual": null
       },
       {
+        "period_end": "2026-03-31",
+        "revenue": 724099072550.0,
+        "op_income": 70869272524.0,
+        "op_margin": 9.79,
+        "eps_actual": null
+      },
+      {
         "period_end": "2025-12-31",
         "revenue": 2676968855833.0,
         "op_income": 23585223953.0,
         "op_margin": 0.88,
-        "eps_actual": null
-      },
-      {
-        "period_end": "2025-09-30",
-        "revenue": 809150838736.0,
-        "op_income": 17433855127.0,
-        "op_margin": 2.15,
         "eps_actual": null
       }
     ],
@@ -470,17 +470,17 @@
         "eps_actual": null
       },
       {
+        "period_end": "2026-03-31",
+        "revenue": 2372827000000.0,
+        "op_income": -789995000000.0,
+        "op_margin": -33.29,
+        "eps_actual": null
+      },
+      {
         "period_end": "2025-12-31",
         "revenue": 7661584000000.0,
         "op_income": -1280157000000.0,
         "op_margin": -16.71,
-        "eps_actual": null
-      },
-      {
-        "period_end": "2025-09-30",
-        "revenue": 2177068000000.0,
-        "op_income": -314035000000.0,
-        "op_margin": -14.42,
         "eps_actual": null
       }
     ],
@@ -627,17 +627,17 @@
         "eps_actual": null
       },
       {
+        "period_end": "2026-03-31",
+        "revenue": 69857963143.0,
+        "op_income": 16362043705.0,
+        "op_margin": 23.42,
+        "eps_actual": null
+      },
+      {
         "period_end": "2025-12-31",
         "revenue": 202283546625.0,
         "op_income": 50531700005.0,
         "op_margin": 24.98,
-        "eps_actual": null
-      },
-      {
-        "period_end": "2025-09-30",
-        "revenue": 37944208508.0,
-        "op_income": 9929135198.0,
-        "op_margin": 26.17,
         "eps_actual": null
       }
     ],
@@ -1167,17 +1167,17 @@
         "eps_actual": null
       },
       {
+        "period_end": "2026-03-31",
+        "revenue": 77814047076.0,
+        "op_income": 17315565348.0,
+        "op_margin": 22.25,
+        "eps_actual": null
+      },
+      {
         "period_end": "2025-12-31",
         "revenue": 310692584812.0,
         "op_income": 32131229318.0,
         "op_margin": 10.34,
-        "eps_actual": null
-      },
-      {
-        "period_end": "2025-09-30",
-        "revenue": 120846474023.0,
-        "op_income": 33744504028.0,
-        "op_margin": 27.92,
         "eps_actual": null
       }
     ],
@@ -1239,17 +1239,17 @@
         "eps_actual": null
       },
       {
+        "period_end": "2026-03-31",
+        "revenue": 175909178332.0,
+        "op_income": 85618527976.0,
+        "op_margin": 48.67,
+        "eps_actual": null
+      },
+      {
         "period_end": "2025-12-31",
         "revenue": 559680004877.0,
         "op_income": 242363715065.0,
         "op_margin": 43.3,
-        "eps_actual": null
-      },
-      {
-        "period_end": "2025-09-30",
-        "revenue": 144274548737.0,
-        "op_income": 69008271857.0,
-        "op_margin": 47.83,
         "eps_actual": null
       }
     ],
@@ -1306,17 +1306,17 @@
         "eps_actual": null
       },
       {
+        "period_end": "2026-03-31",
+        "revenue": 82694703692.0,
+        "op_income": 39419878727.0,
+        "op_margin": 47.67,
+        "eps_actual": null
+      },
+      {
         "period_end": "2025-12-31",
         "revenue": 372534084608.0,
         "op_income": 176997188289.0,
         "op_margin": 47.51,
-        "eps_actual": null
-      },
-      {
-        "period_end": "2025-09-30",
-        "revenue": 78410243553.0,
-        "op_income": 34937759810.0,
-        "op_margin": 44.56,
         "eps_actual": null
       }
     ],
@@ -1650,17 +1650,17 @@
         "eps_actual": null
       },
       {
+        "period_end": "2026-03-31",
+        "revenue": 215202085886.0,
+        "op_income": 43373617819.0,
+        "op_margin": 20.15,
+        "eps_actual": null
+      },
+      {
         "period_end": "2025-12-31",
         "revenue": 683623525453.0,
         "op_income": 142212626452.0,
         "op_margin": 20.8,
-        "eps_actual": null
-      },
-      {
-        "period_end": "2025-09-30",
-        "revenue": 114485408773.0,
-        "op_income": 18921153300.0,
-        "op_margin": 16.53,
         "eps_actual": null
       }
     ],
@@ -1717,17 +1717,17 @@
         "eps_actual": null
       },
       {
+        "period_end": "2026-03-31",
+        "revenue": 173380403169.0,
+        "op_income": 28444593781.0,
+        "op_margin": 16.41,
+        "eps_actual": null
+      },
+      {
         "period_end": "2025-12-31",
         "revenue": 812500854342.0,
         "op_income": 166979360597.0,
         "op_margin": 20.55,
-        "eps_actual": null
-      },
-      {
-        "period_end": "2025-09-30",
-        "revenue": 165481197721.0,
-        "op_income": 41278395110.0,
-        "op_margin": 24.94,
         "eps_actual": null
       }
     ],
@@ -1999,17 +1999,17 @@
         "eps_actual": null
       },
       {
+        "period_end": "2026-03-31",
+        "revenue": 1971994567016.0,
+        "op_income": 322636826225.0,
+        "op_margin": 16.36,
+        "eps_actual": null
+      },
+      {
         "period_end": "2025-12-31",
         "revenue": 7019329989860.0,
         "op_income": 1945532432697.0,
         "op_margin": 27.72,
-        "eps_actual": null
-      },
-      {
-        "period_end": "2025-09-30",
-        "revenue": 1617372635087.0,
-        "op_income": 483287094391.0,
-        "op_margin": 29.88,
         "eps_actual": null
       }
     ],
@@ -2112,17 +2112,17 @@
         "eps_actual": null
       },
       {
+        "period_end": "2026-03-31",
+        "revenue": 702911767070.0,
+        "op_income": 117805867323.0,
+        "op_margin": 16.76,
+        "eps_actual": null
+      },
+      {
         "period_end": "2025-12-31",
         "revenue": 2680861279732.0,
         "op_income": 440242465351.0,
         "op_margin": 16.42,
-        "eps_actual": null
-      },
-      {
-        "period_end": "2025-09-30",
-        "revenue": 661737627086.0,
-        "op_income": 103925977584.0,
-        "op_margin": 15.71,
         "eps_actual": null
       }
     ],
@@ -2801,17 +2801,17 @@
         "eps_actual": null
       },
       {
+        "period_end": "2026-03-31",
+        "revenue": 90008347220.0,
+        "op_income": 4731572711.0,
+        "op_margin": 5.26,
+        "eps_actual": null
+      },
+      {
         "period_end": "2025-12-31",
         "revenue": 177733181899.0,
         "op_income": 28038997909.0,
         "op_margin": 15.78,
-        "eps_actual": null
-      },
-      {
-        "period_end": "2025-09-30",
-        "revenue": 46216369448.0,
-        "op_income": 12318273708.0,
-        "op_margin": 26.65,
         "eps_actual": null
       }
     ],
@@ -3159,17 +3159,17 @@
         "eps_actual": null
       },
       {
+        "period_end": "2026-03-31",
+        "revenue": 2203212462712.0,
+        "op_income": 120662895358.0,
+        "op_margin": 5.48,
+        "eps_actual": null
+      },
+      {
         "period_end": "2025-12-31",
         "revenue": 8188060535596.0,
         "op_income": 411235004486.0,
         "op_margin": 5.02,
-        "eps_actual": null
-      },
-      {
-        "period_end": "2025-09-30",
-        "revenue": 2058354913704.0,
-        "op_income": 128851611143.0,
-        "op_margin": 6.26,
         "eps_actual": null
       }
     ],
@@ -3472,17 +3472,17 @@
         "eps_actual": null
       },
       {
+        "period_end": "2026-03-31",
+        "revenue": 1177410000000.0,
+        "op_income": 403104000000.0,
+        "op_margin": 34.24,
+        "eps_actual": null
+      },
+      {
         "period_end": "2025-12-31",
         "revenue": 4145475000000.0,
         "op_income": 1000717000000.0,
         "op_margin": 24.14,
-        "eps_actual": null
-      },
-      {
-        "period_end": "2025-09-30",
-        "revenue": 917225000000.0,
-        "op_income": 199032000000.0,
-        "op_margin": 21.7,
         "eps_actual": null
       }
     ],
@@ -3816,17 +3816,17 @@
         "eps_actual": null
       },
       {
+        "period_end": "2026-03-31",
+        "revenue": 151262917863.0,
+        "op_income": 66910035047.0,
+        "op_margin": 44.23,
+        "eps_actual": null
+      },
+      {
         "period_end": "2025-12-31",
         "revenue": 473789922204.0,
         "op_income": 207553562681.0,
         "op_margin": 43.81,
-        "eps_actual": null
-      },
-      {
-        "period_end": "2025-09-30",
-        "revenue": 105970709077.0,
-        "op_income": 45571724882.0,
-        "op_margin": 43.0,
         "eps_actual": null
       }
     ],
@@ -4148,17 +4148,17 @@
         "eps_actual": null
       },
       {
+        "period_end": "2026-03-31",
+        "revenue": 291468246772.0,
+        "op_income": 34916005114.0,
+        "op_margin": 11.98,
+        "eps_actual": null
+      },
+      {
         "period_end": "2025-12-31",
         "revenue": 1146621703290.0,
         "op_income": 177802531448.0,
         "op_margin": 15.51,
-        "eps_actual": null
-      },
-      {
-        "period_end": "2025-09-30",
-        "revenue": 295031545799.0,
-        "op_income": 47021415678.0,
-        "op_margin": 15.94,
         "eps_actual": null
       }
     ],
@@ -5185,17 +5185,17 @@
         "eps_actual": null
       },
       {
+        "period_end": "2026-03-31",
+        "revenue": 6576057031286.0,
+        "op_income": 453640807559.0,
+        "op_margin": 6.9,
+        "eps_actual": null
+      },
+      {
         "period_end": "2025-12-31",
         "revenue": 15715186906021.0,
         "op_income": 1325457775596.0,
         "op_margin": 8.43,
-        "eps_actual": null
-      },
-      {
-        "period_end": "2025-09-30",
-        "revenue": 3353926417053.0,
-        "op_income": 295494980936.0,
-        "op_margin": 8.81,
         "eps_actual": null
       }
     ],
@@ -5252,17 +5252,17 @@
         "eps_actual": null
       },
       {
-        "period_end": "2025-12-31",
+        "period_end": "2026-03-31",
         "revenue": null,
-        "op_income": 1647764000000.0,
+        "op_income": -37136000000.0,
         "op_margin": null,
         "eps_actual": null
       },
       {
-        "period_end": "2025-09-30",
-        "revenue": 572392657500.0,
-        "op_income": 532758139993.0,
-        "op_margin": 93.08,
+        "period_end": "2025-12-31",
+        "revenue": null,
+        "op_income": 1647764000000.0,
+        "op_margin": null,
         "eps_actual": null
       }
     ],
@@ -5475,17 +5475,17 @@
         "eps_actual": null
       },
       {
+        "period_end": "2026-03-31",
+        "revenue": 1014637953637.0,
+        "op_income": 28415831534.0,
+        "op_margin": 2.8,
+        "eps_actual": null
+      },
+      {
         "period_end": "2025-12-31",
         "revenue": 4750115447932.0,
         "op_income": 229318481924.0,
         "op_margin": 4.83,
-        "eps_actual": null
-      },
-      {
-        "period_end": "2025-09-30",
-        "revenue": 1112913072700.0,
-        "op_income": 54382087088.0,
-        "op_margin": 4.89,
         "eps_actual": null
       }
     ],
@@ -5564,17 +5564,17 @@
         "eps_actual": null
       },
       {
+        "period_end": "2026-03-31",
+        "revenue": 1583682416000.0,
+        "op_income": 40491487000.0,
+        "op_margin": 2.56,
+        "eps_actual": null
+      },
+      {
         "period_end": "2025-12-31",
         "revenue": 9525137891000.0,
         "op_income": 2022604456000.0,
         "op_margin": 21.23,
-        "eps_actual": null
-      },
-      {
-        "period_end": "2025-09-30",
-        "revenue": 1474722781000.0,
-        "op_income": 302029116000.0,
-        "op_margin": 20.48,
         "eps_actual": null
       }
     ],
@@ -5630,17 +5630,17 @@
         "eps_actual": null
       },
       {
+        "period_end": "2026-03-31",
+        "revenue": 1047850481880.0,
+        "op_income": 86784662283.0,
+        "op_margin": 8.28,
+        "eps_actual": null
+      },
+      {
         "period_end": "2025-12-31",
         "revenue": 3625239285458.0,
         "op_income": 268322031894.0,
         "op_margin": 7.4,
-        "eps_actual": null
-      },
-      {
-        "period_end": "2025-09-30",
-        "revenue": 692787078849.0,
-        "op_income": 49394452742.0,
-        "op_margin": 7.13,
         "eps_actual": null
       }
     ],
@@ -5764,17 +5764,17 @@
         "eps_actual": null
       },
       {
+        "period_end": "2026-03-31",
+        "revenue": 1064516267874.0,
+        "op_income": 77791110693.0,
+        "op_margin": 7.31,
+        "eps_actual": null
+      },
+      {
         "period_end": "2025-12-31",
         "revenue": 4289984583062.0,
         "op_income": 364519710718.0,
         "op_margin": 8.5,
-        "eps_actual": null
-      },
-      {
-        "period_end": "2025-09-30",
-        "revenue": 898950306379.0,
-        "op_income": 117009914122.0,
-        "op_margin": 13.02,
         "eps_actual": null
       }
     ],
@@ -5813,21 +5813,12 @@
     "close": 88700.0,
     "ret_1m": -15.2,
     "analyst": {
-      "n_buy": 1,
+      "n_buy": 0,
       "n_hold": 0,
       "n_sell": 0,
-      "avg_target": 130000,
-      "latest_target": 130000.0,
-      "recent": [
-        {
-          "date": "2026-08-21",
-          "broker": "대신증권",
-          "title": "엔비디아가 LG를 고른 이유",
-          "opinion": "Buy",
-          "source_url": "https://finance.naver.com/research/company_read.naver?nid=95810",
-          "broker_url": "https://stock.pstatic.net/stock-research/company/15/20260821_company_35227000.pdf"
-        }
-      ]
+      "avg_target": null,
+      "latest_target": null,
+      "recent": []
     },
     "fundamentals": [
       {
@@ -5868,9 +5859,9 @@
       "risk_text": "위험요소를 가지고 있는 보고기간 말 현재의 미래에 관한 주요 가정 및 기타 추정불확실성의 주요 원천은 다음과 같습니다. 1) 확정급여형 퇴직급여제도 당사는 확정급여형 퇴직급여제도를 운영하고 있습니다. 확정급여채무는 매 보고기간말에 보험수리적 평가를 수행하여 계산되며, 이러한 보험수리적 평가방법을 적용하기 위해서는 할인율, 기대임금상승률, 사망률 등에 대한 가정을 추정하는 것이 필요합니다. 퇴직급여제도는 장기간이라는 성격으로 인하여 이러한 추정에 중요한 불확실성을 포함하고 있습니다. 당기말 현재 확정급여형 퇴직급여채무는 45,026백만원(전기말: 43,818백만원)이며, 세부사항은 주석 13에서 기술하고 있습니다. 당기 중 당사는 보다 합리적인 확정급여형 퇴직급여채무의 산정을 위하여 예측단위적립방식에 대한 보험수리적 가정 중 할인율 산정방식을 변경하였습니다. (주석 13 참고) 2) 손상 검사 손상여부를 검토하기 위한 현금창출단위의 회수가능금액은 사용가치 또는 순공정가치의 계산에 기초하여 결정되며 이러한 계산은 미래 예상치에 근거하여 추정합니다. 3) 금융상품의 공정가치 평가 활성시장에서 거래되지 않는 금융상품의 공정가치는 원칙적으로 평가기법을 사용하여 결정됩니다. 당사는 보고기간말 현재 중요한 시장상황에 기초하여 다양한 평가기법의 선택 및 가정에 대한 판단을 하고 있습니다. 4) 법인세 당사의 과세소득에 대한 법인세는 세법 및 과세당국의 결정을 적용하여 산정되므로 최종 세효과를 산정하는 데에는 불확실성이 존재합니다. (주석 21 참조) 당사는 특정 기간동안 과세소득의 일정 금액을 투자, 임금증가 등에 사용하지 않았을때 세법에서 정하는 방법에 따라 산정된 법인세를 추가로 부담합니다. 따라서, 해당 기간의 당기법인세와 이연법인세를 측정할 때 이에 따른 세효과를 반영하여야 하고, 이로 인해 당사가 부담할 법인세는 각 연도의 투자, 임금증가 등의 수정에 따라 달라지므로 최종 세효과를 산정하는데에는 불확실성이 존재합니다. 4. 부문별 정보 기업회계기준서 제1108호 \"영업부문\"에 따른 당사의 보고부문은 단일부문으로 기업전체 수준에서의 부문별 정보는 다음과 같습니다. (1) 영업수익에 대한 정보 당기 (단위 : 백만원) 영업부문 배당금수익 389,299 상표권사용수익 349,040 임대수익 등 146,650 영업수익 884,989 전기 (단위 : 백만원) 영업부문 배당금수익 432,079 상표권사용수익 356,361 임대수익 등 143,127 영업수익 931,567 (2) 지역에 대한 정보 당사의 영업수익은 대부분 국내기업으로부터 발생하였으며, 비유동자산은 대부분 국내(대한민국)에 소재하고 있습니다. (3) 주요 고객에 대한 정보 당기 (단위 : 백만원) 고객 기업전체 수익에 대한 비율 0.10 10% 이상을 차지하는 주요 고객으로부터의 영업수익 674,996 전기 (단위 : 백만원) 고객 기업전체 수익에 대한 비율 0.10 10% 이상을 차지하는 주요 고객으로부터의 영업수익 621,142 (4) 수익의 원천에 대한 정보 당기와 전기 중 당사의 수익의 원천에 대한 정보는 다음과 같으며, 고객과의 계약에서 생기는 수익은 모두 기간에 걸쳐 인식하고 있습니다. 당기 (단위 : 백만원) 공시금액 고객과의 계약에서 생기는 수익 …"
     },
     "quant": {
-      "buy_score": 87.5,
+      "buy_score": 65.0,
       "rank_in_level2": 1,
-      "upside_pct": 46.6,
+      "upside_pct": null,
       "composite": 1.0,
       "timing_state": "관측부족",
       "timing_score": 12.0
@@ -5970,10 +5961,10 @@
     "close": 501000.0,
     "ret_1m": 0.0,
     "analyst": {
-      "n_buy": 2,
+      "n_buy": 1,
       "n_hold": 0,
       "n_sell": 0,
-      "avg_target": 815000,
+      "avg_target": 800000,
       "latest_target": 800000.0,
       "recent": [
         {
@@ -5983,14 +5974,6 @@
           "opinion": "매수",
           "source_url": "https://finance.naver.com/research/company_read.naver?nid=95929",
           "broker_url": "https://stock.pstatic.net/stock-research/company/64/20260831_company_248021000.pdf"
-        },
-        {
-          "date": "2026-08-21",
-          "broker": "유안타증권",
-          "title": "아직 시작도 안했다",
-          "opinion": "Buy",
-          "source_url": "https://finance.naver.com/research/company_read.naver?nid=95802",
-          "broker_url": "https://stock.pstatic.net/stock-research/company/18/20260821_company_49560000.pdf"
         }
       ]
     },
@@ -6035,7 +6018,7 @@
     "quant": {
       "buy_score": 57.5,
       "rank_in_level2": 2,
-      "upside_pct": 62.7,
+      "upside_pct": 59.7,
       "composite": -1.0,
       "timing_state": "관측부족",
       "timing_score": 12.0
@@ -6287,17 +6270,17 @@
         "eps_actual": null
       },
       {
+        "period_end": "2026-03-31",
+        "revenue": 1019895422902.0,
+        "op_income": 17295040229.0,
+        "op_margin": 1.7,
+        "eps_actual": null
+      },
+      {
         "period_end": "2025-12-31",
         "revenue": 3118222633643.0,
         "op_income": 106942780756.0,
         "op_margin": 3.43,
-        "eps_actual": null
-      },
-      {
-        "period_end": "2025-09-30",
-        "revenue": 732036545775.0,
-        "op_income": 20063100457.0,
-        "op_margin": 2.74,
         "eps_actual": null
       }
     ],
@@ -6536,17 +6519,17 @@
         "eps_actual": null
       },
       {
+        "period_end": "2026-03-31",
+        "revenue": 1120596301813.0,
+        "op_income": 102208971317.0,
+        "op_margin": 9.12,
+        "eps_actual": null
+      },
+      {
         "period_end": "2025-12-31",
         "revenue": 4097813940685.0,
         "op_income": 442378347179.0,
         "op_margin": 10.8,
-        "eps_actual": null
-      },
-      {
-        "period_end": "2025-09-30",
-        "revenue": 749713765056.0,
-        "op_income": 60422735913.0,
-        "op_margin": 8.06,
         "eps_actual": null
       }
     ],
@@ -6910,17 +6893,17 @@
         "eps_actual": null
       },
       {
+        "period_end": "2026-03-31",
+        "revenue": 2354440022364.0,
+        "op_income": 78326031633.0,
+        "op_margin": 3.33,
+        "eps_actual": null
+      },
+      {
         "period_end": "2025-12-31",
         "revenue": 8353852873161.0,
         "op_income": 353127836029.0,
         "op_margin": 4.23,
-        "eps_actual": null
-      },
-      {
-        "period_end": "2025-09-30",
-        "revenue": 1977541584156.0,
-        "op_income": 56314018372.0,
-        "op_margin": 2.85,
         "eps_actual": null
       }
     ],
@@ -6986,17 +6969,17 @@
         "eps_actual": null
       },
       {
+        "period_end": "2026-03-31",
+        "revenue": 5044708085621.0,
+        "op_income": 421166214358.0,
+        "op_margin": 8.35,
+        "eps_actual": null
+      },
+      {
         "period_end": "2025-12-31",
         "revenue": 16501851540439.0,
         "op_income": 1539252001960.0,
         "op_margin": 9.33,
-        "eps_actual": null
-      },
-      {
-        "period_end": "2025-09-30",
-        "revenue": 3955883047271.0,
-        "op_income": 350923676747.0,
-        "op_margin": 8.87,
         "eps_actual": null
       }
     ],
@@ -7129,17 +7112,17 @@
         "eps_actual": null
       },
       {
+        "period_end": "2026-03-31",
+        "revenue": 2577099815070.0,
+        "op_income": -92684582980.0,
+        "op_margin": -3.6,
+        "eps_actual": null
+      },
+      {
         "period_end": "2025-12-31",
         "revenue": 11912607124952.0,
         "op_income": -345491903175.0,
         "op_margin": -2.9,
-        "eps_actual": null
-      },
-      {
-        "period_end": "2025-09-30",
-        "revenue": 3313062349470.0,
-        "op_income": -47281166125.0,
-        "op_margin": -1.43,
         "eps_actual": null
       }
     ],
@@ -7396,17 +7379,17 @@
         "eps_actual": null
       },
       {
+        "period_end": "2026-03-31",
+        "revenue": 357792662699.0,
+        "op_income": 252764364959.0,
+        "op_margin": 70.65,
+        "eps_actual": null
+      },
+      {
         "period_end": "2025-12-31",
         "revenue": 1403309682120.0,
         "op_income": 976824887814.0,
         "op_margin": 69.61,
-        "eps_actual": null
-      },
-      {
-        "period_end": "2025-09-30",
-        "revenue": 664697016081.0,
-        "op_income": 574381335787.0,
-        "op_margin": 86.41,
         "eps_actual": null
       }
     ],
