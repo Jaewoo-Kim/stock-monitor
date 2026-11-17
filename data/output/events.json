@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026-11-17",
+    "level2_id": "S6_bank",
+    "level2_name": "은행·금융지주",
+    "event_type": "timing_watch",
+    "from_state": "관측부족",
+    "to_state": "watch",
+    "detail": {
+      "timing_score": 64.5,
+      "rs_3m": 12.91,
+      "breadth_pct": 25.0
+    }
+  },
+  {
     "date": "2026-11-06",
     "level2_id": "S2_internet",
     "level2_name": "인터넷·플랫폼",
@@ -496,17 +509,6 @@
       "timing_score": 73.2,
       "rs_3m": -15.94,
       "breadth_pct": 60.0
-    }
-  },
-  {
-    "date": "2026-08-31",
-    "level2_id": "S7_power",
-    "level2_name": "전력기기·전선",
-    "event_type": "phase_turn",
-    "from_state": "바닥",
-    "to_state": "전환",
-    "detail": {
-      "composite_score": 0.2662
     }
   }
 ]

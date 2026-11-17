@@ -9,8 +9,8 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 29750.0,
-    "ret_1m": 2.4,
+    "close": 26450.0,
+    "ret_1m": -6.4,
     "analyst": {
       "n_buy": 0,
       "n_hold": 0,
@@ -35,17 +35,17 @@
         "eps_actual": null
       },
       {
+        "period_end": "2026-03-31",
+        "revenue": 25931675000000.0,
+        "op_income": -98996000000.0,
+        "op_margin": -0.38,
+        "eps_actual": null
+      },
+      {
         "period_end": "2025-12-31",
         "revenue": 95536164000000.0,
         "op_income": 8540000000000.0,
         "op_margin": 8.94,
-        "eps_actual": null
-      },
-      {
-        "period_end": "2025-09-30",
-        "revenue": 23861484000000.0,
-        "op_income": 1900916000000.0,
-        "op_margin": 7.97,
         "eps_actual": null
       }
     ],
@@ -76,8 +76,8 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 38500.0,
-    "ret_1m": 6.8,
+    "close": 38350.0,
+    "ret_1m": 5.9,
     "analyst": {
       "n_buy": 0,
       "n_hold": 0,
@@ -102,17 +102,17 @@
         "eps_actual": null
       },
       {
+        "period_end": "2026-03-31",
+        "revenue": 7131148000000.0,
+        "op_income": 265310000000.0,
+        "op_margin": 3.72,
+        "eps_actual": null
+      },
+      {
         "period_end": "2025-12-31",
         "revenue": 34018434000000.0,
         "op_income": 1791934000000.0,
         "op_margin": 5.27,
-        "eps_actual": null
-      },
-      {
-        "period_end": "2025-09-30",
-        "revenue": 12308977000000.0,
-        "op_income": 724228000000.0,
-        "op_margin": 5.88,
         "eps_actual": null
       }
     ],
@@ -143,8 +143,8 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 172600.0,
-    "ret_1m": -3.7,
+    "close": 169900.0,
+    "ret_1m": 0.2,
     "analyst": {
       "n_buy": 0,
       "n_hold": 0,
@@ -215,8 +215,8 @@
     ],
     "brief_source": "DART 사업보고서·애널리스트 리포트 종합",
     "brief_updated": "2026-06",
-    "close": 466500.0,
-    "ret_1m": -17.4,
+    "close": 463500.0,
+    "ret_1m": -11.7,
     "analyst": {
       "n_buy": 0,
       "n_hold": 0,
@@ -241,17 +241,17 @@
         "eps_actual": null
       },
       {
+        "period_end": "2026-03-31",
+        "revenue": 3598397010751.0,
+        "op_income": -607864488604.0,
+        "op_margin": -16.89,
+        "eps_actual": null
+      },
+      {
         "period_end": "2025-12-31",
         "revenue": 11455690694760.0,
         "op_income": -2321028795178.0,
         "op_margin": -20.26,
-        "eps_actual": null
-      },
-      {
-        "period_end": "2025-09-30",
-        "revenue": 2736680416035.0,
-        "op_income": -457859983073.0,
-        "op_margin": -16.73,
         "eps_actual": null
       }
     ],
@@ -291,8 +291,8 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 79500.0,
-    "ret_1m": -27.9,
+    "close": 76100.0,
+    "ret_1m": -24.5,
     "analyst": {
       "n_buy": 0,
       "n_hold": 0,
@@ -317,17 +317,17 @@
         "eps_actual": null
       },
       {
+        "period_end": "2026-03-31",
+        "revenue": 314137293423.0,
+        "op_income": -45275277032.0,
+        "op_margin": -14.41,
+        "eps_actual": null
+      },
+      {
         "period_end": "2025-12-31",
         "revenue": 2149618578656.0,
         "op_income": -154267011113.0,
         "op_margin": -7.18,
-        "eps_actual": null
-      },
-      {
-        "period_end": "2025-09-30",
-        "revenue": 364407216784.0,
-        "op_income": -139778882759.0,
-        "op_margin": -38.36,
         "eps_actual": null
       }
     ],
@@ -363,8 +363,8 @@
     ],
     "brief_source": "DART 사업보고서·애널리스트 리포트 종합",
     "brief_updated": "2026-06",
-    "close": 89100.0,
-    "ret_1m": -21.2,
+    "close": 86500.0,
+    "ret_1m": -15.8,
     "analyst": {
       "n_buy": 0,
       "n_hold": 0,
@@ -389,17 +389,17 @@
         "eps_actual": null
       },
       {
+        "period_end": "2026-03-31",
+        "revenue": 149623783719.0,
+        "op_income": -1875831134.0,
+        "op_margin": -1.25,
+        "eps_actual": null
+      },
+      {
         "period_end": "2025-12-31",
         "revenue": 964951507323.0,
         "op_income": 18027054327.0,
         "op_margin": 1.87,
-        "eps_actual": null
-      },
-      {
-        "period_end": "2025-09-30",
-        "revenue": 233850177455.0,
-        "op_income": -9961480834.0,
-        "op_margin": -4.26,
         "eps_actual": null
       }
     ],
@@ -444,8 +444,8 @@
     ],
     "brief_source": "DART 사업보고서·애널리스트 리포트 종합",
     "brief_updated": "2026-06",
-    "close": 327500.0,
-    "ret_1m": -20.6,
+    "close": 318000.0,
+    "ret_1m": -19.1,
     "analyst": {
       "n_buy": 0,
       "n_hold": 0,
@@ -525,8 +525,8 @@
     ],
     "brief_source": "DART 사업보고서·애널리스트 리포트 종합",
     "brief_updated": "2026-06",
-    "close": 7130.0,
-    "ret_1m": -5.8,
+    "close": 7020.0,
+    "ret_1m": -4.1,
     "analyst": {
       "n_buy": 0,
       "n_hold": 0,
@@ -551,17 +551,17 @@
         "eps_actual": null
       },
       {
+        "period_end": "2026-03-31",
+        "revenue": 6074403000000.0,
+        "op_income": 64445000000.0,
+        "op_margin": 1.06,
+        "eps_actual": null
+      },
+      {
         "period_end": "2025-12-31",
         "revenue": 24115926000000.0,
         "op_income": -624135000000.0,
         "op_margin": -2.59,
-        "eps_actual": null
-      },
-      {
-        "period_end": "2025-09-30",
-        "revenue": 5620066000000.0,
-        "op_income": -288957000000.0,
-        "op_margin": -5.14,
         "eps_actual": null
       }
     ],
@@ -601,8 +601,8 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 21800.0,
-    "ret_1m": -20.7,
+    "close": 20200.0,
+    "ret_1m": -21.1,
     "analyst": {
       "n_buy": 0,
       "n_hold": 0,
@@ -667,8 +667,8 @@
     ],
     "brief_source": "DART 사업보고서·애널리스트 리포트 종합",
     "brief_updated": "2026-06",
-    "close": 873000.0,
-    "ret_1m": -36.8,
+    "close": 779000.0,
+    "ret_1m": -30.6,
     "analyst": {
       "n_buy": 3,
       "n_hold": 0,
@@ -718,17 +718,17 @@
         "eps_actual": null
       },
       {
+        "period_end": "2026-03-31",
+        "revenue": 2874322402431.0,
+        "op_income": 447061493383.0,
+        "op_margin": 15.55,
+        "eps_actual": null
+      },
+      {
         "period_end": "2025-12-31",
         "revenue": 8377908028341.0,
         "op_income": 355940316783.0,
         "op_margin": 4.25,
-        "eps_actual": null
-      },
-      {
-        "period_end": "2025-09-30",
-        "revenue": 1869195368203.0,
-        "op_income": -5182400708.0,
-        "op_margin": -0.28,
         "eps_actual": null
       }
     ],
@@ -752,7 +752,7 @@
     "quant": {
       "buy_score": 62.5,
       "rank_in_level2": 3,
-      "upside_pct": 150.1,
+      "upside_pct": 180.3,
       "composite": -1.0,
       "timing_state": "관측부족",
       "timing_score": 12.0
@@ -773,8 +773,8 @@
     ],
     "brief_source": "DART 사업보고서·애널리스트 리포트 종합",
     "brief_updated": "2026-06",
-    "close": 286000.0,
-    "ret_1m": -37.0,
+    "close": 276000.0,
+    "ret_1m": -29.4,
     "analyst": {
       "n_buy": 0,
       "n_hold": 0,
@@ -854,8 +854,8 @@
     ],
     "brief_source": "DART 사업보고서·애널리스트 리포트 종합",
     "brief_updated": "2026-06",
-    "close": 136600.0,
-    "ret_1m": -23.4,
+    "close": 130600.0,
+    "ret_1m": -21.1,
     "analyst": {
       "n_buy": 0,
       "n_hold": 0,
@@ -880,17 +880,17 @@
         "eps_actual": null
       },
       {
+        "period_end": "2026-03-31",
+        "revenue": 7641388000000.0,
+        "op_income": -400370000000.0,
+        "op_margin": -5.24,
+        "eps_actual": null
+      },
+      {
         "period_end": "2025-12-31",
         "revenue": 29554826000000.0,
         "op_income": -787504000000.0,
         "op_margin": -2.66,
-        "eps_actual": null
-      },
-      {
-        "period_end": "2025-09-30",
-        "revenue": 7964514000000.0,
-        "op_income": 278276000000.0,
-        "op_margin": 3.49,
         "eps_actual": null
       }
     ],
@@ -926,8 +926,8 @@
     ],
     "brief_source": "DART 사업보고서·애널리스트 리포트 종합",
     "brief_updated": "2026-06",
-    "close": 1241000.0,
-    "ret_1m": -14.8,
+    "close": 1118000.0,
+    "ret_1m": -9.7,
     "analyst": {
       "n_buy": 2,
       "n_hold": 0,
@@ -969,17 +969,17 @@
         "eps_actual": null
       },
       {
+        "period_end": "2026-03-31",
+        "revenue": 92019508000000.0,
+        "op_income": 72560309000000.0,
+        "op_margin": 78.85,
+        "eps_actual": null
+      },
+      {
         "period_end": "2025-12-31",
         "revenue": 86852117000000.0,
         "op_income": 44007409000000.0,
         "op_margin": 50.67,
-        "eps_actual": null
-      },
-      {
-        "period_end": "2025-09-30",
-        "revenue": 15945294000000.0,
-        "op_income": 6763303000000.0,
-        "op_margin": 42.42,
         "eps_actual": null
       }
     ],
@@ -1011,7 +1011,7 @@
     "quant": {
       "buy_score": 70.0,
       "rank_in_level2": 2,
-      "upside_pct": 137.7,
+      "upside_pct": 163.9,
       "composite": -1.0,
       "timing_state": "관측부족",
       "timing_score": 12.0
@@ -1032,8 +1032,8 @@
     ],
     "brief_source": "DART 사업보고서·애널리스트 리포트 종합",
     "brief_updated": "2026-06",
-    "close": 206500.0,
-    "ret_1m": -11.8,
+    "close": 195000.0,
+    "ret_1m": -6.0,
     "analyst": {
       "n_buy": 2,
       "n_hold": 0,
@@ -1075,17 +1075,17 @@
         "eps_actual": null
       },
       {
+        "period_end": "2026-03-31",
+        "revenue": 175287109000000.0,
+        "op_income": 102767395000000.0,
+        "op_margin": 58.63,
+        "eps_actual": null
+      },
+      {
         "period_end": "2025-12-31",
         "revenue": 238043009000000.0,
         "op_income": 23603619000000.0,
         "op_margin": 9.92,
-        "eps_actual": null
-      },
-      {
-        "period_end": "2025-09-30",
-        "revenue": 55534871000000.0,
-        "op_income": 1469273000000.0,
-        "op_margin": 2.65,
         "eps_actual": null
       }
     ],
@@ -1125,7 +1125,7 @@
     "quant": {
       "buy_score": 70.0,
       "rank_in_level2": 1,
-      "upside_pct": 86.4,
+      "upside_pct": 97.4,
       "composite": -1.0,
       "timing_state": "관측부족",
       "timing_score": 12.0
@@ -1141,8 +1141,8 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 170400.0,
-    "ret_1m": -35.5,
+    "close": 150900.0,
+    "ret_1m": -23.4,
     "analyst": {
       "n_buy": 0,
       "n_hold": 0,
@@ -1213,8 +1213,8 @@
     ],
     "brief_source": "DART 사업보고서·애널리스트 리포트 종합",
     "brief_updated": "2026-06",
-    "close": 179600.0,
-    "ret_1m": -21.9,
+    "close": 169000.0,
+    "ret_1m": -9.5,
     "analyst": {
       "n_buy": 0,
       "n_hold": 0,
@@ -1280,8 +1280,8 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 51800.0,
-    "ret_1m": -35.6,
+    "close": 48650.0,
+    "ret_1m": -26.0,
     "analyst": {
       "n_buy": 0,
       "n_hold": 0,
@@ -1347,8 +1347,8 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 284000.0,
-    "ret_1m": -28.9,
+    "close": 281500.0,
+    "ret_1m": -14.2,
     "analyst": {
       "n_buy": 1,
       "n_hold": 0,
@@ -1382,17 +1382,17 @@
         "eps_actual": null
       },
       {
+        "period_end": "2026-03-31",
+        "revenue": 273954814774.0,
+        "op_income": 40101521370.0,
+        "op_margin": 14.64,
+        "eps_actual": null
+      },
+      {
         "period_end": "2025-12-31",
         "revenue": 780891546823.0,
         "op_income": 116901511399.0,
         "op_margin": 14.97,
-        "eps_actual": null
-      },
-      {
-        "period_end": "2025-09-30",
-        "revenue": 192603565675.0,
-        "op_income": 33075690042.0,
-        "op_margin": 17.17,
         "eps_actual": null
       }
     ],
@@ -1407,7 +1407,7 @@
     "quant": {
       "buy_score": 87.5,
       "rank_in_level2": 1,
-      "upside_pct": 95.1,
+      "upside_pct": 96.8,
       "composite": 1.0,
       "timing_state": "관측부족",
       "timing_score": 17.0
@@ -1423,8 +1423,8 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 39550.0,
-    "ret_1m": -36.8,
+    "close": 36400.0,
+    "ret_1m": -23.7,
     "analyst": {
       "n_buy": 0,
       "n_hold": 0,
@@ -1449,17 +1449,17 @@
         "eps_actual": null
       },
       {
+        "period_end": "2026-03-31",
+        "revenue": 51605771869.0,
+        "op_income": 27845466483.0,
+        "op_margin": 53.96,
+        "eps_actual": null
+      },
+      {
         "period_end": "2025-12-31",
         "revenue": 172964572189.0,
         "op_income": 89902342748.0,
         "op_margin": 51.98,
-        "eps_actual": null
-      },
-      {
-        "period_end": "2025-09-30",
-        "revenue": 36895112050.0,
-        "op_income": 18707372049.0,
-        "op_margin": 50.7,
         "eps_actual": null
       }
     ],
@@ -1516,17 +1516,17 @@
         "eps_actual": null
       },
       {
+        "period_end": "2026-03-31",
+        "revenue": 120821436926.0,
+        "op_income": 49714626396.0,
+        "op_margin": 41.15,
+        "eps_actual": null
+      },
+      {
         "period_end": "2025-12-31",
         "revenue": 401581226959.0,
         "op_income": 130228704050.0,
         "op_margin": 32.43,
-        "eps_actual": null
-      },
-      {
-        "period_end": "2025-09-30",
-        "revenue": 90571567623.0,
-        "op_income": 24467378251.0,
-        "op_margin": 27.01,
         "eps_actual": null
       }
     ],
@@ -1557,8 +1557,8 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 228000.0,
-    "ret_1m": 16.1,
+    "close": 227500.0,
+    "ret_1m": 19.4,
     "analyst": {
       "n_buy": 0,
       "n_hold": 0,
@@ -1583,17 +1583,17 @@
         "eps_actual": null
       },
       {
+        "period_end": "2026-03-31",
+        "revenue": 1448472087561.0,
+        "op_income": 127553926654.0,
+        "op_margin": 8.81,
+        "eps_actual": null
+      },
+      {
         "period_end": "2025-12-31",
         "revenue": 5464637894164.0,
         "op_income": 520433363884.0,
         "op_margin": 9.52,
-        "eps_actual": null
-      },
-      {
-        "period_end": "2025-09-30",
-        "revenue": 1365612369538.0,
-        "op_income": 149526207810.0,
-        "op_margin": 10.95,
         "eps_actual": null
       }
     ],
@@ -1624,8 +1624,8 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 45050.0,
-    "ret_1m": 21.1,
+    "close": 43650.0,
+    "ret_1m": 18.5,
     "analyst": {
       "n_buy": 0,
       "n_hold": 0,
@@ -1691,8 +1691,8 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 77200.0,
-    "ret_1m": -0.9,
+    "close": 75400.0,
+    "ret_1m": -3.1,
     "analyst": {
       "n_buy": 0,
       "n_hold": 0,
@@ -1758,8 +1758,8 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 155600.0,
-    "ret_1m": -4.1,
+    "close": 158000.0,
+    "ret_1m": -3.7,
     "analyst": {
       "n_buy": 0,
       "n_hold": 0,
@@ -1784,17 +1784,17 @@
         "eps_actual": null
       },
       {
+        "period_end": "2026-03-31",
+        "revenue": 839073831000.0,
+        "op_income": 35358048000.0,
+        "op_margin": 4.21,
+        "eps_actual": null
+      },
+      {
         "period_end": "2025-12-31",
         "revenue": 912672534000.0,
         "op_income": 37655249000.0,
         "op_margin": 4.13,
-        "eps_actual": null
-      },
-      {
-        "period_end": "2025-09-30",
-        "revenue": 207706573000.0,
-        "op_income": 7610399000.0,
-        "op_margin": 3.66,
         "eps_actual": null
       }
     ],
@@ -1825,8 +1825,8 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 188700.0,
-    "ret_1m": -8.6,
+    "close": 181400.0,
+    "ret_1m": -8.8,
     "analyst": {
       "n_buy": 0,
       "n_hold": 0,
@@ -1851,17 +1851,17 @@
         "eps_actual": null
       },
       {
+        "period_end": "2026-03-31",
+        "revenue": 459486390234.0,
+        "op_income": 104421373620.0,
+        "op_margin": 22.73,
+        "eps_actual": null
+      },
+      {
         "period_end": "2025-12-31",
         "revenue": 1285926010428.0,
         "op_income": 46381921235.0,
         "op_margin": 3.61,
-        "eps_actual": null
-      },
-      {
-        "period_end": "2025-09-30",
-        "revenue": 327461088781.0,
-        "op_income": 10157992345.0,
-        "op_margin": 3.1,
         "eps_actual": null
       }
     ],
@@ -1892,8 +1892,8 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 200500.0,
-    "ret_1m": 7.0,
+    "close": 199600.0,
+    "ret_1m": 3.5,
     "analyst": {
       "n_buy": 0,
       "n_hold": 0,
@@ -1918,17 +1918,17 @@
         "eps_actual": null
       },
       {
+        "period_end": "2026-03-31",
+        "revenue": 709624665587.0,
+        "op_income": 247062466386.0,
+        "op_margin": 34.82,
+        "eps_actual": null
+      },
+      {
         "period_end": "2025-12-31",
         "revenue": 2885650182961.0,
         "op_income": 1062718474025.0,
         "op_margin": 36.83,
-        "eps_actual": null
-      },
-      {
-        "period_end": "2025-09-30",
-        "revenue": 859423980351.0,
-        "op_income": 461399206548.0,
-        "op_margin": 53.69,
         "eps_actual": null
       }
     ],
@@ -1964,8 +1964,8 @@
     ],
     "brief_source": "DART 사업보고서·애널리스트 리포트 종합",
     "brief_updated": "2026-06",
-    "close": 180900.0,
-    "ret_1m": 2.3,
+    "close": 171900.0,
+    "ret_1m": 0.3,
     "analyst": {
       "n_buy": 1,
       "n_hold": 0,
@@ -2024,7 +2024,7 @@
     "quant": {
       "buy_score": 87.5,
       "rank_in_level2": 1,
-      "upside_pct": 76.9,
+      "upside_pct": 86.2,
       "composite": 1.0,
       "timing_state": "관측부족",
       "timing_score": 21.0
@@ -2045,56 +2045,15 @@
     ],
     "brief_source": "DART 사업보고서·애널리스트 리포트 종합",
     "brief_updated": "2026-06",
-    "close": 31850.0,
-    "ret_1m": 1.8,
+    "close": 32400.0,
+    "ret_1m": 5.0,
     "analyst": {
-      "n_buy": 6,
+      "n_buy": 0,
       "n_hold": 0,
       "n_sell": 0,
-      "avg_target": 58167,
-      "latest_target": 70000.0,
-      "recent": [
-        {
-          "date": "2026-08-24",
-          "broker": "키움증권",
-          "title": "복합적 변수 고려할 필요",
-          "opinion": "Buy",
-          "source_url": "https://finance.naver.com/research/company_read.naver?nid=95816",
-          "broker_url": "https://stock.pstatic.net/stock-research/company/39/20260824_company_632606000.pdf"
-        },
-        {
-          "date": "2026-08-24",
-          "broker": "유진투자증권",
-          "title": "인적분할의 긍정적인 측면과 한계점",
-          "opinion": "Buy",
-          "source_url": "https://finance.naver.com/research/company_read.naver?nid=95824",
-          "broker_url": "https://stock.pstatic.net/stock-research/company/63/20260824_company_919283000.pdf"
-        },
-        {
-          "date": "2026-08-24",
-          "broker": "미래에셋증권",
-          "title": "인적분할 결정",
-          "opinion": "매수",
-          "source_url": "https://finance.naver.com/research/company_read.naver?nid=95833",
-          "broker_url": "https://stock.pstatic.net/stock-research/company/56/20260824_company_319267000.pdf"
-        },
-        {
-          "date": "2026-08-24",
-          "broker": "하나증권",
-          "title": "X/AI로 나뉘는 카카오, 우선은 지켜보자",
-          "opinion": "Buy",
-          "source_url": "https://finance.naver.com/research/company_read.naver?nid=95836",
-          "broker_url": "https://stock.pstatic.net/stock-research/company/57/20260824_company_772892000.pdf"
-        },
-        {
-          "date": "2026-08-24",
-          "broker": "교보증권",
-          "title": "성장주로의 복귀를 위한 포석",
-          "opinion": "Buy",
-          "source_url": "https://finance.naver.com/research/company_read.naver?nid=95840",
-          "broker_url": "https://stock.pstatic.net/stock-research/company/62/20260824_company_136027000.pdf"
-        }
-      ]
+      "avg_target": null,
+      "latest_target": null,
+      "recent": []
     },
     "fundamentals": [
       {
@@ -2135,9 +2094,9 @@
       "risk_text": "위험요소들을 관리하기위하여 각각의 위험요인에 대해 면밀하게 모니터링하고 대응하는 위험관리 정책 및 프로그램을 운용하고 있습니다. (1) 시장위험1) 이자율변동 위험이자율 위험은 미래시장 이자율 변동에 따라 예금 또는 차입금 등에서 발생하는 이자수익 및 이자비용이 변동될 위험으로서 이는 주로 예금에서 발생하고 있습니다. 회사의 이자율위험관리 목표는 이자율 변동으로 인한 불확실성의 최소화를 추구함으로써 기업의 가치를 극대화하는 데 있습니다.보고기간종료일 현재 회사는 시장위험에 노출되어 있는 유의적인 변동금리부조건의 차입금 및 예금 등을 보유하고 있지 않습니다. 2) 가격위험회사는 유동성관리 및 영업상의 필요 등으로 상장 및 비상장주식을 포함하는 지분증권 및 채무증권에 투자하고 있습니다. 회사는 이를 위하여 하나 이상의 직접적 또는 간접적 투자수단을 이용하고 있습니다.보고기간종료일 현재 다른 모든 변수가 일정하고 시장성 있는 공정가치 측정 지분증권의 주당 주식가액이 5.0% 상승 또는 하락할 경우, 세전 공정가치 측정 지분증권 평가손익은 1,930백만원 (전기: 189백만원)만큼 증가 또는 감소하였을 것입니다.회사의 투자금융상품이 당기손익 및 기타포괄손익에 미치는 영향은 주석 10에서 설명하고 있습니다. 3) 외환위험외환위험이란 환율의 변동으로 인하여 금융상품의 공정가치나 미래현금흐름이 변동할 위험입니다. 환율위험은 금융상품을 측정하는 기능통화 이외의 통화로 표시된 금융상품에서 발생합니다. 따라서 비화폐성 항목이나 기능통화로 표시된 금융상품에서는 환율위험이 발생하지 않습니다. 보고기간종료일 현재 외환 위험에 노출되어 있는 회사의 금융자산ㆍ부채의 원화환산기준액은 다음과 같습니다. (단위: 천원) 구분 USD JPY EUR CNY SGD NZD HKD 현금및현금성자산 1,367,377 169,984 - 1,189,840 17,708 - - 매출채권 19,674,081 61,267 1,989 204,338 - 5 473 합계 21,041,458 231,251 1,989 1,394,178 17,708 5 473 미지급금 2,551,612 84,338 12,243 - - - - 합계 2,551,612 84,338 12,243 - - - - 보고기간종료일 현재 회사는 외화예금 등을 보유하고 있으며, 다른 모든 변수가 일정하고 외화에 대한 원화의 환율이 5.0% 상승 또는 하락할 경우, 회사의 세전이익은 1,002백만원(전기: 1,029백만원) 만큼 감소 또는 증가하였을 것입니다. (2) 신용위험신용위험은 보유하고 있는 수취채권을 포함한 거래처에 대한 신용위험 뿐만아니라 현금및현금성자산 및 은행 등 금융기관 예치금으로부터 발생하고 있습니다(신용위험 관련 사항은 주석 41 참조). 보고기간종료일 현재 신용위험에 대한 최대노출액은 다음과 같습니다. (단위: 천원) 구분 당기말 전기말 현금및현금성자산 2,109,188,905 1,954,214,932 단기금융상품 11,500,000 11,500,000 장기금융상품 10,000,000 10,000,000 매출채권 177,919,595 180,630,181 기타유동금융자산 201,935,757 229,053,274 기타비유동금융자산 59,555,554 241,051,164 단기금융리스채권 …"
     },
     "quant": {
-      "buy_score": 57.5,
+      "buy_score": 35.0,
       "rank_in_level2": 2,
-      "upside_pct": 82.6,
+      "upside_pct": null,
       "composite": -1.0,
       "timing_state": "관측부족",
       "timing_score": 21.0
@@ -2153,8 +2112,8 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 80800.0,
-    "ret_1m": 0.5,
+    "close": 84300.0,
+    "ret_1m": 8.5,
     "analyst": {
       "n_buy": 4,
       "n_hold": 0,
@@ -2212,17 +2171,17 @@
         "eps_actual": null
       },
       {
+        "period_end": "2026-03-31",
+        "revenue": 3156315000000.0,
+        "op_income": 413496000000.0,
+        "op_margin": 13.1,
+        "eps_actual": null
+      },
+      {
         "period_end": "2025-12-31",
         "revenue": 12051068000000.0,
         "op_income": 811842000000.0,
         "op_margin": 6.74,
-        "eps_actual": null
-      },
-      {
-        "period_end": "2025-09-30",
-        "revenue": 3167455000000.0,
-        "op_income": 482366000000.0,
-        "op_margin": 15.23,
         "eps_actual": null
       }
     ],
@@ -2237,10 +2196,10 @@
     "quant": {
       "buy_score": 57.5,
       "rank_in_level2": 1,
-      "upside_pct": 67.1,
+      "upside_pct": 60.1,
       "composite": -1.0,
       "timing_state": "관측부족",
-      "timing_score": 21.0
+      "timing_score": 25.0
     }
   },
   "030200": {
@@ -2253,8 +2212,8 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 51700.0,
-    "ret_1m": 4.6,
+    "close": 51600.0,
+    "ret_1m": 1.2,
     "analyst": {
       "n_buy": 1,
       "n_hold": 0,
@@ -2288,17 +2247,17 @@
         "eps_actual": null
       },
       {
+        "period_end": "2026-03-31",
+        "revenue": 4987894000000.0,
+        "op_income": 299277000000.0,
+        "op_margin": 6.0,
+        "eps_actual": null
+      },
+      {
         "period_end": "2025-12-31",
         "revenue": 19324024000000.0,
         "op_income": 1304973000000.0,
         "op_margin": 6.75,
-        "eps_actual": null
-      },
-      {
-        "period_end": "2025-09-30",
-        "revenue": 4682007000000.0,
-        "op_income": 400114000000.0,
-        "op_margin": 8.55,
         "eps_actual": null
       }
     ],
@@ -2313,10 +2272,10 @@
     "quant": {
       "buy_score": 57.5,
       "rank_in_level2": 2,
-      "upside_pct": 47.0,
+      "upside_pct": 47.3,
       "composite": -1.0,
       "timing_state": "관측부족",
-      "timing_score": 21.0
+      "timing_score": 25.0
     }
   },
   "032640": {
@@ -2329,8 +2288,8 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 15230.0,
-    "ret_1m": 3.9,
+    "close": 15800.0,
+    "ret_1m": 5.0,
     "analyst": {
       "n_buy": 1,
       "n_hold": 0,
@@ -2364,17 +2323,17 @@
         "eps_actual": null
       },
       {
+        "period_end": "2026-03-31",
+        "revenue": 3757173000000.0,
+        "op_income": 306716000000.0,
+        "op_margin": 8.16,
+        "eps_actual": null
+      },
+      {
         "period_end": "2025-12-31",
         "revenue": 14204231000000.0,
         "op_income": 911741000000.0,
         "op_margin": 6.42,
-        "eps_actual": null
-      },
-      {
-        "period_end": "2025-09-30",
-        "revenue": 3442599000000.0,
-        "op_income": 260725000000.0,
-        "op_margin": 7.57,
         "eps_actual": null
       }
     ],
@@ -2387,12 +2346,12 @@
       "risk_text": "위험요소가 내포되어 있습니다. CC 원리금의 채무불이행이 발생할 가능성이 높습니다. C 원리금의 채무불이행이 발생할 가능성이 지극히 높습니다. D 현재 채무불이행 상태에 있습니다. CP A1 적기상환능력이 최고수준이며, 그 안전성은 현 단계에서 합리적 으로 예측가능한 장래의 환경에 영향을 받지 않을만큼 높습니다. A2 적기상환능력이 우수하지만, 그 안정성은 A1에 비하여 다소열등한 요소가 있습니다. A3 적기상환능력이 양호하지만, 그 안정성은 급격한 환경 변화에따라 다소 영향을 받을 가능성이 있습니다. B 최소한의 적기상환능력은 인정되나, 그 안정성이 환경변화로저하될 가능성이 있어, 투기적인 요소를 내포하고 있습니다. C 적기상환능력 및 그 안정성이 매우 가변적이어서 투기적인 요소가 강합니다. D 현재 채무불이행 상태에 있습니다. 자. 회사의 주권상장(또는 등록ㆍ지정) 및 특례상장에 관한 사항 주권상장(또는 등록ㆍ지정)현황 주권상장(또는 등록ㆍ지정)일자 특례상장 유형 유가증권시장 상장 2008년 04월 21일 해당사항 없음 2. 회사의 연혁 가. 회사의 본점소재지 및 그 변경 2015.04.10 서울특별시 용산구 한강대로 32 LG유플러스 빌딩 나. 경영진 및 감사의 중요한 변동 보고서 작성기준일 현재 회사의"
     },
     "quant": {
-      "buy_score": 47.7,
+      "buy_score": 42.4,
       "rank_in_level2": 3,
-      "upside_pct": 31.3,
+      "upside_pct": 26.6,
       "composite": -1.0,
       "timing_state": "관측부족",
-      "timing_score": 21.0
+      "timing_score": 25.0
     }
   },
   "000270": {
@@ -2410,8 +2369,8 @@
     ],
     "brief_source": "DART 사업보고서·애널리스트 리포트 종합",
     "brief_updated": "2026-06",
-    "close": 93600.0,
-    "ret_1m": -12.8,
+    "close": 94900.0,
+    "ret_1m": -9.8,
     "analyst": {
       "n_buy": 0,
       "n_hold": 0,
@@ -2436,17 +2395,17 @@
         "eps_actual": null
       },
       {
+        "period_end": "2026-03-31",
+        "revenue": 16956560000000.0,
+        "op_income": 892042000000.0,
+        "op_margin": 5.26,
+        "eps_actual": null
+      },
+      {
         "period_end": "2025-12-31",
         "revenue": 65148676000000.0,
         "op_income": 5954083000000.0,
         "op_margin": 9.14,
-        "eps_actual": null
-      },
-      {
-        "period_end": "2025-09-30",
-        "revenue": 16089669000000.0,
-        "op_income": 1915155000000.0,
-        "op_margin": 11.9,
         "eps_actual": null
       }
     ],
@@ -2491,8 +2450,8 @@
     ],
     "brief_source": "DART 사업보고서·애널리스트 리포트 종합",
     "brief_updated": "2026-06",
-    "close": 266500.0,
-    "ret_1m": -14.4,
+    "close": 264000.0,
+    "ret_1m": -8.8,
     "analyst": {
       "n_buy": 6,
       "n_hold": 0,
@@ -2558,17 +2517,17 @@
         "eps_actual": null
       },
       {
+        "period_end": "2026-03-31",
+        "revenue": 16340774000000.0,
+        "op_income": 709673000000.0,
+        "op_margin": 4.34,
+        "eps_actual": null
+      },
+      {
         "period_end": "2025-12-31",
         "revenue": 78766791000000.0,
         "op_income": 3515052000000.0,
         "op_margin": 4.46,
-        "eps_actual": null
-      },
-      {
-        "period_end": "2025-09-30",
-        "revenue": 19227092000000.0,
-        "op_income": 1878785000000.0,
-        "op_margin": 9.77,
         "eps_actual": null
       }
     ],
@@ -2592,7 +2551,7 @@
     "quant": {
       "buy_score": 62.5,
       "rank_in_level2": 1,
-      "upside_pct": 167.0,
+      "upside_pct": 169.6,
       "composite": -1.0,
       "timing_state": "관측부족",
       "timing_score": 16.0
@@ -2608,8 +2567,8 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 353500.0,
-    "ret_1m": 2.6,
+    "close": 354500.0,
+    "ret_1m": 7.1,
     "analyst": {
       "n_buy": 0,
       "n_hold": 0,
@@ -2634,17 +2593,17 @@
         "eps_actual": null
       },
       {
+        "period_end": "2026-03-31",
+        "revenue": 8947872000000.0,
+        "op_income": 74963000000.0,
+        "op_margin": 0.84,
+        "eps_actual": null
+      },
+      {
         "period_end": "2025-12-31",
         "revenue": 36256823000000.0,
         "op_income": 1736959000000.0,
         "op_margin": 4.79,
-        "eps_actual": null
-      },
-      {
-        "period_end": "2025-09-30",
-        "revenue": 8885885000000.0,
-        "op_income": 374192000000.0,
-        "op_margin": 4.21,
         "eps_actual": null
       }
     ],
@@ -2675,8 +2634,8 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 34150.0,
-    "ret_1m": -18.4,
+    "close": 33850.0,
+    "ret_1m": -12.9,
     "analyst": {
       "n_buy": 0,
       "n_hold": 0,
@@ -2701,17 +2660,17 @@
         "eps_actual": null
       },
       {
+        "period_end": "2026-03-31",
+        "revenue": 727392740853.0,
+        "op_income": 4619517831.0,
+        "op_margin": 0.64,
+        "eps_actual": null
+      },
+      {
         "period_end": "2025-12-31",
         "revenue": 3029657613639.0,
         "op_income": 13491478981.0,
         "op_margin": 0.45,
-        "eps_actual": null
-      },
-      {
-        "period_end": "2025-09-30",
-        "revenue": 702847551737.0,
-        "op_income": 3404801244.0,
-        "op_margin": 0.48,
         "eps_actual": null
       }
     ],
@@ -2742,8 +2701,8 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 22800.0,
-    "ret_1m": -2.1,
+    "close": 22950.0,
+    "ret_1m": 3.8,
     "analyst": {
       "n_buy": 3,
       "n_hold": 0,
@@ -2826,7 +2785,7 @@
     "quant": {
       "buy_score": 87.5,
       "rank_in_level2": 2,
-      "upside_pct": 1381.0,
+      "upside_pct": 1371.3,
       "composite": 1.0,
       "timing_state": "관측부족",
       "timing_score": 17.0
@@ -2842,8 +2801,8 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 228000.0,
-    "ret_1m": -12.8,
+    "close": 234000.0,
+    "ret_1m": -12.2,
     "analyst": {
       "n_buy": 1,
       "n_hold": 0,
@@ -2877,17 +2836,17 @@
         "eps_actual": null
       },
       {
+        "period_end": "2026-03-31",
+        "revenue": 791742726247.0,
+        "op_income": 35298236923.0,
+        "op_margin": 4.46,
+        "eps_actual": null
+      },
+      {
         "period_end": "2025-12-31",
         "revenue": 3040730093373.0,
         "op_income": -3136953974.0,
         "op_margin": -0.1,
-        "eps_actual": null
-      },
-      {
-        "period_end": "2025-09-30",
-        "revenue": 892729393950.0,
-        "op_income": 72949589548.0,
-        "op_margin": 8.17,
         "eps_actual": null
       }
     ],
@@ -2902,7 +2861,7 @@
     "quant": {
       "buy_score": 57.5,
       "rank_in_level2": 3,
-      "upside_pct": 53.5,
+      "upside_pct": 49.6,
       "composite": -1.0,
       "timing_state": "관측부족",
       "timing_score": 17.0
@@ -2923,8 +2882,8 @@
     ],
     "brief_source": "DART 사업보고서·애널리스트 리포트 종합",
     "brief_updated": "2026-06",
-    "close": 125900.0,
-    "ret_1m": -2.7,
+    "close": 129200.0,
+    "ret_1m": -1.4,
     "analyst": {
       "n_buy": 2,
       "n_hold": 0,
@@ -2966,17 +2925,17 @@
         "eps_actual": null
       },
       {
+        "period_end": "2026-03-31",
+        "revenue": 694612122838.0,
+        "op_income": 66422814245.0,
+        "op_margin": 9.56,
+        "eps_actual": null
+      },
+      {
         "period_end": "2025-12-31",
         "revenue": 2653725793231.0,
         "op_income": 212514854678.0,
         "op_margin": 8.01,
-        "eps_actual": null
-      },
-      {
-        "period_end": "2025-09-30",
-        "revenue": 682373293529.0,
-        "op_income": 74575227852.0,
-        "op_margin": 10.93,
         "eps_actual": null
       }
     ],
@@ -2991,7 +2950,7 @@
     "quant": {
       "buy_score": 87.5,
       "rank_in_level2": 1,
-      "upside_pct": 50.9,
+      "upside_pct": 47.1,
       "composite": 1.0,
       "timing_state": "관측부족",
       "timing_score": 17.0
@@ -3048,8 +3007,8 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 240500.0,
-    "ret_1m": -18.3,
+    "close": 251000.0,
+    "ret_1m": -4.2,
     "analyst": {
       "n_buy": 1,
       "n_hold": 0,
@@ -3083,17 +3042,17 @@
         "eps_actual": null
       },
       {
+        "period_end": "2026-03-31",
+        "revenue": 523059555138.0,
+        "op_income": 62067989371.0,
+        "op_margin": 11.87,
+        "eps_actual": null
+      },
+      {
         "period_end": "2025-12-31",
         "revenue": 2002552906597.0,
         "op_income": 238759752821.0,
         "op_margin": 11.92,
-        "eps_actual": null
-      },
-      {
-        "period_end": "2025-09-30",
-        "revenue": 493190449501.0,
-        "op_income": 64354246895.0,
-        "op_margin": 13.05,
         "eps_actual": null
       }
     ],
@@ -3108,7 +3067,7 @@
     "quant": {
       "buy_score": 87.5,
       "rank_in_level2": 2,
-      "upside_pct": 182.7,
+      "upside_pct": 170.9,
       "composite": 1.0,
       "timing_state": "관측부족",
       "timing_score": 12.0
@@ -3124,8 +3083,8 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 78000.0,
-    "ret_1m": -16.8,
+    "close": 80000.0,
+    "ret_1m": -2.4,
     "analyst": {
       "n_buy": 1,
       "n_hold": 0,
@@ -3184,7 +3143,7 @@
     "quant": {
       "buy_score": 87.5,
       "rank_in_level2": 3,
-      "upside_pct": 143.6,
+      "upside_pct": 137.5,
       "composite": 1.0,
       "timing_state": "관측부족",
       "timing_score": 12.0
@@ -3205,13 +3164,13 @@
     ],
     "brief_source": "DART 사업보고서·애널리스트 리포트 종합",
     "brief_updated": "2026-06",
-    "close": 62800.0,
-    "ret_1m": -12.7,
+    "close": 63600.0,
+    "ret_1m": -8.0,
     "analyst": {
-      "n_buy": 2,
+      "n_buy": 1,
       "n_hold": 0,
       "n_sell": 0,
-      "avg_target": 105000,
+      "avg_target": 100000,
       "latest_target": 100000.0,
       "recent": [
         {
@@ -3221,14 +3180,6 @@
           "opinion": "매수",
           "source_url": "https://finance.naver.com/research/company_read.naver?nid=96068",
           "broker_url": "https://stock.pstatic.net/stock-research/company/40/20260910_company_32572000.pdf"
-        },
-        {
-          "date": "2026-08-24",
-          "broker": "교보증권",
-          "title": "NDR 후기: 본업 호조 지속, 자회사는 회복 기..",
-          "opinion": "Buy",
-          "source_url": "https://finance.naver.com/research/company_read.naver?nid=95838",
-          "broker_url": "https://stock.pstatic.net/stock-research/company/62/20260824_company_517990000.pdf"
         }
       ]
     },
@@ -3248,17 +3199,17 @@
         "eps_actual": null
       },
       {
+        "period_end": "2026-03-31",
+        "revenue": 4747399470336.0,
+        "op_income": 166018644835.0,
+        "op_margin": 3.5,
+        "eps_actual": null
+      },
+      {
         "period_end": "2025-12-31",
         "revenue": 16628856457648.0,
         "op_income": 277072316573.0,
         "op_margin": 1.67,
-        "eps_actual": null
-      },
-      {
-        "period_end": "2025-09-30",
-        "revenue": 4259239944020.0,
-        "op_income": 133310262098.0,
-        "op_margin": 3.13,
         "eps_actual": null
       }
     ],
@@ -3273,7 +3224,7 @@
     "quant": {
       "buy_score": 87.5,
       "rank_in_level2": 1,
-      "upside_pct": 67.2,
+      "upside_pct": 57.2,
       "composite": 1.0,
       "timing_state": "관측부족",
       "timing_score": 12.0
@@ -3294,8 +3245,8 @@
     ],
     "brief_source": "DART 사업보고서·애널리스트 리포트 종합",
     "brief_updated": "2026-06",
-    "close": 1253000.0,
-    "ret_1m": 7.5,
+    "close": 1277000.0,
+    "ret_1m": 13.0,
     "analyst": {
       "n_buy": 1,
       "n_hold": 0,
@@ -3329,17 +3280,17 @@
         "eps_actual": null
       },
       {
+        "period_end": "2026-03-31",
+        "revenue": 578721424512.0,
+        "op_income": 132012846240.0,
+        "op_margin": 22.81,
+        "eps_actual": null
+      },
+      {
         "period_end": "2025-12-31",
         "revenue": 1901833914086.0,
         "op_income": 471397373030.0,
         "op_margin": 24.79,
-        "eps_actual": null
-      },
-      {
-        "period_end": "2025-09-30",
-        "revenue": 428383465115.0,
-        "op_income": 120225200477.0,
-        "op_margin": 28.06,
         "eps_actual": null
       }
     ],
@@ -3354,7 +3305,7 @@
     "quant": {
       "buy_score": 72.5,
       "rank_in_level2": 2,
-      "upside_pct": 43.7,
+      "upside_pct": 41.0,
       "composite": 0.0,
       "timing_state": "관측부족",
       "timing_score": 25.0
@@ -3370,8 +3321,8 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 380000.0,
-    "ret_1m": -4.8,
+    "close": 357000.0,
+    "ret_1m": -11.4,
     "analyst": {
       "n_buy": 1,
       "n_hold": 0,
@@ -3430,7 +3381,7 @@
     "quant": {
       "buy_score": 87.5,
       "rank_in_level2": 1,
-      "upside_pct": 42.1,
+      "upside_pct": 51.3,
       "composite": 1.0,
       "timing_state": "관측부족",
       "timing_score": 25.0
@@ -3446,8 +3397,8 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 173500.0,
-    "ret_1m": -3.7,
+    "close": 181900.0,
+    "ret_1m": -4.2,
     "analyst": {
       "n_buy": 0,
       "n_hold": 0,
@@ -3513,8 +3464,8 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 174100.0,
-    "ret_1m": -4.4,
+    "close": 179500.0,
+    "ret_1m": -1.7,
     "analyst": {
       "n_buy": 0,
       "n_hold": 0,
@@ -3539,17 +3490,17 @@
         "eps_actual": null
       },
       {
+        "period_end": "2026-03-31",
+        "revenue": 1973429644000.0,
+        "op_income": 38895782000.0,
+        "op_margin": 1.97,
+        "eps_actual": null
+      },
+      {
         "period_end": "2025-12-31",
         "revenue": 7281140720000.0,
         "op_income": 185630662000.0,
         "op_margin": 2.55,
-        "eps_actual": null
-      },
-      {
-        "period_end": "2025-09-30",
-        "revenue": 1832541539000.0,
-        "op_income": 44120139000.0,
-        "op_margin": 2.41,
         "eps_actual": null
       }
     ],
@@ -3580,8 +3531,8 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 112600.0,
-    "ret_1m": 6.6,
+    "close": 114200.0,
+    "ret_1m": 6.4,
     "analyst": {
       "n_buy": 0,
       "n_hold": 0,
@@ -3606,17 +3557,17 @@
         "eps_actual": null
       },
       {
+        "period_end": "2026-03-31",
+        "revenue": 296599623796.0,
+        "op_income": 40309511033.0,
+        "op_margin": 13.59,
+        "eps_actual": null
+      },
+      {
         "period_end": "2025-12-31",
         "revenue": 1145838309534.0,
         "op_income": 186817160198.0,
         "op_margin": 16.3,
-        "eps_actual": null
-      },
-      {
-        "period_end": "2025-09-30",
-        "revenue": 282378854872.0,
-        "op_income": 46315111762.0,
-        "op_margin": 16.4,
         "eps_actual": null
       }
     ],
@@ -3647,8 +3598,8 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 38150.0,
-    "ret_1m": -2.7,
+    "close": 38500.0,
+    "ret_1m": 4.2,
     "analyst": {
       "n_buy": 0,
       "n_hold": 0,
@@ -3673,17 +3624,17 @@
         "eps_actual": null
       },
       {
+        "period_end": "2026-03-31",
+        "revenue": 57441666228.0,
+        "op_income": 18884940390.0,
+        "op_margin": 32.88,
+        "eps_actual": null
+      },
+      {
         "period_end": "2025-12-31",
         "revenue": 262661081510.0,
         "op_income": 39378981312.0,
         "op_margin": 14.99,
-        "eps_actual": null
-      },
-      {
-        "period_end": "2025-09-30",
-        "revenue": 64998316056.0,
-        "op_income": 10208067800.0,
-        "op_margin": 15.71,
         "eps_actual": null
       }
     ],
@@ -3715,7 +3666,7 @@
     "brief_source": null,
     "brief_updated": null,
     "close": 23300.0,
-    "ret_1m": -16.5,
+    "ret_1m": -12.4,
     "analyst": {
       "n_buy": 1,
       "n_hold": 0,
@@ -3749,17 +3700,17 @@
         "eps_actual": null
       },
       {
+        "period_end": "2026-03-31",
+        "revenue": 73131325868.0,
+        "op_income": 30304011866.0,
+        "op_margin": 41.44,
+        "eps_actual": null
+      },
+      {
         "period_end": "2025-12-31",
         "revenue": 336505017215.0,
         "op_income": 171421861882.0,
         "op_margin": 50.94,
-        "eps_actual": null
-      },
-      {
-        "period_end": "2025-09-30",
-        "revenue": 77107200046.0,
-        "op_income": 39085122201.0,
-        "op_margin": 50.69,
         "eps_actual": null
       }
     ],
@@ -3790,8 +3741,8 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 244000.0,
-    "ret_1m": -10.8,
+    "close": 257500.0,
+    "ret_1m": 1.4,
     "analyst": {
       "n_buy": 0,
       "n_hold": 0,
@@ -3857,8 +3808,8 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 14080.0,
-    "ret_1m": 22.6,
+    "close": 14700.0,
+    "ret_1m": 37.0,
     "analyst": {
       "n_buy": 0,
       "n_hold": 0,
@@ -3924,8 +3875,8 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 79700.0,
-    "ret_1m": 11.3,
+    "close": 81100.0,
+    "ret_1m": 7.1,
     "analyst": {
       "n_buy": 0,
       "n_hold": 0,
@@ -3950,17 +3901,17 @@
         "eps_actual": null
       },
       {
+        "period_end": "2026-03-31",
+        "revenue": 585744043049.0,
+        "op_income": 34748204775.0,
+        "op_margin": 5.93,
+        "eps_actual": null
+      },
+      {
         "period_end": "2025-12-31",
         "revenue": 2105660561260.0,
         "op_income": 110196047503.0,
         "op_margin": 5.23,
-        "eps_actual": null
-      },
-      {
-        "period_end": "2025-09-30",
-        "revenue": 469412056425.0,
-        "op_income": 8645190263.0,
-        "op_margin": 1.84,
         "eps_actual": null
       }
     ],
@@ -3996,8 +3947,8 @@
     ],
     "brief_source": "DART 사업보고서·애널리스트 리포트 종합",
     "brief_updated": "2026-06",
-    "close": 210500.0,
-    "ret_1m": 18.3,
+    "close": 214000.0,
+    "ret_1m": 17.8,
     "analyst": {
       "n_buy": 1,
       "n_hold": 0,
@@ -4031,17 +3982,17 @@
         "eps_actual": null
       },
       {
+        "period_end": "2026-03-31",
+        "revenue": 1056657183856.0,
+        "op_income": 513742493176.0,
+        "op_margin": 48.62,
+        "eps_actual": null
+      },
+      {
         "period_end": "2025-12-31",
         "revenue": 2928637506047.0,
         "op_income": 918952338732.0,
         "op_margin": 31.38,
-        "eps_actual": null
-      },
-      {
-        "period_end": "2025-09-30",
-        "revenue": 634007044924.0,
-        "op_income": 136422755477.0,
-        "op_margin": 21.52,
         "eps_actual": null
       }
     ],
@@ -4065,7 +4016,7 @@
     "quant": {
       "buy_score": 12.5,
       "rank_in_level2": 5,
-      "upside_pct": -71.0,
+      "upside_pct": -71.5,
       "composite": -1.0,
       "timing_state": "관측부족",
       "timing_score": 30.0
@@ -4081,8 +4032,8 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 454000.0,
-    "ret_1m": 2.0,
+    "close": 443500.0,
+    "ret_1m": 16.9,
     "analyst": {
       "n_buy": 7,
       "n_hold": 0,
@@ -4173,7 +4124,7 @@
     "quant": {
       "buy_score": 57.5,
       "rank_in_level2": 3,
-      "upside_pct": 48.5,
+      "upside_pct": 52.0,
       "composite": -1.0,
       "timing_state": "관측부족",
       "timing_score": 30.0
@@ -4194,13 +4145,13 @@
     ],
     "brief_source": "DART 사업보고서·애널리스트 리포트 종합",
     "brief_updated": "2026-06",
-    "close": 175600.0,
-    "ret_1m": -21.3,
+    "close": 171300.0,
+    "ret_1m": -17.6,
     "analyst": {
-      "n_buy": 5,
+      "n_buy": 4,
       "n_hold": 0,
       "n_sell": 0,
-      "avg_target": 488000,
+      "avg_target": 490000,
       "latest_target": 520000.0,
       "recent": [
         {
@@ -4234,14 +4185,6 @@
           "opinion": "매수",
           "source_url": "https://finance.naver.com/research/company_read.naver?nid=95984",
           "broker_url": null
-        },
-        {
-          "date": "2026-08-24",
-          "broker": "신한투자증권",
-          "title": "암 백신 또한 키트루다SC가 메인",
-          "opinion": "매수",
-          "source_url": "https://finance.naver.com/research/company_read.naver?nid=95825",
-          "broker_url": null
         }
       ]
     },
@@ -4261,17 +4204,17 @@
         "eps_actual": null
       },
       {
+        "period_end": "2026-03-31",
+        "revenue": 114879740926.0,
+        "op_income": 82865726152.0,
+        "op_margin": 72.13,
+        "eps_actual": null
+      },
+      {
         "period_end": "2025-12-31",
         "revenue": 202829023679.0,
         "op_income": 114531644175.0,
         "op_margin": 56.47,
-        "eps_actual": null
-      },
-      {
-        "period_end": "2025-09-30",
-        "revenue": 80411676989.0,
-        "op_income": 62445295259.0,
-        "op_margin": 77.66,
         "eps_actual": null
       }
     ],
@@ -4286,7 +4229,7 @@
     "quant": {
       "buy_score": 87.5,
       "rank_in_level2": 2,
-      "upside_pct": 177.9,
+      "upside_pct": 186.0,
       "composite": 1.0,
       "timing_state": "관측부족",
       "timing_score": 30.0
@@ -4307,8 +4250,8 @@
     ],
     "brief_source": "DART 사업보고서·애널리스트 리포트 종합",
     "brief_updated": "2026-06",
-    "close": 1447000.0,
-    "ret_1m": 20.2,
+    "close": 1415000.0,
+    "ret_1m": 14.0,
     "analyst": {
       "n_buy": 4,
       "n_hold": 0,
@@ -4366,17 +4309,17 @@
         "eps_actual": null
       },
       {
+        "period_end": "2026-03-31",
+        "revenue": 1490325390188.0,
+        "op_income": 628606280906.0,
+        "op_margin": 42.18,
+        "eps_actual": null
+      },
+      {
         "period_end": "2025-12-31",
         "revenue": 4556971695180.0,
         "op_income": 2068092839427.0,
         "op_margin": 45.38,
-        "eps_actual": null
-      },
-      {
-        "period_end": "2025-09-30",
-        "revenue": 999544646065.0,
-        "op_income": 430015398311.0,
-        "op_margin": 43.02,
         "eps_actual": null
       }
     ],
@@ -4398,9 +4341,9 @@
       "risk_text": "위험요소가 내포되어 있다. CC 원리금의 채무불이행이 발생할 가능성이 높다. C 원리금의 채무불이행이 발생할 가능성이 지극히 높다. D 현재 채무불이행 상태에 있다. ※ AA부터 B까지는 동일 등급내에서 세분하여 구분할 필요가 있는 경우에는 \"＋\" 또는 \"－\"의 기호를 부여할 수 있다.※ 예비평정의 경우 당해 등급기호의 앞에 \"P\"를 부기한다.※ 미공시 등급의 경우 당해 등급기호의 앞에 \"U\"를 부기한다. - NICE신용평가 : 회사채 등급 회사채 등급의 정의 AAA 원리금 지급확실성이 최고 수준이며, 현단계에서 합리적으로 예측가능한 장래의어떠한 환경변화에도 영향을 받지 않을 만큼 안정적임. AA 원리금 지급확실성이 매우 높지만 AAA의 등급에 비해 다소 열등한 요소가 있음. A 원리금 지급확실성이 높지만 장래 급격한 환경변화에 따라 다소 영향을 받을 가능성이 있음. BBB 원리금 지급확실성은 인정되지만 장래 환경변화로 원리금 지급확실성이 저하될 가능성이 있음. BB 원리금 지급확실성에 당면 문제는 없지만 장래의 안정성 면에서는 투기적 요소가 내포되어 있음 B 원리금 지급확실성이 부족하여 투기적이며, 장래의 안정성에 대해서는 현단계에서단언할 수 없음. CCC 채무불이행이 발생할 가능성을 내포하고 있어 매우 투기적임. CC 채무불이행이 발생할 가능성이 높아 상위등급에 비해 불안요소가 더욱 많음. C 채무불이행이 발생할 가능성이 극히 높고 현단계에서는 장래 회복될 가능성이 없을 것으로 판단됨. D 원금 또는 이자가 지급불능상태에 있음. ※ AA부터 B까지는 동일 등급내에서 세분하여 구분할 필요가 있는 경우에는 \"＋\" 또는 \"－\"의 기호를 부여할 수 있다. 자. 주권상장(또는 등록ㆍ지정)여부 및 특례상장에 관한 사항 주권상장(또는 등록ㆍ지정)현황 주권상장(또는 등록ㆍ지정)일자 특례상장 유형 유가증권시장 상장 2016년 11월 10일 해당사항 없음 2. 회사의 연혁 가. 회사의 본점소재지 및 그 변경 당사의 본점소재지는 인천광역시 연수구 송도바이오대로 300 (송도동)입니다.공시대상기간 중 본점소재지의 변경 사항은 없습니다. 나. 경영진 및 감사의 중요한 변동(1) 대표이사의 변경 해당사항 없습니다. (2) 주요 경영진의 변동 변동일자 주총종류 선임 임기만료또는 해임 신규 재선임 2022년 03월 29일 정기주총 사외이사 이창우사외이사 박재완 사내이사 김동중사외이사 허근녕 사외이사 정석우사외이사 권순조 2023년 03월 17일 정기주총 사내이사 노균사외이사 안도걸 사내이사 존림 (Rim John Chongbo)사외이사 김유니스경희 사내이사 김태한 2024년 03월 15일 정기주총 사외이사 서승환 - - 2025년 03월 14일 정기주총 사내이사 유승호사외이사 이호승 사외이사 이창우 사내이사 김동중사외이사 허근녕 ※ 2023년 1월 18일 박재완 사외이사가 중도 사임하였습니다.※ 2024년 3월 15일 안도걸 사외이사가 중도 사임하였습니다.※ 2025년 3월 14일 제14기 정기주주총회에서 유승호 사내이사, 이호승 사외이사가 신규 선임되었으며 이창우 사외이사가 재선임되었습니다. 김동중 사내이사, 허근녕 사외이사는 임기가 만료되었습니다.※ 보고서 제출일 현재 당사의"
     },
     "quant": {
-      "buy_score": 88.6,
+      "buy_score": 92.1,
       "rank_in_level2": 1,
-      "upside_pct": 36.5,
+      "upside_pct": 39.6,
       "composite": 1.0,
       "timing_state": "관측부족",
       "timing_score": 30.0
@@ -4416,8 +4359,8 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 85600.0,
-    "ret_1m": -13.2,
+    "close": 90900.0,
+    "ret_1m": -5.4,
     "analyst": {
       "n_buy": 0,
       "n_hold": 0,
@@ -4442,16 +4385,16 @@
         "eps_actual": null
       },
       {
-        "period_end": "2025-12-31",
+        "period_end": "2026-03-31",
         "revenue": null,
-        "op_income": 2364316000000.0,
+        "op_income": 24856000000.0,
         "op_margin": null,
         "eps_actual": null
       },
       {
-        "period_end": "2025-09-30",
+        "period_end": "2025-12-31",
         "revenue": null,
-        "op_income": 2503975000000.0,
+        "op_income": 2364316000000.0,
         "op_margin": null,
         "eps_actual": null
       }
@@ -4469,8 +4412,8 @@
       "rank_in_level2": null,
       "upside_pct": null,
       "composite": null,
-      "timing_state": "관측부족",
-      "timing_score": 17.0
+      "timing_state": "watch",
+      "timing_score": 64.5
     }
   },
   "086790": {
@@ -4483,8 +4426,8 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 120800.0,
-    "ret_1m": -2.3,
+    "close": 126800.0,
+    "ret_1m": 2.3,
     "analyst": {
       "n_buy": 1,
       "n_hold": 0,
@@ -4518,16 +4461,16 @@
         "eps_actual": null
       },
       {
-        "period_end": "2025-12-31",
+        "period_end": "2026-03-31",
         "revenue": null,
-        "op_income": 1758321000000.0,
+        "op_income": 1012045000000.0,
         "op_margin": null,
         "eps_actual": null
       },
       {
-        "period_end": "2025-09-30",
+        "period_end": "2025-12-31",
         "revenue": null,
-        "op_income": 1074250000000.0,
+        "op_income": 1758321000000.0,
         "op_margin": null,
         "eps_actual": null
       }
@@ -4541,12 +4484,12 @@
       "risk_text": "위험요소를 적용하여 내부등급법으로 산출하고 있으며, 그 외 자회사의 경우 거래상대방 신용도, 담보 및 보증유무 등으로 차별화된 위험도를 적용하여 표준방법으로 산출하고 있습니다.나. 시장위험은 주식, 금리, 외환 등 시장가격 변동으로 발생할 수 있는 잠재적 손실 가능성으로, 시장위험가중자산은 은행업감독업무 시행세칙 상의 표준방법을 적용하여 산출된 민감도위험, 부도위험, 잔여위험 합계로 구성된 시장위험 소요자기자본에 12.5를 곱하여 산출하고 있습니다. 다. 운영위험은 부적절한 프로세스, 사람, 시스템 등으로 발생할 수 있는 잠재적 손실가능성으로, 운영위험가중자산은 은행업감독업무 시행세칙 상의 표준방법을 적용하여 산출된 이자, 서비스, 금융거래 등 재무지표 기반 측정치인 영업지수요소와 평균적인 과거 손실금액을 반영한 내부손실승수를 곱하여 산출된 운영리스크 소요자기자본에 12.5를 곱하여 산출하고 있습니다. 자기자본비율에 대한 공시 당기말 자기자본비율은 잠정치 입니다. 자기자본비율에 대한 공시 당기 (단위 : 백만원) 공시금액 총자기자본 45,097,605 총자기자본 기본자본 43,124,228 기본자본 보통주자본 38,664,123 기타기본자본 4,460,105 보완자본 1,973,377 위험가중자산 288,939,391 위험가중자산 신용위험가중자산 248,224,355 시장위험가중자산 15,238,010 운영위험가중자산 25,477,026 보통주자본비율 0.1338 기본자본비율 0.1493 총자본비율 0.1561 전기 (단위 : 백만원) 공시금액 총자기자본 43,555,625 총자기자본 기본자본 41,260,657 기본자본 보통주자본 36,924,738 기타기본자본 4,335,919 보완자본 2,294,968 위험가중자산 279,403,863 위험가중자산 신용위험가중자산 240,365,159 시장위험가중자산 15,068,504 운영위험가중자산 23,970,200 보통주자본비율 0.1322 기본자본비율 0.1477 총자본비율 0.1559 내부자본 적정성에 대한 기술 내부자본은 금융기관이 보유하고 있는 포트폴리오에서 발생가능한 위험을 커버할수있는 수준의 자본을 보유하고 있는지를 판단하기 위해 내부 관리목적으로 정의한 자본으로 정의됩니다. 연결기업이 내부자본을 관리하는 목적은 투자한 영업으로부터 발생 가능한 손실 가능성을 일정 수준 이내로 통제하면서 위험 대비 수익이 극대화되도록 영업 포트폴리오를 조정하고, 내부자본 규모와 실제 사용 가능한 자본 (이하 \"가용자본\") 규모를 비교하여 재무 건전성의 척도로 활용하는 것입니다. 관리 지표는 가용자본 대비 내부자본한도 비율인 위험성향비율과 내부자본한도 대비 내부자본 사용량의 비율인 한도소진율입니다. 내부자본 한도는 시장전망, 가용자본 규모 및 위험 성향, 목표 신용등급, 영업전략 등의 요소를 반영하여 설정하고 있습니다. 위험 유형별 및 관계기업별 내부자본 한도는 매년 1회 이상 그룹리스크관리위원회의 결의로 배분하고 있습니다. 신규사업 또는 영업확대 등에 의하여 내부자본 한도 초과가 예상되는 경우에는 그룹리스크관리위원회의 사전 승인을 받아야 합니다. 11. 영업부문 정보 (연결) 보고부문을 식별하기 위하여 사용한 요소에 대한 기술 연결기업은 성과를 평가하거나 자원을 배분하는 …"
     },
     "quant": {
-      "buy_score": 64.1,
+      "buy_score": 57.0,
       "rank_in_level2": 2,
-      "upside_pct": 32.5,
+      "upside_pct": 26.2,
       "composite": null,
-      "timing_state": "관측부족",
-      "timing_score": 17.0
+      "timing_state": "watch",
+      "timing_score": 64.5
     }
   },
   "105560": {
@@ -4559,8 +4502,8 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 152300.0,
-    "ret_1m": -5.6,
+    "close": 161700.0,
+    "ret_1m": 1.1,
     "analyst": {
       "n_buy": 0,
       "n_hold": 0,
@@ -4585,16 +4528,16 @@
         "eps_actual": null
       },
       {
-        "period_end": "2025-12-31",
+        "period_end": "2026-03-31",
         "revenue": null,
-        "op_income": 3659114000000.0,
+        "op_income": 1347043000000.0,
         "op_margin": null,
         "eps_actual": null
       },
       {
-        "period_end": "2025-09-30",
+        "period_end": "2025-12-31",
         "revenue": null,
-        "op_income": 2333916000000.0,
+        "op_income": 3659114000000.0,
         "op_margin": null,
         "eps_actual": null
       }
@@ -4606,8 +4549,8 @@
       "rank_in_level2": null,
       "upside_pct": null,
       "composite": null,
-      "timing_state": "관측부족",
-      "timing_score": 17.0
+      "timing_state": "watch",
+      "timing_score": 64.5
     }
   },
   "316140": {
@@ -4620,8 +4563,8 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 31750.0,
-    "ret_1m": -0.2,
+    "close": 33100.0,
+    "ret_1m": 5.4,
     "analyst": {
       "n_buy": 1,
       "n_hold": 0,
@@ -4655,16 +4598,16 @@
         "eps_actual": null
       },
       {
-        "period_end": "2025-12-31",
+        "period_end": "2026-03-31",
         "revenue": null,
-        "op_income": 1294715000000.0,
+        "op_income": -46352000000.0,
         "op_margin": null,
         "eps_actual": null
       },
       {
-        "period_end": "2025-09-30",
+        "period_end": "2025-12-31",
         "revenue": null,
-        "op_income": 1397416000000.0,
+        "op_income": 1294715000000.0,
         "op_margin": null,
         "eps_actual": null
       }
@@ -4678,12 +4621,12 @@
       "risk_text": "위험요소는 회피대상위험에 포함되지 않습니다. 따라서 위험회피대상항목 현금흐름 지급 시기의 불일치, 위험회피수단 거래상대방의 가격마진, 위험회피수단 거래 당사자 일방의 신용위험 변동에 따라 위험회피의 비효과적인 부분이 발생할 수 있습니다. 통화선도계약에 따라 위험회피대상과 위험회피수단의 공정가치 변동이 실질적으로 동일한 수준에서 상쇄될 수 있는 방법으로 위험회피비율을 결정합니다.동 위험회피관계에서는 위험회피대상항목의 공정가치 변동요소 중 가장 유의적인 부분인 환율변동만을 회피대상위험으로 지정하며, 신용위험이나 유동성위험 등 기타 위험요소는 회피대상위험에 포함되지 않습니다. 이에 따라 통화선도계약의 결제시점과 외화표시 항목의 현금흐름 시기의 불일치, 거래상대방의 신용위험 변동, 또는 시장환율과 계약환율 간의 차이로 인해 위험회피의 비효과적인 부분이 발생할 수 있습니다. 통화선도계약에 따라 위험회피대상과 위험회피수단의 공정가치 변동이 실질적으로 동일한 수준에서 상쇄될 수 있는 방법으로 위험회피비율을 결정합니다.동 위험회피관계에서는 위험회피대상항목의 공정가치 변동요소 중 가장 유의적인 부분인 환율변동만을 회피대상위험으로 지정하며, 신용위험이나 유동성위험 등 기타 위험요소는 회피대상위험에 포함되지 않습니다. 이에 따라 통화선도계약의 결제시점과 외화표시 항목의 현금흐름 시기의 불일치, 거래상대방의 신용위험 변동, 또는 시장환율과 계약환율 간의 차이로 인해 위험회피의 비효과적인 부분이 발생할 수 있습니다. 위험회피수단과 위험회피대상항목 간의 경제적 관계에 대한 기술 이자율스왑계약과 위험회피대상항목은 기초변수인 시장이자율의 변동에 영향을 받으며, 연결회사는 이자율스왑계약의 가치와 위험회피대상항목의 가치가 일반적으로 반대방향으로 변동할 것이라 기대하고 있습니다. 통화선도계약과 위험회피대상항목은 기초변수인 환율의 변동에 영향을 받으며, 연결회사는 통화선도계약의 가치와 위험회피대상항목의 가치가 일반적으로 반대방향으로 변동할 것이라 기대하고 있습니다. 통화선도계약과 위험회피대상항목은 기초변수인 환율의 변동에 영향을 받으며, 연결회사는 통화선도계약의 가치와 위험회피대상항목의 가치가 일반적으로 반대방향으로 변동할 것이라 기대하고 있습니다. 위험회피수단의 성격 및 평가방법에 대한 기술 보고기간 말의 이자율스왑의 공정가치는 보고기간말 현재의 수익률곡선과 계약에 내재된 신용위험을 이용하여 추정한 미래현금흐름을 할인하여 결정되며, 평균이자율은보고기간말 미결제잔액에 근거하여 결정됩니다. 이자율스왑에 적용되는 변동이자율은 Compounding SOFR 또는 CD 3M + 가산금리입니다. 연결회사는 위험회피수단으로 지정된 각 이자율스왑 계약조건에 따라 고정이자율에 따른 이자를 수취하고 변동이자율에 따른 이자를 지급하고 있습니다. 통화선도계약은 사전에 정해진 약정금액과 약정환율에 따라 미래 일정일에 외화를 매도하는 조건으로 체결되어 있으며, 개시일에 초기 계약금액을 교환하고 종료일에는 거래체결 시 약정한 외화 원금을 반환합니다. 그 결과 위험회피거래를 통해 외화표시자산의 환율변동으로 인한 평가손익 변동을 상쇄함으로써 외화유가증권 및 외화사모사채의 환율변동에 따른 공정가치 변동위험을 제거하는 것입니다. 통화선도계약은 사전에 정해진 약정금액과 약정환율에 …"
     },
     "quant": {
-      "buy_score": 67.3,
+      "buy_score": 61.1,
       "rank_in_level2": 1,
-      "upside_pct": 35.4,
+      "upside_pct": 29.9,
       "composite": null,
-      "timing_state": "관측부족",
-      "timing_score": 17.0
+      "timing_state": "watch",
+      "timing_score": 64.5
     }
   },
   "000810": {
@@ -4696,8 +4639,8 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 529000.0,
-    "ret_1m": -13.0,
+    "close": 543000.0,
+    "ret_1m": -7.5,
     "analyst": {
       "n_buy": 0,
       "n_hold": 0,
@@ -4722,16 +4665,16 @@
         "eps_actual": null
       },
       {
-        "period_end": "2025-12-31",
+        "period_end": "2026-03-31",
         "revenue": null,
-        "op_income": 2330682697048.0,
+        "op_income": 579681093235.0,
         "op_margin": null,
         "eps_actual": null
       },
       {
-        "period_end": "2025-09-30",
+        "period_end": "2025-12-31",
         "revenue": null,
-        "op_income": 753136712706.0,
+        "op_income": 2330682697048.0,
         "op_margin": null,
         "eps_actual": null
       }
@@ -4744,7 +4687,7 @@
       "upside_pct": null,
       "composite": null,
       "timing_state": "관측부족",
-      "timing_score": 12.0
+      "timing_score": 17.0
     }
   },
   "001450": {
@@ -4757,13 +4700,13 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 36750.0,
-    "ret_1m": -22.2,
+    "close": 37700.0,
+    "ret_1m": -11.6,
     "analyst": {
-      "n_buy": 2,
+      "n_buy": 1,
       "n_hold": 0,
       "n_sell": 0,
-      "avg_target": 57500,
+      "avg_target": 58000,
       "latest_target": 58000.0,
       "recent": [
         {
@@ -4773,14 +4716,6 @@
           "opinion": "Buy",
           "source_url": "https://finance.naver.com/research/company_read.naver?nid=95855",
           "broker_url": "https://stock.pstatic.net/stock-research/company/61/20260825_company_761322000.pdf"
-        },
-        {
-          "date": "2026-08-24",
-          "broker": "하나증권",
-          "title": "NDR 후기 - 해준금 제도 완화의 최대 수혜주",
-          "opinion": "Buy",
-          "source_url": "https://finance.naver.com/research/company_read.naver?nid=95837",
-          "broker_url": "https://stock.pstatic.net/stock-research/company/57/20260824_company_584672000.pdf"
         }
       ]
     },
@@ -4800,16 +4735,16 @@
         "eps_actual": null
       },
       {
-        "period_end": "2025-12-31",
+        "period_end": "2026-03-31",
         "revenue": null,
-        "op_income": 726862589512.0,
+        "op_income": 237201617606.0,
         "op_margin": null,
         "eps_actual": null
       },
       {
-        "period_end": "2025-09-30",
+        "period_end": "2025-12-31",
         "revenue": null,
-        "op_income": 285057465774.0,
+        "op_income": 726862589512.0,
         "op_margin": null,
         "eps_actual": null
       }
@@ -4824,11 +4759,11 @@
     },
     "quant": {
       "buy_score": 72.5,
-      "rank_in_level2": 3,
-      "upside_pct": 56.5,
+      "rank_in_level2": 2,
+      "upside_pct": 53.8,
       "composite": null,
       "timing_state": "관측부족",
-      "timing_score": 12.0
+      "timing_score": 17.0
     }
   },
   "005830": {
@@ -4841,8 +4776,8 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 162800.0,
-    "ret_1m": -16.3,
+    "close": 173100.0,
+    "ret_1m": -7.4,
     "analyst": {
       "n_buy": 6,
       "n_hold": 0,
@@ -4908,16 +4843,16 @@
         "eps_actual": null
       },
       {
-        "period_end": "2025-12-31",
+        "period_end": "2026-03-31",
         "revenue": null,
-        "op_income": 2087780000000.0,
+        "op_income": 464239000000.0,
         "op_margin": null,
         "eps_actual": null
       },
       {
-        "period_end": "2025-09-30",
+        "period_end": "2025-12-31",
         "revenue": null,
-        "op_income": 646688258898.0,
+        "op_income": 2087780000000.0,
         "op_margin": null,
         "eps_actual": null
       }
@@ -4932,11 +4867,11 @@
     },
     "quant": {
       "buy_score": 72.5,
-      "rank_in_level2": 2,
-      "upside_pct": 50.3,
+      "rank_in_level2": 1,
+      "upside_pct": 41.3,
       "composite": null,
       "timing_state": "관측부족",
-      "timing_score": 12.0
+      "timing_score": 17.0
     }
   },
   "032830": {
@@ -4949,24 +4884,15 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 251000.0,
-    "ret_1m": -1.0,
+    "close": 254000.0,
+    "ret_1m": 12.9,
     "analyst": {
       "n_buy": 0,
-      "n_hold": 1,
+      "n_hold": 0,
       "n_sell": 0,
-      "avg_target": 363000,
-      "latest_target": 363000.0,
-      "recent": [
-        {
-          "date": "2026-08-24",
-          "broker": "한화투자증권",
-          "title": "삼성생명의 수혜는 계산이 쉽지만 주주의 수..",
-          "opinion": "Hold",
-          "source_url": "https://finance.naver.com/research/company_read.naver?nid=95844",
-          "broker_url": "https://stock.pstatic.net/stock-research/company/16/20260824_company_999477000.pdf"
-        }
-      ]
+      "avg_target": null,
+      "latest_target": null,
+      "recent": []
     },
     "fundamentals": [
       {
@@ -4984,16 +4910,16 @@
         "eps_actual": null
       },
       {
-        "period_end": "2025-12-31",
+        "period_end": "2026-03-31",
         "revenue": null,
-        "op_income": 1666461000000.0,
+        "op_income": 650591000000.0,
         "op_margin": null,
         "eps_actual": null
       },
       {
-        "period_end": "2025-09-30",
+        "period_end": "2025-12-31",
         "revenue": null,
-        "op_income": 476949000000.0,
+        "op_income": 1666461000000.0,
         "op_margin": null,
         "eps_actual": null
       }
@@ -5007,12 +4933,12 @@
       "risk_text": "위험요소가 존재하지만 환경악화가 지급능력에 미치는 영향이 적음. BBB 장기적인 보험금 지급능력은 인정되나, 환경악화시 장기적으로 지급능력이 저하될 가능성이 존재함. BB 보험금 지급능력이 다소 제한적이며, 환경악화시 지급능력의 하락가능성이 비교적 높음. B 보험금 지급능력이 제한적이며, 환경악화시 지급능력의 하락가능성이 높음. CCC 보험금 지급능력이 상당히 불안정하여 환경이 개선되어야만 지급의무를 제대로 이행할 수 있음. CC 보험금 지급의무 중 일부를 이행하지 못할 가능성이 높음. C 감독당국의 직접적인 관리하에 놓이거나 보험금 지급의무를 이행하지 못할 상황이 임박해 있음. R 감독당국의 직접적인 관리하에 있거나 정상적인 영업 수행에 제약을 받고 있어 감독당국의 의사결정에 따라 보험사의 채무간 변제우선순위 또는 변제여부 등이 변동될 수 있음. 주) AA등급에서 CCC등급까지는 그 상대적 우열 정도에 따라 +, - 기호를 첨부할 수 있습니다. 자. 회사의 주권상장(또는 등록ㆍ지정) 및 특례상장에 관한 사항 주권상장(또는 등록ㆍ지정)현황 주권상장(또는 등록ㆍ지정)일자 특례상장 유형 유가증권시장 상장 2010년 05월 12일 해당사항 없음 2. 회사의 연혁 본 절에서 적용되는 공시대상기간은 최근 5개 사업연도입니다. 이 기간동안 발생한 회사의 주된 변동내용은 다음과 같습니다. 가. 지배회사 및 주요종속회사 연혁 회 사 명 내 용 삼성생명보험주식회사 - 2021.03 TCFD(기후변화 관련 재무정보공개 전담협의체) 지지기관 회원사 가입 - 2021.04 유엔환경계획 금융이니셔티브(UNEP FI) 지속가능보험원칙(PSI) 가입 - 2021.04 CDP(탄소정보공개 프로젝트) 서명기관 가입 - 2021.06 ISO14001 환경경영시스템 인증 취득 - 2022.01 모건스탠리캐피털인터내셔널(MSCI) ESG평가 등급 A 획득- 2022.04 삼성 금융 5개사의 공동 브랜드 '삼성 금융 네트웍스(Samsung Financial Networks)' 론칭- 2022.04 금융 통합 플랫폼 '모니모' 출시 - 2022.06 한국서비스품질지수(KS-SQI) 생명보험부문 20년 연속 1위 - 2022.06 환경부「한국형 무공해차 전환100(K-EV100)」참여기업 선정 - 2022.10 한국산업의 고객만족도(KCSI) 생명보험부문 18년 연속 1위 - 2022.11 국가고객만족도(NCSI) 생명보험부문 19년 연속 1위 - 2022.11 한국ESG기준원(KCGS) ESG평가 통합등급 A 획득 - 2022.11 DJSI(다우존스 지속가능경영지수) Korea 지수 편입- 2022.12 보건복지부 주관 건강친화기업 인증 - 2022.12 적도원칙(Equator Principles) 이니셔티브 가입 - 2023.02 모건스탠리캐피털인터내셔널(MSCI) ESG평가 등급 A 획득- 2023.02 PCAF(탄소회계금융협회) 이니셔티브 가입- 2023.03 RE100(Renewable Electricity 100) 이니셔티브 가입- 2023.05 TNFD(Taskforce on Nature-related Financial Disclosures) 가입 - 2023.07 한국서비스품질지수(KS-SQI) 생명보험부문 21년 연속 1위 - …"
     },
     "quant": {
-      "buy_score": 72.5,
-      "rank_in_level2": 1,
-      "upside_pct": 44.6,
+      "buy_score": null,
+      "rank_in_level2": null,
+      "upside_pct": null,
       "composite": null,
       "timing_state": "관측부족",
-      "timing_score": 12.0
+      "timing_score": 17.0
     }
   },
   "006800": {
@@ -5025,8 +4951,8 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 21600.0,
-    "ret_1m": -19.1,
+    "close": 20400.0,
+    "ret_1m": -15.4,
     "analyst": {
       "n_buy": 0,
       "n_hold": 0,
@@ -5051,16 +4977,16 @@
         "eps_actual": null
       },
       {
-        "period_end": "2025-12-31",
-        "revenue": 21256147000000.0,
-        "op_income": 1131248000000.0,
-        "op_margin": 5.32,
+        "period_end": "2026-03-31",
+        "revenue": 8094880000000.0,
+        "op_income": 178843000000.0,
+        "op_margin": 2.21,
         "eps_actual": null
       },
       {
-        "period_end": "2025-09-30",
-        "revenue": 4284478000000.0,
-        "op_income": 227910000000.0,
+        "period_end": "2025-12-31",
+        "revenue": 21256147000000.0,
+        "op_income": 1131248000000.0,
         "op_margin": 5.32,
         "eps_actual": null
       }
@@ -5092,8 +5018,8 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 73200.0,
-    "ret_1m": -9.3,
+    "close": 73400.0,
+    "ret_1m": -3.4,
     "analyst": {
       "n_buy": 0,
       "n_hold": 0,
@@ -5118,16 +5044,16 @@
         "eps_actual": null
       },
       {
-        "period_end": "2025-12-31",
+        "period_end": "2026-03-31",
         "revenue": null,
-        "op_income": 1326193649434.0,
+        "op_income": 414087139168.0,
         "op_margin": null,
         "eps_actual": null
       },
       {
-        "period_end": "2025-09-30",
+        "period_end": "2025-12-31",
         "revenue": null,
-        "op_income": 308681594540.0,
+        "op_income": 1326193649434.0,
         "op_margin": null,
         "eps_actual": null
       }
@@ -5159,8 +5085,8 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 194300.0,
-    "ret_1m": -15.5,
+    "close": 199800.0,
+    "ret_1m": -4.9,
     "analyst": {
       "n_buy": 0,
       "n_hold": 0,
@@ -5226,8 +5152,8 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 123800.0,
-    "ret_1m": -23.2,
+    "close": 124300.0,
+    "ret_1m": -14.9,
     "analyst": {
       "n_buy": 0,
       "n_hold": 0,
@@ -5298,8 +5224,8 @@
     ],
     "brief_source": "DART 사업보고서·애널리스트 리포트 종합",
     "brief_updated": "2026-06",
-    "close": 83300.0,
-    "ret_1m": -14.8,
+    "close": 81100.0,
+    "ret_1m": -8.8,
     "analyst": {
       "n_buy": 2,
       "n_hold": 0,
@@ -5341,17 +5267,17 @@
         "eps_actual": null
       },
       {
+        "period_end": "2026-03-31",
+        "revenue": 3609009000000.0,
+        "op_income": 93188000000.0,
+        "op_margin": 2.58,
+        "eps_actual": null
+      },
+      {
         "period_end": "2025-12-31",
         "revenue": 16512462000000.0,
         "op_income": 251183000000.0,
         "op_margin": 1.52,
-        "eps_actual": null
-      },
-      {
-        "period_end": "2025-09-30",
-        "revenue": 3890930000000.0,
-        "op_income": 52826000000.0,
-        "op_margin": 1.36,
         "eps_actual": null
       }
     ],
@@ -5366,7 +5292,7 @@
     "quant": {
       "buy_score": 72.5,
       "rank_in_level2": 1,
-      "upside_pct": 107.1,
+      "upside_pct": 112.7,
       "composite": 0.0,
       "timing_state": "관측부족",
       "timing_score": 21.0
@@ -5382,8 +5308,8 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 65700.0,
-    "ret_1m": 45.4,
+    "close": 68900.0,
+    "ret_1m": 65.0,
     "analyst": {
       "n_buy": 0,
       "n_hold": 0,
@@ -5408,17 +5334,17 @@
         "eps_actual": null
       },
       {
+        "period_end": "2026-03-31",
+        "revenue": 1737572387071.0,
+        "op_income": 267724367869.0,
+        "op_margin": 15.41,
+        "eps_actual": null
+      },
+      {
         "period_end": "2025-12-31",
         "revenue": 4687954541266.0,
         "op_income": 342606913512.0,
         "op_margin": 7.31,
-        "eps_actual": null
-      },
-      {
-        "period_end": "2025-09-30",
-        "revenue": 1271175737539.0,
-        "op_income": 72093784602.0,
-        "op_margin": 5.67,
         "eps_actual": null
       }
     ],
@@ -5449,8 +5375,8 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 54100.0,
-    "ret_1m": -13.7,
+    "close": 51500.0,
+    "ret_1m": -11.7,
     "analyst": {
       "n_buy": 0,
       "n_hold": 0,
@@ -5521,14 +5447,14 @@
     ],
     "brief_source": "DART 사업보고서·애널리스트 리포트 종합",
     "brief_updated": "2026-06",
-    "close": 654000.0,
-    "ret_1m": -22.0,
+    "close": 650000.0,
+    "ret_1m": -20.2,
     "analyst": {
-      "n_buy": 2,
+      "n_buy": 1,
       "n_hold": 0,
       "n_sell": 0,
-      "avg_target": 1830000,
-      "latest_target": 1830000.0,
+      "avg_target": null,
+      "latest_target": null,
       "recent": [
         {
           "date": "2026-09-01",
@@ -5537,14 +5463,6 @@
           "opinion": "매수",
           "source_url": "https://finance.naver.com/research/company_read.naver?nid=95965",
           "broker_url": null
-        },
-        {
-          "date": "2026-08-24",
-          "broker": "DS투자증권",
-          "title": "K9MH의 미국 진출, 단일 수주 이상의 의미",
-          "opinion": "매수",
-          "source_url": "https://finance.naver.com/research/company_read.naver?nid=95841",
-          "broker_url": "https://stock.pstatic.net/stock-research/company/66/20260824_company_957228000.pdf"
         }
       ]
     },
@@ -5581,9 +5499,9 @@
     "market_share": [],
     "dart": null,
     "quant": {
-      "buy_score": 57.5,
+      "buy_score": 35.0,
       "rank_in_level2": 4,
-      "upside_pct": 179.8,
+      "upside_pct": null,
       "composite": -1.0,
       "timing_state": "관측부족",
       "timing_score": 12.0
@@ -5604,8 +5522,8 @@
     ],
     "brief_source": "DART 사업보고서·애널리스트 리포트 종합",
     "brief_updated": "2026-06",
-    "close": 106800.0,
-    "ret_1m": -4.4,
+    "close": 107100.0,
+    "ret_1m": 2.5,
     "analyst": {
       "n_buy": 0,
       "n_hold": 0,
@@ -5671,8 +5589,8 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 73200.0,
-    "ret_1m": -24.6,
+    "close": 69200.0,
+    "ret_1m": -23.4,
     "analyst": {
       "n_buy": 0,
       "n_hold": 0,
@@ -5697,17 +5615,17 @@
         "eps_actual": null
       },
       {
+        "period_end": "2026-03-31",
+        "revenue": 1569045822000.0,
+        "op_income": 242996255000.0,
+        "op_margin": 15.49,
+        "eps_actual": null
+      },
+      {
         "period_end": "2025-12-31",
         "revenue": 5694994720000.0,
         "op_income": 998880351000.0,
         "op_margin": 17.54,
-        "eps_actual": null
-      },
-      {
-        "period_end": "2025-09-30",
-        "revenue": 1145546021000.0,
-        "op_income": 200458925000.0,
-        "op_margin": 17.5,
         "eps_actual": null
       }
     ],
@@ -5738,8 +5656,8 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 367000.0,
-    "ret_1m": -34.9,
+    "close": 355000.0,
+    "ret_1m": -34.4,
     "analyst": {
       "n_buy": 0,
       "n_hold": 0,
@@ -5810,8 +5728,8 @@
     ],
     "brief_source": "DART 사업보고서·애널리스트 리포트 종합",
     "brief_updated": "2026-06",
-    "close": 88700.0,
-    "ret_1m": -15.2,
+    "close": 87600.0,
+    "ret_1m": -15.6,
     "analyst": {
       "n_buy": 0,
       "n_hold": 0,
@@ -5836,17 +5754,17 @@
         "eps_actual": null
       },
       {
+        "period_end": "2026-03-31",
+        "revenue": 271402000000.0,
+        "op_income": 206316000000.0,
+        "op_margin": 76.02,
+        "eps_actual": null
+      },
+      {
         "period_end": "2025-12-31",
         "revenue": 884989000000.0,
         "op_income": 597132000000.0,
         "op_margin": 67.47,
-        "eps_actual": null
-      },
-      {
-        "period_end": "2025-09-30",
-        "revenue": 404342000000.0,
-        "op_income": 348617000000.0,
-        "op_margin": 86.22,
         "eps_actual": null
       }
     ],
@@ -5864,7 +5782,7 @@
       "upside_pct": null,
       "composite": 1.0,
       "timing_state": "관측부족",
-      "timing_score": 12.0
+      "timing_score": 16.0
     }
   },
   "028260": {
@@ -5882,24 +5800,15 @@
     ],
     "brief_source": "DART 사업보고서·애널리스트 리포트 종합",
     "brief_updated": "2026-06",
-    "close": 285500.0,
-    "ret_1m": -4.2,
+    "close": 276000.0,
+    "ret_1m": 4.7,
     "analyst": {
-      "n_buy": 1,
+      "n_buy": 0,
       "n_hold": 0,
       "n_sell": 0,
-      "avg_target": 550000,
-      "latest_target": 550000.0,
-      "recent": [
-        {
-          "date": "2026-08-24",
-          "broker": "SK증권",
-          "title": "주주환원, 기대에서 확신으로",
-          "opinion": "매수",
-          "source_url": "https://finance.naver.com/research/company_read.naver?nid=95827",
-          "broker_url": "https://stock.pstatic.net/stock-research/company/64/20260824_company_930117000.pdf"
-        }
-      ]
+      "avg_target": null,
+      "latest_target": null,
+      "recent": []
     },
     "fundamentals": [
       {
@@ -5917,17 +5826,17 @@
         "eps_actual": null
       },
       {
+        "period_end": "2026-03-31",
+        "revenue": 6065328937143.0,
+        "op_income": 283701705854.0,
+        "op_margin": 4.68,
+        "eps_actual": null
+      },
+      {
         "period_end": "2025-12-31",
         "revenue": 21219155547106.0,
         "op_income": 548415312672.0,
         "op_margin": 2.58,
-        "eps_actual": null
-      },
-      {
-        "period_end": "2025-09-30",
-        "revenue": 5132767375070.0,
-        "op_income": 224782986513.0,
-        "op_margin": 4.38,
         "eps_actual": null
       }
     ],
@@ -5940,12 +5849,12 @@
       "risk_text": "위험요소가 내포되어 있다. CC 원리금의 채무불이행이 발생할 가능성이 높다. C 원리금의 채무불이행이 발생할 가능성이 지극히 높다. D 현재 채무불이행 상태에 있다. ※ AA부터 B까지는 동일 등급내에서 세분하여 구분할 필요가 있는 경우에는 \"＋\" 또는 \"－\"의 기호를 부여할 수 있다.※ 예비평정의 경우 당해 등급기호의 앞에 \"P\"를 부기한다.※ 미공시 등급의 경우 당해 등급기호의 앞에 \"U\"를 부기한다. - R&I(日) : 장기신용등급 (상환기간 1년 이상) 등 급 의 미 AAA 원리금 지급의 안정성이 제일 높음. AA+AA AA- AAA보다는 낮으나 높은 등급으로 평가됨. A+AA- 현재 안정성은 적당하나 향후 악화될 가능성이 있음. BBB+BBB BBB- 현재 원리금 지급은 가능하나 향후 안정성은 부족함. BB+BB BB- 원리금 지급의 안정성은 중간이며, 투기적 요소가 있음. B+B B- 원리금 지급의 안정성이 낮음. CCC 지급불능의 가능성이 있음. CC 지급불능의 가능성이 큼. C 최저등급 - R&I(日) : 단기신용등급 (상환기간 1년 미만) 등 급 의 미 a-1 단기상환능력이 매우 우수함. a-2 a-1보다는 낮으나 높은 등급으로 평가됨. 단, 경제상황 및 영업여건 등에따라 영향을 받을 가능성이 높음. a-3 현재의 단기 상환능력은 적당하나 향후 악화될 가능성이 매우 높음. b 단기 지급능력이 의심되는 투기 등급임. c 단기 채무 지급 불능 가능성 있음. - S&P(美) : 장기신용등급 (상환기간 1년 이상) 등 급 의 미 AAA 채무상환능력이 극히 높음, 최고등급 AA+ AA AA- 채무상환능력이 매우 높음 A+ A A- 채무상환능력은 충분하나 경제 상황 악화 및 변화에 다소 취약함 BBB+ BBB BBB- 채무상환능력은 충분하나 상위 등급에 비해 경제 상황 악화에좀 더 취약함 BB+ BB BB- 가까운 장래에 채무불이행이 발생할 가능성은 비교적 낮으나경영, 재무, 경제 상황 악화에 대한 불확실성이 큼 B+ B B- 경영, 재무, 경제 상황 악화에 좀 더 취약하나현재로서는 채무상환능력이 있음 CCC 현재 채무불이행 가능성이 있으며 채무상환은 경영, 재무, 경제 상황이 호의적일 경우에만 가능함 CC 채무불이행 가능성이 높음, 부도 상태는 아니지만사실상 부도가 예상됨 C 현재 채무불이행 가능성이 매우 높으며 최종 회수율은상위등급 채무보다 낮게 추정됨 D 금융채무불이행 상태 혹은 묵시적 계약(imputed promises) 파기, 또는 파산 신청 혹은 이와 유사한 상태 - Moody's(美) : 장기신용등급 (상환기간 1년 이상) 등 급 의 미 Aaa 채무상환능력 최상, 신용위험 최소 Aa1 Aa2 Aa3 채무상환능력 높음, 신용위험 매우 낮음 A1 A2 A3 채무상환능력 중상, 신용위험 낮음 Baa1 Baa2 Baa3 채무상환능력 중간, 신용위험 크지 않으나투기적 요소가 있음 Ba1 Ba2 Ba3 투기적 성향, 신용위험 상당함 B1 B2 B3 투기적 성향, 신용위험 높음 Caa 투기적 성향 높음, 신용위험 매우 높음 Ca 투기적 성향 매우 높음, 가까운 시일 내부도발생 가능, 원리금 상환가능성 존재 C 부도 상태, 원리금 상환가능성 낮음 자. 회사의 주권상장(또는 등록ㆍ지정)여부 및 특례상장에 관한 …"
     },
     "quant": {
-      "buy_score": 57.5,
+      "buy_score": 35.0,
       "rank_in_level2": 3,
-      "upside_pct": 92.6,
+      "upside_pct": null,
       "composite": -1.0,
       "timing_state": "관측부족",
-      "timing_score": 12.0
+      "timing_score": 16.0
     }
   },
   "034730": {
@@ -5958,8 +5867,8 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 501000.0,
-    "ret_1m": 0.0,
+    "close": 478500.0,
+    "ret_1m": 10.0,
     "analyst": {
       "n_buy": 1,
       "n_hold": 0,
@@ -5993,17 +5902,17 @@
         "eps_actual": null
       },
       {
+        "period_end": "2026-03-31",
+        "revenue": 1011027000000.0,
+        "op_income": 228466000000.0,
+        "op_margin": 22.6,
+        "eps_actual": null
+      },
+      {
         "period_end": "2025-12-31",
         "revenue": 3612294000000.0,
         "op_income": 813163000000.0,
         "op_margin": 22.51,
-        "eps_actual": null
-      },
-      {
-        "period_end": "2025-09-30",
-        "revenue": 787538000000.0,
-        "op_income": 176193000000.0,
-        "op_margin": 22.37,
         "eps_actual": null
       }
     ],
@@ -6018,10 +5927,10 @@
     "quant": {
       "buy_score": 57.5,
       "rank_in_level2": 2,
-      "upside_pct": 59.7,
+      "upside_pct": 67.2,
       "composite": -1.0,
       "timing_state": "관측부족",
-      "timing_score": 12.0
+      "timing_score": 16.0
     }
   },
   "241560": {
@@ -6034,8 +5943,8 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 52100.0,
-    "ret_1m": 0.6,
+    "close": 52600.0,
+    "ret_1m": 2.3,
     "analyst": {
       "n_buy": 0,
       "n_hold": 0,
@@ -6110,8 +6019,8 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 343000.0,
-    "ret_1m": -10.6,
+    "close": 358500.0,
+    "ret_1m": 7.0,
     "analyst": {
       "n_buy": 0,
       "n_hold": 0,
@@ -6136,17 +6045,17 @@
         "eps_actual": null
       },
       {
+        "period_end": "2026-03-31",
+        "revenue": 13950579141.0,
+        "op_income": -643079253.0,
+        "op_margin": -4.61,
+        "eps_actual": null
+      },
+      {
         "period_end": "2025-12-31",
         "revenue": 34010897612.0,
         "op_income": -1911576570.0,
         "op_margin": -5.62,
-        "eps_actual": null
-      },
-      {
-        "period_end": "2025-09-30",
-        "revenue": 4124317672.0,
-        "op_income": -1593785426.0,
-        "op_margin": -38.64,
         "eps_actual": null
       }
     ],
@@ -6177,8 +6086,8 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 51000.0,
-    "ret_1m": -17.7,
+    "close": 50000.0,
+    "ret_1m": -11.5,
     "analyst": {
       "n_buy": 0,
       "n_hold": 0,
@@ -6203,17 +6112,17 @@
         "eps_actual": null
       },
       {
+        "period_end": "2026-03-31",
+        "revenue": 7438315766.0,
+        "op_income": -11990269620.0,
+        "op_margin": -161.2,
+        "eps_actual": null
+      },
+      {
         "period_end": "2025-12-31",
         "revenue": 27301039299.0,
         "op_income": -48505932254.0,
         "op_margin": -177.67,
-        "eps_actual": null
-      },
-      {
-        "period_end": "2025-09-30",
-        "revenue": 4659647516.0,
-        "op_income": -10911609530.0,
-        "op_margin": -234.17,
         "eps_actual": null
       }
     ],
@@ -6244,8 +6153,8 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 18500.0,
-    "ret_1m": -26.6,
+    "close": 18120.0,
+    "ret_1m": -20.7,
     "analyst": {
       "n_buy": 0,
       "n_hold": 0,
@@ -6311,13 +6220,13 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 122800.0,
-    "ret_1m": -31.7,
+    "close": 118100.0,
+    "ret_1m": -21.8,
     "analyst": {
-      "n_buy": 3,
+      "n_buy": 2,
       "n_hold": 0,
       "n_sell": 0,
-      "avg_target": 523333,
+      "avg_target": 630000,
       "latest_target": 630000.0,
       "recent": [
         {
@@ -6335,14 +6244,6 @@
           "opinion": "Buy",
           "source_url": "https://finance.naver.com/research/company_read.naver?nid=95940",
           "broker_url": "https://stock.pstatic.net/stock-research/company/15/20260831_company_229496000.pdf"
-        },
-        {
-          "date": "2026-08-24",
-          "broker": "SK증권",
-          "title": "전력은 속도가 생명, 단납기 생산이 강점",
-          "opinion": "매수",
-          "source_url": "https://finance.naver.com/research/company_read.naver?nid=95823",
-          "broker_url": "https://stock.pstatic.net/stock-research/company/64/20260824_company_690212000.pdf"
         }
       ]
     },
@@ -6362,17 +6263,17 @@
         "eps_actual": null
       },
       {
+        "period_end": "2026-03-31",
+        "revenue": 1378534132190.0,
+        "op_income": 199841285872.0,
+        "op_margin": 14.5,
+        "eps_actual": null
+      },
+      {
         "period_end": "2025-12-31",
         "revenue": 3462741368949.0,
         "op_income": 362194029967.0,
         "op_margin": 10.46,
-        "eps_actual": null
-      },
-      {
-        "period_end": "2025-09-30",
-        "revenue": 738183215213.0,
-        "op_income": 74346286378.0,
-        "op_margin": 10.07,
         "eps_actual": null
       }
     ],
@@ -6386,8 +6287,8 @@
     },
     "quant": {
       "buy_score": 57.5,
-      "rank_in_level2": 3,
-      "upside_pct": 326.2,
+      "rank_in_level2": 2,
+      "upside_pct": 433.4,
       "composite": -1.0,
       "timing_state": "관측부족",
       "timing_score": 12.0
@@ -6408,24 +6309,15 @@
     ],
     "brief_source": "DART 사업보고서·애널리스트 리포트 종합",
     "brief_updated": "2026-06",
-    "close": 421500.0,
-    "ret_1m": -24.6,
+    "close": 400500.0,
+    "ret_1m": -15.7,
     "analyst": {
-      "n_buy": 1,
+      "n_buy": 0,
       "n_hold": 0,
       "n_sell": 0,
-      "avg_target": 900000,
-      "latest_target": 900000.0,
-      "recent": [
-        {
-          "date": "2026-08-24",
-          "broker": "SK증권",
-          "title": "수익성은 유틸리티, 성장은 증설이 만든다",
-          "opinion": "매수",
-          "source_url": "https://finance.naver.com/research/company_read.naver?nid=95818",
-          "broker_url": "https://stock.pstatic.net/stock-research/company/64/20260824_company_28043000.pdf"
-        }
-      ]
+      "avg_target": null,
+      "latest_target": null,
+      "recent": []
     },
     "fundamentals": [
       {
@@ -6443,17 +6335,17 @@
         "eps_actual": null
       },
       {
+        "period_end": "2026-03-31",
+        "revenue": 1034466000000.0,
+        "op_income": 250984000000.0,
+        "op_margin": 24.26,
+        "eps_actual": null
+      },
+      {
         "period_end": "2025-12-31",
         "revenue": 3381139400167.0,
         "op_income": 889157412371.0,
         "op_margin": 26.3,
-        "eps_actual": null
-      },
-      {
-        "period_end": "2025-09-30",
-        "revenue": 809688187594.0,
-        "op_income": 202303508124.0,
-        "op_margin": 24.99,
         "eps_actual": null
       }
     ],
@@ -6466,9 +6358,9 @@
       "risk_text": "위험요소가 내포되어 있다. CC 원리금의 채무불이행이 발생할 가능성이 높다. C 원리금의 채무불이행이 발생할 가능성이 지극히 높다. D 현재 채무불이행 상태에 있다. ▶ AA부터 B까지는 동일 등급내에서 세분하여 구분할 필요가 있는 경우에는 \"+\" 또는 \"-\" 의 기호를 부여할 수 있다. 아. 회사의 주권상장(또는 등록ㆍ지정)여부 및 특례상장에 관한 사항 주권상장(또는 등록ㆍ지정)현황 주권상장(또는 등록ㆍ지정)일자 특례상장 유형 유가증권시장 상장 2017년 05월 10일 해당사항 없음 2. 회사의 연혁 가. 회사의 본점소재지 및 그 변경 ㆍ본점의 소재지 : 경기도 성남시 분당구 분당수서로477(정자동) * 2023.03.22 본점 소재지가 서울시 종로구에서 경기도 성남시로 변경 되었습니다. 나. 경영진의 중요한 변동 변동일자 주총종류 선임 임기만료또는 해임 신규 재선임 2025년 03월 25일 정기주총 대표이사 김영기 사외이사 전순옥 대표이사 조석(중도사임) 2024년 03월 26일 정기주총 - 사내이사 조석사외이사 박수환 - 2023년 03월 22일 정기주총 사외이사 한찬식 사내이사 금석호 사외이사 송백훈(임기만료) 2022년 03월 21일 정기주총 사외이사 전순옥 사내이사 조석 사외이사 이석형(임기만료) 2021년 03월 23일 정기주총 사외이사 박수환 사내이사 금석호 사외이사 류승우(임기만료) ※ 보고서 제출일 현재 당사의"
     },
     "quant": {
-      "buy_score": 87.5,
+      "buy_score": 65.0,
       "rank_in_level2": 1,
-      "upside_pct": 113.5,
+      "upside_pct": null,
       "composite": 1.0,
       "timing_state": "관측부족",
       "timing_score": 12.0
@@ -6484,24 +6376,15 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 1812000.0,
-    "ret_1m": -16.8,
+    "close": 1730000.0,
+    "ret_1m": -3.3,
     "analyst": {
-      "n_buy": 1,
+      "n_buy": 0,
       "n_hold": 0,
       "n_sell": 0,
-      "avg_target": 4000000,
-      "latest_target": 4000000.0,
-      "recent": [
-        {
-          "date": "2026-08-24",
-          "broker": "SK증권",
-          "title": "잘하는 송전을 더 잘하고 있다",
-          "opinion": "매수",
-          "source_url": "https://finance.naver.com/research/company_read.naver?nid=95820",
-          "broker_url": "https://stock.pstatic.net/stock-research/company/64/20260824_company_452384000.pdf"
-        }
-      ]
+      "avg_target": null,
+      "latest_target": null,
+      "recent": []
     },
     "fundamentals": [
       {
@@ -6542,9 +6425,9 @@
       "risk_text": "주요 위험: 토지 매출과 건물 매출이 동시에 발생하여 높은 이익을 기대할 수 있으나, 대규모 투자 사업인 관계로 일반 도급사업에 비해 재무적 위험성이 있습니다.- 향후 추진계획: 공공택지와 공동주택용지 등의 추첨방식 입찰 참여를 검토하고 있으며, 분양성이 양호한 민간택지 발굴도 추진할 예정입니다. 이외 구체적인 내용은 당사의 시장 경쟁력에 영향을 끼칠 가능성이 있어 공개하지 않습니다.- 미추진 사유: 해당사항 없음. 2 35. 건설사업관리업 - 사업 분야 및 진출 목적: 당사는 기존에 건축, 토목, SOC(사회간접자본) 사업을 추진 중이며, 단순 시공이 아닌 설계 및 시공 관리ㆍ감독 등 전체 사업관리를 수행하는 건설사업관리업 분야로 사업영역을 확대하여 시공책임형 건설사업관리(CMR) 부문을 수주함으로써 해당분야의 사업실적을 확보하고자 합니다. - 시장의 주요 특성ㆍ규모 및 성장성: LH에서 시공책임형 건설사업관리 사업들을 발주 중이며, 향후 국가철도공단 및 한국도로공사 등의 다른 공공기관에서도 시범사업을 통해 시장이 확대될 것으로 전망됩니다. - 신규사업과 관련된 투자 및 예상 자금소요액, 투자자금 조달원천, 예상투자회수기간 등: 해당 사업은 도급 사업으로 별도로 투입되는 자금이 없습니다. 당사 건설 부문의 다른 도급 사업과 유사하게 투자가 진행될 예정입니다.- 사업 추진현황: 공공/토목 부문에서 사업을 추진하고 있으며, 수주에 따라 매출이 결정되므로 현 시점에서 매출액 및 매출 발생시점을 특정지을 수 없습니다.- 기존 사업과의 연관성: 당사는 건축, 토목, SOC 사업을 추진하며 축적된 시공에 대한 지식과 설계검토 및 사업관리 능력을 바탕으로 건설사업관리업 분야를 수주하여 사업범위를 확대하고자 합니다. - 주요 위험: 글로벌 공급망 이슈 및 인플레이션으로 인한 원자재가 상승과 금리 상승으로 인한 원리금 부담 상승 등의 재무적 위험이 있습니다. - 향후 추진계획: 향후 정부에서 발주하는 사업들에 대해 검토 예정입니다. - 미추진 사유: 해당사항 없음. 3 36. 민자로 유치되는 사회간접자본시설에 대한 투자, 건설, 운영사업 - 사업 분야 및 진출 목적: 민간투자사업은 '사회기반시설에 대한 민간투자법'에 의거하여 기존에 정부 주도로 건설되던 도로, 항만, 철도 등의 사회기반시설에 대해 민간 재원을 활용하여 건립 비용 부담을 줄이고, 정부가 사업 운영권 등을 민간에 제공하는 형태의 사업구조 입니다. 당사는 해당 사업을 영위하고 있었으나, 정관상 명확히 표현하고자 추가하였습니다. - 시장의 주요 특성ㆍ규모 및 성장성: 정부의 SOC 사업에 대한 재정 부족으로 인해 관계부처에서 민간투자 활성화를 위해 규제 및 제도를 개선 중이며, 이를 통해 향후 민간투자 사업부문은 지속적으로 시장이 확대될 것으로 예상됩니다. - 신규사업과 관련된 투자 및 예상 자금소요액, 투자자금 조달원천, 예상투자회수기간 등: 민간투자사업은 사회간접자본시설 건설 및 운영을 위한 사업부지 선정, 설계, 공사비 산출 등이 완료된 이후에 총투자비 산출이 가능하며, 건설 이후에 시설 운영권을 통해 투자금을 회수하는 구조입니다. 참여하는 사업에 따라 소요되는 총사업비 편차가 커 투자금 및 예상회수 기간을 특정하기 어렵습니다. 또한, 당사가 추진 중인 …"
     },
     "quant": {
-      "buy_score": 57.5,
-      "rank_in_level2": 2,
-      "upside_pct": 120.8,
+      "buy_score": 35.0,
+      "rank_in_level2": 3,
+      "upside_pct": null,
       "composite": -1.0,
       "timing_state": "관측부족",
       "timing_score": 12.0
@@ -6566,7 +6449,7 @@
     "brief_source": "DART 사업보고서·애널리스트 리포트 종합",
     "brief_updated": "2026-06",
     "close": 238000.0,
-    "ret_1m": -13.8,
+    "ret_1m": -8.5,
     "analyst": {
       "n_buy": 1,
       "n_hold": 0,
@@ -6600,17 +6483,17 @@
         "eps_actual": null
       },
       {
+        "period_end": "2026-03-31",
+        "revenue": 1159151000000.0,
+        "op_income": 762916000000.0,
+        "op_margin": 65.82,
+        "eps_actual": null
+      },
+      {
         "period_end": "2025-12-31",
         "revenue": 1493753828000.0,
         "op_income": 700649222000.0,
         "op_margin": 46.91,
-        "eps_actual": null
-      },
-      {
-        "period_end": "2025-09-30",
-        "revenue": 551782290000.0,
-        "op_income": 416198542000.0,
-        "op_margin": 75.43,
         "eps_actual": null
       }
     ],
@@ -6650,8 +6533,8 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 16560.0,
-    "ret_1m": -9.9,
+    "close": 16610.0,
+    "ret_1m": -7.4,
     "analyst": {
       "n_buy": 0,
       "n_hold": 0,
@@ -6676,17 +6559,17 @@
         "eps_actual": null
       },
       {
+        "period_end": "2026-03-31",
+        "revenue": 3139675272022.0,
+        "op_income": 330122622390.0,
+        "op_margin": 10.51,
+        "eps_actual": null
+      },
+      {
         "period_end": "2025-12-31",
         "revenue": 10634952868811.0,
         "op_income": 867060313459.0,
         "op_margin": 8.15,
-        "eps_actual": null
-      },
-      {
-        "period_end": "2025-09-30",
-        "revenue": 2490274024333.0,
-        "op_income": 125681913579.0,
-        "op_margin": 5.05,
         "eps_actual": null
       }
     ],
@@ -6722,13 +6605,13 @@
     ],
     "brief_source": "DART 사업보고서·애널리스트 리포트 종합",
     "brief_updated": "2026-06",
-    "close": 47800.0,
-    "ret_1m": -28.9,
+    "close": 46550.0,
+    "ret_1m": -23.9,
     "analyst": {
-      "n_buy": 2,
+      "n_buy": 1,
       "n_hold": 0,
       "n_sell": 0,
-      "avg_target": 174000,
+      "avg_target": 185000,
       "latest_target": 185000.0,
       "recent": [
         {
@@ -6738,14 +6621,6 @@
           "opinion": "매수",
           "source_url": "https://finance.naver.com/research/company_read.naver?nid=95856",
           "broker_url": "https://stock.pstatic.net/stock-research/company/56/20260825_company_6963000.pdf"
-        },
-        {
-          "date": "2026-08-24",
-          "broker": "대신증권",
-          "title": "8월 25일, 다시 서는 지주회사",
-          "opinion": "Buy",
-          "source_url": "https://finance.naver.com/research/company_read.naver?nid=95832",
-          "broker_url": "https://stock.pstatic.net/stock-research/company/15/20260824_company_854018000.pdf"
         }
       ]
     },
@@ -6790,7 +6665,7 @@
     "quant": {
       "buy_score": 72.5,
       "rank_in_level2": 2,
-      "upside_pct": 264.0,
+      "upside_pct": 297.4,
       "composite": 0.0,
       "timing_state": "관측부족",
       "timing_score": 12.0
@@ -6806,8 +6681,8 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 268000.0,
-    "ret_1m": -27.2,
+    "close": 269000.0,
+    "ret_1m": -22.7,
     "analyst": {
       "n_buy": 0,
       "n_hold": 0,
@@ -6832,17 +6707,17 @@
         "eps_actual": null
       },
       {
+        "period_end": "2026-03-31",
+        "revenue": 5732496000000.0,
+        "op_income": 891692000000.0,
+        "op_margin": 15.56,
+        "eps_actual": null
+      },
+      {
         "period_end": "2025-12-31",
         "revenue": 17569457486000.0,
         "op_income": 2042725957000.0,
         "op_margin": 11.63,
-        "eps_actual": null
-      },
-      {
-        "period_end": "2025-09-30",
-        "revenue": 3819793398000.0,
-        "op_income": 435439848000.0,
-        "op_margin": 11.4,
         "eps_actual": null
       }
     ],
@@ -6867,8 +6742,8 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 67600.0,
-    "ret_1m": -3.2,
+    "close": 68300.0,
+    "ret_1m": -1.6,
     "analyst": {
       "n_buy": 0,
       "n_hold": 0,
@@ -6917,7 +6792,7 @@
     },
     "quant": {
       "buy_score": 50.0,
-      "rank_in_level2": 3,
+      "rank_in_level2": 2,
       "upside_pct": null,
       "composite": 0.0,
       "timing_state": "관측부족",
@@ -6935,7 +6810,7 @@
     "brief_source": null,
     "brief_updated": null,
     "close": 31700.0,
-    "ret_1m": 3.8,
+    "ret_1m": 8.6,
     "analyst": {
       "n_buy": 1,
       "n_hold": 0,
@@ -7010,8 +6885,8 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 21100.0,
-    "ret_1m": -3.9,
+    "close": 22000.0,
+    "ret_1m": -5.4,
     "analyst": {
       "n_buy": 1,
       "n_hold": 0,
@@ -7068,9 +6943,9 @@
       "risk_text": null
     },
     "quant": {
-      "buy_score": 54.6,
-      "rank_in_level2": 2,
-      "upside_pct": 37.4,
+      "buy_score": 48.3,
+      "rank_in_level2": 3,
+      "upside_pct": 31.8,
       "composite": -1.0,
       "timing_state": "관측부족",
       "timing_score": 21.0
@@ -7086,8 +6961,8 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 46750.0,
-    "ret_1m": -17.4,
+    "close": 45300.0,
+    "ret_1m": -15.8,
     "analyst": {
       "n_buy": 0,
       "n_hold": 0,
@@ -7153,8 +7028,8 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 97800.0,
-    "ret_1m": -14.1,
+    "close": 96700.0,
+    "ret_1m": -15.1,
     "analyst": {
       "n_buy": 0,
       "n_hold": 0,
@@ -7179,17 +7054,17 @@
         "eps_actual": null
       },
       {
+        "period_end": "2026-03-31",
+        "revenue": 1271167952262.0,
+        "op_income": 132820194.0,
+        "op_margin": 0.01,
+        "eps_actual": null
+      },
+      {
         "period_end": "2025-12-31",
         "revenue": 4571978509755.0,
         "op_income": 198120912770.0,
         "op_margin": 4.33,
-        "eps_actual": null
-      },
-      {
-        "period_end": "2025-09-30",
-        "revenue": 1302679195430.0,
-        "op_income": 91897978480.0,
-        "op_margin": 7.05,
         "eps_actual": null
       }
     ],
@@ -7220,8 +7095,8 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 240500.0,
-    "ret_1m": -7.1,
+    "close": 226000.0,
+    "ret_1m": -9.4,
     "analyst": {
       "n_buy": 0,
       "n_hold": 0,
@@ -7246,17 +7121,17 @@
         "eps_actual": null
       },
       {
+        "period_end": "2026-03-31",
+        "revenue": 4727473000000.0,
+        "op_income": -184401000000.0,
+        "op_margin": -3.9,
+        "eps_actual": null
+      },
+      {
         "period_end": "2025-12-31",
         "revenue": 18216499000000.0,
         "op_income": -210548000000.0,
         "op_margin": -1.16,
-        "eps_actual": null
-      },
-      {
-        "period_end": "2025-09-30",
-        "revenue": 5058266000000.0,
-        "op_income": -28555000000.0,
-        "op_margin": -0.56,
         "eps_actual": null
       }
     ],
@@ -7288,7 +7163,7 @@
     "brief_source": null,
     "brief_updated": null,
     "close": 28700.0,
-    "ret_1m": 4.0,
+    "ret_1m": 6.5,
     "analyst": {
       "n_buy": 0,
       "n_hold": 0,
@@ -7313,17 +7188,17 @@
         "eps_actual": null
       },
       {
+        "period_end": "2026-03-31",
+        "revenue": 4573734080160.0,
+        "op_income": 12286253267.0,
+        "op_margin": 0.27,
+        "eps_actual": null
+      },
+      {
         "period_end": "2025-12-31",
         "revenue": 17800125991157.0,
         "op_income": 89234860830.0,
         "op_margin": 0.5,
-        "eps_actual": null
-      },
-      {
-        "period_end": "2025-09-30",
-        "revenue": 4289911968956.0,
-        "op_income": -56133696809.0,
-        "op_margin": -1.31,
         "eps_actual": null
       }
     ],
@@ -7335,7 +7210,7 @@
       "upside_pct": null,
       "composite": -1.0,
       "timing_state": "관측부족",
-      "timing_score": 21.0
+      "timing_score": 16.0
     }
   },
   "005490": {
@@ -7353,8 +7228,8 @@
     ],
     "brief_source": "DART 사업보고서·애널리스트 리포트 종합",
     "brief_updated": "2026-06",
-    "close": 276000.0,
-    "ret_1m": -7.5,
+    "close": 267500.0,
+    "ret_1m": -7.3,
     "analyst": {
       "n_buy": 0,
       "n_hold": 0,
@@ -7407,7 +7282,7 @@
       "upside_pct": null,
       "composite": 1.0,
       "timing_state": "관측부족",
-      "timing_score": 21.0
+      "timing_score": 16.0
     }
   },
   "010130": {
@@ -7420,8 +7295,8 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 899000.0,
-    "ret_1m": -10.0,
+    "close": 860000.0,
+    "ret_1m": -8.0,
     "analyst": {
       "n_buy": 0,
       "n_hold": 0,
@@ -7446,17 +7321,17 @@
         "eps_actual": null
       },
       {
+        "period_end": "2026-03-31",
+        "revenue": 3657326565678.0,
+        "op_income": 224331029982.0,
+        "op_margin": 6.13,
+        "eps_actual": null
+      },
+      {
         "period_end": "2025-12-31",
         "revenue": 10534240543625.0,
         "op_income": 1179550442799.0,
         "op_margin": 11.2,
-        "eps_actual": null
-      },
-      {
-        "period_end": "2025-09-30",
-        "revenue": 2388634168565.0,
-        "op_income": 272710819884.0,
-        "op_margin": 11.42,
         "eps_actual": null
       }
     ],
@@ -7474,7 +7349,7 @@
       "upside_pct": null,
       "composite": 1.0,
       "timing_state": "관측부족",
-      "timing_score": 21.0
+      "timing_score": 16.0
     }
   },
   "103140": {
@@ -7487,8 +7362,8 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 52700.0,
-    "ret_1m": -17.7,
+    "close": 51600.0,
+    "ret_1m": -16.0,
     "analyst": {
       "n_buy": 0,
       "n_hold": 0,
@@ -7513,17 +7388,17 @@
         "eps_actual": null
       },
       {
+        "period_end": "2026-03-31",
+        "revenue": 1215294577141.0,
+        "op_income": 77348245170.0,
+        "op_margin": 6.36,
+        "eps_actual": null
+      },
+      {
         "period_end": "2025-12-31",
         "revenue": 3849107225015.0,
         "op_income": 247154403114.0,
         "op_margin": 6.42,
-        "eps_actual": null
-      },
-      {
-        "period_end": "2025-09-30",
-        "revenue": 826403946765.0,
-        "op_income": 44736715586.0,
-        "op_margin": 5.41,
         "eps_actual": null
       }
     ],
@@ -7541,7 +7416,7 @@
       "upside_pct": null,
       "composite": 0.0,
       "timing_state": "관측부족",
-      "timing_score": 21.0
+      "timing_score": 16.0
     }
   },
   "010950": {
@@ -7554,8 +7429,8 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 101800.0,
-    "ret_1m": -35.5,
+    "close": 106400.0,
+    "ret_1m": -33.4,
     "analyst": {
       "n_buy": 1,
       "n_hold": 0,
@@ -7589,17 +7464,17 @@
         "eps_actual": null
       },
       {
+        "period_end": "2026-03-31",
+        "revenue": 11878456000000.0,
+        "op_income": 1401755000000.0,
+        "op_margin": 11.8,
+        "eps_actual": null
+      },
+      {
         "period_end": "2025-12-31",
         "revenue": 33896041000000.0,
         "op_income": 230903000000.0,
         "op_margin": 0.68,
-        "eps_actual": null
-      },
-      {
-        "period_end": "2025-09-30",
-        "revenue": 8874136000000.0,
-        "op_income": -22518000000.0,
-        "op_margin": -0.25,
         "eps_actual": null
       }
     ],
@@ -7614,7 +7489,7 @@
     "quant": {
       "buy_score": 87.5,
       "rank_in_level2": 2,
-      "upside_pct": 101.4,
+      "upside_pct": 92.7,
       "composite": 1.0,
       "timing_state": "관측부족",
       "timing_score": 17.0
@@ -7630,8 +7505,8 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 83200.0,
-    "ret_1m": -16.1,
+    "close": 83600.0,
+    "ret_1m": -11.3,
     "analyst": {
       "n_buy": 0,
       "n_hold": 0,
@@ -7656,17 +7531,17 @@
         "eps_actual": null
       },
       {
+        "period_end": "2026-03-31",
+        "revenue": 48893000000.0,
+        "op_income": 30466000000.0,
+        "op_margin": 62.31,
+        "eps_actual": null
+      },
+      {
         "period_end": "2025-12-31",
         "revenue": 369270000000.0,
         "op_income": 281610000000.0,
         "op_margin": 76.26,
-        "eps_actual": null
-      },
-      {
-        "period_end": "2025-09-30",
-        "revenue": 180684000000.0,
-        "op_income": 160337000000.0,
-        "op_margin": 88.74,
         "eps_actual": null
       }
     ],
@@ -7697,8 +7572,8 @@
     "risks": null,
     "brief_source": null,
     "brief_updated": null,
-    "close": 108300.0,
-    "ret_1m": -30.3,
+    "close": 106100.0,
+    "ret_1m": -31.1,
     "analyst": {
       "n_buy": 4,
       "n_hold": 0,
@@ -7756,17 +7631,17 @@
         "eps_actual": null
       },
       {
+        "period_end": "2026-03-31",
+        "revenue": 2373109858000.0,
+        "op_income": 1750130106000.0,
+        "op_margin": 73.75,
+        "eps_actual": null
+      },
+      {
         "period_end": "2025-12-31",
         "revenue": 4850904693000.0,
         "op_income": 2730034540000.0,
         "op_margin": 56.28,
-        "eps_actual": null
-      },
-      {
-        "period_end": "2025-09-30",
-        "revenue": 3090613672000.0,
-        "op_income": 2570022405000.0,
-        "op_margin": 83.16,
         "eps_actual": null
       }
     ],
@@ -7781,7 +7656,7 @@
     "quant": {
       "buy_score": 87.5,
       "rank_in_level2": 1,
-      "upside_pct": 77.7,
+      "upside_pct": 81.4,
       "composite": 1.0,
       "timing_state": "관측부족",
       "timing_score": 17.0
