@@ -1,5 +1,31 @@
 [
   {
+    "date": "2026-11-19",
+    "level2_id": "S7_transport",
+    "level2_name": "운송 (해운·항공·물류)",
+    "event_type": "timing_watch",
+    "from_state": "관측부족",
+    "to_state": "watch",
+    "detail": {
+      "timing_score": 72.5,
+      "rs_3m": 18.63,
+      "breadth_pct": 66.7
+    }
+  },
+  {
+    "date": "2026-11-19",
+    "level2_id": "S2_entertainment",
+    "level2_name": "엔터테인먼트·미디어",
+    "event_type": "timing_watch",
+    "from_state": "관측부족",
+    "to_state": "watch",
+    "detail": {
+      "timing_score": 81.5,
+      "rs_3m": 12.7,
+      "breadth_pct": 100.0
+    }
+  },
+  {
     "date": "2026-11-17",
     "level2_id": "S6_bank",
     "level2_name": "은행·금융지주",
@@ -483,32 +509,6 @@
       "timing_score": 97.3,
       "rs_3m": 17.73,
       "breadth_pct": 100.0
-    }
-  },
-  {
-    "date": "2026-09-01",
-    "level2_id": "S8_chemicals",
-    "level2_name": "화학·석유화학",
-    "event_type": "timing_watch",
-    "from_state": "hold",
-    "to_state": "watch",
-    "detail": {
-      "timing_score": 62.7,
-      "rs_3m": -20.23,
-      "breadth_pct": 33.3
-    }
-  },
-  {
-    "date": "2026-09-01",
-    "level2_id": "S1_battery",
-    "level2_name": "2차전지",
-    "event_type": "timing_watch",
-    "from_state": "caution",
-    "to_state": "watch",
-    "detail": {
-      "timing_score": 73.2,
-      "rs_3m": -15.94,
-      "breadth_pct": 60.0
     }
   }
 ]
