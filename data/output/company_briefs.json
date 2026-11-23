@@ -2099,10 +2099,10 @@
     "close": 82200.0,
     "ret_1m": 7.7,
     "analyst": {
-      "n_buy": 4,
+      "n_buy": 3,
       "n_hold": 0,
       "n_sell": 0,
-      "avg_target": 135000,
+      "avg_target": 130000,
       "latest_target": 140000.0,
       "recent": [
         {
@@ -2128,14 +2128,6 @@
           "opinion": "Buy",
           "source_url": "https://finance.naver.com/research/company_read.naver?nid=95961",
           "broker_url": "https://stock.pstatic.net/stock-research/company/57/20260901_company_204514000.pdf"
-        },
-        {
-          "date": "2026-08-28",
-          "broker": "미래에셋증권",
-          "title": "SK호라이즌과 SK하이퍼의 시너지 효과 본격화",
-          "opinion": "매수",
-          "source_url": "https://finance.naver.com/research/company_read.naver?nid=95918",
-          "broker_url": "https://stock.pstatic.net/stock-research/company/56/20260828_company_358452000.pdf"
         }
       ]
     },
@@ -2180,7 +2172,7 @@
     "quant": {
       "buy_score": 57.5,
       "rank_in_level2": 1,
-      "upside_pct": 64.2,
+      "upside_pct": 58.2,
       "composite": -1.0,
       "timing_state": "관측부족",
       "timing_score": 25.0
@@ -2437,21 +2429,12 @@
     "close": 267500.0,
     "ret_1m": -12.4,
     "analyst": {
-      "n_buy": 1,
+      "n_buy": 0,
       "n_hold": 0,
       "n_sell": 0,
-      "avg_target": 630000,
-      "latest_target": 630000.0,
-      "recent": [
-        {
-          "date": "2026-08-28",
-          "broker": "현대차증권",
-          "title": "CID 2026: It’s a great time to be at Hyun..",
-          "opinion": "Buy",
-          "source_url": "https://finance.naver.com/research/company_read.naver?nid=95922",
-          "broker_url": "https://stock.pstatic.net/stock-research/company/38/20260828_company_14166000.pdf"
-        }
-      ]
+      "avg_target": null,
+      "latest_target": null,
+      "recent": []
     },
     "fundamentals": [
       {
@@ -2501,9 +2484,9 @@
       "risk_text": "주요 위험 신규 사업이 아닌 당사 프로젝트 추진을 위한 자격 요건으로 특별한 위험 사항은 없습니다. (7) 향후 추진 계획 2023년 12월에 최종 부동산개발업 등록 완료하였습니다. 정기 사업실적보고, 전문인력 교육 등을 충실히 이행하며 향후 신축 프로젝트에 자격요건으로 활용할 계획입니다. (8) 미추진 사유 해당 사항 없습니다. 2. 금융상품판매대리·중개업(1) 사업 분야 및 진출 목적 당사는 2023년 3월 제55기 주주총회에서 \"금융상품판매대리·중개업\"을 신규 사업목적으로 추가하였습니다. 당사가 추진중인 온라인 인증중고차 사업과 관련하여 고객의 결제 편의 제공을 위해 금융상품을 중개하기 위해 해당 사업에 진출하였습니다 (2) 시장의 주요 특성·규모 및 성장성 2021년 12월 금융소비자보호를 위한 법률 시행에 따라, 금융상품 중개 등 취급시 금융상품판매대리중개업 등록이 필요합니다. 이를 통해 당사는 금융 결제 투명성, 고객 편의성 확대로 중고차 시장에서의 금융소비자 보호 강화가 가능할 것으로 기대하고 있습니다. (3) 관련된 투자 및 예상 자금소요액, 투자자금 조달원천, 예상투자회수기간 회사의 영업비밀로 공시기준에 따라 기재를 생략합니다. (4) 사업 추진현황 당사는 금융감독원의 심사를 거쳐 2023년 12월 금융상품판매대리·중개업 자격을 취득하였으며, 2024년 1월부터 차량 대금 할부 및 대출 금융상품 중개를 통해 현대자동차 온라인 인증중고차 판매 시 고객 결제 편의 제공에 활용 중입니다. (5) 기존 사업과의 연관성 당사가 추진 중인 온라인 인증중고차 사업을 지원하기 위한 것으로, 기존 사업과의 연관성은 제한적입니다. (6) 주요 위험 금융소비자보호를 위한 법률 규제 위반 시, 과태료 등의 제재 사항이 발생할 수 있는 위험이 존재합니다. (7) 향후 추진계획 향후 지속적으로 차량 대금 할부 및 대출 금융상품 중개를 통해 현대자동차 온라인 인증중고차 판매시 고객 결제 편의 제공에 활용할 예정입니다. (8) 미추진 사유 해당 사항 없습니다. 3. 수소사업 및 기타 관련사업(1) 사업 분야 및 진출 목적 당사는 2025년 3월 제 57기 주주총회에서 \"수소사업 및 기타 관련사업\"을 신규 사업목적으로 추가하였습니다. 이는 수소모빌리티 뿐만 아니라 수소의 생산, 저장, 운송, 충전 등 수소 생태계 전반으로 사업 영역을 확장하기 위함으로, 본격적인 수소사업 진출과 다방면 확장 가능성을 고려하여 추가하였습니다. (2) 시장의 주요 특성·규모 및 성장성 2019년 정부의 「수소경제 활성화 로드맵」 발표는 당사의 수소 모빌리티 및 연료전지 사업에 중요한 동력을 제공하였습니다. 향후 전세계적으로 탄소중립 달성을 위한 친환경 에너지 수요가 증가함에 따라, 수소 수요 또한 지속적으로 확대될 것으로 예상됩니다. 이에 당사는 수소 모빌리티를 넘어 수소 기반으로 한 수소 생태계 조성에 모든 역량을 집중하고 있습니다. (3) 관련된 투자 및 예상 자금소요액, 투자자금 조달원천, 예상투자회수기간 회사의 영업비밀로 공시기준에 따라 기재를 생략합니다. (4) 사업 추진현황 수소 생태계 조성을 위한 수소 생산·저장·운송·활용 등 수소 밸류체인 전반에 걸친 기술 개발 및 국내·외 사업 확장을 진행 중입니다. (5) 기존 사업과의 연관성 …"
     },
     "quant": {
-      "buy_score": 62.5,
+      "buy_score": 40.0,
       "rank_in_level2": 1,
-      "upside_pct": 135.5,
+      "upside_pct": null,
       "composite": -1.0,
       "timing_state": "관측부족",
       "timing_score": 16.0
@@ -3602,21 +3585,12 @@
     "close": 22900.0,
     "ret_1m": -21.7,
     "analyst": {
-      "n_buy": 1,
+      "n_buy": 0,
       "n_hold": 0,
       "n_sell": 0,
-      "avg_target": 62000,
-      "latest_target": 62000.0,
-      "recent": [
-        {
-          "date": "2026-08-28",
-          "broker": "신한투자증권",
-          "title": "NDR 후기: 눈높이 하향 반영 완료",
-          "opinion": "매수",
-          "source_url": "https://finance.naver.com/research/company_read.naver?nid=95917",
-          "broker_url": null
-        }
-      ]
+      "avg_target": null,
+      "latest_target": null,
+      "recent": []
     },
     "fundamentals": [
       {
@@ -3657,9 +3631,9 @@
       "risk_text": null
     },
     "quant": {
-      "buy_score": 57.5,
+      "buy_score": 35.0,
       "rank_in_level2": 3,
-      "upside_pct": 170.7,
+      "upside_pct": null,
       "composite": -1.0,
       "timing_state": "관측부족",
       "timing_score": 16.0
@@ -7286,21 +7260,12 @@
     "close": 101300.0,
     "ret_1m": -29.8,
     "analyst": {
-      "n_buy": 1,
+      "n_buy": 0,
       "n_hold": 0,
       "n_sell": 0,
-      "avg_target": 205000,
-      "latest_target": 205000.0,
-      "recent": [
-        {
-          "date": "2026-08-28",
-          "broker": "유안타증권",
-          "title": "미국 Valero 마진을 넘어서다!",
-          "opinion": "Buy",
-          "source_url": "https://finance.naver.com/research/company_read.naver?nid=95920",
-          "broker_url": "https://stock.pstatic.net/stock-research/company/18/20260828_company_426820000.pdf"
-        }
-      ]
+      "avg_target": null,
+      "latest_target": null,
+      "recent": []
     },
     "fundamentals": [
       {
@@ -7341,9 +7306,9 @@
       "risk_text": "위험요소를 반영하여 상시 모니터링이 가능하도록 하는 등 금융시장 위험관리에 만전을 기하고 있습니다. 제품가격 및 마진변동위험 관리를 위하여 제품의 비축 필요성이 있는 경우 제품스왑을 통해서 미래의 가격변동 위험을 제거하여 보장된 판매마진을 확보하는 방법을 취하고 있습니다.(3) 경영방침상 파생상품거래 제한당사는"
     },
     "quant": {
-      "buy_score": 87.5,
+      "buy_score": 65.0,
       "rank_in_level2": 2,
-      "upside_pct": 102.4,
+      "upside_pct": null,
       "composite": 1.0,
       "timing_state": "관측부족",
       "timing_score": 17.0
