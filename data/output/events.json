@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026-11-26",
+    "level2_id": "S3_cosmetics",
+    "level2_name": "화장품",
+    "event_type": "timing_watch",
+    "from_state": "관측부족",
+    "to_state": "watch",
+    "detail": {
+      "timing_score": 68.5,
+      "rs_3m": 28.45,
+      "breadth_pct": 66.7
+    }
+  },
+  {
     "date": "2026-11-19",
     "level2_id": "S7_transport",
     "level2_name": "운송 (해운·항공·물류)",
@@ -496,19 +509,6 @@
     "to_state": "전환",
     "detail": {
       "composite_score": 0.2205
-    }
-  },
-  {
-    "date": "2026-09-02",
-    "level2_id": "S6_bank",
-    "level2_name": "은행·금융지주",
-    "event_type": "timing_buy",
-    "from_state": "watch",
-    "to_state": "buy",
-    "detail": {
-      "timing_score": 97.3,
-      "rs_3m": 17.73,
-      "breadth_pct": 100.0
     }
   }
 ]
